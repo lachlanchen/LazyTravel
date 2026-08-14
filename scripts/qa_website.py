@@ -121,6 +121,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
     counts = expected_counts(book_path)
     chapter_1 = "ch01-ground-before-time"
     chapter_2 = "ch02-capitals-on-different-maps"
+    chapter_3 = "ch03-army-under-earth"
     report: dict[str, Any] = {
         "url": url,
         "browser": chrome,
@@ -193,6 +194,20 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             if zoomed_width <= initial_width:
                 raise RuntimeError("map zoom control did not enlarge the map")
             desktop.get_by_role("button", name="Reset map").click()
+
+            desktop.locator(f'[data-chapter-id="{chapter_3}"]').click()
+            desktop.wait_for_selector("#ch03-b001")
+            desktop.locator(".editorial-figure").scroll_into_view_if_needed()
+            desktop.wait_for_function(
+                """() => {
+                  const image = document.querySelector('.figure-image');
+                  return image && image.complete && image.naturalWidth >= 1200;
+                }"""
+            )
+            report["viewports"]["desktop_ch03"] = assert_core_render(
+                desktop, counts[chapter_3], "desktop chapter 3"
+            )
+            desktop.screenshot(path=output / "desktop-ch03.png", full_page=True)
             desktop_context.close()
 
             mobile_context = browser.new_context(
@@ -235,6 +250,40 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             mobile.screenshot(path=output / "mobile-ch02.png", full_page=True)
             mobile.locator(".map-figure").scroll_into_view_if_needed()
             mobile.locator(".map-figure").screenshot(path=output / "mobile-map.png")
+
+            mobile_url = f"{url.rstrip('/')}?chapter={chapter_3}"
+            mobile.goto(mobile_url, wait_until="networkidle")
+            report["viewports"]["mobile_ch03"] = assert_core_render(
+                mobile, counts[chapter_3], "mobile chapter 3"
+            )
+            if mobile.locator("#chapter-select").input_value() != chapter_3:
+                raise RuntimeError("mobile chapter menu did not select Chapter 3")
+            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
+            mobile.wait_for_function(
+                """() => {
+                  const image = document.querySelector('.figure-image');
+                  return image && image.complete && image.naturalWidth >= 1200;
+                }"""
+            )
+            map_overflow = mobile.locator(".map-viewport").evaluate(
+                "node => ({client: node.clientWidth, scroll: node.scrollWidth})"
+            )
+            if map_overflow["scroll"] <= map_overflow["client"]:
+                raise RuntimeError(
+                    f"Chapter 3 mobile map lacks a legible scroll viewport: {map_overflow}"
+                )
+            map_scroll_left = mobile.locator(".map-viewport").evaluate(
+                "node => node.scrollLeft"
+            )
+            if map_scroll_left <= 0:
+                raise RuntimeError("Chapter 3 mobile map did not open within its wide canvas")
+            mobile.screenshot(path=output / "mobile-ch03.png", full_page=True)
+            mobile.locator(".map-figure").scroll_into_view_if_needed()
+            mobile.locator(".map-figure").screenshot(path=output / "mobile-ch03-map.png")
+            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
+            mobile.locator(".editorial-figure").screenshot(
+                path=output / "mobile-ch03-figure.png"
+            )
             mobile_context.close()
         finally:
             browser.close()

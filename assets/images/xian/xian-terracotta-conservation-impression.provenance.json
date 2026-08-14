@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-terracotta-conservation-impression",
+  "created_at": "2026-08-14",
+  "method": "generated",
+  "generator": "OpenAI built-in image generation",
+  "source_images": [],
+  "prompt": {
+    "path": "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
+    "sha256": "3780901086c5dc30d7b1818f733f6bb2ddb8b3c53f8454837a020a64b1072836"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-terracotta-conservation-impression.png",
+    "sha256": "58aeabe2ce957d4718c84878ede2b13e49e2e4f5780dc736cb91826f783532db",
+    "bytes": 2494868,
+    "pixels": [1536, 1024],
+    "color_space": "sRGB"
+  },
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_width": "pass",
+    "content": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-14",
+    "evidence": "build/qa/images/xian/ch03/xian-terracotta-conservation-b6-width.png",
+    "notes": [
+      "Gloved hands, soft brush, calipers, trays, task light, and fragment joins remain coherent at full resolution and at 1240 px B6 print width.",
+      "The generic contemporary workspace contains no labels, logo, watermark, tourist staging, standing army, tomb chamber, or copied named artefact.",
+      "The image communicates conservation practice only; captions and prose must identify it as a generated non-documentary editorial impression."
+    ]
+  },
+  "rights": "Generated for LazyTravel by OpenAI image generation; editorial illustration with explicit non-documentary disclosure."
+}

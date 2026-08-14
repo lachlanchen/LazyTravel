@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="648pt" viewBox="0 0 1008 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>One Mausoleum Landscape, Two Scales</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>One Mausoleum Landscape, Two Scales</dc:title>
+    <dc:date>2026-08-14</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648
+L 1008 648
+L 1008 0
+L 0 0
+z
+" style="fill: #f5f2ea"/>
+  </g>
+  <g id="axes_1">
+   <g id="FillBetweenPolyCollection_1">
+    <defs>
+     <path id="m9a4fa90b0c" d="M 55.44 -95.7744
+L 55.44 -137.2464
+L 109.90875 -170.424
+L 160.02 -145.5408
+L 207.9525 -182.8656
+L 260.2425 -141.3936
+L 312.5325 -162.1296
+L 369.18 -137.2464
+L 421.47 -153.8352
+L 473.76 -133.0992
+L 473.76 -95.7744
+L 473.76 -95.7744
+L 421.47 -95.7744
+L 369.18 -95.7744
+L 312.5325 -95.7744
+L 260.2425 -95.7744
+L 207.9525 -95.7744
+L 160.02 -95.7744
+L 109.90875 -95.7744
+L 55.44 -95.7744
+z
+"/>
+    </defs>
+    <g clip-path="url(#p095a703827)">
+     <use xlink:href="#m9a4fa90b0c" x="0" y="648" style="fill: #56704f; fill-opacity: 0.1"/>
+    </g>
+   </g>
+   <g id="line2d_1">
+    <path d="M 99.015 319.9824
+L 99.015 257.7744
+" clip-path="url(#p095a703827)" style="fill: none; stroke: #202522; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 425.8275 319.9824
+L 425.8275 257.7744
+" clip-path="url(#p095a703827)" style="fill: none; stroke: #202522; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 7.2px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #56704f" x="66.33375" y="535.6368" transform="rotate(-0 66.33375 535.6368)">骊山北麓  LISHAN FOOTHILLS</text>
+   </g>
+   <g id="patch_2">
+    <path d="M 99.015 402.9264
+C 106.237641 402.9264 113.165433 398.556648 118.272611 390.779532
+C 123.379789 383.002416 126.249375 372.452903 126.249375 361.4544
+C 126.249375 350.455897 123.379789 339.906384 118.272611 332.129268
+C 113.165433 324.352152 106.237641 319.9824 99.015 319.9824
+C 91.792359 319.9824 84.864567 324.352152 79.757389 332.129268
+C 74.650211 339.906384 71.780625 350.455897 71.780625 361.4544
+C 71.780625 372.452903 74.650211 383.002416 79.757389 390.779532
+C 84.864567 398.556648 91.792359 402.9264 99.015 402.9264
+z
+" clip-path="url(#p095a703827)" style="fill: #b68a3a; opacity: 0.75; stroke: #202522; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #202522" transform="translate(80.015 228.003756)">陵墓封土</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #202522" transform="translate(62.340547 239.1431)">BURIAL MOUND</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7.2px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(88.215 427.57785)">丽山园</text>
+    <text style="font-size: 7.2px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(71.48625 436.104)">LISHAN GARDEN</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 397.50375 371.8224
+L 454.15125 371.8224
+L 454.15125 351.0864
+L 397.50375 351.0864
+z
+" clip-path="url(#p095a703827)" style="fill: #a8513e; opacity: 0.75; stroke: #202522; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 410.57625 342.792
+L 441.07875 342.792
+L 441.07875 322.056
+L 410.57625 322.056
+z
+" clip-path="url(#p095a703827)" style="fill: #a8513e; opacity: 0.75; stroke: #202522; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 417.1125 400.8528
+L 434.5425 400.8528
+L 434.5425 380.1168
+L 417.1125 380.1168
+z
+" clip-path="url(#p095a703827)" style="fill: #a8513e; opacity: 0.75; stroke: #202522; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #202522" transform="translate(397.3275 228.003756)">兵马俑坑区域</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #202522" transform="translate(374.085156 239.1431)">WARRIOR-PIT SECTOR</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.2px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(404.2275 427.57785)">兵马俑博物馆</text>
+    <text style="font-size: 7.2px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(377.093625 436.104)">TERRACOTTA ARMY MUSEUM</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 131.517059 357.3072
+Q 262.42072 357.3072 393.324381 357.3072
+" style="fill: none; stroke: #202522; stroke-linecap: round"/>
+    <path d="M 131.517059 347.3072
+L 131.517059 347.3072
+L 131.517059 367.3072
+L 131.517059 367.3072
+" style="fill: none; stroke: #202522; stroke-linecap: round"/>
+    <path d="M 393.324381 367.3072
+L 393.324381 367.3072
+L 393.324381 347.3072
+L 393.324381 347.3072
+" style="fill: none; stroke: #202522; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #202522" x="262.42125" y="338.977525" transform="rotate(-0 262.42125 338.977525)">约 1.5 km 向东  ·  ABOUT 1.5 KM EAST</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 438.54467 183.1248
+Q 452.973493 183.1248 466.396085 183.1248
+" style="fill: none; stroke: #202522; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 463.116085 181.4848
+L 466.396085 183.1248
+L 463.116085 184.7648
+z
+" style="fill: #202522; stroke: #202522; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #202522" x="434.5425" y="185.514972" transform="rotate(-0 434.5425 185.514972)">E</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #a8513e" transform="translate(205.4 495.68763)">俑坑不是墓室，也不是陵园的全部。</text>
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #a8513e" transform="translate(125.811844 505.250338)">THE WARRIOR PITS ARE NOT THE TOMB CHAMBER OR THE WHOLE COMPLEX.</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_8">
+    <path d="M 575.217391 481.935652
+L 919.617391 481.935652
+L 919.617391 389.097391
+L 575.217391 389.097391
+z
+" clip-path="url(#p33a226b3ab)" style="fill: #a8513e; opacity: 0.72; stroke: #202522; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 584.201739 466.462609
+L 910.633043 466.462609
+" clip-path="url(#p33a226b3ab)" style="fill: none; stroke: #f5f2ea; stroke-opacity: 0.75; stroke-width: 0.75; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 584.201739 450.989565
+L 910.633043 450.989565
+" clip-path="url(#p33a226b3ab)" style="fill: none; stroke: #f5f2ea; stroke-opacity: 0.75; stroke-width: 0.75; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 584.201739 435.516522
+L 910.633043 435.516522
+" clip-path="url(#p33a226b3ab)" style="fill: none; stroke: #f5f2ea; stroke-opacity: 0.75; stroke-width: 0.75; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 584.201739 420.043478
+L 910.633043 420.043478
+" clip-path="url(#p33a226b3ab)" style="fill: none; stroke: #f5f2ea; stroke-opacity: 0.75; stroke-width: 0.75; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 584.201739 404.570435
+L 910.633043 404.570435
+" clip-path="url(#p33a226b3ab)" style="fill: none; stroke: #f5f2ea; stroke-opacity: 0.75; stroke-width: 0.75; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 733.94087 359.149565
+L 882.482087 359.149565
+L 882.482087 306.3216
+L 919.617391 306.3216
+L 919.617391 212.405217
+L 733.94087 212.405217
+z
+" clip-path="url(#p33a226b3ab)" style="fill: #3f7180; opacity: 0.72; stroke: #202522; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 575.217391 351.662609
+L 618.342261 351.662609
+L 618.342261 314.871704
+L 575.217391 314.871704
+z
+" clip-path="url(#p33a226b3ab)" style="fill: #56704f; opacity: 0.78; stroke: #202522; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 575.217391 501.401739
+L 650.086957 501.401739
+" clip-path="url(#p33a226b3ab)" style="fill: none; stroke: #202522; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 575.217391 504.396522
+L 575.217391 498.406957
+" clip-path="url(#p33a226b3ab)" style="fill: none; stroke: #202522; stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 650.086957 504.396522
+L 650.086957 498.406957
+" clip-path="url(#p33a226b3ab)" style="fill: none; stroke: #202522; stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #f5f2ea" transform="translate(716.478485 432.421155)">一号坑  PIT 1</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #f5f2ea" transform="translate(718.042821 444.733061)">230 × 62 m</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #f5f2ea" transform="translate(779.910012 274.051433)">二号坑  PIT 2</text>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #f5f2ea" transform="translate(781.295567 284.956264)">124 × 98 m</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 595.054831 340.625337
+L 618.342261 340.625337
+L 618.342261 325.908976
+L 595.054831 325.908976
+z
+" clip-path="url(#p33a226b3ab)" style="fill: #f5f2ea"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 645.04948 324.199979
+Q 620.848653 328.761807 596.647826 333.323636
+" style="fill: none; stroke: #202522; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 7.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #202522" x="626.128696" y="320.217391" transform="rotate(-0 626.128696 320.217391)">三号坑  PIT 3  28.8 × 24.57 m</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 914.633437 204.918261
+Q 928.102943 204.918261 940.566219 204.918261
+" style="fill: none; stroke: #202522; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 937.286219 203.278261
+L 940.566219 204.918261
+L 937.286219 206.558261
+z
+" style="fill: #202522; stroke: #202522; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #202522" x="910.633043" y="207.308433" transform="rotate(-0 910.633043 207.308433)">E</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 937.586087 239.034992
+Q 937.586087 228.217194 937.586087 218.405626
+" style="fill: none; stroke: #202522; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 935.946087 221.685626
+L 937.586087 218.405626
+L 939.226087 221.685626
+z
+" style="fill: #202522; stroke: #202522; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #202522" x="937.586087" y="249.574391" transform="rotate(-0 937.586087 249.574391)">N</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #202522" x="612.652174" y="493.914783" transform="rotate(-0 612.652174 493.914783)">50 m</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 6.2px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(850.30903 495.14089)">俑坑尺寸同一比例 · 坑间位置为概化</text>
+    <text style="font-size: 6.2px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(765.249874 502.976334)">PIT DIMENSIONS TO COMMON SCALE · PLACEMENT SCHEMATIC</text>
+   </g>
+  </g>
+  <g id="line2d_11">
+   <path d="M 506.016 557.28
+L 506.016 103.68
+" style="fill: none; stroke: #c9c4b8; stroke-width: 0.7; stroke-linecap: square"/>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 22px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #202522" x="55.44" y="33.696" transform="rotate(-0 55.44 33.696)">先看陵园，再看俑坑</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 11px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #56704f" x="55.44" y="60.264" transform="rotate(-0 55.44 60.264)">陵園から兵馬俑坑へ</text>
+  </g>
+  <g id="text_18">
+   <text style="font-weight: 700; font-size: 9.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #a8513e" x="952.56" y="48.6" transform="rotate(-0 952.56 48.6)">ONE MAUSOLEUM LANDSCAPE, TWO SCALES</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 6.4px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #5c625e" x="952.56" y="67.392" transform="rotate(-0 952.56 67.392)">SCHEMATIC ORIENTATION · NOT FOR SITE NAVIGATION</text>
+  </g>
+  <g id="text_20">
+   <text style="font-weight: 700; font-size: 9.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #a8513e" x="55.44" y="106.92" transform="rotate(-0 55.44 106.92)">01</text>
+  </g>
+  <g id="text_21">
+   <text style="font-weight: 700; font-size: 12.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #202522" x="80.64" y="106.92" transform="rotate(-0 80.64 106.92)">陵园尺度</text>
+  </g>
+  <g id="text_22">
+   <text style="font-weight: 700; font-size: 6.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #5c625e" x="80.64" y="125.712" transform="rotate(-0 80.64 125.712)">MAUSOLEUM LANDSCAPE</text>
+  </g>
+  <g id="text_23">
+   <text style="font-weight: 700; font-size: 9.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #a8513e" x="539.28" y="106.92" transform="rotate(-0 539.28 106.92)">02</text>
+  </g>
+  <g id="text_24">
+   <text style="font-weight: 700; font-size: 12.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #202522" x="564.48" y="106.92" transform="rotate(-0 564.48 106.92)">俑坑尺度</text>
+  </g>
+  <g id="text_25">
+   <text style="font-weight: 700; font-size: 6.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #5c625e" x="564.48" y="125.712" transform="rotate(-0 564.48 125.712)">THREE PRINCIPAL WARRIOR PITS</text>
+  </g>
+  <g id="text_26">
+   <text style="font-size: 6px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(55.44 608.017313)">原创建筑关系示意，不是考古测绘图 / 独自作成の模式図・考古測量図ではない</text>
+   <text style="font-size: 6px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(55.44 615.6)">ORIGINAL SCHEMATIC · NO SOURCE FIGURE COPIED · NOT AN EXCAVATION SURVEY</text>
+  </g>
+  <g id="text_27">
+   <text style="font-size: 5.9px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(888.143984 608.020159)">LazyTravel · lazying.art</text>
+   <text style="font-size: 5.9px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #5c625e" transform="translate(792.951172 615.6)">Sources: Qinshihuang Mausoleum Site Museum · UNESCO</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p095a703827">
+   <rect x="55.44" y="145.8" width="418.32" height="414.72"/>
+  </clipPath>
+  <clipPath id="p33a226b3ab">
+   <rect x="539.28" y="186.949565" width="413.28" height="332.42087"/>
+  </clipPath>
+ </defs>
+</svg>

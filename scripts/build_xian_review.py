@@ -19,7 +19,11 @@ BOOK_PATH = ROOT / "data/china/cities/xian/book.json"
 BOOK_SCHEMA = ROOT / "schemas/destination-book.schema.json"
 SOURCE_CATALOG = ROOT / "data/sources/catalog.json"
 SOURCE_SCHEMA = ROOT / "schemas/source-catalog.schema.json"
-CHAPTER_IDS = ("ch01-ground-before-time", "ch02-capitals-on-different-maps")
+CHAPTER_IDS = (
+    "ch01-ground-before-time",
+    "ch02-capitals-on-different-maps",
+    "ch03-army-under-earth",
+)
 BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
 DIST_PDF = DIST_DIR / "xian-pocket-review.pdf"
@@ -147,13 +151,16 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "scripts/build_xian_review.py",
         ROOT / "scripts/build_xian_orientation_map.py",
         ROOT / "scripts/build_xian_capital_layers_map.py",
+        ROOT / "scripts/build_xian_qin_mausoleum_pits_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
         ROOT / "data/maps/xian/xian-before-walls.config.json",
         ROOT / "data/maps/xian/xian-before-walls.geojson",
         ROOT / "data/maps/xian/xian-capital-layers.config.json",
+        ROOT / "data/maps/xian/xian-qin-mausoleum-pits.config.json",
         ROOT / "data/images/xian/xian-daming-site-impression.prompt.md",
+        ROOT / "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
     }
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
     used_asset_ids = {
@@ -220,6 +227,7 @@ def main() -> int:
     if not args.skip_map:
         run([sys.executable, "scripts/build_xian_orientation_map.py"])
         run([sys.executable, "scripts/build_xian_capital_layers_map.py"])
+        run([sys.executable, "scripts/build_xian_qin_mausoleum_pits_map.py"])
     run(
         [
             sys.executable,

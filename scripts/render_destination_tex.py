@@ -74,7 +74,7 @@ def reading_tokens_tex(layer: dict[str, Any], command: str) -> str:
             token_text[:1] in CLOSING_PUNCTUATION
             or previous_text[-1:] in OPENING_PUNCTUATION
         ):
-            pieces.append(r"\nobreak")
+            pieces.append(r"\nobreak{}")
         base = tex_escape(token_text)
         reading = token.get("reading")
         if reading:

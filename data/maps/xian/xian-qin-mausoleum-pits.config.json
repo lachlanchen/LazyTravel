@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "xian-qin-mausoleum-pits",
+  "snapshot_date": "2026-08-14",
+  "title": {
+    "zh": "先看陵园，再看俑坑",
+    "ja": "陵園から兵馬俑坑へ",
+    "en": "ONE MAUSOLEUM LANDSCAPE, TWO SCALES"
+  },
+  "landscape": {
+    "mound_km": [0.0, 0.48],
+    "warrior_sector_km": [1.5, 0.48],
+    "reported_distance_km": 1.5,
+    "note": "The 1.5 km relationship is taken from the museum collections overview; symbols are not surveyed footprints."
+  },
+  "pits": [
+    {
+      "id": "pit-1",
+      "label": "一号坑  PIT 1",
+      "shape": "rectangle",
+      "origin_m": [0.0, 0.0],
+      "length_m": 230.0,
+      "width_m": 62.0,
+      "color": "#A8513E",
+      "note": "Published dimensions shown to a common scale. Interior corridor marks are explanatory generalizations."
+    },
+    {
+      "id": "pit-2",
+      "label": "二号坑  PIT 2",
+      "shape": "northeast-projecting-l",
+      "origin_m": [106.0, 82.0],
+      "length_m": 124.0,
+      "width_m": 98.0,
+      "color": "#3F7180",
+      "note": "Published dimensions shown to a common scale. L-shaped footprint is generalized; placement reflects the reported 20 m gap north of Pit 1's east end."
+    },
+    {
+      "id": "pit-3",
+      "label": "三号坑  PIT 3",
+      "shape": "concave-symbol",
+      "origin_m": [0.0, 87.0],
+      "length_m": 28.8,
+      "width_m": 24.57,
+      "color": "#56704F",
+      "note": "Published dimensions shown to a common scale. Concave plan is symbolized; placement reflects the reported 25 m gap north of Pit 1's west end."
+    }
+  ],
+  "sources": [
+    {
+      "id": "qin-museum-collections",
+      "url": "https://www.bmy.com.cn/collection.html",
+      "use": "warrior-pit sector about 1.5 km east of the burial mound"
+    },
+    {
+      "id": "qin-museum-pit-1",
+      "url": "https://www.bmy.com.cn/pitone.html",
+      "use": "Pit 1 dimensions, orientation, discovery, and underground earth-and-timber structure"
+    },
+    {
+      "id": "qin-museum-pit-2",
+      "url": "https://www.bmy.com.cn/pittwo.html",
+      "use": "Pit 2 dimensions, L-shaped plan, and reported position 20 m north of Pit 1's east end"
+    },
+    {
+      "id": "qin-museum-pit-3",
+      "url": "https://www.bmy.com.cn/pitthree.html",
+      "use": "Pit 3 dimensions, concave plan, and reported position 25 m north of Pit 1's west end"
+    },
+    {
+      "id": "unesco-qin-mausoleum",
+      "url": "https://whc.unesco.org/en/list/441",
+      "use": "mausoleum-complex scale and distinction between mound, accompanying pits, tombs, and architectural remains"
+    },
+    {
+      "id": "xian-history-1981",
+      "locator": "西安史话, extracted PDF source-page shard 49-60, mausoleum and 1974 discovery section",
+      "use": "historical research lead only; no source figure copied"
+    }
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-14",
+    "notes": [
+      "The 5600 x 3600 render and 1890 px B6 landscape reduction were reviewed; dimensions, directions, scale, and cautions remain legible.",
+      "Pit dimensions share one scale; inter-pit placement and shapes are explicitly identified as schematic.",
+      "The 1344 px SVG was reviewed in the website's pannable 390 x 844 viewport; the map remains wider than the viewport, pans without page overflow, and keeps its labels legible.",
+      "Mobile evidence: build/qa/site/xian/mobile-ch03-map.png, SHA-256 a48d85463193be0af715e895d8e35ac0fa367ba0466d9c96932b6e3557fbf40a."
+    ]
+  }
+}

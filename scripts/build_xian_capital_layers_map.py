@@ -69,6 +69,7 @@ def configure_fonts() -> None:
             "font.sans-serif": ["Noto Sans CJK JP"],
             "axes.unicode_minus": False,
             "svg.fonttype": "none",
+            "svg.hashsalt": "lazytravel-xian-capital-layers-v1",
             "pdf.fonttype": 42,
         }
     )

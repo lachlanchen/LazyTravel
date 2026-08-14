@@ -57,7 +57,7 @@ class DestinationTexTests(unittest.TestCase):
         layer = {"tokens": [{"text": "西安", "reading": "xī'ān"}, {"text": "。"}]}
         self.assertEqual(
             reading_tokens_tex(layer, "LTRubyZH"),
-            r"\LTRubyZH{西安}{xī'ān}\nobreak。",
+            r"\LTRubyZH{西安}{xī'ān}\nobreak{}。",
         )
 
     def test_reading_tokens_bind_opening_and_closing_punctuation(self) -> None:
@@ -71,8 +71,21 @@ class DestinationTexTests(unittest.TestCase):
             ]
         }
         rendered = reading_tokens_tex(layer, "LTRubyZH")
-        self.assertIn(r"\LTRubyZH{前}{qián}\nobreak，\allowbreak{}", rendered)
-        self.assertIn(r"「\nobreak\LTRubyZH{后}{hòu}\nobreak」", rendered)
+        self.assertIn(r"\LTRubyZH{前}{qián}\nobreak{}，\allowbreak{}", rendered)
+        self.assertIn(r"「\nobreak{}\LTRubyZH{后}{hòu}\nobreak{}」", rendered)
+
+    def test_opening_punctuation_terminates_nobreak_before_plain_kana(self) -> None:
+        layer = {
+            "tokens": [
+                {"text": "「"},
+                {"text": "すべて"},
+                {"text": "」"},
+            ]
+        }
+        self.assertEqual(
+            reading_tokens_tex(layer, "LTRubyJA"),
+            r"「\nobreak{}すべて\nobreak{}」",
+        )
 
     def test_figure_block_renders_disclosed_trilingual_caption(self) -> None:
         block = {
