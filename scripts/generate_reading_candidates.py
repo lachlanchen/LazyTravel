@@ -51,10 +51,16 @@ ZH_OVERRIDES = {
     "临潼": "líntóng",
     "陵园": "língyuán",
     "龙首原": "lóngshǒuyuán",
+    "大慈恩寺": "dàcí'ēnsì",
     "大明宫": "dàmínggōng",
+    "大秦景教流行中国碑": "dàqín jǐngjiào liúxíng zhōngguó bēi",
+    "大唐三藏圣教序": "dàtáng sānzàng shèngjiàoxù",
     "大兴城": "dàxīngchéng",
     "大雁塔": "dàyàntǎ",
     "明清西安": "míng-qīng xī'ān",
+    "碑林": "bēilín",
+    "传拓": "chuántà",
+    "拓包": "tàbāo",
     "哪个": "nǎge",
     "秦岭": "qínlǐng",
     "秦咸阳": "qín xiányáng",
@@ -67,17 +73,41 @@ ZH_OVERRIDES = {
     "陶俑": "táoyǒng",
     "未央宫": "wèiyānggōng",
     "少陵原": "shàolíngyuán",
+    "舍利": "shèlì",
     "隋大兴": "suí dàxīng",
     "隋大兴城": "suí dàxīngchéng",
     "外郭城": "wàiguōchéng",
     "一号坑": "yīhàokēng",
+    "一行行": "yīhángháng",
     "俑坑": "yǒngkēng",
     "台塬": "táiyuán",
     "唐长安": "táng cháng'ān",
     "唐长安城": "táng cháng'ānchéng",
+    "褚遂良": "chǔ suìliáng",
+    "荐福寺": "jiànfúsì",
+    "密檐式": "mìyánshì",
+    "景教": "jǐngjiào",
+    "景净": "jǐngjìng",
+    "经卷": "jīngjuàn",
+    "开成石经": "kāichéng shíjīng",
+    "吕大忠": "lǚ dàzhōng",
+    "吕秀岩": "lǚ xiùyán",
+    "墨拓": "mòtà",
+    "石台孝经": "shítái xiàojīng",
+    "拓本": "tàběn",
+    "拓片": "tàpiàn",
+    "稍干": "shāogān",
+    "重刻": "chóngkè",
+    "重排": "chóngpái",
     "西安": "xī'ān",
+    "西安碑林博物馆": "xī'ān bēilín bówùguǎn",
+    "西安博物院": "xī'ān bówùyuàn",
     "西安府": "xī'ānfǔ",
     "小雁塔": "xiǎoyàntǎ",
+    "玄奘": "xuánzàng",
+    "聂斯脱里": "nièsītuōlǐ",
+    "叙利亚": "xùlìyà",
+    "义净": "yìjìng",
     "奉元路": "fèngyuánlù",
     "南大街": "nándàjiē",
     "镐京": "hàojīng",
@@ -93,6 +123,9 @@ ZH_OVERRIDES = {
     "丽山园": "lìshānyuán",
     "弩兵": "nǔbīng",
     "夯土": "hāngtǔ",
+    "官网": "guānwǎng",
+    "神合": "shénhé",
+    "译场": "yìchǎng",
 }
 
 JA_OVERRIDES = {
@@ -122,11 +155,16 @@ JA_OVERRIDES = {
     "陵園": "りょうえん",
     "月": "がつ",
     "龍首原": "りゅうしゅげん",
+    "大慈恩寺": "だいじおんじ",
     "大明宮": "だいめいきゅう",
+    "大秦景教流行中国碑": "だいしんけいきょうりゅうこうちゅうごくひ",
+    "大唐三蔵聖教序": "だいとうさんぞうしょうぎょうじょ",
     "大街": "だいがい",
     "大雁塔": "だいがんとう",
     "明清西安": "みんしんせいあん",
     "明代": "みんだい",
+    "密檐式": "みつえんしき",
+    "七層": "しちそう",
     "韓建": "かんけん",
     "秦嶺": "しんれい",
     "秦咸陽": "しんかんよう",
@@ -151,9 +189,25 @@ JA_OVERRIDES = {
     "俑坑": "ようこう",
     "唐長安": "とうちょうあん",
     "唐長安城": "とうちょうあんじょう",
+    "訳場": "やくじょう",
+    "碑林": "ひりん",
+    "景教": "けいきょう",
+    "景浄": "けいじょう",
+    "開成石経": "かいせいせっけい",
+    "呂秀岩": "りょしゅうがん",
+    "墨拓": "ぼくたく",
+    "石台孝経": "せきだいこうきょう",
+    "拓本": "たくほん",
+    "褚遂良": "ちょすいりょう",
     "西安": "せいあん",
+    "西安碑林博物館": "せいあんひりんはくぶつかん",
+    "西安博物院": "せいあんはくぶついん",
     "西安府": "せいあんふ",
     "小雁塔": "しょうがんとう",
+    "薦福寺": "せんぷくじ",
+    "薦福寺塔": "せんぷくじとう",
+    "玄奘": "げんじょう",
+    "義浄": "ぎじょう",
     "奉元路": "ほうげんろ",
     "南大街": "なんだいがい",
     "潏河": "けつが",
@@ -165,6 +219,11 @@ JA_OVERRIDES = {
     "灞河": "はが",
     "弩兵": "どへい",
     "麗山園": "れいざんえん",
+    "神合": "しんごう",
+    "国子監": "こくしかん",
+    "呂大忠": "りょだいちゅう",
+    "114石": "ひゃくじゅうよんせき",
+    "火曜日": "かようび",
 }
 
 
@@ -242,7 +301,11 @@ def ja_tokens(value: str, tagger: Tagger) -> list[dict[str, str]]:
     return pieces
 
 
-def add_candidates(document: dict[str, Any], status: str = "candidate") -> dict[str, Any]:
+def add_candidates(
+    document: dict[str, Any],
+    status: str = "candidate",
+    chapter_ids: set[str] | None = None,
+) -> dict[str, Any]:
     tagger = unidic_tagger()
     review_note = (
         "Reviewed against the chapter-specific reading audit."
@@ -250,6 +313,8 @@ def add_candidates(document: dict[str, Any], status: str = "candidate") -> dict[
         else "Machine-assisted candidate; editorial review required before publication."
     )
     for chapter in document["chapters"]:
+        if chapter_ids is not None and chapter["id"] not in chapter_ids:
+            continue
         for block in chapter["blocks"]:
             block["readings"] = {
                 "zh": {
@@ -278,15 +343,32 @@ def main() -> int:
         default="candidate",
         help="mark generated layers reviewed only after completing the editorial audit",
     )
+    parser.add_argument(
+        "--chapter",
+        action="append",
+        dest="chapter_ids",
+        help="update only this chapter; may be repeated (default: all chapters)",
+    )
     args = parser.parse_args()
 
     for word in ZH_OVERRIDES:
         jieba.add_word(word, freq=2_000_000)
     document = json.loads(args.book.read_text(encoding="utf-8"))
+    chapter_ids = set(args.chapter_ids) if args.chapter_ids else None
+    if chapter_ids is not None:
+        known_ids = {chapter["id"] for chapter in document["chapters"]}
+        unknown_ids = sorted(chapter_ids - known_ids)
+        if unknown_ids:
+            parser.error(f"unknown chapter id(s): {', '.join(unknown_ids)}")
     output = args.output.resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(
-        json.dumps(add_candidates(document, args.status), ensure_ascii=False, indent=2) + "\n",
+        json.dumps(
+            add_candidates(document, args.status, chapter_ids),
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
         encoding="utf-8",
     )
     print(f"reading candidates: {output}")

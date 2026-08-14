@@ -211,12 +211,16 @@ def bibliography_tex(
         r"\addcontentsline{toc}{chapter}{资料来源 · 出典 · Sources}",
         (
             r"{\fontsize{8.5}{12.5}\selectfont\color{LTMuted}"
-            r"Only sources cited in these chapters are listed. Access date: 2026-08-14.\par}"
+            r"Only sources cited in these chapters are listed. Each entry carries its "
+            r"own access date.\par}"
         ),
     ]
     for citation_id in ordered_ids:
         citation = citations[citation_id]
-        details = [tex_escape(citation["locator"])]
+        details = [
+            tex_escape(citation["locator"]),
+            f"Checked {tex_escape(citation['accessed_at'])}",
+        ]
         if citation.get("license"):
             details.append(f"License: {tex_escape(citation['license'])}")
         link = ""
@@ -256,7 +260,11 @@ def render_document(document: dict[str, Any], chapter_ids: str | list[str]) -> s
         cover_tex(book, chapters),
         publication_note_tex(book),
         r"\frontmatter",
+        r"\begingroup",
+        r"\hyphenpenalty=10000",
+        r"\exhyphenpenalty=10000",
         r"\tableofcontents",
+        r"\endgroup",
         r"\mainmatter",
     ]
     for chapter in chapters:

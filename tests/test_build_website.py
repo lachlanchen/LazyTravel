@@ -13,6 +13,7 @@ from build_website import (  # noqa: E402
     DEFAULT_BOOK,
     build,
     public_projection,
+    public_provenance,
     validate_output,
 )
 
@@ -27,6 +28,26 @@ class WebsiteBuildTests(unittest.TestCase):
         self.assertEqual(projected["chapters"], self.document["chapters"])
         self.assertTrue(any("path" in citation for citation in self.document["citations"]))
         self.assertTrue(all("path" not in citation for citation in projected["citations"]))
+
+    def test_public_provenance_strips_only_local_coordinates(self) -> None:
+        provenance = {
+            "sources": [
+                {
+                    "id": "external-guide",
+                    "path": "/home/lachlan/ProjectsLFS/Books/guide.json",
+                    "use": "coordinates only",
+                },
+                {
+                    "id": "project-map",
+                    "path": "data/maps/xian/map.json",
+                    "url": "https://example.test/map",
+                },
+            ]
+        }
+        projected = public_provenance(provenance)
+        self.assertNotIn("path", projected["sources"][0])
+        self.assertEqual(projected["sources"][0]["use"], "coordinates only")
+        self.assertEqual(projected["sources"][1], provenance["sources"][1])
 
     def test_build_preserves_aligned_content_and_readings(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
@@ -56,8 +77,12 @@ class WebsiteBuildTests(unittest.TestCase):
 
     def test_static_renderer_has_no_external_runtime_dependency(self) -> None:
         index = (ROOT / "website/index.html").read_text(encoding="utf-8")
+        javascript = (ROOT / "website/app.js").read_text(encoding="utf-8")
         self.assertNotIn("https://cdn", index)
         self.assertNotIn("<script src=\"http", index)
+        self.assertNotIn("Accessed 2026-08-14", javascript)
+        self.assertIn("citation.accessed_at", javascript)
+        self.assertIn("RUBBING ON A MODERN REPLICA", javascript)
 
 
 if __name__ == "__main__":

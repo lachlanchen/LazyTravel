@@ -24,11 +24,11 @@ japan/prefectures/<prefecture>
 world/countries/<country>
 ```
 
-Current verified milestone: Xi'an Chapters 1-2, `18` aligned content blocks,
-`30` B6 pages, two original maps, and one disclosed realistic editorial figure.
-The Xi'an outline contains exactly `11` chapters; Chapter 7 is the dedicated
-nearby-area chapter for Huashan, Lintong, Han Yangling, selected Qinling
-foothills, and western imperial landscapes.
+Current verified milestone: Xi'an Chapters 1-4, `38` aligned content blocks,
+`59` B6 pages, four reproducible maps, and three disclosed realistic editorial
+figures. The Xi'an outline contains exactly `11` chapters; Chapter 7 is the
+dedicated nearby-area chapter for Huashan, Lintong, Han Yangling, selected
+Qinling foothills, and western imperial landscapes.
 
 ## Source Boundary
 
@@ -82,9 +82,9 @@ Use `--skip-map` only when checking the book layout against the already
 committed map variants.
 
 The website build writes an ignored static preview to `site/`. It reads the
-same aligned destination JSON as the pocket book, removes only private local
-source paths from the browser payload, and rejects text, reading, citation, or
-asset drift before writing `site/manifest.json`.
+same aligned destination JSON as the pocket book, removes private local source
+paths from the browser payload and public asset-provenance copies, and rejects
+text, reading, citation, or asset drift before writing `site/manifest.json`.
 
 Serve the generated site in one terminal and run browser QA in another:
 

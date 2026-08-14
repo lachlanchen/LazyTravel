@@ -1,0 +1,102 @@
+{
+  "asset_id": "asset-xian-written-word-route-map",
+  "command": "python3 scripts/build_xian_written_word_route_map.py",
+  "config": {
+    "path": "data/maps/xian/xian-written-word-route.config.json",
+    "sha256": "c377eb716fe51a6c69594beadb2fb8be9f626ee645c8d5c8c8e7dde69dc1ccae"
+  },
+  "created_at": "2026-08-15",
+  "declared_generalizations": [
+    {
+      "id": "tang-outer-city",
+      "note": "Generalized outer-city field reused from the reviewed Chapter 2 synthesis; not an archaeological, cadastral, or access boundary."
+    },
+    {
+      "id": "written-word-route",
+      "note": "Straight schematic joins express the chapter's south-to-north reading sequence. They are not a street route, transit line, or walking-distance measurement."
+    },
+    {
+      "id": "big-wild-goose-pagoda",
+      "note": "Coordinate from the pinned English open-guide API snapshot, used for orientation only."
+    },
+    {
+      "id": "small-wild-goose-pagoda",
+      "note": "Coordinate from the pinned English open-guide API snapshot, used for orientation only."
+    },
+    {
+      "id": "beilin-museum",
+      "note": "Coordinate from the pinned English open-guide API snapshot, used for orientation only."
+    }
+  ],
+  "files": {
+    "xian-written-word-route.pdf": {
+      "bytes": 53176,
+      "sha256": "7ec16dc772a3567e55217dc54412910e12102b5a5b133faf26682c15eac25be7"
+    },
+    "xian-written-word-route.png": {
+      "bytes": 420022,
+      "sha256": "66eeec039a907db64883189b4ebc1eb83f41052b0692d80eaf2bc6106928035d"
+    },
+    "xian-written-word-route.svg": {
+      "bytes": 27045,
+      "sha256": "7b747d7bf35e0aec5fcba2fb42aa354268d8d7bb9aacf22f19ba4606f89e4d41"
+    }
+  },
+  "method": "map-render",
+  "present_geography": {
+    "path": "data/maps/xian/xian-before-walls.geojson",
+    "sha256": "04b214a49344bebd59e134ae1d3fe8308f9c7185806975b4a41288f51b1f2845"
+  },
+  "rights": "Map design © LazyTravel; present wall geometry © OpenStreetMap contributors, ODbL 1.0; open-guide coordinates CC BY-SA 4.0.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "xian-open-guide-en",
+      "license": "CC BY-SA 4.0",
+      "path": "/home/lachlan/ProjectsLFS/Books/resources/curated-books/travel-guides/xian-gansu-open-guides/xian/en/source-pages/01-xian-en.json",
+      "revision_id": 5297771,
+      "use": "Pinned attraction coordinates only; listings, prose, prices, routes, and hours not reused."
+    },
+    {
+      "id": "xian-before-walls-osm",
+      "license": "ODbL 1.0",
+      "osm_id": "R3450809",
+      "path": "data/maps/xian/xian-before-walls.geojson",
+      "url": "https://www.openstreetmap.org/copyright",
+      "use": "Present Xi'an city-wall geometry."
+    },
+    {
+      "id": "xian-capital-layers-reviewed",
+      "path": "data/maps/xian/xian-capital-layers.config.json",
+      "use": "Reviewed generalized Sui-Tang outer-city field."
+    },
+    {
+      "id": "unesco-changan-tianshan-corridor",
+      "license": "CC BY-SA IGO 3.0",
+      "url": "https://whc.unesco.org/en/list/1442",
+      "use": "Heritage context for the two pagoda component sites."
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 3600,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      5600,
+      3600
+    ],
+    "schematic_join_length_km": 5.237,
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "Original 5600 x 3600 px render and 1240 px B6-width proof were reviewed; numbered sites, present wall, Tang field, scale, and route disclaimer remain legible.",
+      "Chinese site labels and English secondary labels remain separated with no clipped text or leader-line collisions.",
+      "The synchronized website presents the selectable-text SVG in the existing pannable mobile map viewport rather than shrinking the full composition to 390 px."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-15"
+  }
+}

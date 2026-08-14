@@ -23,12 +23,13 @@ CHAPTER_IDS = (
     "ch01-ground-before-time",
     "ch02-capitals-on-different-maps",
     "ch03-army-under-earth",
+    "ch04-let-text-lead",
 )
 BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
 DIST_PDF = DIST_DIR / "xian-pocket-review.pdf"
 DIST_MANIFEST = DIST_DIR / "xian-pocket-review.manifest.json"
-SOURCE_DATE_EPOCH = "1786636800"
+SOURCE_DATE_EPOCH = "1786723200"
 EXPECTED_PAGE_POINTS = (125 / 25.4 * 72, 176 / 25.4 * 72)
 LOG_REJECTION = re.compile(
     r"Overfull|Underfull|Missing character|LaTeX Warning|Package .* Warning|"
@@ -152,6 +153,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "scripts/build_xian_orientation_map.py",
         ROOT / "scripts/build_xian_capital_layers_map.py",
         ROOT / "scripts/build_xian_qin_mausoleum_pits_map.py",
+        ROOT / "scripts/build_xian_written_word_route_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
@@ -159,8 +161,10 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/maps/xian/xian-before-walls.geojson",
         ROOT / "data/maps/xian/xian-capital-layers.config.json",
         ROOT / "data/maps/xian/xian-qin-mausoleum-pits.config.json",
+        ROOT / "data/maps/xian/xian-written-word-route.config.json",
         ROOT / "data/images/xian/xian-daming-site-impression.prompt.md",
         ROOT / "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
+        ROOT / "data/images/xian/xian-rubbing-replica-demonstration.prompt.md",
     }
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
     used_asset_ids = {
@@ -190,7 +194,7 @@ def write_manifest(
         "schema_version": 1,
         "artifact": str(DIST_PDF.relative_to(ROOT)),
         "chapter_ids": list(CHAPTER_IDS),
-        "build_date": "2026-08-14",
+        "build_date": "2026-08-15",
         "source_date_epoch": int(SOURCE_DATE_EPOCH),
         "command": "python3 scripts/build_xian_review.py",
         "inputs": {
@@ -228,6 +232,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_xian_orientation_map.py"])
         run([sys.executable, "scripts/build_xian_capital_layers_map.py"])
         run([sys.executable, "scripts/build_xian_qin_mausoleum_pits_map.py"])
+        run([sys.executable, "scripts/build_xian_written_word_route_map.py"])
     run(
         [
             sys.executable,
@@ -285,11 +290,11 @@ def main() -> int:
         abs(actual - expected) > 0.25 for actual, expected in zip(page_size, EXPECTED_PAGE_POINTS)
     ):
         raise RuntimeError(f"PDF is not B6 125 x 176 mm: {page_size[0]} x {page_size[1]} pt")
-    if page_count < 25:
+    if page_count < 50:
         raise RuntimeError(f"unexpectedly short review PDF: {page_count} pages")
     text = run(["pdftotext", str(pdf), "-"])
     text_characters = len("".join(text.split()))
-    if text_characters < 10_000:
+    if text_characters < 55_000:
         raise RuntimeError(f"PDF text layer is unexpectedly short: {text_characters} characters")
 
     DIST_DIR.mkdir(parents=True, exist_ok=True)

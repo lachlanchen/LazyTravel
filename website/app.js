@@ -20,6 +20,8 @@ const assetLabels = {
   "asset-xian-before-walls-map": "XI'AN BEFORE THE WALLS",
   "asset-xian-capital-layers-map": "SUCCESSIVE CAPITALS, DIFFERENT SITES",
   "asset-xian-daming-site-impression": "DAMING PALACE · SITE-SCALE IMPRESSION",
+  "asset-xian-written-word-route-map": "PAGODAS TO BEILIN · WRITTEN-WORD ROUTE",
+  "asset-xian-rubbing-replica-demonstration": "RUBBING ON A MODERN REPLICA",
 };
 const state = {
   document: null,
@@ -274,7 +276,11 @@ function renderSources(documentData, chapter) {
   section.id = "sources";
   section.append(
     element("h2", "", "资料来源 · 出典 · Sources"),
-    element("p", "sources-note", "Only sources cited in this chapter · Accessed 2026-08-14"),
+    element(
+      "p",
+      "sources-note",
+      "Only sources cited in this chapter · Each source shows its checked date",
+    ),
   );
   const list = element("ol", "source-list");
   for (const citationId of citationOrder(chapter)) {
@@ -294,7 +300,7 @@ function renderSources(documentData, chapter) {
     } else {
       title.textContent = citation.title;
     }
-    const details = [citation.locator];
+    const details = [citation.locator, `Checked ${citation.accessed_at}`];
     if (citation.license) details.push(citation.license);
     body.append(title, element("p", "source-detail", details.join(" · ")));
     item.append(body);

@@ -122,6 +122,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
     chapter_1 = "ch01-ground-before-time"
     chapter_2 = "ch02-capitals-on-different-maps"
     chapter_3 = "ch03-army-under-earth"
+    chapter_4 = "ch04-let-text-lead"
     report: dict[str, Any] = {
         "url": url,
         "browser": chrome,
@@ -208,6 +209,20 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 desktop, counts[chapter_3], "desktop chapter 3"
             )
             desktop.screenshot(path=output / "desktop-ch03.png", full_page=True)
+
+            desktop.locator(f'[data-chapter-id="{chapter_4}"]').click()
+            desktop.wait_for_selector("#ch04-b001")
+            desktop.locator(".editorial-figure").scroll_into_view_if_needed()
+            desktop.wait_for_function(
+                """() => {
+                  const image = document.querySelector('.figure-image');
+                  return image && image.complete && image.naturalWidth >= 1200;
+                }"""
+            )
+            report["viewports"]["desktop_ch04"] = assert_core_render(
+                desktop, counts[chapter_4], "desktop chapter 4"
+            )
+            desktop.screenshot(path=output / "desktop-ch04.png", full_page=True)
             desktop_context.close()
 
             mobile_context = browser.new_context(
@@ -283,6 +298,35 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             mobile.locator(".editorial-figure").scroll_into_view_if_needed()
             mobile.locator(".editorial-figure").screenshot(
                 path=output / "mobile-ch03-figure.png"
+            )
+
+            mobile_url = f"{url.rstrip('/')}?chapter={chapter_4}"
+            mobile.goto(mobile_url, wait_until="networkidle")
+            report["viewports"]["mobile_ch04"] = assert_core_render(
+                mobile, counts[chapter_4], "mobile chapter 4"
+            )
+            if mobile.locator("#chapter-select").input_value() != chapter_4:
+                raise RuntimeError("mobile chapter menu did not select Chapter 4")
+            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
+            mobile.wait_for_function(
+                """() => {
+                  const image = document.querySelector('.figure-image');
+                  return image && image.complete && image.naturalWidth >= 1200;
+                }"""
+            )
+            map_overflow = mobile.locator(".map-viewport").evaluate(
+                "node => ({client: node.clientWidth, scroll: node.scrollWidth})"
+            )
+            if map_overflow["scroll"] <= map_overflow["client"]:
+                raise RuntimeError(
+                    f"Chapter 4 mobile map lacks a legible scroll viewport: {map_overflow}"
+                )
+            mobile.screenshot(path=output / "mobile-ch04.png", full_page=True)
+            mobile.locator(".map-figure").scroll_into_view_if_needed()
+            mobile.locator(".map-figure").screenshot(path=output / "mobile-ch04-map.png")
+            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
+            mobile.locator(".editorial-figure").screenshot(
+                path=output / "mobile-ch04-figure.png"
             )
             mobile_context.close()
         finally:

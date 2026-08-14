@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-rubbing-replica-demonstration",
+  "created_at": "2026-08-15",
+  "method": "generated",
+  "generator": "OpenAI built-in image generation",
+  "source_images": [],
+  "prompt": {
+    "path": "data/images/xian/xian-rubbing-replica-demonstration.prompt.md",
+    "sha256": "3f1479d555d22898f9eda23af20b1ebb962555ca9eae0eb468aa25b21e7db1f2"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-rubbing-replica-demonstration.png",
+    "sha256": "bacbb717d597c05b047090e1f0ad5be7a08ec1506f09640b5086d2d6c9a1d6f1",
+    "bytes": 2393396,
+    "pixels": [
+      1536,
+      1024
+    ],
+    "color_space": "sRGB"
+  },
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_width": "pass",
+    "content": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "evidence": "build/qa/images/xian/ch04/xian-rubbing-replica-demonstration-b6-width.png",
+    "notes": [
+      "Both visible hands have coherent anatomy, relaxed contact, and a plausible tamping grip at full resolution and at 1240 px B6 print width.",
+      "The xuan paper, tamping pads, ink dish, pressing brush, mister, foam support, cast slab edge, and blank inventory tabs remain legible without crowding.",
+      "The slab is visibly a modern horizontal teaching replica; the image contains no real monument, historic room, readable inscription, pseudo-character, label, logo, or watermark.",
+      "The image communicates process only. Captions and prose must identify it as AI-generated, non-documentary, and unsuitable as permission to rub original heritage."
+    ]
+  },
+  "rights": "Generated for LazyTravel by OpenAI image generation; editorial illustration with explicit non-documentary and modern-replica disclosure."
+}

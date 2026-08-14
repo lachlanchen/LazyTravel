@@ -34,6 +34,22 @@ def public_projection(document: dict[str, Any]) -> dict[str, Any]:
     return projected
 
 
+def public_provenance(value: Any) -> Any:
+    """Remove local filesystem coordinates from a publishable provenance record."""
+    if isinstance(value, dict):
+        return {
+            key: public_provenance(item)
+            for key, item in value.items()
+            if not (
+                isinstance(item, str)
+                and (item.startswith("/home/") or "ProjectsLFS" in item)
+            )
+        }
+    if isinstance(value, list):
+        return [public_provenance(item) for item in value]
+    return value
+
+
 def asset_paths(document: dict[str, Any]) -> set[Path]:
     paths: set[Path] = set()
     for asset in document["assets"]:
@@ -150,7 +166,15 @@ def build(book_path: Path, output: Path) -> dict[str, int]:
     for source_path in asset_paths(document):
         destination = output / source_path.relative_to(ROOT)
         destination.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(source_path, destination)
+        if source_path.name.endswith(".provenance.json"):
+            provenance = json.loads(source_path.read_text(encoding="utf-8"))
+            destination.write_text(
+                json.dumps(public_provenance(provenance), ensure_ascii=False, indent=2)
+                + "\n",
+                encoding="utf-8",
+            )
+        else:
+            shutil.copyfile(source_path, destination)
 
     payload = public_projection(document)
     payload["_build"] = {

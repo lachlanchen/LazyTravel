@@ -2,12 +2,14 @@ from __future__ import annotations
 
 import sys
 import unittest
+from copy import deepcopy
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from generate_reading_candidates import (  # noqa: E402
+    add_candidates,
     katakana_to_hiragana,
     pinyin_for_word,
     zh_tokens,
@@ -32,6 +34,50 @@ class ReadingLayerTests(unittest.TestCase):
         self.assertTrue(valid_pinyin("xī'ān"))
         self.assertTrue(valid_furigana("しょうろう"))
         self.assertFalse(valid_furigana("鐘楼"))
+
+    def test_chapter_filter_preserves_other_reviewed_layers(self) -> None:
+        reviewed = {
+            "zh": {
+                "system": "hanyu-pinyin-tone-marks",
+                "status": "reviewed",
+                "review_notes": ["keep"],
+                "tokens": [{"text": "西安", "reading": "xī'ān"}],
+            },
+            "ja": {
+                "system": "furigana",
+                "status": "reviewed",
+                "review_notes": ["keep"],
+                "tokens": [{"text": "西安", "reading": "せいあん"}],
+            },
+        }
+        document = {
+            "chapters": [
+                {
+                    "id": "ch01",
+                    "blocks": [
+                        {
+                            "text": {"zh": "西安", "ja": "西安"},
+                            "readings": deepcopy(reviewed),
+                        }
+                    ],
+                },
+                {
+                    "id": "ch04",
+                    "blocks": [
+                        {
+                            "text": {"zh": "碑林", "ja": "碑林"},
+                            "readings": {},
+                        }
+                    ],
+                },
+            ]
+        }
+        result = add_candidates(document, chapter_ids={"ch04"})
+        self.assertEqual(result["chapters"][0]["blocks"][0]["readings"], reviewed)
+        self.assertEqual(
+            result["chapters"][1]["blocks"][0]["readings"]["zh"]["tokens"],
+            [{"text": "碑林", "reading": "bēilín"}],
+        )
 
 
 if __name__ == "__main__":
