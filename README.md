@@ -66,8 +66,8 @@ python3 scripts/build_xian_review.py
 This regenerates the committed orientation-map variants from normalized map
 data, validates both JSON contracts, renders the aligned Chapter 1 content,
 runs XeLaTeX twice with a fixed source date, and rejects malformed PDFs, TeX
-warnings, unembedded fonts, or a missing text layer. The reviewed PDF and its
-hash manifest are written to ignored `dist/books/xian/`.
+warnings, unembedded fonts, or a missing text layer. The B6 pocket review PDF
+and its hash manifest are written to ignored `dist/books/xian/`.
 
 Use `--skip-map` only when checking the book layout against the already
 committed map variants.

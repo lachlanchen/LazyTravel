@@ -7,12 +7,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from build_xian_review import extract_page_count, validate_fonts  # noqa: E402
+from build_xian_review import extract_page_count, extract_page_size, validate_fonts  # noqa: E402
 
 
 class XianReviewBuildTests(unittest.TestCase):
     def test_extracts_page_count(self) -> None:
         self.assertEqual(extract_page_count("Title: Test\nPages:          14\n"), 14)
+
+    def test_extracts_page_size(self) -> None:
+        self.assertEqual(
+            extract_page_size("Page size:       354.331 x 498.898 pts (B6)\n"),
+            (354.331, 498.898),
+        )
 
     def test_accepts_embedded_font_rows(self) -> None:
         output = (

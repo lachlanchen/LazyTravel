@@ -5,10 +5,14 @@ description = "Trilingual destination books and website from aligned editorial J
 requires-python = ">=3.10"
 dependencies = [
   "beautifulsoup4>=4.12,<5",
+  "fugashi>=1.3,<2",
+  "jieba>=0.42,<1",
   "jsonschema>=4.22,<5",
   "matplotlib>=3.8,<4",
   "Pillow>=10,<12",
+  "pypinyin>=0.50,<1",
   "shapely>=2,<3",
+  "unidic-lite>=1.0,<2",
 ]
 
 [project.optional-dependencies]

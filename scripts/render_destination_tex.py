@@ -26,6 +26,9 @@ LATEX_ESCAPES = {
     "^": r"\textasciicircum{}",
 }
 
+CLOSING_PUNCTUATION = frozenset("，。！？；：、）》」』】〉〕］）〗〙〛…")
+OPENING_PUNCTUATION = frozenset("（《「『【〈〔［〖〘〚")
+
 
 def tex_escape(value: str) -> str:
     return "".join(LATEX_ESCAPES.get(character, character) for character in value)
@@ -50,6 +53,33 @@ def citation_markers(ids: list[str], numbers: dict[str, int]) -> str:
     return " ".join(rf"\hyperlink{{source-{numbers[item]}}}{{[{numbers[item]}]}}" for item in ids)
 
 
+def reading_tokens_tex(layer: dict[str, Any], command: str) -> str:
+    pieces: list[str] = []
+    tokens = layer["tokens"]
+    for index, token in enumerate(tokens):
+        token_text = token["text"]
+        previous_text = tokens[index - 1]["text"] if index else ""
+        if index and (
+            token_text[:1] in CLOSING_PUNCTUATION
+            or previous_text[-1:] in OPENING_PUNCTUATION
+        ):
+            pieces.append(r"\nobreak")
+        base = tex_escape(token_text)
+        reading = token.get("reading")
+        if reading:
+            pieces.append(rf"\{command}{{{base}}}{{{tex_escape(reading)}}}")
+        else:
+            pieces.append(base)
+        if index + 1 < len(tokens):
+            next_text = tokens[index + 1]["text"]
+            if (
+                token_text[-1:] not in OPENING_PUNCTUATION
+                and next_text[:1] not in CLOSING_PUNCTUATION
+            ):
+                pieces.append(r"\allowbreak{}")
+    return "".join(pieces)
+
+
 def cover_tex(book: dict[str, Any], chapter: dict[str, Any]) -> str:
     titles = book["titles"]
     subtitles = book.get("subtitles", {language: "" for language in ("zh", "ja", "en")})
@@ -58,30 +88,30 @@ def cover_tex(book: dict[str, Any], chapter: dict[str, Any]) -> str:
 \begin{{titlepage}}
   \thispagestyle{{empty}}
   \LTBrand
-  \vspace*{{20mm}}
+  \vspace*{{13mm}}
   {{\displayfont\fontsize{{8}}{{10}}\selectfont\color{{LTVermilion}}
     CHINA · CITIES · XI'AN\par}}
-  \vspace{{9mm}}
-  {{\bfseries\fontsize{{31}}{{39}}\selectfont {tex_escape(titles['zh'])}\par}}
-  \vspace{{5mm}}
-  {{{{\jpfont\fontsize{{18}}{{25}}\selectfont\color{{LTForest}}
-    {tex_escape(titles['ja'])}}}\par}}
-  \vspace{{4mm}}
-  {{{{\englishfont\fontsize{{17}}{{23}}\selectfont
-    {tex_escape(titles['en'])}}}\par}}
-  \vspace{{12mm}}
-  {{\color{{LTVermilion}}\rule{{28mm}}{{1.4pt}}}}\par
   \vspace{{7mm}}
-  {{\fontsize{{10}}{{15}}\selectfont {tex_escape(subtitles['zh'])}\par}}
+  {{\bfseries\fontsize{{23}}{{29}}\selectfont {tex_escape(titles['zh'])}\par}}
+  \vspace{{4mm}}
+  {{{{\jpfont\fontsize{{14}}{{20}}\selectfont\color{{LTForest}}
+    {tex_escape(titles['ja'])}}}\par}}
+  \vspace{{3mm}}
+  {{{{\englishfont\fontsize{{13}}{{18}}\selectfont
+    {tex_escape(titles['en'])}}}\par}}
+  \vspace{{9mm}}
+  {{\color{{LTVermilion}}\rule{{24mm}}{{1.2pt}}}}\par
+  \vspace{{6mm}}
+  {{\fontsize{{8.6}}{{13}}\selectfont {tex_escape(subtitles['zh'])}\par}}
   \vspace{{2mm}}
-  {{{{\jpfont\fontsize{{9}}{{14}}\selectfont\color{{LTForest}}
+  {{{{\jpfont\fontsize{{8.2}}{{12.5}}\selectfont\color{{LTForest}}
     {tex_escape(subtitles['ja'])}}}\par}}
   \vspace{{2mm}}
-  {{{{\englishfont\fontsize{{9}}{{13}}\selectfont\color{{LTMuted}}
+  {{{{\englishfont\fontsize{{8}}{{11.5}}\selectfont\color{{LTMuted}}
     {tex_escape(subtitles['en'])}}}\par}}
   \vfill
   {{\displayfont\fontsize{{7}}{{9}}\selectfont\color{{LTMuted}}
-    CHAPTER REVIEW EDITION · {tex_escape(chapter['id'])}\par}}
+    B6 POCKET CHAPTER REVIEW · {tex_escape(chapter['id'])}\par}}
   \vspace{{3mm}}
   {{\displayfont\fontsize{{7}}{{10}}\selectfont
     {tex_escape(branding['studio'])} · {tex_escape(branding['repository'])}\par}}
@@ -94,20 +124,21 @@ def publication_note_tex(book: dict[str, Any]) -> str:
     branding = book["branding"]
     return rf"""
 \thispagestyle{{empty}}
-\vspace*{{18mm}}
+\vspace*{{10mm}}
 {{\displayfont\bfseries\fontsize{{13}}{{17}}\selectfont About this review edition\par}}
 \vspace{{6mm}}
-{{\englishfont\fontsize{{9}}{{14}}\selectfont
+{{\englishfont\fontsize{{8}}{{12}}\selectfont
 This chapter review is generated from the same aligned Chinese, Japanese, and English JSON
 used by the LazyTravel website. Historical claims are separated from dated travel
 information; source text and source images are not republished. Map generalisation is
-disclosed on the map and in its provenance ledger.\par}}
-\vspace{{6mm}}
-{{\fontsize{{9}}{{14}}\selectfont
+disclosed on the map and in its provenance ledger. Chinese pinyin and Japanese furigana
+come from the reviewed token layer in that JSON.\par}}
+\vspace{{5mm}}
+{{\fontsize{{8}}{{12}}\selectfont
 本章审阅版由同一份中、日、英对齐 JSON 生成。历史事实与有时效的旅行信息分开处理，
 不转载参考书原文或图片；地图中的概化河段均在图面与溯源记录中说明。\par}}
-\vspace{{6mm}}
-{{\jpfont\fontsize{{8.8}}{{14}}\selectfont
+\vspace{{5mm}}
+{{\jpfont\fontsize{{8}}{{12}}\selectfont
 本章レビュー版は、ウェブサイトと共通の中国語・日本語・英語対訳 JSON から生成している。
 歴史的記述と更新を要する旅行情報を分け、参照資料の本文や画像は転載しない。
 地図の概略化区間は図面と来歴記録に明記した。\par}}
@@ -126,19 +157,16 @@ def block_tex(
     assets: dict[str, dict[str, Any]],
 ) -> str:
     text = block["text"]
-    pieces = [
-        r"\noindent\begin{minipage}{\linewidth}",
-        rf"\LTBlockStart{{{tex_escape(block['id'])}}}",
-    ]
+    readings = block["readings"]
+    pieces = [r"\clearpage", rf"\LTBlockStart{{{tex_escape(block['id'])}}}"]
     if block["kind"] == "practical":
         pieces.append(r"\LTPracticalHeading")
     pieces.extend(
         [
-            rf"\LTChinese{{{tex_escape(text['zh'])}}}",
-            rf"\LTJapanese{{{tex_escape(text['ja'])}}}",
+            rf"\LTChinese{{{reading_tokens_tex(readings['zh'], 'LTRubyZH')}}}",
+            rf"\LTJapanese{{{reading_tokens_tex(readings['ja'], 'LTRubyJA')}}}",
             rf"\LTEnglish{{{tex_escape(text['en'])}}}",
             rf"\LTSources{{{citation_markers(block['citation_ids'], citation_numbers)}}}",
-            r"\end{minipage}\par",
         ]
     )
     if block["kind"] == "map":

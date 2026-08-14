@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build and validate the deterministic Xi'an Chapter 1 review PDF."""
+"""Build and validate the deterministic Xi'an Chapter 1 B6 pocket review."""
 
 from __future__ import annotations
 
@@ -21,9 +21,10 @@ SOURCE_SCHEMA = ROOT / "schemas/source-catalog.schema.json"
 CHAPTER_ID = "ch01-ground-before-time"
 BUILD_DIR = ROOT / "build/books/xian/ch01-review"
 DIST_DIR = ROOT / "dist/books/xian"
-DIST_PDF = DIST_DIR / "xian-ch01-review.pdf"
-DIST_MANIFEST = DIST_DIR / "xian-ch01-review.manifest.json"
+DIST_PDF = DIST_DIR / "xian-ch01-pocket-review.pdf"
+DIST_MANIFEST = DIST_DIR / "xian-ch01-pocket-review.manifest.json"
 SOURCE_DATE_EPOCH = "1786636800"
+EXPECTED_PAGE_POINTS = (125 / 25.4 * 72, 176 / 25.4 * 72)
 LOG_REJECTION = re.compile(
     r"Overfull|Underfull|Missing character|LaTeX Warning|Package .* Warning|"
     r"^! |:[0-9]+: .*Error",
@@ -93,6 +94,13 @@ def extract_page_count(output: str) -> int:
     return int(match.group(1))
 
 
+def extract_page_size(output: str) -> tuple[float, float]:
+    match = re.search(r"^Page size:\s+([\d.]+) x ([\d.]+) pts", output, re.MULTILINE)
+    if not match:
+        raise RuntimeError("pdfinfo did not report a page size")
+    return float(match.group(1)), float(match.group(2))
+
+
 def write_manifest(page_count: int, font_count: int, text_characters: int) -> None:
     inputs = [
         BOOK_PATH,
@@ -104,6 +112,7 @@ def write_manifest(page_count: int, font_count: int, text_characters: int) -> No
         ROOT / "scripts/build_xian_orientation_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
+        ROOT / "scripts/validate_readings.py",
         ROOT / "assets/maps/xian/xian-before-walls.png",
         ROOT / "assets/maps/xian/xian-before-walls.provenance.json",
         ROOT / "data/maps/xian/xian-before-walls.config.json",
@@ -124,6 +133,7 @@ def write_manifest(page_count: int, font_count: int, text_characters: int) -> No
             "sha256": sha256(DIST_PDF),
             "bytes": DIST_PDF.stat().st_size,
             "pages": page_count,
+            "trim_mm": [125, 176],
             "embedded_fonts": font_count,
             "searchable_characters": text_characters,
             "qpdf_check": "pass",
@@ -166,6 +176,7 @@ def main() -> int:
             str(BOOK_SCHEMA),
         ]
     )
+    run([sys.executable, "scripts/validate_readings.py", "--book", str(BOOK_PATH)])
     run(
         [
             sys.executable,
@@ -198,6 +209,11 @@ def main() -> int:
     font_count = validate_fonts(run(["pdffonts", str(pdf)]))
     info = run(["pdfinfo", str(pdf)])
     page_count = extract_page_count(info)
+    page_size = extract_page_size(info)
+    if any(
+        abs(actual - expected) > 0.25 for actual, expected in zip(page_size, EXPECTED_PAGE_POINTS)
+    ):
+        raise RuntimeError(f"PDF is not B6 125 x 176 mm: {page_size[0]} x {page_size[1]} pt")
     if page_count < 10:
         raise RuntimeError(f"unexpectedly short review PDF: {page_count} pages")
     text = run(["pdftotext", str(pdf), "-"])

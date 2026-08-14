@@ -1,14 +1,14 @@
-\documentclass[10pt,oneside,openany]{scrbook}
+\documentclass[fontsize=9pt,DIV=calc,oneside,open=any]{scrbook}
 
 \usepackage[
-  paperwidth=170mm,
-  paperheight=240mm,
-  inner=18mm,
-  outer=16mm,
-  top=18mm,
-  bottom=20mm,
-  headsep=6mm,
-  footskip=9mm
+  paperwidth=125mm,
+  paperheight=176mm,
+  inner=13mm,
+  outer=12mm,
+  top=13mm,
+  bottom=14mm,
+  headsep=4mm,
+  footskip=7mm
 ]{geometry}
 \usepackage{fontspec}
 \usepackage{xeCJK}
@@ -17,6 +17,7 @@
 \usepackage{graphicx}
 \usepackage{ragged2e}
 \usepackage{needspace}
+\usepackage{stackengine}
 \usepackage{enumitem}
 \usepackage{pdflscape}
 \usepackage{xurl}
@@ -32,6 +33,7 @@
 \setCJKmainfont[AutoFakeSlant=0.15]{Noto Serif CJK SC}
 \setCJKsansfont[AutoFakeSlant=0.15]{Noto Sans CJK SC}
 \newCJKfontfamily\jpfont[AutoFakeSlant=0.15]{Noto Serif CJK JP}
+\newCJKfontfamily\jpsansfont[AutoFakeSlant=0.15]{Noto Sans CJK JP}
 \newfontfamily\englishfont{Noto Serif}
 \newfontfamily\displayfont{Noto Sans Display}
 
@@ -58,6 +60,7 @@
 \setlist{nosep,leftmargin=1.5em}
 \raggedbottom
 \emergencystretch=1.5em
+\def\stackalignment{c}
 
 \clearpairofpagestyles
 \ihead{\footnotesize\sffamily\color{LTMuted}\leftmark}
@@ -69,9 +72,9 @@
 \setkomafont{disposition}{\displayfont\bfseries}
 
 \newcommand{\LTBrand}{%
-  {\displayfont\bfseries\fontsize{14}{16}\selectfont LazyTravel}%
+  {\displayfont\bfseries\fontsize{11}{13}\selectfont LazyTravel}%
   \hfill
-  {\displayfont\fontsize{8}{10}\selectfont lazying.art}%
+  {\displayfont\fontsize{6.5}{8}\selectfont lazying.art}%
 }
 
 \newcommand{\LTChapterTitle}[3]{%
@@ -80,20 +83,20 @@
   \addcontentsline{toc}{chapter}{#1 · #3}
   \markboth{#1}{#1}
   \thispagestyle{empty}
-  \vspace*{10mm}
+  \vspace*{6mm}
   {\displayfont\fontsize{8}{10}\selectfont\color{LTVermilion}
     CHAPTER 01 · XI'AN\par}
-  \vspace{9mm}
-  {\bfseries\fontsize{27}{34}\selectfont #1\par}
-  \vspace{4mm}
-  {{\jpfont\fontsize{15}{22}\selectfont\color{LTForest}#2}\par}
+  \vspace{7mm}
+  {\bfseries\fontsize{22}{28}\selectfont #1\par}
   \vspace{3mm}
-  {{\englishfont\fontsize{14}{19}\selectfont\color{LTMuted}#3}\par}
+  {{\jpfont\fontsize{13}{19}\selectfont\color{LTForest}#2}\par}
+  \vspace{3mm}
+  {{\englishfont\fontsize{12}{17}\selectfont\color{LTMuted}#3}\par}
   \vfill
   \rule{24mm}{1.2pt}\par
   \vspace{3mm}
   {\displayfont\fontsize{7.5}{10}\selectfont\color{LTMuted}
-    READ THE PLACE BEFORE COUNTING THE YEARS\par}
+    GEOGRAPHY · WATER · CAPITAL SITES\par}
   \clearpage
 }
 
@@ -103,45 +106,59 @@
 }
 
 \newcommand{\LTBlockStart}[1]{%
-  \Needspace{86mm}
-  \par\vspace{4mm}
+  \par\vspace{1mm}
   {\color{LTPale}\rule{\linewidth}{0.55pt}}\par
-  \vspace{4mm}
+  \vspace{3mm}
   {\displayfont\fontsize{6}{7}\selectfont\color{LTMuted}#1}\par
-  \vspace{2mm}
+  \vspace{1.5mm}
+}
+
+\newcommand{\LTRubyZH}[2]{%
+  \leavevmode
+  \stackon[0.55pt]{#1}{{\displayfont\fontsize{3.8}{4.2}\selectfont\color{LTMuted}#2}}%
+}
+
+\newcommand{\LTRubyJA}[2]{%
+  \leavevmode
+  \stackon[0.55pt]{#1}{{\jpsansfont\fontsize{3.8}{4.2}\selectfont\color{LTMuted}#2}}%
 }
 
 \newcommand{\LTChinese}[1]{%
-  \Needspace{48mm}
   \LTLabel{LTVermilion}{中文}
-  {\fontsize{10.2}{16}\selectfont #1\par}
+  \noindent\begin{minipage}{\linewidth}
+    \RaggedRight
+    {\fontsize{8.8}{14.2}\selectfont #1\par}
+  \end{minipage}
 }
 
 \newcommand{\LTJapanese}[1]{%
-  \Needspace{55mm}
-  \vspace{3.2mm}
+  \vspace{2.5mm}
   \LTLabel{LTForest}{日本語}
-  {{\jpfont\fontsize{9.6}{15.2}\selectfont #1}\par}
+  \noindent\begin{minipage}{\linewidth}
+    \RaggedRight
+    {{\jpfont\fontsize{8.5}{13.8}\selectfont #1}\par}
+  \end{minipage}
 }
 
 \newcommand{\LTEnglish}[1]{%
-  \Needspace{50mm}
-  \vspace{3.2mm}
+  \vspace{2.5mm}
   \LTLabel{LTWater}{ENGLISH}
-  {{\englishfont\fontsize{9.4}{13.8}\selectfont #1}\par}
+  \noindent\begin{minipage}{\linewidth}
+    {{\englishfont\fontsize{8.4}{11.4}\selectfont #1}\par}
+  \end{minipage}
 }
 
 \newcommand{\LTSources}[1]{%
-  \vspace{2.5mm}
+  \vspace{2mm}
   {\displayfont\fontsize{6.2}{8}\selectfont\color{LTMuted}
     资料 · 出典 · SOURCES\quad #1\par}
 }
 
 \newcommand{\LTPracticalHeading}{%
-  \par\vspace{5mm}
+  \par\vspace{3mm}
   {\color{LTVermilion}\rule{1.2mm}{8mm}}\hspace{2.5mm}%
   {\displayfont\bfseries\fontsize{8}{10}\selectfont
-    方位判断 · 方位を取り戻す · FIELD ORIENTATION}\par
+    方位判断 · 方位を確かめる · FIELD ORIENTATION}\par
   \vspace{1mm}
 }
 
@@ -151,18 +168,18 @@
     \thispagestyle{empty}
     \centering
     \vspace*{\fill}
-    \includegraphics[width=0.96\linewidth,height=0.82\textheight,keepaspectratio]{#1}\par
+    \includegraphics[width=0.98\linewidth,height=0.88\textheight,keepaspectratio]{#1}\par
     \vspace*{\fill}
   \end{landscape}
   \clearpage
 }
 
 \newcommand{\LTSourceEntry}[4]{%
-  \Needspace{20mm}
-  \par\vspace{3mm}
+  \Needspace{18mm}
+  \par\vspace{2.5mm}
   {\displayfont\bfseries\fontsize{7}{9}\selectfont\color{LTVermilion}[#1]}\quad
   {\bfseries #2}\par
-  {\fontsize{8}{11}\selectfont\color{LTMuted}#3\par}
+  {\fontsize{7}{9.5}\selectfont\color{LTMuted}#3\par}
   #4
 }
 
