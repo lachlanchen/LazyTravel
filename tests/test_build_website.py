@@ -32,7 +32,23 @@ class WebsiteBuildTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary) / "site"
             counts = build(DEFAULT_BOOK, output)
-            self.assertEqual(counts, {"blocks": 8, "zh_tokens": 696, "ja_tokens": 886})
+            expected = {
+                "blocks": sum(
+                    len(chapter["blocks"]) for chapter in self.document["chapters"]
+                ),
+                "zh_tokens": sum(
+                    len(block["readings"]["zh"]["tokens"])
+                    for chapter in self.document["chapters"]
+                    for block in chapter["blocks"]
+                ),
+                "ja_tokens": sum(
+                    len(block["readings"]["ja"]["tokens"])
+                    for chapter in self.document["chapters"]
+                    for block in chapter["blocks"]
+                ),
+            }
+            self.assertEqual(counts, expected)
+            self.assertGreaterEqual(counts["blocks"], 18)
             self.assertEqual(validate_output(DEFAULT_BOOK, output), counts)
             payload = json.loads((output / "data/xian.json").read_text(encoding="utf-8"))
             payload.pop("_build")

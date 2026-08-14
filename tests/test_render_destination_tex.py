@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from render_destination_tex import (  # noqa: E402
     block_tex,
     citation_order,
+    citation_order_for_chapters,
     reading_tokens_tex,
     tex_escape,
 )
@@ -27,6 +28,13 @@ class DestinationTexTests(unittest.TestCase):
             ]
         }
         self.assertEqual(citation_order(chapter), ["src-a", "src-b", "src-c"])
+
+    def test_citations_remain_unique_across_chapters(self) -> None:
+        chapters = [
+            {"blocks": [{"citation_ids": ["src-a", "src-b"]}]},
+            {"blocks": [{"citation_ids": ["src-b", "src-c"]}]},
+        ]
+        self.assertEqual(citation_order_for_chapters(chapters), ["src-a", "src-b", "src-c"])
 
     def test_aligned_block_starts_on_a_clean_page(self) -> None:
         block = {
@@ -65,6 +73,28 @@ class DestinationTexTests(unittest.TestCase):
         rendered = reading_tokens_tex(layer, "LTRubyZH")
         self.assertIn(r"\LTRubyZH{前}{qián}\nobreak，\allowbreak{}", rendered)
         self.assertIn(r"「\nobreak\LTRubyZH{后}{hòu}\nobreak」", rendered)
+
+    def test_figure_block_renders_disclosed_trilingual_caption(self) -> None:
+        block = {
+            "id": "ch02-b007",
+            "kind": "figure",
+            "text": {"zh": "中文", "ja": "日本語", "en": "English"},
+            "readings": {
+                "zh": {"tokens": [{"text": "中文", "reading": "zhōngwén"}]},
+                "ja": {"tokens": [{"text": "日本語", "reading": "にほんご"}]},
+            },
+            "citation_ids": ["src-a"],
+            "asset_ids": ["asset-a"],
+        }
+        assets = {
+            "asset-a": {
+                "path": "assets/example.png",
+                "captions": {"zh": "中文图注", "ja": "日本語図注", "en": "English caption"},
+            }
+        }
+        rendered = block_tex(block, {"src-a": 1}, assets)
+        self.assertIn(r"\LTFigurePage", rendered)
+        self.assertIn("English caption", rendered)
 
 
 if __name__ == "__main__":

@@ -116,10 +116,23 @@ def validate_output(book_path: Path, output: Path) -> dict[str, int]:
 
     index = (output / "index.html").read_text(encoding="utf-8")
     javascript = (output / "app.js").read_text(encoding="utf-8")
-    for marker in ("section-select", "ruby-toggle", "chapter-outline", "section-outline"):
+    for marker in (
+        "chapter-select",
+        "section-select",
+        "ruby-toggle",
+        "chapter-outline",
+        "section-outline",
+    ):
         if marker not in index:
             raise RuntimeError(f"website shell is missing required control: {marker}")
-    for marker in ("renderTokens", "renderMap", "renderSources", "data/xian.json"):
+    for marker in (
+        "renderTokens",
+        "renderMap",
+        "renderFigure",
+        "activateChapter",
+        "renderSources",
+        "data/xian.json",
+    ):
         if marker not in javascript:
             raise RuntimeError(f"website renderer is missing required behavior: {marker}")
     return reading_counts(source)

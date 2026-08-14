@@ -24,6 +24,12 @@ japan/prefectures/<prefecture>
 world/countries/<country>
 ```
 
+Current verified milestone: Xi'an Chapters 1-2, `18` aligned content blocks,
+`30` B6 pages, two original maps, and one disclosed realistic editorial figure.
+The Xi'an outline contains exactly `11` chapters; Chapter 7 is the dedicated
+nearby-area chapter for Huashan, Lintong, Han Yangling, selected Qinling
+foothills, and western imperial landscapes.
+
 ## Source Boundary
 
 The six supplied books in `Sources/` are private research references. They are
@@ -57,7 +63,7 @@ its cross-project GPU lock, but writes only to LazyTravel's ignored research
 cache. It is resumable by source hash and page shard; omitting `--page-end`
 continues through the complete source.
 
-## Build The Xi'an Chapter Review
+## Build The Xi'an Pocket Review
 
 ```bash
 python3 scripts/build_xian_review.py
@@ -65,11 +71,12 @@ python3 scripts/build_website.py
 python3 scripts/validate_site_parity.py
 ```
 
-This regenerates the committed orientation-map variants from normalized map
-data, validates both JSON contracts, renders the aligned Chapter 1 content,
-runs XeLaTeX twice with a fixed source date, and rejects malformed PDFs, TeX
-warnings, unembedded fonts, or a missing text layer. The B6 pocket review PDF
-and its hash manifest are written to ignored `dist/books/xian/`.
+This regenerates the committed map variants from normalized or declared map
+data, validates both JSON contracts and all used visual provenance, renders the
+aligned reviewed chapters, runs XeLaTeX twice with a fixed source date, and
+rejects malformed PDFs, TeX warnings, unembedded fonts, or a missing text
+layer. The B6 pocket review PDF and its hash manifest are written to ignored
+`dist/books/xian/`.
 
 Use `--skip-map` only when checking the book layout against the already
 committed map variants.

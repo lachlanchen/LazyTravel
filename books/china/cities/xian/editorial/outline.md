@@ -15,7 +15,7 @@ make on foot, by metro, at a table, or when choosing where to sleep.
    the first locator map. The traveler should understand why capitals formed
    here before memorizing dynasty names.
 
-2. **The Capitals Do Not Share One Map**  
+2. **Successive Capitals, Different Sites**
    Fenghao, Qin Xianyang, Han Chang'an, Sui Daxing/Tang Chang'an, the Ming city,
    and present Xi'an. A layered map prevents the common error of treating every
    surviving site as part of one continuous walled city.
@@ -38,9 +38,11 @@ make on foot, by metro, at a table, or when choosing where to sleep.
    dumplings, Hui and Han food contexts, ordering language, breakfast rhythms,
    and how to judge queues without turning old shops into a checklist.
 
-7. **A Day Beyond the Center**  
-   Huaqing Palace and Lishan, Han Yangling, archaeological museums, and the
-   Qinling foothills. Separate historically coherent day trips from routes that
+7. **Around Xi'an: Give One Place a Day**
+   One dedicated chapter for coherent trips beyond the urban core: Lintong,
+   Huashan, Han Yangling, selected Qinling foothill routes, and the western
+   imperial landscapes. Compare full-day and half-day choices, terrain,
+   transport burden, and seasonal constraints instead of combining places that
    merely look close on a small map.
 
 8. **Arrive and Move: Put Transfers Into the Route**  
@@ -75,4 +77,3 @@ make on foot, by metro, at a table, or when choosing where to sleep.
   of another language.
 - Lists are reserved for decisions. History and cultural context remain
   continuous prose.
-

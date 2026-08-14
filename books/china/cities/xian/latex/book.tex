@@ -77,26 +77,26 @@
   {\displayfont\fontsize{6.5}{8}\selectfont lazying.art}%
 }
 
-\newcommand{\LTChapterTitle}[3]{%
+\newcommand{\LTChapterTitle}[5]{%
   \cleardoublepage
   \phantomsection
-  \addcontentsline{toc}{chapter}{#1 · #3}
-  \markboth{#1}{#1}
+  \addcontentsline{toc}{chapter}{#2 · #4}
+  \markboth{#2}{#2}
   \thispagestyle{empty}
   \vspace*{6mm}
   {\displayfont\fontsize{8}{10}\selectfont\color{LTVermilion}
-    CHAPTER 01 · XI'AN\par}
+    CHAPTER #1 · XI'AN\par}
   \vspace{7mm}
-  {\bfseries\fontsize{22}{28}\selectfont #1\par}
+  {\bfseries\fontsize{22}{28}\selectfont #2\par}
   \vspace{3mm}
-  {{\jpfont\fontsize{13}{19}\selectfont\color{LTForest}#2}\par}
+  {{\jpfont\fontsize{13}{19}\selectfont\color{LTForest}#3}\par}
   \vspace{3mm}
-  {{\englishfont\fontsize{12}{17}\selectfont\color{LTMuted}#3}\par}
+  {{\englishfont\fontsize{12}{17}\selectfont\color{LTMuted}#4}\par}
   \vfill
   \rule{24mm}{1.2pt}\par
   \vspace{3mm}
   {\displayfont\fontsize{7.5}{10}\selectfont\color{LTMuted}
-    GEOGRAPHY · WATER · CAPITAL SITES\par}
+    #5\par}
   \clearpage
 }
 
@@ -168,8 +168,28 @@
     \thispagestyle{empty}
     \centering
     \vspace*{\fill}
-    \includegraphics[width=0.98\linewidth,height=0.88\textheight,keepaspectratio]{#1}\par
+    \includegraphics[width=0.98\linewidth,height=0.94\textheight,keepaspectratio]{#1}\par
     \vspace*{\fill}
+  \end{landscape}
+  \clearpage
+}
+
+\newcommand{\LTFigurePage}[4]{%
+  \clearpage
+  \begin{landscape}
+    \thispagestyle{empty}
+    \centering
+    \vspace*{2mm}
+    \includegraphics[width=0.98\linewidth,height=0.73\textheight,keepaspectratio]{#1}\par
+    \vspace{2mm}
+    \begin{minipage}{0.96\linewidth}
+      {\fontsize{6.2}{8.2}\selectfont #2\par}
+      \vspace{0.7mm}
+      {{\jpfont\fontsize{6}{8}\selectfont\color{LTForest}#3}\par}
+      \vspace{0.7mm}
+      {{\englishfont\fontsize{5.9}{7.8}\selectfont\color{LTMuted}#4}\par}
+    \end{minipage}
+    \vfill
   \end{landscape}
   \clearpage
 }

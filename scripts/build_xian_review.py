@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build and validate the deterministic Xi'an Chapter 1 B6 pocket review."""
+"""Build and validate the deterministic Xi'an B6 pocket review."""
 
 from __future__ import annotations
 
@@ -19,11 +19,11 @@ BOOK_PATH = ROOT / "data/china/cities/xian/book.json"
 BOOK_SCHEMA = ROOT / "schemas/destination-book.schema.json"
 SOURCE_CATALOG = ROOT / "data/sources/catalog.json"
 SOURCE_SCHEMA = ROOT / "schemas/source-catalog.schema.json"
-CHAPTER_ID = "ch01-ground-before-time"
-BUILD_DIR = ROOT / "build/books/xian/ch01-review"
+CHAPTER_IDS = ("ch01-ground-before-time", "ch02-capitals-on-different-maps")
+BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
-DIST_PDF = DIST_DIR / "xian-ch01-pocket-review.pdf"
-DIST_MANIFEST = DIST_DIR / "xian-ch01-pocket-review.manifest.json"
+DIST_PDF = DIST_DIR / "xian-pocket-review.pdf"
+DIST_MANIFEST = DIST_DIR / "xian-pocket-review.manifest.json"
 SOURCE_DATE_EPOCH = "1786636800"
 EXPECTED_PAGE_POINTS = (125 / 25.4 * 72, 176 / 25.4 * 72)
 LOG_REJECTION = re.compile(
@@ -104,24 +104,31 @@ def extract_page_size(output: str) -> tuple[float, float]:
 
 def validate_asset_qa(document: dict[str, Any]) -> None:
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
-    chapter = chapters[CHAPTER_ID]
     asset_ids = {
         asset_id
-        for block in chapter["blocks"]
+        for chapter_id in CHAPTER_IDS
+        for block in chapters[chapter_id]["blocks"]
         for asset_id in block["asset_ids"]
     }
     assets = {asset["id"]: asset for asset in document["assets"]}
     for asset_id in asset_ids:
         asset = assets[asset_id]
+        asset_path = ROOT / asset["path"]
+        if not asset_path.is_file():
+            raise RuntimeError(f"asset file is missing: {asset_id}")
         qa = asset["qa"]
         if not qa["approved"] or any(
             qa[field] != "pass" for field in ("resolution", "legibility", "content")
         ):
             raise RuntimeError(f"asset has not passed visual QA: {asset_id}")
-        if asset["kind"] != "map":
-            continue
-        provenance_path = (ROOT / asset["path"]).with_suffix(".provenance.json")
+        provenance_path = asset_path.with_suffix(".provenance.json")
+        if not provenance_path.is_file():
+            raise RuntimeError(f"asset provenance is missing: {asset_id}")
         provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+        if asset["kind"] != "map":
+            if provenance.get("output", {}).get("sha256") != sha256(asset_path):
+                raise RuntimeError(f"asset provenance hash mismatch: {asset_id}")
+            continue
         visual = provenance["visual_qa"]
         if not visual["approved"] or any(
             visual[field] != "pass"
@@ -130,8 +137,8 @@ def validate_asset_qa(document: dict[str, Any]) -> None:
             raise RuntimeError(f"map provenance has not passed visual QA: {asset_id}")
 
 
-def write_manifest(page_count: int, font_count: int, text_characters: int) -> None:
-    inputs = [
+def build_inputs(document: dict[str, Any]) -> list[Path]:
+    inputs = {
         BOOK_PATH,
         BOOK_SCHEMA,
         SOURCE_CATALOG,
@@ -139,18 +146,43 @@ def write_manifest(page_count: int, font_count: int, text_characters: int) -> No
         ROOT / "books/china/cities/xian/latex/book.tex",
         ROOT / "scripts/build_xian_review.py",
         ROOT / "scripts/build_xian_orientation_map.py",
+        ROOT / "scripts/build_xian_capital_layers_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
-        ROOT / "assets/maps/xian/xian-before-walls.png",
-        ROOT / "assets/maps/xian/xian-before-walls.provenance.json",
         ROOT / "data/maps/xian/xian-before-walls.config.json",
         ROOT / "data/maps/xian/xian-before-walls.geojson",
-    ]
+        ROOT / "data/maps/xian/xian-capital-layers.config.json",
+        ROOT / "data/images/xian/xian-daming-site-impression.prompt.md",
+    }
+    chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
+    used_asset_ids = {
+        asset_id
+        for chapter_id in CHAPTER_IDS
+        for block in chapters[chapter_id]["blocks"]
+        for asset_id in block["asset_ids"]
+    }
+    for asset in document["assets"]:
+        if asset["id"] not in used_asset_ids:
+            continue
+        for value in [asset["path"], *asset.get("variants", {}).values()]:
+            path = ROOT / value
+            if path.is_file():
+                inputs.add(path)
+        provenance = (ROOT / asset["path"]).with_suffix(".provenance.json")
+        if provenance.is_file():
+            inputs.add(provenance)
+    return sorted(inputs)
+
+
+def write_manifest(
+    document: dict[str, Any], page_count: int, font_count: int, text_characters: int
+) -> None:
+    inputs = build_inputs(document)
     manifest = {
         "schema_version": 1,
         "artifact": str(DIST_PDF.relative_to(ROOT)),
-        "chapter_id": CHAPTER_ID,
+        "chapter_ids": list(CHAPTER_IDS),
         "build_date": "2026-08-14",
         "source_date_epoch": int(SOURCE_DATE_EPOCH),
         "command": "python3 scripts/build_xian_review.py",
@@ -187,6 +219,7 @@ def main() -> int:
     require_tools(["xelatex", "qpdf", "pdffonts", "pdfinfo", "pdftotext"])
     if not args.skip_map:
         run([sys.executable, "scripts/build_xian_orientation_map.py"])
+        run([sys.executable, "scripts/build_xian_capital_layers_map.py"])
     run(
         [
             sys.executable,
@@ -206,19 +239,19 @@ def main() -> int:
         ]
     )
     run([sys.executable, "scripts/validate_readings.py", "--book", str(BOOK_PATH)])
-    validate_asset_qa(json.loads(BOOK_PATH.read_text(encoding="utf-8")))
-    run(
-        [
-            sys.executable,
-            "scripts/render_destination_tex.py",
-            "--book",
-            str(BOOK_PATH),
-            "--chapter",
-            CHAPTER_ID,
-            "--output-dir",
-            str(BUILD_DIR),
-        ]
-    )
+    document = json.loads(BOOK_PATH.read_text(encoding="utf-8"))
+    validate_asset_qa(document)
+    render_command = [
+        sys.executable,
+        "scripts/render_destination_tex.py",
+        "--book",
+        str(BOOK_PATH),
+        "--output-dir",
+        str(BUILD_DIR),
+    ]
+    for chapter_id in CHAPTER_IDS:
+        render_command.extend(["--chapter", chapter_id])
+    run(render_command)
 
     tex_env = os.environ.copy()
     tex_env.update({"SOURCE_DATE_EPOCH": SOURCE_DATE_EPOCH, "FORCE_SOURCE_DATE": "1"})
@@ -244,16 +277,16 @@ def main() -> int:
         abs(actual - expected) > 0.25 for actual, expected in zip(page_size, EXPECTED_PAGE_POINTS)
     ):
         raise RuntimeError(f"PDF is not B6 125 x 176 mm: {page_size[0]} x {page_size[1]} pt")
-    if page_count < 10:
+    if page_count < 25:
         raise RuntimeError(f"unexpectedly short review PDF: {page_count} pages")
     text = run(["pdftotext", str(pdf), "-"])
     text_characters = len("".join(text.split()))
-    if text_characters < 4_000:
+    if text_characters < 10_000:
         raise RuntimeError(f"PDF text layer is unexpectedly short: {text_characters} characters")
 
     DIST_DIR.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(pdf, DIST_PDF)
-    write_manifest(page_count, font_count, text_characters)
+    write_manifest(document, page_count, font_count, text_characters)
     print(f"validated PDF: {DIST_PDF.relative_to(ROOT)}")
     print(f"manifest: {DIST_MANIFEST.relative_to(ROOT)}")
     return 0

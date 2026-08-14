@@ -1,7 +1,7 @@
 "use strict";
 
 const DATA_URL = "data/xian.json";
-const ACTIVE_CHAPTER_ID = "ch01-ground-before-time";
+const DEFAULT_CHAPTER_ID = "ch01-ground-before-time";
 
 const categoryLabels = {
   history: { zh: "历史", ja: "歴史", en: "History" },
@@ -16,6 +16,11 @@ const categoryLabels = {
 };
 
 const languageNames = { zh: "中文", ja: "日本語", en: "ENGLISH" };
+const assetLabels = {
+  "asset-xian-before-walls-map": "XI'AN BEFORE THE WALLS",
+  "asset-xian-capital-layers-map": "SUCCESSIVE CAPITALS, DIFFERENT SITES",
+  "asset-xian-daming-site-impression": "DAMING PALACE · SITE-SCALE IMPRESSION",
+};
 const state = {
   document: null,
   chapter: null,
@@ -51,6 +56,16 @@ function localizedValue(values) {
     return values[state.mode];
   }
   return values.en;
+}
+
+function availableChapters(documentData) {
+  return documentData.chapters.filter((chapter) => chapter.blocks.length > 0);
+}
+
+function chapterIdFromLocation(documentData) {
+  const requested = new URL(window.location.href).searchParams.get("chapter");
+  const availableIds = new Set(availableChapters(documentData).map((chapter) => chapter.id));
+  return availableIds.has(requested) ? requested : DEFAULT_CHAPTER_ID;
 }
 
 function renderLanguageSet(values, className) {
@@ -122,15 +137,31 @@ function mapButton(label, text, action) {
   return button;
 }
 
-function renderMap(asset) {
+function renderVisualCaption(asset, className) {
+  const caption = element("figcaption", className);
+  const captions = element("div", "caption-grid");
+  for (const language of ["zh", "ja", "en"]) {
+    const paragraph = element("p", "", asset.captions[language]);
+    paragraph.dataset.lang = language;
+    paragraph.lang = language === "zh" ? "zh-Hans" : language;
+    captions.append(paragraph);
+  }
+  caption.append(captions, element("p", "visual-rights", asset.rights));
+  return caption;
+}
+
+function renderMap(asset, number) {
   const figure = element("figure", "map-figure");
   const bar = element("div", "map-bar");
-  bar.append(element("span", "map-label", "MAP 01 · XI'AN BEFORE THE WALLS"));
+  const visualLabel = assetLabels[asset.id] || asset.id.replace(/^asset-/, "").toUpperCase();
+  bar.append(
+    element("span", "map-label", `MAP ${String(number).padStart(2, "0")} · ${visualLabel}`),
+  );
 
   const tools = element("div", "map-tools");
   const viewport = element("div", "map-viewport");
   viewport.tabIndex = 0;
-  viewport.setAttribute("aria-label", "Scrollable Xi'an orientation map");
+  viewport.setAttribute("aria-label", `Scrollable map: ${visualLabel}`);
   const stage = element("div", "map-stage");
   const image = document.createElement("img");
   image.src = asset.variants.web;
@@ -145,7 +176,8 @@ function renderMap(asset) {
   let plus;
   const defaultScrollLeft = () => {
     if (!window.matchMedia("(max-width: 480px)").matches) return 0;
-    return Math.max(0, (stage.scrollWidth - viewport.clientWidth) * 0.7);
+    const focus = asset.id === "asset-xian-before-walls-map" ? 0.7 : 0.5;
+    return Math.max(0, (stage.scrollWidth - viewport.clientWidth) * focus);
   };
   const centerMobileMap = (behavior = "auto") => {
     viewport.scrollTo({ top: 0, left: defaultScrollLeft(), behavior });
@@ -172,22 +204,27 @@ function renderMap(asset) {
   bar.append(tools);
   figure.append(bar, viewport);
 
-  const caption = element("figcaption", "map-caption");
-  const captions = element("div", "caption-grid");
-  for (const language of ["zh", "ja", "en"]) {
-    const paragraph = element("p", "", asset.captions[language]);
-    paragraph.dataset.lang = language;
-    paragraph.lang = language === "zh" ? "zh-Hans" : language;
-    captions.append(paragraph);
-  }
-  caption.append(captions, element("p", "map-rights", asset.rights));
-  figure.append(caption);
+  figure.append(renderVisualCaption(asset, "map-caption"));
   applyZoom();
   image.addEventListener("load", () => requestAnimationFrame(() => centerMobileMap()));
   return figure;
 }
 
-function renderBlock(block, index, assetById) {
+function renderFigure(asset, number) {
+  const figure = element("figure", "editorial-figure");
+  const label = assetLabels[asset.id] || asset.id.replace(/^asset-/, "").toUpperCase();
+  const bar = element("div", "figure-bar");
+  bar.append(element("span", "figure-label", `FIGURE ${String(number).padStart(2, "0")} · ${label}`));
+  const image = document.createElement("img");
+  image.className = "figure-image";
+  image.src = asset.variants?.web || asset.variants?.fallback || asset.path;
+  image.alt = asset.captions.en;
+  image.loading = "lazy";
+  figure.append(bar, image, renderVisualCaption(asset, "figure-caption"));
+  return figure;
+}
+
+function renderBlock(block, index, assetById, visualNumber) {
   const section = element("section", "reading-block");
   section.id = block.id;
   section.dataset.category = block.category;
@@ -223,7 +260,10 @@ function renderBlock(block, index, assetById) {
 
   if (block.kind === "map") {
     const asset = assetById.get(block.asset_ids[0]);
-    section.append(renderMap(asset));
+    section.append(renderMap(asset, visualNumber));
+  } else if (block.kind === "figure") {
+    const asset = assetById.get(block.asset_ids[0]);
+    section.append(renderFigure(asset, visualNumber));
   }
   return section;
 }
@@ -282,21 +322,30 @@ function renderChapter(documentData, chapter) {
   article.replaceChildren();
 
   const masthead = element("header", "chapter-masthead");
-  masthead.append(element("div", "chapter-kicker", "CHAPTER 01 · GEOGRAPHY · WATER"));
+  const chapterNumber = String(chapter.order).padStart(2, "0");
+  const coverage = chapter.coverage.map(
+    (category) => categoryLabels[category]?.en || category.replaceAll("-", " "),
+  );
+  masthead.append(
+    element(
+      "div",
+      "chapter-kicker",
+      `CHAPTER ${chapterNumber} · ${coverage.slice(0, 3).join(" · ").toUpperCase()}`,
+    ),
+  );
   const title = renderLanguageSet(chapter.titles, "chapter-title");
   masthead.append(title);
   const deck = element("div", "chapter-deck");
-  deck.append(
-    element("span", "", "TERRAIN"),
-    element("span", "", "RIVERS"),
-    element("span", "", "CAPITAL SITES"),
-    element("span", "", "ORIENTATION"),
-  );
+  coverage.forEach((label) => deck.append(element("span", "", label.toUpperCase())));
   masthead.append(deck);
   article.append(masthead);
 
   const assetById = new Map(documentData.assets.map((asset) => [asset.id, asset]));
-  chapter.blocks.forEach((block, index) => article.append(renderBlock(block, index, assetById)));
+  let visualNumber = 0;
+  chapter.blocks.forEach((block, index) => {
+    if (block.kind === "map" || block.kind === "figure") visualNumber += 1;
+    article.append(renderBlock(block, index, assetById, visualNumber));
+  });
   article.append(renderSources(documentData, chapter), renderFooter(documentData.book));
   article.hidden = false;
   document.getElementById("loading").hidden = true;
@@ -304,17 +353,36 @@ function renderChapter(documentData, chapter) {
 
 function renderNavigation(documentData, chapter) {
   const chapterOutline = document.getElementById("chapter-outline");
+  const chapterSelect = document.getElementById("chapter-select");
   chapterOutline.replaceChildren();
+  chapterSelect.replaceChildren();
   for (const item of documentData.chapters) {
-    const listItem = element("li", item.id === chapter.id ? "active" : "future");
-    const content = item.id === chapter.id ? document.createElement("a") : element("span", "future");
-    if (item.id === chapter.id) content.href = "#reading";
+    const available = item.blocks.length > 0;
+    const className = item.id === chapter.id ? "active" : available ? "available" : "future";
+    const listItem = element("li", className);
+    const content = available ? document.createElement("a") : element("span", "future");
+    if (available) {
+      content.href = `?chapter=${encodeURIComponent(item.id)}#reading`;
+      content.dataset.chapterId = item.id;
+      content.addEventListener("click", (event) => {
+        event.preventDefault();
+        activateChapter(item.id, { updateUrl: true, scroll: true });
+      });
+    }
     content.append(
       element("span", "", String(item.order).padStart(2, "0")),
       renderLanguageSet(item.titles, "outline-title"),
     );
     listItem.append(content);
     chapterOutline.append(listItem);
+
+    if (available) {
+      const option = document.createElement("option");
+      option.value = item.id;
+      option.textContent = `${String(item.order).padStart(2, "0")} · ${localizedValue(item.titles)}`;
+      option.selected = item.id === chapter.id;
+      chapterSelect.append(option);
+    }
   }
 
   const sectionOutline = document.getElementById("section-outline");
@@ -336,6 +404,25 @@ function renderNavigation(documentData, chapter) {
     option.textContent = `${number} · ${label}`;
     select.append(option);
   });
+}
+
+function activateChapter(chapterId, options = {}) {
+  const { updateUrl = false, scroll = false } = options;
+  const chapter = availableChapters(state.document).find((item) => item.id === chapterId);
+  if (!chapter) return;
+  state.chapter = chapter;
+  state.citationNumbers = buildCitationNumbers(chapter);
+  renderChapter(state.document, chapter);
+  renderNavigation(state.document, chapter);
+  document.title = `${chapter.titles.en} · ${state.document.book.titles.en} | LazyTravel`;
+
+  if (updateUrl) {
+    const url = new URL(window.location.href);
+    url.searchParams.set("chapter", chapter.id);
+    url.hash = "reading";
+    window.history.pushState({ chapterId: chapter.id }, "", url);
+  }
+  if (scroll) document.getElementById("reading").scrollIntoView({ block: "start" });
 }
 
 function setMode(mode) {
@@ -367,6 +454,14 @@ function bindControls() {
     const target = document.getElementById(event.target.value);
     if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
+
+  document.getElementById("chapter-select").addEventListener("change", (event) => {
+    activateChapter(event.target.value, { updateUrl: true, scroll: true });
+  });
+
+  window.addEventListener("popstate", () => {
+    if (state.document) activateChapter(chapterIdFromLocation(state.document));
+  });
 }
 
 async function initialize() {
@@ -376,15 +471,9 @@ async function initialize() {
     const response = await fetch(DATA_URL, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const documentData = await response.json();
-    const chapter = documentData.chapters.find((item) => item.id === ACTIVE_CHAPTER_ID);
-    if (!chapter) throw new Error(`Missing chapter ${ACTIVE_CHAPTER_ID}`);
     state.document = documentData;
-    state.chapter = chapter;
-    state.citationNumbers = buildCitationNumbers(chapter);
-    document.title = `${documentData.book.titles.en} | LazyTravel`;
     document.getElementById("github-link").href = documentData.book.branding.repository;
-    renderChapter(documentData, chapter);
-    renderNavigation(documentData, chapter);
+    activateChapter(chapterIdFromLocation(documentData));
     setMode(state.mode);
   } catch (error) {
     const loading = document.getElementById("loading");

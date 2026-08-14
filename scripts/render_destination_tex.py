@@ -49,6 +49,17 @@ def citation_order(chapter: dict[str, Any]) -> list[str]:
     return ordered
 
 
+def citation_order_for_chapters(chapters: list[dict[str, Any]]) -> list[str]:
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for chapter in chapters:
+        for citation_id in citation_order(chapter):
+            if citation_id not in seen:
+                seen.add(citation_id)
+                ordered.append(citation_id)
+    return ordered
+
+
 def citation_markers(ids: list[str], numbers: dict[str, int]) -> str:
     return " ".join(rf"\hyperlink{{source-{numbers[item]}}}{{[{numbers[item]}]}}" for item in ids)
 
@@ -80,7 +91,7 @@ def reading_tokens_tex(layer: dict[str, Any], command: str) -> str:
     return "".join(pieces)
 
 
-def cover_tex(book: dict[str, Any], chapter: dict[str, Any]) -> str:
+def cover_tex(book: dict[str, Any], chapters: list[dict[str, Any]]) -> str:
     titles = book["titles"]
     subtitles = book.get("subtitles", {language: "" for language in ("zh", "ja", "en")})
     branding = book["branding"]
@@ -111,7 +122,7 @@ def cover_tex(book: dict[str, Any], chapter: dict[str, Any]) -> str:
     {tex_escape(subtitles['en'])}}}\par}}
   \vfill
   {{\displayfont\fontsize{{7}}{{9}}\selectfont\color{{LTMuted}}
-    B6 POCKET CHAPTER REVIEW · {tex_escape(chapter['id'])}\par}}
+    B6 POCKET REVIEW · CHAPTERS {chapters[0]['order']:02d}--{chapters[-1]['order']:02d}\par}}
   \vspace{{3mm}}
   {{\displayfont\fontsize{{7}}{{10}}\selectfont
     {tex_escape(branding['studio'])} · {tex_escape(branding['repository'])}\par}}
@@ -128,7 +139,7 @@ def publication_note_tex(book: dict[str, Any]) -> str:
 {{\displayfont\bfseries\fontsize{{13}}{{17}}\selectfont About this review edition\par}}
 \vspace{{6mm}}
 {{\englishfont\fontsize{{8}}{{12}}\selectfont
-This chapter review is generated from the same aligned Chinese, Japanese, and English JSON
+This pocket review is generated from the same aligned Chinese, Japanese, and English JSON
 used by the LazyTravel website. Historical claims are separated from dated travel
 information; source text and source images are not republished. Map generalisation is
 disclosed on the map and in its provenance ledger. Chinese pinyin and Japanese furigana
@@ -169,12 +180,23 @@ def block_tex(
             rf"\LTSources{{{citation_markers(block['citation_ids'], citation_numbers)}}}",
         ]
     )
-    if block["kind"] == "map":
+    if block["kind"] in {"map", "figure"}:
         if len(block["asset_ids"]) != 1:
-            raise ValueError(f"map block {block['id']} must reference exactly one asset")
+            raise ValueError(
+                f"{block['kind']} block {block['id']} must reference exactly one asset"
+            )
         asset = assets[block["asset_ids"][0]]
-        map_path = (ROOT / asset.get("variants", {}).get("print", asset["path"])).resolve()
-        pieces.append(rf"\LTMapPage{{\detokenize{{{map_path}}}}}")
+        visual_path = (ROOT / asset.get("variants", {}).get("print", asset["path"])).resolve()
+        if block["kind"] == "map":
+            pieces.append(rf"\LTMapPage{{\detokenize{{{visual_path}}}}}")
+        else:
+            captions = asset["captions"]
+            pieces.append(
+                rf"\LTFigurePage{{\detokenize{{{visual_path}}}}}"
+                rf"{{{tex_escape(captions['zh'])}}}"
+                rf"{{{tex_escape(captions['ja'])}}}"
+                rf"{{{tex_escape(captions['en'])}}}"
+            )
     return "\n".join(pieces) + "\n"
 
 
@@ -189,7 +211,7 @@ def bibliography_tex(
         r"\addcontentsline{toc}{chapter}{资料来源 · 出典 · Sources}",
         (
             r"{\fontsize{8.5}{12.5}\selectfont\color{LTMuted}"
-            r"Only sources cited in this chapter are listed. Access date: 2026-08-14.\par}"
+            r"Only sources cited in these chapters are listed. Access date: 2026-08-14.\par}"
         ),
     ]
     for citation_id in ordered_ids:
@@ -209,34 +231,47 @@ def bibliography_tex(
     return "\n".join(pieces) + "\n"
 
 
-def render_document(document: dict[str, Any], chapter_id: str) -> str:
+def render_document(document: dict[str, Any], chapter_ids: str | list[str]) -> str:
     book = document["book"]
-    chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
-    if chapter_id not in chapters:
-        raise ValueError(f"chapter not found: {chapter_id}")
-    chapter = chapters[chapter_id]
-    if not chapter["blocks"]:
-        raise ValueError(f"chapter has no blocks: {chapter_id}")
+    chapters_by_id = {chapter["id"]: chapter for chapter in document["chapters"]}
+    requested_ids = [chapter_ids] if isinstance(chapter_ids, str) else chapter_ids
+    chapters: list[dict[str, Any]] = []
+    for chapter_id in requested_ids:
+        if chapter_id not in chapters_by_id:
+            raise ValueError(f"chapter not found: {chapter_id}")
+        chapter = chapters_by_id[chapter_id]
+        if not chapter["blocks"]:
+            raise ValueError(f"chapter has no blocks: {chapter_id}")
+        chapters.append(chapter)
 
     citations = {citation["id"]: citation for citation in document["citations"]}
     assets = {asset["id"]: asset for asset in document["assets"]}
-    ordered_ids = citation_order(chapter)
+    ordered_ids = citation_order_for_chapters(chapters)
     missing = [citation_id for citation_id in ordered_ids if citation_id not in citations]
     if missing:
         raise ValueError(f"missing citations: {', '.join(missing)}")
     citation_numbers = {citation_id: index for index, citation_id in enumerate(ordered_ids, 1)}
 
-    titles = chapter["titles"]
     pieces = [
-        cover_tex(book, chapter),
+        cover_tex(book, chapters),
         publication_note_tex(book),
         r"\frontmatter",
         r"\tableofcontents",
         r"\mainmatter",
-        rf"\LTChapterTitle{{{tex_escape(titles['zh'])}}}"
-        rf"{{{tex_escape(titles['ja'])}}}{{{tex_escape(titles['en'])}}}",
     ]
-    pieces.extend(block_tex(block, citation_numbers, assets) for block in chapter["blocks"])
+    for chapter in chapters:
+        titles = chapter["titles"]
+        deck = " · ".join(item.upper().replace("-", " ") for item in chapter["coverage"])
+        pieces.append(
+            rf"\LTChapterTitle{{{chapter['order']:02d}}}"
+            rf"{{{tex_escape(titles['zh'])}}}"
+            rf"{{{tex_escape(titles['ja'])}}}"
+            rf"{{{tex_escape(titles['en'])}}}"
+            rf"{{{tex_escape(deck)}}}"
+        )
+        pieces.extend(
+            block_tex(block, citation_numbers, assets) for block in chapter["blocks"]
+        )
     pieces.append(bibliography_tex(ordered_ids, citation_numbers, citations))
     pieces.extend(
         [
@@ -258,7 +293,12 @@ def render_document(document: dict[str, Any], chapter_id: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--book", type=Path, default=DEFAULT_BOOK)
-    parser.add_argument("--chapter", default="ch01-ground-before-time")
+    parser.add_argument(
+        "--chapter",
+        action="append",
+        dest="chapters",
+        help="chapter id to include; repeat for a continuous review",
+    )
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
 
@@ -267,7 +307,8 @@ def main() -> int:
     output_dir.mkdir(parents=True, exist_ok=True)
     content_path = output_dir / "generated-content.tex"
     wrapper_path = output_dir / "main.tex"
-    content_path.write_text(render_document(document, args.chapter), encoding="utf-8")
+    chapter_ids = args.chapters or ["ch01-ground-before-time"]
+    content_path.write_text(render_document(document, chapter_ids), encoding="utf-8")
     wrapper_path.write_text(
         f"\\def\\GeneratedContent{{{content_path}}}\n" f"\\input{{{DEFAULT_TEMPLATE}}}\n",
         encoding="utf-8",

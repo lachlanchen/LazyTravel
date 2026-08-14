@@ -1,0 +1,105 @@
+{
+  "asset_id": "asset-xian-capital-layers-map",
+  "command": "python3 scripts/build_xian_capital_layers_map.py",
+  "config": {
+    "path": "data/maps/xian/xian-capital-layers.config.json",
+    "sha256": "4154000bea8c8a71413145604b519904ef10cc7b9e0837dea158d8ce3466df70"
+  },
+  "created_at": "2026-08-14",
+  "declared_generalizations": [
+    {
+      "id": "feng",
+      "note": "Point-area symbol west of the Feng River; not a proposed wall line."
+    },
+    {
+      "id": "hao",
+      "note": "Point-area symbol east of the Feng River; not a proposed wall line."
+    },
+    {
+      "id": "qin-xianyang",
+      "note": "Broad north-bank core symbol; the wider Qin palace landscape crossed the Wei River."
+    },
+    {
+      "id": "han-changan",
+      "note": "Generalized city-site field used only for relative orientation."
+    },
+    {
+      "id": "sui-tang",
+      "note": "Generalized outer-city field; not a cadastral or archaeological boundary."
+    },
+    {
+      "id": "daming",
+      "note": "Generalized palace-site field on Longshouyuan."
+    }
+  ],
+  "files": {
+    "xian-capital-layers.pdf": {
+      "bytes": 57380,
+      "sha256": "e0979d29bc2c0de0a2b8a62fdac21c6480b60b3d02a2e7bca6e4cf15f2384704"
+    },
+    "xian-capital-layers.png": {
+      "bytes": 672788,
+      "sha256": "99d2d834952cda5dd85e29f0d7aa44140823d4639149a10451ec182be38c2a57"
+    },
+    "xian-capital-layers.svg": {
+      "bytes": 54503,
+      "sha256": "25f836ca2d223f4337d4b4de21c572b544ad6aa82c66cbdce04ebefc0c08a5a1"
+    }
+  },
+  "method": "map-render",
+  "present_geography": {
+    "path": "data/maps/xian/xian-before-walls.geojson",
+    "sha256": "04b214a49344bebd59e134ae1d3fe8308f9c7185806975b4a41288f51b1f2845"
+  },
+  "rights": "Map design © LazyTravel; present geography © OpenStreetMap contributors, ODbL 1.0.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "xian-history-1981",
+      "locator": "西安史话, city-site sections and the comparative site diagram in extracted PDF source-page groups 25-204",
+      "use": "comparative structure and research leads only; no source figure copied"
+    },
+    {
+      "id": "shaanxi-gazetteer-city-layers-2006",
+      "url": "https://dfz.shaanxi.gov.cn/zslm/zjyd/fzsy/200611/t20061123_2621396.html",
+      "use": "Fenghao and city-layer relationships"
+    },
+    {
+      "id": "shaanxi-heritage-weiyang-palace",
+      "url": "https://wwj.shaanxi.gov.cn/ztzl/ndzt/2013n/slsy/ycgk_2414/201211/t20121130_2143467.html",
+      "use": "Han Chang'an and Weiyang Palace relationship"
+    },
+    {
+      "id": "xian-gazetteer-sui-tang-site-2025",
+      "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1960625284585664514.html",
+      "use": "Sui-Tang site relationship to the modern city"
+    },
+    {
+      "id": "openstreetmap-xian-2026",
+      "license": "ODbL 1.0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "use": "present wall and river geometry from data/maps/xian/xian-before-walls.geojson"
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 3600,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      5600,
+      3600
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "Original 5600 x 3600 px render reviewed with complete CJK glyph coverage and clear schematic-boundary disclosure.",
+      "Labels remain separated at book-page scale; the web edition uses a pannable SVG viewport at 390 px rather than shrinking the map to illegibility.",
+      "Feng and Hao sit on opposite sides of the Feng River; the present wall remains visibly nested within the generalized Sui-Tang field."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-14"
+  }
+}

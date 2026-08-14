@@ -16,20 +16,30 @@ DEFAULT_BOOK = ROOT / "data/china/cities/xian/book.json"
 DEFAULT_OUTPUT = ROOT / "build/qa/site/xian"
 
 
-def expected_counts(book_path: Path) -> dict[str, int]:
+def expected_counts(book_path: Path) -> dict[str, dict[str, int]]:
     document = json.loads(book_path.read_text(encoding="utf-8"))
-    chapter = next(
-        chapter for chapter in document["chapters"] if chapter["id"] == "ch01-ground-before-time"
-    )
-    citation_ids = []
-    ruby = 0
-    for block in chapter["blocks"]:
-        for language in ("zh", "ja"):
-            ruby += sum("reading" in token for token in block["readings"][language]["tokens"])
-        for citation_id in block["citation_ids"]:
-            if citation_id not in citation_ids:
-                citation_ids.append(citation_id)
-    return {"blocks": len(chapter["blocks"]), "ruby": ruby, "sources": len(citation_ids)}
+    counts = {}
+    for chapter in document["chapters"]:
+        if not chapter["blocks"]:
+            continue
+        citation_ids = []
+        ruby = 0
+        for block in chapter["blocks"]:
+            for language in ("zh", "ja"):
+                ruby += sum(
+                    "reading" in token for token in block["readings"][language]["tokens"]
+                )
+            for citation_id in block["citation_ids"]:
+                if citation_id not in citation_ids:
+                    citation_ids.append(citation_id)
+        counts[chapter["id"]] = {
+            "blocks": len(chapter["blocks"]),
+            "ruby": ruby,
+            "sources": len(citation_ids),
+            "maps": sum(block["kind"] == "map" for block in chapter["blocks"]),
+            "figures": sum(block["kind"] == "figure" for block in chapter["blocks"]),
+        }
+    return counts
 
 
 def assert_no_page_overflow(page: Page, label: str) -> None:
@@ -84,10 +94,14 @@ def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[s
         "blocks": page.locator(".reading-block").count(),
         "ruby": page.locator("ruby").count(),
         "sources": page.locator(".source-item").count(),
-        "map_natural_width": page.locator(".map-stage img").evaluate("image => image.naturalWidth"),
-        "map_source": page.locator(".map-stage img").evaluate("image => image.currentSrc"),
+        "maps": page.locator(".map-figure").count(),
+        "figures": page.locator(".editorial-figure").count(),
+        "map_natural_width": page.locator(".map-stage img").first.evaluate(
+            "image => image.naturalWidth"
+        ),
+        "map_source": page.locator(".map-stage img").first.evaluate("image => image.currentSrc"),
     }
-    for key in ("blocks", "ruby", "sources"):
+    for key in ("blocks", "ruby", "sources", "maps", "figures"):
         if observed[key] != counts[key]:
             raise RuntimeError(f"{label} {key} mismatch: {observed[key]} != {counts[key]}")
     if not observed["map_source"].endswith(".svg") or observed["map_natural_width"] < 600:
@@ -101,8 +115,12 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
     chrome = shutil.which("google-chrome") or shutil.which("google-chrome-stable")
     if not chrome:
         raise RuntimeError("Google Chrome is required for browser QA")
+    if output.exists():
+        shutil.rmtree(output)
     output.mkdir(parents=True, exist_ok=True)
     counts = expected_counts(book_path)
+    chapter_1 = "ch01-ground-before-time"
+    chapter_2 = "ch02-capitals-on-different-maps"
     report: dict[str, Any] = {
         "url": url,
         "browser": chrome,
@@ -129,7 +147,9 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 lambda request: report["request_failures"].append(request.url),
             )
             desktop.goto(url, wait_until="networkidle")
-            report["viewports"]["desktop"] = assert_core_render(desktop, counts, "desktop")
+            report["viewports"]["desktop_ch01"] = assert_core_render(
+                desktop, counts[chapter_1], "desktop chapter 1"
+            )
             columns = desktop.locator(".language-grid").first.evaluate(
                 "node => getComputedStyle(node).gridTemplateColumns.split(' ').length"
             )
@@ -139,7 +159,21 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 )
             if not desktop.locator(".book-rail").is_visible():
                 raise RuntimeError("desktop chapter rail is hidden")
-            desktop.screenshot(path=output / "desktop.png", full_page=True)
+            desktop.screenshot(path=output / "desktop-ch01.png", full_page=True)
+
+            desktop.locator(f'[data-chapter-id="{chapter_2}"]').click()
+            desktop.wait_for_selector("#ch02-b001")
+            desktop.locator(".editorial-figure").scroll_into_view_if_needed()
+            desktop.wait_for_function(
+                """() => {
+                  const image = document.querySelector('.figure-image');
+                  return image && image.complete && image.naturalWidth >= 1200;
+                }"""
+            )
+            report["viewports"]["desktop_ch02"] = assert_core_render(
+                desktop, counts[chapter_2], "desktop chapter 2"
+            )
+            desktop.screenshot(path=output / "desktop-ch02.png", full_page=True)
 
             desktop.locator('[data-mode-button="zh"]').click()
             if desktop.locator('.language-panel[data-lang="ja"]').first.is_visible():
@@ -152,7 +186,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 raise RuntimeError("ruby toggle did not hide readings")
             desktop.locator(".ruby-switch").click()
             desktop.locator('[data-mode-button="parallel"]').click()
-            map_stage = desktop.locator(".map-stage")
+            map_stage = desktop.locator(".map-stage").first
             initial_width = map_stage.evaluate("node => node.getBoundingClientRect().width")
             desktop.get_by_role("button", name="Zoom in").click()
             zoomed_width = map_stage.evaluate("node => node.getBoundingClientRect().width")
@@ -179,12 +213,17 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 "requestfailed",
                 lambda request: report["request_failures"].append(request.url),
             )
-            mobile.goto(url, wait_until="networkidle")
-            report["viewports"]["mobile"] = assert_core_render(mobile, counts, "mobile")
+            mobile_url = f"{url.rstrip('/')}?chapter={chapter_2}"
+            mobile.goto(mobile_url, wait_until="networkidle")
+            report["viewports"]["mobile_ch02"] = assert_core_render(
+                mobile, counts[chapter_2], "mobile chapter 2"
+            )
             if mobile.locator(".book-rail").is_visible():
                 raise RuntimeError("mobile chapter rail should be replaced by the section menu")
             if not mobile.locator(".mobile-jump").is_visible():
                 raise RuntimeError("mobile section menu is hidden")
+            if mobile.locator("#chapter-select").input_value() != chapter_2:
+                raise RuntimeError("mobile chapter menu did not select Chapter 2")
             map_overflow = mobile.locator(".map-viewport").evaluate(
                 "node => ({client: node.clientWidth, scroll: node.scrollWidth})"
             )
@@ -193,7 +232,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             map_scroll_left = mobile.locator(".map-viewport").evaluate("node => node.scrollLeft")
             if map_scroll_left <= 0:
                 raise RuntimeError("mobile map did not open on the Xi'an area")
-            mobile.screenshot(path=output / "mobile.png", full_page=True)
+            mobile.screenshot(path=output / "mobile-ch02.png", full_page=True)
             mobile.locator(".map-figure").scroll_into_view_if_needed()
             mobile.locator(".map-figure").screenshot(path=output / "mobile-map.png")
             mobile_context.close()
@@ -219,10 +258,14 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     report = run_qa(args.url, args.book.resolve(), args.output.resolve())
+    totals = {
+        key: sum(chapter[key] for chapter in report["expected"].values())
+        for key in ("blocks", "ruby", "sources")
+    }
     print(
         "website browser QA: pass "
-        f"({report['expected']['blocks']} blocks, {report['expected']['ruby']} ruby nodes, "
-        f"{report['expected']['sources']} sources)"
+        f"({totals['blocks']} blocks, {totals['ruby']} ruby nodes, "
+        f"{totals['sources']} chapter-source entries)"
     )
     return 0
 
