@@ -1,0 +1,109 @@
+{
+  "asset_id": "asset-xian-before-walls-map",
+  "command": "python3 scripts/build_xian_orientation_map.py",
+  "config": "data/maps/xian/xian-before-walls.config.json",
+  "created_at": "2026-08-14",
+  "files": {
+    "xian-before-walls.pdf": {
+      "bytes": 73786,
+      "sha256": "af02c0a5391e13c7f4dabb7466f6469b2e379575f29a7c32e352c8db53045b6a"
+    },
+    "xian-before-walls.png": {
+      "bytes": 456881,
+      "sha256": "7d78bcc8b8b530838e1d76a1ccf07f6d7c8533b273c2512ec238ad7b5c9f6daa"
+    },
+    "xian-before-walls.svg": {
+      "bytes": 138369,
+      "sha256": "4db615513a26cca8d645126c58cd9e3e8a4380966f07ec8ce1c17ab7069d27db"
+    }
+  },
+  "generalized_features": [
+    {
+      "name": "滈河",
+      "reason": "The named centerline is incomplete in the OSM snapshot; this corridor follows the official source description from Shibian Valley toward the Jue confluence near Xiangji Temple.",
+      "river_key": "hao"
+    },
+    {
+      "name": "浐河",
+      "reason": "Generalized continuation between separately mapped reaches, ending near the Chan-Ba confluence.",
+      "river_key": "chan"
+    },
+    {
+      "name": "潏河",
+      "reason": "Generalized upper corridor from the Qinling foothills to the mapped reach.",
+      "river_key": "jue"
+    },
+    {
+      "name": "涝河",
+      "reason": "Generalized short connector between the Lao Valley and named Lao River reaches.",
+      "river_key": "lao"
+    }
+  ],
+  "method": "map-render",
+  "normalized_data": {
+    "path": "data/maps/xian/xian-before-walls.geojson",
+    "sha256": "04b214a49344bebd59e134ae1d3fe8308f9c7185806975b4a41288f51b1f2845"
+  },
+  "osm_objects": {
+    "lookup": [
+      "R403900",
+      "R449321",
+      "R3450809"
+    ],
+    "ways": [
+      283580434,
+      288401391,
+      1082392621,
+      84170155,
+      558016453,
+      239198177,
+      429297138,
+      139653625,
+      139653626,
+      147615269,
+      227338328
+    ]
+  },
+  "rights": "Map design © LazyTravel; OpenStreetMap-derived centerlines © OpenStreetMap contributors under ODbL 1.0.",
+  "schema_version": 1,
+  "sources": {
+    "osm": {
+      "endpoints": [
+        "https://nominatim.openstreetmap.org/lookup",
+        "https://api.openstreetmap.org/api/0.6/way/{id}/full"
+      ],
+      "license": "ODbL 1.0",
+      "name": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    "river_names": {
+      "name": "Shaanxi Provincial Local Gazetteer Office, Which eight rivers are the Eight Waters of Chang'an?",
+      "url": "https://dfz.shaanxi.gov.cn/zslm/zjyd/fzsy/201205/t20120503_2622378.html"
+    },
+    "terrain": {
+      "name": "Xi'an municipal natural-environment description, section 4.1.1",
+      "note": "The foothill band is a declared terrain symbol, not a surveyed ridgeline.",
+      "url": "https://www.xa.gov.cn/web_files/xian/file/2025/09/11/202509111501568451165.pdf"
+    }
+  },
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      3360,
+      2376
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": false,
+    "label_collisions": "pass",
+    "mobile_390px": "fail",
+    "notes": [
+      "Print and full-page PDF review passed with readable labels and no collisions.",
+      "A full-fit 390 px rendering makes minor river labels too small; the website requires a mobile-specific crop, scroll, or detail view before approval."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-14"
+  }
+}

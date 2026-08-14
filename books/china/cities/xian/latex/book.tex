@@ -1,0 +1,171 @@
+\documentclass[10pt,oneside,openany]{scrbook}
+
+\usepackage[
+  paperwidth=170mm,
+  paperheight=240mm,
+  inner=18mm,
+  outer=16mm,
+  top=18mm,
+  bottom=20mm,
+  headsep=6mm,
+  footskip=9mm
+]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{needspace}
+\usepackage{enumitem}
+\usepackage{pdflscape}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage[automark,headsepline=.25pt]{scrlayer-scrpage}
+
+\setmainfont{Noto Serif}[
+  Ligatures=TeX,
+  Numbers=OldStyle
+]
+\setsansfont{Noto Sans Display}
+\setCJKmainfont[AutoFakeSlant=0.15]{Noto Serif CJK SC}
+\setCJKsansfont[AutoFakeSlant=0.15]{Noto Sans CJK SC}
+\newCJKfontfamily\jpfont[AutoFakeSlant=0.15]{Noto Serif CJK JP}
+\newfontfamily\englishfont{Noto Serif}
+\newfontfamily\displayfont{Noto Sans Display}
+
+\definecolor{LTInk}{HTML}{202522}
+\definecolor{LTMuted}{HTML}{5C625E}
+\definecolor{LTForest}{HTML}{315347}
+\definecolor{LTWater}{HTML}{237FA3}
+\definecolor{LTVermilion}{HTML}{B44736}
+\definecolor{LTPaper}{HTML}{F5F2EA}
+\definecolor{LTPale}{HTML}{DDE3DA}
+
+\pagecolor{LTPaper}
+\color{LTInk}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=LTForest,
+  urlcolor=LTWater,
+  citecolor=LTVermilion,
+  pdfborder={0 0 0}
+}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist{nosep,leftmargin=1.5em}
+\raggedbottom
+\emergencystretch=1.5em
+
+\clearpairofpagestyles
+\ihead{\footnotesize\sffamily\color{LTMuted}\leftmark}
+\ohead{\footnotesize\sffamily\color{LTMuted}LazyTravel · XI'AN}
+\cfoot{\footnotesize\sffamily\color{LTMuted}\pagemark}
+\renewcommand*{\chapterpagestyle}{empty}
+\setkomafont{chapter}{\displayfont\bfseries\color{LTInk}}
+\setkomafont{section}{\displayfont\bfseries\color{LTForest}}
+\setkomafont{disposition}{\displayfont\bfseries}
+
+\newcommand{\LTBrand}{%
+  {\displayfont\bfseries\fontsize{14}{16}\selectfont LazyTravel}%
+  \hfill
+  {\displayfont\fontsize{8}{10}\selectfont lazying.art}%
+}
+
+\newcommand{\LTChapterTitle}[3]{%
+  \cleardoublepage
+  \phantomsection
+  \addcontentsline{toc}{chapter}{#1 · #3}
+  \markboth{#1}{#1}
+  \thispagestyle{empty}
+  \vspace*{10mm}
+  {\displayfont\fontsize{8}{10}\selectfont\color{LTVermilion}
+    CHAPTER 01 · XI'AN\par}
+  \vspace{9mm}
+  {\bfseries\fontsize{27}{34}\selectfont #1\par}
+  \vspace{4mm}
+  {{\jpfont\fontsize{15}{22}\selectfont\color{LTForest}#2}\par}
+  \vspace{3mm}
+  {{\englishfont\fontsize{14}{19}\selectfont\color{LTMuted}#3}\par}
+  \vfill
+  \rule{24mm}{1.2pt}\par
+  \vspace{3mm}
+  {\displayfont\fontsize{7.5}{10}\selectfont\color{LTMuted}
+    READ THE PLACE BEFORE COUNTING THE YEARS\par}
+  \clearpage
+}
+
+\newcommand{\LTLabel}[2]{%
+  {\displayfont\bfseries\fontsize{6.8}{8}\selectfont\color{#1}#2}\par
+  \vspace{1.2mm}
+}
+
+\newcommand{\LTBlockStart}[1]{%
+  \Needspace{86mm}
+  \par\vspace{4mm}
+  {\color{LTPale}\rule{\linewidth}{0.55pt}}\par
+  \vspace{4mm}
+  {\displayfont\fontsize{6}{7}\selectfont\color{LTMuted}#1}\par
+  \vspace{2mm}
+}
+
+\newcommand{\LTChinese}[1]{%
+  \Needspace{48mm}
+  \LTLabel{LTVermilion}{中文}
+  {\fontsize{10.2}{16}\selectfont #1\par}
+}
+
+\newcommand{\LTJapanese}[1]{%
+  \Needspace{55mm}
+  \vspace{3.2mm}
+  \LTLabel{LTForest}{日本語}
+  {{\jpfont\fontsize{9.6}{15.2}\selectfont #1}\par}
+}
+
+\newcommand{\LTEnglish}[1]{%
+  \Needspace{50mm}
+  \vspace{3.2mm}
+  \LTLabel{LTWater}{ENGLISH}
+  {{\englishfont\fontsize{9.4}{13.8}\selectfont #1}\par}
+}
+
+\newcommand{\LTSources}[1]{%
+  \vspace{2.5mm}
+  {\displayfont\fontsize{6.2}{8}\selectfont\color{LTMuted}
+    资料 · 出典 · SOURCES\quad #1\par}
+}
+
+\newcommand{\LTPracticalHeading}{%
+  \par\vspace{5mm}
+  {\color{LTVermilion}\rule{1.2mm}{8mm}}\hspace{2.5mm}%
+  {\displayfont\bfseries\fontsize{8}{10}\selectfont
+    方位判断 · 方位を取り戻す · FIELD ORIENTATION}\par
+  \vspace{1mm}
+}
+
+\newcommand{\LTMapPage}[1]{%
+  \clearpage
+  \begin{landscape}
+    \thispagestyle{empty}
+    \centering
+    \vspace*{\fill}
+    \includegraphics[width=0.96\linewidth,height=0.82\textheight,keepaspectratio]{#1}\par
+    \vspace*{\fill}
+  \end{landscape}
+  \clearpage
+}
+
+\newcommand{\LTSourceEntry}[4]{%
+  \Needspace{20mm}
+  \par\vspace{3mm}
+  {\displayfont\bfseries\fontsize{7}{9}\selectfont\color{LTVermilion}[#1]}\quad
+  {\bfseries #2}\par
+  {\fontsize{8}{11}\selectfont\color{LTMuted}#3\par}
+  #4
+}
+
+\begin{document}
+\input{\GeneratedContent}
+\end{document}

@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "book": {
+    "id": "xian",
+    "series_path": "china/cities/xian",
+    "titles": {
+      "zh": "在长安与西安之间",
+      "ja": "長安と西安のあいだ",
+      "en": "Between Chang'an and Xi'an"
+    },
+    "subtitles": {
+      "zh": "读懂古都地层的旅行手册",
+      "ja": "古都の地層を読み歩く旅の手引き",
+      "en": "A Field Guide to Reading the Layers of a Capital"
+    },
+    "languages": ["zh", "ja", "en"],
+    "status": "drafting",
+    "edition": "research-edition-2026-08-14",
+    "branding": {
+      "brand": "LazyTravel",
+      "studio": "lazying.art",
+      "website": "https://lazying.art",
+      "repository": "https://github.com/lachlanchen/LazyTravel"
+    }
+  },
+  "coverage": [
+    "history",
+    "food",
+    "attractions",
+    "transport",
+    "hotels",
+    "itineraries",
+    "cultural-context",
+    "practical",
+    "maps"
+  ],
+  "chapters": [
+    {
+      "id": "ch01-ground-before-time",
+      "order": 1,
+      "titles": {
+        "zh": "先看地形，再看年代",
+        "ja": "年代より先に地形を読む",
+        "en": "Read the Ground Before the Timeline"
+      },
+      "coverage": ["history", "cultural-context", "maps", "practical"],
+      "status": "drafting",
+      "blocks": [
+        {
+          "id": "ch01-b001",
+          "kind": "prose",
+          "category": "cultural-context",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "第一次看西安地图，先把比例尺拉到城墙之外。屏幕南缘会抬起一整道秦岭，北面则有渭河横过平原；钟楼、雁塔和宫城遗址都落在两者之间。这个动作比背诵朝代有用。长安并不只是今天城墙内那片地方的旧称；这个名字还包含都城一再择地而建的历史，选择的条件来自山、水、台塬与道路。",
+            "ja": "西安の地図を開いたら、まず城壁が小さく見えるまで引いてみる。南には秦嶺が長く連なり、北には渭河が平野を横切る。鐘楼も雁塔も宮殿跡も、そのあいだに置かれている。王朝名を覚えるより、先にこの幅を目に入れたい。長安は、現在の城壁内だけを指す古名ではない。山、水、黄土の台地、道の条件に応じて、都が場所を選び直してきた歴史を含む名である。",
+            "en": "When you first open a map of Xi'an, zoom out until the wall looks small. The Qinling range should form a long southern edge; the Wei River should cross the plain to the north. The Bell Tower, the pagodas and the palace sites lie between them. This view is more useful than memorising a list of dynasties. Chang'an is not merely an old name for the space inside today's wall. The name carries a history of capitals choosing, and choosing again, among mountains, rivers, loess terraces and roads."
+          },
+          "citation_ids": ["src-xian-municipal-geography-2025", "src-shaanxi-gazetteer-city-layers-2006"],
+          "asset_ids": [],
+          "review": {
+            "zh": {"state": "fact-checked", "notes": ["Chinese pass: local spatial terms and opening cadence reviewed; page QA pending."]},
+            "ja": {"state": "fact-checked", "notes": ["Japanese pass: rewritten as independent orientation prose; page QA pending."]},
+            "en": {"state": "fact-checked", "notes": ["English pass: dynasty-list framing removed in favour of spatial explanation; page QA pending."]}
+          }
+        },
+        {
+          "id": "ch01-b002",
+          "kind": "prose",
+          "category": "history",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "从秦岭向北，地面不是一道均匀的斜坡。山地先落到丘陵与沟壑，再接黄土台塬、山前冲洪积扇，最后铺开成渭河及其支流的平原。进入城区以后，楼群和道路会把这些层次藏起来，地名却还留着线索：龙首原、白鹿原、少陵原，都是高而相对平展的黄土地。站到台塬边缘或宫殿遗址的高处，视线、水路与城址为何如此安排，便不再只像图纸上的线。",
+            "ja": "秦嶺から北へ、地面は一枚の斜面になっているわけではない。山地は丘陵と谷へ下がり、黄土の台地、山麓の扇状地を経て、渭河と支流の平野へ開く。市街では道路と建物がこの段差を隠すが、龍首原、白鹿原、少陵原といった地名には、高く平らな土地の記憶が残る。台地の縁や宮殿跡の高みに立てば、眺望や水路、城の位置が図面上の線だけではなくなる。",
+            "en": "Northward from the Qinling, the ground does not descend as one even slope. Mountains give way to dissected hills, loess tablelands and piedmont fans before the Wei and its tributaries open into a plain. Roads and towers conceal much of that sequence in the built city, but place names such as Longshouyuan, Bailuyuan and Shaolingyuan still signal raised, comparatively level ground. From the edge of a terrace, or the higher ground of a palace site, sightlines, watercourses and the choice of a city site stop looking like arbitrary lines on a plan."
+          },
+          "citation_ids": ["src-xian-municipal-geography-2025", "src-xian-history-1981"],
+          "asset_ids": [],
+          "review": {
+            "zh": {"state": "fact-checked", "notes": ["Chinese pass: terrain sequence checked against the municipal source; page QA pending."]},
+            "ja": {"state": "fact-checked", "notes": ["Japanese pass: technical landforms recast in readable travel prose; page QA pending."]},
+            "en": {"state": "fact-checked", "notes": ["English pass: landform vocabulary retained only where it aids observation; page QA pending."]}
+          }
+        },
+        {
+          "id": "ch01-b003",
+          "kind": "map",
+          "category": "maps",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "这张图只做一件事：把今天的城墙放回秦岭—渭河水系之中。实线来自开放地理数据；虚线是因公开中心线缺漏而作的概化水系，不能用于寻路或判断河岸。",
+            "ja": "この図の役目は一つだけである。現在の城壁を、秦嶺と渭河水系の広がりの中へ戻す。実線は公開地理データ、破線は中心線が途切れる区間を概略化したもの。経路案内や河岸位置の確認には使えない。",
+            "en": "This map has one job: to put today's wall back inside the larger Qinling-Wei River setting. Solid lines come from open geographic data; dashed reaches generalise gaps in the public centreline data. Neither should be used for navigation or to locate a riverbank."
+          },
+          "citation_ids": ["src-openstreetmap-xian-rivers-2026", "src-shaanxi-gazetteer-eight-waters-2012", "src-xian-municipal-geography-2025"],
+          "asset_ids": ["asset-xian-before-walls-map"],
+          "review": {
+            "zh": {"state": "fact-checked", "notes": ["Chinese pass: data limitations stated directly; mobile map variant pending."]},
+            "ja": {"state": "fact-checked", "notes": ["Japanese pass: map-use warning edited for natural technical prose; mobile map variant pending."]},
+            "en": {"state": "fact-checked", "notes": ["English pass: provenance and non-navigation warning made explicit; mobile map variant pending."]}
+          }
+        },
+        {
+          "id": "ch01-b004",
+          "kind": "prose",
+          "category": "history",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "“关中”常被顺手解释成四座关隘围成的地方，但历史文献给出的边界并不一致：有两关、四关，也有更宽的范围。对旅行者，较稳妥的理解不是画一条假装永恒的边界，而是把它看作以渭河平原为核心、山口控制出入的一片历史地理。这里既便于农业与供水，也便于守御；但向远方输送粮食、人员和命令的成本从未消失。地形给都城机会，也给它限度。",
+            "ja": "「関中」は、四つの関に囲まれた土地と一文で説明されがちだが、史料に現れる範囲も関の組み合わせも一定しない。旅の地図では、動かない境界線を一本引くより、渭河平原を核に、山地の関門が出入りを絞る歴史地理として捉える方がよい。農耕と給水、防衛には利点があった。その一方で、遠方から穀物や人、命令を運ぶ負担は消えない。地形は都に条件を与え、同時に限界も与えた。",
+            "en": "Guanzhong is often reduced to 'the land within four passes', yet historical sources disagree about both its reach and the passes that define it. For a traveller, it is more honest to treat the Wei River plain as the core of a historical region whose mountain gateways narrowed movement, rather than draw a timeless border. The setting favoured farming, water supply and defence. It never abolished the cost of moving grain, people and orders over distance. Terrain gave a capital possibilities, and limits."
+          },
+          "citation_ids": ["src-shaanxi-gazetteer-guanzhong-2006", "src-shaanxi-gazetteer-guanzhong-origin-2014", "src-xian-history-1981"],
+          "asset_ids": [],
+          "review": {
+            "zh": {"state": "fact-checked", "notes": ["Chinese pass: fixed-four-pass definition explicitly rejected; page QA pending."]},
+            "ja": {"state": "fact-checked", "notes": ["Japanese pass: 関中 explained spatially rather than as a dictionary gloss; page QA pending."]},
+            "en": {"state": "fact-checked", "notes": ["English pass: environmental determinism avoided; page QA pending."]}
+          }
+        },
+        {
+          "id": "ch01-b005",
+          "kind": "prose",
+          "category": "cultural-context",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "古人说“八水”，指渭、泾、沣、涝、潏、滈、浐、灞。它们并不是八条等距环绕城墙的护城河：有的在北面汇流，有的从秦岭北坡下行，有的与西周丰镐、汉唐水利或东行道路发生关系。“绕长安”更像一幅历史水系的总称。读地图时，先问某处靠哪条河、位于哪块台塬、通向哪个谷口；比把八个名字背成口号更有用。",
+            "ja": "古くからいう「八水」は、渭河・泾河・沣河・涝河・潏河・滈河・浐河・灞河を指す。だが、現在の城壁を等間隔に囲む八本の濠ではない。北で合流する川があり、秦嶺北麓から下る川があり、西周の豊鎬、漢唐の水利、東へ向かう道と結びつく川がある。「長安をめぐる」は、歴史的な水系を一望するための言葉と考えたい。地図では、八つの名を唱えるより、その場所がどの川、どの台地、どの谷口に近いかを問う方が役に立つ。",
+            "en": "The traditional Eight Waters are the Wei, Jing, Feng, Lao, Jue, Hao, Chan and Ba. They are not eight equidistant moats around the present wall. Some meet north of the city; some descend from the Qinling's northern slopes; others are tied to Western Zhou Fenghao, Han and Tang waterworks, or the road east. 'Around Chang'an' is best read as a historical water-system frame. On a working map, ask which river, loess terrace and mountain valley a place belongs to. That is more useful than reciting eight names."
+          },
+          "citation_ids": ["src-shaanxi-gazetteer-eight-waters-2012", "src-xian-history-1981"],
+          "asset_ids": ["asset-xian-before-walls-map"],
+          "review": {
+            "zh": {"state": "fact-checked", "notes": ["Chinese pass: traditional names retained without literalising 绕; page QA pending."]},
+            "ja": {"state": "fact-checked", "notes": ["Japanese pass: Chinese proper-name forms preserved for map matching; page QA pending."]},
+            "en": {"state": "fact-checked", "notes": ["English pass: mnemonic replaced with a traveler-useful reading method; page QA pending."]}
+          }
+        },
+        {
+          "id": "ch01-b006",
+          "kind": "prose",
+          "category": "cultural-context",
+          "temporal_scope": "time-sensitive",
+          "checked_at": "2026-08-14",
+          "text": {
+            "zh": "这些水并没有被固定在古代。2025年公布的国土空间规划批复仍把秦岭生态屏障与渭河流域的修复并列提出；西安市的自然环境资料也把秦岭山地列为水资源涵养区。于是，历史地图上的河道不能只当成诗意背景。它们解释聚落为何出现，也提醒今天的旅行者：山口、河岸和遗址公园是受季节、保护边界与城市治理共同影响的真实空间。",
+            "ja": "水系は古代の背景として固定されたわけではない。2025年に公表された国土空間計画の認可文は、秦嶺の生態系保全と渭河流域の修復を並ぶ課題として挙げ、西安市の自然環境資料は秦嶺山地を水源涵養域と位置づける。歴史地図の川を、詩的な背景だけで終わらせないこと。川は集落が生まれた理由を説明すると同時に、谷口、河岸、遺跡公園が季節、保護区域、都市管理の影響を受ける現実の空間だと教える。",
+            "en": "These waters did not become fixed in antiquity. The 2025 approval for Xi'an's territorial plan pairs restoration of the Qinling ecological barrier with restoration of the Wei River basin; municipal environmental material also identifies the Qinling mountains as a water-conservation area. Rivers on a historical map are therefore more than poetic scenery. They help explain settlement, and they remind a traveller that valleys, riverbanks and archaeological parks are living places shaped by season, protection boundaries and city management."
+          },
+          "citation_ids": ["src-china-state-council-xian-plan-2025", "src-xian-municipal-geography-2025"],
+          "asset_ids": [],
+          "review": {
+            "zh": {"state": "fact-checked", "notes": ["Chinese pass: current policy claim visibly dated; page QA pending."]},
+            "ja": {"state": "fact-checked", "notes": ["Japanese pass: policy wording naturalised without adding claims; page QA pending."]},
+            "en": {"state": "fact-checked", "notes": ["English pass: planning claim separated from durable physical geography; page QA pending."]}
+          }
+        },
+        {
+          "id": "ch01-b007",
+          "kind": "practical",
+          "category": "practical",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "在西安辨方向，可以先放下三条线：秦岭在南，渭河在北，明代形成的城墙只是两者之间一小块历史城区。天气清朗时，南面的山体是最直观的校准；看不见山时，就确认自己是在城墙、雁塔、北站还是临潼一侧。不要把“城内”当成“长安全部”。隋大兴、唐长安的外郭远大于今天的城墙，许多关键遗址散在现代城市的不同区段。",
+            "ja": "西安で向きを取り戻すなら、まず三本の線を置く。南の秦嶺、北の渭河、その間に小さく収まる明代由来の城壁である。晴れていれば南の山並みがいちばん分かりやすい。山が見えない日は、城壁、雁塔、北駅、臨潼のどれに近い側にいるかを確かめる。「城内」を長安の全体と思わないこと。隋の大興城と唐の長安城の外郭は現在の城壁よりはるかに広く、主要な遺跡は現代都市の別々の区画に残る。",
+            "en": "To recover your bearings in Xi'an, begin with three lines: the Qinling to the south, the Wei to the north, and the Ming-derived wall occupying a small historic core between them. In clear weather, the southern mountains are the easiest check. When they disappear from view, establish whether you are near the wall, the pagodas, Xi'an North station or the Lintong side of the city. Do not let 'inside the wall' stand for all of Chang'an. The outer city of Sui Daxing and Tang Chang'an extended far beyond today's wall, and many essential sites survive in separate parts of the modern city."
+          },
+          "citation_ids": ["src-xian-historic-city-plan-2020-2035", "src-xian-gazetteer-sui-tang-site-2025"],
+          "asset_ids": ["asset-xian-before-walls-map"],
+          "review": {
+            "zh": {"state": "fact-checked", "notes": ["Chinese pass: practical orientation kept separate from route or schedule advice; page QA pending."]},
+            "ja": {"state": "fact-checked", "notes": ["Japanese pass: directional instructions edited for natural sequence; page QA pending."]},
+            "en": {"state": "fact-checked", "notes": ["English pass: wall-versus-capital distinction made explicit; page QA pending."]}
+          }
+        },
+        {
+          "id": "ch01-b008",
+          "kind": "prose",
+          "category": "history",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "所以下一章不从“西安有多少朝代”问起，而要问每一座都城把宫殿、市场、道路与水放在了哪里。丰镐、汉长安、隋大兴与唐长安、明清西安并没有严丝合缝地叠在一起。先保留这张地形底图，后面的都城叠图才不会把两千多年的城市压成一个旅游图标。",
+            "ja": "次章で問うのは「西安にいくつの王朝があったか」ではなく、それぞれの都が宮殿、市場、道、水をどこに置いたかである。豊鎬、漢長安、隋の大興城と唐長安、明清西安は、ぴたりと重なる一枚の都市ではない。この地形図を手元に残しておけば、二千年を超える都市の移動を、一つの観光アイコンに押し込めずに済む。",
+            "en": "The next chapter therefore begins not with 'how many dynasties?' but with where each capital put its palaces, markets, roads and water. Fenghao, Han Chang'an, Sui Daxing and Tang Chang'an, and Ming-Qing Xi'an do not fit neatly over one another. Keep this terrain map in mind. The layered city map that follows can then show more than two millennia of movement without compressing it into a single tourist icon."
+          },
+          "citation_ids": ["src-shaanxi-gazetteer-city-layers-2006", "src-unesco-changan-tianshan"],
+          "asset_ids": [],
+          "review": {
+            "zh": {"state": "fact-checked", "notes": ["Chinese pass: transition avoids dynasty counting and sets the next spatial question; page QA pending."]},
+            "ja": {"state": "fact-checked", "notes": ["Japanese pass: chapter transition edited as continuous prose; page QA pending."]},
+            "en": {"state": "fact-checked", "notes": ["English pass: transition tightened and repetition removed; page QA pending."]}
+          }
+        }
+      ]
+    },
+    {"id": "ch02-capitals-on-different-maps", "order": 2, "titles": {"zh": "都城不在同一张地图上", "ja": "都城は同じ地図に載っていない", "en": "The Capitals Do Not Share One Map"}, "coverage": ["history", "attractions", "maps"], "status": "outlined", "blocks": []},
+    {"id": "ch03-army-under-earth", "order": 3, "titles": {"zh": "地下军阵，不是一个快门景点", "ja": "地下の軍陣を、一枚の写真で終わらせない", "en": "The Army Under Earth Is Not a Photo Stop"}, "coverage": ["history", "attractions", "transport"], "status": "outlined", "blocks": []},
+    {"id": "ch04-let-text-lead", "order": 4, "titles": {"zh": "从雁塔到碑林，让文字带路", "ja": "雁塔から碑林へ、文字に導かれて", "en": "Let Text Lead: From the Pagodas to the Forest of Steles"}, "coverage": ["history", "attractions", "cultural-context"], "status": "outlined", "blocks": []},
+    {"id": "ch05-inside-the-wall", "order": 5, "titles": {"zh": "城墙以内：四条大街和许多小路", "ja": "城壁の内側、四本の大街と無数の路地", "en": "Inside the Wall: Four Axes and Many Side Streets"}, "coverage": ["attractions", "cultural-context", "maps"], "status": "outlined", "blocks": []},
+    {"id": "ch06-beginning-with-bread", "order": 6, "titles": {"zh": "吃西安，从一只馍开始", "ja": "西安を食べるなら、まずは一個のモーから", "en": "Eat Xi'an, Beginning With Bread"}, "coverage": ["food", "cultural-context", "practical"], "status": "outlined", "blocks": []},
+    {"id": "ch07-beyond-the-center", "order": 7, "titles": {"zh": "城外的一天", "ja": "城外で過ごす一日", "en": "A Day Beyond the Center"}, "coverage": ["history", "attractions", "transport"], "status": "outlined", "blocks": []},
+    {"id": "ch08-arrive-and-move", "order": 8, "titles": {"zh": "抵达与移动：把换乘写进路线", "ja": "到着と移動、乗り換えまで旅程に入れる", "en": "Arrive and Move: Put Transfers Into the Route"}, "coverage": ["transport", "practical", "maps"], "status": "outlined", "blocks": []},
+    {"id": "ch09-choose-a-side", "order": 9, "titles": {"zh": "住在哪一侧：用街区而不是星级选酒店", "ja": "どちら側に泊まるか、星より街区で選ぶ", "en": "Choose a Side of the City, Not a Star Count"}, "coverage": ["hotels", "transport", "practical"], "status": "outlined", "blocks": []},
+    {"id": "ch10-itineraries-with-room", "order": 10, "titles": {"zh": "两日、三日与五日：给脚力留余地", "ja": "二日、三日、五日、歩く力に余白を残す", "en": "Two, Three, and Five Days With Room to Stop"}, "coverage": ["itineraries", "transport", "food", "hotels"], "status": "outlined", "blocks": []},
+    {"id": "ch11-before-departure", "order": 11, "titles": {"zh": "临行前", "ja": "出発前に", "en": "Before Departure"}, "coverage": ["practical", "transport", "hotels"], "status": "outlined", "blocks": []}
+  ],
+  "citations": [
+    {"id": "src-xian-history-1981", "title": "西安史话", "source_type": "book", "source_id": "xian-history-1981", "path": "/home/lachlan/ProjectsLFS/LazyTravel/Sources/西安史话.pdf", "locator": "Chapter 1: PDF pages 9-13, printed pages 1-5; later uses receive their own exact locator", "accessed_at": "2026-08-14", "supports": ["historical leads", "city-layer structure", "physical geography leads"]},
+    {"id": "src-xian-family-guide", "title": "最文化亲子西安自助游", "source_type": "book", "source_id": "xian-family-guide", "path": "/home/lachlan/ProjectsLFS/LazyTravel/Sources/最文化亲子西安自助游.epub", "locator": "EPUB spine; exact document and block locators assigned per block", "accessed_at": "2026-08-14", "supports": ["attraction inventory", "family-use questions", "obsolete practical structure"]},
+    {"id": "src-xian-city-flavor", "title": "西安的味道 (Living in Xian): 城市故事", "source_type": "book", "source_id": "xian-city-flavor", "path": "/home/lachlan/ProjectsLFS/LazyTravel/Sources/西安的味道 (Living in Xian)_ 城市故事 (City Story).epub", "locator": "EPUB spine; exact section locators assigned per block", "accessed_at": "2026-08-14", "supports": ["food vocabulary", "street-life motifs", "cultural prompts"]},
+    {"id": "src-xian-open-guide-zh", "title": "西安开放旅行指南", "source_type": "open-guide", "source_id": "xian-open-guide-zh", "url": "https://zh.wikivoyage.org/wiki/%E8%A5%BF%E5%AE%89", "path": "/home/lachlan/ProjectsLFS/Books/resources/curated-books/travel-guides/xian-gansu-open-guides/xian/zh/source-pages/01-xian-zh.json", "locator": "Revision 209278; exact section assigned per block", "accessed_at": "2026-08-14", "license": "CC BY-SA 4.0", "supports": ["orientation", "current-fact leads", "cross-check questions"]},
+    {"id": "src-xian-open-guide-en", "title": "Xi'an Open Travel Guide", "source_type": "open-guide", "source_id": "xian-open-guide-en", "url": "https://en.wikivoyage.org/wiki/Xi'an", "path": "/home/lachlan/ProjectsLFS/Books/resources/curated-books/travel-guides/xian-gansu-open-guides/xian/en/source-pages/01-xian-en.json", "locator": "Revision 5297771; exact section assigned per block", "accessed_at": "2026-08-14", "license": "CC BY-SA 4.0", "supports": ["orientation", "current-fact leads", "cross-language checks"]},
+    {"id": "src-xian-municipal-geography-2025", "title": "曲江新区医院项目环境影响报告书：自然环境概况", "source_type": "official-web", "source_id": "xian-municipal-geography-2025", "url": "https://www.xa.gov.cn/web_files/xian/file/2025/09/11/202509111501568451165.pdf", "locator": "Section 4.1.1, PDF page 86 (viewer page 85), lines 4053-4060", "accessed_at": "2026-08-14", "supports": ["Guanzhong and Wei River setting", "south-to-north terrain sequence", "Qinling water conservation"]},
+    {"id": "src-china-state-council-xian-plan-2025", "title": "Xi'an's territorial spatial plan approved", "source_type": "official-web", "source_id": "china-state-council-xian-plan-2025", "url": "https://english.www.gov.cn/policies/latestreleases/202501/22/content_WS6790e3cac6d0868f4e8ef102.html", "locator": "State Council reply summary, 22 January 2025, lines 33-44", "accessed_at": "2026-08-14", "supports": ["Qinling ecological barrier restoration", "Wei River basin restoration", "historic-area protection"]},
+    {"id": "src-shaanxi-gazetteer-guanzhong-2006", "title": "“关中”考释", "source_type": "official-web", "source_id": "shaanxi-gazetteer-guanzhong-2006", "url": "https://dfz.shaanxi.gov.cn/zslm/zjyd/fzsy/200611/t20061125_2621473.html", "locator": "Opening discussion of changing historical scope and two-, four-, and multi-pass explanations", "accessed_at": "2026-08-14", "supports": ["variable historical scope of Guanzhong", "Wei River plain as a later core"]},
+    {"id": "src-shaanxi-gazetteer-guanzhong-origin-2014", "title": "“关中”地名由来探究", "source_type": "official-web", "source_id": "shaanxi-gazetteer-guanzhong-origin-2014", "url": "https://dfz.shaanxi.gov.cn/zslm/zjyd/yjjl/201403/t20140312_2686718.html", "locator": "Opening historiographical discussion and enumeration of competing pass theories", "accessed_at": "2026-08-14", "supports": ["uncertainty in the place-name explanation", "rejection of one timeless four-pass formula"]},
+    {"id": "src-shaanxi-gazetteer-eight-waters-2012", "title": "“长安八水”指的是哪八条河流", "source_type": "official-web", "source_id": "shaanxi-gazetteer-eight-waters-2012", "url": "https://dfz.shaanxi.gov.cn/zslm/zjyd/fzsy/201205/t20120503_2622378.html", "locator": "Full article; river list and individual descriptions", "accessed_at": "2026-08-14", "supports": ["Eight Waters names", "river directions and confluences", "historical associations"]},
+    {"id": "src-shaanxi-gazetteer-city-layers-2006", "title": "丰镐—长安—西安（一）", "source_type": "official-web", "source_id": "shaanxi-gazetteer-city-layers-2006", "url": "https://dfz.shaanxi.gov.cn/zslm/zjyd/fzsy/200611/t20061123_2621396.html", "locator": "Opening natural-geography frame and Fenghao section", "accessed_at": "2026-08-14", "supports": ["successive capital sites", "natural setting and city location", "Fenghao river relationship"]},
+    {"id": "src-xian-historic-city-plan-2020-2035", "title": "西安历史文化名城保护规划（2020-2035年）", "source_type": "official-web", "source_id": "xian-historic-city-plan-2020-2035", "url": "https://www.xa.gov.cn/web_files/xian/file/2022/09/09/202209091042479845518.pdf", "locator": "Chapter 5, articles 18-20: historic-city boundary, spatial pattern, and street protection", "accessed_at": "2026-08-14", "supports": ["compact historic core within the ring road", "Ming-derived wall area", "long-lived street axes"]},
+    {"id": "src-xian-gazetteer-sui-tang-site-2025", "title": "隋大兴城、唐长安城遗址", "source_type": "official-web", "source_id": "xian-gazetteer-sui-tang-site-2025", "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1960625284585664514.html", "locator": "Site extent, surviving elements, and relationship to the modern city; published 27 August 2025", "accessed_at": "2026-08-14", "supports": ["Sui-Tang outer-city extent", "sites outside the present wall", "modern overlay"]},
+    {"id": "src-unesco-changan-tianshan", "title": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor", "source_type": "institutional-web", "source_id": "unesco-changan-tianshan", "url": "https://whc.unesco.org/en/list/1442", "locator": "Brief synthesis, lines 38-46, especially the succession of palaces around Chang'an", "accessed_at": "2026-08-14", "license": "CC BY-SA IGO 3.0 for the description", "supports": ["Chang'an on the Loess Plateau", "succession of capital and palace landscapes", "water and long-distance exchange context"]},
+    {"id": "src-openstreetmap-xian-rivers-2026", "title": "OpenStreetMap Xi'an river centerlines and city-wall geometry", "source_type": "map-data", "source_id": "openstreetmap-xian-rivers-2026-08-14", "url": "https://www.openstreetmap.org/copyright", "path": "/home/lachlan/ProjectsLFS/LazyTravel/data/maps/xian/xian-before-walls.geojson", "locator": "Pinned OSM relations R403900, R449321, R3450809 and declared way IDs; normalized snapshot 2026-08-14", "accessed_at": "2026-08-14", "license": "ODbL 1.0", "supports": ["river centerlines", "current wall outline", "reproducible map rendering"]}
+  ],
+  "assets": [
+    {
+      "id": "asset-xian-before-walls-map",
+      "kind": "map",
+      "path": "assets/maps/xian/xian-before-walls.svg",
+      "variants": {
+        "print": "assets/maps/xian/xian-before-walls.png",
+        "vector_pdf": "assets/maps/xian/xian-before-walls.pdf",
+        "web": "assets/maps/xian/xian-before-walls.svg",
+        "fallback": "assets/maps/xian/xian-before-walls.png"
+      },
+      "captions": {
+        "zh": "西安位于秦岭北麓与渭河水系之间；今天的城墙以朱红色标出。虚线为中心线数据不完整的概化河段。",
+        "ja": "西安は秦嶺北麓と渭河水系のあいだにある。現在の城壁は朱色、中心線データが不完全な河道は破線で概略化した。",
+        "en": "Xi'an lies between the Qinling foothills and the Wei River system. Today's wall is shown in vermilion; dashed reaches generalise incomplete centreline data."
+      },
+      "provenance": {
+        "method": "map-render",
+        "source": "data/maps/xian/xian-before-walls.config.json and normalized OpenStreetMap ODbL data; detailed ledger in assets/maps/xian/xian-before-walls.provenance.json",
+        "created_at": "2026-08-14"
+      },
+      "rights": "Map design © LazyTravel; centerlines © OpenStreetMap contributors, ODbL 1.0.",
+      "qa": {"resolution": "pass", "legibility": "pending", "content": "pass", "approved": false}
+    }
+  ]
+}

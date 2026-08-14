@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lachlanchen/LazyTravel/schemas/source-catalog.schema.json",
+  "title": "LazyTravel source catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "snapshot_date", "policy", "tooling", "references", "sources"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "snapshot_date": {"type": "string", "format": "date"},
+    "policy": {"type": "object"},
+    "tooling": {"type": "array", "items": {"$ref": "#/$defs/pathRecord"}},
+    "references": {"type": "array", "items": {"$ref": "#/$defs/pathRecord"}},
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/source"}
+    }
+  },
+  "$defs": {
+    "pathRecord": {
+      "type": "object",
+      "required": ["id", "path", "sha256"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "path": {"type": "string", "pattern": "^/"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["id", "destination_ids", "title", "kind", "path", "sha256", "editorial_roles", "temporal_warning", "rights", "extraction_route"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "destination_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "title": {"type": "string", "minLength": 1},
+        "kind": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "pattern": "^/"},
+        "source_snapshot_path": {"type": "string", "pattern": "^/"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "source_snapshot_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "editorial_roles": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "temporal_warning": {"type": "string", "minLength": 1},
+        "rights": {
+          "type": "object",
+          "required": ["status", "redistributable"],
+          "properties": {
+            "status": {"type": "string"},
+            "redistributable": {"type": "boolean"}
+          }
+        },
+        "extraction_route": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
+

@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lachlanchen/LazyTravel/schemas/destination-book.schema.json",
+  "title": "LazyTravel aligned destination book",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "book", "coverage", "chapters", "citations", "assets"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "book": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "series_path", "titles", "languages", "status", "edition", "branding"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "series_path": {"type": "string", "pattern": "^(china/cities|japan/prefectures|world/countries)/[a-z0-9-]+$"},
+        "titles": {"$ref": "#/$defs/trilingualText"},
+        "subtitles": {"$ref": "#/$defs/trilingualText"},
+        "languages": {"const": ["zh", "ja", "en"]},
+        "status": {"enum": ["researching", "drafting", "reviewing", "complete"]},
+        "edition": {"type": "string", "minLength": 1},
+        "branding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["brand", "studio", "website", "repository"],
+          "properties": {
+            "brand": {"const": "LazyTravel"},
+            "studio": {"const": "lazying.art"},
+            "website": {"type": "string", "format": "uri"},
+            "repository": {"type": "string", "format": "uri"}
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "array",
+      "minItems": 7,
+      "uniqueItems": true,
+      "items": {"enum": ["history", "food", "attractions", "transport", "hotels", "itineraries", "cultural-context", "practical", "maps"]}
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/chapter"}
+    },
+    "citations": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/citation"}
+    },
+    "assets": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/asset"}
+    }
+  },
+  "$defs": {
+    "trilingualText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zh", "ja", "en"],
+      "properties": {
+        "zh": {"type": "string", "minLength": 1},
+        "ja": {"type": "string", "minLength": 1},
+        "en": {"type": "string", "minLength": 1}
+      }
+    },
+    "languageReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zh", "ja", "en"],
+      "properties": {
+        "zh": {"$ref": "#/$defs/reviewState"},
+        "ja": {"$ref": "#/$defs/reviewState"},
+        "en": {"$ref": "#/$defs/reviewState"}
+      }
+    },
+    "reviewState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "notes"],
+      "properties": {
+        "state": {"enum": ["draft", "line-edited", "fact-checked", "final"]},
+        "notes": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "chapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "order", "titles", "coverage", "status", "blocks"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^ch[0-9]{2}-[a-z0-9-]+$"},
+        "order": {"type": "integer", "minimum": 1},
+        "titles": {"$ref": "#/$defs/trilingualText"},
+        "coverage": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "status": {"enum": ["outlined", "researching", "drafting", "reviewing", "final"]},
+        "blocks": {"type": "array", "items": {"$ref": "#/$defs/block"}}
+      }
+    },
+    "block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "category", "temporal_scope", "text", "citation_ids", "asset_ids", "review"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^ch[0-9]{2}-b[0-9]{3}$"},
+        "kind": {"enum": ["prose", "practical", "callout", "list", "itinerary-step", "map", "figure"]},
+        "category": {"enum": ["history", "food", "attractions", "transport", "hotels", "itineraries", "cultural-context", "practical", "maps"]},
+        "temporal_scope": {"enum": ["durable", "time-sensitive"]},
+        "checked_at": {"type": "string", "format": "date"},
+        "text": {"$ref": "#/$defs/trilingualText"},
+        "citation_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "asset_ids": {"type": "array", "items": {"type": "string"}},
+        "review": {"$ref": "#/$defs/languageReview"}
+      }
+    },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "source_type", "source_id", "locator", "accessed_at", "supports"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^src-[a-z0-9-]+$"},
+        "title": {"type": "string", "minLength": 1},
+        "source_type": {"enum": ["book", "official-web", "institutional-web", "open-guide", "dataset", "map-data"]},
+        "source_id": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "format": "uri"},
+        "path": {"type": "string"},
+        "locator": {"type": "string", "minLength": 1},
+        "accessed_at": {"type": "string", "format": "date"},
+        "license": {"type": "string"},
+        "supports": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "path", "captions", "provenance", "rights", "qa"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^asset-[a-z0-9-]+$"},
+        "kind": {"enum": ["photo", "illustration", "map", "diagram"]},
+        "path": {"type": "string", "minLength": 1},
+        "variants": {
+          "type": "object",
+          "additionalProperties": {"type": "string", "minLength": 1}
+        },
+        "captions": {"$ref": "#/$defs/trilingualText"},
+        "provenance": {
+          "type": "object",
+          "required": ["method", "source", "created_at"],
+          "properties": {
+            "method": {"enum": ["original-photo", "generated", "source-reuse", "map-render"]},
+            "source": {"type": "string", "minLength": 1},
+            "created_at": {"type": "string", "format": "date"}
+          }
+        },
+        "rights": {"type": "string", "minLength": 1},
+        "qa": {
+          "type": "object",
+          "required": ["resolution", "legibility", "content", "approved"],
+          "properties": {
+            "resolution": {"enum": ["pending", "pass", "fail"]},
+            "legibility": {"enum": ["pending", "pass", "fail"]},
+            "content": {"enum": ["pending", "pass", "fail"]},
+            "approved": {"type": "boolean"}
+          }
+        }
+      }
+    }
+  }
+}

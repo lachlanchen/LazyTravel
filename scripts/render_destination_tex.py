@@ -1,0 +1,253 @@
+#!/usr/bin/env python3
+"""Render aligned LazyTravel destination JSON into generated LaTeX content."""
+
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_BOOK = ROOT / "data/china/cities/xian/book.json"
+DEFAULT_TEMPLATE = ROOT / "books/china/cities/xian/latex/book.tex"
+
+
+LATEX_ESCAPES = {
+    "\\": r"\textbackslash{}",
+    "{": r"\{",
+    "}": r"\}",
+    "$": r"\$",
+    "&": r"\&",
+    "#": r"\#",
+    "%": r"\%",
+    "_": r"\_",
+    "~": r"\textasciitilde{}",
+    "^": r"\textasciicircum{}",
+}
+
+
+def tex_escape(value: str) -> str:
+    return "".join(LATEX_ESCAPES.get(character, character) for character in value)
+
+
+def url_tex(value: str) -> str:
+    return "\\url{" + value.replace("%", r"\%") + "}"
+
+
+def citation_order(chapter: dict[str, Any]) -> list[str]:
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for block in chapter["blocks"]:
+        for citation_id in block["citation_ids"]:
+            if citation_id not in seen:
+                seen.add(citation_id)
+                ordered.append(citation_id)
+    return ordered
+
+
+def citation_markers(ids: list[str], numbers: dict[str, int]) -> str:
+    return " ".join(rf"\hyperlink{{source-{numbers[item]}}}{{[{numbers[item]}]}}" for item in ids)
+
+
+def cover_tex(book: dict[str, Any], chapter: dict[str, Any]) -> str:
+    titles = book["titles"]
+    subtitles = book.get("subtitles", {language: "" for language in ("zh", "ja", "en")})
+    branding = book["branding"]
+    return rf"""
+\begin{{titlepage}}
+  \thispagestyle{{empty}}
+  \LTBrand
+  \vspace*{{20mm}}
+  {{\displayfont\fontsize{{8}}{{10}}\selectfont\color{{LTVermilion}}
+    CHINA · CITIES · XI'AN\par}}
+  \vspace{{9mm}}
+  {{\bfseries\fontsize{{31}}{{39}}\selectfont {tex_escape(titles['zh'])}\par}}
+  \vspace{{5mm}}
+  {{{{\jpfont\fontsize{{18}}{{25}}\selectfont\color{{LTForest}}
+    {tex_escape(titles['ja'])}}}\par}}
+  \vspace{{4mm}}
+  {{{{\englishfont\fontsize{{17}}{{23}}\selectfont
+    {tex_escape(titles['en'])}}}\par}}
+  \vspace{{12mm}}
+  {{\color{{LTVermilion}}\rule{{28mm}}{{1.4pt}}}}\par
+  \vspace{{7mm}}
+  {{\fontsize{{10}}{{15}}\selectfont {tex_escape(subtitles['zh'])}\par}}
+  \vspace{{2mm}}
+  {{{{\jpfont\fontsize{{9}}{{14}}\selectfont\color{{LTForest}}
+    {tex_escape(subtitles['ja'])}}}\par}}
+  \vspace{{2mm}}
+  {{{{\englishfont\fontsize{{9}}{{13}}\selectfont\color{{LTMuted}}
+    {tex_escape(subtitles['en'])}}}\par}}
+  \vfill
+  {{\displayfont\fontsize{{7}}{{9}}\selectfont\color{{LTMuted}}
+    CHAPTER REVIEW EDITION · {tex_escape(chapter['id'])}\par}}
+  \vspace{{3mm}}
+  {{\displayfont\fontsize{{7}}{{10}}\selectfont
+    {tex_escape(branding['studio'])} · {tex_escape(branding['repository'])}\par}}
+\end{{titlepage}}
+\cleardoublepage
+"""
+
+
+def publication_note_tex(book: dict[str, Any]) -> str:
+    branding = book["branding"]
+    return rf"""
+\thispagestyle{{empty}}
+\vspace*{{18mm}}
+{{\displayfont\bfseries\fontsize{{13}}{{17}}\selectfont About this review edition\par}}
+\vspace{{6mm}}
+{{\englishfont\fontsize{{9}}{{14}}\selectfont
+This chapter review is generated from the same aligned Chinese, Japanese, and English JSON
+used by the LazyTravel website. Historical claims are separated from dated travel
+information; source text and source images are not republished. Map generalisation is
+disclosed on the map and in its provenance ledger.\par}}
+\vspace{{6mm}}
+{{\fontsize{{9}}{{14}}\selectfont
+本章审阅版由同一份中、日、英对齐 JSON 生成。历史事实与有时效的旅行信息分开处理，
+不转载参考书原文或图片；地图中的概化河段均在图面与溯源记录中说明。\par}}
+\vspace{{6mm}}
+{{\jpfont\fontsize{{8.8}}{{14}}\selectfont
+本章レビュー版は、ウェブサイトと共通の中国語・日本語・英語対訳 JSON から生成している。
+歴史的記述と更新を要する旅行情報を分け、参照資料の本文や画像は転載しない。
+地図の概略化区間は図面と来歴記録に明記した。\par}}
+\vfill
+{{\displayfont\fontsize{{7}}{{10}}\selectfont\color{{LTMuted}}
+LazyTravel · {tex_escape(branding['studio'])}\par
+Repository: {url_tex(branding['repository'])}\par
+Edition: {tex_escape(book['edition'])}\par}}
+\clearpage
+"""
+
+
+def block_tex(
+    block: dict[str, Any],
+    citation_numbers: dict[str, int],
+    assets: dict[str, dict[str, Any]],
+) -> str:
+    text = block["text"]
+    pieces = [
+        r"\noindent\begin{minipage}{\linewidth}",
+        rf"\LTBlockStart{{{tex_escape(block['id'])}}}",
+    ]
+    if block["kind"] == "practical":
+        pieces.append(r"\LTPracticalHeading")
+    pieces.extend(
+        [
+            rf"\LTChinese{{{tex_escape(text['zh'])}}}",
+            rf"\LTJapanese{{{tex_escape(text['ja'])}}}",
+            rf"\LTEnglish{{{tex_escape(text['en'])}}}",
+            rf"\LTSources{{{citation_markers(block['citation_ids'], citation_numbers)}}}",
+            r"\end{minipage}\par",
+        ]
+    )
+    if block["kind"] == "map":
+        if len(block["asset_ids"]) != 1:
+            raise ValueError(f"map block {block['id']} must reference exactly one asset")
+        asset = assets[block["asset_ids"][0]]
+        map_path = (ROOT / asset.get("variants", {}).get("print", asset["path"])).resolve()
+        pieces.append(rf"\LTMapPage{{\detokenize{{{map_path}}}}}")
+    return "\n".join(pieces) + "\n"
+
+
+def bibliography_tex(
+    ordered_ids: list[str],
+    citation_numbers: dict[str, int],
+    citations: dict[str, dict[str, Any]],
+) -> str:
+    pieces = [
+        r"\cleardoublepage",
+        r"\chapter*{资料来源 · 出典 · Sources}",
+        r"\addcontentsline{toc}{chapter}{资料来源 · 出典 · Sources}",
+        (
+            r"{\fontsize{8.5}{12.5}\selectfont\color{LTMuted}"
+            r"Only sources cited in this chapter are listed. Access date: 2026-08-14.\par}"
+        ),
+    ]
+    for citation_id in ordered_ids:
+        citation = citations[citation_id]
+        details = [tex_escape(citation["locator"])]
+        if citation.get("license"):
+            details.append(f"License: {tex_escape(citation['license'])}")
+        link = ""
+        if citation.get("url"):
+            link = rf"{{\fontsize{{7}}{{10}}\selectfont {url_tex(citation['url'])}\par}}"
+        number = citation_numbers[citation_id]
+        pieces.append(rf"\hypertarget{{source-{number}}}{{}}")
+        pieces.append(
+            rf"\LTSourceEntry{{{number}}}{{{tex_escape(citation['title'])}}}"
+            rf"{{{' · '.join(details)}}}{{{link}}}"
+        )
+    return "\n".join(pieces) + "\n"
+
+
+def render_document(document: dict[str, Any], chapter_id: str) -> str:
+    book = document["book"]
+    chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
+    if chapter_id not in chapters:
+        raise ValueError(f"chapter not found: {chapter_id}")
+    chapter = chapters[chapter_id]
+    if not chapter["blocks"]:
+        raise ValueError(f"chapter has no blocks: {chapter_id}")
+
+    citations = {citation["id"]: citation for citation in document["citations"]}
+    assets = {asset["id"]: asset for asset in document["assets"]}
+    ordered_ids = citation_order(chapter)
+    missing = [citation_id for citation_id in ordered_ids if citation_id not in citations]
+    if missing:
+        raise ValueError(f"missing citations: {', '.join(missing)}")
+    citation_numbers = {citation_id: index for index, citation_id in enumerate(ordered_ids, 1)}
+
+    titles = chapter["titles"]
+    pieces = [
+        cover_tex(book, chapter),
+        publication_note_tex(book),
+        r"\frontmatter",
+        r"\tableofcontents",
+        r"\mainmatter",
+        rf"\LTChapterTitle{{{tex_escape(titles['zh'])}}}"
+        rf"{{{tex_escape(titles['ja'])}}}{{{tex_escape(titles['en'])}}}",
+    ]
+    pieces.extend(block_tex(block, citation_numbers, assets) for block in chapter["blocks"])
+    pieces.append(bibliography_tex(ordered_ids, citation_numbers, citations))
+    pieces.extend(
+        [
+            r"\cleardoublepage",
+            r"\thispagestyle{empty}",
+            r"\vspace*{\fill}",
+            r"{\centering\displayfont\bfseries\fontsize{15}{19}\selectfont LazyTravel\par}",
+            r"\vspace{3mm}",
+            (
+                r"{\centering\fontsize{8}{11}\selectfont "
+                r"lazying.art · github.com/lachlanchen/LazyTravel\par}"
+            ),
+            r"\vspace*{\fill}",
+        ]
+    )
+    return "\n".join(pieces) + "\n"
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--book", type=Path, default=DEFAULT_BOOK)
+    parser.add_argument("--chapter", default="ch01-ground-before-time")
+    parser.add_argument("--output-dir", type=Path, required=True)
+    args = parser.parse_args()
+
+    document = json.loads(args.book.read_text(encoding="utf-8"))
+    output_dir = args.output_dir.resolve()
+    output_dir.mkdir(parents=True, exist_ok=True)
+    content_path = output_dir / "generated-content.tex"
+    wrapper_path = output_dir / "main.tex"
+    content_path.write_text(render_document(document, args.chapter), encoding="utf-8")
+    wrapper_path.write_text(
+        f"\\def\\GeneratedContent{{{content_path}}}\n" f"\\input{{{DEFAULT_TEMPLATE}}}\n",
+        encoding="utf-8",
+    )
+    print(f"rendered: {content_path}")
+    print(f"wrapper: {wrapper_path}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

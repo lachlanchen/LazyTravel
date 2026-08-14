@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "source_id": "xian-history-1981",
+  "source_sha256": "7f02a5a8f57923c7cdb4ddf4c90f00d8de49aeedf0aac7c107cbe42cfba4032b",
+  "mapping": {
+    "printed_to_pdf_page_offset": 8,
+    "evidence": "Printed contents on PDF pages 7-8; printed page 1 begins on PDF page 9."
+  },
+  "sections": [
+    {"order": 1, "title": "秦川的山山水水", "printed_page": 1, "pdf_page": 9},
+    {"order": 2, "title": "活动在关中原野上的先民", "printed_page": 15, "pdf_page": 23},
+    {"order": 3, "title": "周原和丰镐", "printed_page": 25, "pdf_page": 33},
+    {"order": 4, "title": "秦都咸阳", "printed_page": 38, "pdf_page": 46},
+    {"order": 5, "title": "阿房宫与始皇陵", "printed_page": 48, "pdf_page": 56},
+    {"order": 6, "title": "鸿门宴——刘项入关", "printed_page": 55, "pdf_page": 63},
+    {"order": 7, "title": "漫话“斗城”", "printed_page": 61, "pdf_page": 69},
+    {"order": 8, "title": "繁荣的汉长安", "printed_page": 76, "pdf_page": 84},
+    {"order": 9, "title": "早期的“丝绸之路”", "printed_page": 85, "pdf_page": 93},
+    {"order": 10, "title": "绿林、赤眉大军进长安", "printed_page": 91, "pdf_page": 99},
+    {"order": 11, "title": "战乱和割据之中的长安", "printed_page": 95, "pdf_page": 103},
+    {"order": 12, "title": "历史名都唐长安城的出现", "printed_page": 101, "pdf_page": 109},
+    {"order": 13, "title": "三大宫殿群", "printed_page": 106, "pdf_page": 114},
+    {"order": 14, "title": "棋盘式的街坊布局", "printed_page": 116, "pdf_page": 124},
+    {"order": 15, "title": "琳琅满目的东西两市", "printed_page": 123, "pdf_page": 131},
+    {"order": 16, "title": "绚丽多彩的文化园地", "printed_page": 133, "pdf_page": 141},
+    {"order": 17, "title": "“丝绸之路”的发展与中西文化交流", "printed_page": 147, "pdf_page": 155},
+    {"order": 18, "title": "大雁塔与小雁塔", "printed_page": 154, "pdf_page": 162},
+    {"order": 19, "title": "曲江池与芙蓉园", "printed_page": 165, "pdf_page": 173},
+    {"order": 20, "title": "黄巢起义军进长安", "printed_page": 170, "pdf_page": 178},
+    {"order": 21, "title": "失去了首都地位的古城——宋元时期的长安", "printed_page": 178, "pdf_page": 186},
+    {"order": 22, "title": "全国最大的石质书库——碑林", "printed_page": 183, "pdf_page": 191},
+    {"order": 23, "title": "明代的军事重镇——西安府", "printed_page": 191, "pdf_page": 199},
+    {"order": 24, "title": "李自成起义军建立的大顺政权与西京", "printed_page": 195, "pdf_page": 203},
+    {"order": 25, "title": "辛亥革命前后的西安", "printed_page": 202, "pdf_page": 210},
+    {"order": 26, "title": "震撼中外的“西安事变”", "printed_page": 210, "pdf_page": 218},
+    {"order": 27, "title": "结束语", "printed_page": 222, "pdf_page": 230}
+  ]
+}
+

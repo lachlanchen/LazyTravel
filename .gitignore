@@ -1,0 +1,42 @@
+# Supplied research books are local-only and must never be redistributed.
+Sources/*
+
+# Reproducible extraction/build output.
+build/
+dist/
+site/
+
+# Python and test caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Node/browser output. Browser identities never belong in this repository.
+node_modules/
+website/node_modules/
+website/dist/
+playwright-report/
+test-results/
+.cache/
+
+# TeX intermediates. Final PDFs are exported through dist/.
+*.aux
+*.bcf
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Workstation metadata.
+.DS_Store
+._*
+

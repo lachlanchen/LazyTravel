@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "brand": {
+    "name": "LazyTravel",
+    "studio": "lazying.art",
+    "website": "https://lazying.art",
+    "repository": "https://github.com/lachlanchen/LazyTravel"
+  },
+  "languages": ["zh", "ja", "en"],
+  "taxonomy": {
+    "china": "cities",
+    "japan": "prefectures",
+    "world": "countries"
+  },
+  "active_destination": "china/cities/xian",
+  "destination_gate": "one-at-a-time",
+  "production_contract": {
+    "content_source": "aligned-destination-json",
+    "ruby": {
+      "zh": "reviewed-pinyin",
+      "ja": "reviewed-furigana"
+    },
+    "pocket_book": {
+      "trim_mm": [125, 176],
+      "layout": "uncluttered"
+    },
+    "website": {
+      "content_parity_with_pocket_book": "required",
+      "responsive": true
+    }
+  },
+  "destinations": [
+    {
+      "id": "china/cities/xian",
+      "names": {
+        "zh": "西安",
+        "ja": "西安",
+        "en": "Xi'an"
+      },
+      "status": "researching"
+    },
+    {
+      "id": "china/cities/lanzhou",
+      "names": {
+        "zh": "兰州",
+        "ja": "蘭州",
+        "en": "Lanzhou"
+      },
+      "status": "gated"
+    }
+  ]
+}

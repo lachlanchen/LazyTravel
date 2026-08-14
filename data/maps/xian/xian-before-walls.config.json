@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "xian-before-walls",
+  "snapshot_date": "2026-08-14",
+  "title": {
+    "zh": "西安，在城墙之外",
+    "ja": "城壁の外から見る西安",
+    "en": "XI'AN BEFORE THE WALLS"
+  },
+  "extent": [108.35, 33.78, 109.35, 34.62],
+  "lookup_objects": [
+    {"osm_id": "R403900", "kind": "river", "river_key": "wei", "name": "渭河"},
+    {"osm_id": "R449321", "kind": "river", "river_key": "jing", "name": "泾河"},
+    {"osm_id": "R3450809", "kind": "wall", "name": "西安城墙"}
+  ],
+  "way_objects": [
+    {"osm_id": 283580434, "river_key": "feng", "name": "沣河"},
+    {"osm_id": 288401391, "river_key": "feng", "name": "沣河"},
+    {"osm_id": 1082392621, "river_key": "feng", "name": "沣河"},
+    {"osm_id": 84170155, "river_key": "feng", "name": "沣河"},
+    {"osm_id": 558016453, "river_key": "feng", "name": "沣河"},
+    {"osm_id": 239198177, "river_key": "lao", "name": "涝河"},
+    {"osm_id": 429297138, "river_key": "lao", "name": "涝峪河"},
+    {"osm_id": 139653625, "river_key": "jue", "name": "潏河"},
+    {"osm_id": 139653626, "river_key": "jue", "name": "潏河"},
+    {"osm_id": 147615269, "river_key": "chan", "name": "浐河"},
+    {"osm_id": 227338328, "river_key": "ba", "name": "灞河"}
+  ],
+  "generalized_segments": [
+    {
+      "river_key": "hao",
+      "name": "滈河",
+      "reason": "The named centerline is incomplete in the OSM snapshot; this corridor follows the official source description from Shibian Valley toward the Jue confluence near Xiangji Temple.",
+      "coordinates": [[108.846, 33.855], [108.861, 33.916], [108.875, 33.978], [108.892, 34.045], [108.890, 34.116]]
+    },
+    {
+      "river_key": "chan",
+      "name": "浐河",
+      "reason": "Generalized continuation between separately mapped reaches, ending near the Chan-Ba confluence.",
+      "coordinates": [[109.088, 34.150], [109.074, 34.220], [109.058, 34.292], [109.042, 34.365], [109.043, 34.421]]
+    },
+    {
+      "river_key": "jue",
+      "name": "潏河",
+      "reason": "Generalized upper corridor from the Qinling foothills to the mapped reach.",
+      "coordinates": [[108.989, 33.872], [108.982, 33.930], [108.974, 33.997], [108.966, 34.065], [108.958, 34.116]]
+    },
+    {
+      "river_key": "lao",
+      "name": "涝河",
+      "reason": "Generalized short connector between the Lao Valley and named Lao River reaches.",
+      "coordinates": [[108.587, 34.020], [108.584, 34.082], [108.579, 34.143]]
+    }
+  ],
+  "labels": [
+    {"river_key": "wei", "text": "渭河  WEI", "position": [108.53, 34.405], "rotation": 3},
+    {"river_key": "jing", "text": "泾河  JING", "position": [108.955, 34.545], "rotation": 72},
+    {"river_key": "feng", "text": "沣河  FENG", "position": [108.735, 34.205], "rotation": 78},
+    {"river_key": "lao", "text": "涝河  LAO", "position": [108.565, 34.185], "rotation": 78},
+    {"river_key": "jue", "text": "潏河  JUE", "position": [108.948, 34.085], "rotation": 65},
+    {"river_key": "hao", "text": "滈河  HAO", "position": [108.855, 34.000], "rotation": 73},
+    {"river_key": "chan", "text": "浐河  CHAN", "position": [109.057, 34.285], "rotation": 78},
+    {"river_key": "ba", "text": "灞河  BA", "position": [109.182, 34.235], "rotation": 62}
+  ],
+  "terrain_symbol": {
+    "name": "秦岭北麓 / 秦嶺北麓\nQINLING FOOTHILLS",
+    "coordinates": [[108.35, 33.78], [109.35, 33.78], [109.35, 33.915], [109.23, 33.948], [109.10, 33.922], [108.96, 33.962], [108.82, 33.925], [108.68, 33.954], [108.53, 33.916], [108.35, 33.945]]
+  },
+  "city_marker": {"position": [108.943, 34.266], "label": "西安 / XI'AN"},
+  "sources": {
+    "osm": {
+      "name": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "endpoints": [
+        "https://nominatim.openstreetmap.org/lookup",
+        "https://api.openstreetmap.org/api/0.6/way/{id}/full"
+      ]
+    },
+    "river_names": {
+      "name": "Shaanxi Provincial Local Gazetteer Office, Which eight rivers are the Eight Waters of Chang'an?",
+      "url": "https://dfz.shaanxi.gov.cn/zslm/zjyd/fzsy/201205/t20120503_2622378.html"
+    },
+    "terrain": {
+      "name": "Xi'an municipal natural-environment description, section 4.1.1",
+      "url": "https://www.xa.gov.cn/web_files/xian/file/2025/09/11/202509111501568451165.pdf",
+      "note": "The foothill band is a declared terrain symbol, not a surveyed ridgeline."
+    }
+  }
+}
