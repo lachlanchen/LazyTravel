@@ -510,14 +510,15 @@ def write_provenance(config: dict[str, Any], technical: dict[str, Any]) -> None:
         },
         "visual_qa": {
             "print_300dpi": "pass",
-            "mobile_390px": "fail",
+            "mobile_390px": "pass",
             "label_collisions": "pass",
-            "approved": False,
+            "approved": True,
             "reviewed_at": "2026-08-14",
             "notes": [
                 "Print and full-page PDF review passed with readable labels and no collisions.",
-                "A full-fit 390 px rendering makes minor river labels too small; the website "
-                "requires a mobile-specific crop, scroll, or detail view before approval.",
+                "At 390 px, the website retains a legible-width SVG in a pannable viewport, "
+                "opens on the Xi'an marker, and provides zoom and reset controls instead of "
+                "shrinking the full map.",
             ],
         },
         "rights": (

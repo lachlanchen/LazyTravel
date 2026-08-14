@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import copy
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -7,7 +9,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from build_xian_review import extract_page_count, extract_page_size, validate_fonts  # noqa: E402
+from build_xian_review import (  # noqa: E402
+    BOOK_PATH,
+    extract_page_count,
+    extract_page_size,
+    validate_asset_qa,
+    validate_fonts,
+)
 
 
 class XianReviewBuildTests(unittest.TestCase):
@@ -19,6 +27,17 @@ class XianReviewBuildTests(unittest.TestCase):
             extract_page_size("Page size:       354.331 x 498.898 pts (B6)\n"),
             (354.331, 498.898),
         )
+
+    def test_accepts_reviewed_map_asset(self) -> None:
+        document = json.loads(BOOK_PATH.read_text(encoding="utf-8"))
+        validate_asset_qa(document)
+
+    def test_rejects_unapproved_map_asset(self) -> None:
+        document = json.loads(BOOK_PATH.read_text(encoding="utf-8"))
+        document = copy.deepcopy(document)
+        document["assets"][0]["qa"]["approved"] = False
+        with self.assertRaisesRegex(RuntimeError, "visual QA"):
+            validate_asset_qa(document)
 
     def test_accepts_embedded_font_rows(self) -> None:
         output = (

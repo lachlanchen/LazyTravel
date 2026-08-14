@@ -96,12 +96,12 @@
     "svg_selectable_text": true
   },
   "visual_qa": {
-    "approved": false,
+    "approved": true,
     "label_collisions": "pass",
-    "mobile_390px": "fail",
+    "mobile_390px": "pass",
     "notes": [
       "Print and full-page PDF review passed with readable labels and no collisions.",
-      "A full-fit 390 px rendering makes minor river labels too small; the website requires a mobile-specific crop, scroll, or detail view before approval."
+      "At 390 px, the website retains a legible-width SVG in a pannable viewport, opens on the Xi'an marker, and provides zoom and reset controls instead of shrinking the full map."
     ],
     "print_300dpi": "pass",
     "reviewed_at": "2026-08-14"

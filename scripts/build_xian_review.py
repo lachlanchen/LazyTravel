@@ -12,6 +12,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK_PATH = ROOT / "data/china/cities/xian/book.json"
@@ -101,6 +102,34 @@ def extract_page_size(output: str) -> tuple[float, float]:
     return float(match.group(1)), float(match.group(2))
 
 
+def validate_asset_qa(document: dict[str, Any]) -> None:
+    chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
+    chapter = chapters[CHAPTER_ID]
+    asset_ids = {
+        asset_id
+        for block in chapter["blocks"]
+        for asset_id in block["asset_ids"]
+    }
+    assets = {asset["id"]: asset for asset in document["assets"]}
+    for asset_id in asset_ids:
+        asset = assets[asset_id]
+        qa = asset["qa"]
+        if not qa["approved"] or any(
+            qa[field] != "pass" for field in ("resolution", "legibility", "content")
+        ):
+            raise RuntimeError(f"asset has not passed visual QA: {asset_id}")
+        if asset["kind"] != "map":
+            continue
+        provenance_path = (ROOT / asset["path"]).with_suffix(".provenance.json")
+        provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+        visual = provenance["visual_qa"]
+        if not visual["approved"] or any(
+            visual[field] != "pass"
+            for field in ("print_300dpi", "mobile_390px", "label_collisions")
+        ):
+            raise RuntimeError(f"map provenance has not passed visual QA: {asset_id}")
+
+
 def write_manifest(page_count: int, font_count: int, text_characters: int) -> None:
     inputs = [
         BOOK_PATH,
@@ -177,6 +206,7 @@ def main() -> int:
         ]
     )
     run([sys.executable, "scripts/validate_readings.py", "--book", str(BOOK_PATH)])
+    validate_asset_qa(json.loads(BOOK_PATH.read_text(encoding="utf-8")))
     run(
         [
             sys.executable,

@@ -6617,9 +6617,9 @@
       "rights": "Map design © LazyTravel; centerlines © OpenStreetMap contributors, ODbL 1.0.",
       "qa": {
         "resolution": "pass",
-        "legibility": "pending",
+        "legibility": "pass",
         "content": "pass",
-        "approved": false
+        "approved": true
       }
     }
   ]

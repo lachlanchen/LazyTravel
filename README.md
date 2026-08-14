@@ -61,6 +61,8 @@ continues through the complete source.
 
 ```bash
 python3 scripts/build_xian_review.py
+python3 scripts/build_website.py
+python3 scripts/validate_site_parity.py
 ```
 
 This regenerates the committed orientation-map variants from normalized map
@@ -71,6 +73,18 @@ and its hash manifest are written to ignored `dist/books/xian/`.
 
 Use `--skip-map` only when checking the book layout against the already
 committed map variants.
+
+The website build writes an ignored static preview to `site/`. It reads the
+same aligned destination JSON as the pocket book, removes only private local
+source paths from the browser payload, and rejects text, reading, citation, or
+asset drift before writing `site/manifest.json`.
+
+Serve the generated site in one terminal and run browser QA in another:
+
+```bash
+python3 -m http.server 4173 --bind 127.0.0.1 --directory site
+python3 scripts/qa_website.py --url http://127.0.0.1:4173/
+```
 
 ## Editorial Contract
 

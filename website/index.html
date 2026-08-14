@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" data-mode="parallel">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="LazyTravel Xi'an: an aligned Chinese, Japanese, and English city guide."
+    >
+    <title>Xi'an | LazyTravel</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#reading">Skip to the chapter</a>
+
+    <header class="app-header">
+      <a class="brand" href="#top" aria-label="LazyTravel Xi'an home">
+        <strong>LazyTravel</strong>
+        <span>lazying.art</span>
+      </a>
+
+      <div class="destination-mark" aria-label="Current destination">
+        <span>CHINA CITIES</span>
+        <strong>西安 · 西安 · XI'AN</strong>
+      </div>
+
+      <div class="reader-controls">
+        <div class="segmented" role="group" aria-label="Reading language">
+          <button type="button" data-mode-button="parallel" aria-pressed="true" title="Parallel text">
+            3
+          </button>
+          <button type="button" data-mode-button="zh" aria-pressed="false" title="Chinese">
+            中
+          </button>
+          <button type="button" data-mode-button="ja" aria-pressed="false" title="Japanese">
+            日
+          </button>
+          <button type="button" data-mode-button="en" aria-pressed="false" title="English">
+            EN
+          </button>
+        </div>
+
+        <label class="ruby-switch" title="Show pinyin and furigana">
+          <input id="ruby-toggle" type="checkbox" role="switch" checked>
+          <span class="switch-track" aria-hidden="true"><span></span></span>
+          <span>Ruby</span>
+        </label>
+
+        <a id="github-link" class="utility-link" href="https://github.com/lachlanchen/LazyTravel">
+          GitHub
+        </a>
+      </div>
+    </header>
+
+    <div id="top" class="mobile-jump">
+      <label for="section-select">Section</label>
+      <select id="section-select" aria-label="Jump to section"></select>
+    </div>
+
+    <div class="app-shell">
+      <aside class="book-rail" aria-label="Book navigation">
+        <div class="rail-heading">
+          <span>CHINA · CITIES · 01</span>
+          <h1>西安</h1>
+          <p>西安 · Xi'an</p>
+        </div>
+
+        <nav aria-label="Current chapter sections">
+          <p class="rail-label">IN THIS CHAPTER</p>
+          <ol id="section-outline" class="section-outline"></ol>
+        </nav>
+
+        <nav aria-label="Chapter outline">
+          <p class="rail-label">BOOK OUTLINE</p>
+          <ol id="chapter-outline" class="chapter-outline"></ol>
+        </nav>
+
+        <div class="rail-edition">
+          <span>XI'AN · 2026</span>
+          <p>Research edition · 2026-08-14</p>
+        </div>
+      </aside>
+
+      <main id="reading" tabindex="-1">
+        <div id="loading" class="loading" role="status">西安 · 西安 · XI'AN</div>
+        <article id="chapter" hidden></article>
+      </main>
+    </div>
+
+    <noscript>
+      <p class="noscript">JavaScript is required to render the aligned book JSON.</p>
+    </noscript>
+  </body>
+</html>
