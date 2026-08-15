@@ -30,6 +30,12 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   books provide evidence and leads, not the book's prose or structure.
 - Work chapter by chapter, then review the finished chapter page by page in the
   pocket PDF and at desktop/mobile website sizes.
+- Keep the travel decision in front: place and route first, then the history or
+  food context that changes how the reader sees or uses that place. Do not mix
+  disconnected eras into a synthetic story.
+- Stop a review pass once facts, natural language, route usefulness, layout,
+  readings, and reproducibility pass. Do not repeatedly adjust details with no
+  reader-visible or technical consequence.
 
 ## Source Boundary
 
@@ -56,6 +62,10 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
 - Prefer the full group for recurring guide moments; add Sasa-kun and the
   Zhuangzi robot when the scene stays useful and legible. Do not insert the
   guides into documentary evidence or imply they witnessed a historical event.
+- For new location-led attraction plates, use all four guides when they remain
+  distinct at B6 size. Distribute these plates through the actual trip rather
+  than clustering decorative images, and stop when another view would not help
+  recognition, comparison, or movement.
 - Preserve continuity with the LALACHAN travel-video series by using the
   hash-pinned external character references. Do not replace the guides with
   anonymous generated people.
@@ -66,6 +76,9 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   and source-reference details in provenance, not in reader-facing captions.
 - Maps and figures must remain readable at B6 print size and a 390 px viewport.
   Use larger labels, simple hierarchy, clean captions, and explicit visual QA.
+- In attraction-led chapters, include a view in which the actual destination is
+  dominant and recognizable. Aya-chan and Lala Xia remain present, but small
+  cast staging or an instructional close-up cannot replace the attraction view.
 
 ## Product And Release Discipline
 

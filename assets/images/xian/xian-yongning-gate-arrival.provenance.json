@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-yongning-gate-arrival",
+  "created_at": "2026-08-15",
+  "method": "generated-from-private-and-news-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Generated a new attraction-dominant composition from four direct guide references and one Xinhua Yongning Gate spatial reference",
+    "Reviewed at original resolution and at a 600 x 400 B6-screen proof for wall span, layered gate silhouette, modern-city context, guide count, text, crop, and destination dominance"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity as the fourth guide and equal companion; reference only, no source file redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/yongning-gate-xinhua.png",
+      "sha256": "f528babdb137670a7569687a81ed72e09c3701217113d467e0d2a024dd1307f6",
+      "url": "https://english.news.cn/20230512/cffd14dcf865422fa63a371fb8c4affb/20230512cffd14dcf865422fa63a371fb8c4affb_2023051285c0cf500c4b47b7b10e628fde5170b5.jpg",
+      "page_url": "https://english.news.cn/20230512/cffd14dcf865422fa63a371fb8c4affb/c.html",
+      "credit": "Xinhua / Shao Rui, photographed 2023-04-25",
+      "role": "Aerial factual reference for the layered Yongning Gate complex, wall, green edge, roads, and modern urban context; ignored research reference, not redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-yongning-gate-arrival.prompt.md",
+    "sha256": "9d56131ff32ff481d0902392069723ce062126c7027228e110f2ea548b65f10c"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-yongning-gate-arrival.png",
+    "sha256": "7dee351df65662620a39fe824706e586ba33e82f8dcb681276518854f2e7fa42",
+    "bytes": 2852821,
+    "width": 1536,
+    "height": 1024,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Opening Chapter 1 attraction view that establishes the Ming wall as a compact threshold within the much larger present-day city",
+  "factual_limits": [
+    "The generated gate arrangement, plaza, greenery, surrounding buildings, light, and camera position form a representative south-wall approach and are not an architectural survey or exact documentary viewpoint",
+    "The image does not establish current gate access, event setup, traffic, crowding, or opening conditions",
+    "The guide characters establish traveler scale and series continuity; they are not documentary visitors"
+  ],
+  "reader_caption_policy": "Describe the wall as a spatial threshold inside the modern city; keep generation method and reference metadata out of the caption",
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private user-supplied continuity references and a Xinhua photograph used only as a factual spatial reference; the external source image is not redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "exact_guide_count_four": "pass",
+    "destination_dominant": "pass",
+    "wall_span_and_gate_layers_readable": "pass",
+    "modern_city_context_visible": "pass",
+    "safe_plaza_placement": "pass",
+    "no_reader_legible_generated_text": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "evidence": "build/qa/images/xian/attraction-views/xian-yongning-gate-arrival-b6-screen-proof.png",
+    "evidence_sha256": "8b53e400987bb80c1b6787ff71c54f21236aecaa10f6b9f8ccc9381dff30b343",
+    "notes": "At 600 x 400 the wall span, layered tower silhouette, modern buildings, green edge, and all four guides remain distinct; the attraction clearly dominates."
+  }
+}

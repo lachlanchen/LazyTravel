@@ -20,6 +20,12 @@ history, rollout data, or session backups.
 - The strongest prose explains what to notice, what a distinction changes for
   the traveler, and where uncertainty remains. Empty scene-setting and repeated
   conclusions are removed.
+- The book's main line is the traveler's decision sequence. Places and routes
+  lead; history and food explain what is visible there. A reader should never
+  have to infer that this is a travel guide from historical prose.
+- Review effort stops when a detail no longer changes accuracy, naturalness,
+  route usefulness, legibility, or reproducibility. Progress to the next
+  chapter instead of reopening settled micro-details.
 
 ## Stable Visual Identity
 
@@ -39,9 +45,18 @@ history, rollout data, or session backups.
 - Technical provenance records reference paths, hashes, rights, generation
   method, factual limits, and visual QA. Reader captions describe the travel
   subject rather than the production process.
+- Attraction-led chapters need attraction-dominant views, with Aya and Lala as
+  traveler-scale guides rather than the primary spectacle. Existing
+  instructional figures remain useful but do not satisfy that need by
+  themselves.
+- New location plates use the full four-guide team when B6 legibility allows.
+  The current Chapters 1-7 visual route now includes Yongning Gate, Pit 1, the
+  Big Wild Goose Pagoda, the City Wall, the Bell Tower, food practice, and a
+  managed mountain day rather than relying on generic character scenes.
 
 ## Current Production Decision
 
-Xi'an has exactly 11 chapters. Chapters 1-6 are the active reviewed build;
-Chapter 7 is the single nearby-area decision chapter. Lanzhou remains gated
-until the whole Xi'an book and synchronized website pass final review.
+Xi'an has exactly 11 chapters. Chapters 1-7 are the active reviewed build;
+Chapter 7 is the single nearby-area decision chapter and Chapter 8 is next.
+Lanzhou remains gated until the whole Xi'an book and synchronized website pass
+final review.

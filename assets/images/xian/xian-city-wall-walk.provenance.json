@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-city-wall-walk",
+  "created_at": "2026-08-15",
+  "method": "generated-from-private-and-official-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Generated a new attraction-dominant composition from two guide references and one official wall-masonry reference",
+    "Reviewed at original resolution and at a 600 x 400 B6-screen proof for rampart width, parapet rhythm, cast identity, text, crop, and destination dominance"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/city-wall-official.png",
+      "sha256": "1e2e7e6ba37fc73a02f1faccb18fdef898f0d2212e2bef40f81a5e9f640f92a4",
+      "url": "https://en.xa.gov.cn/upload/en/2025/08/22/202508221804507837_show.png",
+      "page_url": "https://en.xa.gov.cn/ztzl/Xianstourismboom/AttractionsInXi%27an/1958833738536779778.html",
+      "role": "Official Xi'an municipal photograph used only to check present grey-brick masonry and a two-storey wall-tower silhouette; ignored research reference, not redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-city-wall-walk.prompt.md",
+    "sha256": "9b406c4492abfc583f84280b368a0848f8224170583961dd0608a54af1334467"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-city-wall-walk.png",
+    "sha256": "28a0a5be08146167a65ffd8bc613b70e09d0d8008c513935f036f42745322e23",
+    "bytes": 2777372,
+    "width": 1536,
+    "height": 1024,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Attraction-dominant Chapter 5 view that explains wall-top width, the forward walking line, and the relationship between historic masonry and the modern city",
+  "factual_limits": [
+    "The generated rampart, tower, skyline, trees, light, and camera position form a representative present-day wall-top scene and do not document one exact gate",
+    "The image does not establish current access, opening, crowding, rental, or exit conditions",
+    "The guide characters establish traveler scale and series continuity; they are not documentary visitors"
+  ],
+  "reader_caption_policy": "Describe the wall-top spatial decision and the living city beyond it; keep generation method and reference data out of the caption",
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private user-supplied continuity references and an official municipal photograph used only as a factual visual reference; no external source image is redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "aya_and_lala_present": "pass",
+    "destination_dominant": "pass",
+    "rampart_width_and_parapets": "pass",
+    "representative_not_exact_view": "pass",
+    "no_anonymous_people": "pass",
+    "no_forbidden_text_or_branding": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "evidence": "build/qa/images/xian/attraction-views/xian-city-wall-walk-b6-screen-proof.png",
+    "evidence_sha256": "626d5e369ef9a1ed916d0f3febff5049980cb3567c83a40a0cac548bd156c397",
+    "notes": "At 600 x 400 the broad walking surface, parapets, tower, and modern skyline remain clear; Aya and Lala provide scale without obscuring the route."
+  }
+}

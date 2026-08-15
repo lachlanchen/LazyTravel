@@ -1,7 +1,7 @@
 # Xi'an Guide-Cast Figure Review
 
 Status: all current non-map figures passed cast continuity, factual-boundary,
-B6-page, and mobile-web review on `2026-08-15`.
+B6-page, and mobile-web review on `2026-08-16`.
 
 This review supersedes the figure-specific hashes and anonymous-person visual
 evidence in the earlier Chapter 2-5 milestone reviews. Their prose and map
@@ -10,7 +10,8 @@ reviews remain valid historical records.
 ## Enforced Rule
 
 - Every non-map figure contains at least Aya-chan and Lala Xia.
-- Sasa-kun and the Zhuangzi robot join when the composition remains clear.
+- New attraction plates use Aya, Lala, Sasa, and the Zhuangzi robot together
+  when all four remain legible and the destination still leads the frame.
 - The robot is a full guide and friend, not equipment.
 - Maps remain character-free.
 - External LALACHAN references stay read-only and hash-pinned in
@@ -23,11 +24,17 @@ reviews remain valid historical records.
 
 | Asset | PDF page | Guides | Subject boundary | Output SHA-256 | Mobile evidence SHA-256 |
 | --- | ---: | --- | --- | --- | --- |
-| Daming Palace site impression | 23 | Aya, Lala, Sasa, Zhuangzi robot | Present-day scale study; no palace reconstruction or exact-view claim | `53c8c54deb4b6af60bbb64bba841d68ba2986576283e11e2b1a37edd0f6ec23a` | `a8c861b55db8e45f8816320f0ad4cd0dc7488128deb468b2e6b405c159da2a62` |
-| Terracotta conservation teaching replicas | 38 | Aya, Lala | Modern replica workshop; no Qin artefact or real-laboratory claim | `f79824640189fb925041fd99f7e98165ff377e2f7ef765e283d4ad443b25e7f2` | `4b165d7059edfe492b61ebfe85c4b4bef183e51224573f250a7a37f003adbeb5` |
-| Rubbing on a modern replica | 50 | Aya, Lala | Horizontal resin practice slab; no original-contact permission | `059d54d8078dec5895bbb64ded64def17134da9d0b744dd01be96138d5c67b06` | `7028bc33b93a427b1dac469cf442004f2b0622f343ac1f843ae9e9a40c436a0b` |
-| Lane-to-courtyard threshold | 63 | Aya, Lala | Generic access-etiquette scene; no named-property or open-access claim | `cf82a4a2d93b4344ca1d0b2d851cf4b88df1cfedddbc48fbfd5536b5904090bc` | `641ab84ed94dffb5af4347836d1ebee26f4be45d6aab9870760f279798a985fd` |
-| Paomo breaking table | 74 | Aya, Lala, Sasa, Zhuangzi robot | Representative dry-bowl sequence; no named restaurant or universal piece-size claim | `7b38c069ad7088192570be07393205eb579055fe0db6de0229a53098a189cd1e` | `053b262d2714b356139b3a42ad7692586eb7fe3b92c04860d98d9f82c484ea01` |
+| Yongning Gate arrival | 7 | Aya, Lala, Sasa, Zhuangzi robot | Representative southern approach and city threshold; not an architectural survey or exact pedestrian viewpoint | `7dee351df65662620a39fe824706e586ba33e82f8dcb681276518854f2e7fa42` | `291303fc48ca83181a668158658987ce7a70960633d5d39b8e4a1d5a1820bf6b` |
+| Daming Palace site impression | 25 | Aya, Lala, Sasa, Zhuangzi robot | Present-day scale study; no palace reconstruction or exact-view claim | `53c8c54deb4b6af60bbb64bba841d68ba2986576283e11e2b1a37edd0f6ec23a` | `efbc125fcd2fd61abb130be91ef070f06e24c36e36b3b07d1a18b256004a590a` |
+| Terracotta Pit 1 first view | 36 | Aya, Lala, Sasa, Zhuangzi robot | Visitor-level hall impression; displayed pits are not presented as the whole mausoleum | `222d8891948875392b10a772b8e1dcce2fda08a02200e385517470aaedec1665` | `a619488f363c6d68aa0e9787e75471c710574ad5b28efd7e92fd1b438bc2d5e4` |
+| Terracotta conservation teaching replicas | 41 | Aya, Lala | Modern replica workshop; no Qin artefact or real-laboratory claim | `f79824640189fb925041fd99f7e98165ff377e2f7ef765e283d4ad443b25e7f2` | `7333adcc3b6b0a0d63e5fcd0bd0b149236af5bf45ed75e1377ae179d1a27a571` |
+| Big Wild Goose Pagoda courtyard view | 47 | Aya, Lala | Present-day scale and approach study; no claim about a specific crowd level or visit time | `361a6d70e84d4368e5cf3e389a3db6587839ab6e254fcb59c7b9b3ba1620fa96` | `d36737be41690c0383fef271c45b2fbde8579ee7e2b9dd433925630a2c34ce58` |
+| Rubbing on a modern replica | 54 | Aya, Lala | Horizontal resin practice slab; no original-contact permission | `059d54d8078dec5895bbb64ded64def17134da9d0b744dd01be96138d5c67b06` | `b4ad0196386771ef502681a97826a45a7388f25b306399fa8fb84e25093b13f2` |
+| Xi'an City Wall walk | 60 | Aya, Lala | Representative rampart width and skyline; no exact route-condition or access claim | `28a0a5be08146167a65ffd8bc613b70e09d0d8008c513935f036f42745322e23` | `7e56e048f8b0593faa1a793ee9664e05835592013726a1d64b5cb79cd66acdfe` |
+| Bell Tower orientation | 62 | Aya, Lala, Sasa, Zhuangzi robot | Four-avenue orientation scene; no guarantee of traffic, crossing, or access conditions | `aa0414554c58d9132413fbb4975b1ca5e20e770639412408db63bca373c4289f` | `5dae304f6269ac3c090ee675f288a4c5bd34c6df0dfe9044be9b052ae0806753` |
+| Lane-to-courtyard threshold | 69 | Aya, Lala | Generic access-etiquette scene; no named-property or open-access claim | `cf82a4a2d93b4344ca1d0b2d851cf4b88df1cfedddbc48fbfd5536b5904090bc` | `54f5a132f08a6fe112aa11009639cf852dae8c2e728f10f5c05e32a92ed3d0b2` |
+| Paomo breaking table | 80 | Aya, Lala, Sasa, Zhuangzi robot | Representative dry-bowl sequence; no named restaurant or universal piece-size claim | `7b38c069ad7088192570be07393205eb579055fe0db6de0229a53098a189cd1e` | `4b5bd77431759356844be1baf95f485cbe0c658f812ad9c5dc71be778400401e` |
+| Managed mountain day | 103 | Aya, Lala, Sasa, Zhuangzi robot | Representative managed path; no claim to depict a specific Huashan section | `8130f2cda9bcc710c7882d5bece90d0d10ee246337bb58d700c01c6a2041cff4` | `ece7b8cea339aac9d29a133d7d55108e56b9e25b7097af0a9587c56269dcfafe` |
 
 ## Visual Findings
 
@@ -35,10 +42,14 @@ reviews remain valid historical records.
   400` proof, their actual B6 page, and a `390 px` mobile figure capture.
 - Aya and Lala remain recognizable through head shape, clothing, proportions,
   and material treatment rather than labels or reader-facing production notes.
-- The full-team Daming and paomo scenes give the robot equal spatial presence.
+- The full-team Yongning Gate, Daming, Pit 1, Bell Tower, paomo, and mountain
+  scenes give the robot equal guide status without turning the place into a
+  cast portrait.
 - The teaching-replica scenes preserve the distinction between explaining a
   process and documenting or authorizing work on original heritage.
 - Captions describe the travel subject and factual limit. Reference paths,
   generation method, hashes, and rights remain in technical provenance.
 - Combined current-PDF figure-page sheet SHA-256:
-  `63f7092e5b3c8855998df0329c01136a5e050ee26dd5d1dd9117714af611f20e`.
+  `2dd2af94bc86a99f1664d7bc3edf1923dbebb739de263288795cfc02d78c17ec`.
+- Combined mobile figure sheet SHA-256:
+  `b62f5465f9a1366cf38162b9831cdc8444bf469e9befb7f2919ee70233d31be4`.

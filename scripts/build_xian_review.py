@@ -26,6 +26,7 @@ CHAPTER_IDS = (
     "ch04-let-text-lead",
     "ch05-inside-the-wall",
     "ch06-beginning-with-bread",
+    "ch07-beyond-the-center",
 )
 BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
@@ -177,6 +178,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "scripts/build_xian_written_word_route_map.py",
         ROOT / "scripts/build_xian_inside_wall_route_map.py",
         ROOT / "scripts/build_xian_food_contexts_map.py",
+        ROOT / "scripts/build_xian_nearby_day_choices_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
@@ -188,12 +190,19 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/maps/xian/xian-inside-wall-route.config.json",
         ROOT / "data/maps/xian/xian-inside-wall-route.geojson",
         ROOT / "data/maps/xian/xian-food-contexts.config.json",
+        ROOT / "data/maps/xian/xian-nearby-day-choices.config.json",
         ROOT / "data/maps/xian/xian-before-walls.geojson",
         ROOT / "data/images/xian/xian-daming-site-impression.prompt.md",
         ROOT / "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
         ROOT / "data/images/xian/xian-rubbing-replica-demonstration.prompt.md",
+        ROOT / "data/images/xian/xian-big-wild-goose-pagoda-visit.prompt.md",
         ROOT / "data/images/xian/xian-lane-courtyard-threshold.prompt.md",
+        ROOT / "data/images/xian/xian-city-wall-walk.prompt.md",
         ROOT / "data/images/xian/xian-breaking-mo-table.prompt.md",
+        ROOT / "data/images/xian/xian-managed-mountain-day.prompt.md",
+        ROOT / "data/images/xian/xian-yongning-gate-arrival.prompt.md",
+        ROOT / "data/images/xian/xian-terracotta-pit-one-visit.prompt.md",
+        ROOT / "data/images/xian/xian-bell-tower-orientation.prompt.md",
     }
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
     used_asset_ids = {
@@ -264,6 +273,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_xian_written_word_route_map.py"])
         run([sys.executable, "scripts/build_xian_inside_wall_route_map.py"])
         run([sys.executable, "scripts/build_xian_food_contexts_map.py"])
+        run([sys.executable, "scripts/build_xian_nearby_day_choices_map.py"])
     run(
         [
             sys.executable,

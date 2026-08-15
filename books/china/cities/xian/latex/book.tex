@@ -98,7 +98,7 @@
 \newcommand{\LTChapterTitle}[5]{%
   \cleardoublepage
   \phantomsection
-  \addcontentsline{toc}{chapter}{#2 · #4}
+  \label{lt-chapter-#1}
   \markboth{#2}{#2}
   \thispagestyle{empty}
   \vspace*{6mm}
@@ -118,6 +118,25 @@
   {\displayfont\fontsize{7.5}{10}\selectfont\color{LTMuted}
     #5\par}
   \clearpage
+}
+
+\newcommand{\LTContentsEntry}[5]{%
+  \noindent
+  \begin{minipage}[t]{7mm}
+    \LTBubble{LTVermilion}{#1}
+  \end{minipage}%
+  \begin{minipage}[t]{\dimexpr\linewidth-18mm\relax}
+    {\bfseries\fontsize{8.6}{10.7}\selectfont #2\par}
+    \vspace{0.6mm}
+    {{\jpfont\fontsize{7.4}{9.5}\selectfont\color{LTForest}#3}\par}
+    \vspace{0.5mm}
+    {{\englishfont\fontsize{7.1}{9}\selectfont\color{LTWater}#4}\par}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{7mm}
+    \raggedleft{\displayfont\bfseries\fontsize{8}{10}\selectfont #5\par}
+  \end{minipage}
+  \par\vspace{3.1mm}
 }
 
 \newcommand{\LTLabel}[2]{%
@@ -146,8 +165,8 @@
 }
 
 \newcommand{\LTChinese}[1]{%
-  \LTLabel{LTVermilion}{中文}
   \noindent\begin{minipage}{\linewidth}
+    \LTLabel{LTVermilion}{中文}
     \RaggedRight
     {\fontsize{8.8}{14.2}\selectfont #1\par}
   \end{minipage}
@@ -155,8 +174,8 @@
 
 \newcommand{\LTJapanese}[1]{%
   \vspace{1.8mm}
-  \LTLabel{LTForest}{日本語}
   \noindent\begin{minipage}{\linewidth}
+    \LTLabel{LTForest}{日本語}
     \RaggedRight
     {{\jpfont\fontsize{8.5}{13.8}\selectfont #1}\par}
   \end{minipage}
@@ -164,8 +183,8 @@
 
 \newcommand{\LTEnglish}[1]{%
   \vspace{1.8mm}
-  \LTLabel{LTWater}{ENGLISH}
   \noindent\begin{minipage}{\linewidth}
+    \LTLabel{LTWater}{ENGLISH}
     {{\englishfont\fontsize{8.4}{11.4}\selectfont #1}\par}
   \end{minipage}
 }
@@ -176,19 +195,19 @@
     资料 · 出典 · SOURCES\quad #1\par}
 }
 
-\newcommand{\LTPracticalHeading}{%
+\newcommand{\LTPracticalHeading}[1]{%
   \par\vspace{3mm}
   \noindent\colorbox{LTBlueMist}{%
     \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
       \LTBubble{LTCoral}{i}\hspace{2.2mm}%
       {\displayfont\bfseries\fontsize{8}{10}\selectfont\color{LTInk}
-        方位判断 · 方位を確かめる · FIELD ORIENTATION}%
+        #1}%
     }%
   }\par
   \vspace{1mm}
 }
 
-\newcommand{\LTCalloutBlock}[4]{%
+\newcommand{\LTCalloutBlock}[5]{%
   \begingroup
   \setlength{\fboxsep}{2.2mm}%
   \setlength{\fboxrule}{0.65pt}%
@@ -196,12 +215,12 @@
     \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
       \LTBubble{LTCoral}{!}\hspace{2.2mm}%
       {\displayfont\bfseries\fontsize{7.2}{9}\selectfont\color{LTInk}
-        ORDER · INGREDIENTS · ALLERGIES}\par
+        #1}\par
       \vspace{2mm}
-      \LTChinese{#1}
-      \LTJapanese{#2}
-      \LTEnglish{#3}
-      \LTSources{#4}
+      \LTChinese{#2}
+      \LTJapanese{#3}
+      \LTEnglish{#4}
+      \LTSources{#5}
     \end{minipage}%
   }\par
   \endgroup
@@ -213,7 +232,7 @@
     \thispagestyle{empty}
     \centering
     \vspace*{\fill}
-    \includegraphics[width=0.98\linewidth,height=0.94\textheight,keepaspectratio]{#1}\par
+    \includegraphics[width=0.98\textwidth,height=0.94\textheight,keepaspectratio]{#1}\par
     \vspace*{\fill}
   \end{landscape}
   \clearpage
@@ -225,7 +244,7 @@
     \thispagestyle{empty}
     \centering
     \vspace*{2mm}
-    \includegraphics[width=0.98\linewidth,height=0.70\textheight,keepaspectratio]{#1}\par
+    \includegraphics[width=0.98\linewidth,height=0.64\textheight,keepaspectratio]{#1}\par
     \vspace{2mm}
     \begin{minipage}{0.96\linewidth}
       {\fontsize{7.2}{9.6}\selectfont #2\par}

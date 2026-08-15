@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-managed-mountain-day",
+  "created_at": "2026-08-15",
+  "method": "generated-from-private-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Brand-new composition generated from four direct guide-character references",
+    "Selected at original resolution and at a 600 x 400 B6-screen proof after cast, route-safety, articulation, text, and clutter review"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity as the fourth guide and equal companion; reference only, no source file redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-managed-mountain-day.prompt.md",
+    "sha256": "d7a4df8e65c9bd7df4470f528e1995074822fa1cb985788642efa68f45d03f22"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-managed-mountain-day.png",
+    "sha256": "8130f2cda9bcc710c7882d5bece90d0d10ee246337bb58d700c01c6a2041cff4",
+    "bytes": 2682099,
+    "width": 1536,
+    "height": 1024,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Editorial orientation figure showing all four recurring guides applying managed-mountain route judgment after a cableway ascent",
+  "factual_limits": [
+    "The setting is a representative managed granite mountain path and does not reconstruct a named Huashan peak, cableway, stair, railing, or viewpoint",
+    "The image is not evidence of current weather, route opening, rail condition, crowding, or accessibility",
+    "Clothing, packs, water, and footwear are practical visual cues rather than a complete equipment prescription",
+    "The guide characters establish series continuity and do not depict actual visitors"
+  ],
+  "reader_caption_policy": "Captions explain mountain-route judgment and the representative setting without production-method metadata",
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private user-supplied continuity references; external reference files are not redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_front_clear": "pass",
+    "full_guide_team_continuity": "pass",
+    "robot_as_equal_companion": "pass",
+    "full_body_and_articulation": "pass",
+    "managed_route_safety": "pass",
+    "no_anonymous_people": "pass",
+    "no_forbidden_text_or_branding": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "notes": "At 600 x 400 all four identities, footwear, packs, water, railings, broad landing, onward steps, and clear foreground remain distinct. Aya and Lala are fully faced and unobscured; the scene contains no extra hiker, stunt route, fake sign, or clipped limb."
+  }
+}

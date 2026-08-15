@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-bell-tower-orientation",
+  "created_at": "2026-08-15",
+  "method": "generated-from-private-and-official-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Generated a new attraction-dominant composition from four direct guide references and one official Xi'an municipal Bell Tower reference",
+    "Reviewed at original resolution and at a 600 x 400 B6-screen proof for masonry base, roof silhouette, urban intersection, safe guide placement, text, crop, and destination dominance"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity as the fourth guide and equal companion; reference only, no source file redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/bell-tower-official.jpg",
+      "sha256": "2ae15506931d7e05e99afe7fa892332942bc1072c75dc43f10601badecf2dc2d",
+      "url": "https://en.xa.gov.cn/upload/en/2023/08/16/202308161400586528770.jpg",
+      "page_url": "https://en.xa.gov.cn/CultureTravel/Attractions/1691691501245550594.html",
+      "role": "Official Xi'an municipal photograph used only to check the square masonry base, timber tower, roof silhouette, and modern-road context; ignored research reference, not redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-bell-tower-orientation.prompt.md",
+    "sha256": "b98a2051962037870ee93310a88162c00eaa0ad34bd1a9dc7f759f2090f6c724"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-bell-tower-orientation.png",
+    "sha256": "aa0414554c58d9132413fbb4975b1ca5e20e770639412408db63bca373c4289f",
+    "bytes": 2745910,
+    "width": 1536,
+    "height": 1024,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Attraction-dominant Chapter 5 view that makes the Bell Tower's square base and four-avenue orientation legible before the westward walk",
+  "factual_limits": [
+    "The generated viewpoint, traffic, lighting, surrounding facades, and planting form a representative present-day intersection view rather than a dated documentary photograph",
+    "The image does not establish current admission, underpass access, traffic flow, crowding, or illumination times",
+    "The guide characters remain at a safe pedestrian edge and establish traveler scale; they are not documentary visitors"
+  ],
+  "reader_caption_policy": "Describe the four-avenue orientation and safe approach; keep generation method and reference metadata out of the caption",
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private user-supplied continuity references and an official Xi'an municipal photograph used only as a factual visual reference; no external source image is redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "exact_guide_count_four": "pass",
+    "destination_dominant": "pass",
+    "masonry_base_and_roof_readable": "pass",
+    "safe_pedestrian_placement": "pass",
+    "modern_city_context_visible": "pass",
+    "no_reader_legible_generated_text_at_b6": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "evidence": "build/qa/images/xian/attraction-views/xian-bell-tower-orientation-b6-screen-proof.png",
+    "evidence_sha256": "2a86a09f5447d7f42c51478fa17d961838ebe6c1d4d030ed2d81ee27ab3415cd",
+    "notes": "At 600 x 400 the masonry base, roof, intersection, modern city edge, and all four guides remain clear; tiny background signs do not resolve as reader text."
+  }
+}

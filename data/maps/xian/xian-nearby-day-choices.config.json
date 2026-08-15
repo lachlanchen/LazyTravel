@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "id": "xian-nearby-day-choices",
+  "snapshot_date": "2026-08-15",
+  "title": {
+    "zh": "西安周边：一天只选一处",
+    "ja": "西安近郊：一日一か所",
+    "en": "AROUND XI'AN · ONE PLACE, ONE FULL DAY"
+  },
+  "extent": [
+    108.05,
+    33.86,
+    110.2,
+    34.7
+  ],
+  "origin": {
+    "id": "central-xian",
+    "position": [
+      108.9423419,
+      34.2610119
+    ],
+    "label": {
+      "zh": "西安",
+      "ja": "西安",
+      "en": "XI'AN"
+    },
+    "osm_type": "way",
+    "osm_id": 254488435,
+    "note": "Bell Tower position used as a stable central-Xi'an orientation point, not as the start of every journey."
+  },
+  "schematic_features": {
+    "wei_river": {
+      "coordinates": [
+        [108.05, 34.39],
+        [108.42, 34.375],
+        [108.82, 34.36],
+        [109.2, 34.37],
+        [109.58, 34.405],
+        [109.9, 34.455],
+        [110.2, 34.49]
+      ],
+      "label_position": [108.5, 34.388],
+      "note": "Generalized Wei River orientation for regional context; not survey geometry or a navigation feature."
+    },
+    "qinling_band": {
+      "coordinates": [
+        [108.05, 33.86],
+        [108.5, 33.86],
+        [108.95, 33.95],
+        [109.4, 34.15],
+        [109.8, 34.25],
+        [110.2, 34.32],
+        [110.2, 34.53],
+        [109.8, 34.42],
+        [109.4, 34.28],
+        [108.95, 34.18],
+        [108.5, 34.08],
+        [108.05, 34.02]
+      ],
+      "label_position": [109.43, 34.18],
+      "note": "Generalized Qinling mountain band used only to explain why southern and eastern choices behave as mountain days."
+    }
+  },
+  "choices": [
+    {
+      "id": "lintong",
+      "order": 1,
+      "position": [109.2476, 34.3762],
+      "label_offset": [0.055, -0.034],
+      "label": {
+        "zh": "临潼",
+        "ja": "臨潼",
+        "en": "LINTONG"
+      },
+      "focus": {
+        "zh": "秦陵考古主线",
+        "ja": "秦陵の考古学",
+        "en": "QIN MAUSOLEUM"
+      },
+      "transport": {
+        "zh": "地铁/用车 + 馆方接驳",
+        "ja": "地下鉄/車 + 館内移動",
+        "en": "METRO/CAR + SHUTTLE"
+      },
+      "source_positions": [
+        {
+          "name": "Huaqing Palace",
+          "position": [109.2075385, 34.3649458],
+          "osm_type": "way",
+          "osm_id": 88216827
+        },
+        {
+          "name": "Terracotta Army Museum",
+          "position": [109.277673, 34.3873627],
+          "osm_type": "way",
+          "osm_id": 71235670
+        }
+      ],
+      "note": "Marker is a declared midpoint for the Lintong archaeology day, not a station, entrance, or live route waypoint."
+    },
+    {
+      "id": "huashan",
+      "order": 2,
+      "position": [110.0780729, 34.4777617],
+      "label_offset": [-0.11, 0.055],
+      "label": {
+        "zh": "华山",
+        "ja": "華山",
+        "en": "HUASHAN"
+      },
+      "focus": {
+        "zh": "天气决定的山日",
+        "ja": "天候で決まる山の日",
+        "en": "WEATHER-LED MOUNTAIN"
+      },
+      "transport": {
+        "zh": "高铁 + 接驳 + 山上交通",
+        "ja": "鉄道 + 乗継 + 山内交通",
+        "en": "RAIL + TRANSFER + MOUNTAIN"
+      },
+      "osm_type": "node",
+      "osm_id": 2260053296,
+      "note": "South Peak is used as the regional mountain marker; the line does not represent the train, road, cableway, or walking route."
+    },
+    {
+      "id": "hanyangling",
+      "order": 3,
+      "position": [108.9425919, 34.4430016],
+      "label_offset": [0.055, 0.045],
+      "label": {
+        "zh": "汉阳陵",
+        "ja": "漢陽陵",
+        "en": "HAN YANGLING"
+      },
+      "focus": {
+        "zh": "安静细看的汉代考古",
+        "ja": "静かに見る前漢考古",
+        "en": "CLOSE HAN ARCHAEOLOGY"
+      },
+      "transport": {
+        "zh": "预约车辆 + 返程接车",
+        "ja": "往復の車を先に手配",
+        "en": "PRE-ARRANGED RETURN CAR"
+      },
+      "osm_type": "way",
+      "osm_id": 297321151,
+      "note": "Museum complex centre from the pinned OpenStreetMap way; pickup arrangements remain a live check."
+    },
+    {
+      "id": "cuihuashan",
+      "order": 4,
+      "position": [109.0026197, 33.9831889],
+      "label_offset": [0.055, -0.045],
+      "label": {
+        "zh": "翠华山",
+        "ja": "翠華山",
+        "en": "CUIHUASHAN"
+      },
+      "focus": {
+        "zh": "有管理边界的地质日",
+        "ja": "管理区域内の地質",
+        "en": "MANAGED GEOLOGY DAY"
+      },
+      "transport": {
+        "zh": "用车 + 开放步道",
+        "ja": "車 + 公開中の歩道",
+        "en": "CAR + OPEN TRAILS"
+      },
+      "osm_type": "node",
+      "osm_id": 3995724828,
+      "note": "Named peak is an orientation marker; visitors must remain on the scenic area's currently open managed route."
+    },
+    {
+      "id": "qianling",
+      "order": 5,
+      "position": [108.2138717, 34.575481],
+      "label_offset": [0.055, -0.04],
+      "label": {
+        "zh": "乾陵",
+        "ja": "乾陵",
+        "en": "QIANLING"
+      },
+      "focus": {
+        "zh": "唐代帝陵地表证据",
+        "ja": "唐代帝陵の地表証拠",
+        "en": "TANG IMPERIAL LANDSCAPE"
+      },
+      "transport": {
+        "zh": "铁路转车，或全程用车",
+        "ja": "鉄道乗継、または全行程を車で",
+        "en": "RAIL + LAST MILE / CAR"
+      },
+      "osm_type": "node",
+      "osm_id": 4571452242,
+      "note": "Main Qianling attraction point; current access to associated tombs and indoor spaces requires a same-day official check."
+    }
+  ],
+  "connector_note": "All dashed connectors indicate direction from central Xi'an only. They are not railway lines, roads, measured travel times, or live navigation routes.",
+  "sources": [
+    {
+      "id": "openstreetmap-xian-nearby-2026",
+      "title": "OpenStreetMap pinned positions for central Xi'an and five nearby choices",
+      "url": "https://www.openstreetmap.org/copyright",
+      "snapshot_date": "2026-08-15",
+      "license": "ODbL 1.0",
+      "note": "OSM types, IDs, and coordinates are pinned in this config. Lintong is the only generalized midpoint and retains both source positions."
+    },
+    {
+      "id": "qin-museum-guide-2026",
+      "title": "秦始皇帝陵博物院参观指南",
+      "url": "https://www.bmy.com.cn/guide/",
+      "snapshot_date": "2026-08-15",
+      "note": "Supports the two visitor areas, reservation logic, and museum shuttle component; no opening time or fare is printed on the map."
+    },
+    {
+      "id": "huashan-routes-2026",
+      "title": "华山景区官方路线信息",
+      "url": "https://www.chinahuashan.com/front/wzhs.htm",
+      "snapshot_date": "2026-08-15",
+      "note": "Supports the local-transfer, scenic-bus, cableway, walking, and weather-dependent route chain."
+    },
+    {
+      "id": "hanyangling-access-2021",
+      "title": "汉景帝阳陵博物院参观交通指引",
+      "url": "https://wwj.shaanxi.gov.cn/xwzx/sxdt/202105/t20210519_2163979.html",
+      "snapshot_date": "2026-08-15",
+      "note": "Supports road-oriented access and the need to settle the return journey."
+    },
+    {
+      "id": "cuihuashan-managed-route-2025",
+      "title": "陕西省林业局翠华山生态旅游线路",
+      "url": "https://lyj.shaanxi.gov.cn/ztzl/lycy/202506/P020250626586528864795.pdf",
+      "snapshot_date": "2026-06-26",
+      "note": "Supports a managed geological route; the map does not depict an unrestricted mountain crossing."
+    },
+    {
+      "id": "qianling-transport-2026",
+      "title": "乾陵景区官方交通指南",
+      "url": "https://www.qlbwg.com/traffic.html",
+      "snapshot_date": "2026-08-15",
+      "note": "Supports rail plus local transfer or an all-road journey; schedules remain a live check."
+    }
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "notes": "Inspected at the 5600 x 5040 master, a 1476 px B6-width 300 dpi proof, and a 900 px pannable mobile proof. All five place labels and all Chinese, Japanese, and English transport lines remain distinct; no connector is styled as a live route."
+  }
+}

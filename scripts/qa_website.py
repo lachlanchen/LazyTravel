@@ -9,7 +9,7 @@ import shutil
 from pathlib import Path
 from typing import Any
 
-from playwright.sync_api import Page, sync_playwright
+from playwright.sync_api import Locator, Page, sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BOOK = ROOT / "data/china/cities/xian/book.json"
@@ -38,6 +38,7 @@ def expected_counts(book_path: Path) -> dict[str, dict[str, int]]:
             "sources": len(citation_ids),
             "maps": sum(block["kind"] == "map" for block in chapter["blocks"]),
             "figures": sum(block["kind"] == "figure" for block in chapter["blocks"]),
+            "headings": sum("heading" in block for block in chapter["blocks"]),
         }
     return counts
 
@@ -82,6 +83,65 @@ def assert_header_clear(page: Page, label: str) -> None:
         raise RuntimeError(f"{label} header controls overlap: {overlap}")
 
 
+def assert_scrolled_below_header(page: Page, selector: str, label: str) -> None:
+    locator = page.locator(selector)
+    locator.evaluate(
+        "node => node.scrollIntoView({block: 'start', inline: 'nearest', behavior: 'instant'})"
+    )
+    page.wait_for_timeout(100)
+    geometry = locator.evaluate(
+        """node => ({
+          top: node.getBoundingClientRect().top,
+          headerBottom: document.querySelector('.app-header').getBoundingClientRect().bottom
+        })"""
+    )
+    if geometry["top"] < geometry["headerBottom"] - 1:
+        raise RuntimeError(f"{label} is obscured by the sticky header: {geometry}")
+
+
+def screenshot_full_element(page: Page, locator: Locator, path: Path) -> None:
+    """Capture a complete tall element without sticky chrome masking its edges."""
+    locator.scroll_into_view_if_needed()
+    page.wait_for_timeout(100)
+    original_viewport = page.viewport_size
+    element_height = locator.evaluate(
+        "node => Math.ceil(node.getBoundingClientRect().height)"
+    )
+    capture_height = element_height + 320
+    resized = bool(
+        original_viewport and capture_height > original_viewport["height"]
+    )
+    capture_style = page.add_style_tag(
+        content=".app-header { visibility: hidden !important; }"
+    )
+    try:
+        if resized and original_viewport:
+            page.set_viewport_size(
+                {
+                    "width": original_viewport["width"],
+                    "height": capture_height,
+                }
+            )
+            locator.scroll_into_view_if_needed()
+        locator.screenshot(path=path)
+    finally:
+        if resized and original_viewport:
+            page.set_viewport_size(original_viewport)
+        capture_style.evaluate("node => node.remove()")
+
+
+def screenshot_all_figures(page: Page, output: Path, chapter_tag: str) -> None:
+    """Capture every figure so later additions cannot escape mobile visual QA."""
+    figures = page.locator(".editorial-figure")
+    for index in range(figures.count()):
+        suffix = "" if index == 0 else f"-{index + 1:02d}"
+        screenshot_full_element(
+            page,
+            figures.nth(index),
+            output / f"{chapter_tag}-figure{suffix}.png",
+        )
+
+
 def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[str, Any]:
     page.wait_for_selector("#chapter:not([hidden])")
     page.wait_for_function(
@@ -90,20 +150,43 @@ def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[s
           return image && image.complete && image.naturalWidth > 0;
         }"""
     )
+    if counts["figures"]:
+        figures = page.locator(".editorial-figure")
+        for index in range(counts["figures"]):
+            figures.nth(index).scroll_into_view_if_needed()
+        page.wait_for_function(
+            """expected => {
+              const images = [...document.querySelectorAll('.figure-image')];
+              return images.length === expected &&
+                images.every((image) => image.complete && image.naturalWidth >= 1200);
+            }""",
+            arg=counts["figures"],
+        )
     observed = {
         "blocks": page.locator(".reading-block").count(),
         "ruby": page.locator("ruby").count(),
         "sources": page.locator(".source-item").count(),
         "maps": page.locator(".map-figure").count(),
         "figures": page.locator(".editorial-figure").count(),
+        "headings": page.locator(".block-heading").count(),
         "map_natural_width": page.locator(".map-stage img").first.evaluate(
             "image => image.naturalWidth"
         ),
         "map_source": page.locator(".map-stage img").first.evaluate("image => image.currentSrc"),
     }
-    for key in ("blocks", "ruby", "sources", "maps", "figures"):
+    for key in ("blocks", "ruby", "sources", "maps", "figures", "headings"):
         if observed[key] != counts[key]:
             raise RuntimeError(f"{label} {key} mismatch: {observed[key]} != {counts[key]}")
+    for selector, prefix in ((".map-label", "MAP"), (".figure-label", "FIGURE")):
+        for index, visual_label in enumerate(
+            page.locator(selector).all_text_contents(), start=1
+        ):
+            expected_prefix = f"{prefix} {index:02d} ·"
+            if not visual_label.startswith(expected_prefix):
+                raise RuntimeError(
+                    f"{label} visual numbering mismatch: "
+                    f"{visual_label!r} does not start with {expected_prefix!r}"
+                )
     if not observed["map_source"].endswith(".svg") or observed["map_natural_width"] < 600:
         raise RuntimeError(f"{label} vector map did not load correctly: {observed}")
     assert_no_page_overflow(page, label)
@@ -125,6 +208,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
     chapter_4 = "ch04-let-text-lead"
     chapter_5 = "ch05-inside-the-wall"
     chapter_6 = "ch06-beginning-with-bread"
+    chapter_7 = "ch07-beyond-the-center"
     report: dict[str, Any] = {
         "url": url,
         "browser": chrome,
@@ -167,7 +251,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
 
             desktop.locator(f'[data-chapter-id="{chapter_2}"]').click()
             desktop.wait_for_selector("#ch02-b001")
-            desktop.locator(".editorial-figure").scroll_into_view_if_needed()
+            desktop.locator(".editorial-figure").first.scroll_into_view_if_needed()
             desktop.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -200,7 +284,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
 
             desktop.locator(f'[data-chapter-id="{chapter_3}"]').click()
             desktop.wait_for_selector("#ch03-b001")
-            desktop.locator(".editorial-figure").scroll_into_view_if_needed()
+            desktop.locator(".editorial-figure").first.scroll_into_view_if_needed()
             desktop.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -214,7 +298,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
 
             desktop.locator(f'[data-chapter-id="{chapter_4}"]').click()
             desktop.wait_for_selector("#ch04-b001")
-            desktop.locator(".editorial-figure").scroll_into_view_if_needed()
+            desktop.locator(".editorial-figure").first.scroll_into_view_if_needed()
             desktop.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -228,7 +312,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
 
             desktop.locator(f'[data-chapter-id="{chapter_5}"]').click()
             desktop.wait_for_selector("#ch05-b001")
-            desktop.locator(".editorial-figure").scroll_into_view_if_needed()
+            desktop.locator(".editorial-figure").first.scroll_into_view_if_needed()
             desktop.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -242,7 +326,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
 
             desktop.locator(f'[data-chapter-id="{chapter_6}"]').click()
             desktop.wait_for_selector("#ch06-b001")
-            desktop.locator(".editorial-figure").scroll_into_view_if_needed()
+            desktop.locator(".editorial-figure").first.scroll_into_view_if_needed()
             desktop.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -257,6 +341,27 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             if desktop.locator(".reading-block.kind-callout ruby").count() < 10:
                 raise RuntimeError("Chapter 6 highlight callout lost its ruby readings")
             desktop.screenshot(path=output / "desktop-ch06.png", full_page=True)
+
+            desktop.locator(f'[data-chapter-id="{chapter_7}"]').click()
+            desktop.wait_for_selector("#ch07-b001")
+            desktop.locator(".editorial-figure").first.scroll_into_view_if_needed()
+            desktop.wait_for_function(
+                """() => {
+                  const image = document.querySelector('.figure-image');
+                  return image && image.complete && image.naturalWidth >= 1200;
+                }"""
+            )
+            report["viewports"]["desktop_ch07"] = assert_core_render(
+                desktop, counts[chapter_7], "desktop chapter 7"
+            )
+            if desktop.locator(".block-heading").count() != 3:
+                raise RuntimeError("Chapter 7 trilingual block headings are missing")
+            for heading in ("ROUTE FIRST", "FOUR CONDITIONS", "SIX CHECKS"):
+                if desktop.locator(".block-heading", has_text=heading).count() != 1:
+                    raise RuntimeError(f"Chapter 7 heading is missing: {heading}")
+            if desktop.locator(".reading-block.kind-callout").count() != 2:
+                raise RuntimeError("Chapter 7 callouts are missing or duplicated")
+            desktop.screenshot(path=output / "desktop-ch07.png", full_page=True)
             desktop_context.close()
 
             mobile_context = browser.new_context(
@@ -277,6 +382,18 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 "requestfailed",
                 lambda request: report["request_failures"].append(request.url),
             )
+            mobile_url = f"{url.rstrip('/')}?chapter={chapter_1}"
+            mobile.goto(mobile_url, wait_until="networkidle")
+            report["viewports"]["mobile_ch01"] = assert_core_render(
+                mobile, counts[chapter_1], "mobile chapter 1"
+            )
+            if mobile.locator("#chapter-select").input_value() != chapter_1:
+                raise RuntimeError("mobile chapter menu did not select Chapter 1")
+            mobile.screenshot(path=output / "mobile-ch01.png", full_page=True)
+            mobile.locator(".map-figure").scroll_into_view_if_needed()
+            mobile.locator(".map-figure").screenshot(path=output / "mobile-ch01-map.png")
+            screenshot_all_figures(mobile, output, "mobile-ch01")
+
             mobile_url = f"{url.rstrip('/')}?chapter={chapter_2}"
             mobile.goto(mobile_url, wait_until="networkidle")
             report["viewports"]["mobile_ch02"] = assert_core_render(
@@ -288,7 +405,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 raise RuntimeError("mobile section menu is hidden")
             if mobile.locator("#chapter-select").input_value() != chapter_2:
                 raise RuntimeError("mobile chapter menu did not select Chapter 2")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
+            mobile.locator(".editorial-figure").first.scroll_into_view_if_needed()
             mobile.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -306,10 +423,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             mobile.screenshot(path=output / "mobile-ch02.png", full_page=True)
             mobile.locator(".map-figure").scroll_into_view_if_needed()
             mobile.locator(".map-figure").screenshot(path=output / "mobile-map.png")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
-            mobile.locator(".editorial-figure").screenshot(
-                path=output / "mobile-ch02-figure.png"
-            )
+            screenshot_all_figures(mobile, output, "mobile-ch02")
 
             mobile_url = f"{url.rstrip('/')}?chapter={chapter_3}"
             mobile.goto(mobile_url, wait_until="networkidle")
@@ -318,7 +432,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             )
             if mobile.locator("#chapter-select").input_value() != chapter_3:
                 raise RuntimeError("mobile chapter menu did not select Chapter 3")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
+            mobile.locator(".editorial-figure").first.scroll_into_view_if_needed()
             mobile.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -340,10 +454,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             mobile.screenshot(path=output / "mobile-ch03.png", full_page=True)
             mobile.locator(".map-figure").scroll_into_view_if_needed()
             mobile.locator(".map-figure").screenshot(path=output / "mobile-ch03-map.png")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
-            mobile.locator(".editorial-figure").screenshot(
-                path=output / "mobile-ch03-figure.png"
-            )
+            screenshot_all_figures(mobile, output, "mobile-ch03")
 
             mobile_url = f"{url.rstrip('/')}?chapter={chapter_4}"
             mobile.goto(mobile_url, wait_until="networkidle")
@@ -352,7 +463,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             )
             if mobile.locator("#chapter-select").input_value() != chapter_4:
                 raise RuntimeError("mobile chapter menu did not select Chapter 4")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
+            mobile.locator(".editorial-figure").first.scroll_into_view_if_needed()
             mobile.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -369,10 +480,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             mobile.screenshot(path=output / "mobile-ch04.png", full_page=True)
             mobile.locator(".map-figure").scroll_into_view_if_needed()
             mobile.locator(".map-figure").screenshot(path=output / "mobile-ch04-map.png")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
-            mobile.locator(".editorial-figure").screenshot(
-                path=output / "mobile-ch04-figure.png"
-            )
+            screenshot_all_figures(mobile, output, "mobile-ch04")
 
             mobile_url = f"{url.rstrip('/')}?chapter={chapter_5}"
             mobile.goto(mobile_url, wait_until="networkidle")
@@ -381,7 +489,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             )
             if mobile.locator("#chapter-select").input_value() != chapter_5:
                 raise RuntimeError("mobile chapter menu did not select Chapter 5")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
+            mobile.locator(".editorial-figure").first.scroll_into_view_if_needed()
             mobile.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -403,10 +511,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             mobile.screenshot(path=output / "mobile-ch05.png", full_page=True)
             mobile.locator(".map-figure").scroll_into_view_if_needed()
             mobile.locator(".map-figure").screenshot(path=output / "mobile-ch05-map.png")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
-            mobile.locator(".editorial-figure").screenshot(
-                path=output / "mobile-ch05-figure.png"
-            )
+            screenshot_all_figures(mobile, output, "mobile-ch05")
 
             mobile_url = f"{url.rstrip('/')}?chapter={chapter_6}"
             mobile.goto(mobile_url, wait_until="networkidle")
@@ -415,7 +520,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             )
             if mobile.locator("#chapter-select").input_value() != chapter_6:
                 raise RuntimeError("mobile chapter menu did not select Chapter 6")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
+            mobile.locator(".editorial-figure").first.scroll_into_view_if_needed()
             mobile.wait_for_function(
                 """() => {
                   const image = document.querySelector('.figure-image');
@@ -434,14 +539,50 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             mobile.screenshot(path=output / "mobile-ch06.png", full_page=True)
             mobile.locator(".map-figure").scroll_into_view_if_needed()
             mobile.locator(".map-figure").screenshot(path=output / "mobile-ch06-map.png")
-            mobile.locator(".editorial-figure").scroll_into_view_if_needed()
-            mobile.locator(".editorial-figure").screenshot(
-                path=output / "mobile-ch06-figure.png"
-            )
+            screenshot_all_figures(mobile, output, "mobile-ch06")
             mobile.locator(".reading-block.kind-callout").scroll_into_view_if_needed()
             mobile.locator(".reading-block.kind-callout").screenshot(
                 path=output / "mobile-ch06-highlight.png"
             )
+
+            mobile_url = f"{url.rstrip('/')}?chapter={chapter_7}"
+            mobile.goto(mobile_url, wait_until="networkidle")
+            report["viewports"]["mobile_ch07"] = assert_core_render(
+                mobile, counts[chapter_7], "mobile chapter 7"
+            )
+            if mobile.locator("#chapter-select").input_value() != chapter_7:
+                raise RuntimeError("mobile chapter menu did not select Chapter 7")
+            mobile.locator(".editorial-figure").first.scroll_into_view_if_needed()
+            mobile.wait_for_function(
+                """() => {
+                  const image = document.querySelector('.figure-image');
+                  return image && image.complete && image.naturalWidth >= 1200;
+                }"""
+            )
+            map_overflow = mobile.locator(".map-viewport").evaluate(
+                "node => ({client: node.clientWidth, scroll: node.scrollWidth})"
+            )
+            if map_overflow["scroll"] <= map_overflow["client"]:
+                raise RuntimeError(
+                    f"Chapter 7 mobile map lacks a legible scroll viewport: {map_overflow}"
+                )
+            if mobile.locator(".block-heading").count() != 3:
+                raise RuntimeError("Chapter 7 mobile headings are missing")
+            if mobile.locator(".reading-block.kind-callout ruby").count() < 20:
+                raise RuntimeError("Chapter 7 mobile callouts lost their ruby readings")
+            mobile.screenshot(path=output / "mobile-ch07.png", full_page=True)
+            assert_scrolled_below_header(mobile, ".map-figure", "Chapter 7 mobile map")
+            mobile.screenshot(path=output / "mobile-ch07-map.png")
+            assert_scrolled_below_header(
+                mobile, ".editorial-figure", "Chapter 7 mobile figure"
+            )
+            screenshot_all_figures(mobile, output, "mobile-ch07")
+            assert_scrolled_below_header(
+                mobile,
+                "#ch07-b012",
+                "Chapter 7 mobile final callout",
+            )
+            mobile.screenshot(path=output / "mobile-ch07-highlight.png")
             mobile_context.close()
         finally:
             browser.close()

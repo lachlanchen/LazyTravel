@@ -24,13 +24,16 @@ japan/prefectures/<prefecture>
 world/countries/<country>
 ```
 
-Current verified milestone: Xi'an Chapters 1-6, `62` aligned content blocks,
-`93` B6 pages, six reproducible maps, and five realistic editorial figures
-with technical provenance. Every non-map figure includes at least Aya-chan and
-Lala Xia; Sasa-kun and the Zhuangzi robot join where the scene remains clear.
-The Xi'an outline contains exactly `11` chapters;
-Chapter 7 is the dedicated nearby-area chapter for Huashan, Lintong, Han
-Yangling, selected Qinling foothills, and western imperial landscapes.
+Current verified milestone: Xi'an Chapters 1-7, `74` aligned content blocks,
+`117` B6 pages, seven reproducible maps, and eleven realistic editorial figures
+with technical provenance. Every reviewed chapter now has a place-led visual:
+Yongning Gate, Daming Palace, Terracotta Pit 1, the Big Wild Goose Pagoda, the
+city wall, Bell Tower, food practice, or the nearby mountain day. Every non-map
+figure includes at least Aya-chan and Lala Xia; new attraction plates use all
+four guides when the location remains dominant and legible. The Xi'an outline
+contains exactly `11` chapters;
+Chapter 7 is the reviewed nearby-area chapter for Lintong, Huashan, Han
+Yangling, Cuihuashan, and Qianling. Chapter 8 is the next production gate.
 
 ## Source Boundary
 

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-terracotta-pit-one-visit",
+  "created_at": "2026-08-15",
+  "method": "generated-from-private-and-licensed-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Generated a new attraction-dominant composition from four direct guide references and one CC BY-SA Pit 1 visitor-hall reference",
+    "Reviewed at original resolution and at a 600 x 400 B6-screen proof for hall span, earthen partitions, excavated ranks, railing position, guide count, text, crop, and destination dominance"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity as the fourth guide and equal companion; reference only, no source file redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/pit-one-commons-cc-by-sa.jpg",
+      "sha256": "bd8d9606feee0a223950faa50893ee0b22ef6e157bd7ecf71beaf496f0d02e03",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/%E7%A7%A6%E5%A7%8B%E7%9A%87%E5%B8%9D%E9%99%B5%E9%99%AA%E8%91%AC%E5%85%B5%E9%A6%AC%E4%BF%91%E4%B8%80%E8%99%9F%E5%9D%91%C2%B7%E5%85%B5%E9%A6%AC%E4%BF%91%E4%B8%80%E8%99%9F%E5%9D%91%C2%B7%E8%A5%BF%E5%AE%89%E8%87%A8%E6%BD%BC%C2%B7%EF%BC%88%E6%AD%A3%E9%9D%A2%EF%BC%89.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E7%A7%A6%E5%A7%8B%E7%9A%87%E5%B8%9D%E9%99%B5%E9%99%AA%E8%91%AC%E5%85%B5%E9%A6%AC%E4%BF%91%E4%B8%80%E8%99%9F%E5%9D%91%C2%B7%E5%85%B5%E9%A6%AC%E4%BF%91%E4%B8%80%E8%99%9F%E5%9D%91%C2%B7%E8%A5%BF%E5%AE%89%E8%87%A8%E6%BD%BC%C2%B7%EF%BC%88%E6%AD%A3%E9%9D%A2%EF%BC%89.jpg",
+      "credit": "Legolas1024, 2016",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "role": "Pit 1 visitor-hall span, railing sightline, earthen partitions, ranks, and roof geometry; ignored research reference, not redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-terracotta-pit-one-visit.prompt.md",
+    "sha256": "76ab010925a275737900d161f1fa5f24a9333b6533e38cd8084b5c1efc25bc26"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-terracotta-pit-one-visit.png",
+    "sha256": "222d8891948875392b10a772b8e1dcce2fda08a02200e385517470aaedec1665",
+    "bytes": 3190383,
+    "width": 1536,
+    "height": 1024,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Attraction-dominant Chapter 3 view that establishes Pit 1 hall, excavation, and visitor-view scale before individual warrior details",
+  "factual_limits": [
+    "The generated ranks, exposed ground, visitor distribution, light, and camera position form a representative Pit 1 view and do not document the site's exact condition on a particular date",
+    "The image is not a count of warriors, a survey drawing, or evidence that every depicted corridor is currently excavated or displayed in this arrangement",
+    "The guide characters remain on the public visitor side and establish traveler scale; they are not documentary visitors"
+  ],
+  "reader_caption_policy": "Describe what to read from the hall, partitions, and displayed ranks; keep generation method and reference metadata out of the caption",
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation using private continuity references and a Legolas1024 Pit 1 photograph licensed CC BY-SA 4.0. This generated asset is released under CC BY-SA 4.0 with attribution to the factual reference; the reference file itself is not redistributed.",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "exact_guide_count_four": "pass",
+    "destination_dominant": "pass",
+    "hall_partitions_and_ranks_readable": "pass",
+    "guides_remain_behind_public_railing": "pass",
+    "archaeological_incompleteness_visible": "pass",
+    "no_reader_legible_generated_text": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "evidence": "build/qa/images/xian/attraction-views/xian-terracotta-pit-one-visit-b6-screen-proof.png",
+    "evidence_sha256": "8fbf6c192afe2cb476295325cc0bb389af6a290a9fddb86186098bf529d294aa",
+    "notes": "At 600 x 400 the roof span, partitions, ranks, public railing, and all four guides remain distinct; the place clearly outweighs the cast."
+  }
+}

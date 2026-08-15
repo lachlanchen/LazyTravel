@@ -135,31 +135,78 @@ def publication_note_tex(book: dict[str, Any]) -> str:
     branding = book["branding"]
     return rf"""
 \thispagestyle{{empty}}
-\vspace*{{10mm}}
-{{\displayfont\bfseries\fontsize{{13}}{{17}}\selectfont About this review edition\par}}
-\vspace{{6mm}}
-{{\englishfont\fontsize{{8}}{{12}}\selectfont
-This pocket review is generated from the same aligned Chinese, Japanese, and English JSON
-used by the LazyTravel website. Historical claims are separated from dated travel
-information; source text and source images are not republished. Map generalisation is
-disclosed on the map and in its provenance ledger. Chinese pinyin and Japanese furigana
-come from the reviewed token layer in that JSON.\par}}
+\vspace*{{7mm}}
+{{\displayfont\bfseries\fontsize{{12}}{{16}}\selectfont
+这本手册怎么用 · この手引きの使い方\par}}
+\vspace{{1.5mm}}
+{{\englishfont\bfseries\fontsize{{9}}{{12}}\selectfont\color{{LTWater}}
+HOW TO USE THIS GUIDE\par}}
 \vspace{{5mm}}
 {{\fontsize{{8}}{{12}}\selectfont
-本章审阅版由同一份中、日、英对齐 JSON 生成。历史事实与有时效的旅行信息分开处理，
-不转载参考书原文或图片；地图中的概化河段均在图面与溯源记录中说明。\par}}
-\vspace{{5mm}}
+这是一本按旅行决策组织的西安口袋手册。先用地图分清今天的城墙、历代都城与近郊景点，
+再走进兵马俑、雁塔、碑林、城内街巷和西安饭桌。历史只在它能解释眼前地点、路线取舍
+或饮食习惯时出现；交通、住宿和二日、三日、五日行程放在后半部。每一节只解决一个问题：
+去哪里，为什么值得去，现场看什么，怎样留出回程余量。\par}}
+\vspace{{4mm}}
 {{\jpfont\fontsize{{8}}{{12}}\selectfont
-本章レビュー版は、ウェブサイトと共通の中国語・日本語・英語対訳 JSON から生成している。
-歴史的記述と更新を要する旅行情報を分け、参照資料の本文や画像は転載しない。
-地図の概略化区間は図面と来歴記録に明記した。\par}}
+この本は、旅の判断順に組み立てた西安のポケットガイドである。まず地図で現在の城壁、
+歴代の都城、近郊の見どころを区別し、兵馬俑、雁塔、碑林、城内の路地、西安の食卓へ進む。
+歴史は、目の前の場所、経路の選択、食習慣を理解するために必要なところで扱う。交通、宿泊、
+二日・三日・五日の旅程は後半にまとめる。各節が答えるのは、どこへ行くか、なぜ行くか、
+現地で何を見るか、どう帰路の余裕を残すかである。\par}}
+\vspace{{4mm}}
+{{\englishfont\fontsize{{7.8}}{{11.3}}\selectfont
+This pocket guide follows the order in which a traveler makes decisions. It first
+separates the present wall, successive capital sites, and nearby excursions on maps,
+then moves through the Terracotta Army, the pagodas, Beilin, lanes inside the wall,
+and the Xi'an table. History appears where it explains a place, a route choice, or a
+way of eating; transport, accommodation, and two-, three-, and five-day plans follow
+in the second half. Each section answers one question: where to go, why it matters,
+what to notice there, and how to leave enough room to return.\par}}
 \vfill
 {{\displayfont\fontsize{{7}}{{10}}\selectfont\color{{LTMuted}}
+One aligned ZH · JA · EN JSON · reviewed pinyin and furigana · dated sources\par
 LazyTravel · {tex_escape(branding['studio'])}\par
 Repository: {url_tex(branding['repository'])}\par
 Edition: {tex_escape(book['edition'])}\par}}
 \clearpage
 """
+
+
+def contents_tex(chapters: list[dict[str, Any]]) -> str:
+    pieces = [
+        r"\frontmatter",
+        r"\thispagestyle{empty}",
+        r"\vspace*{5mm}",
+        r"{\displayfont\bfseries\fontsize{15}{19}\selectfont 目录 · 目次\par}",
+        r"\vspace{1mm}",
+        r"{\englishfont\bfseries\fontsize{9}{12}\selectfont\color{LTWater}CONTENTS\par}",
+        r"\vspace{6mm}",
+    ]
+    for index, chapter in enumerate(chapters):
+        if index == 4:
+            pieces.extend(
+                [
+                    r"\clearpage",
+                    r"\thispagestyle{empty}",
+                    r"\vspace*{5mm}",
+                    r"{\displayfont\bfseries\fontsize{13}{17}\selectfont 目录（续） · 目次（続き）\par}",
+                    r"\vspace{1mm}",
+                    r"{\englishfont\bfseries\fontsize{8.5}{11}\selectfont\color{LTWater}CONTENTS CONTINUED\par}",
+                    r"\vspace{6mm}",
+                ]
+            )
+        titles = chapter["titles"]
+        label = f"lt-chapter-{chapter['order']:02d}"
+        pieces.append(
+            rf"\LTContentsEntry{{{chapter['order']:02d}}}"
+            rf"{{{tex_escape(titles['zh'])}}}"
+            rf"{{{tex_escape(titles['ja'])}}}"
+            rf"{{{tex_escape(titles['en'])}}}"
+            rf"{{\pageref{{{label}}}}}"
+        )
+    pieces.extend([r"\clearpage", r"\mainmatter"])
+    return "\n".join(pieces) + "\n"
 
 
 def block_tex(
@@ -169,10 +216,19 @@ def block_tex(
 ) -> str:
     text = block["text"]
     readings = block["readings"]
+    heading = block.get("heading")
+    if block["kind"] in {"callout", "practical"} and heading is None:
+        raise ValueError(f"{block['kind']} block {block['id']} requires a heading")
+    heading_tex = (
+        " · ".join(tex_escape(heading[language]) for language in ("zh", "ja", "en"))
+        if heading
+        else ""
+    )
     pieces = [r"\clearpage", rf"\LTBlockStart{{{tex_escape(block['id'])}}}"]
     if block["kind"] == "callout":
         pieces.append(
             rf"\LTCalloutBlock"
+            rf"{{{heading_tex}}}"
             rf"{{{reading_tokens_tex(readings['zh'], 'LTRubyZH')}}}"
             rf"{{{reading_tokens_tex(readings['ja'], 'LTRubyJA')}}}"
             rf"{{{tex_escape(text['en'])}}}"
@@ -180,7 +236,7 @@ def block_tex(
         )
         return "\n".join(pieces) + "\n"
     if block["kind"] == "practical":
-        pieces.append(r"\LTPracticalHeading")
+        pieces.append(rf"\LTPracticalHeading{{{heading_tex}}}")
     pieces.extend(
         [
             rf"\LTChinese{{{reading_tokens_tex(readings['zh'], 'LTRubyZH')}}}",
@@ -268,13 +324,7 @@ def render_document(document: dict[str, Any], chapter_ids: str | list[str]) -> s
     pieces = [
         cover_tex(book, chapters),
         publication_note_tex(book),
-        r"\frontmatter",
-        r"\begingroup",
-        r"\hyphenpenalty=10000",
-        r"\exhyphenpenalty=10000",
-        r"\tableofcontents",
-        r"\endgroup",
-        r"\mainmatter",
+        contents_tex(chapters),
     ]
     for chapter in chapters:
         titles = chapter["titles"]

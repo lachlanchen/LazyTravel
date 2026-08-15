@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-big-wild-goose-pagoda-visit",
+  "created_at": "2026-08-15",
+  "method": "generated-from-private-and-official-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Generated a new attraction-dominant composition from two guide references and one official site-shape reference",
+    "Reviewed at original resolution and at a 600 x 400 B6-screen proof for tower levels, cast identity, text, crop, and destination dominance"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/big-wild-goose-official.jpg",
+      "sha256": "67be5832799533bca8306c17396a99d46865af4ae82ce1936fd4754ae4cd9f65",
+      "url": "https://en.xa.gov.cn/upload/en/2023/08/16/202308161400594986594.jpg",
+      "page_url": "https://en.xa.gov.cn/CultureTravel/Attractions/1691691504798126082.html",
+      "role": "Official Xi'an municipal photograph used only to check the present pagoda's square, tapering seven-storey silhouette; ignored research reference, not redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-big-wild-goose-pagoda-visit.prompt.md",
+    "sha256": "0ea066f32a301d558f8f813b7bea63f2f75518e4c59802931b95bf4d700bcb83"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-big-wild-goose-pagoda-visit.png",
+    "sha256": "361a6d70e84d4368e5cf3e389a3db6587839ab6e254fcb59c7b9b3ba1620fa96",
+    "bytes": 2802281,
+    "width": 1536,
+    "height": 1024,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Attraction-dominant Chapter 4 view that lets readers recognize the pagoda's mass and seven-level vertical rhythm before reading the south-portal inscriptions",
+  "factual_limits": [
+    "The generated courtyard, paving, trees, light, and camera position do not document one exact present-day viewpoint",
+    "The image depicts the present seven-storey square brick form and does not reconstruct the first 652 structure or a Tang cityscape",
+    "The guide characters establish traveler scale and series continuity; they are not documentary visitors"
+  ],
+  "reader_caption_policy": "Describe what to notice at the pagoda and where the inscriptions enter the visit; keep generation method and reference data out of the caption",
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private user-supplied continuity references and an official municipal photograph used only as a factual visual reference; no external source image is redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "aya_and_lala_present": "pass",
+    "destination_dominant": "pass",
+    "seven_storeys_and_square_taper": "pass",
+    "no_historical_reconstruction": "pass",
+    "no_anonymous_people": "pass",
+    "no_forbidden_text_or_branding": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "evidence": "build/qa/images/xian/attraction-views/xian-big-wild-goose-pagoda-visit-b6-screen-proof.png",
+    "evidence_sha256": "698d196355b7ba739ca9de76cd178af57579eb47d0da53232312264b83546c96",
+    "notes": "At 600 x 400 the full seven-storey tower remains the dominant subject; Aya and Lala remain identifiable at the lower edge without blocking the architecture."
+  }
+}

@@ -1,39 +1,40 @@
 # Xi'an Editorial Outline
 
-Working title: **Between Chang'an and Xi'an**.
+Title: **Xi'an Pocket Travel Guide**.
 
-This is not a catalogue of monuments. The book follows one practical question:
-how does a traveler learn to read a modern city whose famous capitals occupied
-different ground at different times? Each chapter moves from a visible detail
-to the historical layer beneath it, then back to a decision a traveler must
-make on foot, by metro, at a table, or when choosing where to sleep.
+This is a travel guide, not a general history with practical notes attached.
+It follows the order in which a traveler makes decisions: establish the real
+distances, choose a place, know what to notice there, eat with context, allow
+for the return journey, then decide how to arrive, where to stay, and how to
+combine the parts. History enters only when it clarifies a visible place, a
+route choice, or a food practice. It never becomes a detached dynasty survey.
 
 ## Chapter Spine
 
-1. **Read the Ground Before the Timeline**  
+1. **Start With the Map: Qinling, the Wei, and the Wall**
    Guanzhong Plain, Qinling Mountains, Wei River system, passes, weather, and
    the first locator map. The traveler should understand why capitals formed
    here before memorizing dynasty names.
 
-2. **Successive Capitals, Different Sites**
+2. **The Capitals Moved: Choosing Which Sites to Visit**
    Fenghao, Qin Xianyang, Han Chang'an, Sui Daxing/Tang Chang'an, the Ming city,
    and present Xi'an. A layered map prevents the common error of treating every
    surviving site as part of one continuous walled city.
 
-3. **The Army Under Earth Is Not a Photo Stop**  
+3. **A Half Day at the Terracotta Army: Excavation Before Formation**
    Qin imperial landscape, excavation context, museum pacing, conservation,
    Lintong transport, and how to look across the three pits without reducing
    individual figures to spectacle.
 
-4. **Let Text Lead: From the Pagodas to the Forest of Steles**  
+4. **Pagodas to Beilin: Follow the Written Word**
    Translation, Buddhism, religious plurality, calligraphy, the Big and Small
    Wild Goose Pagodas, Beilin, and the museums that make objects legible.
 
-5. **Inside the Wall: Four Axes and Many Side Streets**  
+5. **Half a Day Inside the Wall: Towers, Hui Lanes, and Side Streets**
    Bell and Drum Towers, gates, wall walk, the Muslim Quarter beyond its snack
    street, mosque courtyards, lane etiquette, and a route that allows detours.
 
-6. **Eat Xi'an, Beginning With Bread**  
+6. **How to Eat in Xi'an: Begin With Mo**
    Wheat, breaking bread for paomo, roujiamo, liangpi, biangbiang noodles,
    dumplings, Hui and Han food contexts, ordering language, breakfast rhythms,
    and how to judge queues without turning old shops into a checklist.
@@ -60,7 +61,7 @@ make on foot, by metro, at a table, or when choosing where to sleep.
     Timings include transfer and rest margins rather than idealized attraction
     counts.
 
-11. **Before Departure**  
+11. **Before Departure: Bookings, Weather, and On-site Rules**
     Booking windows, closures, climate, air quality, holidays, museum conduct,
     food allergies, emergency information, and a visible “checked on” date for
     every volatile block.
@@ -77,3 +78,7 @@ make on foot, by metro, at a table, or when choosing where to sleep.
   of another language.
 - Lists are reserved for decisions. History and cultural context remain
   continuous prose.
+- Every chapter must state what travel decision it changes. A paragraph that
+  cannot answer that question is shortened, moved to a fact ledger, or removed.
+- Attraction-led chapters show the place itself at useful scale. Instructional
+  character scenes supplement that view; they do not substitute for it.

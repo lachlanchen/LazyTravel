@@ -18,16 +18,23 @@ const categoryLabels = {
 const languageNames = { zh: "中文", ja: "日本語", en: "ENGLISH" };
 const assetLabels = {
   "asset-xian-before-walls-map": "XI'AN BEFORE THE WALLS",
+  "asset-xian-yongning-gate-arrival": "YONGNING GATE · CITY THRESHOLD",
   "asset-xian-capital-layers-map": "SUCCESSIVE CAPITALS, DIFFERENT SITES",
   "asset-xian-daming-site-impression": "DAMING PALACE · SITE-SCALE IMPRESSION",
   "asset-xian-qin-mausoleum-pits-map": "QIN MAUSOLEUM · MOUND AND VISITOR PITS",
+  "asset-xian-terracotta-pit-one-visit": "TERRACOTTA ARMY · PIT 1 AT FIRST SIGHT",
   "asset-xian-terracotta-conservation-impression": "TERRACOTTA · CONSERVATION WORK",
   "asset-xian-written-word-route-map": "PAGODAS TO BEILIN · WRITTEN-WORD ROUTE",
   "asset-xian-rubbing-replica-demonstration": "RUBBING ON A MODERN REPLICA",
+  "asset-xian-big-wild-goose-pagoda-visit": "BIG WILD GOOSE PAGODA · COURTYARD VIEW",
   "asset-xian-inside-wall-route-map": "INSIDE THE WALL · CROSSROADS AND LANES",
+  "asset-xian-city-wall-walk": "XI'AN CITY WALL · WIDTH AND DISTANCE",
+  "asset-xian-bell-tower-orientation": "BELL TOWER · FOUR-AVENUE CENTRE",
   "asset-xian-lane-courtyard-threshold": "LANE TO COURTYARD · THE THRESHOLD",
   "asset-xian-food-contexts-map": "XI'AN FOOD · FOUR CONTEXTS",
   "asset-xian-breaking-mo-table": "PAOMO · BREAKING THE MO",
+  "asset-xian-nearby-day-choices-map": "XI'AN AROUND · FIVE ONE-DAY CHOICES",
+  "asset-xian-managed-mountain-day": "MOUNTAIN DAY · MANAGED TRAIL",
 };
 const state = {
   document: null,
@@ -256,6 +263,9 @@ function renderBlock(block, index, assetById, visualNumber) {
     header.append(element("time", "time-label", `CHECKED ${block.checked_at}`));
   }
   section.append(header);
+  if (block.heading) {
+    section.append(renderLanguageSet(block.heading, "block-heading"));
+  }
 
   const grid = element("div", "language-grid");
   for (const language of ["zh", "ja", "en"]) {
@@ -361,9 +371,17 @@ function renderChapter(documentData, chapter) {
   article.append(masthead);
 
   const assetById = new Map(documentData.assets.map((asset) => [asset.id, asset]));
-  let visualNumber = 0;
+  let mapNumber = 0;
+  let figureNumber = 0;
   chapter.blocks.forEach((block, index) => {
-    if (block.kind === "map" || block.kind === "figure") visualNumber += 1;
+    let visualNumber = 0;
+    if (block.kind === "map") {
+      mapNumber += 1;
+      visualNumber = mapNumber;
+    } else if (block.kind === "figure") {
+      figureNumber += 1;
+      visualNumber = figureNumber;
+    }
     article.append(renderBlock(block, index, assetById, visualNumber));
   });
   article.append(renderSources(documentData, chapter), renderFooter(documentData.book));

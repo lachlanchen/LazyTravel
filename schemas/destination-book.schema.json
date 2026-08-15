@@ -99,12 +99,22 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["id", "kind", "category", "temporal_scope", "text", "readings", "citation_ids", "asset_ids", "review"],
+      "allOf": [
+        {
+          "if": {
+            "properties": {"kind": {"enum": ["practical", "callout"]}},
+            "required": ["kind"]
+          },
+          "then": {"required": ["heading"]}
+        }
+      ],
       "properties": {
         "id": {"type": "string", "pattern": "^ch[0-9]{2}-b[0-9]{3}$"},
         "kind": {"enum": ["prose", "practical", "callout", "list", "itinerary-step", "map", "figure"]},
         "category": {"enum": ["history", "food", "attractions", "transport", "hotels", "itineraries", "cultural-context", "practical", "maps"]},
         "temporal_scope": {"enum": ["durable", "time-sensitive"]},
         "checked_at": {"type": "string", "format": "date"},
+        "heading": {"$ref": "#/$defs/trilingualText"},
         "text": {"$ref": "#/$defs/trilingualText"},
         "readings": {
           "type": "object",

@@ -25,17 +25,17 @@ editorial and reproducibility gate.
 The Xi'an guide has exactly 11 chapters. This is the complete scope: neither
 fewer nor more chapters are needed.
 
-1. First the Land, Then the Dynasties
-2. Successive Capitals, Different Sites
-3. The Terracotta Army: From Excavation to Formation
-4. From the Pagodas to the Forest of Steles: Follow the Written Word
-5. Inside the Wall: Four Main Streets and Many Lanes
-6. At the Xi'an Table: Begin with Mo
+1. Start with the Map: Qinling, the Wei, and the Wall
+2. The Capitals Moved: Choosing Which Sites to Visit
+3. A Half Day at the Terracotta Army: Excavation Before Formation
+4. Pagodas to Beilin: Follow the Written Word
+5. Half a Day Inside the Wall: Towers, Hui Lanes, and Side Streets
+6. How to Eat in Xi'an: Begin with Mo
 7. Around Xi'an: Give One Place a Day
 8. Arriving in Xi'an: Airport, Stations and Transfers
 9. Where to Stay: Choose the District First
 10. Xi'an in Two, Three or Five Days
-11. Before Departure
+11. Before Departure: Bookings, Weather, and On-site Rules
 
 Chapter 7 is the single nearby-area plan, covering realistic choices among
 Huashan, Lintong, Han Yangling, selected Qinling foothills, and western
@@ -64,6 +64,13 @@ clean legible maps without padding or duplicated chapters.
 - Favor useful detail, narrative continuity, cultural nuance, and realistic
   decisions for ordinary travelers. Write efficiently, but do not skip factual,
   language, visual, or page-level review.
+- Keep one explicit travel-guide line: first help the reader choose and move;
+  then use the history and food behind actual places to make the visit richer.
+  Do not mix eras to manufacture a story or let contextual history take over
+  the trip.
+- Spend review time on facts, language, route usefulness, and visible layout
+  faults. Do not loop on micro-details that do not change accuracy, legibility,
+  reproducibility, or the reader's decision.
 
 ## Visual Standard
 
@@ -74,12 +81,20 @@ clean legible maps without padding or duplicated chapters.
   clutter, accurate provenance, and separate B6/mobile visual checks.
 - Reuse source images only after rights and editorial review. Otherwise create
   original high-resolution realistic figures with captions and provenance.
+- Attraction-led chapters must include an attraction-dominant view at a useful
+  scale. Aya-chan and Lala Xia may establish traveler scale in the foreground,
+  but the destination remains the main subject; instructional scenes do not
+  count as substitutes for showing the place.
 - The recurring guide team is Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi
   robot. They are four friends and the visual guides shared with the LALACHAN
   travel-video series. The robot has equal narrative status.
 - Every non-map figure includes at least Aya-chan and Lala Xia, even when an
   instructional composition might otherwise show only hands, partial people,
   or distant anonymous visitors. Maps do not include the cast.
+- Distribute substantial location views through the guide so major places are
+  recognizable before the reader arrives. New attraction plates should use
+  all four guides when they remain clear at B6 size, but the destination must
+  still dominate and repeated views must not clutter the pocket edition.
 - The patchwork notebook, LightMind glasses, and word-card device are recurring
   travel tools. Use cast and props smoothly, only where they strengthen the
   guide content; never turn the book into a character catalogue or product ad.

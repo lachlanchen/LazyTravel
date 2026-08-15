@@ -11,12 +11,29 @@ from render_destination_tex import (  # noqa: E402
     block_tex,
     citation_order,
     citation_order_for_chapters,
+    contents_tex,
     reading_tokens_tex,
     tex_escape,
 )
 
 
 class DestinationTexTests(unittest.TestCase):
+    def test_contents_use_separate_trilingual_entries(self) -> None:
+        chapters = [
+            {
+                "order": 1,
+                "titles": {"zh": "西安地图", "ja": "西安の地図", "en": "Map of Xi'an"},
+            }
+        ]
+
+        rendered = contents_tex(chapters)
+
+        self.assertIn(
+            r"\LTContentsEntry{01}{西安地图}{西安の地図}{Map of Xi'an}", rendered
+        )
+        self.assertIn(r"\pageref{lt-chapter-01}", rendered)
+        self.assertNotIn(r"\tableofcontents", rendered)
+
     def test_escapes_latex_metacharacters(self) -> None:
         self.assertEqual(tex_escape("A&B_50%"), r"A\&B\_50\%")
 
@@ -64,6 +81,11 @@ class DestinationTexTests(unittest.TestCase):
         block = {
             "id": "ch06-b011",
             "kind": "callout",
+            "heading": {
+                "zh": "点单与过敏",
+                "ja": "注文とアレルギー",
+                "en": "ORDER & ALLERGIES",
+            },
             "text": {"zh": "点单", "ja": "注文", "en": "Ask clearly."},
             "readings": {
                 "zh": {"tokens": [{"text": "点单", "reading": "diǎndān"}]},
@@ -74,8 +96,47 @@ class DestinationTexTests(unittest.TestCase):
         }
         rendered = block_tex(block, {"src-a": 1}, {})
         self.assertIn(r"\LTCalloutBlock", rendered)
+        self.assertIn("点单与过敏 · 注文とアレルギー · ORDER \\& ALLERGIES", rendered)
         self.assertIn(r"\LTRubyZH{点单}{diǎndān}", rendered)
         self.assertIn(r"\LTRubyJA{注文}{ちゅうもん}", rendered)
+
+    def test_practical_block_uses_its_trilingual_heading(self) -> None:
+        block = {
+            "id": "ch07-b006",
+            "kind": "practical",
+            "heading": {
+                "zh": "先定山上路线",
+                "ja": "山上ルートを先に決める",
+                "en": "ROUTE FIRST",
+            },
+            "text": {"zh": "路线", "ja": "経路", "en": "Choose a route."},
+            "readings": {
+                "zh": {"tokens": [{"text": "路线", "reading": "lùxiàn"}]},
+                "ja": {"tokens": [{"text": "経路", "reading": "けいろ"}]},
+            },
+            "citation_ids": ["src-a"],
+            "asset_ids": [],
+        }
+        rendered = block_tex(block, {"src-a": 1}, {})
+        self.assertIn(
+            r"\LTPracticalHeading{先定山上路线 · 山上ルートを先に決める · ROUTE FIRST}",
+            rendered,
+        )
+
+    def test_special_block_without_heading_is_rejected(self) -> None:
+        block = {
+            "id": "ch07-b006",
+            "kind": "practical",
+            "text": {"zh": "路线", "ja": "経路", "en": "Choose a route."},
+            "readings": {
+                "zh": {"tokens": [{"text": "路线", "reading": "lùxiàn"}]},
+                "ja": {"tokens": [{"text": "経路", "reading": "けいろ"}]},
+            },
+            "citation_ids": ["src-a"],
+            "asset_ids": [],
+        }
+        with self.assertRaisesRegex(ValueError, "requires a heading"):
+            block_tex(block, {"src-a": 1}, {})
 
     def test_reading_tokens_bind_opening_and_closing_punctuation(self) -> None:
         layer = {
