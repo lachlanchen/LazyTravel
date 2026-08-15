@@ -1,50 +1,38 @@
-# Ink Rubbing From A Modern Replica
+# Ink Rubbing From A Modern Teaching Replica
 
-Use case: `photorealistic-natural`
+Use case: realistic-editorial-character-scene
 
-Asset type: full-width editorial figure for the B6 LazyTravel pocket book and
-its synchronized responsive website.
+Asset type: full-width figure for the B6 LazyTravel pocket book and its
+synchronized responsive website.
 
-Primary request: create a photorealistic editorial photograph that gives a
-reader a physically credible visual sense of making a traditional Chinese ink
-rubbing, while making it unmistakable that the demonstration uses a modern
-teaching replica rather than a historic stele. Show a close, eye-level
-three-quarter view of an adult museum educator's hands working over a new,
-rectangular dark-grey resin practice slab supported on clean conservation foam.
-Most of the replica face is covered by damp off-white xuan paper pressed gently
-into shallow recesses. One hand holds a round cloth-wrapped ink tamping pad just
-above the paper; the other steadies the paper edge with relaxed fingers.
+Continuity references: use the hash-pinned Aya-chan and Lala Xia files in
+`data/sources/catalog.json`. Preserve Aya-chan's red-panda sailor design and
+Lala Xia's round panda form with pale overalls. Both guides must be visible and
+equally present; do not use a human instructor or anonymous hands.
 
-Process details: include a second clean tamping pad, a shallow ceramic ink dish,
-a soft natural-fibre pressing brush, a water mister, and a folded absorbent
-cloth placed in a sparse, orderly arrangement. The paper should show a small
-area where softly mottled black ink has begun to build, but no readable
-character, pseudo-character, inscription, label, or decorative calligraphy.
-Hands, finger count, joints, grip, paper contact, shadows, and tool scale must be
-anatomically and physically plausible.
+Primary request: create a brand-new high-resolution 3:2 editorial photograph of
+the guides learning the physical sequence of a Chinese ink rubbing on an
+unmistakably modern teaching replica. The new rectangular dark-grey resin slab
+lies horizontally on clean conservation foam. A clean cast edge, pale composite
+backing, and one blank colour tab distinguish it from a historic stele.
 
-Modern-replica boundary: the uncovered side and back of the slab should reveal
-clean cast edges, a pale composite backing, and one small blank colour-coded
-inventory tab with no text. The slab rests horizontally on a contemporary
-worktable; it is not installed in a temple, museum gallery, archaeological
-site, or historical setting. Do not show anyone touching an original monument.
+Most of the replica face is covered by damp off-white xuan paper pressed into
+shallow abstract recesses. Aya-chan holds a round cloth-wrapped ink tamping pad
+just above the paper. Lala Xia gently steadies the paper edge with one paw and
+holds a soft natural-fibre pressing brush in the other. A softly mottled black
+area may begin to build, but it must contain no readable or pseudo writing.
+Paws, grips, paper contact, joints, shadows, and tool scale must be plausible.
 
-Style and composition: documentary editorial photography, landscape 3:2,
-quiet contemporary museum-education workspace, soft diffuse daylight plus
-neutral task light, realistic paper fibres, restrained charcoal, off-white,
-wood, and muted green-grey palette. Keep the hands and paper in one sharp focal
-plane, with the generic room softly out of focus. The scene must remain legible
-when printed about 105 mm wide in a B6 book and should visually match the
-restrained natural-light treatment of the approved Xi'an conservation figure.
+Include one clean tamping pad, a shallow ceramic ink dish, a small water mister,
+and a folded absorbent cloth in a sparse arrangement. Keep both guides visible
+from the torso up and the paper and two complementary actions in one sharp focal
+plane. Use diffuse daylight, a neutral task light, realistic paper fibres, and
+restrained charcoal, off-white, wood, jade, cobalt, vermilion, and coral.
 
-Accuracy boundary: this is an AI-generated, non-documentary teaching-process
-impression. It depicts no real museum, educator, artefact, inscription, or
-authorized visitor activity. It exists only to explain how paper, pressure, and
-ink can transfer the surface pattern of a replica.
+Accuracy boundary: this is an educational process study, not permission to rub
+an original and not a depiction of a named institution, object, or activity.
 
-Constraints: no historical stele, no standing monument, no ancient costume, no
-tourist crowd, no bare-hand contact with heritage, no aggressive scrubbing, no
-ink roller, no paint roller, no modern printer, no blackened original stone, no
-dramatic spotlight, no cinematic dust, no sepia filter, no fantasy atmosphere,
-no legible writing, no pseudo-Chinese marks, no labels, no logos, no watermark,
-no decorative border.
+Constraints: no original monument, standing stele, historical room, ancient
+costume, tourist crowd, temple, roller, printer, aggressive scrubbing, readable
+text, pseudo-character, label, logo, watermark, decorative border, dramatic
+spotlight, cinematic dust, sepia, or overall yellow cast.

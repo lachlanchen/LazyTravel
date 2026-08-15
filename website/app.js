@@ -26,6 +26,8 @@ const assetLabels = {
   "asset-xian-rubbing-replica-demonstration": "RUBBING ON A MODERN REPLICA",
   "asset-xian-inside-wall-route-map": "INSIDE THE WALL · CROSSROADS AND LANES",
   "asset-xian-lane-courtyard-threshold": "LANE TO COURTYARD · THE THRESHOLD",
+  "asset-xian-food-contexts-map": "XI'AN FOOD · FOUR CONTEXTS",
+  "asset-xian-breaking-mo-table": "PAOMO · BREAKING THE MO",
 };
 const state = {
   document: null,
@@ -239,6 +241,7 @@ function renderFigure(asset, number) {
 
 function renderBlock(block, index, assetById, visualNumber) {
   const section = element("section", "reading-block");
+  section.classList.add(`kind-${block.kind}`);
   section.id = block.id;
   section.dataset.category = block.category;
 

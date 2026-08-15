@@ -1,48 +1,40 @@
 # Xi'an Lane-to-Courtyard Threshold
 
-Use case: photorealistic-natural
+Use case: realistic-editorial-character-scene
 
-Asset type: landscape editorial figure for a B6 multilingual travel book and
-responsive companion website
+Asset type: full-width figure for the B6 LazyTravel pocket book and its
+synchronized responsive website.
 
-Primary request: Create a highly realistic contemporary travel-editorial
-photograph showing the spatial transition from a busy old-city lane to a quiet,
-tree-shaded courtyard threshold in central Xi'an. Two adult independent
-travelers in ordinary contemporary clothing are seen from behind at middle
-distance. They pause to the side of the entrance and look ahead without
-blocking the doorway.
+Continuity references: use the hash-pinned Aya-chan and Lala Xia files in
+`data/sources/catalog.json`. Preserve Aya-chan's red-panda sailor design,
+satchel, and striped tail, and Lala Xia's round panda form and pale overalls. Do
+not substitute human or anonymous travelers.
 
-Scene/backdrop: A generic gray-brick lane and timber gate informed by the
-historic walled-city fabric of Xi'an, followed by two layered courtyard spaces,
-mature green foliage, stone paving, tiled roofs, and restrained geometric
-woodwork. A small edge of an everyday shopfront may appear at the lane side,
-but no business, mosque, doorway, resident, or worship event should be
-identifiable. This is not a reconstruction of Huajue Lane Great Mosque or any
-other exact site.
+Primary request: create a brand-new high-resolution 3:2 contemporary travel-
+editorial photograph showing the transition from an ordinary old-city lane to
+a quiet tree-shaded courtyard threshold in central Xi'an. The generic setting
+is informed by walled-city fabric but does not reproduce a named mosque,
+residence, business, or attraction.
 
-Style/medium: Naturalistic 35 mm documentary-style editorial photography with
-plausible architecture, materials, anatomy, perspective, and depth. Crisp
-enough for print; no artificial illustration finish.
+Show grey brick, a broad dark-timber gate, a clearly raised stone threshold, two
+layered courtyard spaces, mature jade-green foliage, stone paving, tiled roofs,
+and restrained geometric woodwork. Aya-chan and Lala Xia pause together at the
+left side of the entrance, leaving the whole doorway open. They look into the
+courtyard from a respectful public position without stepping inside, touching
+the gate, or blocking anyone. Show both guides fully from a rear or gentle
+three-quarter angle with coherent paws, feet, contact, and shadows.
 
-Composition/framing: Horizontal 3:2 frame at eye level. The lane occupies the
-near left edge, the threshold sits near the lower middle, and the courtyard
-opens into depth. Keep both travelers fully visible with coherent hands and
-feet. Faces should not be identifiable. Preserve enough clear architecture and
-ground to understand scale at B6 width.
+Composition: naturalistic eye-level 35 mm view. Keep the lane at the near left,
+the threshold near the lower middle, and the courtyard opening into depth.
+Preserve enough architecture and ground for scale at B6 width. Use clear late-
+morning daylight, open shade, grey brick, dark timber, green foliage, and the
+guides' restrained cobalt, vermilion, and neutral accents. No yellow cast.
 
-Lighting/mood: Clear late-morning natural light, open shade within the
-courtyard, realistic dynamic range, calm but not empty or theatrical.
+Accuracy boundary: this is a generic access-etiquette scene, not evidence for
+the design, public access, or current appearance of a specific property.
 
-Color palette: Clean neutral daylight with gray brick, dark timber, jade-green
-foliage, one restrained cobalt clothing accent, and one coral clothing accent.
-Avoid cream, mustard, sepia, amber haze, or an overall yellow cast.
-
-Constraints: Contemporary scene only. No readable Chinese, Arabic, English, or
-Japanese text. No invented religious symbols. No prayer, staged ritual, costume,
-tour group, selfie pose, or direct interaction with residents. No exact
-monument recreation. No logo or watermark.
-
-Avoid: cinematic grading, golden-hour glow, dramatic sunbeams, fog, incense,
-fantasy architecture, domes, minarets, theme-park facades, ornamental clutter,
-heavy background blur, distorted tiles, duplicate people, extra fingers or
-limbs, malformed hands or feet, and generated pseudo-writing.
+Constraints: no exact monument, mosque name, religious symbol, prayer, ritual,
+costume, tour group, selfie, resident interaction, other person, readable text,
+logo, watermark, dome, minaret, fantasy or theme-park facade, clutter, fog,
+incense, dramatic sunbeam, golden-hour grading, blocked doorway, duplicate
+guide, or malformed paw or foot.

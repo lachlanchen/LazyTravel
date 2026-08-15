@@ -475,6 +475,31 @@ main {
   font-size: 12px;
 }
 
+.reading-block[data-category="maps"] .block-index,
+.reading-block[data-category="itineraries"] .block-index {
+  background: var(--water);
+}
+
+.reading-block[data-category="cultural-context"] .block-index {
+  background: var(--forest);
+}
+
+.reading-block.kind-callout {
+  width: min(1168px, calc(100% - 48px));
+  padding-right: 24px;
+  padding-left: 30px;
+  border-left: 6px solid var(--coral);
+  background: var(--blush);
+}
+
+.reading-block.kind-callout .block-index {
+  width: 42px;
+  height: 42px;
+  flex-basis: 42px;
+  background: var(--coral);
+  box-shadow: 0 0 0 7px rgba(255, 107, 74, 0.16);
+}
+
 .block-category {
   color: var(--forest);
 }
@@ -647,8 +672,8 @@ rt {
 .visual-rights {
   margin: 0;
   color: var(--muted);
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: 14px;
+  line-height: 1.65;
 }
 
 .visual-rights {
@@ -877,6 +902,12 @@ html[data-mode="parallel"] .block-category [data-lang]:not([data-lang="en"]) {
 
   .reading-block {
     padding: 42px 0 46px;
+  }
+
+  .reading-block.kind-callout {
+    width: min(100% - 16px, 752px);
+    padding-right: 16px;
+    padding-left: 20px;
   }
 
   .language-panel p {

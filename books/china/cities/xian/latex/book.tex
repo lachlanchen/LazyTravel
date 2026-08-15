@@ -47,6 +47,7 @@
 \definecolor{LTPaper}{HTML}{FCFDFF}
 \definecolor{LTPale}{HTML}{CBD5E1}
 \definecolor{LTBlueMist}{HTML}{EAF2FF}
+\definecolor{LTBlush}{HTML}{FFF0ED}
 
 \pagecolor{LTPaper}
 \color{LTInk}
@@ -187,6 +188,25 @@
   \vspace{1mm}
 }
 
+\newcommand{\LTCalloutBlock}[4]{%
+  \begingroup
+  \setlength{\fboxsep}{2.2mm}%
+  \setlength{\fboxrule}{0.65pt}%
+  \noindent\fcolorbox{LTCoral}{LTBlush}{%
+    \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+      \LTBubble{LTCoral}{!}\hspace{2.2mm}%
+      {\displayfont\bfseries\fontsize{7.2}{9}\selectfont\color{LTInk}
+        ORDER · INGREDIENTS · ALLERGIES}\par
+      \vspace{2mm}
+      \LTChinese{#1}
+      \LTJapanese{#2}
+      \LTEnglish{#3}
+      \LTSources{#4}
+    \end{minipage}%
+  }\par
+  \endgroup
+}
+
 \newcommand{\LTMapPage}[1]{%
   \clearpage
   \begin{landscape}
@@ -205,14 +225,14 @@
     \thispagestyle{empty}
     \centering
     \vspace*{2mm}
-    \includegraphics[width=0.98\linewidth,height=0.73\textheight,keepaspectratio]{#1}\par
+    \includegraphics[width=0.98\linewidth,height=0.70\textheight,keepaspectratio]{#1}\par
     \vspace{2mm}
     \begin{minipage}{0.96\linewidth}
-      {\fontsize{6.2}{8.2}\selectfont #2\par}
-      \vspace{0.7mm}
-      {{\jpfont\fontsize{6}{8}\selectfont\color{LTForest}#3}\par}
-      \vspace{0.7mm}
-      {{\englishfont\fontsize{5.9}{7.8}\selectfont\color{LTWater}#4}\par}
+      {\fontsize{7.2}{9.6}\selectfont #2\par}
+      \vspace{0.9mm}
+      {{\jpfont\fontsize{7}{9.4}\selectfont\color{LTForest}#3}\par}
+      \vspace{0.9mm}
+      {{\englishfont\fontsize{6.9}{9.2}\selectfont\color{LTWater}#4}\par}
     \end{minipage}
     \vfill
   \end{landscape}

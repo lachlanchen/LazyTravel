@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "id": "xian-food-contexts",
+  "snapshot_date": "2026-08-15",
+  "title": {
+    "zh": "四种吃法，不是四个打卡点",
+    "ja": "四つの食べ方、四つの必須地点ではない",
+    "en": "FOUR EATING CONTEXTS, NOT FOUR CHECKLIST STOPS"
+  },
+  "extent": [
+    108.916,
+    34.248,
+    108.971,
+    34.282
+  ],
+  "reference": {
+    "id": "bell-tower",
+    "position": [
+      108.9423419,
+      34.2610119
+    ],
+    "label": {
+      "zh": "钟楼",
+      "ja": "鐘楼",
+      "en": "BELL TOWER"
+    },
+    "osm_type": "way",
+    "osm_id": 254488435
+  },
+  "gates": [
+    {
+      "id": "west-gate",
+      "position": [
+        108.9202,
+        34.2649
+      ],
+      "label": "安定门  WEST"
+    },
+    {
+      "id": "north-gate",
+      "position": [
+        108.9434,
+        34.2779
+      ],
+      "label": "安远门  NORTH"
+    },
+    {
+      "id": "east-gate",
+      "position": [
+        108.9671,
+        34.2650
+      ],
+      "label": "长乐门  EAST"
+    },
+    {
+      "id": "south-gate",
+      "position": [
+        108.9423,
+        34.2531
+      ],
+      "label": "永宁门  SOUTH"
+    }
+  ],
+  "guide_streets": [
+    {
+      "id": "east-west-axis",
+      "coordinates": [
+        [
+          108.9202,
+          34.2649
+        ],
+        [
+          108.9423419,
+          34.2610119
+        ],
+        [
+          108.9671,
+          34.2650
+        ]
+      ],
+      "note": "Generalized present east-west orientation through the Bell Tower; not a navigation line."
+    },
+    {
+      "id": "north-south-axis",
+      "coordinates": [
+        [
+          108.9434,
+          34.2779
+        ],
+        [
+          108.9423419,
+          34.2610119
+        ],
+        [
+          108.9423,
+          34.2531
+        ]
+      ],
+      "note": "Generalized present north-south orientation through the Bell Tower; not a navigation line."
+    }
+  ],
+  "contexts": [
+    {
+      "id": "sajinqiao",
+      "order": 1,
+      "position": [
+        108.9280213,
+        34.2679688
+      ],
+      "radius": 0.0027,
+      "label_offset": [
+        -0.0031,
+        0.0022
+      ],
+      "label": {
+        "zh": "洒金桥",
+        "ja": "洒金橋",
+        "en": "SAJINQIAO"
+      },
+      "context": {
+        "zh": "清晨 · 汤食与清真小吃",
+        "ja": "朝 · 汁物と清真の軽食",
+        "en": "MORNING · SOUPS & HALAL SNACKS"
+      },
+      "osm_type": "way",
+      "osm_id": 516364636,
+      "note": "The circle describes a street context, not a claim about any individual vendor or opening hour."
+    },
+    {
+      "id": "hui-lanes",
+      "order": 2,
+      "position": [
+        108.9363502,
+        34.2660734
+      ],
+      "radius": 0.0035,
+      "label_offset": [
+        0.0028,
+        0.0031
+      ],
+      "label": {
+        "zh": "大皮院与西羊市",
+        "ja": "大皮院と西羊市",
+        "en": "HUI-LANE CORE"
+      },
+      "context": {
+        "zh": "坐下吃 · 牛羊肉与甜食",
+        "ja": "座って食べる · 牛羊肉と甘味",
+        "en": "SIT DOWN · BEEF, LAMB & SWEETS"
+      },
+      "osm_type": "way",
+      "osm_id": 40541070,
+      "note": "Generalized from Dapiyuan, Xiyangshi, Huajue Lane, and adjacent living streets; not the full Hui neighborhood."
+    },
+    {
+      "id": "xiaonanmen",
+      "order": 3,
+      "position": [
+        108.93065,
+        34.25395
+      ],
+      "radius": 0.0025,
+      "label_offset": [
+        -0.0035,
+        -0.0035
+      ],
+      "label": {
+        "zh": "小南门与报恩寺街",
+        "ja": "小南門と報恩寺街",
+        "en": "XIAONANMEN"
+      },
+      "context": {
+        "zh": "早市 · 混合型日常早餐",
+        "ja": "朝市 · 日常の朝食",
+        "en": "MORNING MARKET · EVERYDAY BREAKFAST"
+      },
+      "osm_type": "node+way",
+      "osm_id": "10278449746+1412689249",
+      "note": "Position combines Wumu Gate and Baoensi Street. Market operation and vendor mix require a same-day check."
+    },
+    {
+      "id": "yongxingfang",
+      "order": 4,
+      "position": [
+        108.9654290,
+        34.2664678
+      ],
+      "radius": 0.0024,
+      "label_offset": [
+        -0.0012,
+        0.0040
+      ],
+      "label": {
+        "zh": "永兴坊",
+        "ja": "永興坊",
+        "en": "YONGXINGFANG"
+      },
+      "context": {
+        "zh": "策划场所 · 陕西各地样本",
+        "ja": "企画型施設 · 陝西各地の料理",
+        "en": "CURATED VENUE · SHAANXI SAMPLER"
+      },
+      "osm_type": "way",
+      "osm_id": 376248518,
+      "note": "Current curated food and heritage venue inside East Gate; not represented as an ancient market."
+    }
+  ],
+  "sources": [
+    {
+      "id": "openstreetmap-food-contexts",
+      "title": "OpenStreetMap named roads, gates, Bell Tower, and Yongxingfang",
+      "url": "https://www.openstreetmap.org/copyright",
+      "snapshot_date": "2026-08-15",
+      "license": "ODbL 1.0",
+      "note": "Nominatim lookups pinned by OSM type and ID in this config; present wall geometry comes from the existing pinned relation extract."
+    },
+    {
+      "id": "xian-scenic-sites-2026",
+      "title": "西安市A级旅游景区信息表",
+      "url": "https://www.xa.gov.cn/ztzl/ztzl/lzledc/ywdc/1824366329290301442.html",
+      "snapshot_date": "2026-02-25",
+      "note": "Lists Yongxingfang as a current AAA scenic venue at East New Street 1, inside Zhongshan Gate."
+    },
+    {
+      "id": "xian-current-food-areas",
+      "title": "Current Xi'an municipal coverage of food areas",
+      "url": "https://www.xa.gov.cn/index/tttp/2039531003505111041.html",
+      "snapshot_date": "2026-08-15",
+      "note": "Names Xiaonanmen morning market, Sajinqiao, and Yongxingfang as current food contexts; no hours or vendor claims are carried into the map."
+    },
+    {
+      "id": "xian-historic-city-regulations",
+      "title": "西安历史文化名城保护条例",
+      "url": "https://wwj.shaanxi.gov.cn/zfxxgk/fdzdgknr/flfg/fg/201704/t20170405_2131156.html",
+      "snapshot_date": "2026-08-15",
+      "note": "Supports the North Courtyard historic-district context; not a restaurant source."
+    }
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "notes": "Inspected at 5600 x 3600, 2079 x 1476 B6 landscape proof, and 1344 px web width. Four context labels, leaders, gate references, key, and disclaimers remain distinct; the mobile website will retain a pannable map viewport."
+  }
+}

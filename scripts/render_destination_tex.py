@@ -170,6 +170,15 @@ def block_tex(
     text = block["text"]
     readings = block["readings"]
     pieces = [r"\clearpage", rf"\LTBlockStart{{{tex_escape(block['id'])}}}"]
+    if block["kind"] == "callout":
+        pieces.append(
+            rf"\LTCalloutBlock"
+            rf"{{{reading_tokens_tex(readings['zh'], 'LTRubyZH')}}}"
+            rf"{{{reading_tokens_tex(readings['ja'], 'LTRubyJA')}}}"
+            rf"{{{tex_escape(text['en'])}}}"
+            rf"{{{citation_markers(block['citation_ids'], citation_numbers)}}}"
+        )
+        return "\n".join(pieces) + "\n"
     if block["kind"] == "practical":
         pieces.append(r"\LTPracticalHeading")
     pieces.extend(

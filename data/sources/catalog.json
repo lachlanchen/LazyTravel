@@ -1,9 +1,11 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-08-14",
+  "snapshot_date": "2026-08-15",
   "policy": {
     "archives_are_read_only": true,
     "archives_are_redistributable": false,
+    "visual_references_are_read_only": true,
+    "visual_references_are_redistributable": false,
     "raw_extractions_are_publishable": false,
     "research_output_root": "build/research",
     "note": "Private source text and images are evidence only. Published prose must be original; source reuse requires explicit rights review."
@@ -37,6 +39,85 @@
       "path": "/home/lachlan/ProjectsLFS/Books/references/XIAN_GANSU_TRAVEL_GUIDES_2026-08-14.md",
       "sha256": "7151e6ec0e73f91e06cefc0b1b161d7537c69e97a1ea156d4c28337c1220f031",
       "role": "bibliography, license, revision, and reproducibility ledger"
+    }
+  ],
+  "visual_references": [
+    {
+      "id": "guide-ayachan",
+      "continuity_name": "Aya-chan",
+      "kind": "guide-character",
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "dimensions": {"width": 2390, "height": 1792},
+      "role": "Recurring red-panda guide identity shared with the LALACHAN travel-video series",
+      "reference_only": true,
+      "rights": {"status": "private-user-supplied-visual-reference", "redistributable": false}
+    },
+    {
+      "id": "guide-lala-xia",
+      "continuity_name": "Lala Xia",
+      "kind": "guide-character",
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "dimensions": {"width": 1536, "height": 2730},
+      "role": "Recurring panda guide identity shared with the LALACHAN travel-video series",
+      "reference_only": true,
+      "rights": {"status": "private-user-supplied-visual-reference", "redistributable": false}
+    },
+    {
+      "id": "guide-sasa-kun",
+      "continuity_name": "Sasa-kun",
+      "kind": "guide-character",
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "dimensions": {"width": 1536, "height": 2730},
+      "role": "Recurring panda-hooded guide identity shared with the LALACHAN travel-video series",
+      "reference_only": true,
+      "rights": {"status": "private-user-supplied-visual-reference", "redistributable": false}
+    },
+    {
+      "id": "guide-zhuangzi-robot",
+      "continuity_name": "Zhuangzi robot",
+      "kind": "guide-character",
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "dimensions": {"width": 1056, "height": 1008},
+      "role": "Fourth guide and equal friend in the recurring travel team; never treated as equipment",
+      "reference_only": true,
+      "rights": {"status": "private-user-supplied-visual-reference", "redistributable": false}
+    },
+    {
+      "id": "tool-lightmind-glasses",
+      "continuity_name": "LightMind glasses",
+      "kind": "travel-tool",
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/display.png",
+      "sha256": "ae83ccb58710e1488617ae7cbab5ef275f9e80a4537a0dfd2e603ba20ad8a9b9",
+      "dimensions": {"width": 1408, "height": 768},
+      "role": "Optional recurring guide tool; include only when natural and secondary",
+      "reference_only": true,
+      "rights": {"status": "private-user-supplied-visual-reference", "redistributable": false}
+    },
+    {
+      "id": "tool-patchwork-notebook",
+      "continuity_name": "Patchwork travel notebook",
+      "kind": "travel-tool",
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/patchwork-leather-notebook-luxury-clean-v2.png",
+      "sha256": "9192c5130d258e4b72305902ea39875a8cde59333dd9afb56d336f3a28a36b6d",
+      "dimensions": {"width": 1856, "height": 2304},
+      "role": "Optional recurring field-note tool; preserve patchwork design without product-placement emphasis",
+      "reference_only": true,
+      "rights": {"status": "private-user-supplied-visual-reference", "redistributable": false}
+    },
+    {
+      "id": "tool-words-card",
+      "continuity_name": "Word-card device",
+      "kind": "travel-tool",
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/words-card.jpg",
+      "sha256": "e3e076027f5ef621dec235f2bd6383cd364a84344706d4d49143647faadc13ea",
+      "dimensions": {"width": 1616, "height": 1080},
+      "role": "Optional recurring language tool; generated scenes must not reproduce unreliable source-screen text",
+      "reference_only": true,
+      "rights": {"status": "private-user-supplied-visual-reference", "redistributable": false}
     }
   ],
   "sources": [
@@ -207,4 +288,3 @@
     }
   ]
 }
-

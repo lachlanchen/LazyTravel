@@ -25,6 +25,7 @@ CHAPTER_IDS = (
     "ch03-army-under-earth",
     "ch04-let-text-lead",
     "ch05-inside-the-wall",
+    "ch06-beginning-with-bread",
 )
 BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
@@ -36,6 +37,12 @@ LOG_REJECTION = re.compile(
     r"Overfull|Underfull|Missing character|LaTeX Warning|Package .* Warning|"
     r"^! |:[0-9]+: .*Error",
     re.MULTILINE,
+)
+REQUIRED_FIGURE_GUIDES = frozenset(
+    {
+        "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+        "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+    }
 )
 
 
@@ -108,6 +115,18 @@ def extract_page_size(output: str) -> tuple[float, float]:
     return float(match.group(1)), float(match.group(2))
 
 
+def validate_figure_cast(asset_id: str, provenance: dict[str, Any]) -> None:
+    reference_paths = {
+        source.get("path") for source in provenance.get("source_images", [])
+    }
+    missing = sorted(REQUIRED_FIGURE_GUIDES - reference_paths)
+    if missing:
+        raise RuntimeError(
+            f"non-map asset is missing required Aya-chan/Lala Xia references: "
+            f"{asset_id}: {', '.join(missing)}"
+        )
+
+
 def validate_asset_qa(document: dict[str, Any]) -> None:
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
     asset_ids = {
@@ -132,6 +151,7 @@ def validate_asset_qa(document: dict[str, Any]) -> None:
             raise RuntimeError(f"asset provenance is missing: {asset_id}")
         provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
         if asset["kind"] != "map":
+            validate_figure_cast(asset_id, provenance)
             if provenance.get("output", {}).get("sha256") != sha256(asset_path):
                 raise RuntimeError(f"asset provenance hash mismatch: {asset_id}")
             continue
@@ -156,6 +176,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "scripts/build_xian_qin_mausoleum_pits_map.py",
         ROOT / "scripts/build_xian_written_word_route_map.py",
         ROOT / "scripts/build_xian_inside_wall_route_map.py",
+        ROOT / "scripts/build_xian_food_contexts_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
@@ -166,11 +187,13 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/maps/xian/xian-written-word-route.config.json",
         ROOT / "data/maps/xian/xian-inside-wall-route.config.json",
         ROOT / "data/maps/xian/xian-inside-wall-route.geojson",
+        ROOT / "data/maps/xian/xian-food-contexts.config.json",
         ROOT / "data/maps/xian/xian-before-walls.geojson",
         ROOT / "data/images/xian/xian-daming-site-impression.prompt.md",
         ROOT / "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
         ROOT / "data/images/xian/xian-rubbing-replica-demonstration.prompt.md",
         ROOT / "data/images/xian/xian-lane-courtyard-threshold.prompt.md",
+        ROOT / "data/images/xian/xian-breaking-mo-table.prompt.md",
     }
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
     used_asset_ids = {
@@ -240,6 +263,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_xian_qin_mausoleum_pits_map.py"])
         run([sys.executable, "scripts/build_xian_written_word_route_map.py"])
         run([sys.executable, "scripts/build_xian_inside_wall_route_map.py"])
+        run([sys.executable, "scripts/build_xian_food_contexts_map.py"])
     run(
         [
             sys.executable,

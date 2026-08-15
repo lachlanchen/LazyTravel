@@ -4,13 +4,18 @@
   "title": "LazyTravel source catalog",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "snapshot_date", "policy", "tooling", "references", "sources"],
+  "required": ["schema_version", "snapshot_date", "policy", "tooling", "references", "visual_references", "sources"],
   "properties": {
     "schema_version": {"const": 1},
     "snapshot_date": {"type": "string", "format": "date"},
     "policy": {"type": "object"},
     "tooling": {"type": "array", "items": {"$ref": "#/$defs/pathRecord"}},
     "references": {"type": "array", "items": {"$ref": "#/$defs/pathRecord"}},
+    "visual_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/visualReference"}
+    },
     "sources": {
       "type": "array",
       "minItems": 1,
@@ -51,7 +56,38 @@
         },
         "extraction_route": {"type": "string", "minLength": 1}
       }
+    },
+    "visualReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "continuity_name", "kind", "path", "sha256", "dimensions", "role", "reference_only", "rights"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "continuity_name": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["guide-character", "travel-tool"]},
+        "path": {"type": "string", "pattern": "^/"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "dimensions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["width", "height"],
+          "properties": {
+            "width": {"type": "integer", "minimum": 1},
+            "height": {"type": "integer", "minimum": 1}
+          }
+        },
+        "role": {"type": "string", "minLength": 1},
+        "reference_only": {"const": true},
+        "rights": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "redistributable"],
+          "properties": {
+            "status": {"type": "string", "minLength": 1},
+            "redistributable": {"const": false}
+          }
+        }
+      }
     }
   }
 }
-

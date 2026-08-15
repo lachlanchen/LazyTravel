@@ -1,32 +1,64 @@
 {
   "schema_version": 1,
   "asset_id": "asset-xian-daming-site-impression",
-  "created_at": "2026-08-14",
+  "created_at": "2026-08-15",
   "method": "generated",
-  "generator": "OpenAI built-in image generation",
-  "source_images": [],
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Brand-new composition generated from the four hash-pinned guide references without using the superseded image",
+    "Reviewed at original resolution and as a 600 x 400 B6-screen proof"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity continuity; reference only"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity continuity; reference only"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity continuity; reference only"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity continuity as the fourth guide; reference only"
+    }
+  ],
   "prompt": {
     "path": "data/images/xian/xian-daming-site-impression.prompt.md",
-    "sha256": "cc9b29ad24e7743c8105b160b634672f09aaf0d4a8b62502537a67fb219227eb"
+    "sha256": "04ce3ae2a12d3e4ecd523cfe7d752540472e248a73d4a35f0be0c5e3e0112f5e"
   },
   "output": {
     "path": "assets/images/xian/xian-daming-site-impression.png",
-    "sha256": "c92ad3f34b283d1d1fac3ed86b259bb9eb61e87abab53a2b959fee177c3c29d6",
-    "bytes": 2711882,
+    "sha256": "53c8c54deb4b6af60bbb64bba841d68ba2986576283e11e2b1a37edd0f6ec23a",
+    "bytes": 3068476,
     "pixels": [1536, 1024],
     "color_space": "sRGB"
   },
+  "factual_limits": [
+    "The scene is a present-day site-scale study, not a record of one exact viewpoint",
+    "The image is not an architectural reconstruction or evidence for a Tang palace elevation",
+    "The guide characters establish series continuity rather than documentary presence"
+  ],
+  "reader_caption_policy": "Describe the archaeological scale and reconstruction limit without production-method metadata",
   "visual_qa": {
     "resolution": "pass",
-    "legibility": "pass",
-    "content": "pass",
+    "b6_legibility": "pass",
+    "aya_and_lala_present": "pass",
+    "full_guide_team_continuity": "pass",
+    "site_scale": "pass",
+    "no_reconstructed_palace": "pass",
+    "forbidden_text_or_branding": "pass",
     "approved": true,
-    "reviewed_at": "2026-08-14",
-    "notes": [
-      "Wide site composition remains clear at B6 print width and responsive web width.",
-      "No text, logo, watermark, fantasy palace, historical costume, or dominant reconstructed hall is present.",
-      "Caption and body copy identify the asset as a generated site-scale impression rather than documentary evidence."
-    ]
+    "reviewed_at": "2026-08-15",
+    "evidence": "build/qa/images/xian/regenerated/xian-daming-site-impression-b6-screen-proof.png",
+    "notes": "All four guides remain distinct at 600 x 400 while open ground, low site traces, central axis, and the distant modern skyline remain dominant."
   },
-  "rights": "Generated for LazyTravel by OpenAI image generation; editorial illustration with explicit non-documentary disclosure."
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private continuity references; external reference files are not redistributed"
 }

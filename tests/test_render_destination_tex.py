@@ -60,6 +60,23 @@ class DestinationTexTests(unittest.TestCase):
             r"\LTRubyZH{西安}{xī'ān}\nobreak{}。",
         )
 
+    def test_callout_keeps_ruby_inside_highlight_block(self) -> None:
+        block = {
+            "id": "ch06-b011",
+            "kind": "callout",
+            "text": {"zh": "点单", "ja": "注文", "en": "Ask clearly."},
+            "readings": {
+                "zh": {"tokens": [{"text": "点单", "reading": "diǎndān"}]},
+                "ja": {"tokens": [{"text": "注文", "reading": "ちゅうもん"}]},
+            },
+            "citation_ids": ["src-a"],
+            "asset_ids": [],
+        }
+        rendered = block_tex(block, {"src-a": 1}, {})
+        self.assertIn(r"\LTCalloutBlock", rendered)
+        self.assertIn(r"\LTRubyZH{点单}{diǎndān}", rendered)
+        self.assertIn(r"\LTRubyJA{注文}{ちゅうもん}", rendered)
+
     def test_reading_tokens_bind_opening_and_closing_punctuation(self) -> None:
         layer = {
             "tokens": [

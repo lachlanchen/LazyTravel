@@ -3,35 +3,51 @@
   "asset_id": "asset-xian-lane-courtyard-threshold",
   "created_at": "2026-08-15",
   "method": "generated",
-  "generator": "OpenAI built-in image generation",
-  "source_images": [],
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Brand-new composition generated from the Aya-chan and Lala Xia references without using the superseded anonymous-traveler image",
+    "Reviewed at original resolution and as a 600 x 400 B6-screen proof"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity continuity; reference only"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity continuity; reference only"
+    }
+  ],
   "prompt": {
     "path": "data/images/xian/xian-lane-courtyard-threshold.prompt.md",
-    "sha256": "913b629aca1ab898cdd17fa06efe2b2725fe06319abf4ba4f79b79af6a5ae945"
+    "sha256": "1e5b54a995bdb42e335e6e8c142474a0841a615fbfbab498bb517b04954f97f5"
   },
   "output": {
     "path": "assets/images/xian/xian-lane-courtyard-threshold.png",
-    "sha256": "5c98064961de0ce60a013c4dcd7b137f2435e7a5940877557837df08df6709c1",
-    "bytes": 2830479,
-    "pixels": [
-      1536,
-      1024
-    ],
+    "sha256": "cf82a4a2d93b4344ca1d0b2d851cf4b88df1cfedddbc48fbfd5536b5904090bc",
+    "bytes": 2680533,
+    "pixels": [1536, 1024],
     "color_space": "sRGB"
   },
+  "factual_limits": [
+    "The architecture is a generic contemporary threshold study, not a named property",
+    "The image is not evidence that a courtyard is open to visitors",
+    "The guides model pausing at the public edge rather than entering"
+  ],
+  "reader_caption_policy": "Describe the spatial transition and access judgment without production-method metadata",
   "visual_qa": {
     "resolution": "pass",
-    "b6_width": "pass",
-    "content": "pass",
+    "b6_legibility": "pass",
+    "aya_and_lala_present": "pass",
+    "threshold_and_depth": "pass",
+    "doorway_unblocked": "pass",
+    "forbidden_text_or_branding": "pass",
     "approved": true,
     "reviewed_at": "2026-08-15",
-    "evidence": "build/qa/images/xian/ch05/xian-lane-courtyard-threshold-b6-width.png",
-    "notes": [
-      "Both visitors remain anatomically coherent at full resolution and at 1240 px B6 print width; hands, feet, backpacks, clothing, and stance are plausible.",
-      "The lane edge, raised threshold, layered gate, tiled roofs, paving, and tree-shaded courtyard remain clear without an overall yellow cast.",
-      "No person is identifiable, no ritual is depicted, and no readable sign, logo, watermark, mosque name, or invented religious symbol appears.",
-      "The scene is intentionally generic and must not be used as evidence for the design, access rules, or current appearance of a particular Xi'an property."
-    ]
+    "evidence": "build/qa/images/xian/regenerated/xian-lane-courtyard-threshold-b6-screen-proof.png",
+    "notes": "Aya and Lala remain recognizable at 600 x 400 while the raised threshold, full open doorway, layered gates, paving, and shaded courtyard remain the subject."
   },
-  "rights": "Generated for LazyTravel by OpenAI image generation; editorial scene with full technical provenance retained outside reader-facing captions."
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private continuity references; external reference files are not redistributed"
 }

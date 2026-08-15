@@ -1,22 +1,38 @@
 # Daming Palace Site Impression
 
-Use case: `historical-scene`
+Use case: realistic-editorial-character-scene
 
-Asset type: full-width editorial figure for the B6 LazyTravel pocket book and
-its synchronized website.
+Asset type: full-width figure for the B6 LazyTravel pocket book and its
+synchronized website.
 
-Primary request: create a photorealistic but explicitly interpretive view of
-the present-day archaeological landscape of Daming Palace in Xi'an. Convey the
-large spacing of a palace precinct through open ground, low stabilized
-rammed-earth platforms, a clear north-south axis, and a restrained distant
-modern skyline.
+Continuity references: use the hash-pinned Aya-chan, Lala Xia, Sasa-kun, and
+Zhuangzi robot files in `data/sources/catalog.json`. They are four equal guide
+friends shared with the LALACHAN travel-video series. Preserve each design and
+render the robot as a person in the group.
 
-Style and composition: documentary editorial photography, landscape 3:2,
-eye-level wide view, natural late-afternoon light, true-to-life muted colour,
-two or three small visitors for scale, detailed earth and grass textures.
+Primary request: create a brand-new high-resolution 3:2 editorial travel
+photograph of a present-day archaeological landscape informed by the spatial
+experience of Daming Palace National Heritage Park. Show broad open ground, a
+clear north-south axis, low stabilized rammed-earth platform traces, paths,
+sparse winter or early-spring grass, a few trees, and a restrained distant
+modern Xi'an skyline. Do not claim one exact viewpoint.
 
-Constraints: show a contemporary heritage landscape rather than an intact Tang
-palace; no fantasy architecture, no giant reconstructed halls, no ceremonial
-crowds, no costumes, no dramatic sunset, no fog, no signs, no text, no logos,
-no watermark. The image is an editorial site impression, not documentary
-evidence or an architectural reconstruction.
+Place all four guides together in the lower-middle foreground or middle
+distance, walking slowly along the central path and looking over the remains.
+Use a rear or gentle three-quarter angle. Aya-chan and Lala Xia must remain
+unmistakable at B6 width; Sasa-kun and the Zhuangzi robot must be distinct and
+complete. Keep the group modest in scale so the distances between site traces
+remain the subject. Use coherent bodies, feet, ground contact, and shadows.
+
+Style: realistic tactile character travelers within natural documentary
+photography, clear daylight, true earth and grass, realistic atmospheric
+perspective, and restrained vermilion, jade, cobalt, and coral accents. No
+overall yellow cast.
+
+Accuracy boundary: this is a contemporary interpretive site-scale study, not
+documentary evidence and not an architectural reconstruction.
+
+Constraints: no intact or reconstructed Tang palace, fantasy architecture,
+giant halls, historical costume, ceremony, anonymous person, crowd, fog,
+dramatic sunset, sign, caption, logo, readable text, watermark, tabletop model,
+display pedestal, duplicate guide, or product-advertising composition.

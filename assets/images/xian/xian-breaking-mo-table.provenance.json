@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-breaking-mo-table",
+  "created_at": "2026-08-15",
+  "method": "generated-from-private-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Brand-new composition generated from four direct guide-character references and one temporary contact sheet assembled from three read-only travel-tool references",
+    "Temporary contact sheet retained only under ignored build/qa and excluded from publication",
+    "Selected at original resolution and at a 600 x 400 B6-screen proof after food-action, cast-continuity, articulation, text, and clutter review"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity continuity as the fourth guide; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/display.png",
+      "sha256": "ae83ccb58710e1488617ae7cbab5ef275f9e80a4537a0dfd2e603ba20ad8a9b9",
+      "role": "LightMind glasses continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/patchwork-leather-notebook-luxury-clean-v2.png",
+      "sha256": "9192c5130d258e4b72305902ea39875a8cde59333dd9afb56d336f3a28a36b6d",
+      "role": "Patchwork notebook continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/words-card.jpg",
+      "sha256": "e3e076027f5ef621dec235f2bd6383cd364a84344706d4d49143647faadc13ea",
+      "role": "Word-card device continuity; reference only, source-screen text deliberately not reproduced"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-breaking-mo-table.prompt.md",
+    "sha256": "cf3ce6cfbf66d051cc123d91f09d9bdb2ff7b526f1e077488b417f1593d59e8e"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-breaking-mo-table.png",
+    "sha256": "7b38c069ad7088192570be07393205eb579055fe0db6de0229a53098a189cd1e",
+    "bytes": 2376358,
+    "width": 1536,
+    "height": 1024,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Editorial orientation figure showing the four recurring guides learning the table action before a beef or lamb paomo bowl is cooked",
+  "factual_limits": [
+    "The scene is not a record of a named restaurant, cook, diner, or historic event",
+    "Bread form and piece size are representative visual cues, not a universal shop specification",
+    "The guide characters and travel tools establish series continuity rather than documentary evidence",
+    "The image is not evidence for a recipe, ingredient list, halal status, or service procedure"
+  ],
+  "reader_caption_policy": "Captions explain the paomo action and practical limits without production-method metadata",
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private user-supplied continuity references; external reference files are not redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "full_guide_team_continuity": "pass",
+    "robot_as_equal_companion": "pass",
+    "hand_paw_and_robot_articulation": "pass",
+    "dry_bowl_and_food_sequence": "pass",
+    "travel_tool_hierarchy": "pass",
+    "forbidden_text_or_branding": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "notes": "At 600 x 400 the four guides, empty bowl, dry torn bread, whole-mo comparison, garlic, chilli, and secondary travel tools remain distinct. Piece dimensions are illustrative; the caption directs readers to follow the shop's preferred size."
+  }
+}

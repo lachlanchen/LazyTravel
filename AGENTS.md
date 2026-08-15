@@ -1,0 +1,85 @@
+# LazyTravel Working Agreement
+
+These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
+`PROJECT_MEMORY.md`, and `INIT.md` before continuing production.
+
+## Scope And Destination Gate
+
+- Work only in `/home/lachlan/ProjectsLFS/LazyTravel`.
+- Xi'an is the only active destination. It belongs to `china/cities/xian`.
+- Lanzhou belongs to `china/cities/lanzhou` and stays gated until the complete
+  Xi'an book and website have been reviewed and reproducibly built.
+- The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
+  a local editorial problem.
+- Ignore unrelated world-literature work and retain only useful multilingual
+  book-production experience.
+
+## Editorial And Data Rules
+
+- The aligned Chinese, Japanese, and English JSON is canonical. The B6 book and
+  responsive website must consume the same text, readings, citations, and
+  assets.
+- Keep pinyin ruby for Chinese and furigana ruby for Japanese. Review each
+  language independently; alignment is not permission to translate literally.
+- Write original, concrete guide prose. Reject filler, generic summaries,
+  invented detail, awkward sentiment, repetition, and wording that sounds
+  machine-generated or copied from a source.
+- Separate durable history from volatile prices, hours, bookings, routes, and
+  hotel operations. Date and recheck volatile advice.
+- Every factual block needs traceable citations or a fact-ledger entry. Source
+  books provide evidence and leads, not the book's prose or structure.
+- Work chapter by chapter, then review the finished chapter page by page in the
+  pocket PDF and at desktop/mobile website sizes.
+
+## Source Boundary
+
+- Treat the six files under `Sources/`, the external open guides, the reference
+  ledger, `../ZhJpBook/pdf2tex` tooling, and LALACHAN visual references as
+  read-only inputs.
+- Do not copy source archives, open-guide PDFs, or raw visual references into
+  this repository. Keep raw extraction under ignored `build/research/`.
+- Record external paths and hashes in `data/sources/catalog.json`. Commit only
+  original writing and derived, reproducible project artifacts with rights and
+  provenance review.
+- Do not create session backups, rewrite Codex history, or commit private logs,
+  browser profiles, credentials, caches, or runtime state.
+
+## Guide Cast And Visual Continuity
+
+- The four recurring guides are Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi
+  robot. The robot is a full person and friend in the group, never equipment or
+  background decoration.
+- Every non-map figure must contain at least Aya-chan and Lala Xia, including
+  instructional close-ups or scenes that would otherwise show only anonymous
+  hands, backs, or distant visitors. Regenerate an existing figure that fails
+  this rule. Maps remain character-free.
+- Prefer the full group for recurring guide moments; add Sasa-kun and the
+  Zhuangzi robot when the scene stays useful and legible. Do not insert the
+  guides into documentary evidence or imply they witnessed a historical event.
+- Preserve continuity with the LALACHAN travel-video series by using the
+  hash-pinned external character references. Do not replace the guides with
+  anonymous generated people.
+- The patchwork notebook, LightMind glasses, and word-card device are recurring
+  travel tools. Include them only when natural and secondary; never crowd a map,
+  food procedure, or attraction view to display every prop.
+- Generate a new composition from the references. Keep technical generation
+  and source-reference details in provenance, not in reader-facing captions.
+- Maps and figures must remain readable at B6 print size and a 390 px viewport.
+  Use larger labels, simple hierarchy, clean captions, and explicit visual QA.
+
+## Product And Release Discipline
+
+- The only distributed book artifact is the verified B6 pocket PDF. Keep the
+  website synchronized from the same JSON.
+- Use the vivid LazyTravel palette: white with vermilion, jade, cobalt, and
+  coral accents. Keep ruby legible inside highlight bubbles and callouts.
+- Build LaTeX and JSON continuously. Validate readings, assets, citations,
+  website parity, mobile/desktop layout, PDF trim, fonts, text layer, and every
+  touched page before a milestone is accepted.
+- Sync only the verified pocket PDF to
+  `/home/lachlan/Nutstore Files/Share/LazyTravel/`, then compare hashes.
+- Commit and push only coherent verified milestones to the LazyTravel GitHub
+  repository. Do not batch unfinished chapters into a release commit.
+- Do not stop, restart, or modify existing noVNC, Xvfb, x11vnc, websockify, or
+  unrelated project processes and ports. Follow the shared workstation resource
+  policy before starting heavy work.

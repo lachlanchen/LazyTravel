@@ -24,6 +24,27 @@ class ReadingLayerTests(unittest.TestCase):
         self.assertEqual(pinyin_for_word("涝"), "láo")
         self.assertEqual(pinyin_for_word("潏"), "jué")
 
+    def test_xian_food_pinyin_overrides(self) -> None:
+        self.assertEqual(pinyin_for_word("饦饦馍"), "tuōtuōmó")
+        self.assertEqual(pinyin_for_word("腊汁肉夹馍"), "làzhīròujiāmó")
+        self.assertEqual(pinyin_for_word("水围城"), "shuǐwéichéng")
+        self.assertEqual(pinyin_for_word("见长"), "jiàncháng")
+        self.assertEqual(pinyin_for_word("嚼劲"), "jiáojìn")
+
+    def test_xian_food_furigana_overrides(self) -> None:
+        tokens = ja_tokens("飥飥饃と臘汁肉夾饃", unidic_tagger())
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["飥飥饃"], "とぅおとぅおもー")
+        self.assertEqual(readings["臘汁肉夾饃"], "らーじーろうじゃーもー")
+
+        phrase_tokens = ja_tokens("辛さと餃子を一品", unidic_tagger())
+        phrase_readings = {
+            token["text"]: token.get("reading") for token in phrase_tokens
+        }
+        self.assertEqual(phrase_readings["辛さ"], "からさ")
+        self.assertEqual(phrase_readings["餃子"], "ぎょうざ")
+        self.assertEqual(phrase_readings["一品"], "いっぴん")
+
     def test_chinese_tokens_reconstruct_text(self) -> None:
         text = "西安在秦岭与渭河之间。"
         tokens = zh_tokens(text)

@@ -31,7 +31,7 @@ def sha256(path: Path) -> str:
 
 def records(catalog: dict[str, Any]) -> list[dict[str, Any]]:
     result: list[dict[str, Any]] = []
-    for collection in ("tooling", "references", "sources"):
+    for collection in ("tooling", "references", "visual_references", "sources"):
         for record in catalog[collection]:
             result.append({"collection": collection, **record})
             if record.get("source_snapshot_path"):

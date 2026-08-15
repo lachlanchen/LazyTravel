@@ -1,33 +1,53 @@
 {
   "schema_version": 1,
   "asset_id": "asset-xian-terracotta-conservation-impression",
-  "created_at": "2026-08-14",
+  "created_at": "2026-08-15",
   "method": "generated",
-  "generator": "OpenAI built-in image generation",
-  "source_images": [],
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Brand-new composition generated from the Aya-chan and Lala Xia references without using the superseded image",
+    "Reviewed at original resolution and as a 600 x 400 B6-screen proof"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity continuity; reference only"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity continuity; reference only"
+    }
+  ],
   "prompt": {
     "path": "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
-    "sha256": "3780901086c5dc30d7b1818f733f6bb2ddb8b3c53f8454837a020a64b1072836"
+    "sha256": "44779b8da0dea51eb47404a4f51e746264e4cf39e77127b9a030e57f31d37972"
   },
   "output": {
     "path": "assets/images/xian/xian-terracotta-conservation-impression.png",
-    "sha256": "58aeabe2ce957d4718c84878ede2b13e49e2e4f5780dc736cb91826f783532db",
-    "bytes": 2494868,
+    "sha256": "f79824640189fb925041fd99f7e98165ff377e2f7ef765e283d4ad443b25e7f2",
+    "bytes": 2461715,
     "pixels": [1536, 1024],
     "color_space": "sRGB"
   },
+  "factual_limits": [
+    "The fragments are generic modern teaching replicas, not Qin artefacts",
+    "The room is not a named museum laboratory and the activity is not documentary evidence",
+    "The image explains conservation sequence, not permission to handle heritage"
+  ],
+  "reader_caption_policy": "Describe the teaching-replica conservation sequence and limits without production-method metadata",
   "visual_qa": {
     "resolution": "pass",
-    "b6_width": "pass",
-    "content": "pass",
+    "b6_legibility": "pass",
+    "aya_and_lala_present": "pass",
+    "replica_boundary": "pass",
+    "handling_and_tools": "pass",
+    "forbidden_text_or_branding": "pass",
     "approved": true,
-    "reviewed_at": "2026-08-14",
-    "evidence": "build/qa/images/xian/ch03/xian-terracotta-conservation-b6-width.png",
-    "notes": [
-      "Gloved hands, soft brush, calipers, trays, task light, and fragment joins remain coherent at full resolution and at 1240 px B6 print width.",
-      "The generic contemporary workspace contains no labels, logo, watermark, tourist staging, standing army, tomb chamber, or copied named artefact.",
-      "The image communicates conservation practice only; captions and prose must identify it as a generated non-documentary editorial impression."
-    ]
+    "reviewed_at": "2026-08-15",
+    "evidence": "build/qa/images/xian/regenerated/xian-terracotta-conservation-impression-b6-screen-proof.png",
+    "notes": "Aya and Lala, fitted gloves, brush, calipers, foam supports, clean modern fragment surfaces, and blank color tabs remain clear at 600 x 400."
   },
-  "rights": "Generated for LazyTravel by OpenAI image generation; editorial illustration with explicit non-documentary disclosure."
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private continuity references; external reference files are not redistributed"
 }

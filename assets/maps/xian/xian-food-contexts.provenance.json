@@ -1,0 +1,108 @@
+{
+  "asset_id": "asset-xian-food-contexts-map",
+  "command": "python3 scripts/build_xian_food_contexts_map.py",
+  "config": {
+    "path": "data/maps/xian/xian-food-contexts.config.json",
+    "sha256": "af9621d03da89f0824ea0d58fec649ec4fe5c5c4baeb85ee8aedcf4b10a820c2"
+  },
+  "created_at": "2026-08-15",
+  "declared_generalizations": [
+    {
+      "id": "east-west-axis",
+      "note": "Generalized present east-west orientation through the Bell Tower; not a navigation line."
+    },
+    {
+      "id": "north-south-axis",
+      "note": "Generalized present north-south orientation through the Bell Tower; not a navigation line."
+    },
+    {
+      "id": "sajinqiao",
+      "note": "The circle describes a street context, not a claim about any individual vendor or opening hour."
+    },
+    {
+      "id": "hui-lanes",
+      "note": "Generalized from Dapiyuan, Xiyangshi, Huajue Lane, and adjacent living streets; not the full Hui neighborhood."
+    },
+    {
+      "id": "xiaonanmen",
+      "note": "Position combines Wumu Gate and Baoensi Street. Market operation and vendor mix require a same-day check."
+    },
+    {
+      "id": "yongxingfang",
+      "note": "Current curated food and heritage venue inside East Gate; not represented as an ancient market."
+    }
+  ],
+  "files": {
+    "xian-food-contexts.pdf": {
+      "bytes": 60628,
+      "sha256": "29b43ea36b038377dc20c1978bfc00cc10e2121ea653bc0d5a70843504d12998"
+    },
+    "xian-food-contexts.png": {
+      "bytes": 742007,
+      "sha256": "e3d133af7b702e671d94be474ece82e0f1dbd92639ea1ff4aeab6f9b9d59bf20"
+    },
+    "xian-food-contexts.svg": {
+      "bytes": 36571,
+      "sha256": "770f5e3423d983f800a9c90909b079758b76092fe334ba7cd7e8fe4fa42273f8"
+    }
+  },
+  "method": "map-render",
+  "present_geography": [
+    {
+      "path": "data/maps/xian/xian-before-walls.geojson",
+      "sha256": "04b214a49344bebd59e134ae1d3fe8308f9c7185806975b4a41288f51b1f2845"
+    }
+  ],
+  "rights": "Map design © LazyTravel; present wall and named-place positions © OpenStreetMap contributors, ODbL 1.0.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "openstreetmap-food-contexts",
+      "license": "ODbL 1.0",
+      "note": "Nominatim lookups pinned by OSM type and ID in this config; present wall geometry comes from the existing pinned relation extract.",
+      "snapshot_date": "2026-08-15",
+      "title": "OpenStreetMap named roads, gates, Bell Tower, and Yongxingfang",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "xian-scenic-sites-2026",
+      "note": "Lists Yongxingfang as a current AAA scenic venue at East New Street 1, inside Zhongshan Gate.",
+      "snapshot_date": "2026-02-25",
+      "title": "西安市A级旅游景区信息表",
+      "url": "https://www.xa.gov.cn/ztzl/ztzl/lzledc/ywdc/1824366329290301442.html"
+    },
+    {
+      "id": "xian-current-food-areas",
+      "note": "Names Xiaonanmen morning market, Sajinqiao, and Yongxingfang as current food contexts; no hours or vendor claims are carried into the map.",
+      "snapshot_date": "2026-08-15",
+      "title": "Current Xi'an municipal coverage of food areas",
+      "url": "https://www.xa.gov.cn/index/tttp/2039531003505111041.html"
+    },
+    {
+      "id": "xian-historic-city-regulations",
+      "note": "Supports the North Courtyard historic-district context; not a restaurant source.",
+      "snapshot_date": "2026-08-15",
+      "title": "西安历史文化名城保护条例",
+      "url": "https://wwj.shaanxi.gov.cn/zfxxgk/fdzdgknr/flfg/fg/201704/t20170405_2131156.html"
+    }
+  ],
+  "technical_qa": {
+    "context_count": 4,
+    "minimum_png_width": 3600,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      5600,
+      3600
+    ],
+    "restaurant_pin_count": 0,
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": "Inspected at 5600 x 3600, 2079 x 1476 B6 landscape proof, and 1344 px web width. Four context labels, leaders, gate references, key, and disclaimers remain distinct; the mobile website will retain a pannable map viewport.",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-15"
+  }
+}

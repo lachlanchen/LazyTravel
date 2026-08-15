@@ -24,19 +24,22 @@ japan/prefectures/<prefecture>
 world/countries/<country>
 ```
 
-Current verified milestone: Xi'an Chapters 1-5, `50` aligned content blocks,
-`76` B6 pages, five reproducible maps, and four realistic editorial figures
-with technical provenance. The Xi'an outline contains exactly `11` chapters;
+Current verified milestone: Xi'an Chapters 1-6, `62` aligned content blocks,
+`93` B6 pages, six reproducible maps, and five realistic editorial figures
+with technical provenance. Every non-map figure includes at least Aya-chan and
+Lala Xia; Sasa-kun and the Zhuangzi robot join where the scene remains clear.
+The Xi'an outline contains exactly `11` chapters;
 Chapter 7 is the dedicated nearby-area chapter for Huashan, Lintong, Han
 Yangling, selected Qinling foothills, and western imperial landscapes.
 
 ## Source Boundary
 
 The six supplied books in `Sources/` are private research references. They are
-ignored by Git and are not redistributed. The open Xi'an and Gansu guides are
-reused read-only from `/home/lachlan/ProjectsLFS/Books`; they are not copied
-into this repository. Absolute paths, hashes, revision IDs, licenses, and
-editorial roles are recorded in
+ignored by Git and are not redistributed. The open Xi'an and Gansu guides and
+the LALACHAN guide-character/tool references are reused read-only from their
+external project paths; they are not copied into this repository. Absolute
+paths, hashes, dimensions or revision IDs, licenses, and editorial roles are
+recorded in
 [`data/sources/catalog.json`](data/sources/catalog.json).
 
 Raw OCR, extracted prose, and extracted source images stay under ignored

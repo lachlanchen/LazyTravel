@@ -14,6 +14,7 @@ from build_xian_review import (  # noqa: E402
     extract_page_count,
     extract_page_size,
     validate_asset_qa,
+    validate_figure_cast,
     validate_fonts,
 )
 
@@ -38,6 +39,24 @@ class XianReviewBuildTests(unittest.TestCase):
         document["assets"][0]["qa"]["approved"] = False
         with self.assertRaisesRegex(RuntimeError, "visual QA"):
             validate_asset_qa(document)
+
+    def test_accepts_required_figure_guides(self) -> None:
+        provenance = {
+            "source_images": [
+                {"path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png"},
+                {"path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg"},
+            ]
+        }
+        validate_figure_cast("asset-test", provenance)
+
+    def test_rejects_figure_without_lala_xia(self) -> None:
+        provenance = {
+            "source_images": [
+                {"path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png"}
+            ]
+        }
+        with self.assertRaisesRegex(RuntimeError, "Aya-chan/Lala Xia"):
+            validate_figure_cast("asset-test", provenance)
 
     def test_accepts_embedded_font_rows(self) -> None:
         output = (
