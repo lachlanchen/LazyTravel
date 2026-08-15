@@ -31,5 +31,6 @@ python3 scripts/qa_website.py --url http://127.0.0.1:4173/
 9. Update the milestone in `README.md`, make one scoped commit, and push it to
    `origin/main`.
 
-Current gate: Xi'an Chapters 1-7 are in review; Chapters 8-11 remain outlined.
-Do not start Lanzhou.
+Current gate: Xi'an Chapters 1-8 are reviewed and reproducibly built. Chapter 9
+district-first lodging is next; Chapters 10-11 remain outlined. Do not start
+Lanzhou.

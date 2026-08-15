@@ -15,6 +15,8 @@ history, rollout data, or session backups.
   Extracted source prose remains evidence, never publishable copy.
 - Generalized choice maps are more useful than dense restaurant-pin maps in a
   pocket guide. Primary labels must survive both B6 print and a 390 px viewport.
+- A pannable mobile map must scale its CSS minimum width as well as its
+  percentage width; otherwise the first zoom step can appear to do nothing.
 - Time-sensitive transport, hotel, ticket, opening-hour, and business details
   need a check date and an official confirmation route close to travel.
 - The strongest prose explains what to notice, what a distinction changes for
@@ -50,13 +52,18 @@ history, rollout data, or session backups.
   instructional figures remain useful but do not satisfy that need by
   themselves.
 - New location plates use the full four-guide team when B6 legibility allows.
-  The current Chapters 1-7 visual route now includes Yongning Gate, Pit 1, the
-  Big Wild Goose Pagoda, the City Wall, the Bell Tower, food practice, and a
-  managed mountain day rather than relying on generic character scenes.
+  The current Chapters 1-8 visual route now includes Yongning Gate, Pit 1, the
+  Big Wild Goose Pagoda, the City Wall, the Bell Tower, food practice, a
+  managed mountain day, and Xi'an North rather than relying on generic
+  character scenes.
 
 ## Current Production Decision
 
-Xi'an has exactly 11 chapters. Chapters 1-7 are the active reviewed build;
-Chapter 7 is the single nearby-area decision chapter and Chapter 8 is next.
+Xi'an has exactly 11 chapters. Chapters 1-8 are the active reviewed build:
+Chapter 7 is the single nearby-area decision chapter, Chapter 8 covers exact
+airport/station arrival choices, and Chapter 9 district-first lodging is next.
+The verified pocket has `134` B6 pages, `86` blocks, eight maps, twelve figures,
+and SHA-256
+`c9450bd72402861c018757c73f2d715c6e08811f71a36c01b9bef1e13a305080`.
 Lanzhou remains gated until the whole Xi'an book and synchronized website pass
 final review.

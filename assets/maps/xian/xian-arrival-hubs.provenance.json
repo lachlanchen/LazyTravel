@@ -1,0 +1,149 @@
+{
+  "asset_id": "asset-xian-arrival-hubs-map",
+  "command": "python3 scripts/build_xian_arrival_hubs_map.py",
+  "config": {
+    "path": "data/maps/xian/xian-arrival-hubs.config.json",
+    "sha256": "ba64acd5bb04ab6f80b9ca6b1caba309215262bd4fc1b5ef60fb719a64df8ba7"
+  },
+  "created_at": "2026-08-16",
+  "declared_generalizations": [
+    {
+      "id": "wei_river",
+      "note": "Generalized Wei River orientation only; not survey geometry or a navigation feature."
+    },
+    {
+      "id": "walled_core",
+      "note": "Generalized rectangle for the Ming-walled city core, not a surveyed wall polygon or hotel boundary."
+    },
+    {
+      "id": "central-xian",
+      "note": "Bell Tower position is used as a stable core anchor, not as the destination of every arrival."
+    },
+    {
+      "id": "xian-airport",
+      "note": "Aerodrome centroid from OpenStreetMap; terminal paths are explained in official airport material rather than inferred from this point."
+    },
+    {
+      "id": "xian-north",
+      "note": "Station-building centroid from OpenStreetMap; plaza, exit, and pickup choice remains a signed on-site decision."
+    },
+    {
+      "id": "xian-station",
+      "note": "Station-building centroid from OpenStreetMap; the map does not prescribe a north or south exit."
+    },
+    {
+      "id": "xian-east",
+      "note": "Station-building centroid from OpenStreetMap; the official opening report controls the current transfer claim."
+    },
+    {
+      "id": "line-14-airport-north",
+      "note": "Simplified airport-to-Xi'an-North decision spine; not track geometry, stops, time, or live service."
+    },
+    {
+      "id": "line-2-cityward",
+      "note": "Simplified north-south decision spine from Xi'an North through the central corridor; not full Line 2 geometry."
+    },
+    {
+      "id": "line-4-cityward",
+      "note": "Simplified Line 4 decision spine linking Xi'an North and Xi'an Station before continuing south; not full track geometry."
+    },
+    {
+      "id": "line-5-east-cityward",
+      "note": "Simplified westward decision spine from the new Xi'an East transfer; not a full Line 5 route or guarantee of a particular interchange."
+    }
+  ],
+  "files": {
+    "xian-arrival-hubs.pdf": {
+      "bytes": 81555,
+      "sha256": "71b0bdf3cf5c45ac2d9457cc50cd972ca049af9e013d7ac36e474e7cf83a1ad4"
+    },
+    "xian-arrival-hubs.png": {
+      "bytes": 1163134,
+      "sha256": "0bfb8bd74db2ba426df8a7a94a3060e740821ff0cc0ba8d6b21f0e218cecd1a3"
+    },
+    "xian-arrival-hubs.svg": {
+      "bytes": 28264,
+      "sha256": "eaed66c8d4fffa73ee17ca0a89eb20c1ab4f6e9dcb23fd9de61723ccf0b149e8"
+    }
+  },
+  "method": "map-render",
+  "present_geography": [
+    {
+      "kind": "pinned-place-positions",
+      "snapshot_date": "2026-08-16",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "rights": "Map design © LazyTravel; pinned named-place positions © OpenStreetMap contributors, ODbL 1.0.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "openstreetmap-xian-arrival-hubs-2026",
+      "license": "ODbL 1.0",
+      "note": "OSM types, IDs, and coordinates for the airport, Xi'an North, Xi'an Station, Xi'an East, and central anchor are pinned in this config.",
+      "snapshot_date": "2026-08-16",
+      "title": "OpenStreetMap pinned positions for Xi'an arrival hubs",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "xian-metro-network-2025",
+      "note": "Controls the selected current line relationships; this map intentionally omits the rest of the network.",
+      "snapshot_date": "2025-12-29",
+      "title": "西安轨道交通线网示意图",
+      "url": "https://jtj.xa.gov.cn/zmhd/xxcx/dtxl/1.html"
+    },
+    {
+      "id": "xian-airport-arrivals-2026",
+      "note": "Supports separate T5 and T2/T3 transport paths and pickup facilities.",
+      "snapshot_date": "2026-08-16",
+      "title": "西安咸阳国际机场国内抵达",
+      "url": "https://www.xxia.com.cn/cjzn/gndd.htm"
+    },
+    {
+      "id": "xian-north-transport-2026",
+      "note": "Supports Lines 2, 4, and 14 and the need to follow the correct plaza and signed pickup zone.",
+      "snapshot_date": "2026-08-16",
+      "title": "西安北站公共交通出行指南",
+      "url": "https://xetdz.xa.gov.cn/xwzx/jkdt/1831494658425413633.html"
+    },
+    {
+      "id": "xian-station-line4-2024",
+      "note": "Supports the Line 4 connection and the station's relation to the north wall.",
+      "snapshot_date": "2026-08-16",
+      "title": "西安站扩建与地铁4号线接入",
+      "url": "https://www.news.cn/politics/20241227/ce5be5bf3dce4038b0ad73cd13c7c376/c.html"
+    },
+    {
+      "id": "xian-east-opening-2026",
+      "note": "Supports the 30 June 2026 opening and signed walking transfer to Line 5.",
+      "snapshot_date": "2026-07-01",
+      "title": "New railway station in Xi'an starts operation",
+      "url": "https://en.xa.gov.cn/MediaCenter/News/2072253459180654594.html"
+    }
+  ],
+  "technical_qa": {
+    "complete_network_claim": false,
+    "hub_count": 4,
+    "live_route_count": 0,
+    "minimum_png_width": 5000,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      5600,
+      5040
+    ],
+    "spine_count": 4,
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "b6_proof": "build/qa/maps/xian/arrival-hubs/xian-arrival-hubs-b6-300dpi.png",
+    "b6_proof_sha256": "9be921eb5d68c28d580e1c0248deb0e56914b61705ae641d6679e960b6f7814c",
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "mobile_zoom_proof": "build/qa/maps/xian/arrival-hubs/xian-arrival-hubs-mobile-zoom-proof.png",
+    "mobile_zoom_proof_sha256": "8fe51c3193921225b7c1fc75d771ca73746f5f5490068f2fbbf27814b08e1d48",
+    "notes": "Inspected at the 5600 x 5040 master, a 1476-pixel B6-width 300 dpi proof, and a 900-pixel mobile zoom proof matching the website's 2.5x map control. All four hubs, four line spines, three language layers, and four decision cards remain distinct; no line claims a full route or live service.",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-16"
+  }
+}

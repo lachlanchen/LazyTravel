@@ -209,6 +209,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
     chapter_5 = "ch05-inside-the-wall"
     chapter_6 = "ch06-beginning-with-bread"
     chapter_7 = "ch07-beyond-the-center"
+    chapter_8 = "ch08-arrive-and-move"
     report: dict[str, Any] = {
         "url": url,
         "browser": chrome,
@@ -362,6 +363,34 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             if desktop.locator(".reading-block.kind-callout").count() != 2:
                 raise RuntimeError("Chapter 7 callouts are missing or duplicated")
             desktop.screenshot(path=output / "desktop-ch07.png", full_page=True)
+
+            desktop.locator(f'[data-chapter-id="{chapter_8}"]').click()
+            desktop.wait_for_selector("#ch08-b001")
+            desktop.locator(".editorial-figure").first.scroll_into_view_if_needed()
+            desktop.wait_for_function(
+                """() => {
+                  const image = document.querySelector('.figure-image');
+                  return image && image.complete && image.naturalWidth >= 1200;
+                }"""
+            )
+            report["viewports"]["desktop_ch08"] = assert_core_render(
+                desktop, counts[chapter_8], "desktop chapter 8"
+            )
+            for heading in (
+                "WITH LUGGAGE",
+                "WHEN PAYMENT FAILS",
+                "LATE ARRIVAL",
+                "SIX ARRIVAL CHECKS",
+            ):
+                if desktop.locator(".block-heading", has_text=heading).count() != 1:
+                    raise RuntimeError(f"Chapter 8 heading is missing: {heading}")
+            if desktop.locator(".reading-block.kind-callout").count() != 1:
+                raise RuntimeError("Chapter 8 final callout is missing or duplicated")
+            if "FOUR HUBS" not in desktop.locator(".map-label").inner_text():
+                raise RuntimeError("Chapter 8 arrival-map label is missing")
+            if "CHOOSE THE NEXT LEG" not in desktop.locator(".figure-label").inner_text():
+                raise RuntimeError("Chapter 8 station-figure label is missing")
+            desktop.screenshot(path=output / "desktop-ch08.png", full_page=True)
             desktop_context.close()
 
             mobile_context = browser.new_context(
@@ -583,6 +612,51 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 "Chapter 7 mobile final callout",
             )
             mobile.screenshot(path=output / "mobile-ch07-highlight.png")
+
+            mobile_url = f"{url.rstrip('/')}?chapter={chapter_8}"
+            mobile.goto(mobile_url, wait_until="networkidle")
+            report["viewports"]["mobile_ch08"] = assert_core_render(
+                mobile, counts[chapter_8], "mobile chapter 8"
+            )
+            if mobile.locator("#chapter-select").input_value() != chapter_8:
+                raise RuntimeError("mobile chapter menu did not select Chapter 8")
+            if mobile.locator(".block-heading").count() != 4:
+                raise RuntimeError("Chapter 8 mobile headings are missing")
+            if mobile.locator(".reading-block.kind-callout ruby").count() < 20:
+                raise RuntimeError("Chapter 8 mobile callout lost its ruby readings")
+            map_overflow = mobile.locator(".map-viewport").evaluate(
+                "node => ({client: node.clientWidth, scroll: node.scrollWidth})"
+            )
+            if map_overflow["scroll"] <= map_overflow["client"]:
+                raise RuntimeError(
+                    f"Chapter 8 mobile map lacks a legible scroll viewport: {map_overflow}"
+                )
+            map_stage = mobile.locator(".map-stage").first
+            initial_width = map_stage.evaluate("node => node.getBoundingClientRect().width")
+            mobile.get_by_role("button", name="Zoom in").click()
+            zoomed_width = map_stage.evaluate("node => node.getBoundingClientRect().width")
+            if zoomed_width <= initial_width:
+                raise RuntimeError("Chapter 8 mobile map zoom did not enlarge the map")
+            mobile.get_by_role("button", name="Reset map").click()
+            mobile.screenshot(path=output / "mobile-ch08.png", full_page=True)
+            assert_scrolled_below_header(mobile, ".map-figure", "Chapter 8 mobile map")
+            mobile.locator(".map-figure").screenshot(
+                path=output / "mobile-ch08-map.png"
+            )
+            assert_scrolled_below_header(
+                mobile, ".editorial-figure", "Chapter 8 mobile figure"
+            )
+            screenshot_all_figures(mobile, output, "mobile-ch08")
+            assert_scrolled_below_header(
+                mobile,
+                "#ch08-b012",
+                "Chapter 8 mobile final callout",
+            )
+            screenshot_full_element(
+                mobile,
+                mobile.locator("#ch08-b012"),
+                output / "mobile-ch08-highlight.png",
+            )
             mobile_context.close()
         finally:
             browser.close()

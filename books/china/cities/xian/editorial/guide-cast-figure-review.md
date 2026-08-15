@@ -35,6 +35,7 @@ reviews remain valid historical records.
 | Lane-to-courtyard threshold | 69 | Aya, Lala | Generic access-etiquette scene; no named-property or open-access claim | `cf82a4a2d93b4344ca1d0b2d851cf4b88df1cfedddbc48fbfd5536b5904090bc` | `54f5a132f08a6fe112aa11009639cf852dae8c2e728f10f5c05e32a92ed3d0b2` |
 | Paomo breaking table | 80 | Aya, Lala, Sasa, Zhuangzi robot | Representative dry-bowl sequence; no named restaurant or universal piece-size claim | `7b38c069ad7088192570be07393205eb579055fe0db6de0229a53098a189cd1e` | `4b5bd77431759356844be1baf95f485cbe0c658f812ad9c5dc71be778400401e` |
 | Managed mountain day | 103 | Aya, Lala, Sasa, Zhuangzi robot | Representative managed path; no claim to depict a specific Huashan section | `8130f2cda9bcc710c7882d5bece90d0d10ee246337bb58d700c01c6a2041cff4` | `ece7b8cea339aac9d29a133d7d55108e56b9e25b7097af0a9587c56269dcfafe` |
+| Xi'an North interchange | 107 | Aya, Lala, Sasa, Zhuangzi robot | Present-day station-forecourt decision scene; no claim of one universal exit, pickup zone, or crowd condition | `cc94fd3acac36e4029e2657c2396460aa4ee8b87cb272b501c3730ff86f74ced` | `3d8084713dda355fd13c69f7ccb54a2d6c4a1552d91424e8762e11160fa8ced4` |
 
 ## Visual Findings
 
@@ -42,14 +43,14 @@ reviews remain valid historical records.
   400` proof, their actual B6 page, and a `390 px` mobile figure capture.
 - Aya and Lala remain recognizable through head shape, clothing, proportions,
   and material treatment rather than labels or reader-facing production notes.
-- The full-team Yongning Gate, Daming, Pit 1, Bell Tower, paomo, and mountain
-  scenes give the robot equal guide status without turning the place into a
-  cast portrait.
+- The full-team Yongning Gate, Daming, Pit 1, Bell Tower, paomo, mountain, and
+  Xi'an North scenes give the robot equal guide status without turning the
+  place into a cast portrait.
 - The teaching-replica scenes preserve the distinction between explaining a
   process and documenting or authorizing work on original heritage.
 - Captions describe the travel subject and factual limit. Reference paths,
   generation method, hashes, and rights remain in technical provenance.
 - Combined current-PDF figure-page sheet SHA-256:
-  `2dd2af94bc86a99f1664d7bc3edf1923dbebb739de263288795cfc02d78c17ec`.
+  `9f105aee0abb7f77486fed5cdabbdeb13848f282203857892d520e432a647da6`.
 - Combined mobile figure sheet SHA-256:
-  `b62f5465f9a1366cf38162b9831cdc8444bf469e9befb7f2919ee70233d31be4`.
+  `b311344af2359307e3eccaa99b2b72c119e1a180eb2678f95f97d35351f682cb`.

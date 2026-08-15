@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "id": "xian-arrival-hubs",
+  "snapshot_date": "2026-08-16",
+  "title": {
+    "zh": "抵达西安：先认准到达点",
+    "ja": "西安到着：まず駅と空港を確認",
+    "en": "ARRIVING IN XI'AN · NAME THE HUB FIRST"
+  },
+  "extent": [
+    108.72,
+    34.16,
+    109.09,
+    34.48
+  ],
+  "schematic_features": {
+    "wei_river": {
+      "coordinates": [
+        [108.72, 34.386],
+        [108.79, 34.379],
+        [108.86, 34.371],
+        [108.93, 34.366],
+        [109.0, 34.369],
+        [109.09, 34.38]
+      ],
+      "label_position": [108.78, 34.359],
+      "note": "Generalized Wei River orientation only; not survey geometry or a navigation feature."
+    },
+    "walled_core": {
+      "bounds": [108.907, 34.243, 108.974, 34.286],
+      "label_position": [108.82, 34.255],
+      "note": "Generalized rectangle for the Ming-walled city core, not a surveyed wall polygon or hotel boundary."
+    }
+  },
+  "core_anchor": {
+    "id": "central-xian",
+    "position": [108.9423419, 34.2610119],
+    "osm_type": "way",
+    "osm_id": 254488435,
+    "label": {
+      "zh": "城墙核心",
+      "ja": "城壁中心",
+      "en": "WALLED CORE"
+    },
+    "note": "Bell Tower position is used as a stable core anchor, not as the destination of every arrival."
+  },
+  "hubs": [
+    {
+      "id": "xian-airport",
+      "order": 1,
+      "position": [108.7600313, 34.4423643],
+      "label_offset": [0.01, 0.027],
+      "label": {
+        "zh": "咸阳机场",
+        "ja": "咸陽空港",
+        "en": "XI'AN AIRPORT"
+      },
+      "detail": {
+        "zh": "T5 / T2、T3",
+        "ja": "T5 / T2・T3",
+        "en": "READ THE TERMINAL"
+      },
+      "osm_type": "way",
+      "osm_id": 1377770481,
+      "note": "Aerodrome centroid from OpenStreetMap; terminal paths are explained in official airport material rather than inferred from this point."
+    },
+    {
+      "id": "xian-north",
+      "order": 2,
+      "position": [108.9339313, 34.3776976],
+      "label_offset": [0.018, 0.035],
+      "label": {
+        "zh": "西安北站",
+        "ja": "西安北駅",
+        "en": "XI'AN NORTH"
+      },
+      "detail": {
+        "zh": "2 / 4 / 14号线",
+        "ja": "2 / 4 / 14号線",
+        "en": "CHOOSE BY DESTINATION"
+      },
+      "osm_type": "way",
+      "osm_id": 250712078,
+      "note": "Station-building centroid from OpenStreetMap; plaza, exit, and pickup choice remains a signed on-site decision."
+    },
+    {
+      "id": "xian-station",
+      "order": 3,
+      "position": [108.9581839, 34.279927],
+      "label_offset": [0.03, 0.04],
+      "label": {
+        "zh": "西安站",
+        "ja": "西安駅",
+        "en": "XI'AN STATION"
+      },
+      "detail": {
+        "zh": "4号线 · 城墙北侧",
+        "ja": "4号線 · 城壁の北",
+        "en": "LINE 4 · NORTH WALL"
+      },
+      "osm_type": "way",
+      "osm_id": 935899645,
+      "note": "Station-building centroid from OpenStreetMap; the map does not prescribe a north or south exit."
+    },
+    {
+      "id": "xian-east",
+      "order": 4,
+      "position": [109.0589272, 34.2155108],
+      "label_offset": [-0.012, 0.025],
+      "label": {
+        "zh": "西安东站",
+        "ja": "西安東駅",
+        "en": "XI'AN EAST"
+      },
+      "detail": {
+        "zh": "5号线 · 2026新开",
+        "ja": "5号線 · 2026年開業",
+        "en": "LINE 5 · OPENED 2026"
+      },
+      "osm_type": "way",
+      "osm_id": 1360046338,
+      "note": "Station-building centroid from OpenStreetMap; the official opening report controls the current transfer claim."
+    }
+  ],
+  "spines": [
+    {
+      "id": "line-14-airport-north",
+      "number": "14",
+      "color": "#B33273",
+      "coordinates": [
+        [108.7600313, 34.4423643],
+        [108.845, 34.416],
+        [108.9339313, 34.3776976]
+      ],
+      "label_position": [108.846, 34.424],
+      "note": "Simplified airport-to-Xi'an-North decision spine; not track geometry, stops, time, or live service."
+    },
+    {
+      "id": "line-2-cityward",
+      "number": "2",
+      "color": "#D93A32",
+      "coordinates": [
+        [108.9339313, 34.3776976],
+        [108.939, 34.32],
+        [108.9423419, 34.2610119],
+        [108.943, 34.19]
+      ],
+      "label_position": [108.921, 34.317],
+      "note": "Simplified north-south decision spine from Xi'an North through the central corridor; not full Line 2 geometry."
+    },
+    {
+      "id": "line-4-cityward",
+      "number": "4",
+      "color": "#1769E0",
+      "coordinates": [
+        [108.9339313, 34.3776976],
+        [108.952, 34.33],
+        [108.9581839, 34.279927],
+        [108.969, 34.205]
+      ],
+      "label_position": [108.972, 34.32],
+      "note": "Simplified Line 4 decision spine linking Xi'an North and Xi'an Station before continuing south; not full track geometry."
+    },
+    {
+      "id": "line-5-east-cityward",
+      "number": "5",
+      "color": "#008C72",
+      "coordinates": [
+        [109.0589272, 34.2155108],
+        [109.02, 34.205],
+        [108.969, 34.205],
+        [108.91, 34.205]
+      ],
+      "label_position": [109.012, 34.189],
+      "note": "Simplified westward decision spine from the new Xi'an East transfer; not a full Line 5 route or guarantee of a particular interchange."
+    }
+  ],
+  "cards": [
+    {
+      "order": 1,
+      "title": "AIRPORT",
+      "zh": "先看航站楼，再选14号线或有标识的乘车区。",
+      "ja": "ターミナルを確認し、14号線か指定乗車場所へ。",
+      "en": "TERMINAL FIRST · THEN LINE 14 OR SIGNED PICKUP"
+    },
+    {
+      "order": 2,
+      "title": "XI'AN NORTH",
+      "zh": "2、4、14号线交会；按住处方向选，不默认2号线。",
+      "ja": "2・4・14号線。宿の方向で選び、2号線に固定しない。",
+      "en": "LINES 2 / 4 / 14 · CHOOSE FOR THE HOTEL SIDE"
+    },
+    {
+      "order": 3,
+      "title": "XI'AN STATION",
+      "zh": "这是城墙北侧的西安站，不是西安北站。",
+      "ja": "城壁北側の西安駅。西安北駅とは別の駅。",
+      "en": "BY THE NORTH WALL · NOT XI'AN NORTH"
+    },
+    {
+      "order": 4,
+      "title": "XI'AN EAST",
+      "zh": "2026年6月开站；沿标识步行换5号线，当日复核。",
+      "ja": "2026年6月開業。案内に従って5号線へ。当日再確認。",
+      "en": "NEW IN 2026 · FOLLOW SIGNS TO LINE 5 · RECHECK"
+    }
+  ],
+  "sources": [
+    {
+      "id": "openstreetmap-xian-arrival-hubs-2026",
+      "title": "OpenStreetMap pinned positions for Xi'an arrival hubs",
+      "url": "https://www.openstreetmap.org/copyright",
+      "snapshot_date": "2026-08-16",
+      "license": "ODbL 1.0",
+      "note": "OSM types, IDs, and coordinates for the airport, Xi'an North, Xi'an Station, Xi'an East, and central anchor are pinned in this config."
+    },
+    {
+      "id": "xian-metro-network-2025",
+      "title": "西安轨道交通线网示意图",
+      "url": "https://jtj.xa.gov.cn/zmhd/xxcx/dtxl/1.html",
+      "snapshot_date": "2025-12-29",
+      "note": "Controls the selected current line relationships; this map intentionally omits the rest of the network."
+    },
+    {
+      "id": "xian-airport-arrivals-2026",
+      "title": "西安咸阳国际机场国内抵达",
+      "url": "https://www.xxia.com.cn/cjzn/gndd.htm",
+      "snapshot_date": "2026-08-16",
+      "note": "Supports separate T5 and T2/T3 transport paths and pickup facilities."
+    },
+    {
+      "id": "xian-north-transport-2026",
+      "title": "西安北站公共交通出行指南",
+      "url": "https://xetdz.xa.gov.cn/xwzx/jkdt/1831494658425413633.html",
+      "snapshot_date": "2026-08-16",
+      "note": "Supports Lines 2, 4, and 14 and the need to follow the correct plaza and signed pickup zone."
+    },
+    {
+      "id": "xian-station-line4-2024",
+      "title": "西安站扩建与地铁4号线接入",
+      "url": "https://www.news.cn/politics/20241227/ce5be5bf3dce4038b0ad73cd13c7c376/c.html",
+      "snapshot_date": "2026-08-16",
+      "note": "Supports the Line 4 connection and the station's relation to the north wall."
+    },
+    {
+      "id": "xian-east-opening-2026",
+      "title": "New railway station in Xi'an starts operation",
+      "url": "https://en.xa.gov.cn/MediaCenter/News/2072253459180654594.html",
+      "snapshot_date": "2026-07-01",
+      "note": "Supports the 30 June 2026 opening and signed walking transfer to Line 5."
+    }
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "b6_proof": "build/qa/maps/xian/arrival-hubs/xian-arrival-hubs-b6-300dpi.png",
+    "b6_proof_sha256": "9be921eb5d68c28d580e1c0248deb0e56914b61705ae641d6679e960b6f7814c",
+    "mobile_zoom_proof": "build/qa/maps/xian/arrival-hubs/xian-arrival-hubs-mobile-zoom-proof.png",
+    "mobile_zoom_proof_sha256": "8fe51c3193921225b7c1fc75d771ca73746f5f5490068f2fbbf27814b08e1d48",
+    "notes": "Inspected at the 5600 x 5040 master, a 1476-pixel B6-width 300 dpi proof, and a 900-pixel mobile zoom proof matching the website's 2.5x map control. All four hubs, four line spines, three language layers, and four decision cards remain distinct; no line claims a full route or live service."
+  }
+}

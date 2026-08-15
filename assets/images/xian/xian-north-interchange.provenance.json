@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-north-interchange",
+  "created_at": "2026-08-16",
+  "method": "generated-from-private-and-official-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Generated a new station-dominant composition from four direct guide references and one official Xi'an North architectural reference",
+    "Reviewed at original resolution and at a 600 x 400 B6-screen proof for station dominance, exact guide count, identity continuity, luggage placement, crop, generated text, and clear circulation"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity as the fourth guide and equal companion; reference only, no source file redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/xian-north-official-overview.png",
+      "sha256": "b9f775d2a9a99458c27fc497a1262bb36ab09f2af40b8dba0a524b98389dc924",
+      "url": "https://xetdz.xa.gov.cn/web_files/xetdz/picture/2024/09/05/202409050846503431364.png",
+      "page_url": "https://xetdz.xa.gov.cn/xwzx/jkdt/1831494658425413633.html",
+      "credit": "Xi'an Economic and Technological Development Zone public-transport guide",
+      "role": "Factual reference for Xi'an North's broad roof, long glazed facade, station scale, and surrounding modern city; ignored research reference, not redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-north-interchange.prompt.md",
+    "sha256": "0747dd845264360ba62f8f4f6be7131be430afe6fa5f954f6daa364593c8afff"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-north-interchange.png",
+    "sha256": "cc94fd3acac36e4029e2657c2396460aa4ee8b87cb272b501c3730ff86f74ced",
+    "bytes": 2553735,
+    "width": 1536,
+    "height": 1024,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Chapter 8 opening figure that makes Xi'an North a specific arrival threshold and shows the four guides pausing before choosing the next transport mode",
+  "factual_limits": [
+    "The forecourt, daylight, luggage, surrounding buildings, guide placement, and camera position form a representative arrival composition rather than a documentary view or architectural survey",
+    "The image does not establish a current station exit, platform, pickup zone, timetable, fare, crowd level, or walking time",
+    "The guide characters establish traveler scale and series continuity; they are not documentary passengers"
+  ],
+  "reader_caption_policy": "Describe the pause before choosing a signed route; keep generation method, prompt, source paths, and production metadata out of the caption",
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private user-supplied continuity references and an official public-information photograph used only as a factual spatial reference; the external source image is not redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "exact_guide_count_four": "pass",
+    "identity_continuity": "pass",
+    "station_dominant": "pass",
+    "all_luggage_controlled": "pass",
+    "clear_forecourt_circulation": "pass",
+    "no_reader_legible_generated_text": "pass",
+    "safe_crop": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "evidence": "build/qa/images/xian/attraction-views/xian-north-interchange-b6-screen-proof.png",
+    "evidence_sha256": "9f4d0eda0a7b77995c4dc07e902437afa36b5516b83f537e0f452c894e7dac06",
+    "notes": "At 600 x 400, Xi'an North's roof and glazed facade remain the dominant place signal; all four guides and their compact luggage remain distinct without blocking the pedestrian field."
+  }
+}

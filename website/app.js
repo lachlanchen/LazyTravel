@@ -35,6 +35,8 @@ const assetLabels = {
   "asset-xian-breaking-mo-table": "PAOMO · BREAKING THE MO",
   "asset-xian-nearby-day-choices-map": "XI'AN AROUND · FIVE ONE-DAY CHOICES",
   "asset-xian-managed-mountain-day": "MOUNTAIN DAY · MANAGED TRAIL",
+  "asset-xian-arrival-hubs-map": "ARRIVING IN XI'AN · FOUR HUBS",
+  "asset-xian-north-interchange": "XI'AN NORTH · CHOOSE THE NEXT LEG",
 };
 const state = {
   document: null,
@@ -205,7 +207,9 @@ function renderMap(asset, number) {
     viewport.scrollTo({ top: 0, left: defaultScrollLeft(), behavior });
   };
   const applyZoom = () => {
+    const minimumWidth = window.matchMedia("(max-width: 480px)").matches ? 760 : 720;
     stage.style.width = `${Math.round(zoom * 100)}%`;
+    stage.style.minWidth = `${Math.round(minimumWidth * zoom)}px`;
     minus.disabled = zoom <= 1;
     plus.disabled = zoom >= 2.5;
   };

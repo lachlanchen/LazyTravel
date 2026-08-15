@@ -27,12 +27,13 @@ CHAPTER_IDS = (
     "ch05-inside-the-wall",
     "ch06-beginning-with-bread",
     "ch07-beyond-the-center",
+    "ch08-arrive-and-move",
 )
 BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
 DIST_PDF = DIST_DIR / "xian-pocket-review.pdf"
 DIST_MANIFEST = DIST_DIR / "xian-pocket-review.manifest.json"
-SOURCE_DATE_EPOCH = "1786723200"
+SOURCE_DATE_EPOCH = "1786838400"
 EXPECTED_PAGE_POINTS = (125 / 25.4 * 72, 176 / 25.4 * 72)
 LOG_REJECTION = re.compile(
     r"Overfull|Underfull|Missing character|LaTeX Warning|Package .* Warning|"
@@ -179,6 +180,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "scripts/build_xian_inside_wall_route_map.py",
         ROOT / "scripts/build_xian_food_contexts_map.py",
         ROOT / "scripts/build_xian_nearby_day_choices_map.py",
+        ROOT / "scripts/build_xian_arrival_hubs_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
@@ -191,6 +193,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/maps/xian/xian-inside-wall-route.geojson",
         ROOT / "data/maps/xian/xian-food-contexts.config.json",
         ROOT / "data/maps/xian/xian-nearby-day-choices.config.json",
+        ROOT / "data/maps/xian/xian-arrival-hubs.config.json",
         ROOT / "data/maps/xian/xian-before-walls.geojson",
         ROOT / "data/images/xian/xian-daming-site-impression.prompt.md",
         ROOT / "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
@@ -203,6 +206,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/images/xian/xian-yongning-gate-arrival.prompt.md",
         ROOT / "data/images/xian/xian-terracotta-pit-one-visit.prompt.md",
         ROOT / "data/images/xian/xian-bell-tower-orientation.prompt.md",
+        ROOT / "data/images/xian/xian-north-interchange.prompt.md",
     }
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
     used_asset_ids = {
@@ -232,7 +236,7 @@ def write_manifest(
         "schema_version": 1,
         "artifact": str(DIST_PDF.relative_to(ROOT)),
         "chapter_ids": list(CHAPTER_IDS),
-        "build_date": "2026-08-15",
+        "build_date": "2026-08-16",
         "source_date_epoch": int(SOURCE_DATE_EPOCH),
         "command": "python3 scripts/build_xian_review.py",
         "inputs": {
@@ -274,6 +278,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_xian_inside_wall_route_map.py"])
         run([sys.executable, "scripts/build_xian_food_contexts_map.py"])
         run([sys.executable, "scripts/build_xian_nearby_day_choices_map.py"])
+        run([sys.executable, "scripts/build_xian_arrival_hubs_map.py"])
     run(
         [
             sys.executable,
