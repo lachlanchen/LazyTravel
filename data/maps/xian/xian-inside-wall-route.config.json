@@ -1,0 +1,355 @@
+{
+  "schema_version": 1,
+  "id": "xian-inside-wall-route",
+  "snapshot_date": "2026-08-15",
+  "title": {
+    "zh": "先认十字，再进小路",
+    "ja": "十字路をつかみ、路地へ入る",
+    "en": "START WITH THE CROSSROADS, THEN TAKE THE LANES"
+  },
+  "overview_extent": [
+    108.916,
+    34.248,
+    108.971,
+    34.282
+  ],
+  "detail_extent": [
+    108.932,
+    34.251,
+    108.950,
+    34.268
+  ],
+  "wall": {
+    "circuit_km": 13.74,
+    "note": "The official Xi'an City Wall overview gives a 13.74 km circuit. The highlighted southern segment is a route choice, not a promise that every nearby gate is open for entry or exit."
+  },
+  "gates": [
+    {
+      "id": "anding-gate",
+      "position": [
+        108.9202,
+        34.2649
+      ],
+      "label": {
+        "zh": "安定门",
+        "en": "WEST GATE"
+      }
+    },
+    {
+      "id": "anyuan-gate",
+      "position": [
+        108.9434,
+        34.2779
+      ],
+      "label": {
+        "zh": "安远门",
+        "en": "NORTH GATE"
+      }
+    },
+    {
+      "id": "changle-gate",
+      "position": [
+        108.9671,
+        34.2650
+      ],
+      "label": {
+        "zh": "长乐门",
+        "en": "EAST GATE"
+      }
+    },
+    {
+      "id": "yongning-gate",
+      "position": [
+        108.9423,
+        34.2531
+      ],
+      "label": {
+        "zh": "永宁门",
+        "en": "SOUTH GATE"
+      }
+    }
+  ],
+  "sites": [
+    {
+      "id": "south-gate",
+      "order": 1,
+      "position": [
+        108.942318,
+        34.253104
+      ],
+      "label": {
+        "zh": "永宁门（南门）",
+        "ja": "永寧門（南門）",
+        "en": "SOUTH GATE"
+      },
+      "label_offset": [
+        -0.0004,
+        -0.0010
+      ]
+    },
+    {
+      "id": "shuyuanmen",
+      "order": 2,
+      "position": [
+        108.944728,
+        34.254362
+      ],
+      "label": {
+        "zh": "书院门",
+        "ja": "書院門",
+        "en": "SHUYUANMEN"
+      },
+      "label_offset": [
+        0.0012,
+        0.0002
+      ],
+      "optional": true
+    },
+    {
+      "id": "bell-tower",
+      "order": 3,
+      "position": [
+        108.942552,
+        34.261192
+      ],
+      "label": {
+        "zh": "钟楼",
+        "ja": "鐘楼",
+        "en": "BELL TOWER"
+      },
+      "label_offset": [
+        0.0011,
+        0.0004
+      ]
+    },
+    {
+      "id": "drum-tower",
+      "order": 4,
+      "position": [
+        108.939075,
+        34.261911
+      ],
+      "label": {
+        "zh": "鼓楼",
+        "ja": "鼓楼",
+        "en": "DRUM TOWER"
+      },
+      "label_offset": [
+        -0.0010,
+        -0.0004
+      ]
+    },
+    {
+      "id": "great-mosque",
+      "order": 5,
+      "position": [
+        108.936514,
+        34.263451
+      ],
+      "label": {
+        "zh": "化觉巷清真大寺",
+        "ja": "化覚巷清真大寺",
+        "en": "GREAT MOSQUE"
+      },
+      "label_offset": [
+        -0.0011,
+        -0.0002
+      ]
+    },
+    {
+      "id": "beiyuanmen",
+      "order": 6,
+      "position": [
+        108.939035,
+        34.26475
+      ],
+      "label": {
+        "zh": "北院门",
+        "ja": "北院門",
+        "en": "BEIYUANMEN"
+      },
+      "label_offset": [
+        0.0011,
+        0.0002
+      ]
+    }
+  ],
+  "lane_labels": [
+    {
+      "name": "化觉巷",
+      "en": "HUAJUE LANE",
+      "position": [
+        108.93725,
+        34.26327
+      ],
+      "rotation": 2
+    },
+    {
+      "name": "西羊市",
+      "en": "XIYANGSHI",
+      "position": [
+        108.93535,
+        34.26492
+      ],
+      "rotation": 0
+    },
+    {
+      "name": "大皮院",
+      "en": "DAPIYUAN",
+      "position": [
+        108.93555,
+        34.26623
+      ],
+      "rotation": 0
+    },
+    {
+      "name": "北广济街",
+      "en": "NORTH GUANGJI ST",
+      "position": [
+        108.93415,
+        34.26500
+      ],
+      "rotation": 90
+    }
+  ],
+  "routes": [
+    {
+      "id": "core-route",
+      "kind": "core",
+      "label": {
+        "zh": "半日主线",
+        "ja": "半日の基本線",
+        "en": "HALF-DAY CORE"
+      },
+      "coordinates": [
+        [
+          108.942318,
+          34.253104
+        ],
+        [
+          108.94248,
+          34.26055
+        ],
+        [
+          108.942552,
+          34.261192
+        ],
+        [
+          108.939075,
+          34.261911
+        ],
+        [
+          108.93875,
+          34.26352
+        ],
+        [
+          108.936514,
+          34.263451
+        ],
+        [
+          108.93880,
+          34.26358
+        ],
+        [
+          108.939035,
+          34.26475
+        ]
+      ],
+      "note": "Editorial route joining verified site positions along the broad present street pattern; not turn-by-turn navigation."
+    },
+    {
+      "id": "shuyuanmen-detour",
+      "kind": "optional",
+      "label": {
+        "zh": "书院门支线",
+        "ja": "書院門の寄り道",
+        "en": "SHUYUANMEN DETOUR"
+      },
+      "coordinates": [
+        [
+          108.942318,
+          34.253104
+        ],
+        [
+          108.94290,
+          34.25415
+        ],
+        [
+          108.944728,
+          34.254362
+        ]
+      ],
+      "note": "Optional southern detour; Chapter 4 covers Beilin in depth."
+    },
+    {
+      "id": "hui-lanes-detour",
+      "kind": "optional",
+      "label": {
+        "zh": "回坊小路支线",
+        "ja": "回族街区の路地",
+        "en": "HUI-LANE DETOUR"
+      },
+      "coordinates": [
+        [
+          108.939035,
+          34.26475
+        ],
+        [
+          108.93905,
+          34.26525
+        ],
+        [
+          108.93435,
+          34.26607
+        ],
+        [
+          108.93438,
+          34.26473
+        ],
+        [
+          108.93650,
+          34.26473
+        ],
+        [
+          108.936514,
+          34.263451
+        ]
+      ],
+      "note": "Optional lane loop through named streets; crowd controls, closures, and private thresholds take priority over the diagram."
+    }
+  ],
+  "sources": [
+    {
+      "id": "xian-inside-wall-osm-2026",
+      "path": "data/maps/xian/xian-inside-wall-route.geojson",
+      "url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "use": "Pinned named-street and site geometry for present-day orientation."
+    },
+    {
+      "id": "xian-before-walls-osm",
+      "path": "data/maps/xian/xian-before-walls.geojson",
+      "osm_id": "R3450809",
+      "url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "use": "Present Xi'an city-wall geometry."
+    },
+    {
+      "id": "xian-city-wall-official-2026",
+      "url": "http://www.chinaxiancitywall.com/list.php?cid=42&pid=2",
+      "use": "Official 13.74 km circuit length and distinction between the four Ming gates and later openings."
+    }
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-15",
+    "notes": [
+      "The original 5600 x 3600 px render, 1240 px B6 proof, and compiled landscape B6 page were reviewed; both scales, six numbered sites, and route disclaimers remain legible.",
+      "Chinese labels, English secondary labels, route lines, bubbles, and leader lines remain separated without clipping or collisions.",
+      "The synchronized website uses the selectable-text SVG in a 760 px pannable stage at a 390 px viewport, preserving map scale instead of shrinking the full two-panel composition."
+    ]
+  }
+}

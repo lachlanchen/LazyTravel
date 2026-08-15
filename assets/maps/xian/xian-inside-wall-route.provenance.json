@@ -1,0 +1,103 @@
+{
+  "asset_id": "asset-xian-inside-wall-route-map",
+  "command": "python3 scripts/build_xian_inside_wall_route_map.py",
+  "config": {
+    "path": "data/maps/xian/xian-inside-wall-route.config.json",
+    "sha256": "42965f28e4e89e5ed689c5ee6592972523d7a93016445401ee66c8aebbea5d69"
+  },
+  "created_at": "2026-08-15",
+  "declared_generalizations": [
+    {
+      "id": "wall-segment",
+      "note": "The official Xi'an City Wall overview gives a 13.74 km circuit. The highlighted southern segment is a route choice, not a promise that every nearby gate is open for entry or exit."
+    },
+    {
+      "id": "core-route",
+      "note": "Editorial route joining verified site positions along the broad present street pattern; not turn-by-turn navigation."
+    },
+    {
+      "id": "shuyuanmen-detour",
+      "note": "Optional southern detour; Chapter 4 covers Beilin in depth."
+    },
+    {
+      "id": "hui-lanes-detour",
+      "note": "Optional lane loop through named streets; crowd controls, closures, and private thresholds take priority over the diagram."
+    }
+  ],
+  "files": {
+    "xian-inside-wall-route.pdf": {
+      "bytes": 64719,
+      "sha256": "a2527cfa143cf2fbb796d2e5ffc90f0b1573b8528c0bbce43ddf155c7720e8e8"
+    },
+    "xian-inside-wall-route.png": {
+      "bytes": 582815,
+      "sha256": "351f88c1d71c10534c4ec6715323a309bab4ad88843363db56e6708edff48cfe"
+    },
+    "xian-inside-wall-route.svg": {
+      "bytes": 54752,
+      "sha256": "e493607176bb61e7d169a5cc005b64a5cbfc8c45169ce7d9691f5ec9bb2a7fa7"
+    }
+  },
+  "method": "map-render",
+  "present_geography": [
+    {
+      "path": "data/maps/xian/xian-inside-wall-route.geojson",
+      "sha256": "792d3ae00c9f563cc1933c889332b7b3f68939fc5a81ef2da5525e96ce10cb34"
+    },
+    {
+      "path": "data/maps/xian/xian-before-walls.geojson",
+      "sha256": "04b214a49344bebd59e134ae1d3fe8308f9c7185806975b4a41288f51b1f2845"
+    }
+  ],
+  "rights": "Map design © LazyTravel; present wall, street, and site geometry © OpenStreetMap contributors, ODbL 1.0.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "xian-inside-wall-osm-2026",
+      "license": "ODbL 1.0",
+      "path": "data/maps/xian/xian-inside-wall-route.geojson",
+      "url": "https://www.openstreetmap.org/copyright",
+      "use": "Pinned named-street and site geometry for present-day orientation."
+    },
+    {
+      "id": "xian-before-walls-osm",
+      "license": "ODbL 1.0",
+      "osm_id": "R3450809",
+      "path": "data/maps/xian/xian-before-walls.geojson",
+      "url": "https://www.openstreetmap.org/copyright",
+      "use": "Present Xi'an city-wall geometry."
+    },
+    {
+      "id": "xian-city-wall-official-2026",
+      "url": "http://www.chinaxiancitywall.com/list.php?cid=42&pid=2",
+      "use": "Official 13.74 km circuit length and distinction between the four Ming gates and later openings."
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 3600,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      5600,
+      3600
+    ],
+    "route_lengths_km": {
+      "core-route": 1.959,
+      "hui-lanes-detour": 0.983,
+      "shuyuanmen-detour": 0.298
+    },
+    "street_feature_count": 32,
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The original 5600 x 3600 px render, 1240 px B6 proof, and compiled landscape B6 page were reviewed; both scales, six numbered sites, and route disclaimers remain legible.",
+      "Chinese labels, English secondary labels, route lines, bubbles, and leader lines remain separated without clipping or collisions.",
+      "The synchronized website uses the selectable-text SVG in a 760 px pannable stage at a 390 px viewport, preserving map scale instead of shrinking the full two-panel composition."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-15"
+  }
+}

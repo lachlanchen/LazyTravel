@@ -20,8 +20,12 @@ const assetLabels = {
   "asset-xian-before-walls-map": "XI'AN BEFORE THE WALLS",
   "asset-xian-capital-layers-map": "SUCCESSIVE CAPITALS, DIFFERENT SITES",
   "asset-xian-daming-site-impression": "DAMING PALACE · SITE-SCALE IMPRESSION",
+  "asset-xian-qin-mausoleum-pits-map": "QIN MAUSOLEUM · MOUND AND VISITOR PITS",
+  "asset-xian-terracotta-conservation-impression": "TERRACOTTA · CONSERVATION WORK",
   "asset-xian-written-word-route-map": "PAGODAS TO BEILIN · WRITTEN-WORD ROUTE",
   "asset-xian-rubbing-replica-demonstration": "RUBBING ON A MODERN REPLICA",
+  "asset-xian-inside-wall-route-map": "INSIDE THE WALL · CROSSROADS AND LANES",
+  "asset-xian-lane-courtyard-threshold": "LANE TO COURTYARD · THE THRESHOLD",
 };
 const state = {
   document: null,
@@ -148,7 +152,10 @@ function renderVisualCaption(asset, className) {
     paragraph.lang = language === "zh" ? "zh-Hans" : language;
     captions.append(paragraph);
   }
-  caption.append(captions, element("p", "visual-rights", asset.rights));
+  caption.append(captions);
+  if (asset.provenance?.method !== "generated") {
+    caption.append(element("p", "visual-rights", asset.rights));
+  }
   return caption;
 }
 
@@ -178,7 +185,11 @@ function renderMap(asset, number) {
   let plus;
   const defaultScrollLeft = () => {
     if (!window.matchMedia("(max-width: 480px)").matches) return 0;
-    const focus = asset.id === "asset-xian-before-walls-map" ? 0.7 : 0.5;
+    const focus = ["asset-xian-before-walls-map", "asset-xian-inside-wall-route-map"].includes(
+      asset.id,
+    )
+      ? 0.7
+      : 0.5;
     return Math.max(0, (stage.scrollWidth - viewport.clientWidth) * focus);
   };
   const centerMobileMap = (behavior = "auto") => {

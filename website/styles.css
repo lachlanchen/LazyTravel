@@ -1,15 +1,19 @@
 :root {
   color-scheme: light;
-  --paper: #f5f7f4;
+  --paper: #fcfdff;
   --surface: #ffffff;
-  --rail: #e9eeea;
-  --ink: #202522;
-  --muted: #626a65;
-  --faint: #d7ddd8;
-  --forest: #315347;
-  --water: #167c9e;
-  --vermilion: #b44736;
-  --gold: #9b7228;
+  --rail: #edf4f7;
+  --ink: #17212b;
+  --muted: #52606d;
+  --faint: #cbd5e1;
+  --forest: #008c72;
+  --water: #1769e0;
+  --vermilion: #e24736;
+  --coral: #ff6b4a;
+  --gold: #865900;
+  --mist: #eaf2ff;
+  --mint: #e7f7f3;
+  --blush: #fff0ed;
   --serif: "Noto Serif", "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC",
     "Yu Mincho", serif;
   --sans: "Noto Sans", "Noto Sans CJK SC", "Source Han Sans SC", "Hiragino Sans",
@@ -132,7 +136,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 42px);
   overflow: hidden;
-  border: 1px solid #bfc8c2;
+  border: 1px solid #aebdca;
   border-radius: 6px;
   background: var(--surface);
 }
@@ -154,7 +158,7 @@ a {
 }
 
 .segmented button[aria-pressed="true"] {
-  background: var(--forest);
+  background: var(--water);
   color: white;
 }
 
@@ -162,7 +166,7 @@ a {
 .map-tools button:focus-visible,
 .utility-link:focus-visible,
 .ruby-switch:has(input:focus-visible) {
-  outline: 3px solid rgba(22, 124, 158, 0.35);
+  outline: 3px solid rgba(23, 105, 224, 0.32);
   outline-offset: 2px;
 }
 
@@ -277,7 +281,7 @@ a {
 }
 
 .chapter-outline li {
-  border-top: 1px solid rgba(49, 83, 71, 0.16);
+  border-top: 1px solid rgba(23, 105, 224, 0.14);
 }
 
 .chapter-outline {
@@ -340,7 +344,7 @@ a {
 .rail-edition {
   margin-top: 30px;
   padding-top: 16px;
-  border-top: 1px solid rgba(49, 83, 71, 0.2);
+  border-top: 1px solid rgba(0, 140, 114, 0.22);
 }
 
 .rail-edition p {
@@ -380,7 +384,19 @@ main {
 }
 
 .chapter-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   color: var(--vermilion);
+}
+
+.chapter-kicker::before {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 10px;
+  border-radius: 50%;
+  background: var(--vermilion);
+  content: "";
 }
 
 .chapter-title {
@@ -407,7 +423,7 @@ main {
 
 .chapter-title [data-lang="en"] {
   margin-top: 12px;
-  color: var(--muted);
+  color: var(--water);
   font-family: var(--serif);
   font-size: 25px;
   font-weight: 500;
@@ -424,7 +440,7 @@ main {
 
 .chapter-deck span:not(:last-child)::after {
   margin-left: 18px;
-  color: var(--vermilion);
+  color: var(--coral);
   content: "·";
 }
 
@@ -435,7 +451,7 @@ main {
 
 .block-header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 28px;
@@ -443,13 +459,20 @@ main {
 
 .block-meta {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 14px;
 }
 
 .block-index {
-  color: var(--vermilion);
-  font-size: 18px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--vermilion);
+  color: white;
+  font-size: 12px;
 }
 
 .block-category {
@@ -472,11 +495,34 @@ main {
 }
 
 .language-label {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 16px;
-  color: var(--muted);
+  color: var(--language-color, var(--muted));
   font-size: 11px;
   font-weight: 800;
+}
+
+.language-label::before {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
+.language-panel[data-lang="zh"] {
+  --language-color: var(--vermilion);
+}
+
+.language-panel[data-lang="ja"] {
+  --language-color: var(--forest);
+}
+
+.language-panel[data-lang="en"] {
+  --language-color: var(--water);
 }
 
 .language-panel p {
@@ -498,7 +544,7 @@ ruby {
 }
 
 rt {
-  color: #66716b;
+  color: #5b6875;
   font-family: var(--sans);
   font-size: 0.52em;
   font-weight: 500;
@@ -520,7 +566,7 @@ rt {
 }
 
 .block-citations a {
-  color: var(--forest);
+  color: var(--water);
   font-weight: 700;
   text-decoration: none;
 }
@@ -542,7 +588,7 @@ rt {
 }
 
 .map-label {
-  color: var(--forest);
+  color: var(--water);
 }
 
 .map-tools {
@@ -571,7 +617,7 @@ rt {
 .map-viewport {
   overflow: auto;
   max-height: 75vh;
-  background: #f4f3ee;
+  background: var(--paper);
   overscroll-behavior: contain;
 }
 
@@ -626,7 +672,7 @@ rt {
 }
 
 .figure-label {
-  color: var(--forest);
+  color: var(--coral);
   font-size: 11px;
   font-weight: 700;
 }
@@ -637,7 +683,7 @@ rt {
   height: auto;
   max-height: 78vh;
   object-fit: contain;
-  background: #f4f3ee;
+  background: var(--paper);
 }
 
 .sources {

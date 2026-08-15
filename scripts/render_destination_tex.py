@@ -100,7 +100,7 @@ def cover_tex(book: dict[str, Any], chapters: list[dict[str, Any]]) -> str:
   \thispagestyle{{empty}}
   \LTBrand
   \vspace*{{13mm}}
-  {{\displayfont\fontsize{{8}}{{10}}\selectfont\color{{LTVermilion}}
+  {{\displayfont\fontsize{{8}}{{10}}\selectfont\color{{LTWater}}
     CHINA · CITIES · XI'AN\par}}
   \vspace{{7mm}}
   {{\bfseries\fontsize{{23}}{{29}}\selectfont {tex_escape(titles['zh'])}\par}}
@@ -109,9 +109,9 @@ def cover_tex(book: dict[str, Any], chapters: list[dict[str, Any]]) -> str:
     {tex_escape(titles['ja'])}}}\par}}
   \vspace{{3mm}}
   {{{{\englishfont\fontsize{{13}}{{18}}\selectfont
-    {tex_escape(titles['en'])}}}\par}}
+    \color{{LTWater}}{tex_escape(titles['en'])}}}\par}}
   \vspace{{9mm}}
-  {{\color{{LTVermilion}}\rule{{24mm}}{{1.2pt}}}}\par
+  {{\color{{LTCoral}}\rule{{24mm}}{{1.2pt}}}}\par
   \vspace{{6mm}}
   {{\fontsize{{8.6}}{{13}}\selectfont {tex_escape(subtitles['zh'])}\par}}
   \vspace{{2mm}}

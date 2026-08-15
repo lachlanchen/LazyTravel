@@ -10,8 +10,10 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from generate_reading_candidates import (  # noqa: E402
     add_candidates,
+    ja_tokens,
     katakana_to_hiragana,
     pinyin_for_word,
+    unidic_tagger,
     zh_tokens,
 )
 from validate_readings import valid_furigana, valid_pinyin  # noqa: E402
@@ -26,6 +28,18 @@ class ReadingLayerTests(unittest.TestCase):
         text = "西安在秦岭与渭河之间。"
         tokens = zh_tokens(text)
         self.assertEqual("".join(token["text"] for token in tokens), text)
+
+    def test_ideographic_zero_years_keep_complete_pinyin(self) -> None:
+        tokens = zh_tokens("一三八〇年到二〇二六年")
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["一三八〇年"], "yī sān bā líng nián")
+        self.assertEqual(readings["二〇二六年"], "èr líng èr liù nián")
+
+    def test_japanese_year_and_duration_readings(self) -> None:
+        tokens = ja_tokens("一三八〇年より四年早い", unidic_tagger())
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["一三八〇年"], "せんさんびゃくはちじゅうねん")
+        self.assertEqual(readings["四年"], "よねん")
 
     def test_katakana_conversion(self) -> None:
         self.assertEqual(katakana_to_hiragana("セイアン"), "せいあん")

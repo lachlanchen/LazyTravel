@@ -12,7 +12,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BOOK = ROOT / "data/china/cities/xian/book.json"
-HAN_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
+HAN_RE = re.compile(r"[\u3007\u3400-\u4dbf\u4e00-\u9fff]")
 
 
 def valid_pinyin(value: str) -> bool:

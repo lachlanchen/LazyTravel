@@ -21,8 +21,8 @@ logging.getLogger("jieba").setLevel(logging.ERROR)
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BOOK = ROOT / "data/china/cities/xian/book.json"
 DEFAULT_OUTPUT = ROOT / "build/editorial/xian/reading-candidates.json"
-HAN_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
-HAN_RUN_RE = re.compile(r"([\u3400-\u4dbf\u4e00-\u9fff]+)")
+HAN_RE = re.compile(r"[\u3007\u3400-\u4dbf\u4e00-\u9fff]")
+HAN_RUN_RE = re.compile(r"([\u3007\u3400-\u4dbf\u4e00-\u9fff]+)")
 
 ZH_OVERRIDES = {
     "阿房宫": "ēpánggōng",
@@ -109,7 +109,47 @@ ZH_OVERRIDES = {
     "叙利亚": "xùlìyà",
     "义净": "yìjìng",
     "奉元路": "fèngyuánlù",
+    "安定门": "āndìngmén",
+    "安远门": "ānyuǎnmén",
+    "北广济街": "běiguǎngjìjiē",
+    "北院门": "běiyuànmén",
+    "长乐门": "chánglèmén",
+    "大皮院": "dàpíyuàn",
+    "鼓楼": "gǔlóu",
+    "广济街": "guǎngjìjiē",
+    "化觉巷": "huàjuéxiàng",
+    "化觉巷清真大寺": "huàjuéxiàng qīngzhēn dàsì",
+    "回坊": "huífāng",
+    "回民街": "huímínjiē",
+    "礼拜大殿": "lǐbài dàdiàn",
+    "莲湖区志": "liánhú qūzhì",
     "南大街": "nándàjiē",
+    "清真大寺": "qīngzhēn dàsì",
+    "清真寺": "qīngzhēnsì",
+    "陕西省志": "shǎnxī shěngzhì",
+    "书院门": "shūyuànmén",
+    "西安府志": "xī'ān fǔzhì",
+    "西大街": "xīdàjiē",
+    "西羊市": "xīyángshì",
+    "永宁门": "yǒngníngmén",
+    "钟楼": "zhōnglóu",
+    "周长为": "zhōucháng wéi",
+    "均为": "jūn wéi",
+    "标为": "biāo wéi",
+    "列为": "lièwéi",
+    "为准": "wéi zhǔn",
+    "走完": "zǒuwán",
+    "全程": "quánchéng",
+    "全圈": "quánquān",
+    "征得": "zhēngdé",
+    "四进院落": "sìjìn yuànluò",
+    "十三点七四": "shísān diǎn qī sì",
+    "一三八四年": "yī sān bā sì nián",
+    "一五八二年": "yī wǔ bā èr nián",
+    "一三八〇年": "yī sān bā líng nián",
+    "一三九二年": "yī sān jiǔ èr nián",
+    "七四二年": "qī sì èr nián",
+    "二〇二六年": "èr líng èr liù nián",
     "镐京": "hàojīng",
     "潏河": "juéhé",
     "潏": "jué",
@@ -183,6 +223,7 @@ JA_OVERRIDES = {
     "何を": "なにを",
     "四関": "しかん",
     "四つ": "よっつ",
+    "四年": "よねん",
     "大興城": "だいこうじょう",
     "外郭城": "がいかくじょう",
     "一号坑": "いちごうこう",
@@ -209,7 +250,37 @@ JA_OVERRIDES = {
     "玄奘": "げんじょう",
     "義浄": "ぎじょう",
     "奉元路": "ほうげんろ",
+    "永寧門": "えいねいもん",
+    "北院門": "ほくいんもん",
+    "化覚巷清真大寺": "かかくこうせいしんだいじ",
+    "化覚巷": "かかくこう",
+    "清真大寺": "せいしんだいじ",
+    "清真寺": "せいしんじ",
+    "回族街区": "かいぞくがいく",
+    "回民街": "かいみんがい",
+    "鼓楼": "ころう",
+    "広済街": "こうさいがい",
+    "北広済街": "ほくこうさいがい",
+    "書院門": "しょいんもん",
+    "西大街": "せいだいがい",
+    "西羊市": "せいようし",
+    "大皮院": "だいひいん",
+    "礼拝大殿": "れいはいだいでん",
+    "蓮湖区志": "れんこくし",
+    "陝西省志": "せんせいしょうし",
+    "西安府志": "せいあんふし",
     "南大街": "なんだいがい",
+    "一周": "いっしゅう",
+    "明初": "みんしょ",
+    "環城路": "かんじょうろ",
+    "月台": "げつだい",
+    "十三・七四": "じゅうさんてんななよん",
+    "一三八四年": "せんさんびゃくはちじゅうよねん",
+    "一五八二年": "せんごひゃくはちじゅうにねん",
+    "一三八〇年": "せんさんびゃくはちじゅうねん",
+    "一三九二年": "せんさんびゃくきゅうじゅうにねん",
+    "七四二年": "ななひゃくよんじゅうにねん",
+    "二〇二六年": "にせんにじゅうろくねん",
     "潏河": "けつが",
     "渭河": "いが",
     "泾河": "けいが",
@@ -218,12 +289,17 @@ JA_OVERRIDES = {
     "浐河": "さんが",
     "灞河": "はが",
     "弩兵": "どへい",
+    "甲片": "こうへん",
     "麗山園": "れいざんえん",
     "神合": "しんごう",
     "国子監": "こくしかん",
     "呂大忠": "りょだいちゅう",
     "114石": "ひゃくじゅうよんせき",
     "火曜日": "かようび",
+}
+
+ZH_LITERAL_SPAN_OVERRIDES = {
+    key: ZH_OVERRIDES[key] for key in ("一三八〇年", "二〇二六年")
 }
 
 
@@ -256,12 +332,24 @@ def pinyin_for_word(value: str) -> str:
 
 def zh_tokens(value: str) -> list[dict[str, str]]:
     pieces: list[dict[str, str]] = []
-    for token in jieba.cut(value, cut_all=False, HMM=False):
-        for part in filter(None, HAN_RUN_RE.split(token)):
-            item = {"text": part}
-            if HAN_RE.search(part):
-                item["reading"] = pinyin_for_word(part)
-            pieces.append(item)
+    literal_pattern = re.compile(
+        "("
+        + "|".join(
+            re.escape(key)
+            for key in sorted(ZH_LITERAL_SPAN_OVERRIDES, key=len, reverse=True)
+        )
+        + ")"
+    )
+    for span in filter(None, literal_pattern.split(value)):
+        if span in ZH_LITERAL_SPAN_OVERRIDES:
+            pieces.append({"text": span, "reading": ZH_LITERAL_SPAN_OVERRIDES[span]})
+            continue
+        for token in jieba.cut(span, cut_all=False, HMM=False):
+            for part in filter(None, HAN_RUN_RE.split(token)):
+                item = {"text": part}
+                if HAN_RE.search(part):
+                    item["reading"] = pinyin_for_word(part)
+                pieces.append(item)
     if "".join(item["text"] for item in pieces) != value:
         raise ValueError("Chinese tokenization did not preserve the source text")
     return pieces

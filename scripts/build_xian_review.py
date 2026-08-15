@@ -24,6 +24,7 @@ CHAPTER_IDS = (
     "ch02-capitals-on-different-maps",
     "ch03-army-under-earth",
     "ch04-let-text-lead",
+    "ch05-inside-the-wall",
 )
 BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
@@ -154,6 +155,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "scripts/build_xian_capital_layers_map.py",
         ROOT / "scripts/build_xian_qin_mausoleum_pits_map.py",
         ROOT / "scripts/build_xian_written_word_route_map.py",
+        ROOT / "scripts/build_xian_inside_wall_route_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
@@ -162,9 +164,13 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/maps/xian/xian-capital-layers.config.json",
         ROOT / "data/maps/xian/xian-qin-mausoleum-pits.config.json",
         ROOT / "data/maps/xian/xian-written-word-route.config.json",
+        ROOT / "data/maps/xian/xian-inside-wall-route.config.json",
+        ROOT / "data/maps/xian/xian-inside-wall-route.geojson",
+        ROOT / "data/maps/xian/xian-before-walls.geojson",
         ROOT / "data/images/xian/xian-daming-site-impression.prompt.md",
         ROOT / "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
         ROOT / "data/images/xian/xian-rubbing-replica-demonstration.prompt.md",
+        ROOT / "data/images/xian/xian-lane-courtyard-threshold.prompt.md",
     }
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
     used_asset_ids = {
@@ -233,6 +239,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_xian_capital_layers_map.py"])
         run([sys.executable, "scripts/build_xian_qin_mausoleum_pits_map.py"])
         run([sys.executable, "scripts/build_xian_written_word_route_map.py"])
+        run([sys.executable, "scripts/build_xian_inside_wall_route_map.py"])
     run(
         [
             sys.executable,

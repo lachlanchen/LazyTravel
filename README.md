@@ -24,11 +24,11 @@ japan/prefectures/<prefecture>
 world/countries/<country>
 ```
 
-Current verified milestone: Xi'an Chapters 1-4, `38` aligned content blocks,
-`59` B6 pages, four reproducible maps, and three disclosed realistic editorial
-figures. The Xi'an outline contains exactly `11` chapters; Chapter 7 is the
-dedicated nearby-area chapter for Huashan, Lintong, Han Yangling, selected
-Qinling foothills, and western imperial landscapes.
+Current verified milestone: Xi'an Chapters 1-5, `50` aligned content blocks,
+`76` B6 pages, five reproducible maps, and four realistic editorial figures
+with technical provenance. The Xi'an outline contains exactly `11` chapters;
+Chapter 7 is the dedicated nearby-area chapter for Huashan, Lintong, Han
+Yangling, selected Qinling foothills, and western imperial landscapes.
 
 ## Source Boundary
 
