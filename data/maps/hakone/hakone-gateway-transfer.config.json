@@ -1,0 +1,78 @@
+{
+  "id": "hakone-gateway-transfer",
+  "snapshot_date": "2026-08-16",
+  "title": {
+    "zh": "进山前先选入口",
+    "ja": "山へ入る前に入口を選ぶ",
+    "en": "CHOOSE THE GATEWAY BEFORE THE MOUNTAIN"
+  },
+  "nodes": [
+    {
+      "id": "west",
+      "position": [0.1, 0.72],
+      "label": "京都・名古屋\nKYOTO · NAGOYA"
+    },
+    {
+      "id": "tokyo",
+      "position": [0.9, 0.72],
+      "label": "东京・品川 / 東京・品川\nTOKYO · SHINAGAWA"
+    },
+    {
+      "id": "shinjuku",
+      "position": [0.9, 0.45],
+      "label": "新宿\nSHINJUKU"
+    },
+    {
+      "id": "odawara",
+      "position": [0.5, 0.72],
+      "label": "小田原\nODAWARA"
+    },
+    {
+      "id": "yumoto",
+      "position": [0.5, 0.42],
+      "label": "箱根汤本・箱根湯本\nHAKONE-YUMOTO"
+    },
+    {
+      "id": "gora",
+      "position": [0.29, 0.14],
+      "label": "强罗方向・強羅方面\nGORA SIDE"
+    },
+    {
+      "id": "lake",
+      "position": [0.71, 0.14],
+      "label": "旧道・湖区・旧街道・湖畔\nOLD ROAD · LAKE"
+    }
+  ],
+  "sources": [
+    {
+      "id": "HKN-NAVI-ACCESS-TOKYO",
+      "url": "https://www.hakonenavi.jp/international/en/access/tokyo",
+      "checked_at": "2026-08-16"
+    },
+    {
+      "id": "HKN-NAVI-ACCESS-WEST",
+      "url": "https://www.hakonenavi.jp/international/en/access/osaka_kyoto",
+      "checked_at": "2026-08-16"
+    },
+    {
+      "id": "HKN-NAVI-ODAWARA-STATION",
+      "url": "https://www.hakonenavi.jp/international/en/station/odawara",
+      "checked_at": "2026-08-16"
+    },
+    {
+      "id": "HKN-NAVI-YUMOTO-STATION",
+      "url": "https://www.hakonenavi.jp/international/en/station/yumoto",
+      "checked_at": "2026-08-16"
+    },
+    {
+      "id": "JRCT-TIMETABLE",
+      "url": "https://global.jr-central.co.jp/en/info/timetable/index.html",
+      "checked_at": "2026-08-16"
+    }
+  ],
+  "generalizations": [
+    "Node positions show travel decisions, not geographic coordinates or travel time.",
+    "The Odakyu line passes through Odawara; selected Romancecar services let the passenger remain aboard to Hakone-Yumoto.",
+    "The diagram does not encode a current timetable, fare, platform, or guaranteed connection."
+  ]
+}

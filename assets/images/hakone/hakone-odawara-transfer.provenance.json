@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-odawara-transfer",
+  "created_at": "2026-08-16",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "9-73da2cd9-5821-4fd4-b674-aa2f12a2a002",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/aginti-reference-links/odawara-station/pageImage01.jpg",
+      "sha256": "51386091ef4c68982641de9270859027f79a80cdf90cbc90505b454cf5b257fc",
+      "page_url": "https://www.hakonenavi.jp/international/en/station/odawara",
+      "role": "Official station photograph inspected for the shared Odakyu and Hakone Tozan gate hall; reference cache remains ignored"
+    },
+    {
+      "path": "build/aginti-reference-links/odawara-station/pageImage02.jpg",
+      "sha256": "cb01957fde781ca3c5a28973ac82e3787382eced475eb382fd07b766201b4954",
+      "page_url": "https://www.hakonenavi.jp/international/en/station/odawara",
+      "role": "Official station photograph inspected for roof, platform, and interchange scale; reference cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-odawara-transfer.prompt.md",
+    "sha256": "cafa546b04632b3f90f2c597be0f5551c605598523c79dddf9c3bcee651dd0e5"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-odawara-transfer-v3/task_manifest.json",
+      "sha256": "6b20d78a2e828802297fa2f0132bcb6cef690c64624057fde3a92ab4b786c9b7",
+      "role": "Character and official-station reference generation"
+    },
+    {
+      "path": "build/aginti/hakone-odawara-transfer-v4/task_manifest.json",
+      "sha256": "c8f19666a1337158c745695a1e436277f59fc1f4b9536cb2a6a6bf9b21b11866",
+      "role": "Selected cleanup generation removing background passengers and sign lettering"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-odawara-transfer-v4/hakone-odawara-transfer-v4.png",
+    "sha256": "fdf3e5aa654e03bf8ef5db3e57077b3dabc2bfec9a81282293057e200faff533",
+    "bytes": 12392643,
+    "width": 5056,
+    "height": 3392
+  },
+  "output": {
+    "path": "assets/images/hakone/hakone-odawara-transfer.jpg",
+    "sha256": "43443e6eac8a046b9e25f084c72afcb3af45a88094c308430cb1c580471358f5",
+    "bytes": 1498717,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-odawara-transfer-wide.jpg",
+      "sha256": "fa42d37363e64fa43b136cc53c2992dab397c00dc1910457f3248a9049e3f296",
+      "bytes": 1220067,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-odawara-transfer-web.jpg",
+      "sha256": "cc910c88a72d5bbe842b7cd5136adc745c49c853d03065b5fc071a950be35ebf",
+      "bytes": 414099,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The figure conveys a deliberate interchange inside Odawara Station; it is not a navigable floor plan or a claim about a specific gate",
+    "Blank sign panels prevent the illustration from substituting for current station signs, platforms, or operating information",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "Reader-facing captions explain the transfer decision and do not discuss production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "no_unsafe_track_access": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "notes": "The selected raw image and 16:9 variants passed original-size inspection. The compiled B6 figure and trilingual caption pass on page 19: build/qa/books/hakone/ch02-review/page-19.png, sha256 f7bc14c91cbbc8ded56646c748e75d520b0d0e9dcf6a41fbc261d11fee1ab076. The 1920 x 1080 web crop passes at 390 px with the station dominant and all four guides distinct: build/qa/site/hakone-ch02/browser/mobile-02-figure.png, sha256 58d1534c9bdb819f3894aaf42735b792259c31b0b7cca7f15f78fd5438994865."
+  }
+}

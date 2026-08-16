@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-yumoto-arrival",
+  "created_at": "2026-08-16",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "3-007f661d-c64b-4b9b-a51f-ea0cf3a043cf",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-yumoto/pageImage02.jpg",
+      "sha256": "d7bbd425d86b7785decd95b1406e7749991cec2668b0ff61fb15cb7ec4f2eecc",
+      "page_url": "https://www.hakonenavi.jp/international/en/station/yumoto",
+      "role": "Official station photograph inspected for timber, canopy, and platform scale; reference cache remains ignored"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-yumoto/pageImage03.jpg",
+      "sha256": "810ac48eb98c2f95c7216052c5e13befa6b39c609687a11ccd98b80613594f5f",
+      "page_url": "https://www.hakonenavi.jp/international/en/station/yumoto",
+      "role": "Official station photograph inspected for the concourse volume and restrained materials; reference cache remains ignored"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-yumoto/pageImage10.jpg",
+      "sha256": "b746220ecd3e412e592b6f184eb5450ebb616b44a4ceb8f0c8b53cf6f4074f58",
+      "page_url": "https://www.hakonenavi.jp/hakone-luggage-transport-service/jp/",
+      "role": "Official luggage-service photograph inspected only for indoor handling context; reference cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-yumoto-arrival.prompt.md",
+    "sha256": "15a1c058c22a55b428c5196b62b15d09eafe88935991f541f0aea3079e5b6303"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-yumoto-arrival-v1/task_manifest.json",
+      "sha256": "6c602fdce5d023dbf75c228ba3be3d5b6e533adc0a685ae83fd4dfe7a184a081",
+      "role": "Character and official-station reference generation"
+    },
+    {
+      "path": "build/aginti/hakone-yumoto-arrival-v2/task_manifest.json",
+      "sha256": "fcfbeb85ccd4952e3fd39268a3776ba2f2d6d45a078b9e9013fce76994d90bdf",
+      "role": "Background-passenger cleanup generation"
+    },
+    {
+      "path": "build/aginti/hakone-yumoto-arrival-v3/task_manifest.json",
+      "sha256": "7a5e6b20d5b7a37d9cc3b81a6114905a7c205bc322a2034cf5c0fbfc01f93cf3",
+      "role": "Selected train-lettering cleanup generation"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-yumoto-arrival-v3/hakone-yumoto-arrival-v3.png",
+    "sha256": "9f4778e77c50e095bbb0ee5e7a47a68705469eeeecfffe233ec79a8199ce05a0",
+    "bytes": 12431879,
+    "width": 5056,
+    "height": 3392
+  },
+  "output": {
+    "path": "assets/images/hakone/hakone-yumoto-arrival.jpg",
+    "sha256": "fd2e848f5d6ee7f359256cf718b3d2a3b859a29c22e1e81c74eda34a4d782d3e",
+    "bytes": 1380619,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-yumoto-arrival-wide.jpg",
+      "sha256": "6bc3a9bd2776c6d2c85109ee1f39bc56f30558d6ab19591fb62f2d8c7e1bdfee",
+      "bytes": 1183755,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-yumoto-arrival-web.jpg",
+      "sha256": "f837ce3b796f4c1b3cee1ffdc81dfcbf16a1630bdf873b42106822652133be49",
+      "bytes": 404950,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The timber station, mountain train, and valley context convey Hakone-Yumoto as a threshold; the composition is not a navigable platform plan",
+    "The luggage pause illustrates a decision, not the exact location or operating hours of the luggage counter",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "Reader-facing captions explain what to decide on arrival and do not discuss production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "no_raster_text": "pass",
+    "no_unsafe_track_access": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "notes": "The selected raw image and 16:9 variants passed original-size inspection. The compiled B6 figure and trilingual caption pass on page 25: build/qa/books/hakone/ch02-review/page-25.png, sha256 51e22a48157bf0c67509ff0bc50a606b1bc095f628772bf2c6ede0dc7dcdb5bc. The 1920 x 1080 web crop passes at 390 px with the Yumoto threshold clear and all four guides distinct: build/qa/site/hakone-ch02/browser/mobile-02-figure-02.png, sha256 b89174349a2570492999e605a7d3431998a0100af629303b52b745b7879410b8."
+  }
+}

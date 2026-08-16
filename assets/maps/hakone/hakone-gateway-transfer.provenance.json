@@ -1,0 +1,76 @@
+{
+  "asset_id": "asset-hakone-gateway-transfer-map",
+  "command": "python3 scripts/build_hakone_gateway_map.py",
+  "config": "data/maps/hakone/hakone-gateway-transfer.config.json",
+  "config_sha256": "e6dd6a75fe8076c685374c1244f8c08f578e7ff119fece8c1a653585170616eb",
+  "created_at": "2026-08-16",
+  "declared_generalizations": [
+    "Node positions show travel decisions, not geographic coordinates or travel time.",
+    "The Odakyu line passes through Odawara; selected Romancecar services let the passenger remain aboard to Hakone-Yumoto.",
+    "The diagram does not encode a current timetable, fare, platform, or guaranteed connection."
+  ],
+  "files": {
+    "hakone-gateway-transfer.pdf": {
+      "bytes": 109207,
+      "sha256": "20bc291d8d88941645bde05d026a0d40b9c537030d546f2b2ff2b86e77a20fc0"
+    },
+    "hakone-gateway-transfer.png": {
+      "bytes": 590253,
+      "sha256": "2ef16b157423b349b4f4d8ab27da85842ae134808226801e4d34220ee81ff7b0"
+    },
+    "hakone-gateway-transfer.svg": {
+      "bytes": 357626,
+      "sha256": "0f210ba1141933c673c4f05e2d464eea51ba57bbeb051099c6fda210b6a008f7"
+    }
+  },
+  "method": "schematic-map-render",
+  "rights": "Map design © LazyTravel; route relationships derived from the listed official operators.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "checked_at": "2026-08-16",
+      "id": "HKN-NAVI-ACCESS-TOKYO",
+      "url": "https://www.hakonenavi.jp/international/en/access/tokyo"
+    },
+    {
+      "checked_at": "2026-08-16",
+      "id": "HKN-NAVI-ACCESS-WEST",
+      "url": "https://www.hakonenavi.jp/international/en/access/osaka_kyoto"
+    },
+    {
+      "checked_at": "2026-08-16",
+      "id": "HKN-NAVI-ODAWARA-STATION",
+      "url": "https://www.hakonenavi.jp/international/en/station/odawara"
+    },
+    {
+      "checked_at": "2026-08-16",
+      "id": "HKN-NAVI-YUMOTO-STATION",
+      "url": "https://www.hakonenavi.jp/international/en/station/yumoto"
+    },
+    {
+      "checked_at": "2026-08-16",
+      "id": "JRCT-TIMETABLE",
+      "url": "https://global.jr-central.co.jp/en/info/timetable/index.html"
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      3360,
+      2376
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "Compiled landscape B6 page keeps all gateway nodes, route labels, luggage marker, and caveats inside the trim with no collisions: build/qa/books/hakone/ch02-review/page-21.png, sha256 39a81331a8c5ed1dbf918405a2453c3013c4eb245bd41e2924cfd20e097b1bda.",
+      "The 390 px raster check keeps the decision nodes and route labels readable; the full caveat is repeated in live page text: build/qa/site/hakone-ch02/map-raster-390.png, sha256 9cb4c7834335016790464a84caa5c696f82c9142f2f17829467053345556c8e5."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-16"
+  }
+}

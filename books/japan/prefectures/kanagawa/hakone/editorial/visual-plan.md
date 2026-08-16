@@ -54,7 +54,7 @@ guides. Use the current live-type cover page as a composition reference:
 | Ch. | Map or diagram | Location/experience figures | Visual job |
 | ---: | --- | --- | --- |
 | 1 | Regional relief-style orientation map: Odawara, Yumoto, Gora, Owakudani, Lake Ashi, outer ridges, onward edges | Four guides at an elevated real-world viewpoint with the lake/ridges dominant | Explain that short map distances hide large height and weather changes. |
-| 2 | Gateway and transfer map with Tokyo/east and Kyoto/west approaches, loop-direction choices, and luggage handoff | Hakone-Yumoto arrival with luggage decision; Odawara transfer detail if it remains legible | Make the first two transfers and baggage choice visually obvious. |
+| 2 | Gateway and transfer map with Tokyo/east and Kyoto/west approaches, loop-direction choices, and luggage handoff | Odawara interchange; Hakone-Yumoto arrival with luggage decision | Make the first two transfers and baggage choice visually obvious with two distinct location scenes. |
 | 3 | Railway-to-Gora slope schematic with stations and one-museum stop | Mountain railway on a steep wooded curve; Open-Air Museum landscape view | Show gradient and why one art stop deserves time. Do not copy protected sculpture compositions. |
 | 4 | Owakudani access/safety map: Sounzan, Owakudani, Ubako, Togendai, current-check marker | Fumarole-field location plate; black-egg process/meal close-up | Show the live volcanic landscape without removing barriers or inventing access. Separate chemistry from legend. |
 | 5 | Lake Ashi shore and crossing map with weather alternatives | Lakeshore and shrine approach; boat/lakeside weather scene | Make the lake route readable even when Fuji is absent. Avoid one impossible composite viewpoint. |
@@ -66,9 +66,11 @@ guides. Use the current live-type cover page as a composition reference:
 | 11 | Nearby continuation map: one of Odawara, Mishima, or Gotemba | Odawara gateway/castle-scale scene; westbound or Fuji-side departure scene | End with one onward choice rather than an overfilled final day. |
 
 The target cadence is one cover underlay, nine code-built maps or diagrams, and
-at least fifteen approved raster figures. This is a floor for destination
-coverage, not permission to add repeated portraits. A second figure enters a
-chapter only when it performs a different travel job.
+at least twenty-two approved raster figures: normally two different location or
+food scenes per chapter. This is a floor for destination coverage, not
+permission to add repeated portraits. Each figure must perform a different
+travel job, and text blocks should stay short enough that the visual rhythm is
+not buried under explanation.
 
 ## Factual Boundaries For AgInTi Briefs
 
