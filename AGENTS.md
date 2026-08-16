@@ -6,15 +6,17 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
 ## Scope And Destination Gate
 
 - Work only in `/home/lachlan/ProjectsLFS/LazyTravel`.
-- Xi'an is the only active destination. It belongs to `china/cities/xian`.
+- Xi'an at `china/cities/xian` is complete and publicly published.
+- Hakone is the only next production destination. It belongs at
+  `japan/prefectures/kanagawa/hakone`.
 - Lanzhou belongs to `china/cities/lanzhou` and stays gated until the complete
-  Xi'an book and website have been reviewed and reproducibly built.
+  Hakone book and website have been reviewed and reproducibly built.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
   a local editorial problem.
-- All 11 Xi'an chapters have passed internal editorial, reading, PDF-page, and
-  website review. Keep Xi'an at the user-review gate; do not start Lanzhou or
-  reopen a settled chapter unless a factual, language, layout, or build failure
-  is demonstrated.
+- All 11 Xi'an chapters have passed editorial, reading, PDF-page, public
+  website, Nutstore, and GitHub publication review. Do not reopen a settled
+  Xi'an chapter unless a factual, language, layout, or build failure is
+  demonstrated.
 - Ignore unrelated world-literature work and retain only useful multilingual
   book-production experience.
 
@@ -78,6 +80,9 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   food procedure, or attraction view to display every prop.
 - Generate a new composition from the references. Keep technical generation
   and source-reference details in provenance, not in reader-facing captions.
+- Use the AgInTi image-generation route by default for Hakone and later raster
+  figures. Keep Codex on research, briefing, selection, provenance, layout, and
+  visual QA so generation does not consume the main writing context.
 - Maps and figures must remain readable at B6 print size and a 390 px viewport.
   Use larger labels, simple hierarchy, clean captions, and explicit visual QA.
 - In attraction-led chapters, include a view in which the actual destination is

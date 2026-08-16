@@ -8,19 +8,22 @@ must use the same prose, citations, assets, and reviewed pinyin/furigana layer.
 
 Repository: <https://github.com/lachlanchen/LazyTravel>
 
+Public guide: <https://lachlanchen.github.io/LazyTravel/>
+
 ## Current Editorial Gate
 
-Xi'an is the only active destination in the China Cities series. Lanzhou is the
-next city book and remains gated until the Xi'an book has passed chapter review,
-reproducible PDF builds, page-by-page visual QA, JSON validation, and website
-validation. Broader Gansu and Ningxia sources are research context, not
-destination-book titles.
+Xi'an is the completed and published first destination. Hakone is next at
+`japan/prefectures/kanagawa/hakone`; Lanzhou follows Hakone at
+`china/cities/lanzhou`. Only one destination may be in production at a time.
+Broader Gansu and Ningxia sources remain research context, not destination-book
+titles.
 
 The series taxonomy is fixed:
 
 ```text
 china/cities/<city>
 japan/prefectures/<prefecture>
+japan/prefectures/<prefecture>/<city-or-area>
 world/countries/<country>
 ```
 
@@ -38,12 +41,13 @@ district-first lodging chapter; Chapter 10 supplies nested two-, three-, and
 five-day itineraries; and Chapter 11 closes with dated booking, conditions,
 conduct, allergy, and emergency checks. The cover uses a text-free four-guide
 city-wall scene under live selectable LaTeX text. All chapters have passed the
-internal editorial, reading, page, and website gate; the complete Xi'an book
-now awaits user review before Lanzhou can begin.
+editorial, reading, page, and public website gate. Xi'an is complete;
+production now advances to Hakone before Lanzhou.
 
 The current pocket PDF SHA-256 is
 `ae2872703174ea523b051ccba21e34eeaa2182aba323bc68a23e5cf558af83c5`.
 The same verified file is mirrored to the project Nutstore share.
+The synchronized 11-chapter website is published through GitHub Pages.
 
 ## Source Boundary
 
@@ -107,6 +111,16 @@ Serve the generated site in one terminal and run browser QA in another:
 ```bash
 python3 -m http.server 4173 --bind 127.0.0.1 --directory site
 python3 scripts/qa_website.py --url http://127.0.0.1:4173/
+```
+
+Every push to `main` rebuilds and publishes the static site through
+`.github/workflows/pages.yml`. The deploy job then compares the public payload
+with canonical JSON and hashes every file in the deployed manifest. The same
+check can be repeated locally:
+
+```bash
+python3 scripts/verify_deployed_site.py \
+  --url https://lachlanchen.github.io/LazyTravel/
 ```
 
 ## Editorial Contract

@@ -13,12 +13,14 @@ The series is organized as:
 ```text
 china/cities/<city>
 japan/prefectures/<prefecture>
+japan/prefectures/<prefecture>/<city-or-area>
 world/countries/<country>
 ```
 
-Xi'an and Lanzhou are China Cities books. Build one destination at a time,
-starting with Xi'an; do not begin Lanzhou until Xi'an passes its complete
-editorial and reproducibility gate.
+Xi'an and Lanzhou are China Cities books. Hakone is a Kanagawa destination at
+`japan/prefectures/kanagawa/hakone`. Build one destination at a time in this
+order: Xi'an, Hakone, then Lanzhou. Xi'an has passed its complete gate; do not
+begin Lanzhou until Hakone has passed the same gate.
 
 ## Xi'an Structure
 
@@ -81,6 +83,9 @@ clean legible maps without padding or duplicated chapters.
   clutter, accurate provenance, and separate B6/mobile visual checks.
 - Reuse source images only after rights and editorial review. Otherwise create
   original high-resolution realistic figures with captions and provenance.
+- For Hakone and later books, use the AgInTi image-generation route for new
+  raster figures when available. Codex remains responsible for the visual
+  brief, factual boundaries, provenance, selection, and B6/mobile QA.
 - Attraction-led chapters must include an attraction-dominant view at a useful
   scale. Aya-chan and Lala Xia may establish traveler scale in the foreground,
   but the destination remains the main subject; instructional scenes do not
@@ -124,10 +129,11 @@ repository publication, and pocket-PDF sync have passed this gate.
 
 ## Current Gate
 
-As of `2026-08-16`, all 11 Xi'an chapters have passed internal editorial,
-reading, page, and website review and build reproducibly as one `195`-page B6
+As of `2026-08-16`, all 11 Xi'an chapters have passed editorial, reading, page,
+and public website review and build reproducibly as one `195`-page B6
 pocket PDF from `125` aligned blocks, with ten maps and fifteen chapter
 figures. The text-free four-guide cover sits beneath selectable LaTeX text, and
 the synchronized website passes the same JSON, ruby, asset, citation, desktop,
-and mobile gates. Xi'an now awaits user review as a complete destination book;
-Lanzhou remains locked until that review is accepted.
+and mobile gates. The public guide is available at
+<https://lachlanchen.github.io/LazyTravel/>. Hakone is the next active book;
+Lanzhou remains queued behind it.

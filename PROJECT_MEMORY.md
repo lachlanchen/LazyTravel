@@ -47,6 +47,9 @@ history, rollout data, or session backups.
 - Technical provenance records reference paths, hashes, rights, generation
   method, factual limits, and visual QA. Reader captions describe the travel
   subject rather than the production process.
+- For Hakone and later destinations, AgInTi is the default raster-figure
+  generator. Codex prepares the factual visual brief and performs selection,
+  provenance, B6 proof, and mobile proof; generation notes remain technical.
 - Attraction-led chapters need attraction-dominant views, with Aya and Lala as
   traveler-scale guides rather than the primary spectacle. Existing
   instructional figures remain useful but do not satisfy that need by
@@ -69,5 +72,7 @@ two-, three-, and five-day routes, and Chapter 11 closes the trip with dated
 departure checks. The verified pocket has `195` B6 pages, `125` blocks, ten
 maps, fifteen figures, and SHA-256
 `ae2872703174ea523b051ccba21e34eeaa2182aba323bc68a23e5cf558af83c5`.
-Lanzhou remains gated until the user accepts the complete Xi'an book and
-synchronized website review.
+The synchronized website is publicly deployed at
+`https://lachlanchen.github.io/LazyTravel/`; all 74 published files match the
+manifest and canonical JSON. Xi'an is complete. Hakone is next at
+`japan/prefectures/kanagawa/hakone`, followed by Lanzhou.
