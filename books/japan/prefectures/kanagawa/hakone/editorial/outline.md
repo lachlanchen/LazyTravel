@@ -20,8 +20,8 @@ The book has exactly 11 chapters. The count is locked because each chapter has
 a distinct travel decision; merging any two would overload a pocket chapter,
 while splitting them would create thin filler.
 
-Milestone status on `2026-08-17`: Chapters 1-4 are reviewed and reproducibly
-built. Chapter 5 is the only active drafting target.
+Milestone status on `2026-08-17`: Chapters 1-5 are reviewed and reproducibly
+built. Chapter 6 is the only next drafting target.
 
 ## Chapter Spine
 
@@ -64,13 +64,14 @@ built. Chapter 5 is the only active drafting target.
    and ropeway operation must be rechecked immediately before publication and
    again by the traveler.
 
-5. **芦之湖的一天：神社、湖岸与天气**<br>
-   **芦ノ湖の一日：神社、湖畔、天気**<br>
-   **A Day on Lake Ashi: Shrine, Shore, and Weather**
+5. **芦之湖：神社、公鱼、湖岸**<br>
+   **芦ノ湖：神社・わかさぎ・湖畔**<br>
+   **Lake Ashi: Shrine, Wakasagi, and Shore**
 
    Connect Togendai, Moto-Hakone, Hakone Shrine, Hakone-machi, and the lake
    crossings without pretending that every boat or Fuji view is essential.
-   Separate shrine tradition from established historical evidence. Give clear
+   Separate shrine tradition from established historical evidence, connect
+   wakasagi to the lake rather than a generic food list, and give clear
    wet-weather and low-visibility choices.
 
 6. **旧东海道与箱根关所：走一段路，读一种制度**<br>

@@ -57,7 +57,7 @@ crossing rather than a catalogue of sights:
 2. Odawara to Yumoto: Make Transfers Part of the Day
 3. Climb to Gora: Grade, Art, and Time to Stop
 4. Cross Owakudani: See the Volcano Before Fuji
-5. A Day on Lake Ashi: Shrine, Shore, and Weather
+5. Lake Ashi: Shrine, Wakasagi, and Shore
 6. Old Tokaido and the Checkpoint: Walk the Road, Read the System
 7. One Night in an Onsen Ryokan: Bathing, Dinner, and Quiet
 8. Eat Along the Route: Black Eggs, Amazake, and the Dinner Clock
@@ -153,7 +153,7 @@ destination does not open work on two later books at once.
 
 ## Current Gate
 
-As of `2026-08-16`, all 11 Xi'an chapters have passed editorial, reading, page,
+As of `2026-08-17`, all 11 Xi'an chapters have passed editorial, reading, page,
 and public website review and build reproducibly as one `195`-page B6
 pocket PDF from `125` aligned blocks, with ten maps and fifteen chapter
 figures. The text-free four-guide cover sits beneath selectable LaTeX text, and
@@ -162,10 +162,11 @@ and mobile gates. The public guide is available at
 <https://lachlanchen.github.io/LazyTravel/>. Hakone is the next active book;
 Lanzhou remains queued behind it.
 
-Hakone has a locked 11-chapter structure. Chapters 1 through 4 have passed the
+Hakone has a locked 11-chapter structure. Chapters 1 through 5 have passed the
 editorial, reading, PDF-page, website, Nutstore, and GitHub milestone gates.
-The current pocket review has `67` B6 pages and SHA-256
-`73ec6fb6a93f8b786762e116d1fc7ba3f727cf0c3c1115742538c3d7af6ed5cd`.
-It contains `37` aligned blocks, four maps, eleven figures, and the website
-renders `5,503` reviewed ruby nodes from the same JSON. Hakone remains
-incomplete; Chapter 5, **A Day on Lake Ashi**, is the only next production gate.
+The current pocket review has `86` B6 pages and SHA-256
+`8c6a0835c9a1195662981b4d5d02ab4b2b6f39d529d0aed2b3108071c159a430`.
+It contains `47` aligned blocks, five maps, sixteen figures, and the website
+renders `7,242` reviewed ruby nodes from the same JSON. Hakone remains
+incomplete; Chapter 6, **Old Tokaido and the Checkpoint**, is the only next
+production gate.

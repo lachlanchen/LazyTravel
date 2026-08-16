@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-lake-ashi-choice-map",
+  "snapshot_date": "2026-08-17",
+  "title": {
+    "zh": "芦之湖：元箱根与箱根町怎么选",
+    "ja": "芦ノ湖：元箱根と箱根町の選び方",
+    "en": "Lake Ashi: Moto-Hakone or Hakone-machi?"
+  },
+  "boat_minutes": "25–40 MIN",
+  "nodes": [
+    {
+      "id": "togendai",
+      "zh": "桃源台",
+      "zh_reading": "Táoyuántái",
+      "ja": "桃源台",
+      "ja_reading": "とうげんだい",
+      "en": "TOGENDAI"
+    },
+    {
+      "id": "motohakone",
+      "zh": "元箱根",
+      "zh_reading": "Yuánxiānggēn",
+      "ja": "元箱根",
+      "ja_reading": "もとはこね",
+      "en": "MOTO-HAKONE"
+    },
+    {
+      "id": "hakonemachi",
+      "zh": "箱根町",
+      "zh_reading": "Xiānggēntīng",
+      "ja": "箱根町",
+      "ja_reading": "はこねまち",
+      "en": "HAKONE-MACHI"
+    },
+    {
+      "id": "shrine",
+      "zh": "箱根神社",
+      "zh_reading": "Xiānggēn Shénshè",
+      "ja": "箱根神社",
+      "ja_reading": "はこねじんじゃ",
+      "en": "HAKONE SHRINE"
+    },
+    {
+      "id": "lunch",
+      "zh": "公鱼午饭",
+      "zh_reading": "Gōngyú wǔfàn",
+      "ja": "わかさぎ昼食",
+      "ja_reading": "ちゅうしょく",
+      "en": "WAKASAGI LUNCH"
+    },
+    {
+      "id": "park",
+      "zh": "恩赐公园",
+      "zh_reading": "Ēncì Gōngyuán",
+      "ja": "恩賜公園",
+      "ja_reading": "おんしこうえん",
+      "en": "ONSHI PARK"
+    }
+  ],
+  "choices": [
+    {
+      "id": "shrine_first",
+      "color": "jade",
+      "time": "35–50 MIN",
+      "zh": "神社优先",
+      "ja": "神社を先に",
+      "en": "SHRINE FIRST"
+    },
+    {
+      "id": "park_first",
+      "color": "cobalt",
+      "time": "55–80 MIN",
+      "zh": "公园优先",
+      "ja": "公園を先に",
+      "en": "PARK FIRST"
+    },
+    {
+      "id": "both",
+      "color": "coral",
+      "time": "90–120 MIN",
+      "zh": "神社 + 公园；另加午饭",
+      "ja": "神社 + 公園；昼食は別",
+      "en": "SHRINE + PARK; ADD LUNCH"
+    }
+  ],
+  "sources": [
+    {
+      "id": "HKN-CRUISE",
+      "url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+      "checked_at": "2026-08-17",
+      "use": "Togendai to southern-port planning duration and current port relationship"
+    },
+    {
+      "id": "HKN-CRUISE-FAQ",
+      "url": "https://www.hakonenavi.jp/hakone-kankosen/cruise/",
+      "checked_at": "2026-08-17",
+      "use": "Weather-related route, departure, destination, and suspension caveats"
+    },
+    {
+      "id": "HKN-TOGENDAI",
+      "url": "https://www.hakonenavi.jp/transportation/station/togendai/",
+      "checked_at": "2026-08-17",
+      "use": "Cruise and bus interchange at Togendai"
+    },
+    {
+      "id": "HKN-MOTOHAKONE",
+      "url": "https://www.hakonenavi.jp/transportation/station/motohakone/",
+      "checked_at": "2026-08-17",
+      "use": "Moto-Hakone port and onward transport relationship"
+    },
+    {
+      "id": "HKN-SHRINE-ACCESS",
+      "url": "https://hakonejinja.or.jp/access/",
+      "checked_at": "2026-08-17",
+      "use": "Approximate ten-minute walk from Moto-Hakone to Hakone Shrine"
+    },
+    {
+      "id": "HKN-ONSHI-PARK",
+      "url": "https://www.pref.kanagawa.jp/docs/tu5/cnt/f6599/p19701.html",
+      "checked_at": "2026-08-17",
+      "use": "Onshi-Hakone Park location and visitor-ground context"
+    }
+  ],
+  "generalizations": [
+    "This is a decision diagram, not a geographic map; port spacing, paths, and shoreline geometry are not to scale",
+    "The operator's roughly 25 to 40 minutes from Togendai to the southern ports is not a timetable or connection guarantee",
+    "The 35–50, 55–80, and 90–120 minute windows are LazyTravel planning ranges, not operator promises",
+    "Lunch time, queues, and bus waiting are additional to the south-shore ranges",
+    "The orange fallback means recheck a currently operating bus from Togendai; it does not claim that bus service duplicates the cruise",
+    "Weather can alter the cruise route, departure, destination, or operation at short notice"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-17",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch05-proof-final/page-66.png",
+        "physical_page": 66,
+        "sha256": "f2a951d1264bd741f86b86b6426b2a1ee014afeda214d916979e172fee2aa956"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch05-assets/mobile-map-contact.jpg",
+        "viewport_css_px": 390,
+        "pannable_width_css_px": 760,
+        "sha256": "c2a30b5501420d9c2ec526ca639bd524dc8d2580aeec28a8c439aacded8e3b4e"
+      }
+    },
+    "notes": [
+      "Full-size labels, the compiled B6 page, and both halves of the 760 px diagram inside a 390 px mobile viewport passed visual review."
+    ]
+  }
+}

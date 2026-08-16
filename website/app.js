@@ -56,6 +56,12 @@ const assetLabels = {
   "asset-hakone-black-eggs": "OWAKUDANI · BLACK EGGS",
   "asset-hakone-nature-trail": "OWAKUDANI · RESERVED NATURE TRAIL",
   "asset-hakone-ropeway-lake-descent": "OWAKUDANI TO TOGENDAI · DESCEND TO THE LAKE",
+  "asset-hakone-togendai-harbor-choice": "TOGENDAI · CHOOSE BOAT OR BUS",
+  "asset-hakone-lake-ashi-choice-map": "LAKE ASHI · CHOOSE THE SOUTHBOUND STOP",
+  "asset-hakone-lake-ashi-crossing": "LAKE ASHI · CROSSING SOUTH",
+  "asset-hakone-shrine-forest-approach": "HAKONE SHRINE · FOREST APPROACH",
+  "asset-hakone-wakasagi-lunch": "WAKASAGI · A LAKE MEAL",
+  "asset-hakone-onshi-park-villa-ground": "ONSHI PARK · SHORE AND VILLA GROUND",
 };
 const state = {
   document: null,
@@ -240,15 +246,16 @@ function renderVisualCaption(asset, className) {
 function renderMap(asset, number) {
   const figure = element("figure", "map-figure");
   const bar = element("div", "map-bar");
-  const visualLabel = assetLabels[asset.id] || asset.id.replace(/^asset-/, "").toUpperCase();
+  const visualLabel = assetLabels[asset.id];
+  const mapNumber = `MAP ${String(number).padStart(2, "0")}`;
   bar.append(
-    element("span", "map-label", `MAP ${String(number).padStart(2, "0")} · ${visualLabel}`),
+    element("span", "map-label", visualLabel ? `${mapNumber} · ${visualLabel}` : mapNumber),
   );
 
   const tools = element("div", "map-tools");
   const viewport = element("div", "map-viewport");
   viewport.tabIndex = 0;
-  viewport.setAttribute("aria-label", `Scrollable map: ${visualLabel}`);
+  viewport.setAttribute("aria-label", `Scrollable map: ${visualLabel || asset.captions.en}`);
   const stage = element("div", "map-stage");
   const image = document.createElement("img");
   image.src = asset.variants.web;
@@ -305,9 +312,12 @@ function renderMap(asset, number) {
 
 function renderFigure(asset, number) {
   const figure = element("figure", "editorial-figure");
-  const label = assetLabels[asset.id] || asset.id.replace(/^asset-/, "").toUpperCase();
+  const label = assetLabels[asset.id];
+  const figureNumber = `FIGURE ${String(number).padStart(2, "0")}`;
   const bar = element("div", "figure-bar");
-  bar.append(element("span", "figure-label", `FIGURE ${String(number).padStart(2, "0")} · ${label}`));
+  bar.append(
+    element("span", "figure-label", label ? `${figureNumber} · ${label}` : figureNumber),
+  );
   const image = document.createElement("img");
   image.className = "figure-image";
   image.src = asset.variants?.web || asset.variants?.fallback || asset.path;

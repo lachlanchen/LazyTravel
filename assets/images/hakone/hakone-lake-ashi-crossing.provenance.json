@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-lake-ashi-crossing",
+  "created_at": "2026-08-17",
+  "method": "generated-landscape-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "1-3780f7e5-8cb6-4a26-886f-9d73410443c5",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/cruise-frame-06.jpg",
+      "sha256": "184144361517d47bc0ea39039401db561600769b629feda5daa45171e3a291f1",
+      "page_url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+      "role": "Official cruise footage frame for open-deck safety rail and lake scale; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/cruise-frame-28.jpg",
+      "sha256": "de9fdbd6aa6de2596933db5937e87c3a8184c332b021faf6957cbf8dc4eaff0f",
+      "page_url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+      "role": "Official cruise footage frame for Lake Ashi ridge and wake context; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-lake-ashi-crossing.prompt.md",
+    "sha256": "426131b0752c676df247968e4661737ff2b2a33e0f1430c095ca6c22be59e3bf"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-lake-ashi-crossing-v1/task_manifest.json",
+      "sha256": "454bcb21f45192cec1efce323bab53baced93516dfcdbf010cc0065da37d5d5d",
+      "bytes": 3147,
+      "role": "Selected four-guide Lake Ashi crossing scene"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-lake-ashi-crossing-v1/hakone-lake-ashi-crossing-v1.png",
+    "sha256": "04c8e71bfe6d9341689ab07cda2503f1d90fb5d6605f2aef95fafcdf7cf92165",
+    "bytes": 12858579,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-lake-ashi-crossing.jpg",
+    "sha256": "57b6eeccdf05ea567fe2a78248ac381c7285336c82b8b25b7b14274de93eb626",
+    "bytes": 1719498,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-lake-ashi-crossing-wide.jpg",
+      "sha256": "aa10b91bf24ba883dbb6e3ab7a80cf0bffae25ec5447db57b8a2ec580e432e96",
+      "bytes": 1618338,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-lake-ashi-crossing-web.jpg",
+      "sha256": "d8d92c2ad342dbd8ab90db1850d7c84e76e16651c7628897a6995932970ada30",
+      "bytes": 542528,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene communicates the enclosed lake-and-ridge setting rather than documenting a named vessel or sailing",
+    "No Mount Fuji view is shown or promised",
+    "Passengers should follow the actual vessel's deck closures and safety instructions"
+  ],
+  "reader_caption_policy": "Caption directs attention to the caldera ridges and south-shore orientation without claiming a guaranteed Fuji view.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-17",
+    "notes": "Original-size scenes, bottom-anchored delivery crops, compiled B6 pages, and 340 CSS px figure proofs inside a 390 px mobile viewport passed visual review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch05-proof-final/page-68.png",
+        "sha256": "b89bed0a1391f2c7767a4a6d2cef0fb54b298f50b472bf37768f501b5d642810",
+        "bytes": 1239275,
+        "physical_page": 68
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch05-assets/mobile-hakone-lake-ashi-crossing.jpg",
+        "sha256": "3535735dd82fac901c54ecbabf65b6fa089bff666cb21547c98646d3f3820d1f",
+        "bytes": 32745,
+        "width": 340,
+        "height": 191,
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    }
+  }
+}

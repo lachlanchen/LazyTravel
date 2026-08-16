@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-togendai-harbor-choice",
+  "created_at": "2026-08-17",
+  "method": "generated-transport-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "11-d49cfdd3-0d88-42a4-8756-4c763618167e",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/cruise-frame-36.jpg",
+      "sha256": "fcfcb899c8002f60627c031acfe50847ff3d51529c7b1e627c09463230e5309d",
+      "page_url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+      "role": "Official cruise footage frame for current Togendai vessel and sheltered harbour context; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/cruise-opg.png",
+      "sha256": "027349faa11462bfe1e91c41ea0facfb6da60d71b61860165ed012d3738bc48f",
+      "page_url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+      "role": "Official cruise page image for contemporary vessel colour and terminal context; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-togendai-harbor-choice.prompt.md",
+    "sha256": "9df3477f7daa4f0b1c7df7fd03d79a14af59bdd11d851f5168cee0df7f7aa31e"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-togendai-harbor-choice-v1/task_manifest.json",
+      "sha256": "156e37c35e7314b30e77240519b95bb32699fb3d9599fd78e6636a6dc586df6b",
+      "bytes": 3159,
+      "role": "Selected four-guide harbour decision scene"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-togendai-harbor-choice-v1/hakone-togendai-harbor-choice-v1.png",
+    "sha256": "704cb5fe73f0be1b7200c1af6de12939e5c5b5f96d7f8501bf5bcfe7f3ecfddb",
+    "bytes": 13744232,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-togendai-harbor-choice.jpg",
+    "sha256": "18186d22cdf4599d69b68ff038a943ecc26511ff477fddf2331e22bcded582e9",
+    "bytes": 1820505,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-togendai-harbor-choice-wide.jpg",
+      "sha256": "5ebde445a6b0e6c48b3f6b6a211056b2629a0e2e0f45776063f77c2b770d0250",
+      "bytes": 1662929,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-togendai-harbor-choice-web.jpg",
+      "sha256": "2f8b51a4dbf6905949e04b2cfc9f1a990c54ab6880281529478654d88e8514e8",
+      "bytes": 528223,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene represents a current decision point at Togendai rather than one promised departure, vessel, queue, or weather condition",
+    "The unlettered route card is editorial and does not replace the live timetable or destination display",
+    "Boarding gates and staff instructions on the day remain authoritative"
+  ],
+  "reader_caption_policy": "Caption tells the reader to choose the southern landing before buying a ticket and does not present the scene as live service information.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-17",
+    "notes": "Original-size scenes, bottom-anchored delivery crops, compiled B6 pages, and 340 CSS px figure proofs inside a 390 px mobile viewport passed visual review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch05-proof-final/page-64.png",
+        "sha256": "1ad72988cc69db5fbcd04a5da8f912cda3a5e6dbac18e35fffdcae247a8bebb4",
+        "bytes": 1150772,
+        "physical_page": 64
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch05-assets/mobile-hakone-togendai-harbor-choice.jpg",
+        "sha256": "fd594ea904bbc187162d94c804b95884c2fd4cb1a5373726781172b3e48764fa",
+        "bytes": 29184,
+        "width": 340,
+        "height": 191,
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    }
+  }
+}

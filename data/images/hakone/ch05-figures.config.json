@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-17",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-hakone-togendai-harbor-choice",
+      "stem": "hakone-togendai-harbor-choice",
+      "method": "generated-transport-figure",
+      "prompt": "data/images/hakone/hakone-togendai-harbor-choice.prompt.md",
+      "selected_raw": "build/aginti/hakone-togendai-harbor-choice-v1/hakone-togendai-harbor-choice-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-togendai-harbor-choice-v1/task_manifest.json",
+          "role": "Selected four-guide harbour decision scene"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch05-references/cruise-frame-36.jpg",
+          "page_url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+          "role": "Official cruise footage frame for current Togendai vessel and sheltered harbour context; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch05-references/cruise-opg.png",
+          "page_url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+          "role": "Official cruise page image for contemporary vessel colour and terminal context; cache remains ignored"
+        }
+      ],
+      "factual_limits": [
+        "The scene represents a current decision point at Togendai rather than one promised departure, vessel, queue, or weather condition",
+        "The unlettered route card is editorial and does not replace the live timetable or destination display",
+        "Boarding gates and staff instructions on the day remain authoritative"
+      ],
+      "reader_caption_policy": "Caption tells the reader to choose the southern landing before buying a ticket and does not present the scene as live service information.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone-ch05-proof-final/page-64.png",
+        "physical_page": 64,
+        "mobile_path": "build/qa/hakone-ch05-assets/mobile-hakone-togendai-harbor-choice.jpg",
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    },
+    {
+      "asset_id": "asset-hakone-lake-ashi-crossing",
+      "stem": "hakone-lake-ashi-crossing",
+      "method": "generated-landscape-figure",
+      "prompt": "data/images/hakone/hakone-lake-ashi-crossing.prompt.md",
+      "selected_raw": "build/aginti/hakone-lake-ashi-crossing-v1/hakone-lake-ashi-crossing-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-lake-ashi-crossing-v1/task_manifest.json",
+          "role": "Selected four-guide Lake Ashi crossing scene"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch05-references/cruise-frame-06.jpg",
+          "page_url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+          "role": "Official cruise footage frame for open-deck safety rail and lake scale; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch05-references/cruise-frame-28.jpg",
+          "page_url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+          "role": "Official cruise footage frame for Lake Ashi ridge and wake context; cache remains ignored"
+        }
+      ],
+      "factual_limits": [
+        "The scene communicates the enclosed lake-and-ridge setting rather than documenting a named vessel or sailing",
+        "No Mount Fuji view is shown or promised",
+        "Passengers should follow the actual vessel's deck closures and safety instructions"
+      ],
+      "reader_caption_policy": "Caption directs attention to the caldera ridges and south-shore orientation without claiming a guaranteed Fuji view.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone-ch05-proof-final/page-68.png",
+        "physical_page": 68,
+        "mobile_path": "build/qa/hakone-ch05-assets/mobile-hakone-lake-ashi-crossing.jpg",
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    },
+    {
+      "asset_id": "asset-hakone-shrine-forest-approach",
+      "stem": "hakone-shrine-forest-approach",
+      "method": "generated-attraction-figure",
+      "prompt": "data/images/hakone/hakone-shrine-forest-approach.prompt.md",
+      "selected_raw": "build/aginti/hakone-shrine-forest-approach-v1/hakone-shrine-forest-approach-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-shrine-forest-approach-v1/task_manifest.json",
+          "role": "Selected four-guide forest approach scene"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch05-references/shrine-90-steps.jpg",
+          "page_url": "https://hakonejinja.or.jp/hakone/keidai.html",
+          "role": "Official precinct photograph for the 90-step main approach and cedar setting; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch05-references/shrine-third-torii.jpg",
+          "page_url": "https://hakonejinja.or.jp/hakone/keidai.html",
+          "role": "Official precinct photograph for the vermilion gate and approach geometry; cache remains ignored"
+        }
+      ],
+      "factual_limits": [
+        "The scene is an editorial synthesis of the current public approach, not evidence for the shrine's early origin tradition",
+        "The forest stair and the lakeside Heiwa torii are deliberately not combined",
+        "Visitors should use the open public route and follow on-site access controls"
+      ],
+      "reader_caption_policy": "Caption identifies the forest approach and 90-step transition from shore to sanctuary, while history remains attributed in the text.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone-ch05-proof-final/page-71.png",
+        "physical_page": 71,
+        "mobile_path": "build/qa/hakone-ch05-assets/mobile-hakone-shrine-forest-approach.jpg",
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    },
+    {
+      "asset_id": "asset-hakone-wakasagi-lunch",
+      "stem": "hakone-wakasagi-lunch",
+      "method": "generated-food-figure",
+      "prompt": "data/images/hakone/hakone-wakasagi-lunch.prompt.md",
+      "selected_raw": "build/aginti/hakone-wakasagi-lunch-v2/hakone-wakasagi-lunch-v2.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-wakasagi-lunch-v1/task_manifest.json",
+          "role": "Rejected provider-output moderation result; no image selected"
+        },
+        {
+          "path": "build/aginti/hakone-wakasagi-lunch-v2/task_manifest.json",
+          "role": "Selected restrained four-guide food scene"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch05-references/wakasagi-04.jpg",
+          "page_url": "https://www.ashinoko-gyokyou.com/wakasagi",
+          "role": "Fishery cooperative photograph for fried Lake Ashi wakasagi size and serving; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch05-references/wakasagi-05.jpg",
+          "page_url": "https://www.ashinoko-gyokyou.com/wakasagi",
+          "role": "Fishery cooperative photograph for nanbanzuke preparation; cache remains ignored"
+        }
+      ],
+      "factual_limits": [
+        "The dining room is not a named restaurant and the meal is not a claim of present stock",
+        "The foreground shows fried wakasagi and a nanbanzuke-style preparation, not sushi or an unrelated large fish",
+        "Lake Ashi origin, preparation, season, and availability must be confirmed with the restaurant"
+      ],
+      "reader_caption_policy": "Caption names the two preparations and tells the reader to confirm Lake Ashi origin without discussing the image-production method.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone-ch05-proof-final/page-74.png",
+        "physical_page": 74,
+        "mobile_path": "build/qa/hakone-ch05-assets/mobile-hakone-wakasagi-lunch.jpg",
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    },
+    {
+      "asset_id": "asset-hakone-onshi-park-villa-ground",
+      "stem": "hakone-onshi-park-villa-ground",
+      "method": "generated-attraction-figure",
+      "prompt": "data/images/hakone/hakone-onshi-park-villa-ground.prompt.md",
+      "selected_raw": "build/aginti/hakone-onshi-park-villa-ground-v2/hakone-onshi-park-villa-ground-v2.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-onshi-park-villa-ground-v1/task_manifest.json",
+          "role": "Rejected draft because it redesigned the current observation building"
+        },
+        {
+          "path": "build/aginti/hakone-onshi-park-villa-ground-v2/task_manifest.json",
+          "role": "Selected architecture-corrected four-guide scene"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch05-references/img13.jpg",
+          "page_url": "https://www.pref.kanagawa.jp/docs/tu5/cnt/f6599/p19701.html",
+          "role": "Official park photograph for the current Lakeside Observation Building facade; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch05-references/img14.jpg",
+          "page_url": "https://www.pref.kanagawa.jp/docs/tu5/cnt/f6599/p19701.html",
+          "role": "Official park photograph for the current building, lawn, and shrub relationship; cache remains ignored"
+        }
+      ],
+      "factual_limits": [
+        "The visible structure is the current Lakeside Observation Building, not a reconstruction of the vanished imperial villa",
+        "Facade, stacked portico, balcony, lawn, and clipped shrubs follow the official current photographs",
+        "The low ground trace is illustrative; readers should use on-site interpretation for surviving foundation remains"
+      ],
+      "reader_caption_policy": "Caption distinguishes the current observation building from the former imperial villa and points readers to the surviving site traces.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone-ch05-proof-final/page-77.png",
+        "physical_page": 77,
+        "mobile_path": "build/qa/hakone-ch05-assets/mobile-hakone-onshi-park-villa-ground.jpg",
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    }
+  ],
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-17",
+    "notes": "Original-size scenes, bottom-anchored delivery crops, compiled B6 pages, and 340 CSS px figure proofs inside a 390 px mobile viewport passed visual review."
+  }
+}

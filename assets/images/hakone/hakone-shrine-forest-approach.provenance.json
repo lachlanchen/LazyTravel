@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-shrine-forest-approach",
+  "created_at": "2026-08-17",
+  "method": "generated-attraction-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "15-82d3d49e-edd4-49b9-a186-a08e697cbecf",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/shrine-90-steps.jpg",
+      "sha256": "1eae5ef35fd941ca6143506cf370e22ee6eac8f8a0a89ef1bbf9c8fbecb755b4",
+      "page_url": "https://hakonejinja.or.jp/hakone/keidai.html",
+      "role": "Official precinct photograph for the 90-step main approach and cedar setting; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/shrine-third-torii.jpg",
+      "sha256": "5f6a284d95f225108b32d611db0fbc84016f25b553863d85620f32cd5b908b46",
+      "page_url": "https://hakonejinja.or.jp/hakone/keidai.html",
+      "role": "Official precinct photograph for the vermilion gate and approach geometry; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-shrine-forest-approach.prompt.md",
+    "sha256": "328ee008f58c4d48a8d8abfd197ae872a8af6b64529341d149bfec7071594089"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-shrine-forest-approach-v1/task_manifest.json",
+      "sha256": "2efe5c6488448b123bd07735833aba32689aaacc05a1146ee7935b5684cc141c",
+      "bytes": 3174,
+      "role": "Selected four-guide forest approach scene"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-shrine-forest-approach-v1/hakone-shrine-forest-approach-v1.png",
+    "sha256": "ba270b01de0dd851063598fe3d7aff5c011893c09969ff725fd1bbdf696ff06e",
+    "bytes": 24292695,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-shrine-forest-approach.jpg",
+    "sha256": "c09aa12953c154efd3162446b626f0354418c22e0482d56db6bba0d78ede2a14",
+    "bytes": 3144065,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-shrine-forest-approach-wide.jpg",
+      "sha256": "3c01638fefd2a198465b485791e34a26b61cb2814e561093c45086f191311fb9",
+      "bytes": 2595199,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-shrine-forest-approach-web.jpg",
+      "sha256": "6d938155bb85a706e8d5f110eaf3b896f5d080beaa709b4d27a0ac39d06a969e",
+      "bytes": 831050,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is an editorial synthesis of the current public approach, not evidence for the shrine's early origin tradition",
+    "The forest stair and the lakeside Heiwa torii are deliberately not combined",
+    "Visitors should use the open public route and follow on-site access controls"
+  ],
+  "reader_caption_policy": "Caption identifies the forest approach and 90-step transition from shore to sanctuary, while history remains attributed in the text.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-17",
+    "notes": "Original-size scenes, bottom-anchored delivery crops, compiled B6 pages, and 340 CSS px figure proofs inside a 390 px mobile viewport passed visual review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch05-proof-final/page-71.png",
+        "sha256": "1f07b1592526cd83853eaa382d3db946924c71f7873cbcd0e91ec5db15ae19d8",
+        "bytes": 1635516,
+        "physical_page": 71
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch05-assets/mobile-hakone-shrine-forest-approach.jpg",
+        "sha256": "d482e822aa1da445834a8cf3366adfdf7d5a4ad46527d5228789a179fbe2a3de",
+        "bytes": 38812,
+        "width": 340,
+        "height": 191,
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    }
+  }
+}

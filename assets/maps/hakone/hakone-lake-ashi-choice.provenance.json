@@ -1,0 +1,102 @@
+{
+  "asset_id": "asset-hakone-lake-ashi-choice-map",
+  "command": "python3 scripts/build_hakone_lake_ashi_choice_map.py",
+  "config": "data/maps/hakone/hakone-lake-ashi-choice.config.json",
+  "config_sha256": "37b34f101dc34f8d081736df7dcb6827e96b1e3ba42a33d18680b7d7dc1dc7af",
+  "created_at": "2026-08-17",
+  "declared_generalizations": [
+    "This is a decision diagram, not a geographic map; port spacing, paths, and shoreline geometry are not to scale",
+    "The operator's roughly 25 to 40 minutes from Togendai to the southern ports is not a timetable or connection guarantee",
+    "The 35–50, 55–80, and 90–120 minute windows are LazyTravel planning ranges, not operator promises",
+    "Lunch time, queues, and bus waiting are additional to the south-shore ranges",
+    "The orange fallback means recheck a currently operating bus from Togendai; it does not claim that bus service duplicates the cruise",
+    "Weather can alter the cruise route, departure, destination, or operation at short notice"
+  ],
+  "files": {
+    "hakone-lake-ashi-choice.pdf": {
+      "bytes": 101738,
+      "sha256": "bf2224862340e04eba46240e60febe2a5214a71879b6318914fed46277281e48"
+    },
+    "hakone-lake-ashi-choice.png": {
+      "bytes": 811333,
+      "sha256": "751202f59a8ec50ed5f5401a6636f94c3e1e9cbb91a4a8e24feda50911bc0d59"
+    },
+    "hakone-lake-ashi-choice.svg": {
+      "bytes": 22123,
+      "sha256": "d0ab54bd4e01ca627ac23591280e9a60645282c2675dc86d9c22f40ac10e3126"
+    }
+  },
+  "method": "schematic-landing-choice-render",
+  "rights": "Map design © LazyTravel; route and operating facts derive from the listed official sources.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-CRUISE",
+      "url": "https://www.hakonenavi.jp/hakone-kankosen/?lang=ja",
+      "use": "Togendai to southern-port planning duration and current port relationship"
+    },
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-CRUISE-FAQ",
+      "url": "https://www.hakonenavi.jp/hakone-kankosen/cruise/",
+      "use": "Weather-related route, departure, destination, and suspension caveats"
+    },
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-TOGENDAI",
+      "url": "https://www.hakonenavi.jp/transportation/station/togendai/",
+      "use": "Cruise and bus interchange at Togendai"
+    },
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-MOTOHAKONE",
+      "url": "https://www.hakonenavi.jp/transportation/station/motohakone/",
+      "use": "Moto-Hakone port and onward transport relationship"
+    },
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-SHRINE-ACCESS",
+      "url": "https://hakonejinja.or.jp/access/",
+      "use": "Approximate ten-minute walk from Moto-Hakone to Hakone Shrine"
+    },
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-ONSHI-PARK",
+      "url": "https://www.pref.kanagawa.jp/docs/tu5/cnt/f6599/p19701.html",
+      "use": "Onshi-Hakone Park location and visitor-ground context"
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      3360,
+      2472
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch05-proof-final/page-66.png",
+        "physical_page": 66,
+        "sha256": "f2a951d1264bd741f86b86b6426b2a1ee014afeda214d916979e172fee2aa956"
+      },
+      "mobile": {
+        "pannable_width_css_px": 760,
+        "path": "build/qa/hakone-ch05-assets/mobile-map-contact.jpg",
+        "sha256": "c2a30b5501420d9c2ec526ca639bd524dc8d2580aeec28a8c439aacded8e3b4e",
+        "viewport_css_px": 390
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "Full-size labels, the compiled B6 page, and both halves of the 760 px diagram inside a 390 px mobile viewport passed visual review."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-17"
+  }
+}

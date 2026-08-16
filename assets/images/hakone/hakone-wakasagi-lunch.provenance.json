@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-wakasagi-lunch",
+  "created_at": "2026-08-17",
+  "method": "generated-food-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "15-9ee9df13-f325-4fa6-8942-48a40add2013",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/wakasagi-04.jpg",
+      "sha256": "93fa1bfa0452c997f911932d2bfc1a406e4d0dff89ad338336582e8a95457d9a",
+      "page_url": "https://www.ashinoko-gyokyou.com/wakasagi",
+      "role": "Fishery cooperative photograph for fried Lake Ashi wakasagi size and serving; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/wakasagi-05.jpg",
+      "sha256": "79fa7f80addbdf5adcd4826c2a217c6a6c4a55225d539ec37458126590b7b45f",
+      "page_url": "https://www.ashinoko-gyokyou.com/wakasagi",
+      "role": "Fishery cooperative photograph for nanbanzuke preparation; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-wakasagi-lunch.prompt.md",
+    "sha256": "f0bf04986670d485fe17c6799794ebe7073bf39f8620013bd7cfc4a7391cc692"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-wakasagi-lunch-v1/task_manifest.json",
+      "sha256": "41170667965ae493c31d87f07004eece684e713deaa0f0165c514eb5c4c9ba09",
+      "bytes": 3027,
+      "role": "Rejected provider-output moderation result; no image selected"
+    },
+    {
+      "path": "build/aginti/hakone-wakasagi-lunch-v2/task_manifest.json",
+      "sha256": "6277cca1fc325e365dbc6a83298c25c29070a16d130c00d054b24f78f3cb24f9",
+      "bytes": 3110,
+      "role": "Selected restrained four-guide food scene"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-wakasagi-lunch-v2/hakone-wakasagi-lunch-v2.png",
+    "sha256": "6486117fc6b35a51ff326101d952837a0c49ddfdcc2117f3db166b696ac99ad9",
+    "bytes": 12615425,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-wakasagi-lunch.jpg",
+    "sha256": "b3e741064101bfc8e24046caca50d452e517efa31cfb727c0f0e753da72f682f",
+    "bytes": 1586524,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-wakasagi-lunch-wide.jpg",
+      "sha256": "7f2123ed3b9c040cc0e2984787cb20596006421c1e380b27388c3e3404c0bad2",
+      "bytes": 1402271,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-wakasagi-lunch-web.jpg",
+      "sha256": "36b1f65f9dfc6663e234d7d2b823c2e7504d74400b85b46c0d8362ea73b24b0e",
+      "bytes": 468677,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The dining room is not a named restaurant and the meal is not a claim of present stock",
+    "The foreground shows fried wakasagi and a nanbanzuke-style preparation, not sushi or an unrelated large fish",
+    "Lake Ashi origin, preparation, season, and availability must be confirmed with the restaurant"
+  ],
+  "reader_caption_policy": "Caption names the two preparations and tells the reader to confirm Lake Ashi origin without discussing the image-production method.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-17",
+    "notes": "Original-size scenes, bottom-anchored delivery crops, compiled B6 pages, and 340 CSS px figure proofs inside a 390 px mobile viewport passed visual review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch05-proof-final/page-74.png",
+        "sha256": "0a938e9e42500987ac298805e1e8c04c92031faa3ffe6ac14b8c6ed1f1d2d2c2",
+        "bytes": 1145088,
+        "physical_page": 74
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch05-assets/mobile-hakone-wakasagi-lunch.jpg",
+        "sha256": "1af384e1ccf01bb15c55ef0568ddf4fc32b0f9ed53a9c5bd59abc35f405476aa",
+        "bytes": 33726,
+        "width": 340,
+        "height": 191,
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-onshi-park-villa-ground",
+  "created_at": "2026-08-17",
+  "method": "generated-attraction-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "6-c58c2f27-b2ef-4d75-b482-0b879f5c38f9",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/img13.jpg",
+      "sha256": "576cbb396faff933f9544bb10a7ac9db8c716f59d28b592df2e2f58e33775640",
+      "page_url": "https://www.pref.kanagawa.jp/docs/tu5/cnt/f6599/p19701.html",
+      "role": "Official park photograph for the current Lakeside Observation Building facade; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch05-references/img14.jpg",
+      "sha256": "f6c55ff57cc956848cdc8cd4f5a21c237da64e2402874bf94e86da112037bfc5",
+      "page_url": "https://www.pref.kanagawa.jp/docs/tu5/cnt/f6599/p19701.html",
+      "role": "Official park photograph for the current building, lawn, and shrub relationship; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-onshi-park-villa-ground.prompt.md",
+    "sha256": "69be22a1e55a83df417d8f4205d15ba4f488c4417347d3a6fcc7b326ee54c17a"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-onshi-park-villa-ground-v1/task_manifest.json",
+      "sha256": "7afe271f2b6eb497525f1730dde71354de65cae8fe860435576a47bf980f191c",
+      "bytes": 3134,
+      "role": "Rejected draft because it redesigned the current observation building"
+    },
+    {
+      "path": "build/aginti/hakone-onshi-park-villa-ground-v2/task_manifest.json",
+      "sha256": "cca11b46f323da0a6ca06cd8a86cff1139ad7669d05760276cc3f46c82267f7c",
+      "bytes": 3132,
+      "role": "Selected architecture-corrected four-guide scene"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-onshi-park-villa-ground-v2/hakone-onshi-park-villa-ground-v2.png",
+    "sha256": "d056128dfaf7f0def06bfbcdab191a050bb1ed72532f1a3520157e34fb7b4416",
+    "bytes": 17656065,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-onshi-park-villa-ground.jpg",
+    "sha256": "7e862af59ab1f504696fbee83b425800067b89b7b4abb4b1a3bcfcdf8cd11254",
+    "bytes": 2309076,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-onshi-park-villa-ground-wide.jpg",
+      "sha256": "8be639d587f8026c04c6e840de9f7fd5cc288e99a91494bd6bf33b04d80e5cbc",
+      "bytes": 2242556,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-onshi-park-villa-ground-web.jpg",
+      "sha256": "9473aff4c595c9a1708678bd295afc2791c3122abc138821ceae8df448aedefd",
+      "bytes": 727200,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The visible structure is the current Lakeside Observation Building, not a reconstruction of the vanished imperial villa",
+    "Facade, stacked portico, balcony, lawn, and clipped shrubs follow the official current photographs",
+    "The low ground trace is illustrative; readers should use on-site interpretation for surviving foundation remains"
+  ],
+  "reader_caption_policy": "Caption distinguishes the current observation building from the former imperial villa and points readers to the surviving site traces.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-17",
+    "notes": "Original-size scenes, bottom-anchored delivery crops, compiled B6 pages, and 340 CSS px figure proofs inside a 390 px mobile viewport passed visual review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch05-proof-final/page-77.png",
+        "sha256": "2957630b585e757f869ad550125736c0a8f432ae3f4be8ba175ff51b0bf8cf21",
+        "bytes": 1461699,
+        "physical_page": 77
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch05-assets/mobile-hakone-onshi-park-villa-ground.jpg",
+        "sha256": "074336f3ef44b842b2fa14d65feed0239617e408fa1137b4307950998af2c8b1",
+        "bytes": 32188,
+        "width": 340,
+        "height": 191,
+        "viewport_css_px": 390,
+        "display_width_css_px": 340
+      }
+    }
+  }
+}
