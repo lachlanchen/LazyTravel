@@ -43,6 +43,13 @@ const assetLabels = {
   "asset-xian-before-departure-four-guides": "BEFORE DEPARTURE · FOUR EVIDENCE CHECKS",
   "asset-hakone-lake-orientation": "LAKE ASHI · WATER, RIDGES, CLOUD",
   "asset-hakone-orientation-map": "HAKONE · HEIGHT AND TRANSFERS",
+  "asset-hakone-odawara-transfer": "ODAWARA · FIND THE HAKONE GATE",
+  "asset-hakone-gateway-transfer-map": "ODAWARA TO YUMOTO · GATEWAY CHOICES",
+  "asset-hakone-yumoto-arrival": "HAKONE-YUMOTO · SORT THE BAGS FIRST",
+  "asset-hakone-ohiradai-switchback": "OHIRADAI · THE TRAIN CHANGES DIRECTION",
+  "asset-hakone-gora-slope-map": "YUMOTO TO GORA · HEIGHT AND SWITCHBACKS",
+  "asset-hakone-open-air-museum-landscape": "OPEN-AIR MUSEUM · WALK THE SLOPE",
+  "asset-hakone-open-air-museum-cafe": "OPEN-AIR MUSEUM · QUICK FOOD PAUSE",
 };
 const state = {
   document: null,

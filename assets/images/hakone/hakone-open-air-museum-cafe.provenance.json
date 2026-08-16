@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-open-air-museum-cafe",
+  "created_at": "2026-08-17",
+  "method": "generated-location-food-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "9-c7c130f7-ece4-4caf-bffb-58d762700d77",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "assets/images/hakone/hakone-open-air-museum-landscape.jpg",
+      "sha256": "acafea477930368de5aea993e438a1030d0783d38a5def0a047c01582f65bdff",
+      "role": "Approved series landscape reference for the museum's lawn, ridge, path, and daylight relationship"
+    }
+  ],
+  "factual_sources": [
+    {
+      "url": "https://www.hakone-oam.or.jp/restaurantsandshops/cafe",
+      "accessed_at": "2026-08-17",
+      "role": "Current cafe menu reference for hot dog, Odawara mandarin juice, and milk soft-serve"
+    },
+    {
+      "url": "https://www.hakone-oam.or.jp/info/map",
+      "accessed_at": "2026-08-17",
+      "role": "Current brought-food locations and carry-out rule"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-open-air-museum-cafe.prompt.md",
+    "sha256": "0c25ffef7f4d8eb69c5af45fc913418a3a2d71984d4a4f1a65908f016d6344da"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-open-air-museum-cafe-v1/task_manifest.json",
+      "sha256": "d43b1e614121b92b5dcd0672c4bede2204463bcdbd98aa768a6d609d3e8d0c81",
+      "role": "Character, landscape, and current-menu reference generation"
+    },
+    {
+      "path": "build/aginti/hakone-open-air-museum-cafe-v2/task_manifest.json",
+      "sha256": "172a71d35a836f9b38cbb3f8b83c9207022d57cefb9861516a57f3e9066586aa",
+      "role": "Selected cleanup generation replacing synthetic map lettering with an unlabelled route schematic"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-open-air-museum-cafe-v2/hakone-open-air-museum-cafe-v2.png",
+    "sha256": "3f80e357ababb864691372583d9e4fbd8c5e6a125a911b7bdf7c8ae540dfaf4d",
+    "bytes": 11142177,
+    "width": 5056,
+    "height": 3392
+  },
+  "output": {
+    "path": "assets/images/hakone/hakone-open-air-museum-cafe.jpg",
+    "sha256": "ff3dfc31285173bcc56520f13d76caae7bb75bd422cd71cfd3be31465f9c83f8",
+    "bytes": 1394203,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-open-air-museum-cafe-wide.jpg",
+      "sha256": "420422f54fc6093d993fca3d1a689fb52b5aca5c71bd4f6401fa854ac274d3c1",
+      "bytes": 1151282,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-open-air-museum-cafe-web.jpg",
+      "sha256": "3d12cdf971e0ef72b95b101cb11b001c9cf8c42a39f3f8dcfa1891f520051446",
+      "bytes": 316263,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The food illustrates current cafe choices checked on 17 August 2026; portions, presentation, price, and availability can change",
+    "Odawara mandarin juice is a local-origin menu cue, while the hot dog and soft-serve are practical cafe choices rather than traditional Hakone dishes",
+    "The table and viewpoint communicate a pause within the museum landscape and do not document one exact seat or building facade",
+    "The unlabelled sheet is a generic route-checking prop, not a navigable museum or transport map",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "Reader-facing captions distinguish a short cafe pause from a full meal and do not discuss production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "food_legible_and_plausible": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "no_traditional_food_overclaim": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-17",
+    "notes": "The selected raw and 16:9 variants passed original-size inspection. The final B6 figure and shortened caption fit one landscape page at build/qa/hakone-ch03-proof-v2/page-41.png, sha256 57476ccb0e4ac7f498fbf5e66baa51c9c1256b006bfe608d77cac3bea5be8931. The 390 px website figure and caption remain clear at build/qa/site/hakone-ch03/mobile-03-figure-03.png, sha256 039d619919f1307fd40bec003e731f06905c028c2a5495ba6b0d93ff63bb7018."
+  }
+}

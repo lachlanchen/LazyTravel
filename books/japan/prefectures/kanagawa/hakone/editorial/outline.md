@@ -48,7 +48,8 @@ while splitting them would create thin filler.
    Follow the railway through Miyanoshita and Kowakudani to Gora. Use the line's
    climb and switchbacks to make the terrain visible, then choose one museum
    with enough time to look. The Open-Air Museum is treated as a substantial
-   stop, not one item in an exhausting museum checklist.
+   stop, not one item in an exhausting museum checklist. A quick cafe pause,
+   a proper lunch, and brought food are kept as three different decisions.
 
 4. **穿越大涌谷：先看火山，再看富士山**<br>
    **大涌谷を越える：富士山より先に火山を見る**<br>

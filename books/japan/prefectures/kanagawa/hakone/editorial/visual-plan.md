@@ -14,9 +14,9 @@ through the book rather than collected in a decorative gallery.
   prohibited inventions, required resolution, and reserved crop areas.
 - Codex reviews every result at original size, B6 print size, and 390 px mobile
   width before it enters canonical JSON.
-- Every non-map figure includes at least Aya-chan and Lala Xia. Use Sasa-kun
-  and the Zhuangzi robot for chapter openings and the cover when all four remain
-  recognizable at pocket size.
+- Every non-map figure includes exactly the four recurring guides: Aya-chan,
+  Lala Xia, Sasa-kun, and the Zhuangzi robot. Reject duplicates, hybrids,
+  background copies, missing guides, and crops that remove one of the four.
 - The destination remains the visual subject. The four guides provide scale,
   continuity, and a traveler's point of view; they are not posed as celebrities
   in front of an interchangeable background.
@@ -55,7 +55,7 @@ guides. Use the current live-type cover page as a composition reference:
 | ---: | --- | --- | --- |
 | 1 | Regional relief-style orientation map: Odawara, Yumoto, Gora, Owakudani, Lake Ashi, outer ridges, onward edges | Four guides at an elevated real-world viewpoint with the lake/ridges dominant | Explain that short map distances hide large height and weather changes. |
 | 2 | Gateway and transfer map with Tokyo/east and Kyoto/west approaches, loop-direction choices, and luggage handoff | Odawara interchange; Hakone-Yumoto arrival with luggage decision | Make the first two transfers and baggage choice visually obvious with two distinct location scenes. |
-| 3 | Railway-to-Gora slope schematic with stations and one-museum stop | Mountain railway on a steep wooded curve; Open-Air Museum landscape view | Show gradient and why one art stop deserves time. Do not copy protected sculpture compositions. |
+| 3 | Railway-to-Gora slope schematic with stations and one-museum stop | Ohiradai switchback; Open-Air Museum landscape; short cafe pause with current light-food cues | Show gradient, why one art stop deserves time, and how food changes the visit block. Do not copy protected sculpture compositions or present cafe food as Hakone tradition. |
 | 4 | Owakudani access/safety map: Sounzan, Owakudani, Ubako, Togendai, current-check marker | Fumarole-field location plate; black-egg process/meal close-up | Show the live volcanic landscape without removing barriers or inventing access. Separate chemistry from legend. |
 | 5 | Lake Ashi shore and crossing map with weather alternatives | Lakeshore and shrine approach; boat/lakeside weather scene | Make the lake route readable even when Fuji is absent. Avoid one impossible composite viewpoint. |
 | 6 | Old Tokaido walking-choice map with bus exits, checkpoint, cedar avenue, stone paving, and Amasake Chaya | Wet stone-paving scene; checkpoint reconstruction; tea-house rest | Explain surface, slope, controlled passage, and the value of walking only one coherent section. |

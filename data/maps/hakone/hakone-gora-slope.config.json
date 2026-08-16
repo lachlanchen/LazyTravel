@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-gora-slope-map",
+  "snapshot_date": "2026-08-16",
+  "title": {
+    "zh": "汤本到强罗：看懂登山电车的上升",
+    "ja": "湯本から強羅へ：登山電車の上り方を読む",
+    "en": "Yumoto to Gora: Read the Mountain Railway's Climb"
+  },
+  "metrics": {
+    "route_km": 8.9,
+    "journey_minutes_approx": 40,
+    "maximum_grade_permille": 80,
+    "minimum_curve_radius_m": 30,
+    "switchback_count": 3
+  },
+  "stations": [
+    {
+      "id": "yumoto",
+      "zh": "箱根汤本",
+      "ja": "箱根湯本",
+      "en": "HAKONE-YUMOTO",
+      "elevation_m": 96
+    },
+    {
+      "id": "tonosawa",
+      "zh": "塔之泽",
+      "ja": "塔ノ沢",
+      "en": "TONOSAWA",
+      "elevation_m": 153
+    },
+    {
+      "id": "ohiradai",
+      "zh": "大平台",
+      "ja": "大平台",
+      "en": "OHIRADAI",
+      "elevation_m": 337
+    },
+    {
+      "id": "miyanoshita",
+      "zh": "宫之下",
+      "ja": "宮ノ下",
+      "en": "MIYANOSHITA",
+      "elevation_m": 436
+    },
+    {
+      "id": "kowakidani",
+      "zh": "小涌谷",
+      "ja": "小涌谷",
+      "en": "KOWAKIDANI",
+      "elevation_m": 523
+    },
+    {
+      "id": "chokoku",
+      "zh": "雕刻之森",
+      "ja": "彫刻の森",
+      "en": "CHOKOKU-NO-MORI",
+      "elevation_m": 539,
+      "decision": "museum"
+    },
+    {
+      "id": "gora",
+      "zh": "强罗",
+      "ja": "強羅",
+      "en": "GORA",
+      "elevation_m": 541,
+      "decision": "cable-car"
+    }
+  ],
+  "switchbacks": [
+    {
+      "number": 1,
+      "id": "deyama",
+      "zh": "出山信号场",
+      "ja": "出山信号場",
+      "en": "DEYAMA",
+      "position_between": [
+        "tonosawa",
+        "ohiradai"
+      ],
+      "fraction": 0.55,
+      "passenger_access": false
+    },
+    {
+      "number": 2,
+      "id": "ohiradai",
+      "zh": "大平台",
+      "ja": "大平台",
+      "en": "OHIRADAI",
+      "at_station": "ohiradai",
+      "passenger_access": true
+    },
+    {
+      "number": 3,
+      "id": "kami-ohiradai",
+      "zh": "上大平台信号场",
+      "ja": "上大平台信号場",
+      "en": "KAMI-OHIRADAI",
+      "position_between": [
+        "ohiradai",
+        "miyanoshita"
+      ],
+      "fraction": 0.45,
+      "passenger_access": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "HKN-TOZAN-TRAIN",
+      "url": "https://www.hakonenavi.jp/hakone-tozan/",
+      "checked_at": "2026-08-16",
+      "use": "Route length, approximate duration, station order, and three switchback locations"
+    },
+    {
+      "id": "HKN-TOZAN-HISTORY",
+      "url": "https://www.hakonenavi.jp/hakone-tozan/history/",
+      "checked_at": "2026-08-16",
+      "use": "Maximum grade, minimum curve radius, adhesion design, and switchback history"
+    },
+    {
+      "id": "HKN-TOZAN-ELEVATION-2025",
+      "url": "https://www.hakonenavi.jp/_wp/wp-content/uploads/2025/06/f4a209e4ebe09db32f987f7e328bb62e.pdf",
+      "checked_at": "2026-08-16",
+      "use": "Published station elevations only; seasonal status discarded"
+    },
+    {
+      "id": "HKN-OAM-MAP",
+      "url": "https://www.hakone-oam.or.jp/en/info/map",
+      "checked_at": "2026-08-16",
+      "use": "Museum visit-planning range"
+    }
+  ],
+  "generalizations": [
+    "The horizontal axis shows station order, not distance or running time",
+    "The vertical profile uses published station elevations; the line between stations is schematic",
+    "Switchback marker positions show sequence only; no unlisted signal-station elevation is implied",
+    "About 40 minutes is a checked operator approximation, not a timetable guarantee",
+    "Museum and cable-car callouts are planning decisions, not connection promises"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-17",
+    "notes": [
+      "Compiled B6 landscape page keeps all station labels, switchbacks, planning callouts, metrics, and caveats inside the trim without collisions: build/qa/hakone-ch03-proof-v2/page-34.png, sha256 c1a1aab84773ebe0e4a2a30de22f09d38a1679c3aa0bdd533bb668cc5a012255.",
+      "At 390 px the website keeps the SVG in a pannable 760 px canvas with legible station and switchback labels plus working zoom and reset controls: build/qa/site/hakone-ch03/mobile-03-map.png, sha256 57db0f4ebdc91e569f70a01cbb33df68baea3aaa4a5771e7b667c963d1cb69f2."
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-open-air-museum-landscape",
+  "created_at": "2026-08-17",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "1-e439de20-ae3b-4db1-8c38-37216fd649bf",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-ch03/oam-01.jpg",
+      "sha256": "2fff351778486664d15fd86c55b29cc96082a05ef2e17257735286993eed6a5b",
+      "page_url": "https://www.hakone-oam.or.jp/en/",
+      "role": "Official museum photograph inspected for lawn, ridge, sky, and open-space scale; reference cache remains ignored"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-ch03/oam-landscape-proxy.jpg",
+      "sha256": "c8aeff502c2e52e6b96eb67b7725a2538c5e91ccdfc30165506753f06e6c0f57",
+      "page_url": "https://www.hakone-oam.or.jp/en/",
+      "role": "Sculpture-free crop supplied to the generator so no protected artwork entered the reference frame; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-open-air-museum-landscape.prompt.md",
+    "sha256": "39f786824254478368544a6cc566054b22d6bf30da3fb57a3522725ec2c866a8"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-open-air-museum-landscape-v1/task_manifest.json",
+      "sha256": "95092bf1661b0b1853aa9333175260d04241e96591679762409607469447ae13",
+      "role": "Character and sculpture-free official-landscape reference generation"
+    },
+    {
+      "path": "build/aginti/hakone-open-air-museum-landscape-v2/task_manifest.json",
+      "sha256": "0cd1263fcc4145c965ac28bfeacf489f2852b1506f341c8037a61f569b41c322",
+      "role": "Selected cleanup generation removing an invented robot-chest logo"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-open-air-museum-landscape-v2/hakone-open-air-museum-landscape-v2.png",
+    "sha256": "405c29518667d1e365cd939250e50e119bf1e4d9997daf650d6975472dcbdf1d",
+    "bytes": 12251672,
+    "width": 5056,
+    "height": 3392
+  },
+  "output": {
+    "path": "assets/images/hakone/hakone-open-air-museum-landscape.jpg",
+    "sha256": "acafea477930368de5aea993e438a1030d0783d38a5def0a047c01582f65bdff",
+    "bytes": 1591471,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-open-air-museum-landscape-wide.jpg",
+      "sha256": "6f7285bcc85b9896534426c5fc22683688c7bef3325b43e0ef287348dd15014d",
+      "bytes": 1500550,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-open-air-museum-landscape-web.jpg",
+      "sha256": "cfdf215267acb8f8a160560ae31b47b52d4242084efb09905c817d878aa54371",
+      "bytes": 473572,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The figure conveys the museum's mountain-lawn scale and outdoor walking rhythm; it is not a site plan or a record of every current path and building",
+    "The small distant abstract forms are deliberately non-identifiable and do not reproduce or claim to represent any exhibited artwork",
+    "No exhibition availability, opening condition, weather, or exact viewpoint is asserted",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "Reader-facing captions explain the value of giving the grounds real time and do not discuss production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "no_identifiable_artwork_copy": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-17",
+    "notes": "The selected raw and 16:9 variants passed original-size inspection. The B6 figure and caption remain inside trim at build/qa/hakone-ch03-proof-v2/page-38.png, sha256 004b1e7f9ce658ab415f89c56ddd03644fb497a7cfb6ba5af0c4ef179ae41ad2. The 390 px website figure remains clear at build/qa/site/hakone-ch03/mobile-03-figure-02.png, sha256 97e3a1d5856660a79b61980cc3d158783d64aa537f25dc143c06b11a8d79d3c7."
+  }
+}
