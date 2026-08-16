@@ -48,6 +48,28 @@ Together the 11 chapters must substantially cover history, food, attractions,
 transport, hotels, practical itineraries, cultural context, nearby trips, and
 clean legible maps without padding or duplicated chapters.
 
+## Hakone Structure
+
+The Hakone guide also has exactly 11 chapters. Its route is one mountain
+crossing rather than a catalogue of sights:
+
+1. Read the Mountain First: Caldera, Lake, and Elevation
+2. Odawara to Yumoto: Make Transfers Part of the Day
+3. Climb to Gora: Grade, Art, and Time to Stop
+4. Cross Owakudani: See the Volcano Before Fuji
+5. A Day on Lake Ashi: Shrine, Shore, and Weather
+6. Old Tokaido and the Checkpoint: Walk the Road, Read the System
+7. One Night in an Onsen Ryokan: Bathing, Dinner, and Quiet
+8. Eat Along the Route: Black Eggs, Amazake, and the Dinner Clock
+9. Where to Stay: Choose a District Before a Property
+10. One, Two, or Three Days: Leave Room for Weather
+11. One Stop Beyond Hakone: Odawara, Mishima, or Gotemba
+
+Together they cover terrain, volcanic and road history, current attractions,
+transport, food, onsen culture, hotels, practical itineraries, and one nearby
+continuation chapter. The detailed trilingual spine and boundaries are locked
+in `books/japan/prefectures/kanagawa/hakone/editorial/outline.md`.
+
 ## Editorial Standard
 
 - Use all six supplied books, the external Xi'an and Gansu open guides, and
@@ -123,9 +145,11 @@ A destination milestone is accepted only when:
 - only the verified pocket PDF is hash-synced to Nutstore; and
 - the coherent milestone is committed and pushed to GitHub.
 
-The goal is complete only after all 11 Xi'an chapters, the synchronized website,
-cover/branding, maps, figures, citations, language passes, final artifact QA,
-repository publication, and pocket-PDF sync have passed this gate.
+A destination is complete only after every planned chapter, the synchronized
+website, cover and branding, maps, figures, citations, language passes, final
+artifact QA, repository publication, and pocket-PDF sync have passed this
+gate. A chapter milestone does not complete a destination, and completing one
+destination does not open work on two later books at once.
 
 ## Current Gate
 
@@ -137,3 +161,11 @@ the synchronized website passes the same JSON, ruby, asset, citation, desktop,
 and mobile gates. The public guide is available at
 <https://lachlanchen.github.io/LazyTravel/>. Hakone is the next active book;
 Lanzhou remains queued behind it.
+
+Hakone has a locked 11-chapter structure. Chapter 1, **Read the Mountain
+First**, now has ten aligned blocks, one code-built map, one four-guide location
+figure, reviewed pinyin and furigana, a responsive website build, and a
+reproducible `19`-page B6 review. Its verified SHA-256 is
+`5c684439a22475f810b57bcb1ef0b2f629356b7bae057961f8cd581cd9cfc310`, and
+the exact pocket PDF is synced to Nutstore. Hakone remains incomplete; Chapter
+2 is the next production gate.

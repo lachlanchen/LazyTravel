@@ -11,27 +11,37 @@ no private session history.
    websockify processes for this project or another project.
 4. Run `python3 scripts/verify_sources.py`. External archives and visual
    references must remain at their hash-pinned read-only paths.
-5. Continue only the next unfinished Xi'an chapter. Update its fact ledger,
-   aligned JSON, three language passes, pinyin/furigana review, assets, and QA.
+5. Continue only the next unfinished Hakone chapter. Chapter 1 is accepted;
+   Chapter 2 is next. Update its fact ledger, aligned JSON, three language
+   passes, pinyin/furigana review, assets, and QA before moving forward.
 6. Run focused tests while editing, then the full validation/build sequence:
 
 ```bash
-python3 -m unittest discover -s tests
-python3 scripts/build_xian_review.py
-python3 scripts/build_website.py
-python3 scripts/validate_site_parity.py
-python3 scripts/qa_website.py --url http://127.0.0.1:4173/
+python3 -m pytest -q
+python3 scripts/build_hakone_review.py
+python3 scripts/build_website.py \
+  --book data/japan/prefectures/kanagawa/hakone/book.json \
+  --output build/site-hakone
 ```
 
+Serve `build/site-hakone` on one temporary unused project-owned port, run
+`scripts/qa_destination_website.py` at desktop and mobile sizes, then terminate
+only that exact temporary server. Leave the existing port `4173` server and all
+noVNC/Xvfb/x11vnc/websockify processes untouched.
+
 7. Review every new or changed B6 page and desktop/mobile screenshot. Record the
-   review under `books/china/cities/xian/editorial/`.
-8. Copy only `dist/books/xian/xian-pocket-review.pdf` to
-   `/home/lachlan/Nutstore Files/Share/LazyTravel/` after all checks pass, and
-   verify the copied SHA-256.
+   review under `books/japan/prefectures/kanagawa/hakone/editorial/`.
+8. After every accepted chapter milestone, sync only the verified pocket PDF:
+
+```bash
+python3 scripts/build_hakone_review.py --skip-map --sync-nutstore
+```
+
+Verify the Nutstore and `dist` SHA-256 values match.
 9. Update the milestone in `README.md`, make one scoped commit, and push it to
    `origin/main`.
 
-For a public website milestone, also run:
+For a complete-book public website milestone, also run:
 
 ```bash
 python3 scripts/verify_deployed_site.py \
@@ -39,5 +49,6 @@ python3 scripts/verify_deployed_site.py \
 ```
 
 Current gate: Xi'an is complete and publicly published. Continue with Hakone
-at `japan/prefectures/kanagawa/hakone`. Lanzhou follows Hakone; never work on
-both destination books at once.
+at `japan/prefectures/kanagawa/hakone`. Hakone Chapter 1 is accepted and synced;
+Chapter 2 is next. Lanzhou follows the complete Hakone book; never work on both
+destination books at once.

@@ -66,9 +66,13 @@
 \emergencystretch=1.5em
 \def\stackalignment{c}
 
+\providecommand{\LTSeriesLabel}{CHINA · CITIES · XI'AN}
+\providecommand{\LTDestinationHeader}{XI'AN}
+\providecommand{\LTUseWideLandscape}{0}
+
 \clearpairofpagestyles
 \ihead{\footnotesize\sffamily\color{LTMuted}\leftmark}
-\ohead{\footnotesize\sffamily\color{LTMuted}LazyTravel · XI'AN}
+\ohead{\footnotesize\sffamily\color{LTMuted}LazyTravel · \LTDestinationHeader}
 \cfoot{\footnotesize\sffamily\color{LTMuted}\pagemark}
 \renewcommand*{\chapterpagestyle}{empty}
 \setkomafont{chapter}{\displayfont\bfseries\color{LTInk}}
@@ -104,7 +108,7 @@
   \vspace*{6mm}
   \noindent\LTBubble{LTVermilion}{#1}\hspace{2.4mm}%
   {\displayfont\fontsize{8}{10}\selectfont\color{LTWater}
-    CHINA · CITIES · XI'AN}
+    \LTSeriesLabel}
   \par
   \vspace{7mm}
   {\bfseries\fontsize{22}{28}\selectfont #2\par}
@@ -233,7 +237,13 @@
     \thispagestyle{empty}
     \centering
     \vspace*{\fill}
-    \includegraphics[width=0.98\textwidth,height=0.94\textheight,keepaspectratio]{#1}\par
+    \ifnum\LTUseWideLandscape=1
+      \noindent\hbox to \linewidth{\hss
+        \includegraphics[width=0.92\paperheight,height=0.76\paperwidth,keepaspectratio]{#1}%
+      \hss}\par
+    \else
+      \includegraphics[width=0.98\textwidth,height=0.94\textheight,keepaspectratio]{#1}\par
+    \fi
     \vspace*{\fill}
   \end{landscape}
   \clearpage
@@ -245,15 +255,33 @@
     \thispagestyle{empty}
     \centering
     \vspace*{2mm}
-    \includegraphics[width=0.98\linewidth,height=0.64\textheight,keepaspectratio]{#1}\par
+    \ifnum\LTUseWideLandscape=1
+      \noindent\hbox to \linewidth{\hss
+        \includegraphics[width=0.88\paperheight,height=0.54\paperwidth,keepaspectratio]{#1}%
+      \hss}\par
+    \else
+      \includegraphics[width=0.98\linewidth,height=0.64\textheight,keepaspectratio]{#1}\par
+    \fi
     \vspace{2mm}
-    \begin{minipage}{0.96\linewidth}
-      {\fontsize{7.2}{9.6}\selectfont #2\par}
-      \vspace{0.9mm}
-      {{\jpfont\fontsize{7}{9.4}\selectfont\color{LTForest}#3}\par}
-      \vspace{0.9mm}
-      {{\englishfont\fontsize{6.9}{9.2}\selectfont\color{LTWater}#4}\par}
-    \end{minipage}
+    \ifnum\LTUseWideLandscape=1
+      \noindent\hbox to \linewidth{\hss
+        \begin{minipage}{0.78\paperheight}
+          {\fontsize{7.2}{9.6}\selectfont #2\par}
+          \vspace{0.9mm}
+          {{\jpfont\fontsize{7}{9.4}\selectfont\color{LTForest}#3}\par}
+          \vspace{0.9mm}
+          {{\englishfont\fontsize{6.9}{9.2}\selectfont\color{LTWater}#4}\par}
+        \end{minipage}%
+      \hss}\par
+    \else
+      \begin{minipage}{0.96\linewidth}
+        {\fontsize{7.2}{9.6}\selectfont #2\par}
+        \vspace{0.9mm}
+        {{\jpfont\fontsize{7}{9.4}\selectfont\color{LTForest}#3}\par}
+        \vspace{0.9mm}
+        {{\englishfont\fontsize{6.9}{9.2}\selectfont\color{LTWater}#4}\par}
+      \end{minipage}
+    \fi
     \vfill
   \end{landscape}
   \clearpage

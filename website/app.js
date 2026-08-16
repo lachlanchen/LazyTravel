@@ -41,6 +41,8 @@ const assetLabels = {
   "asset-xian-itinerary-days-map": "TWO, THREE OR FIVE DAYS · ONE COHERENT ROUTE",
   "asset-xian-small-wild-goose-route-morning": "SMALL WILD GOOSE PAGODA · ONE MORNING GROUP",
   "asset-xian-before-departure-four-guides": "BEFORE DEPARTURE · FOUR EVIDENCE CHECKS",
+  "asset-hakone-lake-orientation": "LAKE ASHI · WATER, RIDGES, CLOUD",
+  "asset-hakone-orientation-map": "HAKONE · HEIGHT AND TRANSFERS",
 };
 const state = {
   document: null,

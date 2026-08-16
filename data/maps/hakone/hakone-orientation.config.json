@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "hakone-orientation",
+  "snapshot_date": "2026-08-16",
+  "title": {
+    "zh": "先读山：箱根的高差",
+    "ja": "まず山を読む：箱根の標高差",
+    "en": "READ THE MOUNTAIN FIRST"
+  },
+  "extent": [138.972, 35.178, 139.171, 35.278],
+  "lake": {
+    "osm_id": "R10349338",
+    "name": "芦之湖 · 芦ノ湖 / LAKE ASHI"
+  },
+  "nodes": [
+    {
+      "id": "odawara",
+      "label": "小田原 / ODAWARA",
+      "position": [139.1563953, 35.2564779],
+      "label_offset": [-62, 8],
+      "osm_object": "N11329995699"
+    },
+    {
+      "id": "yumoto",
+      "label": "箱根汤本 · 箱根湯本\nHAKONE-YUMOTO",
+      "position": [139.1034651, 35.2331952],
+      "label_offset": [10, -22],
+      "osm_object": "W235933667"
+    },
+    {
+      "id": "miyanoshita",
+      "label": "宫之下 · 宮ノ下\nMIYANOSHITA",
+      "position": [139.0628686, 35.2421498],
+      "label_offset": [8, 12],
+      "osm_object": "N264202768"
+    },
+    {
+      "id": "gora",
+      "label": "强罗 · 強羅 / GORA",
+      "position": [139.0482175, 35.2506355],
+      "label_offset": [-66, 13],
+      "osm_object": "W1415683341"
+    },
+    {
+      "id": "sounzan",
+      "label": "早云山 · 早雲山\nSOUNZAN",
+      "position": [139.0356026, 35.2463827],
+      "label_offset": [-60, -25],
+      "osm_object": "W1385721328"
+    },
+    {
+      "id": "owakudani",
+      "label": "大涌谷 / OWAKUDANI",
+      "position": [139.0195759, 35.2444182],
+      "label_offset": [-68, 17],
+      "osm_object": "W240474980"
+    },
+    {
+      "id": "togendai",
+      "label": "桃源台 / TOGENDAI",
+      "position": [138.9945933, 35.2378981],
+      "label_offset": [-60, 15],
+      "osm_object": "W238705813"
+    },
+    {
+      "id": "sengokuhara",
+      "label": "仙石原 / SENGOKUHARA",
+      "position": [139.004544, 35.2606],
+      "label_offset": [-68, 8],
+      "osm_object": "N8670938737"
+    },
+    {
+      "id": "motohakone",
+      "label": "元箱根 / MOTO-HAKONE",
+      "position": [139.0305313, 35.200948],
+      "label_offset": [8, -18],
+      "osm_object": "N391224913"
+    },
+    {
+      "id": "hakonemachi",
+      "label": "箱根町 / HAKONE-MACHI",
+      "position": [139.0245031, 35.1899853],
+      "label_offset": [8, 16],
+      "osm_object": "N391217634"
+    }
+  ],
+  "routes": [
+    {
+      "mode": "gateway-rail",
+      "node_ids": ["odawara", "yumoto"]
+    },
+    {
+      "mode": "mountain-rail",
+      "node_ids": ["yumoto", "miyanoshita", "gora"]
+    },
+    {
+      "mode": "cable-car",
+      "node_ids": ["gora", "sounzan"]
+    },
+    {
+      "mode": "ropeway",
+      "node_ids": ["sounzan", "owakudani", "togendai"]
+    },
+    {
+      "mode": "sightseeing-cruise",
+      "coordinates": [
+        [138.9945933, 35.2378981],
+        [139.003, 35.223],
+        [139.012, 35.209],
+        [139.025, 35.201],
+        [139.0305313, 35.200948],
+        [139.0245031, 35.1899853]
+      ]
+    },
+    {
+      "mode": "bus-link",
+      "node_ids": ["yumoto", "motohakone", "hakonemachi"]
+    },
+    {
+      "mode": "bus-link",
+      "node_ids": ["yumoto", "miyanoshita", "sengokuhara", "togendai"]
+    }
+  ],
+  "profile_node_ids": [
+    "odawara",
+    "yumoto",
+    "miyanoshita",
+    "gora",
+    "sounzan",
+    "owakudani",
+    "togendai",
+    "motohakone"
+  ],
+  "sources": {
+    "terrain": {
+      "name": "Geospatial Information Authority of Japan elevation tiles",
+      "url_template": "https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/{z}/{x}/{y}.png",
+      "terms": "https://www.gsi.go.jp/ENGLISH/page_e30086.html",
+      "attribution": "Elevation data: Geospatial Information Authority of Japan"
+    },
+    "water_and_nodes": {
+      "name": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://nominatim.openstreetmap.org/lookup",
+      "license": "ODbL 1.0"
+    },
+    "transport_structure": {
+      "name": "Odakyu Hakone, Getting Around Hakone",
+      "url": "https://www.hakonenavi.jp/international/en/around",
+      "checked_at": "2026-08-16"
+    },
+    "lake_elevation_context": {
+      "name": "Hakone Town, Lake Ashi",
+      "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001498/index.html",
+      "checked_at": "2026-08-16"
+    }
+  }
+}

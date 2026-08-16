@@ -78,12 +78,27 @@ class WebsiteBuildTests(unittest.TestCase):
 
     def test_build_supports_nested_japan_destination(self) -> None:
         book = ROOT / "data/japan/prefectures/kanagawa/hakone/book.json"
+        document = json.loads(book.read_text(encoding="utf-8"))
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary) / "site"
             counts = build(book, output)
             manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
             payload = json.loads((output / PAYLOAD_PATH).read_text(encoding="utf-8"))
-            self.assertEqual(counts, {"blocks": 0, "zh_tokens": 0, "ja_tokens": 0})
+            expected = {
+                "blocks": sum(len(chapter["blocks"]) for chapter in document["chapters"]),
+                "zh_tokens": sum(
+                    len(block["readings"]["zh"]["tokens"])
+                    for chapter in document["chapters"]
+                    for block in chapter["blocks"]
+                ),
+                "ja_tokens": sum(
+                    len(block["readings"]["ja"]["tokens"])
+                    for chapter in document["chapters"]
+                    for block in chapter["blocks"]
+                ),
+            }
+            self.assertEqual(counts, expected)
+            self.assertGreater(counts["blocks"], 0)
             self.assertEqual(manifest["destination"], "hakone")
             self.assertEqual(payload["book"]["series_path"], "japan/prefectures/kanagawa/hakone")
 

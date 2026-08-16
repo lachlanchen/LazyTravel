@@ -13,6 +13,10 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   Hakone book and website have been reviewed and reproducibly built.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
   a local editorial problem.
+- The Hakone book also has exactly 11 chapters, locked in
+  `books/japan/prefectures/kanagawa/hakone/editorial/outline.md`. Populate and
+  accept them in order; a later chapter never bypasses an unfinished earlier
+  chapter.
 - All 11 Xi'an chapters have passed editorial, reading, PDF-page, public
   website, Nutstore, and GitHub publication review. Do not reopen a settled
   Xi'an chapter unless a factual, language, layout, or build failure is

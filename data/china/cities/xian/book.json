@@ -3,6 +3,8 @@
   "book": {
     "id": "xian",
     "series_path": "china/cities/xian",
+    "series_label": "CHINA · CITIES · XI'AN",
+    "running_title": "XI'AN",
     "titles": {
       "zh": "西安旅行手册",
       "ja": "西安旅の手引き",

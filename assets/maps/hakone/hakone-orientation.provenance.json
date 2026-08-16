@@ -1,0 +1,182 @@
+{
+  "asset_id": "asset-hakone-orientation-map",
+  "command": "python3 scripts/build_hakone_orientation_map.py",
+  "config": "data/maps/hakone/hakone-orientation.config.json",
+  "created_at": "2026-08-16",
+  "declared_generalizations": [
+    "Colored node links show the operator's transfer structure and are not surveyed rail, cable, ropeway, bus, or ship alignments",
+    "The elevation profile samples GSI terrain at transfer nodes, rounds to 10 metres, and is not a station-platform survey"
+  ],
+  "files": {
+    "hakone-orientation.pdf": {
+      "bytes": 432611,
+      "sha256": "bb381d9017e69de76483d2267e46c2a55a521f3a2fd8ad4a4478c2606960177c"
+    },
+    "hakone-orientation.png": {
+      "bytes": 2491235,
+      "sha256": "68daddda8d0143b497f6112f420c577adc693cf19fbc0f989ba9a6970dc2daf6"
+    },
+    "hakone-orientation.svg": {
+      "bytes": 962380,
+      "sha256": "806e47f78b744d0e2f267cddfcf729ca5e74c2c880b4d18bdfab35b4ac11166e"
+    }
+  },
+  "method": "map-render",
+  "normalized_data": {
+    "path": "data/maps/hakone/hakone-orientation.geojson",
+    "sha256": "911ae323aeb3b69b971c70aa64b787b023ed5cc22c5e37a66a053a32386d2944"
+  },
+  "osm_lookup": {
+    "cache_sha256": "64273ad04e920a1e922cbc4a000088881c3087f12437659da108543061a0b3df",
+    "lake_osm_id": "R10349338",
+    "node_osm_objects": [
+      "N11329995699",
+      "W235933667",
+      "N264202768",
+      "W1415683341",
+      "W1385721328",
+      "W240474980",
+      "W238705813",
+      "N8670938737",
+      "N391224913",
+      "N391217634"
+    ],
+    "url": "https://nominatim.openstreetmap.org/lookup?format=jsonv2&polygon_geojson=1&osm_ids=R10349338"
+  },
+  "render_details": {
+    "profile": [
+      {
+        "gsi_terrain_m_rounded_10": 10,
+        "id": "odawara"
+      },
+      {
+        "gsi_terrain_m_rounded_10": 90,
+        "id": "yumoto"
+      },
+      {
+        "gsi_terrain_m_rounded_10": 430,
+        "id": "miyanoshita"
+      },
+      {
+        "gsi_terrain_m_rounded_10": 540,
+        "id": "gora"
+      },
+      {
+        "gsi_terrain_m_rounded_10": 750,
+        "id": "sounzan"
+      },
+      {
+        "gsi_terrain_m_rounded_10": 1040,
+        "id": "owakudani"
+      },
+      {
+        "gsi_terrain_m_rounded_10": 730,
+        "id": "togendai"
+      },
+      {
+        "gsi_terrain_m_rounded_10": 730,
+        "id": "motohakone"
+      }
+    ]
+  },
+  "rights": "Map design © LazyTravel; elevation data from GSI; water and node locations © OpenStreetMap contributors, ODbL 1.0.",
+  "schema_version": 1,
+  "sources": {
+    "lake_elevation_context": {
+      "checked_at": "2026-08-16",
+      "name": "Hakone Town, Lake Ashi",
+      "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001498/index.html"
+    },
+    "terrain": {
+      "attribution": "Elevation data: Geospatial Information Authority of Japan",
+      "name": "Geospatial Information Authority of Japan elevation tiles",
+      "terms": "https://www.gsi.go.jp/ENGLISH/page_e30086.html",
+      "url_template": "https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/{z}/{x}/{y}.png"
+    },
+    "transport_structure": {
+      "checked_at": "2026-08-16",
+      "name": "Odakyu Hakone, Getting Around Hakone",
+      "url": "https://www.hakonenavi.jp/international/en/around"
+    },
+    "water_and_nodes": {
+      "endpoint": "https://nominatim.openstreetmap.org/lookup",
+      "license": "ODbL 1.0",
+      "name": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  },
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      3360,
+      2376
+    ],
+    "svg_selectable_text": true
+  },
+  "terrain_tiles": {
+    "tiles": [
+      {
+        "bytes": 127337,
+        "sha256": "b4339298f527c57134b7060df91f8fb39d6decdc9ef0f770c3e0698226ea1fcf",
+        "url": "https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/12/3629/1618.png",
+        "x": 3629,
+        "y": 1618,
+        "z": 12
+      },
+      {
+        "bytes": 126448,
+        "sha256": "26e921db668c55e8d0a6f04a004f0f56868a333300b6666dc20e461ec95d3ec6",
+        "url": "https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/12/3630/1618.png",
+        "x": 3630,
+        "y": 1618,
+        "z": 12
+      },
+      {
+        "bytes": 84697,
+        "sha256": "e5f3a2d7cb88819c0ad3b0325e0603466186a7f8d5bd4a0ffd3cfa492676b5ba",
+        "url": "https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/12/3631/1618.png",
+        "x": 3631,
+        "y": 1618,
+        "z": 12
+      },
+      {
+        "bytes": 117753,
+        "sha256": "1d21bc8a9c1ce2ab918efa615be78ee82aec28c033a893312476ff031bc968b7",
+        "url": "https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/12/3629/1619.png",
+        "x": 3629,
+        "y": 1619,
+        "z": 12
+      },
+      {
+        "bytes": 131213,
+        "sha256": "00c0b19cf90ea3fc72bf76ddc42b5aa6535bbdea86bdc41f027e2a09411300b8",
+        "url": "https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/12/3630/1619.png",
+        "x": 3630,
+        "y": 1619,
+        "z": 12
+      },
+      {
+        "bytes": 18582,
+        "sha256": "1a46325bc6d4da9373203eb17c9336af0028e9538c26c0ea0c260978cb20a5ed",
+        "url": "https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/12/3631/1619.png",
+        "x": 3631,
+        "y": 1619,
+        "z": 12
+      }
+    ],
+    "zoom": 12
+  },
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "Full-resolution SVG and PNG show no overlapping place labels or clipped legend text.",
+      "Compiled B6 landscape review keeps node labels, transport modes, north arrow, caveat, and elevation profile legible; evidence build/qa/books/hakone/ch01-milestone/page-08.png, sha256 397a3dfe3c156adb53f07f4d039c24605d87f71010ee9c1a88192f70a4dba4eb.",
+      "At 390 px, the website keeps the SVG in a pannable 760 px viewport with working zoom and reset controls instead of shrinking the full map; evidence build/qa/site/hakone-ch01/mobile-01-map.png, sha256 e45757f045c966ee0214d467dffeefbe5c3b1c144b4d86546bf71db5c9db586a."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-16"
+  }
+}

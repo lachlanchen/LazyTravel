@@ -76,3 +76,13 @@ The synchronized website is publicly deployed at
 `https://lachlanchen.github.io/LazyTravel/`; all 74 published files match the
 manifest and canonical JSON. Xi'an is complete. Hakone is next at
 `japan/prefectures/kanagawa/hakone`, followed by Lanzhou.
+
+Hakone has exactly 11 chapters and advances in order. Chapter 1, `Read the
+Mountain First`, is the first accepted internal milestone: ten aligned blocks,
+`848` Chinese reading tokens, `1,098` Japanese reading tokens, one terrain and
+transfer map, and one Lake Ashi figure with all four guides. Its reproducible
+B6 review has `19` pages and SHA-256
+`5c684439a22475f810b57bcb1ef0b2f629356b7bae057961f8cd581cd9cfc310`.
+Desktop and `390 px` website QA pass from the same JSON, and the exact pocket
+PDF is hash-synced to Nutstore. This does not complete Hakone; Chapter 2 is the
+only next writing gate.

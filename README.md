@@ -49,6 +49,16 @@ The current pocket PDF SHA-256 is
 The same verified file is mirrored to the project Nutstore share.
 The synchronized 11-chapter website is published through GitHub Pages.
 
+Hakone has a separate locked 11-chapter route. Chapter 1, **Read the Mountain
+First**, is the current production milestone: ten aligned blocks, one
+code-built terrain/transfer map, one four-guide Lake Ashi figure, `848` Chinese
+reading tokens, `1,098` Japanese reading tokens, and a verified `19`-page B6
+review. The pocket SHA-256 is
+`5c684439a22475f810b57bcb1ef0b2f629356b7bae057961f8cd581cd9cfc310`.
+The same file is hash-synced to Nutstore, and the Hakone desktop/mobile website
+preview passes from the same JSON. Chapter 2 is next; Hakone is not yet a
+complete or publicly deployed destination.
+
 ## Source Boundary
 
 The six supplied books in `Sources/` are private research references. They are
@@ -100,6 +110,29 @@ layer. The B6 pocket review PDF and its hash manifest are written to ignored
 
 Use `--skip-map` only when checking the book layout against the already
 committed map variants.
+
+## Build The Hakone Chapter Review
+
+```bash
+python3 scripts/build_hakone_review.py
+python3 scripts/build_website.py \
+  --book data/japan/prefectures/kanagawa/hakone/book.json \
+  --output build/site-hakone
+```
+
+The Hakone builder discovers only the consecutive populated chapter prefix,
+keeps the book at exactly 11 planned chapters, and rejects pending figure,
+map, cover, reading, PDF, or source checks. After browser review, sync only the
+verified pocket PDF with:
+
+```bash
+python3 scripts/build_hakone_review.py --skip-map --sync-nutstore
+```
+
+Serve `build/site-hakone` on an unused temporary project-owned port and run
+`scripts/qa_destination_website.py` against that URL. Stop only that temporary
+server after QA; do not alter the existing Xi'an preview server or any shared
+GUI stack.
 
 The website build writes an ignored static preview to `site/`. It reads the
 same aligned destination JSON as the pocket book, removes private local source

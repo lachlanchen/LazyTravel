@@ -11,9 +11,10 @@ from render_destination_tex import (  # noqa: E402
     block_tex,
     citation_order,
     citation_order_for_chapters,
-    cover_tex,
     contents_tex,
+    cover_tex,
     reading_tokens_tex,
+    series_label,
     tex_escape,
 )
 
@@ -41,6 +42,22 @@ class DestinationTexTests(unittest.TestCase):
         self.assertIn("lazying.art · example/repo", rendered)
         self.assertNotIn("https://example/repo", rendered)
 
+    def test_cover_uses_destination_specific_underlay_and_series(self) -> None:
+        book = {
+            "id": "hakone",
+            "series_path": "japan/prefectures/kanagawa/hakone",
+            "series_label": "JAPAN · PREFECTURES · KANAGAWA · HAKONE",
+            "titles": {"zh": "箱根", "ja": "箱根", "en": "Hakone"},
+            "subtitles": {"zh": "山路", "ja": "山道", "en": "Mountain routes"},
+            "branding": {"studio": "lazying.art", "repository": "https://example/repo"},
+        }
+
+        rendered = cover_tex(book, [{"order": 1}])
+
+        self.assertIn("hakone-cover-underlay.png", rendered)
+        self.assertIn(r"\LTSeriesLabel", rendered)
+        self.assertEqual(series_label(book), "JAPAN · PREFECTURES · KANAGAWA · HAKONE")
+
     def test_contents_use_separate_trilingual_entries(self) -> None:
         chapters = [
             {
@@ -51,9 +68,7 @@ class DestinationTexTests(unittest.TestCase):
 
         rendered = contents_tex(chapters)
 
-        self.assertIn(
-            r"\LTContentsEntry{01}{西安地图}{西安の地図}{Map of Xi'an}", rendered
-        )
+        self.assertIn(r"\LTContentsEntry{01}{西安地图}{西安の地図}{Map of Xi'an}", rendered)
         self.assertIn(r"\pageref{lt-chapter-01}", rendered)
         self.assertNotIn(r"\tableofcontents", rendered)
 

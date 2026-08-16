@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-lake-orientation",
+  "created_at": "2026-08-16",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "11-5fcda71e-5c14-421a-9eee-85d56ee147f4",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-onshi-lake-reference.jpg",
+      "sha256": "9c74698aedbef34c9589514ac589fb8fe660b556a5fb6e554fec34617ddd837a",
+      "url": "https://www.kanagawa-park.or.jp/onsisite/english/img01.jpg",
+      "page_url": "https://www.kanagawa-park.or.jp/onsisite/english.html",
+      "role": "Official Onshi-Hakone Park photograph inspected for Lake Ashi, wooded-ridge, and visitor-scale context; reference cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-lake-orientation.prompt.md",
+    "sha256": "2fa85346133f80329b89eb62f9a1f1fd0d570d099e3b766ef2759e0532affeb3"
+  },
+  "provider_manifest": {
+    "path": "build/aginti/hakone-lake-orientation-v1/task_manifest.json",
+    "sha256": "3b710a35c33ea878252a0a9cbb73b88993082c7a4cb6634d059b6a9425519fbf"
+  },
+  "selected_raw": {
+    "path": "build/aginti/hakone-lake-orientation-v1/hakone-lake-orientation-v1.png",
+    "sha256": "9fd7b5f5d1ce8572a3e91116220875a54496d859ff93fd097b515d06c2b3f2ae",
+    "bytes": 13954219,
+    "width": 5056,
+    "height": 3392
+  },
+  "output": {
+    "path": "assets/images/hakone/hakone-lake-orientation.jpg",
+    "sha256": "67e23e9dfbd45792ef6c552e1757572bbd8182464effc32c3a65dbdbe66a5add",
+    "bytes": 2156550,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-lake-orientation-wide.jpg",
+      "sha256": "207f652201368937a54e1567fa0f4a6e32b7b9967faa6083f1a8abc961a5daef",
+      "bytes": 2030030,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-lake-orientation-web.jpg",
+      "sha256": "1566b240e4e98b939b38c7eb933f71983d5625868aa11c8b764fee05dd3e1d4b",
+      "bytes": 617426,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The figure conveys Lake Ashi, wooded ridges, changing cloud, and traveler scale; it is not a claim of one exact fixed viewpoint",
+    "No building, shrine, torii, vessel, railway, fumarole, or guaranteed Mount Fuji view is represented",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "Reader-facing captions explain what to notice in the terrain and do not discuss production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "no_raster_text": "pass",
+    "no_invented_attraction_collage": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "notes": "The 3600 x 2025 print crop passed on compiled B6 page 6, including guide silhouettes and trilingual caption. Print evidence: build/qa/books/hakone/ch01-milestone/page-06.png, sha256 599a4bcf23beded8f8d43ac75c4a9d8678b95a8d71f8e70a7807b4f99615eea3. The 1920 x 1080 crop passed at 390 px with the destination dominant and all four guides distinct: build/qa/site/hakone-ch01/mobile-01-figure.png, sha256 5a18c2e784e6c461c949ab4dc6463928c6c54fe1481eb7b665afd8dbe822fb06."
+  }
+}

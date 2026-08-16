@@ -11,7 +11,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BOOK = ROOT / "data/china/cities/xian/book.json"
 DEFAULT_TEMPLATE = ROOT / "books/china/cities/xian/latex/book.tex"
-COVER_UNDERLAY = (ROOT / "assets/images/xian/xian-cover-underlay.png").resolve()
+DEFAULT_COVER_UNDERLAY = (ROOT / "assets/images/xian/xian-cover-underlay.png").resolve()
 
 
 LATEX_ESCAPES = {
@@ -72,8 +72,7 @@ def reading_tokens_tex(layer: dict[str, Any], command: str) -> str:
         token_text = token["text"]
         previous_text = tokens[index - 1]["text"] if index else ""
         if index and (
-            token_text[:1] in CLOSING_PUNCTUATION
-            or previous_text[-1:] in OPENING_PUNCTUATION
+            token_text[:1] in CLOSING_PUNCTUATION or previous_text[-1:] in OPENING_PUNCTUATION
         ):
             pieces.append(r"\nobreak{}")
         base = tex_escape(token_text)
@@ -92,24 +91,63 @@ def reading_tokens_tex(layer: dict[str, Any], command: str) -> str:
     return "".join(pieces)
 
 
-def cover_tex(book: dict[str, Any], chapters: list[dict[str, Any]]) -> str:
+def cover_underlay_path(book: dict[str, Any]) -> Path:
+    book_id = book.get("id")
+    if not book_id:
+        return DEFAULT_COVER_UNDERLAY
+    return (ROOT / f"assets/images/{book_id}/{book_id}-cover-underlay.png").resolve()
+
+
+def series_label(book: dict[str, Any]) -> str:
+    explicit = book.get("series_label")
+    if explicit:
+        return explicit
+    path = book.get("series_path", "china/cities/xian")
+    replacements = {"xian": "XI'AN"}
+    return " · ".join(
+        replacements.get(part, part.replace("-", " ").upper()) for part in path.split("/")
+    )
+
+
+def destination_header(book: dict[str, Any]) -> str:
+    return book.get("running_title", series_label(book).split(" · ")[-1])
+
+
+def cover_tex(
+    book: dict[str, Any],
+    chapters: list[dict[str, Any]],
+    cover_path: Path | None = None,
+) -> str:
     titles = book["titles"]
     subtitles = book.get("subtitles", {language: "" for language in ("zh", "ja", "en")})
     branding = book["branding"]
     repository_label = branding["repository"].removeprefix("https://")
+    preserve_xian_layout = book.get("id") == "xian"
+    brand_break = "" if preserve_xian_layout else r"\par"
+    brand_gap = 13 if preserve_xian_layout else 10
+    gate = (
+        rf"{{\displayfont\fontsize{{7}}{{9}}\selectfont\color{{LTMuted}}"
+        rf"B6 POCKET REVIEW · CHAPTERS {chapters[0]['order']:02d}--"
+        rf"{chapters[-1]['order']:02d}\par}}"
+    )
+    mid_gate = ""
+    bottom_gate = gate
+    if book.get("cover_gate_position") == "mid":
+        mid_gate = rf"\vspace{{7mm}}{gate}"
+        bottom_gate = ""
     return rf"""
 \begin{{titlepage}}
   \thispagestyle{{empty}}
   \begin{{tikzpicture}}[remember picture,overlay]
     \node[anchor=center,inner sep=0] at (current page.center) {{%
       \includegraphics[width=\paperwidth,height=\paperheight]{{%
-        \detokenize{{{COVER_UNDERLAY}}}}}%
+        \detokenize{{{cover_path or cover_underlay_path(book)}}}}}%
     }};
   \end{{tikzpicture}}
-  \LTBrand
-  \vspace*{{13mm}}
+  \LTBrand{brand_break}
+  \vspace*{{{brand_gap}mm}}
   {{\displayfont\fontsize{{8}}{{10}}\selectfont\color{{LTWater}}
-    CHINA · CITIES · XI'AN\par}}
+    \LTSeriesLabel\par}}
   \vspace{{7mm}}
   {{\bfseries\fontsize{{23}}{{29}}\selectfont {tex_escape(titles['zh'])}\par}}
   \vspace{{4mm}}
@@ -128,9 +166,9 @@ def cover_tex(book: dict[str, Any], chapters: list[dict[str, Any]]) -> str:
   \vspace{{2mm}}
   {{{{\englishfont\fontsize{{8}}{{11.5}}\selectfont\color{{LTMuted}}
     {tex_escape(subtitles['en'])}}}\par}}
+  {mid_gate}
   \vfill
-  {{\displayfont\fontsize{{7}}{{9}}\selectfont\color{{LTMuted}}
-    B6 POCKET REVIEW · CHAPTERS {chapters[0]['order']:02d}--{chapters[-1]['order']:02d}\par}}
+  {bottom_gate}
   \vspace{{3mm}}
   {{\displayfont\fontsize{{7}}{{10}}\selectfont
     {tex_escape(branding['studio'])} · {tex_escape(repository_label)}\par}}
@@ -139,8 +177,36 @@ def cover_tex(book: dict[str, Any], chapters: list[dict[str, Any]]) -> str:
 """
 
 
-def publication_note_tex(book: dict[str, Any]) -> str:
+def publication_note_tex(book: dict[str, Any], frontmatter: dict[str, Any] | None = None) -> str:
     branding = book["branding"]
+    how_to_use = (frontmatter or {}).get(
+        "how_to_use",
+        {
+            "zh": (
+                "这是一本按旅行决策组织的西安口袋手册。先用地图分清今天的城墙、历代都城与近郊景点，"
+                "再走进兵马俑、雁塔、碑林、城内街巷和西安饭桌。历史只在它能解释眼前地点、路线取舍"
+                "或饮食习惯时出现；交通、住宿和二日、三日、五日行程放在后半部。每一节只解决一个问题："
+                "去哪里，为什么值得去，现场看什么，怎样留出回程余量。"
+            ),
+            "ja": (
+                "この本は、旅の判断順に組み立てた西安のポケットガイドである。まず地図で現在の城壁、"
+                "歴代の都城、近郊の見どころを区別し、兵馬俑、雁塔、碑林、城内の路地、西安の食卓へ進む。"
+                "歴史は、目の前の場所、経路の選択、食習慣を理解するために必要なところで扱う。交通、宿泊、"
+                "二日・三日・五日の旅程は後半にまとめる。各節が答えるのは、どこへ行くか、なぜ行くか、"
+                "現地で何を見るか、どう帰路の余裕を残すかである。"
+            ),
+            "en": (
+                "This pocket guide follows the order in which a traveler makes decisions. "
+                "It first separates the present wall, successive capital sites, and nearby "
+                "excursions on maps, then moves through the Terracotta Army, the pagodas, "
+                "Beilin, lanes inside the wall, and the Xi'an table. History appears where "
+                "it explains a place, a route choice, or a way of eating; transport, "
+                "accommodation, and two-, three-, and five-day plans follow in the second "
+                "half. Each section answers one question: where to go, why it matters, "
+                "what to notice there, and how to leave enough room to return."
+            ),
+        },
+    )
     return rf"""
 \thispagestyle{{empty}}
 \vspace*{{7mm}}
@@ -151,26 +217,13 @@ def publication_note_tex(book: dict[str, Any]) -> str:
 HOW TO USE THIS GUIDE\par}}
 \vspace{{5mm}}
 {{\fontsize{{8}}{{12}}\selectfont
-这是一本按旅行决策组织的西安口袋手册。先用地图分清今天的城墙、历代都城与近郊景点，
-再走进兵马俑、雁塔、碑林、城内街巷和西安饭桌。历史只在它能解释眼前地点、路线取舍
-或饮食习惯时出现；交通、住宿和二日、三日、五日行程放在后半部。每一节只解决一个问题：
-去哪里，为什么值得去，现场看什么，怎样留出回程余量。\par}}
+{tex_escape(how_to_use['zh'])}\par}}
 \vspace{{4mm}}
 {{\jpfont\fontsize{{8}}{{12}}\selectfont
-この本は、旅の判断順に組み立てた西安のポケットガイドである。まず地図で現在の城壁、
-歴代の都城、近郊の見どころを区別し、兵馬俑、雁塔、碑林、城内の路地、西安の食卓へ進む。
-歴史は、目の前の場所、経路の選択、食習慣を理解するために必要なところで扱う。交通、宿泊、
-二日・三日・五日の旅程は後半にまとめる。各節が答えるのは、どこへ行くか、なぜ行くか、
-現地で何を見るか、どう帰路の余裕を残すかである。\par}}
+{tex_escape(how_to_use['ja'])}\par}}
 \vspace{{4mm}}
 {{\englishfont\fontsize{{7.8}}{{11.3}}\selectfont
-This pocket guide follows the order in which a traveler makes decisions. It first
-separates the present wall, successive capital sites, and nearby excursions on maps,
-then moves through the Terracotta Army, the pagodas, Beilin, lanes inside the wall,
-and the Xi'an table. History appears where it explains a place, a route choice, or a
-way of eating; transport, accommodation, and two-, three-, and five-day plans follow
-in the second half. Each section answers one question: where to go, why it matters,
-what to notice there, and how to leave enough room to return.\par}}
+{tex_escape(how_to_use['en'])}\par}}
 \vfill
 {{\displayfont\fontsize{{7}}{{10}}\selectfont\color{{LTMuted}}
 One aligned ZH · JA · EN JSON · reviewed pinyin and furigana · dated sources\par
@@ -198,9 +251,15 @@ def contents_tex(chapters: list[dict[str, Any]]) -> str:
                     r"\clearpage",
                     r"\thispagestyle{empty}",
                     r"\vspace*{5mm}",
-                    r"{\displayfont\bfseries\fontsize{13}{17}\selectfont 目录（续） · 目次（続き）\par}",
+                    (
+                        r"{\displayfont\bfseries\fontsize{13}{17}\selectfont "
+                        r"目录（续） · 目次（続き）\par}"
+                    ),
                     r"\vspace{1mm}",
-                    r"{\englishfont\bfseries\fontsize{8.5}{11}\selectfont\color{LTWater}CONTENTS CONTINUED\par}",
+                    (
+                        r"{\englishfont\bfseries\fontsize{8.5}{11}\selectfont"
+                        r"\color{LTWater}CONTENTS CONTINUED\par}"
+                    ),
                     r"\vspace{6mm}",
                 ]
             )
@@ -332,7 +391,7 @@ def render_document(document: dict[str, Any], chapter_ids: str | list[str]) -> s
 
     pieces = [
         cover_tex(book, chapters),
-        publication_note_tex(book),
+        publication_note_tex(book, document.get("frontmatter")),
         contents_tex(chapters),
     ]
     for chapter in chapters:
@@ -345,9 +404,7 @@ def render_document(document: dict[str, Any], chapter_ids: str | list[str]) -> s
             rf"{{{tex_escape(titles['en'])}}}"
             rf"{{{tex_escape(deck)}}}"
         )
-        pieces.extend(
-            block_tex(block, citation_numbers, assets) for block in chapter["blocks"]
-        )
+        pieces.extend(block_tex(block, citation_numbers, assets) for block in chapter["blocks"])
     pieces.append(bibliography_tex(ordered_ids, citation_numbers, citations))
     pieces.extend(
         [
@@ -383,10 +440,18 @@ def main() -> int:
     output_dir.mkdir(parents=True, exist_ok=True)
     content_path = output_dir / "generated-content.tex"
     wrapper_path = output_dir / "main.tex"
-    chapter_ids = args.chapters or ["ch01-ground-before-time"]
+    chapter_ids = args.chapters or [
+        next(chapter["id"] for chapter in document["chapters"] if chapter["blocks"])
+    ]
     content_path.write_text(render_document(document, chapter_ids), encoding="utf-8")
+    book = document["book"]
+    landscape_profile = "" if book.get("id") == "xian" else "\\def\\LTUseWideLandscape{1}\n"
     wrapper_path.write_text(
-        f"\\def\\GeneratedContent{{{content_path}}}\n" f"\\input{{{DEFAULT_TEMPLATE}}}\n",
+        f"\\def\\GeneratedContent{{{content_path}}}\n"
+        f"\\def\\LTSeriesLabel{{{tex_escape(series_label(book))}}}\n"
+        f"\\def\\LTDestinationHeader{{{tex_escape(destination_header(book))}}}\n"
+        f"{landscape_profile}"
+        f"\\input{{{DEFAULT_TEMPLATE}}}\n",
         encoding="utf-8",
     )
     print(f"rendered: {content_path}")

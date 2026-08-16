@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-cover-underlay",
+  "created_at": "2026-08-16",
+  "method": "generated-text-safe-cover-underlay",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "2-bb99d068-6cd3-4f0e-90ce-3abf86802494",
+  "workflow": [
+    "Rendered the existing live-text cover as an ignored geometry reference",
+    "Prepared reduced local character-reference proxies without changing or redistributing the LALACHAN originals",
+    "Generated and rejected three variants with inaccurate or exaggerated landforms",
+    "Generated a fourth text-free composition with Lake Ashi, wooded ridges, and the four series guides",
+    "Cropped and resampled the selected image to exact B6 geometry at 1476 x 2079 pixels"
+  ],
+  "source_images": [
+    {
+      "path": "build/aginti-reference-links/xian-cover-layout.png",
+      "sha256": "ba981a46a3258d2166d4e0294b9eb87972c5c33523ba02bc982faa561b1b06f2",
+      "role": "Ignored layout-only reference for live-title and footer safe zones; no raster text is copied into the final artwork"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity reference; the robot is one of the four guides"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-torii-official.jpg",
+      "sha256": "b2852c377656f60072733827b4743b8af43f33fcb74aff76b39dad21c99ccc6a",
+      "url": "https://www.hakone.or.jp/files/w010_2019092712453485612.jpg",
+      "role": "Ignored official visual reference used during early variants; the torii was removed after geometry could not be represented reliably"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-cover-underlay-v4.prompt.md",
+    "sha256": "2ab0c78fbe78a943cc6a240a0731069c16a6ac5f74adcb859b2b737882d5a7e1"
+  },
+  "rejected_variants": [
+    {
+      "sha256": "d5bbecdce3b92a0ec399937fb76338a15c1f8c11ff56bd7086c99731e08a2b86",
+      "reason": "The lakeside torii repeated into an inaccurate fence-like structure"
+    },
+    {
+      "sha256": "bdc2070e93642b11ac52a89fb3d443030da4ce0175c226bcc9c6d98b3110dd31",
+      "reason": "The torii geometry was duplicated"
+    },
+    {
+      "sha256": "c28ed50207531b9d1c2222411fb8631475eed08d43a841e8ab7778df14ffc477",
+      "reason": "Owakudani was exaggerated into an implausibly large crater"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-cover-v4/hakone-cover-underlay-v4.png",
+    "sha256": "d3c5b2139796415823c816c25f32d211359ad5a3983e14167a0f84016696dded",
+    "bytes": 8144123,
+    "width": 3584,
+    "height": 4800
+  },
+  "conversion": "convert hakone-cover-underlay-v4.png -crop 3410x4800+140+0 +repage -resize 1476x2079! -units PixelsPerInch -density 300 -strip assets/images/hakone/hakone-cover-underlay.png",
+  "output": {
+    "path": "assets/images/hakone/hakone-cover-underlay.png",
+    "sha256": "fa8c76e5b49c69d162dbe2c41f438aace80dd7020d6601198666ea0dcc477287",
+    "width": 1476,
+    "height": 2079,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Text-free full-page visual beneath live LaTeX title, multilingual subtitle, LazyTravel branding, and repository text on the Hakone B6 cover",
+  "factual_limits": [
+    "The lake and wooded ridges form a representative Hakone composition, not a claim of one exact viewpoint",
+    "The four guides are series characters, not documentary travelers",
+    "The raster asserts no venue name, route, fare, time, access condition, or guaranteed view of Mount Fuji"
+  ],
+  "reader_caption_policy": "The cover carries no production note; generation details and rejected variants remain in this technical provenance file",
+  "rights": "Original LazyTravel cover composition; external images were used only as unredistributed visual references",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "no_raster_text": "pass",
+    "live_text_selectable": "pass",
+    "title_safe_zone": "pass",
+    "footer_safe_zone": "pass",
+    "b6_print": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "notes": "Compiled B6 page 1 passed at 144 ppi: live title and subtitle remain selectable, all four guides stay clear of the title field, and the footer remains readable. Evidence: build/qa/books/hakone/ch01-milestone/page-01.png, sha256 5904175edbcd89b6b4aebb1fa14332ed4461837227ffc1c13e5e6e3475e1b39b."
+  }
+}
