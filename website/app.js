@@ -520,6 +520,12 @@ async function initialize() {
     const documentData = await response.json();
     state.document = documentData;
     document.getElementById("github-link").href = documentData.book.branding.repository;
+    const editionDate = documentData.book.edition.match(/\d{4}-\d{2}-\d{2}$/)?.[0];
+    document.getElementById("edition-short").textContent =
+      `XI'AN · ${editionDate?.slice(0, 4) || documentData.book.edition}`;
+    document.getElementById("edition-label").textContent = editionDate
+      ? `Research edition · ${editionDate}`
+      : documentData.book.edition;
     activateChapter(chapterIdFromLocation(documentData));
     setMode(state.mode);
   } catch (error) {

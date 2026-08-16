@@ -1,0 +1,75 @@
+name: Publish LazyTravel website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Install schema validator
+        run: python -m pip install "jsonschema>=4.22,<5"
+
+      - name: Validate canonical data
+        run: |
+          python scripts/validate_json.py data/sources/catalog.json --schema schemas/source-catalog.schema.json
+          python scripts/validate_json.py data/china/cities/xian/book.json --schema schemas/destination-book.schema.json
+          python scripts/validate_readings.py --book data/china/cities/xian/book.json
+
+      - name: Build synchronized static website
+        run: |
+          python scripts/build_website.py
+          python scripts/validate_site_parity.py
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload verified website artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out verifier
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Verify published files against the canonical JSON
+        run: >-
+          python scripts/verify_deployed_site.py
+          --url "${{ steps.deployment.outputs.page_url }}"
+          --book data/china/cities/xian/book.json

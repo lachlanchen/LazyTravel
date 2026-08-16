@@ -84,6 +84,8 @@ class WebsiteBuildTests(unittest.TestCase):
         self.assertIn("citation.accessed_at", javascript)
         self.assertIn("RUBBING ON A MODERN REPLICA", javascript)
         self.assertIn("BEFORE DEPARTURE · FOUR EVIDENCE CHECKS", javascript)
+        self.assertIn('id="edition-label"', index)
+        self.assertIn("documentData.book.edition.match", javascript)
 
 
 if __name__ == "__main__":
