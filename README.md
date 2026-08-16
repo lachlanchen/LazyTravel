@@ -49,15 +49,16 @@ The current pocket PDF SHA-256 is
 The same verified file is mirrored to the project Nutstore share.
 The synchronized 11-chapter website is published through GitHub Pages.
 
-Hakone has a separate locked 11-chapter route. Chapter 1, **Read the Mountain
-First**, is the current production milestone: ten aligned blocks, one
-code-built terrain/transfer map, one four-guide Lake Ashi figure, `848` Chinese
-reading tokens, `1,098` Japanese reading tokens, and a verified `19`-page B6
-review. The pocket SHA-256 is
-`5c684439a22475f810b57bcb1ef0b2f629356b7bae057961f8cd581cd9cfc310`.
+Hakone has a separate locked 11-chapter route. Chapters 1-4 are accepted:
+**Read the Mountain First**, **Odawara to Yumoto**, **Climb to Gora**, and
+**Cross Owakudani**. Together they contain `37` aligned blocks, four code-built
+maps, eleven four-guide place and food figures, `4,070` Chinese reading tokens,
+`4,976` Japanese reading tokens, and a verified `67`-page B6 review. The pocket
+SHA-256 is
+`73ec6fb6a93f8b786762e116d1fc7ba3f727cf0c3c1115742538c3d7af6ed5cd`.
 The same file is hash-synced to Nutstore, and the Hakone desktop/mobile website
-preview passes from the same JSON. Chapter 2 is next; Hakone is not yet a
-complete or publicly deployed destination.
+preview passes from the same JSON with `5,503` ruby nodes. Chapter 5, **A Day
+on Lake Ashi**, is next; Hakone is not yet a complete destination.
 
 ## Source Boundary
 

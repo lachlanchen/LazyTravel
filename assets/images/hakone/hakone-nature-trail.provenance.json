@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-nature-trail",
+  "created_at": "2026-08-17",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "1-941346b8-e3d3-44a4-8d88-958ce2e97ba4",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch04-references/nature-1.jpg",
+      "sha256": "6af5127f59e0e6e6d6b820b11742ad3ea7218da1185c7438535bc0df6c179a8c",
+      "page_url": "https://www.hakone.or.jp/od-booking/",
+      "role": "Official trail reference for railings, path, and fumarole terrain; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch04-references/nature-5.jpg",
+      "sha256": "4542bbc7da06c9e291fba3e15b7b3a4dff7dfadce3cf89cc5574ceb8df3f9430",
+      "page_url": "https://www.hakone.or.jp/od-booking/info/safety.html",
+      "role": "Official trail reference for shelter and safety infrastructure; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-nature-trail.prompt.md",
+    "sha256": "0201f7ef59192f610786d5569542400d496f40abcc1a8ec75a24e1a78da67ada"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-nature-trail-v1/task_manifest.json",
+      "sha256": "e228de9db737c012c963f85765d5511eb2d82cd0c4c2f932505664398f6102af",
+      "role": "Rejected draft with a human replacement"
+    },
+    {
+      "path": "build/aginti/hakone-nature-trail-v2/task_manifest.json",
+      "sha256": "2cbea35e70a0806368bae55b91dbcdea2c32126f47e292ec093c06a4a9891b3d",
+      "role": "Selected identity-correction generation"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-nature-trail-v2/hakone-nature-trail-v2.png",
+    "sha256": "8145e22c137be358f9009004f6b24bfdd022b60a17f6d2e04e989c6c2af9c837",
+    "bytes": 19425033,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "ImageMagick sRGB conversion, centered 3:2 and 16:9 crops, metadata strip, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-nature-trail.jpg",
+    "sha256": "f1a69c469faced809ab219c9813c7de63b77cfebac4a1107bba4ff91668d8e7c",
+    "bytes": 2538103,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-nature-trail-wide.jpg",
+      "sha256": "9e0df6311d49599f3b07337344e376b77112f4d5330947f89ae71c6ec37f64a2",
+      "bytes": 2210585,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-nature-trail-web.jpg",
+      "sha256": "292532a78af330806aa8283d80f700cedde524b0ff461ba8236f6958d08a82bb",
+      "bytes": 743959,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The figure shows the reserved nature trail, not the freely accessible public overlook",
+    "Actual entry requires the official reservation, check-in, escort, eligibility, and day-of operating conditions",
+    "The official escort is outside this editorial frame and must not be inferred to be absent from an actual group",
+    "Path condition, shelter access, gas levels, and closures can change"
+  ],
+  "reader_caption_policy": "Captions identify the booked trail as a separate commitment and direct readers to current official conditions without discussing production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "helmets_present": "pass",
+    "railings_and_shelter_visible": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch04-proof-final/page-57.png",
+        "physical_page": 57,
+        "sha256": "92bf77416a4c4e6181e6f2ce9607a67385f369d60ceb9e70ae913bfe078257f3"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch04-website/mobile-04-figure-04.png",
+        "viewport_css_px": 390,
+        "sha256": "50bca66cdd01b4d884743eada1e98fce998db3ac5c546df7cc146d9b4c490daf"
+      }
+    },
+    "approved": true,
+    "reviewed_at": "2026-08-17",
+    "notes": "Selected correction image and delivery crops passed original-size and contact-sheet review; compiled-page evidence is recorded in the Chapter 4 page review."
+  }
+}

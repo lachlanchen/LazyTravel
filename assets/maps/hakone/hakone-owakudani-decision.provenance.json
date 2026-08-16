@@ -1,0 +1,89 @@
+{
+  "asset_id": "asset-hakone-owakudani-decision-map",
+  "command": "python3 scripts/build_hakone_owakudani_decision_map.py",
+  "config": "data/maps/hakone/hakone-owakudani-decision.config.json",
+  "config_sha256": "02e3052f2a51c498f93a3cfe6e901f10883bf19a96a7387fdd50cb6685f64150",
+  "created_at": "2026-08-17",
+  "declared_generalizations": [
+    "Station spacing is schematic and does not represent distance, elevation, or a live timetable",
+    "About ten minutes is the operator's approximation for each ropeway section, not a connection guarantee",
+    "The 45–60, 75–95, and 90–120 minute windows are LazyTravel planning ranges, not operator promises",
+    "The booked-trail window protects check-in and delay buffer around the official approximately forty-minute walk; a meal needs additional time",
+    "Public overlook access, ropeway riding, and reserved-trail entry have different operating and health conditions",
+    "During closure or gas restrictions, follow staff and rebuild the route from the last open hub rather than forcing the loop"
+  ],
+  "files": {
+    "hakone-owakudani-decision.pdf": {
+      "bytes": 108899,
+      "sha256": "1fa5364dbd6c731dffb20ff625b463e764bed6bd8d8b075aa1ad81d08de36533"
+    },
+    "hakone-owakudani-decision.png": {
+      "bytes": 688478,
+      "sha256": "663ed448057c5dea56fad27f062c8738f5c10597edd247de6a763a47923814da"
+    },
+    "hakone-owakudani-decision.svg": {
+      "bytes": 20906,
+      "sha256": "43178549c83c12d6449b33e773c17a598e545ceed760ec8e1e96a22d75fa283b"
+    }
+  },
+  "method": "schematic-route-decision-render",
+  "rights": "Map design © LazyTravel; route and operating facts derive from the listed official sources.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-ROPEWAY",
+      "url": "https://www.hakonenavi.jp/hakone-ropeway/?fapp=1",
+      "use": "Station order, mandatory Owakudani transfer, approximate ten-minute sections, and operating-condition caveats"
+    },
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-OWAKUDANI-STATION",
+      "url": "https://www.hakonenavi.jp/transportation/station/ohwakudani/",
+      "use": "Station transfer relationship and current visitor facilities"
+    },
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-OWAKUDANI-TRAIL",
+      "url": "https://www.hakone.or.jp/od-booking/",
+      "use": "Reservation requirement and official approximate forty-minute trail duration"
+    },
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-ROPEWAY-GAS",
+      "url": "https://www.hakonenavi.jp/volcanic_gas_info/caution/",
+      "use": "Gas-related riding cautions and possibility of suspension"
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      3360,
+      2376
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch04-proof-final/page-48.png",
+        "physical_page": 48,
+        "sha256": "c3f45f2a291ebe89c91a973e8f4857fa79b91459b762f42b4cff94b98da09f74"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch04-website/mobile-04-map.png",
+        "sha256": "f007f05eb0269a0990da6d4078e0bd8ee379c74b27123baa32a1f7846edbf14f",
+        "viewport_css_px": 390
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "Full-size labels, B6 composition, and the 390 px scroll-and-zoom viewport passed visual review."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-17"
+  }
+}

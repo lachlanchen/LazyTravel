@@ -115,13 +115,13 @@ in `books/japan/prefectures/kanagawa/hakone/editorial/outline.md`.
 - The recurring guide team is Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi
   robot. They are four friends and the visual guides shared with the LALACHAN
   travel-video series. The robot has equal narrative status.
-- Every non-map figure includes at least Aya-chan and Lala Xia, even when an
-  instructional composition might otherwise show only hands, partial people,
-  or distant anonymous visitors. Maps do not include the cast.
+- Every new non-map figure includes exactly Aya-chan, Lala Xia, Sasa-kun, and
+  the Zhuangzi robot, even when an instructional composition might otherwise
+  show only hands, partial people, or distant anonymous visitors. Maps do not
+  include the cast.
 - Distribute substantial location views through the guide so major places are
-  recognizable before the reader arrives. New attraction plates should use
-  all four guides when they remain clear at B6 size, but the destination must
-  still dominate and repeated views must not clutter the pocket edition.
+  recognizable before the reader arrives. The destination must still dominate,
+  and repeated views must not clutter the pocket edition.
 - The patchwork notebook, LightMind glasses, and word-card device are recurring
   travel tools. Use cast and props smoothly, only where they strengthen the
   guide content; never turn the book into a character catalogue or product ad.
@@ -162,10 +162,10 @@ and mobile gates. The public guide is available at
 <https://lachlanchen.github.io/LazyTravel/>. Hakone is the next active book;
 Lanzhou remains queued behind it.
 
-Hakone has a locked 11-chapter structure. Chapter 1, **Read the Mountain
-First**, now has ten aligned blocks, one code-built map, one four-guide location
-figure, reviewed pinyin and furigana, a responsive website build, and a
-reproducible `19`-page B6 review. Its verified SHA-256 is
-`5c684439a22475f810b57bcb1ef0b2f629356b7bae057961f8cd581cd9cfc310`, and
-the exact pocket PDF is synced to Nutstore. Hakone remains incomplete; Chapter
-2 is the next production gate.
+Hakone has a locked 11-chapter structure. Chapters 1 through 4 have passed the
+editorial, reading, PDF-page, website, Nutstore, and GitHub milestone gates.
+The current pocket review has `67` B6 pages and SHA-256
+`73ec6fb6a93f8b786762e116d1fc7ba3f727cf0c3c1115742538c3d7af6ed5cd`.
+It contains `37` aligned blocks, four maps, eleven figures, and the website
+renders `5,503` reviewed ruby nodes from the same JSON. Hakone remains
+incomplete; Chapter 5, **A Day on Lake Ashi**, is the only next production gate.

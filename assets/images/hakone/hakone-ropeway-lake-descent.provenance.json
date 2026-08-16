@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-ropeway-lake-descent",
+  "created_at": "2026-08-17",
+  "method": "generated-location-figure-with-deterministic-crop",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "11-cdab4565-fc51-44d4-a939-379971c1c47b",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "assets/images/hakone/hakone-lake-orientation.jpg",
+      "sha256": "67e23e9dfbd45792ef6c552e1757572bbd8182464effc32c3a65dbdbe66a5add",
+      "role": "Approved LazyTravel Lake Ashi orientation reference"
+    },
+    {
+      "path": "assets/images/hakone/hakone-ropeway-approach.jpg",
+      "sha256": "6fcd23644d0182cd129a57420a0d21c35f1f7549e90a70868f8569345df3da76",
+      "role": "Binding cabin and guide-continuity reference"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-ropeway-lake-descent.prompt.md",
+    "sha256": "a0ba85d5f7f4f70b2ec486aeee9482b855de83b07b9dd9507f154f2a79d80696"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-ropeway-lake-descent-v1/task_manifest.json",
+      "sha256": "4135b1592d0394e566c8a34f2b915937dcd880de018379cbb5aa0aa65edd7e1a",
+      "role": "Rejected draft with incorrect identities and raster text"
+    },
+    {
+      "path": "build/aginti/hakone-ropeway-lake-descent-v2/task_manifest.json",
+      "sha256": "00da2491d99f1ea908abdf2bdfa7d6d291af71a34a9a01b408d667f1fd4364c4",
+      "role": "Selected identity-correction generation; final crop excludes an accidental duplicate at the far left"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-ropeway-lake-descent-v2/hakone-ropeway-lake-descent-v2.png",
+    "sha256": "52a552bbe5691e89856eae2f44fb8c4bb08ffc6f18add62ee54ad86aeb691469",
+    "bytes": 13184520,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": {
+    "base_crop": "3256x2171+1800+450",
+    "print_wide_crop": "3256x1832+1800+789",
+    "web": "centered 1920x1080 from print-wide crop",
+    "common": "ImageMagick sRGB conversion, metadata strip, JPEG quality 92; web quality 88"
+  },
+  "output": {
+    "path": "assets/images/hakone/hakone-ropeway-lake-descent.jpg",
+    "sha256": "4f9cedf669a47d2971a2e18b3e9997da3286ea2d0f53eeb29f265076ccd5dafc",
+    "bytes": 1017715,
+    "width": 3256,
+    "height": 2171,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-ropeway-lake-descent-wide.jpg",
+      "sha256": "b954fae8afc43b5d0ccc10773ac41ff10c9a1cf1e9f88f9df5d191a23a6bea6f",
+      "bytes": 909095,
+      "width": 3256,
+      "height": 1832
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-ropeway-lake-descent-web.jpg",
+      "sha256": "b6f84f6c4a0d2419bd2b8cf54e04ffea4c32500a7c7eae281f30053f8d8affac",
+      "bytes": 374905,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The image conveys the westward transition from Owakudani toward Lake Ashi; it is not a literal view from every cabin position",
+    "Fuji is deliberately absent because visibility is never guaranteed",
+    "Distant sightseeing ships establish lake scale and are not timetable or vessel-identification claims",
+    "The unlabelled route sheet is illustrative and must not be used for navigation"
+  ],
+  "reader_caption_policy": "Captions use the lake view to bridge into the Togendai and Lake Ashi chapter without discussing production method",
+  "rights": "Original LazyTravel composition using approved LazyTravel and external character references",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "duplicate_excluded_by_crop": "pass",
+    "lake_dominant": "pass",
+    "fuji_not_asserted": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch04-proof-final/page-60.png",
+        "physical_page": 60,
+        "sha256": "6e9c0a222c5b6becab787b8c3a8b733a453f78b755838b1a28fcc8d445fa8d06"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch04-website/mobile-04-figure-05.png",
+        "viewport_css_px": 390,
+        "sha256": "910d8690d812a75c2cc447accf5483d4697a60c99ed4bc1e3114cc412ed3bc70"
+      }
+    },
+    "approved": true,
+    "reviewed_at": "2026-08-17",
+    "notes": "The fixed final crops visibly contain the four named guides only and preserve the lake as the primary subject. Compiled-page evidence is recorded in the Chapter 4 page review."
+  }
+}

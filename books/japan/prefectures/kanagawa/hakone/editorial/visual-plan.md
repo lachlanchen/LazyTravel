@@ -1,6 +1,6 @@
 # Hakone Visual Plan
 
-Status: locked foundation, `2026-08-16`.
+Status: locked foundation; Chapters 1-4 accepted, `2026-08-17`.
 
 The visual sequence follows one mountain crossing. Maps explain height,
 transfer, and fallback choices. Location plates make the actual station,
@@ -56,7 +56,7 @@ guides. Use the current live-type cover page as a composition reference:
 | 1 | Regional relief-style orientation map: Odawara, Yumoto, Gora, Owakudani, Lake Ashi, outer ridges, onward edges | Four guides at an elevated real-world viewpoint with the lake/ridges dominant | Explain that short map distances hide large height and weather changes. |
 | 2 | Gateway and transfer map with Tokyo/east and Kyoto/west approaches, loop-direction choices, and luggage handoff | Odawara interchange; Hakone-Yumoto arrival with luggage decision | Make the first two transfers and baggage choice visually obvious with two distinct location scenes. |
 | 3 | Railway-to-Gora slope schematic with stations and one-museum stop | Ohiradai switchback; Open-Air Museum landscape; short cafe pause with current light-food cues | Show gradient, why one art stop deserves time, and how food changes the visit block. Do not copy protected sculpture compositions or present cafe food as Hakone tradition. |
-| 4 | Owakudani access/safety map: Sounzan, Owakudani, Ubako, Togendai, current-check marker | Fumarole-field location plate; black-egg process/meal close-up | Show the live volcanic landscape without removing barriers or inventing access. Separate chemistry from legend. |
+| 4 | Accepted Owakudani stop-choice map: Sounzan, Owakudani, Ubako, Togendai, three planning ranges, access distinctions, and closure rule | Accepted ropeway approach, public overlook, four-egg food stop, reserved nature trail, and lake descent | Show the live volcanic landscape without removing barriers or inventing access. Separate chemistry from legend and make place/food choices more visible than explanatory prose. |
 | 5 | Lake Ashi shore and crossing map with weather alternatives | Lakeshore and shrine approach; boat/lakeside weather scene | Make the lake route readable even when Fuji is absent. Avoid one impossible composite viewpoint. |
 | 6 | Old Tokaido walking-choice map with bus exits, checkpoint, cedar avenue, stone paving, and Amasake Chaya | Wet stone-paving scene; checkpoint reconstruction; tea-house rest | Explain surface, slope, controlled passage, and the value of walking only one coherent section. |
 | 7 | Compact onsen/ryokan sequence diagram | Bathing-etiquette scene; room-to-dinner transition | Reduce first-time anxiety without showing nudity or implying one property's rules are universal. |

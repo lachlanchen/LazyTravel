@@ -17,6 +17,8 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   `books/japan/prefectures/kanagawa/hakone/editorial/outline.md`. Populate and
   accept them in order; a later chapter never bypasses an unfinished earlier
   chapter.
+- Hakone Chapters 1 through 4 are accepted milestones. Chapter 5, Lake Ashi,
+  is the only next production gate.
 - All 11 Xi'an chapters have passed editorial, reading, PDF-page, public
   website, Nutstore, and GitHub publication review. Do not reopen a settled
   Xi'an chapter unless a factual, language, layout, or build failure is
@@ -65,13 +67,13 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
 - The four recurring guides are Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi
   robot. The robot is a full person and friend in the group, never equipment or
   background decoration.
-- Every non-map figure must contain at least Aya-chan and Lala Xia, including
-  instructional close-ups or scenes that would otherwise show only anonymous
-  hands, backs, or distant visitors. Regenerate an existing figure that fails
-  this rule. Maps remain character-free.
-- Prefer the full group for recurring guide moments; add Sasa-kun and the
-  Zhuangzi robot when the scene stays useful and legible. Do not insert the
-  guides into documentary evidence or imply they witnessed a historical event.
+- Every new non-map figure must contain exactly the same four guides: Aya-chan,
+  Lala Xia, Sasa-kun, and the Zhuangzi robot. This includes instructional
+  close-ups or scenes that might otherwise show anonymous hands, backs, or
+  distant visitors. Maps remain character-free.
+- Stage the full group clearly without making them the attraction. Do not add a
+  fifth traveler, duplicate a guide, insert them into documentary evidence, or
+  imply they witnessed a historical event.
 - For new location-led attraction plates, use all four guides when they remain
   distinct at B6 size. Distribute these plates through the actual trip rather
   than clustering decorative images, and stop when another view would not help

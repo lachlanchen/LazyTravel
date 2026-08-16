@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-owakudani-decision-map",
+  "snapshot_date": "2026-08-17",
+  "title": {
+    "zh": "大涌谷穿越：停留、预约与备选",
+    "ja": "大涌谷を越える：滞在・予約・代案",
+    "en": "Cross Owakudani: Stop, Book, or Reroute"
+  },
+  "stations": [
+    {
+      "id": "sounzan",
+      "zh": "早云山",
+      "zh_reading": "Zǎoyúnshān",
+      "ja": "早雲山",
+      "ja_reading": "そううんざん",
+      "en": "SOUNZAN",
+      "role": "CABLE CAR"
+    },
+    {
+      "id": "owakudani",
+      "zh": "大涌谷",
+      "zh_reading": "Dàyǒnggǔ",
+      "ja": "大涌谷",
+      "ja_reading": "おおわくだに",
+      "en": "OWAKUDANI",
+      "role": "CHANGE CABIN"
+    },
+    {
+      "id": "ubako",
+      "zh": "姥子",
+      "zh_reading": "Lǎozǐ",
+      "ja": "姥子",
+      "ja_reading": "うばこ",
+      "en": "UBAKO",
+      "role": "STATION"
+    },
+    {
+      "id": "togendai",
+      "zh": "桃源台",
+      "zh_reading": "Táoyuántái",
+      "ja": "桃源台",
+      "ja_reading": "とうげんだい",
+      "en": "TOGENDAI",
+      "role": "LAKE + BUS"
+    }
+  ],
+  "segment_minutes_approx": 10,
+  "choices": [
+    {
+      "id": "quick",
+      "color": "vermilion",
+      "time": "45–60 MIN",
+      "zh": "公共展望区 + 黑鸡蛋",
+      "ja": "一般見学エリア + 黒たまご",
+      "en": "PUBLIC OVERLOOK + BLACK EGG"
+    },
+    {
+      "id": "meal",
+      "color": "jade",
+      "time": "75–95 MIN",
+      "zh": "公共展望区 + 坐下吃正餐",
+      "ja": "一般見学エリア + 座って食事",
+      "en": "PUBLIC OVERLOOK + SEATED MEAL"
+    },
+    {
+      "id": "trail",
+      "color": "cobalt",
+      "time": "RESERVE 90–120 MIN",
+      "zh": "已预约自然研究路；官方步行约40分",
+      "ja": "予約済み自然研究路・公式歩行約40分",
+      "en": "BOOKED NATURE TRAIL · OFFICIAL WALK ABOUT 40 MIN"
+    }
+  ],
+  "sources": [
+    {
+      "id": "HKN-ROPEWAY",
+      "url": "https://www.hakonenavi.jp/hakone-ropeway/?fapp=1",
+      "checked_at": "2026-08-17",
+      "use": "Station order, mandatory Owakudani transfer, approximate ten-minute sections, and operating-condition caveats"
+    },
+    {
+      "id": "HKN-OWAKUDANI-STATION",
+      "url": "https://www.hakonenavi.jp/transportation/station/ohwakudani/",
+      "checked_at": "2026-08-17",
+      "use": "Station transfer relationship and current visitor facilities"
+    },
+    {
+      "id": "HKN-OWAKUDANI-TRAIL",
+      "url": "https://www.hakone.or.jp/od-booking/",
+      "checked_at": "2026-08-17",
+      "use": "Reservation requirement and official approximate forty-minute trail duration"
+    },
+    {
+      "id": "HKN-ROPEWAY-GAS",
+      "url": "https://www.hakonenavi.jp/volcanic_gas_info/caution/",
+      "checked_at": "2026-08-17",
+      "use": "Gas-related riding cautions and possibility of suspension"
+    }
+  ],
+  "generalizations": [
+    "Station spacing is schematic and does not represent distance, elevation, or a live timetable",
+    "About ten minutes is the operator's approximation for each ropeway section, not a connection guarantee",
+    "The 45–60, 75–95, and 90–120 minute windows are LazyTravel planning ranges, not operator promises",
+    "The booked-trail window protects check-in and delay buffer around the official approximately forty-minute walk; a meal needs additional time",
+    "Public overlook access, ropeway riding, and reserved-trail entry have different operating and health conditions",
+    "During closure or gas restrictions, follow staff and rebuild the route from the last open hub rather than forcing the loop"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-17",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch04-proof-final/page-48.png",
+        "physical_page": 48,
+        "sha256": "c3f45f2a291ebe89c91a973e8f4857fa79b91459b762f42b4cff94b98da09f74"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch04-website/mobile-04-map.png",
+        "viewport_css_px": 390,
+        "sha256": "f007f05eb0269a0990da6d4078e0bd8ee379c74b27123baa32a1f7846edbf14f"
+      }
+    },
+    "notes": [
+      "Full-size labels, B6 composition, and the 390 px scroll-and-zoom viewport passed visual review."
+    ]
+  }
+}

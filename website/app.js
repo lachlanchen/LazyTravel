@@ -50,6 +50,12 @@ const assetLabels = {
   "asset-hakone-gora-slope-map": "YUMOTO TO GORA · HEIGHT AND SWITCHBACKS",
   "asset-hakone-open-air-museum-landscape": "OPEN-AIR MUSEUM · WALK THE SLOPE",
   "asset-hakone-open-air-museum-cafe": "OPEN-AIR MUSEUM · QUICK FOOD PAUSE",
+  "asset-hakone-ropeway-approach": "SOUNZAN TO OWAKUDANI · SEE THE VOLCANO FIRST",
+  "asset-hakone-owakudani-decision-map": "OWAKUDANI · STOP, EAT, OR BOOK",
+  "asset-hakone-owakudani-overlook": "OWAKUDANI · PUBLIC OVERLOOK",
+  "asset-hakone-black-eggs": "OWAKUDANI · BLACK EGGS",
+  "asset-hakone-nature-trail": "OWAKUDANI · RESERVED NATURE TRAIL",
+  "asset-hakone-ropeway-lake-descent": "OWAKUDANI TO TOGENDAI · DESCEND TO THE LAKE",
 };
 const state = {
   document: null,

@@ -225,6 +225,7 @@ def build_inputs(document: dict[str, Any], chapter_ids: list[str]) -> list[Path]
         ROOT / "scripts/build_hakone_review.py",
         ROOT / "scripts/build_hakone_gateway_map.py",
         ROOT / "scripts/build_hakone_gora_slope_map.py",
+        ROOT / "scripts/build_hakone_owakudani_decision_map.py",
         ROOT / "scripts/build_hakone_orientation_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
@@ -315,6 +316,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_hakone_orientation_map.py"])
         run([sys.executable, "scripts/build_hakone_gateway_map.py"])
         run([sys.executable, "scripts/build_hakone_gora_slope_map.py"])
+        run([sys.executable, "scripts/build_hakone_owakudani_decision_map.py"])
     run(
         [
             sys.executable,

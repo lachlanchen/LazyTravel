@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-black-eggs",
+  "created_at": "2026-08-17",
+  "method": "generated-food-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "13-6edb5a99-cc12-45b7-b6db-4402fcb69034",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch04-references/egg-1.jpg",
+      "sha256": "356523889ace0c1817fb9552e36152b5a6e9cdebc875362f2f5ad4be1b584dd5",
+      "page_url": "https://owakudani.com/secret/",
+      "role": "Official black-egg shell and serving reference; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch04-references/egg-2.jpg",
+      "sha256": "89278bd45765b525674adad6ab827a58578c20f1eb3646b1627910e9219ed348",
+      "page_url": "https://owakudani.com/secret/",
+      "role": "Official peeled-egg reference; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-black-eggs.prompt.md",
+    "sha256": "c55474db786fca621b07845ae36c9dbc4f8b87fcf2d2a0a5f7f64325533d148b"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-black-eggs-v1/task_manifest.json",
+      "sha256": "9fe42eed8a58ff2590ff544d0e564de869b422f06f799b3a42de7c8e75f0eaa9",
+      "role": "Rejected draft with a human replacement and incorrect egg count"
+    },
+    {
+      "path": "build/aginti/hakone-black-eggs-v2/task_manifest.json",
+      "sha256": "e4b5c704e438d59a01fa1940e3c27a9d15ef765edb35799bedff1690e6adac91",
+      "role": "Selected identity and egg-count correction"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-black-eggs-v2/hakone-black-eggs-v2.png",
+    "sha256": "c816af76d9e1598787d7d1eb13b5279ab60e38bb8f58f3b7336811d33825803e",
+    "bytes": 11990179,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "ImageMagick sRGB conversion, centered 3:2 and 16:9 crops, metadata strip, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-black-eggs.jpg",
+    "sha256": "3c0814fc4bdac140231d023b3c53f257afb00f1a8700d5cc657c2b3a45db4d7c",
+    "bytes": 1508865,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-black-eggs-wide.jpg",
+      "sha256": "56c64e15fa7037db26e6d1a660bda1321edd7e3a7ee027a39dd31539d6867f51",
+      "bytes": 1259918,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-black-eggs-web.jpg",
+      "sha256": "5bae8efbca43dfb908d9181c9c50a37defc46f8cbb8934642423e596ddd1135a",
+      "bytes": 434256,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The image shows the current four-egg sales unit checked on 2026-08-17; price and pack size remain time-sensitive",
+    "The shell is black while the edible interior remains an ordinary boiled egg",
+    "No health or longevity benefit is asserted",
+    "The seating arrangement and unlabelled bag are editorial, not a reconstruction of current packaging"
+  ],
+  "reader_caption_policy": "Captions explain the shell chemistry and treat the egg as a short place-specific snack, without discussing production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "egg_count_four": "pass",
+    "normal_peeled_interior": "pass",
+    "destination_context_visible": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch04-proof-final/page-53.png",
+        "physical_page": 53,
+        "sha256": "c541e821b0515735f7933994db02d737b7db17235c6c9f73b3a249519a8fff79"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch04-website/mobile-04-figure-03.png",
+        "viewport_css_px": 390,
+        "sha256": "c233a14f263a800f22a9d7e42eefb2fbd73d4c6f6738748773c9f1cb2f18ffa8"
+      }
+    },
+    "approved": true,
+    "reviewed_at": "2026-08-17",
+    "notes": "Selected correction image and delivery crops passed original-size and contact-sheet review; compiled-page evidence is recorded in the Chapter 4 page review."
+  }
+}

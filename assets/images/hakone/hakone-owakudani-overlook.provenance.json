@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-owakudani-overlook",
+  "created_at": "2026-08-17",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "14-2aa76819-fbdd-4013-ae26-fda5b4b23173",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-owakudani-official.jpg",
+      "sha256": "d1a8b5041c530e536002a0757881be8e5d35e7c705311d7583bd0a51aca6a889",
+      "page_url": "https://www.hakonenavi.jp/transportation/station/ohwakudani/",
+      "role": "Official destination reference for the public overlook and valley scale; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-owakudani-overlook.prompt.md",
+    "sha256": "bf1eb7e6cd246cf4ea503e8c09d19e21ca5f088acd3dd3cb68aa8898ff19a45f"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-owakudani-overlook-v1/task_manifest.json",
+      "sha256": "444d43797689c2b61f18d52bc2fef0b816752b847aa85e894e4169dcc86a218f",
+      "role": "Rejected draft with a human replacement"
+    },
+    {
+      "path": "build/aginti/hakone-owakudani-overlook-v2/task_manifest.json",
+      "sha256": "2dabbb520e92a310c8ec48cae0c77fe83744bb8791102eae2a40dd3a0b329092",
+      "role": "Selected identity-correction generation"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-owakudani-overlook-v2/hakone-owakudani-overlook-v2.png",
+    "sha256": "de0e12472a96b25aa7984c00b3f43a57b767b8842bec7ef585d497648fca0001",
+    "bytes": 17136908,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "ImageMagick sRGB conversion, centered 3:2 and 16:9 crops, metadata strip, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-owakudani-overlook.jpg",
+    "sha256": "2e068c7a666608b85b6dedad9dc9c4b4786c73bb3e21ac071413df1f2f1875e1",
+    "bytes": 2211976,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-owakudani-overlook-wide.jpg",
+      "sha256": "3bba1c440a733429b24e53850c37656bfd4845c9318eff92e4503dbe0642662d",
+      "bytes": 1921356,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-owakudani-overlook-web.jpg",
+      "sha256": "ff708b12460e1120eb3316c12aecc6ce65b9cfdde3e3206ab5e381f7138e5e89",
+      "bytes": 653420,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The image represents the managed public overlook, not the separately reserved nature trail",
+    "The colour signal housing is illustrative and must not be read as live operating status",
+    "Fumarole output, barriers, crowd levels, weather, and accessible areas can change",
+    "Tiny distant visitors establish public-site scale; the four named guides are the only staged subjects"
+  ],
+  "reader_caption_policy": "Captions identify the valley's managed public viewpoint and the geology visible there without discussing production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "public_barrier_visible": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch04-proof-final/page-50.png",
+        "physical_page": 50,
+        "sha256": "c1dfdf5f46a1861c4e1ebd04342af5735f5e17e5b3bb1d87a5e6f4462d6fccf0"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch04-website/mobile-04-figure-02.png",
+        "viewport_css_px": 390,
+        "sha256": "8550fd318c1dbadd216b6057c12f864e031a165188e8721a4481852bd4d5b255"
+      }
+    },
+    "approved": true,
+    "reviewed_at": "2026-08-17",
+    "notes": "Selected correction image and delivery crops passed original-size and contact-sheet review; compiled-page evidence is recorded in the Chapter 4 page review."
+  }
+}

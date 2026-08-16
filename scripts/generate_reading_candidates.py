@@ -310,6 +310,7 @@ ZH_OVERRIDES = {
     "一百二十": "yībǎi èrshí",
     "早云山": "zǎoyúnshān",
     "大涌谷": "dàyǒnggǔ",
+    "姥子": "lǎozǐ",
     "桃源台": "táoyuántái",
     "芦之湖": "lúzhīhú",
     "仙石原": "xiānshíyuán",
@@ -318,6 +319,17 @@ ZH_OVERRIDES = {
     "神山": "shénshān",
     "驹岳": "jūyuè",
     "冠岳": "guānyuè",
+    "大地狱": "dàdìyù",
+    "自然研究路": "zìrán yánjiūlù",
+    "延命地藏": "yánmìng dìzàng",
+    "极乐茶屋": "jílè cháwū",
+    "黑鸡蛋馆": "hēijīdànguǎn",
+    "硫化氢": "liúhuàqīng",
+    "硫化铁": "liúhuàtiě",
+    "二〇二六年八月十七日": "èr líng èr liù nián bā yuè shíqī rì",
+    "一八七三年": "yī bā qī sān nián",
+    "二〇一五年": "èr líng yī wǔ nián",
+    "二〇二二年": "èr líng èr èr nián",
     "气象厅": "qìxiàngtīng",
     "国土地理院": "guótǔ dìlǐyuàn",
 }
@@ -663,6 +675,7 @@ JA_OVERRIDES = {
     "二時間": "にじかん",
     "早雲山": "そううんざん",
     "大涌谷": "おおわくだに",
+    "姥子": "うばこ",
     "桃源台": "とうげんだい",
     "芦ノ湖": "あしのこ",
     "芦ノ湖畔": "あしのこはん",
@@ -675,6 +688,33 @@ JA_OVERRIDES = {
     "神山": "かみやま",
     "駒ヶ岳": "こまがたけ",
     "冠ヶ岳": "かんむりがたけ",
+    "大地獄": "おおじごく",
+    "自然研究路": "しぜんけんきゅうろ",
+    "延命地蔵": "えんめいじぞう",
+    "極楽茶屋": "ごくらくちゃや",
+    "硫化水素": "りゅうかすいそ",
+    "硫化鉄": "りゅうかてつ",
+    "安全対策協力金": "あんぜんたいさくきょうりょくきん",
+    "臭い": "におい",
+    "日本語": "にほんご",
+    "約十分": "やくじゅっぷん",
+    "四十五分": "よんじゅうごふん",
+    "七十五分": "ななじゅうごふん",
+    "九十五分": "きゅうじゅうごふん",
+    "四十分": "よんじゅっぷん",
+    "十五分": "じゅうごふん",
+    "一個": "いっこ",
+    "四個": "よんこ",
+    "一袋": "ひとふくろ",
+    "一項": "いっこう",
+    "1873年": "せんはっぴゃくななじゅうさんねん",
+    "2015年": "にせんじゅうごねん",
+    "2022年3月": "にせんにじゅうにねんさんがつ",
+    "2026年8月17日": "にせんにじゅうろくねんはちがつじゅうしちにち",
+    "10時30分": "じゅうじさんじゅっぷん",
+    "15時30分": "じゅうごじさんじゅっぷん",
+    "16時": "じゅうろくじ",
+    "9時": "くじ",
     "気象庁": "きしょうちょう",
     "国土地理院": "こくどちりいん",
     "水蒸気爆発": "すいじょうきばくはつ",
@@ -690,6 +730,7 @@ ZH_LITERAL_SPAN_OVERRIDES = {
         "一九五〇年",
         "二〇二六年",
         "二〇二六年八月十六日",
+        "二〇二六年八月十七日",
         "一九一九年",
         "从葬坑",
         "写进行程",
@@ -779,14 +820,18 @@ def ja_tokens(value: str, tagger: Tagger) -> list[dict[str, str]]:
         if part in JA_OVERRIDES:
             pieces.append({"text": part, "reading": JA_OVERRIDES[part]})
             continue
-        for word in tagger(part):
-            item = {"text": word.surface}
-            if HAN_RE.search(word.surface):
-                candidate = word.feature.kana or word.feature.pron
-                if not candidate:
-                    raise ValueError(f"missing Japanese reading for {word.surface!r}")
-                item["reading"] = katakana_to_hiragana(candidate)
-            pieces.append(item)
+        for segment in filter(None, re.split(r"(\s+)", part)):
+            if segment.isspace():
+                pieces.append({"text": segment})
+                continue
+            for word in tagger(segment):
+                item = {"text": word.surface}
+                if HAN_RE.search(word.surface):
+                    candidate = word.feature.kana or word.feature.pron
+                    if not candidate:
+                        raise ValueError(f"missing Japanese reading for {word.surface!r}")
+                    item["reading"] = katakana_to_hiragana(candidate)
+                pieces.append(item)
     if "".join(item["text"] for item in pieces) != value:
         raise ValueError("Japanese tokenization did not preserve the source text")
     return pieces

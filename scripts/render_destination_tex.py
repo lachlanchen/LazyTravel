@@ -396,13 +396,28 @@ def render_document(document: dict[str, Any], chapter_ids: str | list[str]) -> s
     ]
     for chapter in chapters:
         titles = chapter["titles"]
-        deck = " · ".join(item.upper().replace("-", " ") for item in chapter["coverage"])
+        deck_rows: list[str] = []
+        deck_row: list[str] = []
+        deck_row_length = 0
+        for item in chapter["coverage"]:
+            label = item.upper().replace("-", " ")
+            added_length = len(label) + (3 if deck_row else 0)
+            if deck_row and deck_row_length + added_length > 36:
+                deck_rows.append(" · ".join(deck_row))
+                deck_row = []
+                deck_row_length = 0
+                added_length = len(label)
+            deck_row.append(rf"\mbox{{{tex_escape(label)}}}")
+            deck_row_length += added_length
+        if deck_row:
+            deck_rows.append(" · ".join(deck_row))
+        deck = r"\par ".join(deck_rows)
         pieces.append(
             rf"\LTChapterTitle{{{chapter['order']:02d}}}"
             rf"{{{tex_escape(titles['zh'])}}}"
             rf"{{{tex_escape(titles['ja'])}}}"
             rf"{{{tex_escape(titles['en'])}}}"
-            rf"{{{tex_escape(deck)}}}"
+            rf"{{{deck}}}"
         )
         pieces.extend(block_tex(block, citation_numbers, assets) for block in chapter["blocks"])
     pieces.append(bibliography_tex(ordered_ids, citation_numbers, citations))

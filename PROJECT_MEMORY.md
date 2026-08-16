@@ -36,9 +36,9 @@ history, rollout data, or session backups.
 - Guide team: Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi robot. They are four
   friends shared with the LALACHAN travel-video series. The robot is a guide,
   not a prop.
-- Hard figure rule: every non-map figure contains at least Aya-chan and Lala
-  Xia. Sasa-kun and the Zhuangzi robot join when the composition remains clear;
-  maps stay character-free.
+- Hard figure rule: every new non-map figure contains exactly Aya-chan, Lala
+  Xia, Sasa-kun, and the Zhuangzi robot. No fifth traveler, duplicate guide, or
+  anonymous replacement is allowed; maps stay character-free.
 - Recurring tools: patchwork notebook, LightMind glasses, and word-card device.
   They support a scene only when useful and must remain visually secondary.
 - Character scenes use tactile, realistic editorial miniature photography that
@@ -77,12 +77,12 @@ The synchronized website is publicly deployed at
 manifest and canonical JSON. Xi'an is complete. Hakone is next at
 `japan/prefectures/kanagawa/hakone`, followed by Lanzhou.
 
-Hakone has exactly 11 chapters and advances in order. Chapter 1, `Read the
-Mountain First`, is the first accepted internal milestone: ten aligned blocks,
-`848` Chinese reading tokens, `1,098` Japanese reading tokens, one terrain and
-transfer map, and one Lake Ashi figure with all four guides. Its reproducible
-B6 review has `19` pages and SHA-256
-`5c684439a22475f810b57bcb1ef0b2f629356b7bae057961f8cd581cd9cfc310`.
-Desktop and `390 px` website QA pass from the same JSON, and the exact pocket
-PDF is hash-synced to Nutstore. This does not complete Hakone; Chapter 2 is the
-only next writing gate.
+Hakone has exactly 11 chapters and advances in order. Chapters 1 through 4 are
+accepted internal milestones. Together they provide `37` aligned blocks,
+`4,070` Chinese reading tokens, `4,976` Japanese reading tokens, four maps,
+and eleven destination, transport, museum, food, and volcanic-landscape figures
+using all four guides. The reproducible B6 review has `67` pages and SHA-256
+`73ec6fb6a93f8b786762e116d1fc7ba3f727cf0c3c1115742538c3d7af6ed5cd`.
+Desktop and `390 px` website QA pass from the same JSON with `5,503` ruby
+nodes, and the exact pocket PDF is hash-synced to Nutstore. This does not
+complete Hakone; Chapter 5, `A Day on Lake Ashi`, is the only next writing gate.

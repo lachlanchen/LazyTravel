@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-ropeway-approach",
+  "created_at": "2026-08-17",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "12-9510cb33-9abd-4778-a526-12a3891a676c",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-ropeway-official.jpg",
+      "sha256": "18abf1439aed8b3860c625b5663502e2d890378c3845863e417360a43be53d3d",
+      "page_url": "https://www.hakonenavi.jp/hakone-ropeway/?fapp=1",
+      "role": "Official ropeway reference for cabin, cable, and ridge relationship; cache remains ignored"
+    },
+    {
+      "path": "build/aginti-reference-links/hakone-owakudani-official.jpg",
+      "sha256": "d1a8b5041c530e536002a0757881be8e5d35e7c705311d7583bd0a51aca6a889",
+      "page_url": "https://www.hakonenavi.jp/transportation/station/ohwakudani/",
+      "role": "Official destination reference for mineral valley scale; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-ropeway-approach.prompt.md",
+    "sha256": "9fdd5d04213413b84733a182c9586352f5e20acfa7fd0de10ed024c7ddb914b6"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-ropeway-approach-v1/task_manifest.json",
+      "sha256": "4519f05cb921b78c41e57bbcb19add4fca372fab9b485f07b808b826209e8316",
+      "role": "Selected generation"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-ropeway-approach-v1/hakone-ropeway-approach-v1.png",
+    "sha256": "dbbf1da5e32273432b77f199bc84c424d0ce5cec8e1ad5192574ac316b99cbc1",
+    "bytes": 15609206,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "ImageMagick sRGB conversion, centered 3:2 and 16:9 crops, metadata strip, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-ropeway-approach.jpg",
+    "sha256": "6fcd23644d0182cd129a57420a0d21c35f1f7549e90a70868f8569345df3da76",
+    "bytes": 1972724,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-ropeway-approach-wide.jpg",
+      "sha256": "d7e031a31e08b9764a752b48721c1c5645ce0bde3da46ab50e7eb9ad744d13a7",
+      "bytes": 1693883,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-ropeway-approach-web.jpg",
+      "sha256": "32e47e4e230e78663ca173bca9d2b103837539248ec3001fdffac584c744b2cc",
+      "bytes": 566847,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The figure conveys the enclosed ropeway approach and the valley's scale; it is not a seat diagram or a promise of any exact sightline",
+    "Steam, weather, vegetation, gondola traffic, and visibility vary",
+    "The unlabelled route sheet is illustrative and must not be used for navigation",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "Captions direct attention to the fumarole valley before any search for Fuji and do not discuss production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone-ch04-proof-final/page-46.png",
+        "physical_page": 46,
+        "sha256": "b4d778bcd29bd11bf3bc53ede9e93567b01edfef625f8f361188ce5a11340a30"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch04-website/mobile-04-figure.png",
+        "viewport_css_px": 390,
+        "sha256": "4af27d97c94e5c1e63bebc2dc82464b46386a387e1d5afe28b02e9c13b63606c"
+      }
+    },
+    "approved": true,
+    "reviewed_at": "2026-08-17",
+    "notes": "Selected image and both delivery crops passed original-size and contact-sheet review; compiled-page evidence is recorded in the Chapter 4 page review."
+  }
+}

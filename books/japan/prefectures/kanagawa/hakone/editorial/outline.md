@@ -20,6 +20,9 @@ The book has exactly 11 chapters. The count is locked because each chapter has
 a distinct travel decision; merging any two would overload a pocket chapter,
 while splitting them would create thin filler.
 
+Milestone status on `2026-08-17`: Chapters 1-4 are reviewed and reproducibly
+built. Chapter 5 is the only active drafting target.
+
 ## Chapter Spine
 
 1. **先读山：火山口、湖与高差**<br>
