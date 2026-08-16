@@ -1,7 +1,6 @@
 "use strict";
 
-const DATA_URL = "data/xian.json";
-const DEFAULT_CHAPTER_ID = "ch01-ground-before-time";
+const DATA_URL = "data/destination.json";
 
 const categoryLabels = {
   history: { zh: "历史", ja: "歴史", en: "History" },
@@ -86,8 +85,56 @@ function availableChapters(documentData) {
 
 function chapterIdFromLocation(documentData) {
   const requested = new URL(window.location.href).searchParams.get("chapter");
-  const availableIds = new Set(availableChapters(documentData).map((chapter) => chapter.id));
-  return availableIds.has(requested) ? requested : DEFAULT_CHAPTER_ID;
+  const available = availableChapters(documentData);
+  const availableIds = new Set(available.map((chapter) => chapter.id));
+  return availableIds.has(requested) ? requested : available[0]?.id;
+}
+
+function destinationNames(book) {
+  return {
+    zh: book.titles.zh.replace(/旅行手册$/, ""),
+    ja: book.titles.ja.replace(/旅の手引き$/, ""),
+    en: book.titles.en.replace(/ Pocket Travel Guide$/, ""),
+  };
+}
+
+function seriesLabel(book) {
+  const parts = book.series_path.split("/");
+  if (parts[0] === "china" && parts[1] === "cities") {
+    return "CHINA · CITIES · POCKET GUIDE";
+  }
+  if (parts[0] === "japan" && parts[1] === "prefectures") {
+    return `JAPAN · ${parts[2].replaceAll("-", " ").toUpperCase()} · POCKET GUIDE`;
+  }
+  if (parts[0] === "world" && parts[1] === "countries") {
+    return "WORLD · COUNTRIES · POCKET GUIDE";
+  }
+  return "LAZYTRAVEL · POCKET GUIDE";
+}
+
+function renderBookChrome(documentData) {
+  const book = documentData.book;
+  const names = destinationNames(book);
+  const destinationLine = `${names.zh} · ${names.ja} · ${names.en.toUpperCase()}`;
+  const label = seriesLabel(book);
+  const editionDate = book.edition.match(/\d{4}-\d{2}-\d{2}$/)?.[0];
+
+  document.getElementById("destination-series").textContent = label;
+  document.getElementById("destination-names").textContent = destinationLine;
+  document.getElementById("rail-series").textContent = label;
+  document.getElementById("rail-title").textContent = names.zh;
+  document.getElementById("edition-short").textContent =
+    `${names.en.toUpperCase()} · ${editionDate?.slice(0, 4) || book.edition}`;
+  document.getElementById("edition-label").textContent = editionDate
+    ? `Research edition · ${editionDate}`
+    : book.edition;
+  document.getElementById("loading").textContent = destinationLine;
+  document.getElementById("brand-link").setAttribute(
+    "aria-label",
+    `LazyTravel ${names.en} home`,
+  );
+  document.getElementById("site-description").content =
+    `LazyTravel ${names.en}: an aligned Chinese, Japanese, and English pocket guide.`;
 }
 
 function renderLanguageSet(values, className) {
@@ -520,17 +567,12 @@ async function initialize() {
     const documentData = await response.json();
     state.document = documentData;
     document.getElementById("github-link").href = documentData.book.branding.repository;
-    const editionDate = documentData.book.edition.match(/\d{4}-\d{2}-\d{2}$/)?.[0];
-    document.getElementById("edition-short").textContent =
-      `XI'AN · ${editionDate?.slice(0, 4) || documentData.book.edition}`;
-    document.getElementById("edition-label").textContent = editionDate
-      ? `Research edition · ${editionDate}`
-      : documentData.book.edition;
+    renderBookChrome(documentData);
     activateChapter(chapterIdFromLocation(documentData));
     setMode(state.mode);
   } catch (error) {
     const loading = document.getElementById("loading");
-    loading.textContent = `Unable to load the Xi'an edition: ${error.message}`;
+    loading.textContent = `Unable to load this LazyTravel edition: ${error.message}`;
     loading.setAttribute("role", "alert");
   }
 }

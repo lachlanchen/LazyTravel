@@ -13,7 +13,10 @@
       "required": ["id", "series_path", "titles", "languages", "status", "edition", "branding"],
       "properties": {
         "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
-        "series_path": {"type": "string", "pattern": "^(china/cities|japan/prefectures|world/countries)/[a-z0-9-]+$"},
+        "series_path": {
+          "type": "string",
+          "pattern": "^(china/cities/[a-z0-9-]+|japan/prefectures/[a-z0-9-]+/[a-z0-9-]+|world/countries/[a-z0-9-]+)$"
+        },
         "titles": {"$ref": "#/$defs/trilingualText"},
         "subtitles": {"$ref": "#/$defs/trilingualText"},
         "languages": {"const": ["zh", "ja", "en"]},

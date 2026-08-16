@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from build_website import (  # noqa: E402
     DEFAULT_BOOK,
+    PAYLOAD_PATH,
     build,
     public_projection,
     public_provenance,
@@ -71,9 +72,20 @@ class WebsiteBuildTests(unittest.TestCase):
             self.assertEqual(counts, expected)
             self.assertGreaterEqual(counts["blocks"], 18)
             self.assertEqual(validate_output(DEFAULT_BOOK, output), counts)
-            payload = json.loads((output / "data/xian.json").read_text(encoding="utf-8"))
+            payload = json.loads((output / PAYLOAD_PATH).read_text(encoding="utf-8"))
             payload.pop("_build")
             self.assertEqual(payload, public_projection(self.document))
+
+    def test_build_supports_nested_japan_destination(self) -> None:
+        book = ROOT / "data/japan/prefectures/kanagawa/hakone/book.json"
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary) / "site"
+            counts = build(book, output)
+            manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
+            payload = json.loads((output / PAYLOAD_PATH).read_text(encoding="utf-8"))
+            self.assertEqual(counts, {"blocks": 0, "zh_tokens": 0, "ja_tokens": 0})
+            self.assertEqual(manifest["destination"], "hakone")
+            self.assertEqual(payload["book"]["series_path"], "japan/prefectures/kanagawa/hakone")
 
     def test_static_renderer_has_no_external_runtime_dependency(self) -> None:
         index = (ROOT / "website/index.html").read_text(encoding="utf-8")
@@ -85,7 +97,9 @@ class WebsiteBuildTests(unittest.TestCase):
         self.assertIn("RUBBING ON A MODERN REPLICA", javascript)
         self.assertIn("BEFORE DEPARTURE · FOUR EVIDENCE CHECKS", javascript)
         self.assertIn('id="edition-label"', index)
-        self.assertIn("documentData.book.edition.match", javascript)
+        self.assertIn("book.edition.match", javascript)
+        self.assertIn("renderBookChrome(documentData)", javascript)
+        self.assertIn('const DATA_URL = "data/destination.json"', javascript)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "book": {
+    "id": "hakone",
+    "series_path": "japan/prefectures/kanagawa/hakone",
+    "titles": {
+      "zh": "箱根旅行手册",
+      "ja": "箱根旅の手引き",
+      "en": "Hakone Pocket Travel Guide"
+    },
+    "subtitles": {
+      "zh": "山路、温泉、饮食，以及地点背后的历史",
+      "ja": "山の道・温泉・食から、その場所の歴史を読む",
+      "en": "Mountain routes, onsen, food, and the history behind each place"
+    },
+    "languages": [
+      "zh",
+      "ja",
+      "en"
+    ],
+    "status": "researching",
+    "edition": "research-foundation-2026-08-16",
+    "branding": {
+      "brand": "LazyTravel",
+      "studio": "lazying.art",
+      "website": "https://lazying.art",
+      "repository": "https://github.com/lachlanchen/LazyTravel"
+    }
+  },
+  "coverage": [
+    "history",
+    "food",
+    "attractions",
+    "transport",
+    "hotels",
+    "itineraries",
+    "cultural-context",
+    "practical",
+    "maps"
+  ],
+  "chapters": [
+    {
+      "id": "ch01-read-mountain",
+      "order": 1,
+      "titles": {
+        "zh": "先读山：火山口、湖与高差",
+        "ja": "まず山を読む：カルデラ、湖、標高差",
+        "en": "Read the Mountain First: Caldera, Lake, and Elevation"
+      },
+      "coverage": [
+        "history",
+        "cultural-context",
+        "practical",
+        "maps"
+      ],
+      "status": "researching",
+      "blocks": []
+    },
+    {
+      "id": "ch02-odawara-yumoto",
+      "order": 2,
+      "titles": {
+        "zh": "小田原到汤本：把换乘放进行程",
+        "ja": "小田原から湯本へ：乗り換えを旅程に入れる",
+        "en": "Odawara to Yumoto: Make Transfers Part of the Day"
+      },
+      "coverage": [
+        "transport",
+        "practical",
+        "itineraries",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch03-climb-gora",
+      "order": 3,
+      "titles": {
+        "zh": "登山电车往强罗：坡度、艺术与停留",
+        "ja": "登山電車で強羅へ：勾配、アート、立ち止まる時間",
+        "en": "Climb to Gora: Grade, Art, and Time to Stop"
+      },
+      "coverage": [
+        "attractions",
+        "transport",
+        "cultural-context"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch04-cross-owakudani",
+      "order": 4,
+      "titles": {
+        "zh": "穿越大涌谷：先看火山，再看富士山",
+        "ja": "大涌谷を越える：富士山より先に火山を見る",
+        "en": "Cross Owakudani: See the Volcano Before Fuji"
+      },
+      "coverage": [
+        "attractions",
+        "food",
+        "transport",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch05-lake-ashi",
+      "order": 5,
+      "titles": {
+        "zh": "芦之湖的一天：神社、湖岸与天气",
+        "ja": "芦ノ湖の一日：神社、湖畔、天気",
+        "en": "A Day on Lake Ashi: Shrine, Shore, and Weather"
+      },
+      "coverage": [
+        "attractions",
+        "history",
+        "cultural-context",
+        "transport",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch06-old-tokaido",
+      "order": 6,
+      "titles": {
+        "zh": "旧东海道与箱根关所：走一段路，读一种制度",
+        "ja": "旧東海道と箱根関所：道を歩き、制度を読む",
+        "en": "Old Tokaido and the Checkpoint: Walk the Road, Read the System"
+      },
+      "coverage": [
+        "history",
+        "attractions",
+        "food",
+        "cultural-context",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch07-onsen-ryokan",
+      "order": 7,
+      "titles": {
+        "zh": "温泉与旅馆的一夜：洗浴、晚餐、安静",
+        "ja": "温泉と旅館の一夜：入浴、夕食、静けさ",
+        "en": "One Night in an Onsen Ryokan: Bathing, Dinner, and Quiet"
+      },
+      "coverage": [
+        "history",
+        "hotels",
+        "food",
+        "cultural-context",
+        "practical"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch08-eat-route",
+      "order": 8,
+      "titles": {
+        "zh": "沿途怎么吃：黑鸡蛋、甘酒与晚餐时钟",
+        "ja": "道中で何を食べるか：黒たまご、甘酒、夕食の時計",
+        "en": "Eat Along the Route: Black Eggs, Amazake, and the Dinner Clock"
+      },
+      "coverage": [
+        "food",
+        "history",
+        "cultural-context",
+        "practical"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch09-stay-district",
+      "order": 9,
+      "titles": {
+        "zh": "住在哪一段山里：按地区选旅馆",
+        "ja": "山のどこに泊まるか：エリアで宿を選ぶ",
+        "en": "Where to Stay: Choose a District Before a Property"
+      },
+      "coverage": [
+        "hotels",
+        "transport",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch10-one-two-three-days",
+      "order": 10,
+      "titles": {
+        "zh": "一、二、三天：给天气留下余地",
+        "ja": "一日・二日・三日：天気の余白を残す",
+        "en": "One, Two, or Three Days: Leave Room for Weather"
+      },
+      "coverage": [
+        "itineraries",
+        "transport",
+        "attractions",
+        "food",
+        "hotels",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch11-beyond-hakone",
+      "order": 11,
+      "titles": {
+        "zh": "箱根之外的一站：小田原、三岛或御殿场",
+        "ja": "箱根の先にもう一駅：小田原、三島、御殿場",
+        "en": "One Stop Beyond Hakone: Odawara, Mishima, or Gotemba"
+      },
+      "coverage": [
+        "attractions",
+        "transport",
+        "itineraries",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    }
+  ],
+  "citations": [],
+  "assets": []
+}

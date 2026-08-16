@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
+      id="site-description"
       name="description"
-      content="LazyTravel Xi'an: an aligned Chinese, Japanese, and English city guide."
+      content="LazyTravel: aligned Chinese, Japanese, and English pocket travel guides."
     >
-    <title>Xi'an | LazyTravel</title>
+    <title>LazyTravel</title>
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
@@ -16,14 +17,14 @@
     <a class="skip-link" href="#reading">Skip to the chapter</a>
 
     <header class="app-header">
-      <a class="brand" href="#top" aria-label="LazyTravel Xi'an home">
+      <a id="brand-link" class="brand" href="#top" aria-label="LazyTravel home">
         <strong>LazyTravel</strong>
         <span>lazying.art</span>
       </a>
 
       <div class="destination-mark" aria-label="Current destination">
-        <span>CHINA CITIES · POCKET GUIDE</span>
-        <strong>西安 · 西安 · XI'AN</strong>
+        <span id="destination-series">POCKET GUIDE</span>
+        <strong id="destination-names">LazyTravel</strong>
       </div>
 
       <div class="reader-controls">
@@ -64,8 +65,8 @@
     <div class="app-shell">
       <aside class="book-rail" aria-label="Book navigation">
         <div class="rail-heading">
-          <span>CHINA · CITIES · POCKET GUIDE</span>
-          <h1>西安</h1>
+          <span id="rail-series">POCKET GUIDE</span>
+          <h1 id="rail-title">LazyTravel</h1>
           <p>旅行手册 · 旅の手引き · TRAVEL GUIDE</p>
         </div>
 
@@ -80,13 +81,13 @@
         </nav>
 
         <div class="rail-edition">
-          <span id="edition-short">XI'AN · 2026</span>
+          <span id="edition-short">LAZYTRAVEL</span>
           <p id="edition-label">Research edition</p>
         </div>
       </aside>
 
       <main id="reading" tabindex="-1">
-        <div id="loading" class="loading" role="status">西安 · 西安 · XI'AN</div>
+        <div id="loading" class="loading" role="status">LazyTravel</div>
         <article id="chapter" hidden></article>
       </main>
     </div>

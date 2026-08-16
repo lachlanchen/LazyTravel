@@ -16,6 +16,7 @@ DEFAULT_BOOK = ROOT / "data/china/cities/xian/book.json"
 DEFAULT_OUTPUT = ROOT / "site"
 WEBSITE_SOURCE = ROOT / "website"
 STATIC_FILES = ("index.html", "styles.css", "app.js")
+PAYLOAD_PATH = Path("data/destination.json")
 
 
 def sha256(path: Path) -> str:
@@ -75,7 +76,7 @@ def reading_counts(document: dict[str, Any]) -> dict[str, int]:
 
 def validate_output(book_path: Path, output: Path) -> dict[str, int]:
     source = json.loads(book_path.read_text(encoding="utf-8"))
-    payload_path = output / "data/xian.json"
+    payload_path = output / PAYLOAD_PATH
     payload = json.loads(payload_path.read_text(encoding="utf-8"))
     build_meta = payload.pop("_build", None)
     if payload != public_projection(source):
@@ -147,7 +148,7 @@ def validate_output(book_path: Path, output: Path) -> dict[str, int]:
         "renderFigure",
         "activateChapter",
         "renderSources",
-        "data/xian.json",
+        str(PAYLOAD_PATH),
     ):
         if marker not in javascript:
             raise RuntimeError(f"website renderer is missing required behavior: {marker}")
@@ -184,7 +185,7 @@ def build(book_path: Path, output: Path) -> dict[str, int]:
     }
     data_dir = output / "data"
     data_dir.mkdir(parents=True)
-    (data_dir / "xian.json").write_text(
+    (output / PAYLOAD_PATH).write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
@@ -197,7 +198,7 @@ def build(book_path: Path, output: Path) -> dict[str, int]:
     }
     manifest = {
         "schema_version": 1,
-        "destination": "xian",
+        "destination": document["book"]["id"],
         "edition": document["book"]["edition"],
         "command": "python3 scripts/build_website.py",
         "source_json": {

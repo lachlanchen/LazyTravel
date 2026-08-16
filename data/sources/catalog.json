@@ -184,7 +184,7 @@
       "temporal_warning": "All practical listings are historical and must be replaced with independently verified current information.",
       "rights": {"status": "copyrighted-research-only", "redistributable": false, "source_images_publishable": false},
       "extraction_route": "marker-surya-sharded-ocr",
-      "destination_gate": "do-not-extract-until-xian-reviewed"
+      "destination_gate": "do-not-extract-until-hakone-reviewed"
     },
     {
       "id": "gansu-brief-history",
@@ -201,7 +201,7 @@
       "temporal_warning": "Use as a secondary historical survey and cross-check claims with primary or institutional sources.",
       "rights": {"status": "copyrighted-research-only", "redistributable": false, "source_images_publishable": false},
       "extraction_route": "page-aware-pdftotext-with-figure-inventory",
-      "destination_gate": "do-not-extract-until-xian-reviewed"
+      "destination_gate": "do-not-extract-until-hakone-reviewed"
     },
     {
       "id": "gansu-food",
@@ -218,7 +218,7 @@
       "temporal_warning": "Treat memoir-like observations as prompts; verify concrete historical and culinary claims separately.",
       "rights": {"status": "copyrighted-research-only", "redistributable": false, "source_images_publishable": false},
       "extraction_route": "marker-surya-sharded-ocr",
-      "destination_gate": "do-not-extract-until-xian-reviewed"
+      "destination_gate": "do-not-extract-until-hakone-reviewed"
     },
     {
       "id": "xian-open-guide-zh",
@@ -266,10 +266,10 @@
       "sha256": "c3eed9f6acd95caf41be234a5f586a0ea37ff96fdc329d0925831fd1517464a1",
       "bytes": 1822630,
       "editorial_roles": ["regional-orientation", "attractions", "transport", "food", "hotels"],
-      "temporal_warning": "Do not use until the Xi'an destination gate is complete; later recheck every volatile detail.",
+      "temporal_warning": "Do not use until the Hakone destination gate is complete; later recheck every volatile detail.",
       "rights": {"status": "CC-BY-SA-4.0", "redistributable": true, "attribution_required": true, "share_alike_required": true},
       "extraction_route": "read-api-snapshots-directly",
-      "destination_gate": "do-not-extract-until-xian-reviewed"
+      "destination_gate": "do-not-extract-until-hakone-reviewed"
     },
     {
       "id": "gansu-open-guide-en",
@@ -281,10 +281,10 @@
       "sha256": "a87172eb1b875d1816ec2b47d8267eb37d40417146430694c9f8a2352f55e4e2",
       "bytes": 2073630,
       "editorial_roles": ["regional-orientation", "attractions", "transport", "food", "hotels"],
-      "temporal_warning": "Do not use until the Xi'an destination gate is complete; later recheck every volatile detail.",
+      "temporal_warning": "Do not use until the Hakone destination gate is complete; later recheck every volatile detail.",
       "rights": {"status": "CC-BY-SA-4.0", "redistributable": true, "attribution_required": true, "share_alike_required": true},
       "extraction_route": "read-api-snapshots-directly",
-      "destination_gate": "do-not-extract-until-xian-reviewed"
+      "destination_gate": "do-not-extract-until-hakone-reviewed"
     }
   ]
 }

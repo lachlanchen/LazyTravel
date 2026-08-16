@@ -12,7 +12,7 @@
     "japan": "prefectures",
     "world": "countries"
   },
-  "active_destination": "china/cities/xian",
+  "active_destination": "japan/prefectures/kanagawa/hakone",
   "destination_gate": "one-at-a-time",
   "production_contract": {
     "content_source": "aligned-destination-json",
@@ -36,6 +36,15 @@
         "zh": "西安",
         "ja": "西安",
         "en": "Xi'an"
+      },
+      "status": "published"
+    },
+    {
+      "id": "japan/prefectures/kanagawa/hakone",
+      "names": {
+        "zh": "箱根",
+        "ja": "箱根",
+        "en": "Hakone"
       },
       "status": "researching"
     },

@@ -15,7 +15,7 @@ import urllib.request
 from pathlib import Path, PurePosixPath
 from typing import Any
 
-from build_website import DEFAULT_BOOK, public_projection, reading_counts, sha256
+from build_website import DEFAULT_BOOK, PAYLOAD_PATH, public_projection, reading_counts, sha256
 
 REQUIRED_SHELL_MARKERS = (
     'id="chapter-select"',
@@ -28,7 +28,7 @@ REQUIRED_FILES = {
     "index.html",
     "app.js",
     "styles.css",
-    "data/xian.json",
+    str(PAYLOAD_PATH),
 }
 
 
@@ -165,7 +165,7 @@ def wait_for_current_site(
     for attempt in range(attempts):
         try:
             manifest = fetch_json(site_url(base_url, "manifest.json", source_sha256))
-            payload = fetch_json(site_url(base_url, "data/xian.json", source_sha256))
+            payload = fetch_json(site_url(base_url, str(PAYLOAD_PATH), source_sha256))
             index_html = fetch_bytes(
                 site_url(base_url, "index.html", source_sha256)
             ).decode("utf-8")
