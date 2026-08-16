@@ -119,6 +119,7 @@ class DestinationTexTests(unittest.TestCase):
         }
         rendered = block_tex(block, {"src-a": 1}, {})
         self.assertIn(r"\LTCalloutBlock", rendered)
+        self.assertNotIn(r"\LTBlockStart", rendered)
         self.assertIn("点单与过敏 · 注文とアレルギー · ORDER \\& ALLERGIES", rendered)
         self.assertIn(r"\LTRubyZH{点单}{diǎndān}", rendered)
         self.assertIn(r"\LTRubyJA{注文}{ちゅうもん}", rendered)

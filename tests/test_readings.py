@@ -84,6 +84,27 @@ class ReadingLayerTests(unittest.TestCase):
         self.assertEqual(readings["写进行程"], "xiějìn xíngchéng")
         self.assertEqual(readings["从葬坑"], "cóngzàngkēng")
 
+    def test_xian_departure_chinese_context_readings(self) -> None:
+        tokens = zh_tokens("写在同一行，长时间步行不适合时拨一一〇。")
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["同一行"], "tóngyī háng")
+        self.assertEqual(readings["长时间"], "chángshíjiān")
+        self.assertEqual(readings["不适合"], "bù shìhé")
+        self.assertEqual(readings["一一〇"], "yāo yāo líng")
+
+    def test_xian_departure_japanese_context_readings(self) -> None:
+        tokens = ja_tokens(
+            "来館日の五日前、十七時。休館日と大気質を確認し、一一〇番へ。",
+            unidic_tagger(),
+        )
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["来館日"], "らいかんび")
+        self.assertEqual(readings["五日前"], "いつかまえ")
+        self.assertEqual(readings["十七時"], "じゅうしちじ")
+        self.assertEqual(readings["休館日"], "きゅうかんび")
+        self.assertEqual(readings["大気質"], "たいきしつ")
+        self.assertEqual(readings["一一〇番"], "ひゃくとうばん")
+
     def test_qin_dynasty_reading_is_not_the_japanese_surname(self) -> None:
         tokens = ja_tokens("秦の軍陣", unidic_tagger())
         readings = {token["text"]: token.get("reading") for token in tokens}

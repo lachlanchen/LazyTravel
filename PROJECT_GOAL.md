@@ -124,9 +124,10 @@ repository publication, and pocket-PDF sync have passed this gate.
 
 ## Current Gate
 
-As of `2026-08-16`, Chapters 1-10 are reviewed and reproducibly built as one
-`172`-page B6 pocket PDF from `112` aligned blocks, with ten maps and fourteen
+As of `2026-08-16`, all 11 Xi'an chapters have passed internal editorial,
+reading, page, and website review and build reproducibly as one `195`-page B6
+pocket PDF from `125` aligned blocks, with ten maps and fifteen chapter
 figures. The text-free four-guide cover sits beneath selectable LaTeX text, and
 the synchronized website passes the same JSON, ruby, asset, citation, desktop,
-and mobile gates. Chapter 11, departure checks, is the only next writing gate;
-Lanzhou remains locked behind the complete Xi'an review.
+and mobile gates. Xi'an now awaits user review as a complete destination book;
+Lanzhou remains locked until that review is accepted.

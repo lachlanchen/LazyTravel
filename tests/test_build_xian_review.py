@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from build_xian_review import (  # noqa: E402
     BOOK_PATH,
+    CHAPTER_IDS,
     extract_page_count,
     extract_page_size,
     validate_asset_qa,
@@ -21,6 +22,10 @@ from build_xian_review import (  # noqa: E402
 
 
 class XianReviewBuildTests(unittest.TestCase):
+    def test_review_build_contains_all_eleven_chapters(self) -> None:
+        self.assertEqual(len(CHAPTER_IDS), 11)
+        self.assertEqual(CHAPTER_IDS[-1], "ch11-before-departure")
+
     def test_extracts_page_count(self) -> None:
         self.assertEqual(extract_page_count("Title: Test\nPages:          14\n"), 14)
 

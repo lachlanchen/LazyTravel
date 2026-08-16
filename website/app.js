@@ -41,6 +41,7 @@ const assetLabels = {
   "asset-xian-south-gate-hotel-arrival": "SOUTH GATE · FIND THE ACTUAL ENTRANCE",
   "asset-xian-itinerary-days-map": "TWO, THREE OR FIVE DAYS · ONE COHERENT ROUTE",
   "asset-xian-small-wild-goose-route-morning": "SMALL WILD GOOSE PAGODA · ONE MORNING GROUP",
+  "asset-xian-before-departure-four-guides": "BEFORE DEPARTURE · FOUR EVIDENCE CHECKS",
 };
 const state = {
   document: null,

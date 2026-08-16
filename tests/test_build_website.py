@@ -83,6 +83,7 @@ class WebsiteBuildTests(unittest.TestCase):
         self.assertNotIn("Accessed 2026-08-14", javascript)
         self.assertIn("citation.accessed_at", javascript)
         self.assertIn("RUBBING ON A MODERN REPLICA", javascript)
+        self.assertIn("BEFORE DEPARTURE · FOUR EVIDENCE CHECKS", javascript)
 
 
 if __name__ == "__main__":

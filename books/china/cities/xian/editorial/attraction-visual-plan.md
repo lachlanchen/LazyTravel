@@ -26,10 +26,10 @@ reference image is republished.
 | 5 | Walk a coherent inside-wall route | Inside-wall route map; City Wall, Bell Tower, and lane-threshold figures | Pass: the exterior wall threshold, wall-top width, four-avenue centre, and lane-scale transition are distinct visual jobs rather than repeated views. |
 | 6 | Choose an eating context and order well | Food-context map; paomo figure | Pass: food is the destination experience; no generic restaurant photograph is needed. |
 | 7 | Choose one nearby day | Nearby-choice map; managed-mountain figure | Pass for the comparison chapter: the figure explains managed-mountain judgment and explicitly does not stand in for all five choices. |
-| 8 | Arrive and transfer | Planned interchange map | Add an arrival/transfer figure only if it explains luggage, platform, or interchange judgment. |
-| 9 | Choose a district before a hotel | Planned stay-area map | Prefer streetscape interfaces over a generic hotel room; named properties require current verification. |
-| 10 | Assemble two-, three-, and five-day plans | Planned itinerary matrix/map | Reuse already approved attraction assets; do not add a decorative montage. |
-| 11 | Recheck volatile details before departure | Planned dated checklist | Add a packing/booking figure only if it improves scan speed at B6 and mobile size. |
+| 8 | Arrive and transfer | Arrival-hubs map; Xi'an North interchange figure | Pass: luggage, station identity, next mode, and hotel entrance form one visible transfer decision without claiming a universal exit. |
+| 9 | Choose a district before a hotel | Stay-area map; South Gate hotel-arrival figure | Pass: a place-led street interface explains the gap between district, building, and actual entrance without recommending a named property. |
+| 10 | Assemble two-, three-, and five-day plans | Itinerary-day map; Small Wild Goose Pagoda morning figure | Pass: the map shows nested days while the attraction-led opening gives the southern route a recognizable first place rather than a montage. |
+| 11 | Recheck volatile details before departure | Four-guide hotel-table evidence check | Pass: one concrete preparation scene makes documents, booking status, current conditions, and an offline address scannable at B6 and mobile size. |
 
 ## Acceptance Rules
 
@@ -48,10 +48,9 @@ reference image is republished.
 
 ## Current Queue
 
-1. Chapters 1-7 now have at least one place- or experience-dominant figure in
-   addition to their map.
-2. Chapters 8-9 need practical arrival and district-interface views only when
-   their completed prose identifies a real visual decision.
-3. Chapter 10 reuses approved attraction plates rather than adding a montage.
-4. Chapter 11 receives a booking or packing figure only if it improves B6 and
-   mobile scan speed.
+1. All 11 chapters now have the intended map/figure cadence and passed B6 plus
+   mobile review.
+2. The current 15 chapter figures cover distinct recognition, movement, food,
+   or preparation jobs; no decorative quota remains.
+3. Add or replace a figure only when a factual correction or reader-visible
+   travel decision justifies reopening the accepted visual set.

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-before-departure-four-guides",
+  "created_at": "2026-08-16",
+  "method": "generated-from-private-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Reviewed all four guide references plus the notebook, word-card device, and LightMind glasses without modifying or copying the source files into LazyTravel",
+    "Generated a new hotel-table composition with the four character references and notebook supplied directly to the image model; the word-card and glasses references informed the written object constraints because one call accepts at most five images",
+    "Selected the first output after confirming exact guide count, identity continuity, present-day Xi'an wall context, unreadable device surfaces, and useful preparation action at B6 and mobile sizes"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Direct Aya-chan identity and clothing reference; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Direct Lala Xia identity and clothing reference; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Direct Sasa-kun identity and clothing reference; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Direct Zhuangzi robot construction reference as the fourth equal guide; readable chest branding intentionally omitted; no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/patchwork-leather-notebook-luxury-clean-v2.png",
+      "sha256": "9192c5130d258e4b72305902ea39875a8cde59333dd9afb56d336f3a28a36b6d",
+      "role": "Direct notebook material, stitching, and color reference; no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/words-card.jpg",
+      "sha256": "e3e076027f5ef621dec235f2bd6383cd364a84344706d4d49143647faadc13ea",
+      "role": "Prompt-only compact word-card device reference after visual inspection; source lettering explicitly excluded; no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/display.png",
+      "sha256": "ae83ccb58710e1488617ae7cbab5ef275f9e80a4537a0dfd2e603ba20ad8a9b9",
+      "role": "Prompt-only folded smart-glasses shape reference after visual inspection; branding and projected lettering explicitly excluded; no source file redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-before-departure-four-guides.prompt.md",
+    "sha256": "d7c71bdf5bc054ab8c1ca03875e460552052e5708f2ced172979514aa2806275"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-before-departure-four-guides.png",
+    "sha256": "981df29b1c44dee807cf7386cdd3c7dbce18d78638dff574a9f82725be4357c6",
+    "bytes": 2158344,
+    "width": 1448,
+    "height": 1086,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Chapter 11 opening figure that shows the four guide friends checking booking evidence, route information, and offline address details before a Xi'an travel day",
+  "factual_limits": [
+    "The hotel room, wall viewpoint, evening conditions, and guide actions form an original representative editorial composition rather than a documentary record of a named hotel or room",
+    "The wall and gate tower establish present-day Xi'an context but do not claim an exact window view, room category, traffic state, or lighting schedule",
+    "Cards, phone, notebook diagram, glasses, and compact device contain no reader-facing booking, map, identity, or medical information",
+    "The image does not claim that one device, document type, or preparation sequence satisfies every current venue rule"
+  ],
+  "reader_caption_policy": "Describe the four evidence checks and the value of not adding another attraction; keep generation method, source paths, checksums, and production metadata out of the caption",
+  "rights": "Original LazyTravel composition generated from private user-supplied continuity references; external reference files are not redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "mobile_390px": "pass",
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "sasa_and_zhuangzi_present": "pass",
+    "identity_continuity": "pass",
+    "present_day_xian_wall_context": "pass",
+    "preparation_action_legible": "pass",
+    "no_reader_legible_generated_text": "pass",
+    "no_logos_or_qr_codes": "pass",
+    "safe_crop": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "evidence": "build/qa/images/xian/attraction-views/xian-before-departure-four-guides-b6-screen-proof.png",
+    "evidence_sha256": "e861eaac186d78082a891bca090ee30b02602f773208c38cfcd03ff69b436a4f",
+    "mobile_evidence": "build/qa/images/xian/attraction-views/xian-before-departure-four-guides-mobile-proof.png",
+    "mobile_evidence_sha256": "5cabf1d8c5f2aa756764b64f7cc59daa0b57a3effb3798e2b7baa19d58354854",
+    "notes": "At 600 x 450 B6 screen size and 390 x 293 mobile size, all four guides remain distinct, the Xi'an wall and gate tower remain recognizable context, and the booking check, route card, open notebook, folded glasses, and compact device are readable as actions without exposing text. The image contains no duplicate character, readable screen, caption, logo, or unsafe crop."
+  }
+}

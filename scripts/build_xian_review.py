@@ -32,6 +32,7 @@ CHAPTER_IDS = (
     "ch08-arrive-and-move",
     "ch09-choose-a-side",
     "ch10-itineraries-with-room",
+    "ch11-before-departure",
 )
 BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
@@ -242,6 +243,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/images/xian/xian-south-gate-hotel-arrival.prompt.md",
         ROOT / "data/images/xian/xian-cover-underlay.prompt.md",
         ROOT / "data/images/xian/xian-small-wild-goose-route-morning.prompt.md",
+        ROOT / "data/images/xian/xian-before-departure-four-guides.prompt.md",
         ROOT / "assets/images/xian/xian-cover-underlay.png",
         ROOT / "assets/images/xian/xian-cover-underlay.provenance.json",
     }

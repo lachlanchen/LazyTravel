@@ -24,23 +24,25 @@ japan/prefectures/<prefecture>
 world/countries/<country>
 ```
 
-Current verified milestone: Xi'an Chapters 1-10, `112` aligned content blocks,
-`172` B6 pages, ten reproducible maps, and fourteen realistic editorial figures
-with technical provenance. Every reviewed chapter now has a place-led visual:
-Yongning Gate, Daming Palace, Terracotta Pit 1, the Big Wild Goose Pagoda, the
-city wall, Bell Tower, food practice, the nearby mountain day, Xi'an North, or
-the Small Wild Goose Pagoda.
+Current verified milestone: all 11 Xi'an chapters, `125` aligned content blocks,
+`195` B6 pages, ten reproducible maps, and fifteen realistic editorial figures
+with technical provenance. The visual route includes Yongning Gate, Daming
+Palace, Terracotta Pit 1, the Big Wild Goose Pagoda, the city wall, Bell Tower,
+food practice, the nearby mountain day, Xi'an North, South Gate, the Small Wild
+Goose Pagoda, and the four-guide departure check.
 Every non-map figure includes at least Aya-chan and Lala Xia; new attraction
 plates use all four guides when the location remains dominant and legible. The
-Xi'an outline contains exactly `11` chapters. Chapter 7 is the reviewed
-nearby-area chapter; Chapter 8 covers airport/station arrival; Chapter 9 is the
-reviewed district-first lodging chapter; Chapter 10 is the reviewed nested
-two-, three-, and five-day itinerary. Chapter 11 departure checks are the next
-production gate. The cover uses a text-free four-guide city-wall scene under
-live selectable LaTeX text.
+Xi'an outline contains exactly `11` chapters. Chapter 7 is the nearby-area
+decision chapter; Chapter 8 covers airport/station arrival; Chapter 9 is the
+district-first lodging chapter; Chapter 10 supplies nested two-, three-, and
+five-day itineraries; and Chapter 11 closes with dated booking, conditions,
+conduct, allergy, and emergency checks. The cover uses a text-free four-guide
+city-wall scene under live selectable LaTeX text. All chapters have passed the
+internal editorial, reading, page, and website gate; the complete Xi'an book
+now awaits user review before Lanzhou can begin.
 
 The current pocket PDF SHA-256 is
-`9be7fe32bdf8e9f0540a9e6ebd5389e97c41b27db423f64195babf1709b76d6f`.
+`ae2872703174ea523b051ccba21e34eeaa2182aba323bc68a23e5cf558af83c5`.
 The same verified file is mirrored to the project Nutstore share.
 
 ## Source Boundary

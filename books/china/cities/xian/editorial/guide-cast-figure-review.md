@@ -36,21 +36,25 @@ reviews remain valid historical records.
 | Paomo breaking table | 80 | Aya, Lala, Sasa, Zhuangzi robot | Representative dry-bowl sequence; no named restaurant or universal piece-size claim | `7b38c069ad7088192570be07393205eb579055fe0db6de0229a53098a189cd1e` | `4b5bd77431759356844be1baf95f485cbe0c658f812ad9c5dc71be778400401e` |
 | Managed mountain day | 103 | Aya, Lala, Sasa, Zhuangzi robot | Representative managed path; no claim to depict a specific Huashan section | `8130f2cda9bcc710c7882d5bece90d0d10ee246337bb58d700c01c6a2041cff4` | `ece7b8cea339aac9d29a133d7d55108e56b9e25b7097af0a9587c56269dcfafe` |
 | Xi'an North interchange | 107 | Aya, Lala, Sasa, Zhuangzi robot | Present-day station-forecourt decision scene; no claim of one universal exit, pickup zone, or crowd condition | `cc94fd3acac36e4029e2657c2396460aa4ee8b87cb272b501c3730ff86f74ced` | `3d8084713dda355fd13c69f7ccb54a2d6c4a1552d91424e8762e11160fa8ced4` |
+| South Gate hotel arrival | 122 | Aya, Lala, Sasa, Zhuangzi robot | Representative unbranded entrance choice; no named hotel, room, route, or traffic claim | `82a5276f5599030fd1f3eb0b18c9253e21b7297e4dae3687a05219f1754023c3` | `8129f66ba3e7b7078a5531403ec10082b65859af2192e7cb0c997d233596aba3` |
+| Small Wild Goose Pagoda route morning | 139 | Aya, Lala, Sasa, Zhuangzi robot | Present-day attraction scale and route opening; no tower-access, entrance, or duration claim | `21f59a5a5c7d0419bb6f9eb369330b67515a56162bd32f47704449e0be1d7422` | `e7d28fcaca764146d7fc2cfa0cbd01bdbfd633dd99120503cd3b477d799ceb52` |
+| Before-departure evidence check | 158 | Aya, Lala, Sasa, Zhuangzi robot | Representative hotel-table preparation; no named room, exact window, or universal document claim | `981df29b1c44dee807cf7386cdd3c7dbce18d78638dff574a9f82725be4357c6` | `22a30360cda5fd411b6fb18690e58b8c9cfe7b4a4e712dcde621f545e5f7222f` |
 
 ## Visual Findings
 
-- All outputs are `1536 x 1024` sRGB PNG files and remain clear in a `600 x
-  400` proof, their actual B6 page, and a `390 px` mobile figure capture.
+- All outputs are high-resolution sRGB PNG files (`1536 x 1024` for the first
+  set and `1448 x 1086` for recent plates) and remain clear in their B6 page
+  proofs and `390 px` mobile figure captures.
 - Aya and Lala remain recognizable through head shape, clothing, proportions,
   and material treatment rather than labels or reader-facing production notes.
-- The full-team Yongning Gate, Daming, Pit 1, Bell Tower, paomo, mountain, and
-  Xi'an North scenes give the robot equal guide status without turning the
-  place into a cast portrait.
+- The full-team Yongning Gate, Daming, Pit 1, Bell Tower, paomo, mountain,
+  Xi'an North, South Gate, Small Wild Goose Pagoda, and departure scenes give
+  the robot equal guide status without turning the place into a cast portrait.
 - The teaching-replica scenes preserve the distinction between explaining a
   process and documenting or authorizing work on original heritage.
 - Captions describe the travel subject and factual limit. Reference paths,
   generation method, hashes, and rights remain in technical provenance.
 - Combined current-PDF figure-page sheet SHA-256:
-  `9f105aee0abb7f77486fed5cdabbdeb13848f282203857892d520e432a647da6`.
+  `b0dcd747aa4ddee0ea8d7829073dac4c344e75d38231b0b062345e7e4aee7e93`.
 - Combined mobile figure sheet SHA-256:
-  `b311344af2359307e3eccaa99b2b72c119e1a180eb2678f95f97d35351f682cb`.
+  `07ff78edce4bb97de97a7ca0aa620da9b5bd511768f462cc07386d052c843f62`.

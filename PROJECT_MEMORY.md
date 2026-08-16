@@ -52,21 +52,22 @@ history, rollout data, or session backups.
   instructional figures remain useful but do not satisfy that need by
   themselves.
 - New location plates use the full four-guide team when B6 legibility allows.
-  The current Chapters 1-10 visual route now includes Yongning Gate, Pit 1, the
+  The complete 11-chapter visual route now includes Yongning Gate, Pit 1, the
   Big Wild Goose Pagoda, the City Wall, the Bell Tower, food practice, a
   managed mountain day, Xi'an North, a South Gate hotel arrival, and a Small
-  Wild Goose Pagoda route morning rather than relying on generic character
-  scenes. The cover is a text-free four-guide city-wall underlay beneath live
-  LaTeX typography.
+  Wild Goose Pagoda route morning, and the four-guide departure table rather
+  than relying on generic character scenes. The cover is a text-free four-guide
+  city-wall underlay beneath live LaTeX typography.
 
 ## Current Production Decision
 
-Xi'an has exactly 11 chapters. Chapters 1-10 are the active reviewed build:
-Chapter 7 is the single nearby-area decision chapter, Chapter 8 covers exact
-airport/station arrival choices, and Chapter 9 covers district-first lodging.
-Chapter 10 now provides the nested two-, three-, and five-day route. Chapter 11
-departure checks are next. The verified pocket has `172` B6 pages, `112`
-blocks, ten maps, fourteen figures, and SHA-256
-`9be7fe32bdf8e9f0540a9e6ebd5389e97c41b27db423f64195babf1709b76d6f`.
-Lanzhou remains gated until the whole Xi'an book and synchronized website pass
-final review.
+Xi'an has exactly 11 chapters, and all 11 have passed the internal editorial,
+reading, PDF-page, and responsive-website gate. Chapter 7 is the single
+nearby-area decision chapter, Chapter 8 covers exact airport/station arrival
+choices, Chapter 9 covers district-first lodging, Chapter 10 provides nested
+two-, three-, and five-day routes, and Chapter 11 closes the trip with dated
+departure checks. The verified pocket has `195` B6 pages, `125` blocks, ten
+maps, fifteen figures, and SHA-256
+`ae2872703174ea523b051ccba21e34eeaa2182aba323bc68a23e5cf558af83c5`.
+Lanzhou remains gated until the user accepts the complete Xi'an book and
+synchronized website review.

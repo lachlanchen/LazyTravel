@@ -144,12 +144,13 @@ def screenshot_all_figures(page: Page, output: Path, chapter_tag: str) -> None:
 
 def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[str, Any]:
     page.wait_for_selector("#chapter:not([hidden])")
-    page.wait_for_function(
-        """() => {
-          const image = document.querySelector('.map-stage img');
-          return image && image.complete && image.naturalWidth > 0;
-        }"""
-    )
+    if counts["maps"]:
+        page.wait_for_function(
+            """() => {
+              const image = document.querySelector('.map-stage img');
+              return image && image.complete && image.naturalWidth > 0;
+            }"""
+        )
     if counts["figures"]:
         figures = page.locator(".editorial-figure")
         for index in range(counts["figures"]):
@@ -162,6 +163,7 @@ def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[s
             }""",
             arg=counts["figures"],
         )
+    map_image = page.locator(".map-stage img").first
     observed = {
         "blocks": page.locator(".reading-block").count(),
         "ruby": page.locator("ruby").count(),
@@ -169,10 +171,12 @@ def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[s
         "maps": page.locator(".map-figure").count(),
         "figures": page.locator(".editorial-figure").count(),
         "headings": page.locator(".block-heading").count(),
-        "map_natural_width": page.locator(".map-stage img").first.evaluate(
-            "image => image.naturalWidth"
+        "map_natural_width": (
+            map_image.evaluate("image => image.naturalWidth") if counts["maps"] else 0
         ),
-        "map_source": page.locator(".map-stage img").first.evaluate("image => image.currentSrc"),
+        "map_source": (
+            map_image.evaluate("image => image.currentSrc") if counts["maps"] else None
+        ),
     }
     for key in ("blocks", "ruby", "sources", "maps", "figures", "headings"):
         if observed[key] != counts[key]:
@@ -187,7 +191,10 @@ def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[s
                     f"{label} visual numbering mismatch: "
                     f"{visual_label!r} does not start with {expected_prefix!r}"
                 )
-    if not observed["map_source"].endswith(".svg") or observed["map_natural_width"] < 600:
+    if counts["maps"] and (
+        not observed["map_source"].endswith(".svg")
+        or observed["map_natural_width"] < 600
+    ):
         raise RuntimeError(f"{label} vector map did not load correctly: {observed}")
     assert_no_page_overflow(page, label)
     assert_header_clear(page, label)
@@ -212,6 +219,7 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
     chapter_8 = "ch08-arrive-and-move"
     chapter_9 = "ch09-choose-a-side"
     chapter_10 = "ch10-itineraries-with-room"
+    chapter_11 = "ch11-before-departure"
     report: dict[str, Any] = {
         "url": url,
         "browser": chrome,
@@ -453,6 +461,37 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
             if "ONE MORNING GROUP" not in desktop.locator(".figure-label").inner_text():
                 raise RuntimeError("Chapter 10 Small Wild Goose figure label is missing")
             desktop.screenshot(path=output / "desktop-ch10.png", full_page=True)
+
+            desktop.locator(f'[data-chapter-id="{chapter_11}"]').click()
+            desktop.wait_for_selector("#ch11-b001")
+            desktop.locator(".editorial-figure").first.scroll_into_view_if_needed()
+            desktop.wait_for_function(
+                """() => {
+                  const image = document.querySelector('.figure-image');
+                  return image && image.complete && image.naturalWidth >= 1200;
+                }"""
+            )
+            report["viewports"]["desktop_ch11"] = assert_core_render(
+                desktop, counts[chapter_11], "desktop chapter 11"
+            )
+            for heading in (
+                "Booking Snapshot | 16 August 2026",
+                "Check Weather Twice, and Check Both Places",
+                "Match Ticket, Document, Traveler, and Station",
+                "Emergency: Give Your Location First",
+                "Seven Checks Before You Leave",
+            ):
+                if desktop.locator(".block-heading", has_text=heading).count() != 1:
+                    raise RuntimeError(f"Chapter 11 heading is missing: {heading}")
+            if desktop.locator(".map-figure").count() != 0:
+                raise RuntimeError("Chapter 11 should not duplicate an earlier route map")
+            if desktop.locator(".reading-block.kind-callout").count() != 1:
+                raise RuntimeError("Chapter 11 final callout is missing or duplicated")
+            if desktop.locator(".reading-block.kind-callout ruby").count() < 20:
+                raise RuntimeError("Chapter 11 final callout lost its ruby readings")
+            if "FOUR EVIDENCE CHECKS" not in desktop.locator(".figure-label").inner_text():
+                raise RuntimeError("Chapter 11 departure figure label is missing")
+            desktop.screenshot(path=output / "desktop-ch11.png", full_page=True)
             desktop_context.close()
 
             mobile_context = browser.new_context(
@@ -808,6 +847,35 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 mobile,
                 mobile.locator("#ch10-b014"),
                 output / "mobile-ch10-highlight.png",
+            )
+
+            mobile_url = f"{url.rstrip('/')}?chapter={chapter_11}"
+            mobile.goto(mobile_url, wait_until="networkidle")
+            report["viewports"]["mobile_ch11"] = assert_core_render(
+                mobile, counts[chapter_11], "mobile chapter 11"
+            )
+            if mobile.locator("#chapter-select").input_value() != chapter_11:
+                raise RuntimeError("mobile chapter menu did not select Chapter 11")
+            if mobile.locator(".block-heading").count() != counts[chapter_11]["headings"]:
+                raise RuntimeError("Chapter 11 mobile headings are missing")
+            if mobile.locator(".map-figure").count() != 0:
+                raise RuntimeError("Chapter 11 mobile view should not contain a duplicate map")
+            if mobile.locator(".reading-block.kind-callout ruby").count() < 20:
+                raise RuntimeError("Chapter 11 mobile callout lost its ruby readings")
+            mobile.screenshot(path=output / "mobile-ch11.png", full_page=True)
+            assert_scrolled_below_header(
+                mobile, ".editorial-figure", "Chapter 11 mobile figure"
+            )
+            screenshot_all_figures(mobile, output, "mobile-ch11")
+            assert_scrolled_below_header(
+                mobile,
+                "#ch11-b013",
+                "Chapter 11 mobile final callout",
+            )
+            screenshot_full_element(
+                mobile,
+                mobile.locator("#ch11-b013"),
+                output / "mobile-ch11-highlight.png",
             )
             mobile_context.close()
         finally:

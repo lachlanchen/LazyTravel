@@ -232,7 +232,7 @@ def block_tex(
         if heading
         else ""
     )
-    pieces = [r"\clearpage", rf"\LTBlockStart{{{tex_escape(block['id'])}}}"]
+    pieces = [r"\clearpage"]
     if block["kind"] == "callout":
         pieces.append(
             rf"\LTCalloutBlock"
@@ -243,6 +243,7 @@ def block_tex(
             rf"{{{citation_markers(block['citation_ids'], citation_numbers)}}}"
         )
         return "\n".join(pieces) + "\n"
+    pieces.append(rf"\LTBlockStart{{{tex_escape(block['id'])}}}")
     if block["kind"] == "practical":
         pieces.append(rf"\LTPracticalHeading{{{heading_tex}}}")
     pieces.extend(
