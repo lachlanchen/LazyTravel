@@ -37,6 +37,8 @@ const assetLabels = {
   "asset-xian-managed-mountain-day": "MOUNTAIN DAY · MANAGED TRAIL",
   "asset-xian-arrival-hubs-map": "ARRIVING IN XI'AN · FOUR HUBS",
   "asset-xian-north-interchange": "XI'AN NORTH · CHOOSE THE NEXT LEG",
+  "asset-xian-stay-areas-map": "WHERE TO STAY · FIVE ITINERARY ANCHORS",
+  "asset-xian-south-gate-hotel-arrival": "SOUTH GATE · FIND THE ACTUAL ENTRANCE",
 };
 const state = {
   document: null,

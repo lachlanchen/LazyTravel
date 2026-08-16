@@ -1,0 +1,145 @@
+{
+  "asset_id": "asset-xian-stay-areas-map",
+  "command": "python3 scripts/build_xian_stay_areas_map.py",
+  "config": {
+    "path": "data/maps/xian/xian-stay-areas.config.json",
+    "sha256": "ca0c0913a9461bb139e143ce799d9e579cff6bdedee0f5d30e6c244793a5d5e8"
+  },
+  "created_at": "2026-08-16",
+  "declared_generalizations": [
+    {
+      "id": "walled_core",
+      "note": "Generalized rectangle for the Ming-walled core; not a surveyed wall polygon, administrative boundary, or hotel search radius."
+    },
+    {
+      "id": "central_focus",
+      "note": "Regional-panel box identifies the separately enlarged central inset; it does not define central Xi'an."
+    },
+    {
+      "id": "line_2_orientation",
+      "note": "Simplified north-south Line 2 orientation in the central inset; not track geometry, stops, service hours, or a hotel route."
+    },
+    {
+      "id": "lines_3_4_anchor",
+      "note": "Big Wild Goose Pagoda area interchange anchor; no complete line geometry or transfer promise is shown."
+    },
+    {
+      "id": "central-xian",
+      "note": "Bell Tower position anchors the central inset but is not treated as the destination of every stay."
+    },
+    {
+      "id": "xian-north",
+      "note": "Station-building centroid from the reviewed arrival map; plazas, exits, and pickup zones remain on-site decisions."
+    },
+    {
+      "id": "lintong",
+      "note": "Declared midpoint reused from the reviewed Chapter 7 choice map; not a district boundary, station, hotel, or entrance."
+    },
+    {
+      "id": "inside-wall",
+      "note": "Zone marker is an itinerary anchor, not a hotel boundary or guarantee of walkability."
+    },
+    {
+      "id": "south-gate",
+      "note": "Gate position reused from the reviewed inside-wall route; the stay area extends beyond this point and has no hard boundary."
+    },
+    {
+      "id": "yanta-qujiang",
+      "note": "Big Wild Goose Pagoda is a durable area anchor; the marker does not define the full Yanta or Qujiang districts."
+    },
+    {
+      "id": "xian-north-corridor",
+      "note": "Station anchor does not imply that any hotel using the North Station name is walkable to the concourse."
+    },
+    {
+      "id": "lintong",
+      "note": "Declared itinerary midpoint; not a specific hotel or Line 9 station."
+    }
+  ],
+  "files": {
+    "xian-stay-areas.pdf": {
+      "bytes": 105985,
+      "sha256": "f158f314fe20dee39a479a796e48607fd4354c58262534ea2c10e5246653aae7"
+    },
+    "xian-stay-areas.png": {
+      "bytes": 1488920,
+      "sha256": "612474121798395aa2fd1b9363977d3be90a5941ea3689e8bbd933da23e8bd98"
+    },
+    "xian-stay-areas.svg": {
+      "bytes": 31640,
+      "sha256": "c1f730fc6a4c729eb4e05d0a6b8bbc1128983add7f7bafe5dc67c7e33953626a"
+    }
+  },
+  "method": "map-render",
+  "present_geography": [
+    {
+      "kind": "pinned-place-positions",
+      "snapshot_date": "2026-08-16",
+      "source": "OpenStreetMap and reviewed LazyTravel map configs"
+    }
+  ],
+  "rights": "Map design © LazyTravel; pinned named-place positions © OpenStreetMap contributors, ODbL 1.0.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "openstreetmap-xian-stay-areas-2026",
+      "license": "ODbL 1.0",
+      "note": "Pinned or previously reviewed OSM positions for the Bell Tower, Yongning Gate, Big Wild Goose Pagoda, Xi'an North, Huaqing Palace, and the Qin museum support orientation only.",
+      "snapshot_date": "2026-08-16",
+      "title": "OpenStreetMap pinned positions for Xi'an stay-area anchors",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "xian-metro-network-2025",
+      "note": "Controls selected Line 2, 3, 4, 9, and 14 relationships; this map intentionally omits the rest of the network.",
+      "snapshot_date": "2025-12-29",
+      "title": "西安轨道交通线网示意图",
+      "url": "https://jtj.xa.gov.cn/zmhd/xxcx/dtxl/1.html"
+    },
+    {
+      "id": "xian-north-transport-2026",
+      "note": "Supports the distinct Xi'an North transfer context and the need to verify the exact final leg.",
+      "snapshot_date": "2026-08-16",
+      "title": "西安北站公共交通出行指南",
+      "url": "https://xetdz.xa.gov.cn/xwzx/jkdt/1831494658425413633.html"
+    },
+    {
+      "id": "reviewed-xian-map-configs",
+      "note": "Reuses already pinned, attributed positions without introducing a second untracked coordinate source.",
+      "paths": [
+        "data/maps/xian/xian-inside-wall-route.config.json",
+        "data/maps/xian/xian-written-word-route.config.json",
+        "data/maps/xian/xian-nearby-day-choices.config.json",
+        "data/maps/xian/xian-arrival-hubs.config.json"
+      ],
+      "snapshot_date": "2026-08-16",
+      "title": "LazyTravel reviewed Xi'an orientation, inside-wall, nearby-day, and arrival configs"
+    }
+  ],
+  "technical_qa": {
+    "complete_network_claim": false,
+    "hotel_inventory_count": 0,
+    "live_route_count": 0,
+    "minimum_png_width": 5000,
+    "panel_count": 2,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      5600,
+      6160
+    ],
+    "svg_selectable_text": true,
+    "zone_count": 5
+  },
+  "visual_qa": {
+    "approved": true,
+    "b6_proof": "build/qa/maps/xian/stay-areas/xian-stay-areas-b6-300dpi.png",
+    "b6_proof_sha256": "a188ed73d078448b040bd2ddfd4cb395d43acff9a1ff6e60692fe3859368b381",
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "mobile_zoom_proof": "build/qa/maps/xian/stay-areas/xian-stay-areas-mobile-zoom-proof.png",
+    "mobile_zoom_proof_sha256": "c98e901020cea4d71d49818b11ffe9ecdbca8126414861b6621d8a2223169c07",
+    "notes": "Inspected at the 5600 x 6160 master, a 1476-pixel B6 landscape proof, and a 900-pixel mobile zoom proof matching the website's enlarged map view. All five numbered zones, the central inset, trilingual cards, wall, and selected transport anchors remain distinct; labels stay inside their panels and no line claims a complete route or hotel boundary.",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-16"
+  }
+}

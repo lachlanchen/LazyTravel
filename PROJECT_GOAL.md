@@ -124,8 +124,8 @@ repository publication, and pocket-PDF sync have passed this gate.
 
 ## Current Gate
 
-As of `2026-08-16`, Chapters 1-8 are reviewed and reproducibly built as one
-`134`-page B6 pocket PDF from `86` aligned blocks, with eight maps and twelve
+As of `2026-08-16`, Chapters 1-9 are reviewed and reproducibly built as one
+`153`-page B6 pocket PDF from `98` aligned blocks, with nine maps and thirteen
 figures. The synchronized website passes the same JSON, ruby, asset, citation,
-desktop, and mobile gates. Chapter 9, district-first lodging, is the only next
-writing gate; Chapters 10-11 and Lanzhou remain locked behind it.
+desktop, and mobile gates. Chapter 10, two-, three-, and five-day itineraries,
+is the only next writing gate; Chapter 11 and Lanzhou remain locked behind it.

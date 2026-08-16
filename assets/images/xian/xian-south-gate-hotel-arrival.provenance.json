@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-south-gate-hotel-arrival",
+  "created_at": "2026-08-16",
+  "method": "generated-from-private-and-institutional-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Generated a new hotel-arrival composition from four direct guide references and one Yongning Gate architectural reference",
+    "Reviewed at original resolution and at a 600 x 450 B6-screen proof for exact guide count, identity continuity, gate dominance, entrance plausibility, luggage placement, generated text, crop, and open circulation"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity as the fourth guide and equal companion; reference only, no source file redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/yongning-gate-xinhua.jpg",
+      "sha256": "f528babdb137670a7569687a81ed72e09c3701217113d467e0d2a024dd1307f6",
+      "url": "https://english.news.cn/20230512/cffd14dcf865422fa63a371fb8c4affb/20230512cffd14dcf865422fa63a371fb8c4b47b7b10e628fde5170b5.jpg",
+      "page_url": "https://english.news.cn/20230512/cffd14dcf865422fa63a371fb8c4affb/c.html",
+      "credit": "Xinhua / Shao Rui, photographed 2023-04-25",
+      "role": "Factual reference for Yongning Gate's layered roof, grey-brick wall, road edge, and modern urban setting; ignored research reference, not redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-south-gate-hotel-arrival.prompt.md",
+    "sha256": "af0bfaa86daf1b62e39d54a09ef816918775a1800f1e5d5f029257ac5cca9637"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-south-gate-hotel-arrival.png",
+    "sha256": "82a5276f5599030fd1f3eb0b18c9253e21b7297e4dae3687a05219f1754023c3",
+    "bytes": 2505607,
+    "width": 1448,
+    "height": 1086,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Chapter 9 opening figure that shows a real hotel-entrance check at South Gate while keeping Yongning Gate and the city wall as the Xi'an place signal",
+  "factual_limits": [
+    "The unbranded hotel entrance, traffic, trees, pavement, guide placement, luggage, lighting, and camera position form a representative composition rather than a documentary view or property recommendation",
+    "The image does not identify a real hotel, entrance, room category, vehicle route, walking time, street condition, or current traffic level",
+    "The guide characters establish traveler scale and series continuity; they are not documentary passengers"
+  ],
+  "reader_caption_policy": "Describe checking the actual entrance and room-facing details; keep generation method, prompt, source paths, checksums, and production metadata out of the caption",
+  "rights": "Original LazyTravel composition generated with built-in OpenAI image generation from private user-supplied continuity references and a Xinhua photograph used only as a factual spatial reference; the external source image is not redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "yongning_gate_dominant": "pass",
+    "hotel_entrance_unbranded": "pass",
+    "luggage_clear_of_doorway": "pass",
+    "open_pedestrian_circulation": "pass",
+    "no_reader_legible_generated_text": "pass",
+    "safe_crop": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "evidence": "build/qa/images/xian/attraction-views/xian-south-gate-hotel-arrival-b6-screen-proof.png",
+    "evidence_sha256": "323f5147ce9d2ff80e89897e26debde4037bb0d22626ee776f50a814fc39a792",
+    "notes": "At 600 x 450, Yongning Gate, the long grey wall, the unbranded doorway, all four guides, and four compact luggage pieces remain clear. The doorway and pavement stay open, and no hotel name, price, platform mark, or room detail is asserted."
+  }
+}

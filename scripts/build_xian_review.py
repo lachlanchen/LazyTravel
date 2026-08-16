@@ -28,6 +28,7 @@ CHAPTER_IDS = (
     "ch06-beginning-with-bread",
     "ch07-beyond-the-center",
     "ch08-arrive-and-move",
+    "ch09-choose-a-side",
 )
 BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
@@ -181,6 +182,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "scripts/build_xian_food_contexts_map.py",
         ROOT / "scripts/build_xian_nearby_day_choices_map.py",
         ROOT / "scripts/build_xian_arrival_hubs_map.py",
+        ROOT / "scripts/build_xian_stay_areas_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
@@ -194,6 +196,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/maps/xian/xian-food-contexts.config.json",
         ROOT / "data/maps/xian/xian-nearby-day-choices.config.json",
         ROOT / "data/maps/xian/xian-arrival-hubs.config.json",
+        ROOT / "data/maps/xian/xian-stay-areas.config.json",
         ROOT / "data/maps/xian/xian-before-walls.geojson",
         ROOT / "data/images/xian/xian-daming-site-impression.prompt.md",
         ROOT / "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
@@ -207,6 +210,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/images/xian/xian-terracotta-pit-one-visit.prompt.md",
         ROOT / "data/images/xian/xian-bell-tower-orientation.prompt.md",
         ROOT / "data/images/xian/xian-north-interchange.prompt.md",
+        ROOT / "data/images/xian/xian-south-gate-hotel-arrival.prompt.md",
     }
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
     used_asset_ids = {
@@ -279,6 +283,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_xian_food_contexts_map.py"])
         run([sys.executable, "scripts/build_xian_nearby_day_choices_map.py"])
         run([sys.executable, "scripts/build_xian_arrival_hubs_map.py"])
+        run([sys.executable, "scripts/build_xian_stay_areas_map.py"])
     run(
         [
             sys.executable,

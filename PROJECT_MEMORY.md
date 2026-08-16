@@ -52,18 +52,18 @@ history, rollout data, or session backups.
   instructional figures remain useful but do not satisfy that need by
   themselves.
 - New location plates use the full four-guide team when B6 legibility allows.
-  The current Chapters 1-8 visual route now includes Yongning Gate, Pit 1, the
+  The current Chapters 1-9 visual route now includes Yongning Gate, Pit 1, the
   Big Wild Goose Pagoda, the City Wall, the Bell Tower, food practice, a
-  managed mountain day, and Xi'an North rather than relying on generic
-  character scenes.
+  managed mountain day, Xi'an North, and a South Gate hotel arrival rather than
+  relying on generic character scenes.
 
 ## Current Production Decision
 
-Xi'an has exactly 11 chapters. Chapters 1-8 are the active reviewed build:
+Xi'an has exactly 11 chapters. Chapters 1-9 are the active reviewed build:
 Chapter 7 is the single nearby-area decision chapter, Chapter 8 covers exact
-airport/station arrival choices, and Chapter 9 district-first lodging is next.
-The verified pocket has `134` B6 pages, `86` blocks, eight maps, twelve figures,
-and SHA-256
-`c9450bd72402861c018757c73f2d715c6e08811f71a36c01b9bef1e13a305080`.
+airport/station arrival choices, and Chapter 9 covers district-first lodging.
+Chapter 10, two-, three-, and five-day itineraries, is next. The verified pocket
+has `153` B6 pages, `98` blocks, nine maps, thirteen figures, and SHA-256
+`7703a3273523c3fa414947a9fc06fbdb10aab56600ec0099b33b40108415f7bd`.
 Lanzhou remains gated until the whole Xi'an book and synchronized website pass
 final review.

@@ -11,8 +11,9 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   Xi'an book and website have been reviewed and reproducibly built.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
   a local editorial problem.
-- Chapters 1-8 are reviewed. Continue with Chapter 9 district-first lodging;
-  do not reopen Chapter 8 unless a factual, language, layout, or build failure
+- Chapters 1-9 are reviewed. Continue with Chapter 10 two-, three-, and
+  five-day itineraries; do not reopen Chapter 9 unless a factual, language,
+  layout, or build failure
   is demonstrated.
 - Ignore unrelated world-literature work and retain only useful multilingual
   book-production experience.
