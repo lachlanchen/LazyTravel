@@ -11,6 +11,7 @@ from render_destination_tex import (  # noqa: E402
     block_tex,
     citation_order,
     citation_order_for_chapters,
+    cover_tex,
     contents_tex,
     reading_tokens_tex,
     tex_escape,
@@ -18,6 +19,28 @@ from render_destination_tex import (  # noqa: E402
 
 
 class DestinationTexTests(unittest.TestCase):
+    def test_cover_places_text_free_art_below_live_latex_text(self) -> None:
+        book = {
+            "titles": {"zh": "西安", "ja": "西安", "en": "Xi'an"},
+            "subtitles": {"zh": "路线", "ja": "旅程", "en": "Routes"},
+            "branding": {
+                "studio": "lazying.art",
+                "repository": "https://example/repo",
+            },
+        }
+        chapters = [{"order": 1}, {"order": 10}]
+
+        rendered = cover_tex(book, chapters)
+
+        image_at = rendered.index("xian-cover-underlay.png")
+        brand_at = rendered.index(r"\LTBrand")
+        title_at = rendered.index("西安")
+        self.assertLess(image_at, brand_at)
+        self.assertLess(image_at, title_at)
+        self.assertIn(r"\detokenize", rendered)
+        self.assertIn("lazying.art · example/repo", rendered)
+        self.assertNotIn("https://example/repo", rendered)
+
     def test_contents_use_separate_trilingual_entries(self) -> None:
         chapters = [
             {

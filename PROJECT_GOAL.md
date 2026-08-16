@@ -124,8 +124,9 @@ repository publication, and pocket-PDF sync have passed this gate.
 
 ## Current Gate
 
-As of `2026-08-16`, Chapters 1-9 are reviewed and reproducibly built as one
-`153`-page B6 pocket PDF from `98` aligned blocks, with nine maps and thirteen
-figures. The synchronized website passes the same JSON, ruby, asset, citation,
-desktop, and mobile gates. Chapter 10, two-, three-, and five-day itineraries,
-is the only next writing gate; Chapter 11 and Lanzhou remain locked behind it.
+As of `2026-08-16`, Chapters 1-10 are reviewed and reproducibly built as one
+`172`-page B6 pocket PDF from `112` aligned blocks, with ten maps and fourteen
+figures. The text-free four-guide cover sits beneath selectable LaTeX text, and
+the synchronized website passes the same JSON, ruby, asset, citation, desktop,
+and mobile gates. Chapter 11, departure checks, is the only next writing gate;
+Lanzhou remains locked behind the complete Xi'an review.

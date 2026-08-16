@@ -14,6 +14,7 @@ from build_xian_review import (  # noqa: E402
     extract_page_count,
     extract_page_size,
     validate_asset_qa,
+    validate_cover_qa,
     validate_figure_cast,
     validate_fonts,
 )
@@ -32,6 +33,9 @@ class XianReviewBuildTests(unittest.TestCase):
     def test_accepts_reviewed_map_asset(self) -> None:
         document = json.loads(BOOK_PATH.read_text(encoding="utf-8"))
         validate_asset_qa(document)
+
+    def test_accepts_reviewed_text_free_cover(self) -> None:
+        validate_cover_qa()
 
     def test_rejects_unapproved_map_asset(self) -> None:
         document = json.loads(BOOK_PATH.read_text(encoding="utf-8"))

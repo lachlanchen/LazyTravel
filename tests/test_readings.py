@@ -62,6 +62,38 @@ class ReadingLayerTests(unittest.TestCase):
         self.assertEqual(readings["一三八〇年"], "せんさんびゃくはちじゅうねん")
         self.assertEqual(readings["四年"], "よねん")
 
+    def test_xian_itinerary_day_readings(self) -> None:
+        tokens = ja_tokens("二日、三日、四日、五日", unidic_tagger())
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["二日"], "ふつか")
+        self.assertEqual(readings["三日"], "みっか")
+        self.assertEqual(readings["四日"], "よっか")
+        self.assertEqual(readings["五日"], "いつか")
+
+    def test_xian_itinerary_duration_readings(self) -> None:
+        tokens = ja_tokens("二日間、三日間、四日間、五日間", unidic_tagger())
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["二日間"], "ふつかかん")
+        self.assertEqual(readings["三日間"], "みっかかん")
+        self.assertEqual(readings["四日間"], "よっかかん")
+        self.assertEqual(readings["五日間"], "いつかかん")
+
+    def test_xian_itinerary_chinese_phrase_segmentation(self) -> None:
+        tokens = zh_tokens("把休息写进行程，参观从葬坑。")
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["写进行程"], "xiějìn xíngchéng")
+        self.assertEqual(readings["从葬坑"], "cóngzàngkēng")
+
+    def test_qin_dynasty_reading_is_not_the_japanese_surname(self) -> None:
+        tokens = ja_tokens("秦の軍陣", unidic_tagger())
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["秦"], "しん")
+
+    def test_lishan_garden_place_reading(self) -> None:
+        tokens = ja_tokens("麗山園へ移る", unidic_tagger())
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["麗山園"], "りざんえん")
+
     def test_katakana_conversion(self) -> None:
         self.assertEqual(katakana_to_hiragana("セイアン"), "せいあん")
 

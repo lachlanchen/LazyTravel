@@ -11,6 +11,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BOOK = ROOT / "data/china/cities/xian/book.json"
 DEFAULT_TEMPLATE = ROOT / "books/china/cities/xian/latex/book.tex"
+COVER_UNDERLAY = (ROOT / "assets/images/xian/xian-cover-underlay.png").resolve()
 
 
 LATEX_ESCAPES = {
@@ -95,9 +96,16 @@ def cover_tex(book: dict[str, Any], chapters: list[dict[str, Any]]) -> str:
     titles = book["titles"]
     subtitles = book.get("subtitles", {language: "" for language in ("zh", "ja", "en")})
     branding = book["branding"]
+    repository_label = branding["repository"].removeprefix("https://")
     return rf"""
 \begin{{titlepage}}
   \thispagestyle{{empty}}
+  \begin{{tikzpicture}}[remember picture,overlay]
+    \node[anchor=center,inner sep=0] at (current page.center) {{%
+      \includegraphics[width=\paperwidth,height=\paperheight]{{%
+        \detokenize{{{COVER_UNDERLAY}}}}}%
+    }};
+  \end{{tikzpicture}}
   \LTBrand
   \vspace*{{13mm}}
   {{\displayfont\fontsize{{8}}{{10}}\selectfont\color{{LTWater}}
@@ -125,7 +133,7 @@ def cover_tex(book: dict[str, Any], chapters: list[dict[str, Any]]) -> str:
     B6 POCKET REVIEW · CHAPTERS {chapters[0]['order']:02d}--{chapters[-1]['order']:02d}\par}}
   \vspace{{3mm}}
   {{\displayfont\fontsize{{7}}{{10}}\selectfont
-    {tex_escape(branding['studio'])} · {tex_escape(branding['repository'])}\par}}
+    {tex_escape(branding['studio'])} · {tex_escape(repository_label)}\par}}
 \end{{titlepage}}
 \cleardoublepage
 """

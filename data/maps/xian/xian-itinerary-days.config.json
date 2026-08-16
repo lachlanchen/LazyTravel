@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "id": "xian-itinerary-days",
+  "snapshot_date": "2026-08-16",
+  "title": {
+    "zh": "两日、三日、五日：行程一层层加",
+    "ja": "二日・三日・五日：旅程を一日ずつ足す",
+    "en": "TWO, THREE OR FIVE DAYS · ADD ONE COHERENT DAY"
+  },
+  "nested_rule": {
+    "zh": "2日 = D1 + D2　｜　3日 = 再加D3　｜　5日 = 再加D4 + D5",
+    "ja": "2日 = D1 + D2　｜　3日 = D3を追加　｜　5日 = D4 + D5を追加",
+    "en": "2 DAYS = D1 + D2   |   3 DAYS = + D3   |   5 DAYS = + D4 + D5"
+  },
+  "urban_extent": [
+    108.916,
+    34.205,
+    108.984,
+    34.318
+  ],
+  "regional_extent": [
+    108.1,
+    33.9,
+    110.2,
+    34.66
+  ],
+  "urban_context": {
+    "walled_core": {
+      "bounds": [
+        108.919,
+        34.252,
+        108.967,
+        34.278
+      ],
+      "note": "Generalized Ming-wall rectangle reused for orientation; it is not a surveyed wall polygon or walking route."
+    },
+    "day_1": {
+      "day": 1,
+      "color": "#F05A47",
+      "label": {
+        "zh": "城墙内：南门到钟鼓楼与街巷",
+        "ja": "城壁内：南門から鐘鼓楼と路地へ",
+        "en": "OLD CORE · SOUTH GATE TO LANES"
+      },
+      "sites": [
+        {
+          "id": "south-gate",
+          "position": [108.942318, 34.253104],
+          "label": "南门 SOUTH GATE"
+        },
+        {
+          "id": "beilin",
+          "position": [108.948056, 34.255],
+          "label": "碑林 BEILIN"
+        },
+        {
+          "id": "bell-tower",
+          "position": [108.942552, 34.261192],
+          "label": "钟楼 BELL TOWER"
+        },
+        {
+          "id": "great-mosque",
+          "position": [108.936514, 34.263451],
+          "label": "清真大寺 GREAT MOSQUE"
+        }
+      ],
+      "note": "The line orders a compact old-core sequence only; it is not turn-by-turn navigation and Beilin remains optional when the day starts late."
+    },
+    "day_3": {
+      "day": 3,
+      "color": "#1769E0",
+      "label": {
+        "zh": "南部：一座博物馆，再到一座塔",
+        "ja": "南部：博物館一館、その後に塔一基",
+        "en": "SOUTH · ONE MUSEUM, THEN ONE PAGODA"
+      },
+      "sites": [
+        {
+          "id": "shaanxi-history-museum",
+          "position": [108.95041, 34.22577],
+          "label": "陕历博 SHAANXI HISTORY MUSEUM"
+        },
+        {
+          "id": "big-wild-goose-pagoda",
+          "position": [108.961963, 34.218248],
+          "label": "大雁塔 BIG WILD GOOSE PAGODA"
+        }
+      ],
+      "fallback": {
+        "id": "small-wild-goose-pagoda",
+        "position": [108.937358, 34.240803],
+        "label": "预约替代：小雁塔＋西安博物院",
+        "label_en": "BOOKING FALLBACK · SMALL PAGODA + XI'AN MUSEUM"
+      },
+      "note": "The two-point line shows editorial order, not walking, metro, road, entrance, or journey-time geometry. The fallback replaces the museum anchor instead of being added to the same day."
+    },
+    "day_5": {
+      "day": 5,
+      "color": "#008C72",
+      "position": [108.963, 34.306],
+      "label": {
+        "zh": "城市深读或补回错过的一处",
+        "ja": "市内を深く見る、または見逃した一か所へ",
+        "en": "CITY DEPTH OR ONE MISSED PLACE"
+      },
+      "note": "Daming Palace is an orientation example for a fifth-day depth visit, not a required stop or a complete site boundary."
+    }
+  },
+  "regional_days": {
+    "city_base": {
+      "position": [108.9423419, 34.2610119],
+      "label": "西安 XI'AN",
+      "osm_type": "way",
+      "osm_id": 254488435
+    },
+    "day_2": {
+      "day": 2,
+      "color": "#B33273",
+      "position": [109.277673, 34.3873627],
+      "label": {
+        "zh": "秦始皇帝陵博物院",
+        "ja": "秦始皇帝陵博物院",
+        "en": "QIN MAUSOLEUM MUSEUM"
+      },
+      "osm_type": "way",
+      "osm_id": 71235670,
+      "note": "Museum-complex position only; departure point, entrance, shuttle, road route, and journey time must be checked for the travel date."
+    },
+    "day_4_choices": [
+      {
+        "id": "huashan",
+        "position": [110.0780729, 34.4777617],
+        "label": "华山 HUASHAN",
+        "osm_type": "node",
+        "osm_id": 2260053296,
+        "note": "South Peak is an orientation marker, not a walking, cableway, bus, or rail route."
+      },
+      {
+        "id": "hanyangling",
+        "position": [108.9425919, 34.4430016],
+        "label": "汉阳陵 HAN YANGLING",
+        "osm_type": "way",
+        "osm_id": 297321151,
+        "note": "Museum-complex centre; the return vehicle remains a live arrangement."
+      },
+      {
+        "id": "cuihuashan",
+        "position": [109.0026197, 33.9831889],
+        "label": "翠华山 CUIHUASHAN",
+        "osm_type": "node",
+        "osm_id": 3995724828,
+        "note": "Named peak for orientation; visitors use only currently open managed routes."
+      },
+      {
+        "id": "qianling",
+        "position": [108.2138717, 34.575481],
+        "label": "乾陵 QIANLING",
+        "osm_type": "node",
+        "osm_id": 4571452242,
+        "note": "Main attraction point; associated tomb access and last-mile transport remain current checks."
+      }
+    ],
+    "day_4_note": {
+      "zh": "D4只选一处；虚线只表示方位",
+      "ja": "D4は一か所だけ。破線は方角のみ",
+      "en": "D4 · CHOOSE ONE · DOTTED LINES SHOW POSITION ONLY"
+    }
+  },
+  "day_cards": [
+    {
+      "day": 1,
+      "title": "D1 · OLD CORE",
+      "zh": "南门与城墙 → 碑林或书院门 → 钟鼓楼",
+      "ja": "南門と城壁 → 碑林または書院門 → 鐘鼓楼",
+      "en": "WALL → BEILIN OR SHUYUANMEN\n→ TOWERS + LANES"
+    },
+    {
+      "day": 2,
+      "title": "D2 · QIN ARCHAEOLOGY",
+      "zh": "按预约去临潼 → 三坑按序看 → 留住返程",
+      "ja": "予約に合わせ臨潼へ → 三坑を順に → 帰路を確保",
+      "en": "BOOKED ENTRY → THREE PITS IN ORDER\n→ PROTECT THE RETURN"
+    },
+    {
+      "day": 3,
+      "title": "D3 · MUSEUM + PAGODA",
+      "zh": "一座博物馆 → 午休 → 一座塔；预约失败就替换",
+      "ja": "博物館一館 → 昼休み → 塔一基。予約不可なら差替え",
+      "en": "ONE MUSEUM → REST → ONE PAGODA\nUSE THE SMALL-PAGODA FALLBACK"
+    },
+    {
+      "day": 4,
+      "title": "D4 · ONE NEARBY PLACE",
+      "zh": "四选一；按天气、体力与返程决定",
+      "ja": "四か所から一つ。天候、体力、帰路で決める",
+      "en": "CHOOSE ONE NEARBY PLACE\nWEATHER + ENERGY + RETURN"
+    },
+    {
+      "day": 5,
+      "title": "D5 · DEPTH + RECOVERY",
+      "zh": "补回一处，或走一条新主线；不再远郊",
+      "ja": "一か所へ戻るか、新しい一本線へ。遠出は重ねない",
+      "en": "ONE MISSED PLACE OR ONE NEW THREAD\nNO SECOND EXCURSION"
+    }
+  ],
+  "sources": [
+    {
+      "id": "openstreetmap-xian-itinerary-days-2026",
+      "title": "OpenStreetMap pinned positions for Xi'an itinerary anchors",
+      "url": "https://www.openstreetmap.org/copyright",
+      "snapshot_date": "2026-08-16",
+      "license": "ODbL 1.0",
+      "note": "Pinned positions are reused from reviewed LazyTravel map configs; all sequence lines and the wall rectangle are declared schematic geometry."
+    },
+    {
+      "id": "reviewed-xian-route-configs",
+      "title": "LazyTravel reviewed inside-wall, written-word, nearby-day, capital-layer, and Qin-museum configs",
+      "paths": [
+        "data/maps/xian/xian-inside-wall-route.config.json",
+        "data/maps/xian/xian-written-word-route.config.json",
+        "data/maps/xian/xian-nearby-day-choices.config.json",
+        "data/maps/xian/xian-capital-layers.config.json",
+        "data/maps/xian/xian-qin-mausoleum-pits.config.json"
+      ],
+      "snapshot_date": "2026-08-16",
+      "note": "Reuses reviewed site anchors and their original source ledgers without introducing untracked route geometry."
+    },
+    {
+      "id": "shaanxi-history-museum-2026",
+      "title": "陕西历史博物馆基本陈列与参观指南",
+      "url": "https://www.sxhm.com/basic_display.html",
+      "snapshot_date": "2026-08-16",
+      "note": "Supports the museum as one substantial southern anchor and the need for timed real-name booking; no opening hours or admission price are printed."
+    }
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "b6_proof": "build/qa/maps/xian/itinerary-days/xian-itinerary-days-b6-300dpi.png",
+    "b6_proof_sha256": "f95a834cfb00193d561ec90e2b8c61de80652638453253f640ab10d3d317aa9c",
+    "mobile_zoom_proof": "build/qa/maps/xian/itinerary-days/xian-itinerary-days-mobile-zoom-proof.png",
+    "mobile_zoom_proof_sha256": "534594e18d8904e29c05956c35b8222805fd83a3631e514ed28b0507991de6f5",
+    "notes": "Inspected at the 7000 x 5040 master, a 2079-pixel B6 landscape proof, and a 900-pixel mobile zoom proof matching the website's enlarged map view. The nested 2/3/5-day rule, five day cards, urban sequence, Day 2 Qin anchor, and four mutually exclusive Day 4 choices remain distinct; no line is presented as navigation or a current transport promise."
+  }
+}

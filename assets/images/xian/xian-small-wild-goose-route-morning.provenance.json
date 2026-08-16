@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-small-wild-goose-route-morning",
+  "created_at": "2026-08-16",
+  "method": "generated-from-private-and-open-licensed-visual-references",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Generated a new location-dominant composition from four direct guide references and one recent Small Wild Goose Pagoda photograph",
+    "Selected a horizontal image with exactly four guides, an unobstructed tower, a truncated top, dense brick eaves, and a quiet garden route-reading action"
+  ],
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and tactile figure continuity; reference only, no source file redistributed"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity as the fourth guide and equal companion; reference only, no source file redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/small-wild-goose-commons-2024.jpg",
+      "sha256": "da4fbdd4ae81561c9e9676a4fd2f0f6563c3afdf00e07402deaad24a9b0ed415",
+      "url": "https://commons.wikimedia.org/wiki/File:Small_Wild_Goose_Pagoda_2024_01.jpg",
+      "credit": "Xiquinho Silva, photographed 2024-06-09",
+      "license": "CC BY 4.0",
+      "role": "Factual reference for the tower's taper, dense eaves, arched openings, truncated top, weathered brick, and maintained garden setting; ignored research reference, not redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-small-wild-goose-route-morning.prompt.md",
+    "sha256": "135cc7e52d93dfc86a270bab7d6229199e959d5a2e9f955ee01915210c37a1a9"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-small-wild-goose-route-morning.png",
+    "sha256": "21f59a5a5c7d0419bb6f9eb369330b67515a56162bd32f47704449e0be1d7422",
+    "bytes": 3002996,
+    "width": 1448,
+    "height": 1086,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Chapter 10 opening figure that makes a realistic unhurried museum-and-pagoda morning visible before the itinerary is assembled",
+  "factual_limits": [
+    "Guide placement, path, vegetation, light, and camera position form a representative editorial composition rather than a documentary viewpoint",
+    "The image does not claim current tower access, a particular entrance, a route duration, or the availability of a guide service",
+    "The closed route notebook contains no reader-facing information"
+  ],
+  "reader_caption_policy": "Describe the value of leaving time to look before crossing the city; keep generation method, source paths, checksums, and production metadata out of the caption",
+  "rights": "Original LazyTravel composition generated from private user-supplied continuity references and an open-licensed photograph used only as a factual architectural reference; the source photograph is not redistributed",
+  "visual_qa": {
+    "resolution": "pass",
+    "b6_legibility": "pass",
+    "mobile_390px": "pass",
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "small_wild_goose_architecture": "pass",
+    "pagoda_dominant": "pass",
+    "no_reader_legible_generated_text": "pass",
+    "safe_crop": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "evidence": "build/qa/images/xian/attraction-views/xian-small-wild-goose-route-morning-b6-screen-proof.png",
+    "evidence_sha256": "5b784cbef7698c690fc7c45117ed8cdca2d6a953d43bd36a19b4a088c81386ce",
+    "mobile_evidence": "build/qa/images/xian/attraction-views/xian-small-wild-goose-route-morning-mobile-proof.png",
+    "mobile_evidence_sha256": "bda41a3cca8d69fa86d8f0b34c37638c5e104eac5e58ca565806c89c829c1afe",
+    "notes": "At 600 x 450 B6 screen size and 390 x 293 mobile size, the Small Wild Goose Pagoda remains the dominant subject with close-set brick eaves, arched openings, weathered masonry, and a visibly truncated top. Exactly four guides remain distinct at the lower edge: Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi robot. The route notebook carries no readable text, and the garden, path, pagoda, and all four figures retain safe crop margins."
+  }
+}

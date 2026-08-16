@@ -24,20 +24,23 @@ japan/prefectures/<prefecture>
 world/countries/<country>
 ```
 
-Current verified milestone: Xi'an Chapters 1-9, `98` aligned content blocks,
-`153` B6 pages, nine reproducible maps, and thirteen realistic editorial figures
+Current verified milestone: Xi'an Chapters 1-10, `112` aligned content blocks,
+`172` B6 pages, ten reproducible maps, and fourteen realistic editorial figures
 with technical provenance. Every reviewed chapter now has a place-led visual:
 Yongning Gate, Daming Palace, Terracotta Pit 1, the Big Wild Goose Pagoda, the
-city wall, Bell Tower, food practice, the nearby mountain day, or Xi'an North.
+city wall, Bell Tower, food practice, the nearby mountain day, Xi'an North, or
+the Small Wild Goose Pagoda.
 Every non-map figure includes at least Aya-chan and Lala Xia; new attraction
 plates use all four guides when the location remains dominant and legible. The
 Xi'an outline contains exactly `11` chapters. Chapter 7 is the reviewed
 nearby-area chapter; Chapter 8 covers airport/station arrival; Chapter 9 is the
-reviewed district-first lodging chapter. Chapter 10, practical two-, three-,
-and five-day itineraries, is the next production gate.
+reviewed district-first lodging chapter; Chapter 10 is the reviewed nested
+two-, three-, and five-day itinerary. Chapter 11 departure checks are the next
+production gate. The cover uses a text-free four-guide city-wall scene under
+live selectable LaTeX text.
 
 The current pocket PDF SHA-256 is
-`7703a3273523c3fa414947a9fc06fbdb10aab56600ec0099b33b40108415f7bd`.
+`9be7fe32bdf8e9f0540a9e6ebd5389e97c41b27db423f64195babf1709b76d6f`.
 The same verified file is mirrored to the project Nutstore share.
 
 ## Source Boundary

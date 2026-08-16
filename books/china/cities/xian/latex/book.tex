@@ -190,8 +190,9 @@
 }
 
 \newcommand{\LTSources}[1]{%
-  \vspace{1mm}
-  {\displayfont\fontsize{6.2}{8}\selectfont\color{LTMuted}
+  \ifinner\else\enlargethispage{3.5mm}\fi
+  \vspace{0.6mm}
+  {\displayfont\fontsize{5.8}{7}\selectfont\color{LTMuted}
     资料 · 出典 · SOURCES\quad #1\par}
 }
 

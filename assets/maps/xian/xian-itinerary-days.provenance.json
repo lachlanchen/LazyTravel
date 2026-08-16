@@ -1,0 +1,128 @@
+{
+  "asset_id": "asset-xian-itinerary-days-map",
+  "command": "python3 scripts/build_xian_itinerary_days_map.py",
+  "config": {
+    "path": "data/maps/xian/xian-itinerary-days.config.json",
+    "sha256": "93615e50418c76858b59a88703a9fa035c4d9d631a4361994fed3f358d336f5d"
+  },
+  "created_at": "2026-08-16",
+  "declared_generalizations": [
+    {
+      "id": "walled-core",
+      "note": "Generalized Ming-wall rectangle reused for orientation; it is not a surveyed wall polygon or walking route."
+    },
+    {
+      "id": "day-1-sequence",
+      "note": "The line orders a compact old-core sequence only; it is not turn-by-turn navigation and Beilin remains optional when the day starts late."
+    },
+    {
+      "id": "day-3-sequence",
+      "note": "The two-point line shows editorial order, not walking, metro, road, entrance, or journey-time geometry. The fallback replaces the museum anchor instead of being added to the same day."
+    },
+    {
+      "id": "day-5-example",
+      "note": "Daming Palace is an orientation example for a fifth-day depth visit, not a required stop or a complete site boundary."
+    },
+    {
+      "id": "day-2-position",
+      "note": "Museum-complex position only; departure point, entrance, shuttle, road route, and journey time must be checked for the travel date."
+    },
+    {
+      "id": "huashan",
+      "note": "South Peak is an orientation marker, not a walking, cableway, bus, or rail route."
+    },
+    {
+      "id": "hanyangling",
+      "note": "Museum-complex centre; the return vehicle remains a live arrangement."
+    },
+    {
+      "id": "cuihuashan",
+      "note": "Named peak for orientation; visitors use only currently open managed routes."
+    },
+    {
+      "id": "qianling",
+      "note": "Main attraction point; associated tomb access and last-mile transport remain current checks."
+    }
+  ],
+  "files": {
+    "xian-itinerary-days.pdf": {
+      "bytes": 99114,
+      "sha256": "de5928cee8577602bab19c5c81330119a45f2e2c1d22b5df3f62349ee568ae91"
+    },
+    "xian-itinerary-days.png": {
+      "bytes": 1640995,
+      "sha256": "ceb15abb3d465faaab73062242faeb5c48291958b64f901b18539eeccd4342c7"
+    },
+    "xian-itinerary-days.svg": {
+      "bytes": 34833,
+      "sha256": "bba5b766bdb1b330ac8d8bfa31111a8e1e6d34dd18e21ead37c405a5ac76db6d"
+    }
+  },
+  "method": "map-render",
+  "present_geography": [
+    {
+      "kind": "pinned-place-positions",
+      "snapshot_date": "2026-08-16",
+      "source": "OpenStreetMap and reviewed LazyTravel map configs"
+    }
+  ],
+  "rights": "Map design © LazyTravel; pinned named-place positions © OpenStreetMap contributors, ODbL 1.0.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "openstreetmap-xian-itinerary-days-2026",
+      "license": "ODbL 1.0",
+      "note": "Pinned positions are reused from reviewed LazyTravel map configs; all sequence lines and the wall rectangle are declared schematic geometry.",
+      "snapshot_date": "2026-08-16",
+      "title": "OpenStreetMap pinned positions for Xi'an itinerary anchors",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "reviewed-xian-route-configs",
+      "note": "Reuses reviewed site anchors and their original source ledgers without introducing untracked route geometry.",
+      "paths": [
+        "data/maps/xian/xian-inside-wall-route.config.json",
+        "data/maps/xian/xian-written-word-route.config.json",
+        "data/maps/xian/xian-nearby-day-choices.config.json",
+        "data/maps/xian/xian-capital-layers.config.json",
+        "data/maps/xian/xian-qin-mausoleum-pits.config.json"
+      ],
+      "snapshot_date": "2026-08-16",
+      "title": "LazyTravel reviewed inside-wall, written-word, nearby-day, capital-layer, and Qin-museum configs"
+    },
+    {
+      "id": "shaanxi-history-museum-2026",
+      "note": "Supports the museum as one substantial southern anchor and the need for timed real-name booking; no opening hours or admission price are printed.",
+      "snapshot_date": "2026-08-16",
+      "title": "陕西历史博物馆基本陈列与参观指南",
+      "url": "https://www.sxhm.com/basic_display.html"
+    }
+  ],
+  "technical_qa": {
+    "complete_network_claim": false,
+    "day_4_choice_count": 4,
+    "day_card_count": 5,
+    "journey_time_count": 0,
+    "live_route_count": 0,
+    "minimum_png_width": 6000,
+    "panel_count": 2,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      7000,
+      5040
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "b6_proof": "build/qa/maps/xian/itinerary-days/xian-itinerary-days-b6-300dpi.png",
+    "b6_proof_sha256": "f95a834cfb00193d561ec90e2b8c61de80652638453253f640ab10d3d317aa9c",
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "mobile_zoom_proof": "build/qa/maps/xian/itinerary-days/xian-itinerary-days-mobile-zoom-proof.png",
+    "mobile_zoom_proof_sha256": "534594e18d8904e29c05956c35b8222805fd83a3631e514ed28b0507991de6f5",
+    "notes": "Inspected at the 7000 x 5040 master, a 2079-pixel B6 landscape proof, and a 900-pixel mobile zoom proof matching the website's enlarged map view. The nested 2/3/5-day rule, five day cards, urban sequence, Day 2 Qin anchor, and four mutually exclusive Day 4 choices remain distinct; no line is presented as navigation or a current transport promise.",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-16"
+  }
+}

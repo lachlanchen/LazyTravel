@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-xian-cover-underlay",
+  "created_at": "2026-08-16",
+  "method": "generated-text-safe-cover-underlay",
+  "generator": "Built-in OpenAI image generation",
+  "workflow": [
+    "Rendered the existing live-text cover as an ignored geometry reference",
+    "Generated a new text-free composition from the cover geometry, one reviewed four-guide scene, and three architectural references",
+    "Cropped and resampled the selected image to the exact B6 page ratio at 1476 x 2079 pixels",
+    "Placed the raster beneath live LaTeX typography so the title, branding, and repository remain selectable text"
+  ],
+  "source_images": [
+    {
+      "path": "build/research/xian/current-cover-text-reference.png",
+      "sha256": "a74d9b93548bac3b4654afc86b43237ba9426ffa00eedc3b5d8b287ecd873a96",
+      "role": "Ignored geometry reference for live-text safe zones; no pixels from this rendered text page are copied into the final artwork"
+    },
+    {
+      "path": "assets/images/xian/xian-south-gate-hotel-arrival.png",
+      "sha256": "82a5276f5599030fd1f3eb0b18c9253e21b7297e4dae3687a05219f1754023c3",
+      "role": "Reviewed four-guide identity and material-continuity reference"
+    },
+    {
+      "path": "build/research/xian/visual-references/city-wall-official.png",
+      "sha256": "1e2e7e6ba37fc73a02f1faccb18fdef898f0d2212e2bef40f81a5e9f640f92a4",
+      "url": "https://en.xa.gov.cn/upload/en/2025/08/22/202508221804507837_show.png",
+      "page_url": "https://en.xa.gov.cn/ztzl/Xianstourismboom/AttractionsInXi%27an/1958833738536779778.html",
+      "role": "Official Xi'an municipal photograph used only for present wall masonry and silhouette; ignored research reference, not redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/bell-tower-official.jpg",
+      "sha256": "2ae15506931d7e05e99afe7fa892332942bc1072c75dc43f10601badecf2dc2d",
+      "url": "https://en.xa.gov.cn/upload/en/2023/08/16/202308161400586528770.jpg",
+      "page_url": "https://en.xa.gov.cn/CultureTravel/Attractions/1691691501245550594.html",
+      "role": "Official Xi'an municipal photograph used only for the Bell Tower roof and base silhouette; ignored research reference, not redistributed"
+    },
+    {
+      "path": "build/research/xian/visual-references/big-wild-goose-official.jpg",
+      "sha256": "67be5832799533bca8306c17396a99d46865af4ae82ce1936fd4754ae4cd9f65",
+      "url": "https://en.xa.gov.cn/upload/en/2023/08/16/202308161400594986594.jpg",
+      "page_url": "https://en.xa.gov.cn/CultureTravel/Attractions/1691691504798126082.html",
+      "role": "Official Xi'an municipal photograph used only for the present seven-storey pagoda silhouette; ignored research reference, not redistributed"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/xian/xian-cover-underlay.prompt.md",
+    "sha256": "5ff79e124d49c747ea8235129430d654c0dddb71ccacdbc0b209e61dcd4e566d"
+  },
+  "output": {
+    "path": "assets/images/xian/xian-cover-underlay.png",
+    "sha256": "a84e9bf07626b73d4a90a90a08492757b1c0f8c08403af64fb427f741f052e6f",
+    "bytes": 2644003,
+    "width": 1476,
+    "height": 2079,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Text-free full-page visual underlay beneath the live LaTeX title, multilingual subtitle, LazyTravel branding, and repository on the Xi'an B6 cover",
+  "factual_limits": [
+    "The city wall, Bell Tower, and Big Wild Goose Pagoda form a symbolic cover arrangement and are not presented as one real viewpoint or walkable grouping",
+    "The guide characters are series guides, not documentary travelers",
+    "All reader-facing words remain live LaTeX; the raster artwork asserts no venue name, route, price, time, or access condition"
+  ],
+  "reader_caption_policy": "The cover carries no image caption or production note; generation and reference details remain in this technical provenance file",
+  "rights": "Original LazyTravel cover composition generated from a reviewed LazyTravel guide scene and official municipal photographs used only as architectural references; external reference images are not redistributed",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "no_raster_text": "pass",
+    "live_text_selectable": "pass",
+    "title_safe_zone": "pass",
+    "footer_safe_zone": "pass",
+    "b6_print": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-16",
+    "evidence": "build/qa/books/xian/cover/xian-cover-text-overlay.png",
+    "evidence_sha256": "43a0966d5775d63f5c90136e45385b201e0ce1e7d936379cacbf0a9f65491014",
+    "notes": "Compiled B6 first page reviewed at 180 dpi: exactly four series guides; broad bright title field; no raster words; live Chinese, Japanese, English, branding, chapter gate, and repository text remain selectable; all text clears the pagoda, roofline, city wall, luggage, and guides. PDF embeds the 1476 x 2079 underlay at 300 ppi."
+  }
+}

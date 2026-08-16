@@ -19,6 +19,8 @@ BOOK_PATH = ROOT / "data/china/cities/xian/book.json"
 BOOK_SCHEMA = ROOT / "schemas/destination-book.schema.json"
 SOURCE_CATALOG = ROOT / "data/sources/catalog.json"
 SOURCE_SCHEMA = ROOT / "schemas/source-catalog.schema.json"
+COVER_ASSET = ROOT / "assets/images/xian/xian-cover-underlay.png"
+COVER_PROVENANCE = COVER_ASSET.with_suffix(".provenance.json")
 CHAPTER_IDS = (
     "ch01-ground-before-time",
     "ch02-capitals-on-different-maps",
@@ -29,6 +31,7 @@ CHAPTER_IDS = (
     "ch07-beyond-the-center",
     "ch08-arrive-and-move",
     "ch09-choose-a-side",
+    "ch10-itineraries-with-room",
 )
 BUILD_DIR = ROOT / "build/books/xian/pocket-review"
 DIST_DIR = ROOT / "dist/books/xian"
@@ -166,6 +169,30 @@ def validate_asset_qa(document: dict[str, Any]) -> None:
             raise RuntimeError(f"map provenance has not passed visual QA: {asset_id}")
 
 
+def validate_cover_qa() -> None:
+    if not COVER_ASSET.is_file() or not COVER_PROVENANCE.is_file():
+        raise RuntimeError("cover underlay or provenance is missing")
+    provenance = json.loads(COVER_PROVENANCE.read_text(encoding="utf-8"))
+    output = provenance.get("output", {})
+    if output.get("sha256") != sha256(COVER_ASSET):
+        raise RuntimeError("cover underlay provenance hash mismatch")
+    if (output.get("width"), output.get("height")) != (1476, 2079):
+        raise RuntimeError("cover underlay is not the required 300 ppi B6 geometry")
+    visual = provenance.get("visual_qa", {})
+    required = (
+        "exact_guide_count_four",
+        "aya_and_lala_present",
+        "identity_continuity",
+        "no_raster_text",
+        "live_text_selectable",
+        "title_safe_zone",
+        "footer_safe_zone",
+        "b6_print",
+    )
+    if not visual.get("approved") or any(visual.get(field) != "pass" for field in required):
+        raise RuntimeError("cover underlay has not passed compiled-page visual QA")
+
+
 def build_inputs(document: dict[str, Any]) -> list[Path]:
     inputs = {
         BOOK_PATH,
@@ -183,6 +210,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "scripts/build_xian_nearby_day_choices_map.py",
         ROOT / "scripts/build_xian_arrival_hubs_map.py",
         ROOT / "scripts/build_xian_stay_areas_map.py",
+        ROOT / "scripts/build_xian_itinerary_days_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
@@ -197,6 +225,7 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/maps/xian/xian-nearby-day-choices.config.json",
         ROOT / "data/maps/xian/xian-arrival-hubs.config.json",
         ROOT / "data/maps/xian/xian-stay-areas.config.json",
+        ROOT / "data/maps/xian/xian-itinerary-days.config.json",
         ROOT / "data/maps/xian/xian-before-walls.geojson",
         ROOT / "data/images/xian/xian-daming-site-impression.prompt.md",
         ROOT / "data/images/xian/xian-terracotta-conservation-impression.prompt.md",
@@ -211,6 +240,10 @@ def build_inputs(document: dict[str, Any]) -> list[Path]:
         ROOT / "data/images/xian/xian-bell-tower-orientation.prompt.md",
         ROOT / "data/images/xian/xian-north-interchange.prompt.md",
         ROOT / "data/images/xian/xian-south-gate-hotel-arrival.prompt.md",
+        ROOT / "data/images/xian/xian-cover-underlay.prompt.md",
+        ROOT / "data/images/xian/xian-small-wild-goose-route-morning.prompt.md",
+        ROOT / "assets/images/xian/xian-cover-underlay.png",
+        ROOT / "assets/images/xian/xian-cover-underlay.provenance.json",
     }
     chapters = {chapter["id"]: chapter for chapter in document["chapters"]}
     used_asset_ids = {
@@ -284,6 +317,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_xian_nearby_day_choices_map.py"])
         run([sys.executable, "scripts/build_xian_arrival_hubs_map.py"])
         run([sys.executable, "scripts/build_xian_stay_areas_map.py"])
+        run([sys.executable, "scripts/build_xian_itinerary_days_map.py"])
     run(
         [
             sys.executable,
@@ -305,6 +339,7 @@ def main() -> int:
     run([sys.executable, "scripts/validate_readings.py", "--book", str(BOOK_PATH)])
     document = json.loads(BOOK_PATH.read_text(encoding="utf-8"))
     validate_asset_qa(document)
+    validate_cover_qa()
     render_command = [
         sys.executable,
         "scripts/render_destination_tex.py",

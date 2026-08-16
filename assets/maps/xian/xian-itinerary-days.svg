@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="518.4pt" viewBox="0 0 720 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Xi'an Nested Itinerary Days</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Xi'an Nested Itinerary Days</dc:title>
+    <dc:date>2026-08-16</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4
+L 720 518.4
+L 720 0
+L 0 0
+z
+" style="fill: #fcfdff"/>
+  </g>
+  <g id="patch_2">
+   <path d="M 33.12 312.0768
+L 348.48 312.0768
+Q 354.24 312.0768 354.24 307.9296
+L 354.24 99.0144
+Q 354.24 94.8672 348.48 94.8672
+L 33.12 94.8672
+Q 27.36 94.8672 27.36 99.0144
+L 27.36 307.9296
+Q 27.36 312.0768 33.12 312.0768
+z
+" style="fill: #fcfdff; stroke: #d9e2ec; stroke-width: 1.1; stroke-linejoin: miter"/>
+  </g>
+  <g id="patch_3">
+   <path d="M 371.52 312.0768
+L 686.88 312.0768
+Q 692.64 312.0768 692.64 307.9296
+L 692.64 99.0144
+Q 692.64 94.8672 686.88 94.8672
+L 371.52 94.8672
+Q 365.76 94.8672 365.76 99.0144
+L 365.76 307.9296
+Q 365.76 312.0768 371.52 312.0768
+z
+" style="fill: #fcfdff; stroke: #d9e2ec; stroke-width: 1.1; stroke-linejoin: miter"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_4">
+    <path d="M 153.775479 226.531625
+L 211.10377 226.531625
+L 211.10377 188.959094
+L 153.775479 188.959094
+z
+" clip-path="url(#p93f1865eeb)" style="fill: #fff0ec; stroke: #f05a47; stroke-width: 2.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 181.625085 224.936237
+L 188.478204 222.196333
+L 181.90456 213.24829
+L 174.693139 209.983815
+" clip-path="url(#p93f1865eeb)" style="fill: none; stroke: #f05a47; stroke-opacity: 0.38; stroke-width: 4.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 191.289679 264.436528
+L 205.087882 275.30655
+" clip-path="url(#p93f1865eeb)" style="fill: none; stroke: #1769e0; stroke-opacity: 0.42; stroke-width: 4.5; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m1c29e2be95" d="M 0 3.708099
+C 0.983399 3.708099 1.926654 3.317391 2.622022 2.622022
+C 3.317391 1.926654 3.708099 0.983399 3.708099 0
+C 3.708099 -0.983399 3.317391 -1.926654 2.622022 -2.622022
+C 1.926654 -3.317391 0.983399 -3.708099 0 -3.708099
+C -0.983399 -3.708099 -1.926654 -3.317391 -2.622022 -2.622022
+C -3.317391 -1.926654 -3.708099 -0.983399 -3.708099 0
+C -3.708099 0.983399 -3.317391 1.926654 -2.622022 2.622022
+C -1.926654 3.317391 -0.983399 3.708099 0 3.708099
+z
+" style="stroke: #fcfdff; stroke-width: 1.2"/>
+    </defs>
+    <g clip-path="url(#p93f1865eeb)">
+     <use xlink:href="#m1c29e2be95" x="181.625085" y="224.936237" style="fill: #f05a47; stroke: #fcfdff; stroke-width: 1.2"/>
+     <use xlink:href="#m1c29e2be95" x="188.478204" y="222.196333" style="fill: #f05a47; stroke: #fcfdff; stroke-width: 1.2"/>
+     <use xlink:href="#m1c29e2be95" x="181.90456" y="213.24829" style="fill: #f05a47; stroke: #fcfdff; stroke-width: 1.2"/>
+     <use xlink:href="#m1c29e2be95" x="174.693139" y="209.983815" style="fill: #f05a47; stroke: #fcfdff; stroke-width: 1.2"/>
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="ma9d9d4fb72" d="M 0 4.031129
+C 1.069068 4.031129 2.094493 3.606384 2.850439 2.850439
+C 3.606384 2.094493 4.031129 1.069068 4.031129 0
+C 4.031129 -1.069068 3.606384 -2.094493 2.850439 -2.850439
+C 2.094493 -3.606384 1.069068 -4.031129 0 -4.031129
+C -1.069068 -4.031129 -2.094493 -3.606384 -2.850439 -2.850439
+C -3.606384 -2.094493 -4.031129 -1.069068 -4.031129 0
+C -4.031129 1.069068 -3.606384 2.094493 -2.850439 2.850439
+C -2.094493 3.606384 -1.069068 4.031129 0 4.031129
+z
+" style="stroke: #fcfdff; stroke-width: 1.2"/>
+    </defs>
+    <g clip-path="url(#p93f1865eeb)">
+     <use xlink:href="#ma9d9d4fb72" x="191.289679" y="264.436528" style="fill: #1769e0; stroke: #fcfdff; stroke-width: 1.2"/>
+     <use xlink:href="#ma9d9d4fb72" x="205.087882" y="275.30655" style="fill: #1769e0; stroke: #fcfdff; stroke-width: 1.2"/>
+    </g>
+   </g>
+   <g id="PathCollection_3">
+    <path d="M 175.701161 248.836104
+C 177.325192 248.836104 178.882925 248.19087 180.031288 247.042507
+C 181.179652 245.894144 181.824886 244.33641 181.824886 242.71238
+C 181.824886 241.088349 181.179652 239.530616 180.031288 238.382253
+C 178.882925 237.23389 177.325192 236.588655 175.701161 236.588655
+C 174.077131 236.588655 172.519398 237.23389 171.371034 238.382253
+C 170.222671 239.530616 169.577437 241.088349 169.577437 242.71238
+C 169.577437 244.33641 170.222671 245.894144 171.371034 247.042507
+C 172.519398 248.19087 174.077131 248.836104 175.701161 248.836104
+z
+" clip-path="url(#p93f1865eeb)" style="fill: #fcfdff; stroke-dasharray: 4.6,2.3; stroke-dashoffset: 0; stroke: #1769e0; stroke-width: 2.3"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 8.4px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #1769e0" transform="translate(153.775479 225.276465)">预约替代 / FALLBACK</text>
+    <text style="font-weight: 700; font-size: 8.4px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #1769e0" transform="translate(153.775479 235.12599)">小雁塔 + 西安博物院</text>
+   </g>
+   <g id="PathCollection_4">
+    <defs>
+     <path id="ma469dcfb28" d="M 0 8.062258
+C 2.138136 8.062258 4.188987 7.212767 5.700877 5.700877
+C 7.212767 4.188987 8.062258 2.138136 8.062258 0
+C 8.062258 -2.138136 7.212767 -4.188987 5.700877 -5.700877
+C 4.188987 -7.212767 2.138136 -8.062258 0 -8.062258
+C -2.138136 -8.062258 -4.188987 -7.212767 -5.700877 -5.700877
+C -7.212767 -4.188987 -8.062258 -2.138136 -8.062258 0
+C -8.062258 2.138136 -7.212767 4.188987 -5.700877 5.700877
+C -4.188987 7.212767 -2.138136 8.062258 0 8.062258
+z
+" style="stroke: #f05a47; stroke-width: 3"/>
+    </defs>
+    <g clip-path="url(#p93f1865eeb)">
+     <use xlink:href="#ma469dcfb28" x="181.006417" y="205.577713" style="fill: #fcfdff; stroke: #f05a47; stroke-width: 3"/>
+    </g>
+   </g>
+   <g id="PathCollection_5">
+    <defs>
+     <path id="m7e59b11c74" d="M 0 8.062258
+C 2.138136 8.062258 4.188987 7.212767 5.700877 5.700877
+C 7.212767 4.188987 8.062258 2.138136 8.062258 0
+C 8.062258 -2.138136 7.212767 -4.188987 5.700877 -5.700877
+C 4.188987 -7.212767 2.138136 -8.062258 0 -8.062258
+C -2.138136 -8.062258 -4.188987 -7.212767 -5.700877 -5.700877
+C -7.212767 -4.188987 -8.062258 -2.138136 -8.062258 0
+C -8.062258 2.138136 -7.212767 4.188987 -5.700877 5.700877
+C -4.188987 7.212767 -2.138136 8.062258 0 8.062258
+z
+" style="stroke: #1769e0; stroke-width: 3"/>
+    </defs>
+    <g clip-path="url(#p93f1865eeb)">
+     <use xlink:href="#m7e59b11c74" x="184.123643" y="255.765944" style="fill: #fcfdff; stroke: #1769e0; stroke-width: 3"/>
+    </g>
+   </g>
+   <g id="PathCollection_6">
+    <defs>
+     <path id="md07e2eab8f" d="M 0 8.062258
+C 2.138136 8.062258 4.188987 7.212767 5.700877 5.700877
+C 7.212767 4.188987 8.062258 2.138136 8.062258 0
+C 8.062258 -2.138136 7.212767 -4.188987 5.700877 -5.700877
+C 4.188987 -7.212767 2.138136 -8.062258 0 -8.062258
+C -2.138136 -8.062258 -4.188987 -7.212767 -5.700877 -5.700877
+C -7.212767 -4.188987 -8.062258 -2.138136 -8.062258 0
+C -8.062258 2.138136 -7.212767 4.188987 -5.700877 5.700877
+C -4.188987 7.212767 -2.138136 8.062258 0 8.062258
+z
+" style="stroke: #008c72; stroke-width: 3"/>
+    </defs>
+    <g clip-path="url(#p93f1865eeb)">
+     <use xlink:href="#md07e2eab8f" x="206.326412" y="148.496368" style="fill: #fcfdff; stroke: #008c72; stroke-width: 3"/>
+    </g>
+   </g>
+   <g id="PathCollection_7">
+    <path d="M 181.006417 212.127522
+C 182.743447 212.127522 184.409566 211.437393 185.637832 210.209128
+C 186.866097 208.980862 187.556226 207.314743 187.556226 205.577713
+C 187.556226 203.840684 186.866097 202.174564 185.637832 200.946299
+C 184.409566 199.718033 182.743447 199.027904 181.006417 199.027904
+C 179.269387 199.027904 177.603268 199.718033 176.375003 200.946299
+C 175.146737 202.174564 174.456608 203.840684 174.456608 205.577713
+C 174.456608 207.314743 175.146737 208.980862 176.375003 210.209128
+C 177.603268 211.437393 179.269387 212.127522 181.006417 212.127522
+z
+" clip-path="url(#p93f1865eeb)" style="fill: #f05a47"/>
+   </g>
+   <g id="PathCollection_8">
+    <path d="M 184.123643 262.315753
+C 185.860673 262.315753 187.526792 261.625624 188.755057 260.397359
+C 189.983323 259.169093 190.673452 257.502974 190.673452 255.765944
+C 190.673452 254.028914 189.983323 252.362795 188.755057 251.13453
+C 187.526792 249.906264 185.860673 249.216135 184.123643 249.216135
+C 182.386613 249.216135 180.720494 249.906264 179.492228 251.13453
+C 178.263963 252.362795 177.573834 254.028914 177.573834 255.765944
+C 177.573834 257.502974 178.263963 259.169093 179.492228 260.397359
+C 180.720494 261.625624 182.386613 262.315753 184.123643 262.315753
+z
+" clip-path="url(#p93f1865eeb)" style="fill: #1769e0"/>
+   </g>
+   <g id="PathCollection_9">
+    <path d="M 206.326412 155.046177
+C 208.063442 155.046177 209.729561 154.356048 210.957826 153.127783
+C 212.186092 151.899517 212.876221 150.233398 212.876221 148.496368
+C 212.876221 146.759338 212.186092 145.093219 210.957826 143.864954
+C 209.729561 142.636688 208.063442 141.946559 206.326412 141.946559
+C 204.589382 141.946559 202.923263 142.636688 201.694998 143.864954
+C 200.466732 145.093219 199.776603 146.759338 199.776603 148.496368
+C 199.776603 150.233398 200.466732 151.899517 201.694998 153.127783
+C 202.923263 154.356048 204.589382 155.046177 206.326412 155.046177
+z
+" clip-path="url(#p93f1865eeb)" style="fill: #008c72"/>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #fcfdff" x="181.006417" y="208.929784" transform="rotate(-0 181.006417 208.929784)">D1</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #fcfdff" x="184.123643" y="259.118014" transform="rotate(-0 184.123643 259.118014)">D3</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #fcfdff" x="206.326412" y="151.848438" transform="rotate(-0 206.326412 151.848438)">D5</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #f05a47" x="153.775479" y="182.110412" transform="rotate(-0 153.775479 182.110412)">D1  城墙内 / 城壁内 / OLD CORE</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 9.4px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #1769e0" x="230.2132" y="283.759616" transform="rotate(-0 230.2132 283.759616)">D3  博物馆 → 大雁塔 / MUSEUM → PAGODA</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #008c72" x="229.01886" y="142.097076" transform="rotate(-0 229.01886 142.097076)">D5  大明宫或补回一处 / DEPTH OR RETURN</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="line2d_3">
+    <path d="M 500.578781 215.970474
+L 657.114962 179.815933
+" clip-path="url(#ped3d1d5bdc)" style="fill: none; stroke-dasharray: 4.8,8; stroke-dashoffset: 0; stroke: #e3a008; stroke-opacity: 0.48; stroke-width: 1.6"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 500.578781 215.970474
+L 500.613238 185.614025
+" clip-path="url(#ped3d1d5bdc)" style="fill: none; stroke-dasharray: 4.8,8; stroke-dashoffset: 0; stroke: #e3a008; stroke-opacity: 0.48; stroke-width: 1.6"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 500.578781 215.970474
+L 508.886784 262.312216
+" clip-path="url(#ped3d1d5bdc)" style="fill: none; stroke-dasharray: 4.8,8; stroke-dashoffset: 0; stroke: #e3a008; stroke-opacity: 0.48; stroke-width: 1.6"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 500.578781 215.970474
+L 400.174774 163.516049
+" clip-path="url(#ped3d1d5bdc)" style="fill: none; stroke-dasharray: 4.8,8; stroke-dashoffset: 0; stroke: #e3a008; stroke-opacity: 0.48; stroke-width: 1.6"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 500.578781 215.970474
+L 546.796987 194.894767
+" clip-path="url(#ped3d1d5bdc)" style="fill: none; stroke: #b33273; stroke-opacity: 0.48; stroke-width: 3.2; stroke-linecap: square"/>
+   </g>
+   <g id="text_8">
+    <g id="patch_5">
+     <path d="M 443.764453 165.025924
+L 614.635547 165.025924
+Q 615.475547 165.025924 615.475547 164.185924
+L 615.475547 150.483424
+Q 615.475547 149.643424 614.635547 149.643424
+L 443.764453 149.643424
+Q 442.924453 149.643424 442.924453 150.483424
+L 442.924453 164.185924
+Q 442.924453 165.025924 443.764453 165.025924
+z
+" style="fill: #fcfdff; opacity: 0.95"/>
+    </g>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #e3a008" x="529.2" y="160.458424" transform="rotate(-0 529.2 160.458424)">D4  四选一 / 一か所 / CHOOSE ONE</text>
+   </g>
+   <g id="PathCollection_10">
+    <defs>
+     <path id="m1a42af5d7c" d="M 0 7.582875
+C 2.011002 7.582875 3.939909 6.783896 5.361903 5.361903
+C 6.783896 3.939909 7.582875 2.011002 7.582875 0
+C 7.582875 -2.011002 6.783896 -3.939909 5.361903 -5.361903
+C 3.939909 -6.783896 2.011002 -7.582875 0 -7.582875
+C -2.011002 -7.582875 -3.939909 -6.783896 -5.361903 -5.361903
+C -6.783896 -3.939909 -7.582875 -2.011002 -7.582875 0
+C -7.582875 2.011002 -6.783896 3.939909 -5.361903 5.361903
+C -3.939909 6.783896 -2.011002 7.582875 0 7.582875
+z
+" style="stroke: #e3a008; stroke-width: 2.6"/>
+    </defs>
+    <g clip-path="url(#ped3d1d5bdc)">
+     <use xlink:href="#m1a42af5d7c" x="657.114962" y="179.815933" style="fill: #fcfdff; stroke: #e3a008; stroke-width: 2.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_11">
+    <g clip-path="url(#ped3d1d5bdc)">
+     <use xlink:href="#m1a42af5d7c" x="500.613238" y="185.614025" style="fill: #fcfdff; stroke: #e3a008; stroke-width: 2.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_12">
+    <g clip-path="url(#ped3d1d5bdc)">
+     <use xlink:href="#m1a42af5d7c" x="508.886784" y="262.312216" style="fill: #fcfdff; stroke: #e3a008; stroke-width: 2.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_13">
+    <g clip-path="url(#ped3d1d5bdc)">
+     <use xlink:href="#m1a42af5d7c" x="400.174774" y="163.516049" style="fill: #fcfdff; stroke: #e3a008; stroke-width: 2.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_14">
+    <defs>
+     <path id="m170cc72927" d="M 0 6.892024
+C 1.827786 6.892024 3.580957 6.165837 4.873397 4.873397
+C 6.165837 3.580957 6.892024 1.827786 6.892024 0
+C 6.892024 -1.827786 6.165837 -3.580957 4.873397 -4.873397
+C 3.580957 -6.165837 1.827786 -6.892024 0 -6.892024
+C -1.827786 -6.892024 -3.580957 -6.165837 -4.873397 -4.873397
+C -6.165837 -3.580957 -6.892024 -1.827786 -6.892024 0
+C -6.892024 1.827786 -6.165837 3.580957 -4.873397 4.873397
+C -3.580957 6.165837 -1.827786 6.892024 0 6.892024
+z
+" style="stroke: #fcfdff; stroke-width: 2"/>
+    </defs>
+    <g clip-path="url(#ped3d1d5bdc)">
+     <use xlink:href="#m170cc72927" x="500.578781" y="215.970474" style="fill: #17212b; stroke: #fcfdff; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="PathCollection_15">
+    <path d="M 657.114962 184.939408
+C 658.473724 184.939408 659.777017 184.399566 660.737806 183.438777
+C 661.698596 182.477987 662.238437 181.174694 662.238437 179.815933
+C 662.238437 178.457171 661.698596 177.153878 660.737806 176.193088
+C 659.777017 175.232299 658.473724 174.692457 657.114962 174.692457
+C 655.7562 174.692457 654.452907 175.232299 653.492118 176.193088
+C 652.531328 177.153878 651.991487 178.457171 651.991487 179.815933
+C 651.991487 181.174694 652.531328 182.477987 653.492118 183.438777
+C 654.452907 184.399566 655.7562 184.939408 657.114962 184.939408
+z
+" clip-path="url(#ped3d1d5bdc)" style="fill: #e3a008"/>
+   </g>
+   <g id="PathCollection_16">
+    <path d="M 500.613238 190.737501
+C 501.971999 190.737501 503.275293 190.197659 504.236082 189.23687
+C 505.196872 188.27608 505.736713 186.972787 505.736713 185.614025
+C 505.736713 184.255264 505.196872 182.951971 504.236082 181.991181
+C 503.275293 181.030392 501.971999 180.49055 500.613238 180.49055
+C 499.254476 180.49055 497.951183 181.030392 496.990394 181.991181
+C 496.029604 182.951971 495.489762 184.255264 495.489762 185.614025
+C 495.489762 186.972787 496.029604 188.27608 496.990394 189.23687
+C 497.951183 190.197659 499.254476 190.737501 500.613238 190.737501
+z
+" clip-path="url(#ped3d1d5bdc)" style="fill: #e3a008"/>
+   </g>
+   <g id="PathCollection_17">
+    <path d="M 508.886784 267.435691
+C 510.245545 267.435691 511.548838 266.89585 512.509628 265.93506
+C 513.470417 264.974271 514.010259 263.670977 514.010259 262.312216
+C 514.010259 260.953454 513.470417 259.650161 512.509628 258.689372
+C 511.548838 257.728582 510.245545 257.188741 508.886784 257.188741
+C 507.528022 257.188741 506.224729 257.728582 505.26394 258.689372
+C 504.30315 259.650161 503.763308 260.953454 503.763308 262.312216
+C 503.763308 263.670977 504.30315 264.974271 505.26394 265.93506
+C 506.224729 266.89585 507.528022 267.435691 508.886784 267.435691
+z
+" clip-path="url(#ped3d1d5bdc)" style="fill: #e3a008"/>
+   </g>
+   <g id="PathCollection_18">
+    <path d="M 400.174774 168.639524
+C 401.533535 168.639524 402.836828 168.099683 403.797618 167.138893
+C 404.758407 166.178104 405.298249 164.87481 405.298249 163.516049
+C 405.298249 162.157287 404.758407 160.853994 403.797618 159.893205
+C 402.836828 158.932415 401.533535 158.392574 400.174774 158.392574
+C 398.816012 158.392574 397.512719 158.932415 396.55193 159.893205
+C 395.59114 160.853994 395.051298 162.157287 395.051298 163.516049
+C 395.051298 164.87481 395.59114 166.178104 396.55193 167.138893
+C 397.512719 168.099683 398.816012 168.639524 400.174774 168.639524
+z
+" clip-path="url(#ped3d1d5bdc)" style="fill: #e3a008"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #17212b" x="492.998209" y="231.783193" transform="rotate(-0 492.998209 231.783193)">西安 XI'AN</text>
+   </g>
+   <g id="text_10">
+    <g id="patch_6">
+     <path d="M 595.523933 179.709773
+L 663.823714 179.709773
+Q 664.288714 179.709773 664.288714 179.244773
+L 664.288714 167.964163
+Q 664.288714 167.499163 663.823714 167.499163
+L 595.523933 167.499163
+Q 595.058933 167.499163 595.058933 167.964163
+L 595.058933 179.244773
+Q 595.058933 179.709773 595.523933 179.709773
+z
+" style="fill: #fcfdff; opacity: 0.94"/>
+    </g>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #17212b" x="662.893714" y="176.315273" transform="rotate(-0 662.893714 176.315273)">华山 HUASHAN</text>
+   </g>
+   <g id="text_11">
+    <g id="patch_7">
+     <path d="M 469.003714 174.705679
+L 570.022058 174.705679
+Q 570.487058 174.705679 570.487058 174.240679
+L 570.487058 162.96007
+Q 570.487058 162.49507 570.022058 162.49507
+L 469.003714 162.49507
+Q 468.538714 162.49507 468.538714 162.96007
+L 468.538714 174.240679
+Q 468.538714 174.705679 469.003714 174.705679
+z
+" style="fill: #fcfdff; opacity: 0.94"/>
+    </g>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #17212b" x="469.933714" y="171.311179" transform="rotate(-0 469.933714 171.311179)">汉阳陵 HAN YANGLING</text>
+   </g>
+   <g id="text_12">
+    <g id="patch_8">
+     <path d="M 515.865429 275.621564
+L 609.590538 275.621564
+Q 610.055538 275.621564 610.055538 275.156564
+L 610.055538 263.875954
+Q 610.055538 263.410954 609.590538 263.410954
+L 515.865429 263.410954
+Q 515.400429 263.410954 515.400429 263.875954
+L 515.400429 275.156564
+Q 515.400429 275.621564 515.865429 275.621564
+z
+" style="fill: #fcfdff; opacity: 0.94"/>
+    </g>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #17212b" x="516.795429" y="272.227064" transform="rotate(-0 516.795429 272.227064)">翠华山 CUIHUASHAN</text>
+   </g>
+   <g id="text_13">
+    <g id="patch_9">
+     <path d="M 386.306571 182.388374
+L 454.113743 182.388374
+Q 454.578743 182.388374 454.578743 181.923374
+L 454.578743 170.289655
+Q 454.578743 169.824655 454.113743 169.824655
+L 386.306571 169.824655
+Q 385.841571 169.824655 385.841571 170.289655
+L 385.841571 181.923374
+Q 385.841571 182.388374 386.306571 182.388374
+z
+" style="fill: #fcfdff; opacity: 0.94"/>
+    </g>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #17212b" x="387.236571" y="178.993874" transform="rotate(-0 387.236571 178.993874)">乾陵 QIANLING</text>
+   </g>
+   <g id="PathCollection_19">
+    <defs>
+     <path id="m5072270ada" d="M 0 10.839742
+C 2.874733 10.839742 5.632112 9.697598 7.664855 7.664855
+C 9.697598 5.632112 10.839742 2.874733 10.839742 0
+C 10.839742 -2.874733 9.697598 -5.632112 7.664855 -7.664855
+C 5.632112 -9.697598 2.874733 -10.839742 0 -10.839742
+C -2.874733 -10.839742 -5.632112 -9.697598 -7.664855 -7.664855
+C -9.697598 -5.632112 -10.839742 -2.874733 -10.839742 0
+C -10.839742 2.874733 -9.697598 5.632112 -7.664855 7.664855
+C -5.632112 9.697598 -2.874733 10.839742 0 10.839742
+z
+" style="stroke: #b33273; stroke-width: 3"/>
+    </defs>
+    <g clip-path="url(#ped3d1d5bdc)">
+     <use xlink:href="#m5072270ada" x="546.796987" y="194.894767" style="fill: #fcfdff; stroke: #b33273; stroke-width: 3"/>
+    </g>
+   </g>
+   <g id="PathCollection_20">
+    <path d="M 546.796987 203.701015
+C 549.132431 203.701015 551.372536 202.773133 553.023945 201.121725
+C 554.675353 199.470316 555.603235 197.230211 555.603235 194.894767
+C 555.603235 192.559323 554.675353 190.319218 553.023945 188.66781
+C 551.372536 187.016401 549.132431 186.088519 546.796987 186.088519
+C 544.461543 186.088519 542.221438 187.016401 540.57003 188.66781
+C 538.918621 190.319218 537.990739 192.559323 537.990739 194.894767
+C 537.990739 197.230211 538.918621 199.470316 540.57003 201.121725
+C 542.221438 202.773133 544.461543 203.701015 546.796987 203.701015
+z
+" clip-path="url(#ped3d1d5bdc)" style="fill: #b33273"/>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #fcfdff" x="546.796987" y="198.246838" transform="rotate(-0 546.796987 198.246838)">D2</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #b33273" x="556.444987" y="204.826814" transform="rotate(-0 556.444987 204.826814)">秦陵 / QIN MUSEUM</text>
+   </g>
+  </g>
+  <g id="patch_10">
+   <path d="M 37.44 85.536
+L 682.56 85.536
+Q 691.2 85.536 691.2 79.3152
+L 691.2 58.0608
+Q 691.2 51.84 682.56 51.84
+L 37.44 51.84
+Q 28.8 51.84 28.8 58.0608
+L 28.8 79.3152
+Q 28.8 85.536 37.44 85.536
+z
+" style="fill: #eef5ff; stroke: #c9dcf8; stroke-linejoin: miter"/>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 13.2px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #1769e0" x="360" y="72.276394" transform="rotate(-0 360 72.276394)">2日 = D1 + D2　｜　3日 = 再加D3　｜　5日 = 再加D4 + D5</text>
+  </g>
+  <g id="text_17">
+   <text style="font-weight: 700; font-size: 8px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: middle; fill: #52606d" x="360" y="82.1011" transform="rotate(-0 360 82.1011)">2 DAYS = D1 + D2   |   3 DAYS = + D3   |   5 DAYS = + D4 + D5</text>
+  </g>
+  <g id="text_18">
+   <text style="font-weight: 700; font-size: 24px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #17212b" x="32.4" y="37.29525" transform="rotate(-0 32.4 37.29525)">两日、三日、五日：行程一层层加</text>
+  </g>
+  <g id="text_19">
+   <text style="font-weight: 700; font-size: 13.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #008c72" x="32.4" y="53.281378" transform="rotate(-0 32.4 53.281378)">二日・三日・五日：旅程を一日ずつ足す</text>
+  </g>
+  <g id="text_20">
+   <text style="font-weight: 700; font-size: 10.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #b33273" x="687.6" y="50.887472" transform="rotate(-0 687.6 50.887472)">TWO, THREE OR FIVE DAYS · ADD ONE COHERENT DAY</text>
+  </g>
+  <g id="text_21">
+   <text style="font-weight: 700; font-size: 12.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #1769e0" x="42.48" y="115.728209" transform="rotate(-0 42.48 115.728209)">CITY DAYS · 城市日 · 市内の日</text>
+  </g>
+  <g id="text_22">
+   <text style="font-weight: 700; font-size: 12.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #b33273" x="380.88" y="115.728209" transform="rotate(-0 380.88 115.728209)">OUTSIDE THE CORE · 城外 · 市外</text>
+  </g>
+  <g id="text_23">
+   <text style="font-size: 7.8px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #52606d" x="32.4" y="512.466113" transform="rotate(-0 32.4 512.466113)">每一天只保留一条地理主线；预约、开放、天气、入口与交通在出发前再核。</text>
+  </g>
+  <g id="text_24">
+   <text style="font-size: 7.5px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: end; fill: #52606d" x="687.6" y="512.497331" transform="rotate(-0 687.6 512.497331)">© LazyTravel · MAP DATA © OPENSTREETMAP CONTRIBUTORS</text>
+  </g>
+  <g id="patch_11">
+   <path d="M 33.12 399.6864
+L 240.48 399.6864
+Q 245.52 399.6864 245.52 396.0576
+L 245.52 308.9664
+Q 245.52 305.3376 240.48 305.3376
+L 33.12 305.3376
+Q 28.08 305.3376 28.08 308.9664
+L 28.08 396.0576
+Q 28.08 399.6864 33.12 399.6864
+z
+" style="fill: #fcfdff; stroke: #d9e2ec; stroke-linejoin: miter"/>
+  </g>
+  <g id="patch_12">
+   <path d="M 256.32 399.6864
+L 463.68 399.6864
+Q 468.72 399.6864 468.72 396.0576
+L 468.72 308.9664
+Q 468.72 305.3376 463.68 305.3376
+L 256.32 305.3376
+Q 251.28 305.3376 251.28 308.9664
+L 251.28 396.0576
+Q 251.28 399.6864 256.32 399.6864
+z
+" style="fill: #fcfdff; stroke: #d9e2ec; stroke-linejoin: miter"/>
+  </g>
+  <g id="patch_13">
+   <path d="M 479.52 399.6864
+L 686.88 399.6864
+Q 691.92 399.6864 691.92 396.0576
+L 691.92 308.9664
+Q 691.92 305.3376 686.88 305.3376
+L 479.52 305.3376
+Q 474.48 305.3376 474.48 308.9664
+L 474.48 396.0576
+Q 474.48 399.6864 479.52 399.6864
+z
+" style="fill: #fcfdff; stroke: #d9e2ec; stroke-linejoin: miter"/>
+  </g>
+  <g id="patch_14">
+   <path d="M 87.12 503.3664
+L 344.88 503.3664
+Q 349.92 503.3664 349.92 499.7376
+L 349.92 412.6464
+Q 349.92 409.0176 344.88 409.0176
+L 87.12 409.0176
+Q 82.08 409.0176 82.08 412.6464
+L 82.08 499.7376
+Q 82.08 503.3664 87.12 503.3664
+z
+" style="fill: #fcfdff; stroke: #d9e2ec; stroke-linejoin: miter"/>
+  </g>
+  <g id="patch_15">
+   <path d="M 375.12 503.3664
+L 632.88 503.3664
+Q 637.92 503.3664 637.92 499.7376
+L 637.92 412.6464
+Q 637.92 409.0176 632.88 409.0176
+L 375.12 409.0176
+Q 370.08 409.0176 370.08 412.6464
+L 370.08 499.7376
+Q 370.08 503.3664 375.12 503.3664
+z
+" style="fill: #fcfdff; stroke: #d9e2ec; stroke-linejoin: miter"/>
+  </g>
+  <g id="line2d_8">
+   <path d="M 41.04 314.6688
+L 232.56 314.6688
+" style="fill: none; stroke: #f05a47; stroke-width: 4.4; stroke-linecap: round"/>
+  </g>
+  <g id="line2d_9">
+   <path d="M 264.24 314.6688
+L 455.76 314.6688
+" style="fill: none; stroke: #b33273; stroke-width: 4.4; stroke-linecap: round"/>
+  </g>
+  <g id="line2d_10">
+   <path d="M 487.44 314.6688
+L 678.96 314.6688
+" style="fill: none; stroke: #1769e0; stroke-width: 4.4; stroke-linecap: round"/>
+  </g>
+  <g id="line2d_11">
+   <path d="M 95.04 418.3488
+L 336.96 418.3488
+" style="fill: none; stroke: #e3a008; stroke-width: 4.4; stroke-linecap: round"/>
+  </g>
+  <g id="line2d_12">
+   <path d="M 383.04 418.3488
+L 624.96 418.3488
+" style="fill: none; stroke: #008c72; stroke-width: 4.4; stroke-linecap: round"/>
+  </g>
+  <g id="text_25">
+   <text style="font-weight: 700; font-size: 12.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #f05a47" x="43.2" y="333.536006" transform="rotate(-0 43.2 333.536006)">D1 · OLD CORE</text>
+  </g>
+  <g id="text_26">
+   <text style="font-weight: 700; font-size: 9.8px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #17212b" x="43.2" y="347.890494" transform="rotate(-0 43.2 347.890494)">南门与城墙 → 碑林或书院门 → 钟鼓楼</text>
+  </g>
+  <g id="text_27">
+   <text style="font-size: 8.9px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #52606d" x="43.2" y="362.706244" transform="rotate(-0 43.2 362.706244)">南門と城壁 → 碑林または書院門 → 鐘鼓楼</text>
+  </g>
+  <g id="text_28">
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #f05a47" transform="translate(43.2 378.853092)">WALL → BEILIN OR SHUYUANMEN</text>
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #f05a47" transform="translate(43.2 387.1445)">→ TOWERS + LANES</text>
+  </g>
+  <g id="text_29">
+   <text style="font-weight: 700; font-size: 12.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #b33273" x="266.4" y="333.536006" transform="rotate(-0 266.4 333.536006)">D2 · QIN ARCHAEOLOGY</text>
+  </g>
+  <g id="text_30">
+   <text style="font-weight: 700; font-size: 9.8px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #17212b" x="266.4" y="347.890494" transform="rotate(-0 266.4 347.890494)">按预约去临潼 → 三坑按序看 → 留住返程</text>
+  </g>
+  <g id="text_31">
+   <text style="font-size: 8.9px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #52606d" x="266.4" y="362.706244" transform="rotate(-0 266.4 362.706244)">予約に合わせ臨潼へ → 三坑を順に → 帰路を確保</text>
+  </g>
+  <g id="text_32">
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #b33273" transform="translate(266.4 378.853092)">BOOKED ENTRY → THREE PITS IN ORDER</text>
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #b33273" transform="translate(266.4 387.1445)">→ PROTECT THE RETURN</text>
+  </g>
+  <g id="text_33">
+   <text style="font-weight: 700; font-size: 12.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #1769e0" x="489.6" y="333.536006" transform="rotate(-0 489.6 333.536006)">D3 · MUSEUM + PAGODA</text>
+  </g>
+  <g id="text_34">
+   <text style="font-weight: 700; font-size: 9.8px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #17212b" x="489.6" y="347.890494" transform="rotate(-0 489.6 347.890494)">一座博物馆 → 午休 → 一座塔；预约失败就替换</text>
+  </g>
+  <g id="text_35">
+   <text style="font-size: 8.9px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #52606d" x="489.6" y="362.706244" transform="rotate(-0 489.6 362.706244)">博物館一館 → 昼休み → 塔一基。予約不可なら差替え</text>
+  </g>
+  <g id="text_36">
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #1769e0" transform="translate(489.6 378.853092)">ONE MUSEUM → REST → ONE PAGODA</text>
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #1769e0" transform="translate(489.6 387.1445)">USE THE SMALL-PAGODA FALLBACK</text>
+  </g>
+  <g id="text_37">
+   <text style="font-weight: 700; font-size: 12.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #e3a008" x="97.2" y="437.216006" transform="rotate(-0 97.2 437.216006)">D4 · ONE NEARBY PLACE</text>
+  </g>
+  <g id="text_38">
+   <text style="font-weight: 700; font-size: 9.8px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #17212b" x="97.2" y="451.570494" transform="rotate(-0 97.2 451.570494)">四选一；按天气、体力与返程决定</text>
+  </g>
+  <g id="text_39">
+   <text style="font-size: 8.9px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #52606d" x="97.2" y="466.386244" transform="rotate(-0 97.2 466.386244)">四か所から一つ。天候、体力、帰路で決める</text>
+  </g>
+  <g id="text_40">
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #e3a008" transform="translate(97.2 482.533092)">CHOOSE ONE NEARBY PLACE</text>
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #e3a008" transform="translate(97.2 490.8245)">WEATHER + ENERGY + RETURN</text>
+  </g>
+  <g id="text_41">
+   <text style="font-weight: 700; font-size: 12.6px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #008c72" x="385.2" y="437.216006" transform="rotate(-0 385.2 437.216006)">D5 · DEPTH + RECOVERY</text>
+  </g>
+  <g id="text_42">
+   <text style="font-weight: 700; font-size: 9.8px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #17212b" x="385.2" y="451.570494" transform="rotate(-0 385.2 451.570494)">补回一处，或走一条新主线；不再远郊</text>
+  </g>
+  <g id="text_43">
+   <text style="font-size: 8.9px; font-family: 'Noto Sans CJK JP', sans-serif; text-anchor: start; fill: #52606d" x="385.2" y="466.386244" transform="rotate(-0 385.2 466.386244)">一か所へ戻るか、新しい一本線へ。遠出は重ねない</text>
+  </g>
+  <g id="text_44">
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #008c72" transform="translate(385.2 482.533092)">ONE MISSED PLACE OR ONE NEW THREAD</text>
+   <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK JP', sans-serif; fill: #008c72" transform="translate(385.2 490.8245)">NO SECOND EXCURSION</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p93f1865eeb">
+   <rect x="150.192461" y="131.1552" width="81.215078" height="163.296"/>
+  </clipPath>
+  <clipPath id="ped3d1d5bdc">
+   <rect x="384.48" y="149.418017" width="289.44" height="126.770367"/>
+  </clipPath>
+ </defs>
+</svg>

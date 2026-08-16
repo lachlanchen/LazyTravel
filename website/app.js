@@ -39,6 +39,8 @@ const assetLabels = {
   "asset-xian-north-interchange": "XI'AN NORTH · CHOOSE THE NEXT LEG",
   "asset-xian-stay-areas-map": "WHERE TO STAY · FIVE ITINERARY ANCHORS",
   "asset-xian-south-gate-hotel-arrival": "SOUTH GATE · FIND THE ACTUAL ENTRANCE",
+  "asset-xian-itinerary-days-map": "TWO, THREE OR FIVE DAYS · ONE COHERENT ROUTE",
+  "asset-xian-small-wild-goose-route-morning": "SMALL WILD GOOSE PAGODA · ONE MORNING GROUP",
 };
 const state = {
   document: null,
