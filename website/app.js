@@ -66,6 +66,10 @@ const assetLabels = {
   "asset-hakone-old-tokaido-choice-map": "OLD TOKAIDO · TWO PRACTICAL FINISHES",
   "asset-hakone-checkpoint-reconstruction": "HAKONE CHECKPOINT · GATE AND PALISADE",
   "asset-hakone-amasake-chaya-rest": "AMASAKE CHAYA · ROAD-SIDE REST",
+  "asset-hakone-ryokan-arrival": "RYOKAN ARRIVAL · PROTECT THE DINNER WINDOW",
+  "asset-hakone-ryokan-night-sequence-map": "ONE RYOKAN NIGHT · DECISION SEQUENCE",
+  "asset-hakone-onsen-threshold": "ONSEN THRESHOLD · PREPARE IN THE DRY AREA",
+  "asset-hakone-ryokan-dinner": "RYOKAN DINNER · ARRIVE AT THE AGREED TIME",
 };
 const state = {
   document: null,

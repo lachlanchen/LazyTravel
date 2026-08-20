@@ -1,0 +1,86 @@
+{
+  "asset_id": "asset-hakone-ryokan-night-sequence-map",
+  "command": "python3 scripts/build_hakone_ryokan_night_sequence_map.py",
+  "config": "data/maps/hakone/hakone-ryokan-night-sequence.config.json",
+  "config_sha256": "a58e31a9a3ceb4f3ca90fd06c04a5c5c39fa3a3f5dca21262920814b78555e8b",
+  "created_at": "2026-08-20",
+  "declared_generalizations": [
+    "This is a decision sequence, not a universal ryokan timetable",
+    "Arrival deadlines, dinner service, bath and cleaning hours, breakfast, checkout, and pickup vary by property and booking plan",
+    "The sequence deliberately protects a booked meal before an optional pre-dinner bath",
+    "A morning bath appears only when the property's current operating hours allow it"
+  ],
+  "files": {
+    "hakone-ryokan-night-sequence.pdf": {
+      "bytes": 101917,
+      "sha256": "ae2893522739d651a17fc908065720f1e17a1a122bb77597fa8886f08538374d"
+    },
+    "hakone-ryokan-night-sequence.png": {
+      "bytes": 848661,
+      "sha256": "4d243b5366150cea442b9a47832532efc454856e2747117244f48ef45fd81d2c"
+    },
+    "hakone-ryokan-night-sequence.svg": {
+      "bytes": 24054,
+      "sha256": "2d04f8194ba050663d0645dc53adbfb13d81f5a2c900d4762f05ebc7cd329381"
+    }
+  },
+  "method": "schematic-ryokan-night-sequence-render",
+  "rights": "Diagram design © LazyTravel; operating guidance derives from the listed official sources.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-JTA-RYOKAN-QA",
+      "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+      "use": "Official guidance on arrival, meal times, bathing, bedding, accessibility, pickup, and checkout questions"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-FUKUZUMIRO-FAQ",
+      "url": "https://www.fukuzumi-ro.com/english/faq/",
+      "use": "Property example showing that dinner, bath, cleaning, checkout, and shuttle arrangements are property-specific"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-SUIMEISOU-FAQ",
+      "url": "https://www.suimeisou.com/english/faq/",
+      "use": "Property example for arrival, meals, bathing, private baths, and checkout conditions"
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      3360,
+      2688
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch07-pocket-release/page-098.png",
+        "physical_page": 98,
+        "sha256": "dc1828a3b7bad7d0d98d84b38e62294071c10fe696a07346c4719ee79907f7c1"
+      },
+      "browser_report": {
+        "path": "build/qa/hakone-ch07-website-release/qa.json",
+        "sha256": "3bf29fd6dc02dd7641f777b997ae492fa6664f88a14228cfffde9682d0df2aa1"
+      },
+      "mobile": {
+        "pannable_width_css_px": 760,
+        "path": "build/qa/hakone-ch07-website-release/mobile-07-map-contact.jpg",
+        "sha256": "843aef5ae8804bdeb5b21cf54d73a297076024d9ddf1f023a84fd6f2632bd2f8",
+        "viewport_css_px": 390
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The compiled B6 diagram and both halves of the 760 px stage inside a 390 px mobile viewport passed label, reading, sequence, and collision review."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-20"
+  }
+}

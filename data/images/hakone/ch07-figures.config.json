@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-20",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hood reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-hakone-ryokan-arrival",
+      "stem": "hakone-ryokan-arrival",
+      "method": "generated-representative-arrival-figure",
+      "prompt": "data/images/hakone/hakone-ryokan-arrival.prompt.md",
+      "selected_raw": "build/aginti/hakone-ryokan-arrival-v2/hakone-ryokan-arrival-v2.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-ryokan-arrival-v1/task_manifest.json",
+          "role": "Rejected draft because the glass repeated Lala Xia as a reflected fifth figure"
+        },
+        {
+          "path": "build/aginti/hakone-ryokan-arrival-v2/task_manifest.json",
+          "role": "Selected exactly-four-guide mountain-ryokan arrival scene with an empty open genkan"
+        }
+      ],
+      "fact_sources": [
+        {
+          "id": "HKN-JTA-RYOKAN-QA",
+          "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+          "checked_at": "2026-08-20",
+          "role": "Official guidance for arrival, dinner, pickup, bath, breakfast, and checkout questions"
+        },
+        {
+          "id": "HKN-FUKUZUMIRO-FAQ",
+          "url": "https://www.fukuzumi-ro.com/english/faq/",
+          "checked_at": "2026-08-20",
+          "role": "Hakone property example confirming that arrival, meals, bathing, and shuttle arrangements are property-specific"
+        }
+      ],
+      "factual_limits": [
+        "The architecture is a representative present-day mountain ryokan synthesis, not an identifiable property",
+        "The scene does not state a universal arrival time, dinner deadline, or pickup arrangement",
+        "The traveler must use the selected property's current booking confirmation and contact it directly when delayed"
+      ],
+      "reader_caption_policy": "Caption protects the booked arrival and dinner conditions without naming a property or discussing the production method.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch07-pocket-release/page-096.png",
+        "physical_page": 96,
+        "mobile_path": "build/qa/hakone-ch07-website-release/mobile-07-figure.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-hakone-onsen-threshold",
+      "stem": "hakone-onsen-threshold",
+      "method": "generated-representative-bath-practice-figure",
+      "prompt": "data/images/hakone/hakone-onsen-threshold.prompt.md",
+      "selected_raw": "build/aginti/hakone-onsen-threshold-v1/hakone-onsen-threshold-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-onsen-threshold-v1/task_manifest.json",
+          "role": "Selected privacy-safe exactly-four-guide dry-threshold preparation scene"
+        }
+      ],
+      "fact_sources": [
+        {
+          "id": "HKN-JNTO-ONSEN",
+          "url": "https://www.japan.travel/en/uk/inspiration/onsen-etiquette/",
+          "checked_at": "2026-08-20",
+          "role": "Official national tourism guidance for washing before entering, towels, phones, and quiet shared-bath conduct"
+        },
+        {
+          "id": "HKN-JTA-RYOKAN-QA",
+          "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+          "checked_at": "2026-08-20",
+          "role": "Official guidance for asking about bath hours, cleaning, private baths, tattoo policies, and accessibility"
+        }
+      ],
+      "factual_limits": [
+        "The dry corridor and empty wash area are a representative synthesis, not one named bath",
+        "Curtain colours do not encode a universal gender convention and contain no fabricated labels",
+        "Bath hours, cleaning, private-bath access, tattoo policy, step-free access, and mineral source vary by property"
+      ],
+      "reader_caption_policy": "Caption explains preparation before entering a shared bath without nudity, embarrassment, or a universal property claim.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch07-pocket-release/page-101.png",
+        "physical_page": 101,
+        "mobile_path": "build/qa/hakone-ch07-website-release/mobile-07-figure-02.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-hakone-ryokan-dinner",
+      "stem": "hakone-ryokan-dinner",
+      "method": "generated-representative-meal-figure",
+      "prompt": "data/images/hakone/hakone-ryokan-dinner.prompt.md",
+      "selected_raw": "build/aginti/hakone-ryokan-dinner-v2/hakone-ryokan-dinner-v2.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-ryokan-dinner-v1/task_manifest.json",
+          "role": "Rejected draft because Zhuangzi drifted into a generic smooth-faced android and the table contained fabricated writing"
+        },
+        {
+          "path": "build/aginti/hakone-ryokan-dinner-v2/task_manifest.json",
+          "role": "Selected exactly-four-guide meal scene with the established articulated Zhuangzi and four complete settings"
+        }
+      ],
+      "fact_sources": [
+        {
+          "id": "HKN-JTA-RYOKAN-QA",
+          "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+          "checked_at": "2026-08-20",
+          "role": "Official guidance for dinner times, meal location, plan choice, and advance dietary requests"
+        },
+        {
+          "id": "JPN-CAA-FOOD-ALLERGY",
+          "url": "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/efforts/",
+          "checked_at": "2026-08-20",
+          "role": "Official food-allergy communication and unintended-contamination guidance"
+        }
+      ],
+      "factual_limits": [
+        "The meal is a representative multi-course ryokan setting, not a universal Hakone menu or a named local specialty",
+        "Ingredients, course order, service place, dietary accommodation, and contamination controls depend on the booked property and plan",
+        "The scene does not replace advance written communication about allergies or dietary restrictions"
+      ],
+      "reader_caption_policy": "Caption treats dinner as a timed part of the stay and directs dietary needs to advance written confirmation without claiming a fixed menu.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch07-pocket-release/page-106.png",
+        "physical_page": 106,
+        "mobile_path": "build/qa/hakone-ch07-website-release/mobile-07-figure-03.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ],
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "Original scenes, 16:9 delivery crops, compiled B6 pages, and full-width 390 px figures passed cast, identity, privacy, content, and legibility review."
+  }
+}

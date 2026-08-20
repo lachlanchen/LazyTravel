@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-ryokan-arrival",
+  "created_at": "2026-08-20",
+  "method": "generated-representative-arrival-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "12-dbd46b70-cfcd-48f0-aa05-3e64abf5b2fd",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "fact_sources": [
+    {
+      "id": "HKN-JTA-RYOKAN-QA",
+      "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+      "checked_at": "2026-08-20",
+      "role": "Official guidance for arrival, dinner, pickup, bath, breakfast, and checkout questions"
+    },
+    {
+      "id": "HKN-FUKUZUMIRO-FAQ",
+      "url": "https://www.fukuzumi-ro.com/english/faq/",
+      "checked_at": "2026-08-20",
+      "role": "Hakone property example confirming that arrival, meals, bathing, and shuttle arrangements are property-specific"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-ryokan-arrival.prompt.md",
+    "sha256": "eb4541ff2fed5aaf2c14ab9b7fef394aa0baeea671a916bef39bd0a57f8f9ab0"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-ryokan-arrival-v1/task_manifest.json",
+      "sha256": "5ae957662b718917df78b60db1abdb34ce05675093ce4a11fb39e06f2bf7dfff",
+      "bytes": 2434,
+      "role": "Rejected draft because the glass repeated Lala Xia as a reflected fifth figure"
+    },
+    {
+      "path": "build/aginti/hakone-ryokan-arrival-v2/task_manifest.json",
+      "sha256": "25cfd23aa8a5ea145277b0f6df3f690d22a7f671ec9e4fc2ce4f86b0e6a34794",
+      "bytes": 2796,
+      "role": "Selected exactly-four-guide mountain-ryokan arrival scene with an empty open genkan"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-ryokan-arrival-v2/hakone-ryokan-arrival-v2.png",
+    "sha256": "def57af676e4b8839db3381780a4b4418d3d97821681ffa303ae4255128f3d6e",
+    "bytes": 18372206,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-ryokan-arrival.jpg",
+    "sha256": "3dbe9eed24c9b909c997cad960ca920fa41bcb8a48080e2b52faeb2e75f876ba",
+    "bytes": 2414698,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-ryokan-arrival-wide.jpg",
+      "sha256": "68246086d368fc84909428f46e610595db9851815073392f0dc376a4bab9937c",
+      "bytes": 2000289,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-ryokan-arrival-web.jpg",
+      "sha256": "752b5b4777de10fd6e5f0126b0ada386c43da580fcb19c6e4cd3915701bae93e",
+      "bytes": 660872,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The architecture is a representative present-day mountain ryokan synthesis, not an identifiable property",
+    "The scene does not state a universal arrival time, dinner deadline, or pickup arrangement",
+    "The traveler must use the selected property's current booking confirmation and contact it directly when delayed"
+  ],
+  "reader_caption_policy": "Caption protects the booked arrival and dinner conditions without naming a property or discussing the production method.",
+  "rights": "Original LazyTravel composition; external character references are hash-pinned and not redistributed",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "Original scenes, 16:9 delivery crops, compiled B6 pages, and full-width 390 px figures passed cast, identity, privacy, content, and legibility review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch07-pocket-release/page-096.png",
+        "sha256": "1f5374eb72630d4c2efcbf78d80c762331bd7466c1a2166df69e7efb22f03d0e",
+        "bytes": 1165199,
+        "physical_page": 96
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch07-website-release/mobile-07-figure.png",
+        "sha256": "24e02ede02b52deae40bacfe0dd46c2d16e784224497725a06f2b3e098ce793b",
+        "bytes": 716850,
+        "width": 780,
+        "height": 1206,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

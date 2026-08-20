@@ -153,7 +153,7 @@ destination does not open work on two later books at once.
 
 ## Current Gate
 
-As of `2026-08-17`, all 11 Xi'an chapters have passed editorial, reading, page,
+As of `2026-08-20`, all 11 Xi'an chapters have passed editorial, reading, page,
 and public website review and build reproducibly as one `195`-page B6
 pocket PDF from `125` aligned blocks, with ten maps and fifteen chapter
 figures. The text-free four-guide cover sits beneath selectable LaTeX text, and
@@ -162,11 +162,11 @@ and mobile gates. The public guide is available at
 <https://lachlanchen.github.io/LazyTravel/>. Hakone is the next active book;
 Lanzhou remains queued behind it.
 
-Hakone has a locked 11-chapter structure. Chapters 1 through 5 have passed the
+Hakone has a locked 11-chapter structure. Chapters 1 through 7 have passed the
 editorial, reading, PDF-page, website, Nutstore, and GitHub milestone gates.
-The current pocket review has `86` B6 pages and SHA-256
-`8c6a0835c9a1195662981b4d5d02ab4b2b6f39d529d0aed2b3108071c159a430`.
-It contains `47` aligned blocks, five maps, sixteen figures, and the website
-renders `7,242` reviewed ruby nodes from the same JSON. Hakone remains
-incomplete; Chapter 6, **Old Tokaido and the Checkpoint**, is the only next
+The current pocket review has `122` B6 pages and SHA-256
+`b7eee7beed367ef7382ef79d0d7a8f9fe072573c92029b82a001c7e47f715995`.
+It contains `67` aligned blocks, seven maps, twenty-two figures, and the website
+renders `10,538` reviewed ruby nodes from the same JSON. Hakone remains
+incomplete; Chapter 8, **Eat Along the Route**, is the only next
 production gate.

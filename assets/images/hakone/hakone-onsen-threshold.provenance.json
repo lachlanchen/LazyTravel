@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-onsen-threshold",
+  "created_at": "2026-08-20",
+  "method": "generated-representative-bath-practice-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "3-93e7d367-fb8c-4a5c-9112-13aa3c5d26c8",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "fact_sources": [
+    {
+      "id": "HKN-JNTO-ONSEN",
+      "url": "https://www.japan.travel/en/uk/inspiration/onsen-etiquette/",
+      "checked_at": "2026-08-20",
+      "role": "Official national tourism guidance for washing before entering, towels, phones, and quiet shared-bath conduct"
+    },
+    {
+      "id": "HKN-JTA-RYOKAN-QA",
+      "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+      "checked_at": "2026-08-20",
+      "role": "Official guidance for asking about bath hours, cleaning, private baths, tattoo policies, and accessibility"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-onsen-threshold.prompt.md",
+    "sha256": "94a134a236f1067e59caed2db982db7f76ed8bde0698cbb0df527ea628e23c60"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-onsen-threshold-v1/task_manifest.json",
+      "sha256": "788b1a9e339cfbbd686a2b70ffe21b1823e2c797821d1948b9a9e70698203841",
+      "bytes": 2438,
+      "role": "Selected privacy-safe exactly-four-guide dry-threshold preparation scene"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-onsen-threshold-v1/hakone-onsen-threshold-v1.png",
+    "sha256": "435c11535beb169e2ad8f75175e3e4f395a8ebd3c45fa4fc12200999958f9d90",
+    "bytes": 12327887,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-onsen-threshold.jpg",
+    "sha256": "de53f386ba1f936f405125a6761bd100c5eab47382a8fd50664639e4d1299f88",
+    "bytes": 1593571,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-onsen-threshold-wide.jpg",
+      "sha256": "9aef4afa37e48e851bc1d433603590441cc4038ee49efe3c8babd1fc370d333c",
+      "bytes": 1449591,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-onsen-threshold-web.jpg",
+      "sha256": "9b5544a379903267e7f9cf81b628b947917d1d2b85e04bc7bbef36e526b06df5",
+      "bytes": 455525,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The dry corridor and empty wash area are a representative synthesis, not one named bath",
+    "Curtain colours do not encode a universal gender convention and contain no fabricated labels",
+    "Bath hours, cleaning, private-bath access, tattoo policy, step-free access, and mineral source vary by property"
+  ],
+  "reader_caption_policy": "Caption explains preparation before entering a shared bath without nudity, embarrassment, or a universal property claim.",
+  "rights": "Original LazyTravel composition; external character references are hash-pinned and not redistributed",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "Original scenes, 16:9 delivery crops, compiled B6 pages, and full-width 390 px figures passed cast, identity, privacy, content, and legibility review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch07-pocket-release/page-101.png",
+        "sha256": "e7528d2f9a2722491d6a9890abcf7143c2156a00790890de9aa8ff1d587a0f8c",
+        "bytes": 921160,
+        "physical_page": 101
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch07-website-release/mobile-07-figure-02.png",
+        "sha256": "4b5e4876ba321953edb4abfee0a6e0c9ec030318dd8a2ad577df88c8d0a1adbf",
+        "bytes": 576793,
+        "width": 780,
+        "height": 1206,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

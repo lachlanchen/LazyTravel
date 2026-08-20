@@ -74,7 +74,12 @@ def reading_counts(document: dict[str, Any]) -> dict[str, int]:
     return counts
 
 
-def validate_output(book_path: Path, output: Path) -> dict[str, int]:
+def validate_output(
+    book_path: Path,
+    output: Path,
+    *,
+    allow_pending_visual_qa: bool = False,
+) -> dict[str, int]:
     source = json.loads(book_path.read_text(encoding="utf-8"))
     payload_path = output / PAYLOAD_PATH
     payload = json.loads(payload_path.read_text(encoding="utf-8"))
@@ -110,10 +115,11 @@ def validate_output(book_path: Path, output: Path) -> dict[str, int]:
         if asset["kind"] == "map":
             provenance_path = output / Path(asset["path"]).with_suffix(".provenance.json")
             visual = json.loads(provenance_path.read_text(encoding="utf-8"))["visual_qa"]
-            if not visual["approved"] or any(
+            visual_pending = not visual["approved"] or any(
                 visual[field] != "pass"
                 for field in ("print_300dpi", "mobile_390px", "label_collisions")
-            ):
+            )
+            if visual_pending and not allow_pending_visual_qa:
                 raise RuntimeError(
                     f"website map provenance has not passed visual QA: {asset['id']}"
                 )
@@ -155,7 +161,12 @@ def validate_output(book_path: Path, output: Path) -> dict[str, int]:
     return reading_counts(source)
 
 
-def build(book_path: Path, output: Path) -> dict[str, int]:
+def build(
+    book_path: Path,
+    output: Path,
+    *,
+    review_preview: bool = False,
+) -> dict[str, int]:
     document = json.loads(book_path.read_text(encoding="utf-8"))
     if output.exists():
         shutil.rmtree(output)
@@ -190,7 +201,11 @@ def build(book_path: Path, output: Path) -> dict[str, int]:
         encoding="utf-8",
     )
 
-    counts = validate_output(book_path, output)
+    counts = validate_output(
+        book_path,
+        output,
+        allow_pending_visual_qa=review_preview,
+    )
     files = {
         str(path.relative_to(output)): {"sha256": sha256(path), "bytes": path.stat().st_size}
         for path in sorted(output.rglob("*"))
@@ -205,6 +220,7 @@ def build(book_path: Path, output: Path) -> dict[str, int]:
             "path": str(book_path.relative_to(ROOT)),
             "sha256": sha256(book_path),
         },
+        "release_ready": not review_preview,
         "parity": {"status": "pass", **counts},
         "files": files,
     }
@@ -219,11 +235,21 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--book", type=Path, default=DEFAULT_BOOK)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--review-preview",
+        action="store_true",
+        help="build a local review preview while platform visual QA is pending",
+    )
     args = parser.parse_args()
-    counts = build(args.book.resolve(), args.output.resolve())
+    counts = build(
+        args.book.resolve(),
+        args.output.resolve(),
+        review_preview=args.review_preview,
+    )
+    label = "review website" if args.review_preview else "validated website"
     print(
-        "validated website: "
-        f"{args.output} ({counts['blocks']} blocks, {counts['zh_tokens']} zh tokens, "
+        f"{label}: {args.output} "
+        f"({counts['blocks']} blocks, {counts['zh_tokens']} zh tokens, "
         f"{counts['ja_tokens']} ja tokens)"
     )
     return 0

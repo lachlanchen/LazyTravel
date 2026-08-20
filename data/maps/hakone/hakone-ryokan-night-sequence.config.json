@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-ryokan-night-sequence-map",
+  "snapshot_date": "2026-08-20",
+  "title": {
+    "zh": "旅馆一夜：先确认预约，再安排泡汤",
+    "ja": "旅館の一夜：予約を確認し、入浴時間を決める",
+    "en": "ONE RYOKAN NIGHT: CONFIRM BOOKINGS, THEN PLAN THE BATH"
+  },
+  "stages": [
+    {
+      "id": "arrive",
+      "number": "1",
+      "color": "vermilion",
+      "zh": "按旅馆约定时间抵达",
+      "zh_reading": "Àn lǚguǎn yuēdìng shíjiān dǐdá",
+      "ja": "宿の指定時刻までに到着",
+      "ja_reading": "やど の していじこく まで に とうちゃく",
+      "en": "ARRIVE BY THE PROPERTY DEADLINE"
+    },
+    {
+      "id": "confirm",
+      "number": "2",
+      "color": "cobalt",
+      "zh": "登记时确认四件事",
+      "zh_reading": "Dēngjì shí quèrèn sì jiàn shì",
+      "ja": "チェックインで四項目を確認",
+      "ja_reading": "チェックイン で よんこうもく を かくにん",
+      "en": "CONFIRM DINNER · BATH · BREAKFAST · PICKUP"
+    },
+    {
+      "id": "bath",
+      "number": "3",
+      "color": "jade",
+      "zh": "时间够，才先泡汤",
+      "zh_reading": "Shíjiān gòu, cái xiān pàotāng",
+      "ja": "余裕があれば先に入浴",
+      "ja_reading": "よゆう が あれば さき に にゅうよく",
+      "en": "BATHE FIRST ONLY IF THERE IS TIME"
+    },
+    {
+      "id": "dinner",
+      "number": "4",
+      "color": "coral",
+      "zh": "按预约时段吃晚餐",
+      "zh_reading": "Àn yùyuē shíduàn chī wǎncān",
+      "ja": "予約時刻に夕食",
+      "ja_reading": "よやくじこく に ゆうしょく",
+      "en": "DINNER AT THE BOOKED TIME"
+    },
+    {
+      "id": "sleep",
+      "number": "5",
+      "color": "cobalt",
+      "zh": "回房休息：日式床铺或西式床",
+      "zh_reading": "Huí fáng xiūxi: Rìshì chuángpù huò Xīshì chuáng",
+      "ja": "部屋で休む：布団かベッド",
+      "ja_reading": "へや で やすむ：ふとん か ベッド",
+      "en": "REST IN YOUR ROOM · FUTON OR BED"
+    },
+    {
+      "id": "morning",
+      "number": "6",
+      "color": "jade",
+      "zh": "开放时早浴，再早餐退房",
+      "zh_reading": "Kāifàng shí zǎoyù, zài zǎocān tuìfáng",
+      "ja": "朝風呂は利用時間内に",
+      "ja_reading": "あさぶろ は りようじかんない に",
+      "en": "BATH IF OPEN · BREAKFAST · DEPART"
+    }
+  ],
+  "delay_branch": {
+    "zh": "晚点？先联系旅馆 → 优先晚餐 → 改时段或取消泡汤",
+    "zh_reading": "Wǎndiǎn? Xiān liánxì lǚguǎn → yōuxiān wǎncān → gǎi shíduàn huò qǔxiāo pàotāng",
+    "ja": "遅れる？まず宿へ連絡 → 夕食を優先 → 入浴は後ろへずらすか諦める",
+    "ja_reading": "おくれる？まず やど へ れんらく → ゆうしょく を ゆうせん → にゅうよく は うしろ へ ずらす か あきらめる",
+    "en": "LATE? CALL THE RYOKAN → PRIORITIZE DINNER → MOVE OR DROP THE BATH"
+  },
+  "sources": [
+    {
+      "id": "HKN-JTA-RYOKAN-QA",
+      "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+      "checked_at": "2026-08-20",
+      "use": "Official guidance on arrival, meal times, bathing, bedding, accessibility, pickup, and checkout questions"
+    },
+    {
+      "id": "HKN-FUKUZUMIRO-FAQ",
+      "url": "https://www.fukuzumi-ro.com/english/faq/",
+      "checked_at": "2026-08-20",
+      "use": "Property example showing that dinner, bath, cleaning, checkout, and shuttle arrangements are property-specific"
+    },
+    {
+      "id": "HKN-SUIMEISOU-FAQ",
+      "url": "https://www.suimeisou.com/english/faq/",
+      "checked_at": "2026-08-20",
+      "use": "Property example for arrival, meals, bathing, private baths, and checkout conditions"
+    }
+  ],
+  "generalizations": [
+    "This is a decision sequence, not a universal ryokan timetable",
+    "Arrival deadlines, dinner service, bath and cleaning hours, breakfast, checkout, and pickup vary by property and booking plan",
+    "The sequence deliberately protects a booked meal before an optional pre-dinner bath",
+    "A morning bath appears only when the property's current operating hours allow it"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-20",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch07-pocket-release/page-098.png",
+        "physical_page": 98,
+        "sha256": "dc1828a3b7bad7d0d98d84b38e62294071c10fe696a07346c4719ee79907f7c1"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch07-website-release/mobile-07-map-contact.jpg",
+        "viewport_css_px": 390,
+        "pannable_width_css_px": 760,
+        "sha256": "843aef5ae8804bdeb5b21cf54d73a297076024d9ddf1f023a84fd6f2632bd2f8"
+      },
+      "browser_report": {
+        "path": "build/qa/hakone-ch07-website-release/qa.json",
+        "sha256": "3bf29fd6dc02dd7641f777b997ae492fa6664f88a14228cfffde9682d0df2aa1"
+      }
+    },
+    "notes": [
+      "The compiled B6 diagram and both halves of the 760 px stage inside a 390 px mobile viewport passed label, reading, sequence, and collision review."
+    ]
+  }
+}

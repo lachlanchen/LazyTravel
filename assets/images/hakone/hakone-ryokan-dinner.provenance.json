@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-ryokan-dinner",
+  "created_at": "2026-08-20",
+  "method": "generated-representative-meal-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "6-32497705-ccd8-45ea-a690-221c2e7196a7",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "fact_sources": [
+    {
+      "id": "HKN-JTA-RYOKAN-QA",
+      "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+      "checked_at": "2026-08-20",
+      "role": "Official guidance for dinner times, meal location, plan choice, and advance dietary requests"
+    },
+    {
+      "id": "JPN-CAA-FOOD-ALLERGY",
+      "url": "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/efforts/",
+      "checked_at": "2026-08-20",
+      "role": "Official food-allergy communication and unintended-contamination guidance"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-ryokan-dinner.prompt.md",
+    "sha256": "af4e05cd65b93b4cf1bc5498b3a7a058ef654f81b8f0f882ec81eb84714b6755"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-ryokan-dinner-v1/task_manifest.json",
+      "sha256": "1620b5085755511b0c17b9e707eb5256e7b493df261f8e57586eb51df019f439",
+      "bytes": 2429,
+      "role": "Rejected draft because Zhuangzi drifted into a generic smooth-faced android and the table contained fabricated writing"
+    },
+    {
+      "path": "build/aginti/hakone-ryokan-dinner-v2/task_manifest.json",
+      "sha256": "4a8f5b192fe452f7ef6ec7dbfeca3a6cfc4edf369cdafab43783d2f4fca72686",
+      "bytes": 2788,
+      "role": "Selected exactly-four-guide meal scene with the established articulated Zhuangzi and four complete settings"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-ryokan-dinner-v2/hakone-ryokan-dinner-v2.png",
+    "sha256": "87400670d9245c61b0bfd572b4b17c22c26dbc742014061aaeb23f09ad4b5227",
+    "bytes": 10515454,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-ryokan-dinner.jpg",
+    "sha256": "7cd01d4fa04e9041e80a9560af5fd1299153abe8389f2e29737476aee27de0c0",
+    "bytes": 1514834,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-ryokan-dinner-wide.jpg",
+      "sha256": "9fab278cae264fe0de8fae69da84da88e122592994a1d7fcfdd0f06a17ccf47a",
+      "bytes": 1338441,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-ryokan-dinner-web.jpg",
+      "sha256": "45c72efd26c83ff4a474e303edff19db5ced05ea2e71144cf05214383a048e25",
+      "bytes": 444869,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The meal is a representative multi-course ryokan setting, not a universal Hakone menu or a named local specialty",
+    "Ingredients, course order, service place, dietary accommodation, and contamination controls depend on the booked property and plan",
+    "The scene does not replace advance written communication about allergies or dietary restrictions"
+  ],
+  "reader_caption_policy": "Caption treats dinner as a timed part of the stay and directs dietary needs to advance written confirmation without claiming a fixed menu.",
+  "rights": "Original LazyTravel composition; external character references are hash-pinned and not redistributed",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "Original scenes, 16:9 delivery crops, compiled B6 pages, and full-width 390 px figures passed cast, identity, privacy, content, and legibility review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch07-pocket-release/page-106.png",
+        "sha256": "2217c8cfeccee8f5f6ea82b3ec4f52e934fc68d6559ee200fb87b8b41fcaa7a3",
+        "bytes": 887512,
+        "physical_page": 106
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch07-website-release/mobile-07-figure-03.png",
+        "sha256": "a4173f1ee884a5e70ab71b392a75ad73a6ad2620b1ea17a754061ba2bb9264bf",
+        "bytes": 595091,
+        "width": 780,
+        "height": 1160,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

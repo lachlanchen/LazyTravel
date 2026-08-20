@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="504pt" height="403.2pt" viewBox="0 0 504 403.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403.2
+L 504 403.2
+L 504 0
+L 0 0
+z
+" style="fill: #fbfdff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 167.818403 126.94752
+Q 172.998745 126.94752 175.831216 126.94752
+" clip-path="url(#pb57defde3a)" style="fill: none; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+    <path d="M 170.631216 124.34752
+L 175.831216 126.94752
+L 170.631216 129.54752
+z
+" clip-path="url(#pb57defde3a)" style="fill: #9fb7c5; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 325.822403 126.94752
+Q 331.002745 126.94752 333.835216 126.94752
+" clip-path="url(#pb57defde3a)" style="fill: none; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+    <path d="M 328.635216 124.34752
+L 333.835216 126.94752
+L 328.635216 129.54752
+z
+" clip-path="url(#pb57defde3a)" style="fill: #9fb7c5; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 410.004 178.236361
+Q 410.004 186.094338 410.004 191.604442
+" clip-path="url(#pb57defde3a)" style="fill: none; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+    <path d="M 412.604 186.404442
+L 410.004 191.604442
+L 407.404 186.404442
+z
+" clip-path="url(#pb57defde3a)" style="fill: #9fb7c5; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 336.181597 245.2464
+Q 331.001255 245.2464 328.168784 245.2464
+" clip-path="url(#pb57defde3a)" style="fill: none; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+    <path d="M 333.368784 247.8464
+L 328.168784 245.2464
+L 333.368784 242.6464
+z
+" clip-path="url(#pb57defde3a)" style="fill: #9fb7c5; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 178.177597 245.2464
+Q 172.997255 245.2464 170.164784 245.2464
+" clip-path="url(#pb57defde3a)" style="fill: none; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+    <path d="M 175.364784 247.8464
+L 170.164784 245.2464
+L 175.364784 242.6464
+z
+" clip-path="url(#pb57defde3a)" style="fill: #9fb7c5; stroke: #9fb7c5; stroke-width: 2.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 29.358 176.403024
+L 158.634 176.403024
+Q 167.2524 176.403024 167.2524 170.48808
+L 167.2524 83.40696
+Q 167.2524 77.492016 158.634 77.492016
+L 29.358 77.492016
+Q 20.7396 77.492016 20.7396 83.40696
+L 20.7396 170.48808
+Q 20.7396 176.403024 29.358 176.403024
+z
+" clip-path="url(#pb57defde3a)" style="fill: #fff1ec; stroke: #e84a2a; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 187.362 176.403024
+L 316.638 176.403024
+Q 325.2564 176.403024 325.2564 170.48808
+L 325.2564 83.40696
+Q 325.2564 77.492016 316.638 77.492016
+L 187.362 77.492016
+Q 178.7436 77.492016 178.7436 83.40696
+L 178.7436 170.48808
+Q 178.7436 176.403024 187.362 176.403024
+z
+" clip-path="url(#pb57defde3a)" style="fill: #eaf2ff; stroke: #1769d8; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 345.366 176.403024
+L 474.642 176.403024
+Q 483.2604 176.403024 483.2604 170.48808
+L 483.2604 83.40696
+Q 483.2604 77.492016 474.642 77.492016
+L 345.366 77.492016
+Q 336.7476 77.492016 336.7476 83.40696
+L 336.7476 170.48808
+Q 336.7476 176.403024 345.366 176.403024
+z
+" clip-path="url(#pb57defde3a)" style="fill: #e8f8f2; stroke: #008b72; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 345.366 294.701904
+L 474.642 294.701904
+Q 483.2604 294.701904 483.2604 288.78696
+L 483.2604 201.70584
+Q 483.2604 195.790896 474.642 195.790896
+L 345.366 195.790896
+Q 336.7476 195.790896 336.7476 201.70584
+L 336.7476 288.78696
+Q 336.7476 294.701904 345.366 294.701904
+z
+" clip-path="url(#pb57defde3a)" style="fill: #fff0f4; stroke: #df3f68; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 187.362 294.701904
+L 316.638 294.701904
+Q 325.2564 294.701904 325.2564 288.78696
+L 325.2564 201.70584
+Q 325.2564 195.790896 316.638 195.790896
+L 187.362 195.790896
+Q 178.7436 195.790896 178.7436 201.70584
+L 178.7436 288.78696
+Q 178.7436 294.701904 187.362 294.701904
+z
+" clip-path="url(#pb57defde3a)" style="fill: #eaf2ff; stroke: #1769d8; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 29.358 294.701904
+L 158.634 294.701904
+Q 167.2524 294.701904 167.2524 288.78696
+L 167.2524 201.70584
+Q 167.2524 195.790896 158.634 195.790896
+L 29.358 195.790896
+Q 20.7396 195.790896 20.7396 201.70584
+L 20.7396 288.78696
+Q 20.7396 294.701904 29.358 294.701904
+z
+" clip-path="url(#pb57defde3a)" style="fill: #e8f8f2; stroke: #008b72; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 28.4004 394.76304
+L 475.5996 394.76304
+Q 484.218 394.76304 484.218 388.848096
+L 484.218 321.812064
+Q 484.218 315.89712 475.5996 315.89712
+L 28.4004 315.89712
+Q 19.782 315.89712 19.782 321.812064
+L 19.782 388.848096
+Q 19.782 394.76304 28.4004 394.76304
+z
+" clip-path="url(#pb57defde3a)" style="fill: #fff1ec; stroke: #e84a2a; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #13242f" x="36.54" y="333.673571" transform="rotate(-0 36.54 333.673571)">晚点？先联系旅馆 → 优先晚餐 → 改时段或取消泡汤</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 5.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #e84a2a" x="36.54" y="344.668992" transform="rotate(-0 36.54 344.668992)">Wǎndiǎn? Xiān liánxì lǚguǎn → yōuxiān wǎncān → gǎi shíduàn huò qǔxiāo pàotāng</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #13242f" x="36.54" y="357.100159" transform="rotate(-0 36.54 357.100159)">遅れる？まず宿へ連絡 → 夕食を優先 → 入浴は後ろへずらすか諦める</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 5.15px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #536774" x="36.54" y="367.305239" transform="rotate(-0 36.54 367.305239)">おくれる？まず やど へ れんらく → ゆうしょく を ゆうせん → にゅうよく は うしろ へ ずらす か あきらめる</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 6.1px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #e84a2a" x="36.54" y="378.796263" transform="rotate(-0 36.54 378.796263)">LATE? CALL THE RYOKAN → PRIORITIZE DINNER → MOVE OR DROP THE BATH</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 5.45px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #536774" x="467.46" y="387.763966" transform="rotate(-0 467.46 387.763966)">具体时刻看预订确认・具体的な時刻は予約確認で・USE YOUR BOOKING'S ACTUAL TIMES</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 39.8916 99.180144
+C 42.939102 99.180144 45.862196 98.349163 48.017105 96.870215
+C 50.172015 95.391266 51.3828 93.385101 51.3828 91.293552
+C 51.3828 89.202003 50.172015 87.195838 48.017105 85.716889
+C 45.862196 84.237941 42.939102 83.40696 39.8916 83.40696
+C 36.844098 83.40696 33.921004 84.237941 31.766095 85.716889
+C 29.611185 87.195838 28.4004 89.202003 28.4004 91.293552
+C 28.4004 93.385101 29.611185 95.391266 31.766095 96.870215
+C 33.921004 98.349163 36.844098 99.180144 39.8916 99.180144
+z
+" clip-path="url(#pb57defde3a)" style="fill: #e84a2a"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 197.8956 99.180144
+C 200.943102 99.180144 203.866196 98.349163 206.021105 96.870215
+C 208.176015 95.391266 209.3868 93.385101 209.3868 91.293552
+C 209.3868 89.202003 208.176015 87.195838 206.021105 85.716889
+C 203.866196 84.237941 200.943102 83.40696 197.8956 83.40696
+C 194.848098 83.40696 191.925004 84.237941 189.770095 85.716889
+C 187.615185 87.195838 186.4044 89.202003 186.4044 91.293552
+C 186.4044 93.385101 187.615185 95.391266 189.770095 96.870215
+C 191.925004 98.349163 194.848098 99.180144 197.8956 99.180144
+z
+" clip-path="url(#pb57defde3a)" style="fill: #1769d8"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 355.8996 99.180144
+C 358.947102 99.180144 361.870196 98.349163 364.025105 96.870215
+C 366.180015 95.391266 367.3908 93.385101 367.3908 91.293552
+C 367.3908 89.202003 366.180015 87.195838 364.025105 85.716889
+C 361.870196 84.237941 358.947102 83.40696 355.8996 83.40696
+C 352.852098 83.40696 349.929004 84.237941 347.774095 85.716889
+C 345.619185 87.195838 344.4084 89.202003 344.4084 91.293552
+C 344.4084 93.385101 345.619185 95.391266 347.774095 96.870215
+C 349.929004 98.349163 352.852098 99.180144 355.8996 99.180144
+z
+" clip-path="url(#pb57defde3a)" style="fill: #008b72"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 355.8996 217.479024
+C 358.947102 217.479024 361.870196 216.648043 364.025105 215.169095
+C 366.180015 213.690146 367.3908 211.683981 367.3908 209.592432
+C 367.3908 207.500883 366.180015 205.494718 364.025105 204.015769
+C 361.870196 202.536821 358.947102 201.70584 355.8996 201.70584
+C 352.852098 201.70584 349.929004 202.536821 347.774095 204.015769
+C 345.619185 205.494718 344.4084 207.500883 344.4084 209.592432
+C 344.4084 211.683981 345.619185 213.690146 347.774095 215.169095
+C 349.929004 216.648043 352.852098 217.479024 355.8996 217.479024
+z
+" clip-path="url(#pb57defde3a)" style="fill: #df3f68"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 197.8956 217.479024
+C 200.943102 217.479024 203.866196 216.648043 206.021105 215.169095
+C 208.176015 213.690146 209.3868 211.683981 209.3868 209.592432
+C 209.3868 207.500883 208.176015 205.494718 206.021105 204.015769
+C 203.866196 202.536821 200.943102 201.70584 197.8956 201.70584
+C 194.848098 201.70584 191.925004 202.536821 189.770095 204.015769
+C 187.615185 205.494718 186.4044 207.500883 186.4044 209.592432
+C 186.4044 211.683981 187.615185 213.690146 189.770095 215.169095
+C 191.925004 216.648043 194.848098 217.479024 197.8956 217.479024
+z
+" clip-path="url(#pb57defde3a)" style="fill: #1769d8"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 39.8916 217.479024
+C 42.939102 217.479024 45.862196 216.648043 48.017105 215.169095
+C 50.172015 213.690146 51.3828 211.683981 51.3828 209.592432
+C 51.3828 207.500883 50.172015 205.494718 48.017105 204.015769
+C 45.862196 202.536821 42.939102 201.70584 39.8916 201.70584
+C 36.844098 201.70584 33.921004 202.536821 31.766095 204.015769
+C 29.611185 205.494718 28.4004 207.500883 28.4004 209.592432
+C 28.4004 211.683981 29.611185 213.690146 31.766095 215.169095
+C 33.921004 216.648043 36.844098 217.479024 39.8916 217.479024
+z
+" clip-path="url(#pb57defde3a)" style="fill: #008b72"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 7.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="39.8916" y="93.421388" transform="rotate(-0 39.8916 93.421388)">1</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="93.996" y="103.881159" transform="rotate(-0 93.996 103.881159)">按旅馆约定时间抵达</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 5.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #e84a2a" x="93.996" y="117.48024" transform="rotate(-0 93.996 117.48024)">Àn lǚguǎn yuēdìng shíjiān dǐdá</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 7.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="93.996" y="133.120671" transform="rotate(-0 93.996 133.120671)">宿の指定時刻までに到着</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 5.45px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #536774" x="93.996" y="145.57987" transform="rotate(-0 93.996 145.57987)">やど の していじこく まで に とうちゃく</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 5.75px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #e84a2a" x="93.996" y="160.498531" transform="rotate(-0 93.996 160.498531)">ARRIVE BY THE PROPERTY DEADLINE</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 7.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="197.8956" y="93.421388" transform="rotate(-0 197.8956 93.421388)">2</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="252" y="103.881159" transform="rotate(-0 252 103.881159)">登记时确认四件事</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 5.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #1769d8" x="252" y="117.203478" transform="rotate(-0 252 117.203478)">Dēngjì shí quèrèn sì jiàn shì</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 7.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="252" y="133.120671" transform="rotate(-0 252 133.120671)">チェックインで四項目を確認</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 5.45px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #536774" x="252" y="145.57987" transform="rotate(-0 252 145.57987)">チェックイン で よんこうもく を かくにん</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 5.75px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #1769d8" x="252" y="160.498531" transform="rotate(-0 252 160.498531)">CONFIRM DINNER · BATH · BREAKFAST · PICKUP</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 7.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="355.8996" y="93.421388" transform="rotate(-0 355.8996 93.421388)">3</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="410.004" y="103.881159" transform="rotate(-0 410.004 103.881159)">时间够，才先泡汤</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 5.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #008b72" x="410.004" y="117.203478" transform="rotate(-0 410.004 117.203478)">Shíjiān gòu, cái xiān pàotāng</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 7.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="410.004" y="133.120671" transform="rotate(-0 410.004 133.120671)">余裕があれば先に入浴</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 5.45px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #536774" x="410.004" y="145.57987" transform="rotate(-0 410.004 145.57987)">よゆう が あれば さき に にゅうよく</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 5.75px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #008b72" x="410.004" y="160.498531" transform="rotate(-0 410.004 160.498531)">BATHE FIRST ONLY IF THERE IS TIME</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 7.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="355.8996" y="211.720268" transform="rotate(-0 355.8996 211.720268)">4</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="410.004" y="222.180038" transform="rotate(-0 410.004 222.180038)">按预约时段吃晚餐</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 5.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #df3f68" x="410.004" y="235.824143" transform="rotate(-0 410.004 235.824143)">Àn yùyuē shíduàn chī wǎncān</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 7.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="410.004" y="251.419551" transform="rotate(-0 410.004 251.419551)">予約時刻に夕食</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 5.45px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #536774" x="410.004" y="263.87875" transform="rotate(-0 410.004 263.87875)">よやくじこく に ゆうしょく</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 5.75px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #df3f68" x="410.004" y="278.797411" transform="rotate(-0 410.004 278.797411)">DINNER AT THE BOOKED TIME</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 7.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="197.8956" y="211.720268" transform="rotate(-0 197.8956 211.720268)">5</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="252" y="221.946851" transform="rotate(-0 252 221.946851)">回房休息：日式床铺或西式床</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 5.15px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #1769d8" x="252" y="235.34685" transform="rotate(-0 252 235.34685)">Huí fáng xiūxi: Rìshì chuángpù huò Xīshì chuáng</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 7.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="252" y="251.419551" transform="rotate(-0 252 251.419551)">部屋で休む：布団かベッド</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 5.45px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #536774" x="252" y="263.87875" transform="rotate(-0 252 263.87875)">へや で やすむ：ふとん か ベッド</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 5.75px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #1769d8" x="252" y="278.797411" transform="rotate(-0 252 278.797411)">REST IN YOUR ROOM · FUTON OR BED</text>
+   </g>
+   <g id="text_37">
+    <text style="font-weight: 700; font-size: 7.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="39.8916" y="211.720268" transform="rotate(-0 39.8916 211.720268)">6</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="93.996" y="222.180038" transform="rotate(-0 93.996 222.180038)">开放时早浴，再早餐退房</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 5.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #008b72" x="93.996" y="235.502358" transform="rotate(-0 93.996 235.502358)">Kāifàng shí zǎoyù, zài zǎocān tuìfáng</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 7.65px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #13242f" x="93.996" y="251.419551" transform="rotate(-0 93.996 251.419551)">朝風呂は利用時間内に</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 5.45px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #536774" x="93.996" y="263.87875" transform="rotate(-0 93.996 263.87875)">あさぶろ は りようじかんない に</text>
+   </g>
+   <g id="text_42">
+    <text style="font-weight: 700; font-size: 5.75px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #008b72" x="93.996" y="278.797411" transform="rotate(-0 93.996 278.797411)">BATH IF OPEN · BREAKFAST · DEPART</text>
+   </g>
+  </g>
+  <g id="text_43">
+   <text style="font-weight: 700; font-size: 14.5px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #13242f" x="20.16" y="13.3056" transform="rotate(-0 20.16 13.3056)">旅馆一夜：先确认预约，再安排泡汤</text>
+  </g>
+  <g id="text_44">
+   <text style="font-weight: 700; font-size: 10.6px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #13242f" x="20.16" y="31.8528" transform="rotate(-0 20.16 31.8528)">旅館の一夜：予約を確認し、入浴時間を決める</text>
+  </g>
+  <g id="text_45">
+   <text style="font-weight: 700; font-size: 8.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #1769d8" x="20.16" y="48.7872" transform="rotate(-0 20.16 48.7872)">ONE RYOKAN NIGHT: CONFIRM BOOKINGS, THEN PLAN THE BATH</text>
+  </g>
+  <g id="text_46">
+   <text style="font-weight: 700; font-size: 7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #536774" transform="translate(437.36 21.713781)">顺序图・順序図</text>
+   <text style="font-weight: 700; font-size: 7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #536774" transform="translate(413.509687 29.474856)">DECISION SEQUENCE</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb57defde3a">
+   <rect x="12.6" y="64.512" width="478.8" height="328.608"/>
+  </clipPath>
+ </defs>
+</svg>

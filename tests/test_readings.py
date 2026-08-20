@@ -115,6 +115,35 @@ class ReadingLayerTests(unittest.TestCase):
         readings = {token["text"]: token.get("reading") for token in tokens}
         self.assertEqual(readings["麗山園"], "りざんえん")
 
+    def test_hakone_ryokan_chinese_context_readings(self) -> None:
+        tokens = zh_tokens("一九六五年，睡前写下一行，取得答复后留出空档。")
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["一九六五年"], "yī jiǔ liù wǔ nián")
+        self.assertEqual(readings["写下一行"], "xiěxià yī háng")
+        self.assertEqual(pinyin_for_word("取得"), "qǔdé")
+        self.assertEqual(pinyin_for_word("空档"), "kòngdàng")
+
+    def test_hakone_ryokan_japanese_readings(self) -> None:
+        tokens = ja_tokens(
+            "箱根七湯で一夜湯治。一九六五年、芦之湯の貸切風呂と客室風呂、朝風呂、一泊二食。",
+            unidic_tagger(),
+        )
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["箱根七湯"], "はこねななゆ")
+        self.assertEqual(readings["一夜湯治"], "いちやとうじ")
+        self.assertEqual(readings["一九六五年"], "せんきゅうひゃくろくじゅうごねん")
+        self.assertEqual(readings["芦之湯"], "あしのゆ")
+        self.assertEqual(readings["貸切風呂"], "かしきりぶろ")
+        self.assertEqual(readings["客室風呂"], "きゃくしつぶろ")
+        self.assertEqual(readings["朝風呂"], "あさぶろ")
+        self.assertEqual(readings["一泊二食"], "いっぱくにしょく")
+        line_tokens = ja_tokens("何時までに、一行だけ書く", unidic_tagger())
+        line_readings = {
+            token["text"]: token.get("reading") for token in line_tokens
+        }
+        self.assertEqual(line_readings["何時"], "なんじ")
+        self.assertEqual(line_readings["一行"], "いちぎょう")
+
     def test_katakana_conversion(self) -> None:
         self.assertEqual(katakana_to_hiragana("セイアン"), "せいあん")
 
