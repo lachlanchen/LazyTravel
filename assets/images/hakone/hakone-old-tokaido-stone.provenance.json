@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-old-tokaido-stone",
+  "created_at": "2026-08-20",
+  "method": "generated-attraction-and-surface-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "14-21271cac-4c56-43ff-834b-13aa78fccdd6",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch06-references/old-tokaido-town.jpg",
+      "sha256": "0edf29962605047fc9f92eab869c2ac32377771876f157cc7a2e49a8e9ea7a9d",
+      "page_url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001935/index.html",
+      "role": "Official town photograph for surviving stone-paving width, cedar woodland, and present trail character; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-old-tokaido-stone.prompt.md",
+    "sha256": "1ccf15bcf557878a1b5f9f6a0c6395aa008aae35d3b0383cde21c13cb5118404"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-old-tokaido-stone-v1/task_manifest.json",
+      "sha256": "98507540d9e489a84a9577ad236feb6c79305e4bb05d36ac87ef9cea49d0a8bd",
+      "bytes": 2797,
+      "role": "Selected four-guide old-road surface scene"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-old-tokaido-stone-v1/hakone-old-tokaido-stone-v1.png",
+    "sha256": "63c289ad07e653b1ee1062430394fd6e39ef8c24ac52b9a1b880cdbab2bc6819",
+    "bytes": 24696461,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-old-tokaido-stone.jpg",
+    "sha256": "96257dfd051f1ecdd0bc263fc539e96f24fba03caa38f9c8e6af00f565d74ebe",
+    "bytes": 3186596,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-old-tokaido-stone-wide.jpg",
+      "sha256": "e4a02e1b8d8210333a36385f75d9005a0531f6f6ecb45347c19a9645e395f028",
+      "bytes": 2742539,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-old-tokaido-stone-web.jpg",
+      "sha256": "f866dea02f3f1c864652b4ce1715aaf95eff95078a19b790a407841395b07719",
+      "bytes": 911401,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a present-day editorial synthesis of an old-road stone section, not documentary evidence of one exact camera position or Edo-period travel",
+    "Surviving, restored, repaired, and maintained fabric must not be treated as one untouched surface",
+    "Wetness, moss, gradient, closures, and individual footing vary; the reader must use current signs and conditions"
+  ],
+  "reader_caption_policy": "Caption directs attention to the uneven wet surface and route choice without discussing the production method or claiming untouched Edo fabric.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "Original-size scenes, delivery crops, compiled B6 pages, and full-width figures inside a 390 px mobile viewport passed visual review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch06-pocket-release/page-081.png",
+        "sha256": "63d1f93693454052bf7c03509b7dd8a45313eeb3c2ba2d5b951bfbf30709c812",
+        "bytes": 1033205,
+        "physical_page": 81
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch06-website-final/mobile-06-figure.png",
+        "sha256": "a5f42c3926e66668272b097909f4816de7a9105dd75409f3904e2b1ad255d0bb",
+        "bytes": 869458,
+        "width": 780,
+        "height": 1114,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

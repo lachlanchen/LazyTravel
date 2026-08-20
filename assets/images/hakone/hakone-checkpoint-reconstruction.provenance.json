@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-checkpoint-reconstruction",
+  "created_at": "2026-08-20",
+  "method": "generated-attraction-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "3-3399f95a-f91e-43cc-966d-583de04a5945",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch06-references/checkpoint-top-02.jpg",
+      "sha256": "fead20bd62b987aed61eee618729aea7c05bc8fd612a2f3328eebb216838036c",
+      "page_url": "https://www.hakonesekisyo.jp/",
+      "role": "Official checkpoint photograph for the current gate form; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch06-references/checkpoint-top-03.jpg",
+      "sha256": "b84e368faa6cd7e958b93a52729842e28a6fbf9c20c6ee0664ca7f41f1f34ac6",
+      "page_url": "https://www.hakonesekisyo.jp/",
+      "role": "Official checkpoint photograph for the palisade and hillside watch-building relationship; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch06-references/checkpoint-top-15.jpg",
+      "sha256": "fa00d45b2749ef2756b5ca9592c97f78c2228fbd8f6f12637f29d003b7281041",
+      "page_url": "https://www.hakonesekisyo.jp/",
+      "role": "Official checkpoint photograph for the enclosed compound and Lake Ashi relationship; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-checkpoint-reconstruction.prompt.md",
+    "sha256": "656f01ef7efd4da3f84e5f6a9fec83eb27d402698e21989f4e64037dd1221cc3"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-checkpoint-reconstruction-v1/task_manifest.json",
+      "sha256": "5b1563d6facb622b592a7350657c2e8f28189a1a99b5dc16abd0e1de3c1d551b",
+      "bytes": 3195,
+      "role": "Rejected draft with an impossible Fuji-dominant backdrop and invented open tower"
+    },
+    {
+      "path": "build/aginti/hakone-checkpoint-reconstruction-v2/task_manifest.json",
+      "sha256": "356a729e333087cbf1d36d59a853af9c5415718986266872ad373119ff5e6b81",
+      "bytes": 3548,
+      "role": "Rejected draft with reader-visible invented robot branding"
+    },
+    {
+      "path": "build/aginti/hakone-checkpoint-reconstruction-v3/task_manifest.json",
+      "sha256": "116073c3d7f2c3db74fbc7ea56b2a3a981d238ab97375c9db13f3d0f45f6b3cd",
+      "bytes": 3547,
+      "role": "Selected four-guide architecture-dominant checkpoint scene"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-checkpoint-reconstruction-v3/hakone-checkpoint-reconstruction-v3.png",
+    "sha256": "b6d3180d5658928b7d77ee5302ebd5f040a0757d71be5f7bdc4f33b042776f14",
+    "bytes": 15506129,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-checkpoint-reconstruction.jpg",
+    "sha256": "d590b679a6a349e77f700e9bf61735deeaa9f3161cdc81c031ae039a1da86b20",
+    "bytes": 1996036,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-checkpoint-reconstruction-wide.jpg",
+      "sha256": "257f986f17f0d2de7f1636e872f41de036d44c4d50c61259d5e8ecc4986380c5",
+      "bytes": 1741292,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-checkpoint-reconstruction-web.jpg",
+      "sha256": "afaf057a408ba8dc75397962c59e741aca71e13167eb1179c0725e78c3781ce5",
+      "bytes": 544302,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The visible buildings are the present evidence-based reconstruction, not untouched Edo-period originals",
+    "The scene combines official current site relationships without claiming one exact camera position",
+    "No historical inspection, guard, weapon, prisoner, or traveler is reconstructed in the image"
+  ],
+  "reader_caption_policy": "Caption identifies the site as a reconstruction and tells the reader to read gate, palisade, and hillside together.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "Original-size scenes, delivery crops, compiled B6 pages, and full-width figures inside a 390 px mobile viewport passed visual review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch06-pocket-release/page-087.png",
+        "sha256": "46e1874a16ad02bfa3744f594739443143e0932c19013ef30dd207d39abb8ebf",
+        "bytes": 681932,
+        "physical_page": 87
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch06-website-final/mobile-06-figure-02.png",
+        "sha256": "17c6e102dadb63830d2aeec1363e0cc02b57ceabe31ca2256a46ef04cb4dd976",
+        "bytes": 600888,
+        "width": 780,
+        "height": 1068,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

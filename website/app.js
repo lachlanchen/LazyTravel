@@ -62,6 +62,10 @@ const assetLabels = {
   "asset-hakone-shrine-forest-approach": "HAKONE SHRINE · FOREST APPROACH",
   "asset-hakone-wakasagi-lunch": "WAKASAGI · A LAKE MEAL",
   "asset-hakone-onshi-park-villa-ground": "ONSHI PARK · SHORE AND VILLA GROUND",
+  "asset-hakone-old-tokaido-stone": "OLD TOKAIDO · STONE AND DRAINAGE",
+  "asset-hakone-old-tokaido-choice-map": "OLD TOKAIDO · TWO PRACTICAL FINISHES",
+  "asset-hakone-checkpoint-reconstruction": "HAKONE CHECKPOINT · GATE AND PALISADE",
+  "asset-hakone-amasake-chaya-rest": "AMASAKE CHAYA · ROAD-SIDE REST",
 };
 const state = {
   document: null,

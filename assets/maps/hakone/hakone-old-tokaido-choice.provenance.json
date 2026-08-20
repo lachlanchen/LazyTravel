@@ -1,0 +1,96 @@
+{
+  "asset_id": "asset-hakone-old-tokaido-choice-map",
+  "command": "python3 scripts/build_hakone_old_tokaido_choice_map.py",
+  "config": "data/maps/hakone/hakone-old-tokaido-choice.config.json",
+  "config_sha256": "abe389bc53a6ac19d1684dadf187552b836c9c940900ab3e2ebe2283a0970093",
+  "created_at": "2026-08-20",
+  "declared_generalizations": [
+    "This is a route-choice diagram, not a geographic map; distances, curves, and gradients are not to scale",
+    "The roughly two-hour-thirty-minute value is the tourism association's guided-course benchmark from the checkpoint through the old road to Amasake Chaya, not a personal pace guarantee",
+    "The sixty-to-ninety-minute short option is a LazyTravel planning range that includes the checkpoint's published approximate forty-five-minute standard visit plus a modest cedar-avenue margin",
+    "Tea, checkpoint queues, photography, bus waiting, wet stone, and personal mobility can add substantial time",
+    "Bus symbols identify useful current route relationships, not guaranteed departures or an accessibility claim",
+    "The Hatajuku-Yamane closure was current on 2026-08-20 and is planned through 2027-01-15; reopening and later conditions require a fresh official check"
+  ],
+  "files": {
+    "hakone-old-tokaido-choice.pdf": {
+      "bytes": 111753,
+      "sha256": "da7c07151d963f0cbbeb7d73b77369939011017b1beb0e92657d32d246f284f8"
+    },
+    "hakone-old-tokaido-choice.png": {
+      "bytes": 794756,
+      "sha256": "34a5652320706783530c0f2e3e8f85b62c2c99f3d0c473b162f09d5180a46c53"
+    },
+    "hakone-old-tokaido-choice.svg": {
+      "bytes": 21382,
+      "sha256": "912a9af7f5ae9c7c7060287b4d42ff3ce896d9370ee0a1faec887a939ecdb080"
+    }
+  },
+  "method": "schematic-old-road-choice-render",
+  "rights": "Map design © LazyTravel; route and operating facts derive from the listed official sources.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-OLD-TOKAIDO",
+      "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001935/index.html",
+      "use": "Edo-period Tokaido context, surviving stone paving and cedar avenue, national historic-site status"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-HISTORY-WALK-3",
+      "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001496/simple/MAP3_20231001.pdf",
+      "use": "Official town relationship among checkpoint, cedar avenue, old-road paving, and Amasake Chaya"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-GUIDE-OLD-ROAD",
+      "url": "https://www.hakone.or.jp/6422",
+      "use": "Published checkpoint-to-Amasake-Chaya guided-course sequence and approximate two-hour-thirty-minute benchmark"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-OLD-ROAD-CLOSURE-2026",
+      "url": "https://www.town.hakone.kanagawa.jp/www/contents/1747697722331/simple/kairan0727.pdf",
+      "use": "Current Hatajuku-Yamane closure dates, affected paving and milestone, and Prefectural Road 732 detour"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-K-BUS",
+      "url": "https://www.hakonenavi.jp/transportation/station/hakone-yumoto/?status=timetable",
+      "use": "K old-road bus relationship through Hatajuku and Amasake Chaya; exact departures remain live information"
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      3360,
+      2472
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch06-pocket-release/page-083.png",
+        "physical_page": 83,
+        "sha256": "8375f22a2a57d1758ccce1d9dbf079e434d278ddcf434bd342851d9e5ae3d698"
+      },
+      "mobile": {
+        "pannable_width_css_px": 760,
+        "path": "build/qa/hakone-ch06-assets/mobile-map-contact.jpg",
+        "sha256": "4c05ad927ac5536c098f55b1e7e72e15e6d9350bbde70dfb15160c3cb7070cab",
+        "viewport_css_px": 390
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "Full-size labels, the compiled B6 page, and both halves of the 760 px diagram inside a 390 px mobile viewport passed visual review."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-20"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-amasake-chaya-rest",
+  "created_at": "2026-08-20",
+  "method": "generated-food-and-place-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "16-63bf3ae3-4763-4762-b475-5ff12b6041c9",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch06-references/amasake-head_photo2.png",
+      "sha256": "3043b670eee20e0e92a6ef35377fcc44d0b6de19de3b426478f72377ee3cad93",
+      "page_url": "https://amasake-chaya.com/",
+      "role": "Official current tea-house montage for thatch, timber interior, hearth, and roadside context; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch06-references/amasake-item-01.jpg",
+      "sha256": "83b14b88a7635b1f4648650809561bebe0e507d8c5d197943d3e6f933784c974",
+      "page_url": "https://amasake-chaya.com/",
+      "role": "Official current menu photograph for rice-koji amazake colour and cup scale; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch06-references/amasake-item-02.jpg",
+      "sha256": "2fef3e3b769da79b0e9dd307937a520819a02c75f30eb67df9782291f0e2a01a",
+      "page_url": "https://amasake-chaya.com/",
+      "role": "Official current menu photograph for a simple chikara-mochi serving; cache remains ignored"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-amasake-chaya-rest.prompt.md",
+    "sha256": "ca8ed9d8e0afa35e851c987b0c332c2c64e6a57c77b75782570f6c52834511bc"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-amasake-chaya-rest-v1/task_manifest.json",
+      "sha256": "8abbae074cabffdf6e836aab7aa8f09d8daf5304c3541d440c9a3d545d1cfa3b",
+      "bytes": 3504,
+      "role": "Selected restrained four-guide tea-house rest scene"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-amasake-chaya-rest-v1/hakone-amasake-chaya-rest-v1.png",
+    "sha256": "e0a5e6ecc39599675e14723e9e11fb8bd5dd8cc01860d9342a6fe77652b99f80",
+    "bytes": 14825508,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-amasake-chaya-rest.jpg",
+    "sha256": "e1c33d5d2294aac4d2d7f0aa865c9dc56addd1568a33c9ecca8b9875ce23bfde",
+    "bytes": 1886063,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-amasake-chaya-rest-wide.jpg",
+      "sha256": "782ba04f2f3b2a5ba17f423aaff9bdce210932e9f8d21d9072956746e2375806",
+      "bytes": 1615512,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-amasake-chaya-rest-web.jpg",
+      "sha256": "7afae0c6a2d69ec1a7a015bb1b8a62099a47dc6c3383cf904560accbc4712b57",
+      "bytes": 528327,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene represents a quiet route rest and is not a promise of one table, light condition, presentation, price, or stock",
+    "The amazake is rice-koji-and-rice based, sugar-free, and non-alcoholic according to the current official shop page",
+    "The modest tray suggests current isobe and kinako-family chikara-mochi choices without replacing the live menu"
+  ],
+  "reader_caption_policy": "Caption explains the drink and small mochi stop without health claims, price promotion, or production notes.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "Original-size scenes, delivery crops, compiled B6 pages, and full-width figures inside a 390 px mobile viewport passed visual review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch06-pocket-release/page-091.png",
+        "sha256": "9024dcdb6d30a8dfa3b92a3ea5791601104341cc25472f54f2787b014b20bea4",
+        "bytes": 730014,
+        "physical_page": 91
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch06-website-final/mobile-06-figure-03.png",
+        "sha256": "684dd7694e2735b5a8193362a155151e3e0628debde22a42bbe893847c3e36af",
+        "bytes": 650941,
+        "width": 780,
+        "height": 1112,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

@@ -17,8 +17,8 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   `books/japan/prefectures/kanagawa/hakone/editorial/outline.md`. Populate and
   accept them in order; a later chapter never bypasses an unfinished earlier
   chapter.
-- Hakone Chapters 1 through 5 are accepted milestones. Chapter 6, Old Tokaido
-  and the checkpoint, is the only next production gate.
+- Hakone Chapters 1 through 6 are accepted milestones. Chapter 7, one night in
+  an onsen ryokan, is the only next production gate.
 - All 11 Xi'an chapters have passed editorial, reading, PDF-page, public
   website, Nutstore, and GitHub publication review. Do not reopen a settled
   Xi'an chapter unless a factual, language, layout, or build failure is

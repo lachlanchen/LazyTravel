@@ -49,16 +49,17 @@ The current pocket PDF SHA-256 is
 The same verified file is mirrored to the project Nutstore share.
 The synchronized 11-chapter website is published through GitHub Pages.
 
-Hakone has a separate locked 11-chapter route. Chapters 1-5 are accepted:
+Hakone has a separate locked 11-chapter route. Chapters 1-6 are accepted:
 **Read the Mountain First**, **Odawara to Yumoto**, **Climb to Gora**,
-**Cross Owakudani**, and **Lake Ashi: Shrine, Wakasagi, and Shore**.
-Together they contain `47` aligned blocks, five code-built maps, sixteen
-four-guide place and food figures, `5,317` Chinese reading tokens, `6,556`
-Japanese reading tokens, and a verified `86`-page B6 review. The pocket SHA-256
-is `8c6a0835c9a1195662981b4d5d02ab4b2b6f39d529d0aed2b3108071c159a430`.
+**Cross Owakudani**, **Lake Ashi: Shrine, Wakasagi, and Shore**, and **Old
+Tokaido and the Checkpoint**. Together they contain `57` aligned blocks, six
+code-built maps, nineteen four-guide place and food figures, `6,439` Chinese
+reading tokens, `7,999` Japanese reading tokens, and a verified `103`-page B6
+review. The pocket SHA-256 is
+`8a0858f10ef16ec18b447404f68b9c06519dffd446dd7343b1b93d16be16614d`.
 The same file is hash-synced to Nutstore, and the Hakone desktop/mobile website
-preview passes from the same JSON with `7,242` ruby nodes. Chapter 6, **Old
-Tokaido and the Checkpoint**, is next; Hakone is not yet a complete destination.
+preview passes from the same JSON with `8,803` ruby nodes. Chapter 7, **One
+Night in an Onsen Ryokan**, is next; Hakone is not yet a complete destination.
 
 ## Source Boundary
 

@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-20",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-hakone-old-tokaido-stone",
+      "stem": "hakone-old-tokaido-stone",
+      "method": "generated-attraction-and-surface-figure",
+      "prompt": "data/images/hakone/hakone-old-tokaido-stone.prompt.md",
+      "selected_raw": "build/aginti/hakone-old-tokaido-stone-v1/hakone-old-tokaido-stone-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-old-tokaido-stone-v1/task_manifest.json",
+          "role": "Selected four-guide old-road surface scene"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch06-references/old-tokaido-town.jpg",
+          "page_url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001935/index.html",
+          "role": "Official town photograph for surviving stone-paving width, cedar woodland, and present trail character; cache remains ignored"
+        }
+      ],
+      "factual_limits": [
+        "The scene is a present-day editorial synthesis of an old-road stone section, not documentary evidence of one exact camera position or Edo-period travel",
+        "Surviving, restored, repaired, and maintained fabric must not be treated as one untouched surface",
+        "Wetness, moss, gradient, closures, and individual footing vary; the reader must use current signs and conditions"
+      ],
+      "reader_caption_policy": "Caption directs attention to the uneven wet surface and route choice without discussing the production method or claiming untouched Edo fabric.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch06-pocket-release/page-081.png",
+        "physical_page": 81,
+        "mobile_path": "build/qa/hakone-ch06-website-final/mobile-06-figure.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-hakone-checkpoint-reconstruction",
+      "stem": "hakone-checkpoint-reconstruction",
+      "method": "generated-attraction-figure",
+      "prompt": "data/images/hakone/hakone-checkpoint-reconstruction.prompt.md",
+      "selected_raw": "build/aginti/hakone-checkpoint-reconstruction-v3/hakone-checkpoint-reconstruction-v3.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-checkpoint-reconstruction-v1/task_manifest.json",
+          "role": "Rejected draft with an impossible Fuji-dominant backdrop and invented open tower"
+        },
+        {
+          "path": "build/aginti/hakone-checkpoint-reconstruction-v2/task_manifest.json",
+          "role": "Rejected draft with reader-visible invented robot branding"
+        },
+        {
+          "path": "build/aginti/hakone-checkpoint-reconstruction-v3/task_manifest.json",
+          "role": "Selected four-guide architecture-dominant checkpoint scene"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch06-references/checkpoint-top-02.jpg",
+          "page_url": "https://www.hakonesekisyo.jp/",
+          "role": "Official checkpoint photograph for the current gate form; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch06-references/checkpoint-top-03.jpg",
+          "page_url": "https://www.hakonesekisyo.jp/",
+          "role": "Official checkpoint photograph for the palisade and hillside watch-building relationship; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch06-references/checkpoint-top-15.jpg",
+          "page_url": "https://www.hakonesekisyo.jp/",
+          "role": "Official checkpoint photograph for the enclosed compound and Lake Ashi relationship; cache remains ignored"
+        }
+      ],
+      "factual_limits": [
+        "The visible buildings are the present evidence-based reconstruction, not untouched Edo-period originals",
+        "The scene combines official current site relationships without claiming one exact camera position",
+        "No historical inspection, guard, weapon, prisoner, or traveler is reconstructed in the image"
+      ],
+      "reader_caption_policy": "Caption identifies the site as a reconstruction and tells the reader to read gate, palisade, and hillside together.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch06-pocket-release/page-087.png",
+        "physical_page": 87,
+        "mobile_path": "build/qa/hakone-ch06-website-final/mobile-06-figure-02.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-hakone-amasake-chaya-rest",
+      "stem": "hakone-amasake-chaya-rest",
+      "method": "generated-food-and-place-figure",
+      "prompt": "data/images/hakone/hakone-amasake-chaya-rest.prompt.md",
+      "selected_raw": "build/aginti/hakone-amasake-chaya-rest-v1/hakone-amasake-chaya-rest-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-amasake-chaya-rest-v1/task_manifest.json",
+          "role": "Selected restrained four-guide tea-house rest scene"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch06-references/amasake-head_photo2.png",
+          "page_url": "https://amasake-chaya.com/",
+          "role": "Official current tea-house montage for thatch, timber interior, hearth, and roadside context; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch06-references/amasake-item-01.jpg",
+          "page_url": "https://amasake-chaya.com/",
+          "role": "Official current menu photograph for rice-koji amazake colour and cup scale; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch06-references/amasake-item-02.jpg",
+          "page_url": "https://amasake-chaya.com/",
+          "role": "Official current menu photograph for a simple chikara-mochi serving; cache remains ignored"
+        }
+      ],
+      "factual_limits": [
+        "The scene represents a quiet route rest and is not a promise of one table, light condition, presentation, price, or stock",
+        "The amazake is rice-koji-and-rice based, sugar-free, and non-alcoholic according to the current official shop page",
+        "The modest tray suggests current isobe and kinako-family chikara-mochi choices without replacing the live menu"
+      ],
+      "reader_caption_policy": "Caption explains the drink and small mochi stop without health claims, price promotion, or production notes.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch06-pocket-release/page-091.png",
+        "physical_page": 91,
+        "mobile_path": "build/qa/hakone-ch06-website-final/mobile-06-figure-03.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ],
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "Original-size scenes, delivery crops, compiled B6 pages, and full-width figures inside a 390 px mobile viewport passed visual review."
+  }
+}

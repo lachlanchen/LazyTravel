@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-old-tokaido-choice-map",
+  "snapshot_date": "2026-08-20",
+  "title": {
+    "zh": "旧东海道：走到哪里才算刚好",
+    "ja": "旧東海道：どこまで歩くか",
+    "en": "Old Tokaido: Choose Where to Stop"
+  },
+  "nodes": [
+    {
+      "id": "checkpoint",
+      "zh": "箱根关所",
+      "zh_reading": "Xiānggēn Guānsuǒ",
+      "ja": "箱根関所",
+      "ja_reading": "はこねせきしょ",
+      "en": "HAKONE CHECKPOINT"
+    },
+    {
+      "id": "cedars",
+      "zh": "杉木林荫道",
+      "zh_reading": "Shānmù Línyīndào",
+      "ja": "杉並木",
+      "ja_reading": "すぎなみき",
+      "en": "CEDAR AVENUE"
+    },
+    {
+      "id": "old_road_entrance",
+      "zh": "旧街道口",
+      "zh_reading": "Jiù Jiēdàokǒu",
+      "ja": "旧街道口",
+      "ja_reading": "きゅうかいどうぐち",
+      "en": "OLD ROAD ENTRANCE"
+    },
+    {
+      "id": "stone",
+      "zh": "旧道石板路",
+      "zh_reading": "Jiùdào Shíbǎnlù",
+      "ja": "旧街道石畳",
+      "ja_reading": "きゅうかいどう いしだたみ",
+      "en": "STONE-PAVED ROAD"
+    },
+    {
+      "id": "chaya",
+      "zh": "甘酒茶屋",
+      "zh_reading": "Gānjiǔ Cháwū",
+      "ja": "甘酒茶屋",
+      "ja_reading": "あまざけちゃや",
+      "en": "AMASAKE CHAYA"
+    },
+    {
+      "id": "hatajuku",
+      "zh": "畑宿",
+      "zh_reading": "Tiánsù",
+      "ja": "畑宿",
+      "ja_reading": "はたじゅく",
+      "en": "HATAJUKU"
+    }
+  ],
+  "choices": [
+    {
+      "id": "short",
+      "color": "jade",
+      "time": "60–90 MIN",
+      "zh": "不走粗石路：关所 + 杉树林荫道",
+      "ja": "石畳を避ける：関所 + 杉並木",
+      "en": "SKIP ROUGH STONE\nCHECKPOINT + CEDARS"
+    },
+    {
+      "id": "stone_section",
+      "color": "cobalt",
+      "time": "约 2H30 路线基准",
+      "ja_time": "約2時間30分のコース目安",
+      "en_time": "~2H30 ROUTE BENCHMARK",
+      "zh": "走一段完整石板路，在茶屋收尾",
+      "ja": "石畳を一続き歩き、茶屋で終える",
+      "en": "ONE STONE SECTION\nFINISH AT CHAYA"
+    }
+  ],
+  "closure": {
+    "zh": "畑宿山根段施工封闭",
+    "ja": "畑宿山根区間は工事通行止め",
+    "en": "HATAJUKU-YAMANE SECTION CLOSED",
+    "dates": "2026-08-17 → 2027-01-15 (PLANNED)",
+    "instruction_zh": "下段不走；恢复后仍先查路况",
+    "instruction_ja": "下部は歩かず、再開後も現況確認",
+    "instruction_en": "LOWER EXTENSION IS OUT\nRECHECK EVEN AFTER REOPENING"
+  },
+  "sources": [
+    {
+      "id": "HKN-OLD-TOKAIDO",
+      "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001935/index.html",
+      "checked_at": "2026-08-20",
+      "use": "Edo-period Tokaido context, surviving stone paving and cedar avenue, national historic-site status"
+    },
+    {
+      "id": "HKN-HISTORY-WALK-3",
+      "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001496/simple/MAP3_20231001.pdf",
+      "checked_at": "2026-08-20",
+      "use": "Official town relationship among checkpoint, cedar avenue, old-road paving, and Amasake Chaya"
+    },
+    {
+      "id": "HKN-GUIDE-OLD-ROAD",
+      "url": "https://www.hakone.or.jp/6422",
+      "checked_at": "2026-08-20",
+      "use": "Published checkpoint-to-Amasake-Chaya guided-course sequence and approximate two-hour-thirty-minute benchmark"
+    },
+    {
+      "id": "HKN-OLD-ROAD-CLOSURE-2026",
+      "url": "https://www.town.hakone.kanagawa.jp/www/contents/1747697722331/simple/kairan0727.pdf",
+      "checked_at": "2026-08-20",
+      "use": "Current Hatajuku-Yamane closure dates, affected paving and milestone, and Prefectural Road 732 detour"
+    },
+    {
+      "id": "HKN-K-BUS",
+      "url": "https://www.hakonenavi.jp/transportation/station/hakone-yumoto/?status=timetable",
+      "checked_at": "2026-08-20",
+      "use": "K old-road bus relationship through Hatajuku and Amasake Chaya; exact departures remain live information"
+    }
+  ],
+  "generalizations": [
+    "This is a route-choice diagram, not a geographic map; distances, curves, and gradients are not to scale",
+    "The roughly two-hour-thirty-minute value is the tourism association's guided-course benchmark from the checkpoint through the old road to Amasake Chaya, not a personal pace guarantee",
+    "The sixty-to-ninety-minute short option is a LazyTravel planning range that includes the checkpoint's published approximate forty-five-minute standard visit plus a modest cedar-avenue margin",
+    "Tea, checkpoint queues, photography, bus waiting, wet stone, and personal mobility can add substantial time",
+    "Bus symbols identify useful current route relationships, not guaranteed departures or an accessibility claim",
+    "The Hatajuku-Yamane closure was current on 2026-08-20 and is planned through 2027-01-15; reopening and later conditions require a fresh official check"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-20",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch06-pocket-release/page-083.png",
+        "physical_page": 83,
+        "sha256": "8375f22a2a57d1758ccce1d9dbf079e434d278ddcf434bd342851d9e5ae3d698"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch06-assets/mobile-map-contact.jpg",
+        "viewport_css_px": 390,
+        "pannable_width_css_px": 760,
+        "sha256": "4c05ad927ac5536c098f55b1e7e72e15e6d9350bbde70dfb15160c3cb7070cab"
+      }
+    },
+    "notes": [
+      "Full-size labels, the compiled B6 page, and both halves of the 760 px diagram inside a 390 px mobile viewport passed visual review."
+    ]
+  }
+}
