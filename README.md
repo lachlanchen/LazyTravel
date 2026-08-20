@@ -12,11 +12,12 @@ Public guide: <https://lachlanchen.github.io/LazyTravel/>
 
 ## Current Editorial Gate
 
-Xi'an is the completed and published first destination. Hakone is next at
-`japan/prefectures/kanagawa/hakone`; Lanzhou follows Hakone at
-`china/cities/lanzhou`. Only one destination may be in production at a time.
-Broader Gansu and Ningxia sources remain research context, not destination-book
-titles.
+Xi'an is the completed and published first destination. Hakone's complete
+book and synchronized website have passed local release review at
+`japan/prefectures/kanagawa/hakone`; public Pages verification is the current
+gate. Lanzhou follows at `china/cities/lanzhou`. Only one destination may be in
+production at a time. Broader Gansu and Ningxia sources remain research
+context, not destination-book titles.
 
 The series taxonomy is fixed:
 
@@ -49,19 +50,19 @@ The current pocket PDF SHA-256 is
 The same verified file is mirrored to the project Nutstore share.
 The synchronized 11-chapter website is published through GitHub Pages.
 
-Hakone has a separate locked 11-chapter route. Chapters 1-10 are accepted:
+Hakone has a separate locked 11-chapter route. All chapters are accepted:
 **Read the Mountain First**, **Odawara to Yumoto**, **Climb to Gora**,
 **Cross Owakudani**, **Lake Ashi: Shrine, Wakasagi, and Shore**, and **Old
 Tokaido and the Checkpoint**, followed by **One Night in an Onsen Ryokan** and
-**Eat Along the Route**, **Where to Stay**, and **One, Two, or Three Days**.
-Together they contain `97` aligned blocks, ten code-built maps, thirty-five
-four-guide figure placements, `12,205` Chinese reading tokens,
-`15,120` Japanese reading tokens, and a verified `193`-page B6 review. The
-pocket SHA-256 is
-`50154ec40d8cd77850e44f25ccf6c3cc376d114909f85d6d6d10c7b06dca7d30`.
-The same file is hash-synced to Nutstore, and the Hakone desktop/mobile website
-preview passes from the same JSON with `16,770` ruby nodes. Chapter 11, **One
-Stop Beyond Hakone**, is next; Hakone is not yet a complete destination.
+**Eat Along the Route**, **Where to Stay**, **One, Two, or Three Days**, and
+**Beyond Hakone: Choose One Stop**. Together they contain `107` aligned
+blocks, 11 code-built maps, 38 four-guide figure placements, `13,914` Chinese
+reading tokens, `17,164` Japanese reading tokens, and a verified `218`-page B6
+review. The pocket SHA-256 is
+`9d9e45fa6150e740d335c10da932bea96283f6c90fa01fb1a33d6b1fa596eaa0`.
+The same file is hash-synced to Nutstore. The two-destination website preserves
+Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
+`19,113` Hakone ruby nodes.
 
 ## Source Boundary
 
@@ -115,13 +116,14 @@ layer. The B6 pocket review PDF and its hash manifest are written to ignored
 Use `--skip-map` only when checking the book layout against the already
 committed map variants.
 
-## Build The Hakone Chapter Review
+## Build The Hakone Pocket And Series Website
 
 ```bash
 python3 scripts/build_hakone_review.py
-python3 scripts/build_website.py \
+python3 scripts/build_series_website.py
+python3 scripts/validate_site_parity.py \
   --book data/japan/prefectures/kanagawa/hakone/book.json \
-  --output build/site-hakone
+  --site site/japan/prefectures/kanagawa/hakone
 ```
 
 The Hakone builder discovers only the consecutive populated chapter prefix,
@@ -133,7 +135,7 @@ verified pocket PDF with:
 python3 scripts/build_hakone_review.py --skip-map --sync-nutstore
 ```
 
-Serve `build/site-hakone` on an unused temporary project-owned port and run
+Serve `site` on an unused temporary project-owned port and run
 `scripts/qa_destination_website.py` against that URL. Stop only that temporary
 server after QA; do not alter the existing Xi'an preview server or any shared
 GUI stack.
@@ -157,7 +159,8 @@ check can be repeated locally:
 
 ```bash
 python3 scripts/verify_deployed_site.py \
-  --url https://lachlanchen.github.io/LazyTravel/
+  --url https://lachlanchen.github.io/LazyTravel/japan/prefectures/kanagawa/hakone/ \
+  --book data/japan/prefectures/kanagawa/hakone/book.json
 ```
 
 ## Editorial Contract

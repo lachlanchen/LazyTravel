@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-odawara-castle-stop",
+  "created_at": "2026-08-21",
+  "method": "generated-current-castle-stop-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "14-be7af879-28f9-42d9-b52e-4c97451d156b",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "bytes": 5801598,
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "bytes": 1067274,
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "bytes": 1294694,
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "bytes": 1139075,
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch11-references/odawara-keep-main.jpg",
+      "sha256": "3c65d3535d2015557b50141976bdbc84aeb34a965628a9dbb88ecc3feafa1ab3",
+      "bytes": 85678,
+      "page_url": "https://odawaracastle.com/castlepark/tennsyukaku/",
+      "role": "Official current keep reference for the reconstructed roof stack, attached structure, stone base, and public approach; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch11-references/odawara-keep-second.jpg",
+      "sha256": "884f93f2ba1fa81db2206077e753a615e1a1ea0f1b99d78e6a53ed8557def6d6",
+      "bytes": 126984,
+      "page_url": "https://odawaracastle.com/castlepark/tennsyukaku/",
+      "role": "Official current keep reference for facade proportions and roof details; cache remains ignored"
+    }
+  ],
+  "fact_sources": [
+    {
+      "id": "ODA-CASTLE-HISTORY",
+      "url": "https://odawaracastle.com/history/",
+      "checked_at": "2026-08-21",
+      "role": "Official institutional history of the castle, Hojo enclosure, dismantling, and reconstruction"
+    },
+    {
+      "id": "ODA-CASTLE-KEEP",
+      "url": "https://odawaracastle.com/castlepark/tennsyukaku/",
+      "checked_at": "2026-08-21",
+      "role": "Official description of the present reconstructed keep"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-odawara-castle-stop.prompt.md",
+    "sha256": "faf2b77e00cf3c5c49709fc72b7f05c23de7779ee46459846b643ae06410aa2b"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-odawara-castle-stop-v1/task_manifest.json",
+      "sha256": "97e79f077ea4860af82d69261cdce46f0bf5b340a55b625ff395cbb2769c0318",
+      "bytes": 807,
+      "role": "Rejected draft whose generic roof stack did not match the present keep closely enough"
+    },
+    {
+      "path": "build/aginti/hakone-odawara-castle-stop-v2/task_manifest.json",
+      "sha256": "bb96caa61b3e781a1ac50bcd2c774b5184e413fe37da7e2b98f36df6f4564969",
+      "bytes": 808,
+      "role": "Rejected near-final draft with reader-visible scrambled lettering on the robot chest"
+    },
+    {
+      "path": "build/aginti/hakone-odawara-castle-stop-v3/task_manifest.json",
+      "sha256": "d046e1f71cc4c4d41e04250391db9b3d21db45a8e6a3f3388b43ceb359d1a02c",
+      "bytes": 808,
+      "role": "Selected exactly-four-guide, current-keep-dominant scene with a clean unmarked robot panel"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-odawara-castle-stop-v3/hakone-odawara-castle-stop-v3.png",
+    "sha256": "6ab05d82dd1d9eef40ac56569174f13b8791c5e660f645805dfe317543fe07d0",
+    "bytes": 16820889,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow EXIF transpose and sRGB conversion; uncropped full-frame Lanczos resize; metadata-free JPEG quality 92 for print and 88 for web",
+  "output": {
+    "path": "assets/images/hakone/hakone-odawara-castle-stop.jpg",
+    "sha256": "ee4d0cba7244260de134778f023cfd34e1a74992815527378d338aa34626adba",
+    "bytes": 2165543,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/hakone/hakone-odawara-castle-stop-web.jpg",
+      "sha256": "7d298ac81b6fe72a72c0aa41de224078e1a623b8ec32ebd253eee7a2011acd37",
+      "bytes": 713304,
+      "width": 1920,
+      "height": 1288
+    }
+  },
+  "factual_limits": [
+    "The image depicts the present reconstructed keep and is not evidence of the Sengoku-period building or a historical event",
+    "The current keep is only one visible point within the much larger Hojo defensive landscape",
+    "The image does not establish current opening, admission, access, crowd, luggage, or walking conditions"
+  ],
+  "reader_caption_policy": "Caption identifies the present keep as a reconstruction and uses the figure for recognition, without discussing image production.",
+  "rights": "Original LazyTravel composition; external location and character references are hash-pinned and not redistributed",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_recognition": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-21",
+    "notes": "Selected sources, compiled B6 pages, and 390 px website figures passed four-guide continuity, destination recognition, text, print, and mobile review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch11-layout-review-v3/pages/page-185.png",
+        "sha256": "d997a0164853f9b4fb25e3b581584a00cdb92a0c64ae3d7928d5c3e58008d3e9",
+        "bytes": 446423,
+        "physical_page": 185
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch11-website-review-v2/mobile-11-figure.png",
+        "sha256": "8ab1f869b301265773d65a4d36d436f3e5a864ff1b4edb592c64e41ef51be47a",
+        "bytes": 768233,
+        "width": 780,
+        "height": 1290,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

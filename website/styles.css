@@ -117,11 +117,30 @@ a {
   line-height: 1.2;
 }
 
-.destination-mark strong {
-  overflow: hidden;
+.destination-picker {
+  display: block;
   margin-top: 4px;
-  font-size: 14px;
-  text-overflow: ellipsis;
+}
+
+.destination-picker select {
+  width: min(100%, 370px);
+  height: 30px;
+  border: 1px solid #aebdca;
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
 }
 
@@ -165,6 +184,7 @@ a {
 .segmented button:focus-visible,
 .map-tools button:focus-visible,
 .utility-link:focus-visible,
+.destination-picker select:focus-visible,
 .ruby-switch:has(input:focus-visible) {
   outline: 3px solid rgba(23, 105, 224, 0.32);
   outline-offset: 2px;
@@ -963,7 +983,7 @@ html[data-mode="parallel"] .block-category [data-lang]:not([data-lang="en"]) {
     grid-template-columns: auto minmax(0, 1fr);
   }
 
-  .destination-mark strong {
+  .destination-picker select {
     font-size: 12px;
   }
 

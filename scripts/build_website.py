@@ -17,6 +17,7 @@ DEFAULT_OUTPUT = ROOT / "site"
 WEBSITE_SOURCE = ROOT / "website"
 STATIC_FILES = ("index.html", "styles.css", "app.js")
 PAYLOAD_PATH = Path("data/destination.json")
+CATALOG_PATH = Path("data/destinations.json")
 
 
 def sha256(path: Path) -> str:
@@ -74,6 +75,37 @@ def reading_counts(document: dict[str, Any]) -> dict[str, int]:
     return counts
 
 
+def destination_names(document: dict[str, Any]) -> dict[str, str]:
+    titles = document["book"]["titles"]
+    suffixes = {
+        "zh": "旅行手册",
+        "ja": "旅の手引き",
+        "en": " Pocket Travel Guide",
+    }
+    return {
+        language: title[: -len(suffixes[language])]
+        if title.endswith(suffixes[language])
+        else title
+        for language, title in titles.items()
+    }
+
+
+def single_destination_catalog(document: dict[str, Any]) -> dict[str, Any]:
+    book = document["book"]
+    return {
+        "schema_version": 1,
+        "current": book["id"],
+        "destinations": [
+            {
+                "id": book["id"],
+                "series_path": book["series_path"],
+                "names": destination_names(document),
+                "href": "./",
+            }
+        ],
+    }
+
+
 def validate_output(
     book_path: Path,
     output: Path,
@@ -88,6 +120,15 @@ def validate_output(
         raise RuntimeError("website payload differs from the canonical public projection")
     if not build_meta or build_meta.get("source_sha256") != sha256(book_path):
         raise RuntimeError("website payload does not identify the current canonical JSON")
+
+    catalog = json.loads((output / CATALOG_PATH).read_text(encoding="utf-8"))
+    destination_ids = {
+        destination.get("id") for destination in catalog.get("destinations", [])
+    }
+    if source["book"]["id"] not in destination_ids:
+        raise RuntimeError("website destination catalog omits the current book")
+    if catalog.get("current") != source["book"]["id"]:
+        raise RuntimeError("website destination catalog identifies the wrong current book")
 
     for chapter in source["chapters"]:
         for block in chapter["blocks"]:
@@ -127,6 +168,7 @@ def validate_output(
                 )
 
     required = [output / filename for filename in STATIC_FILES]
+    required.append(output / CATALOG_PATH)
     required.extend(output / path.relative_to(ROOT) for path in asset_paths(source))
     missing = [str(path) for path in required if not path.is_file()]
     if missing:
@@ -168,6 +210,7 @@ def build(
     output: Path,
     *,
     review_preview: bool = False,
+    catalog: dict[str, Any] | None = None,
 ) -> dict[str, int]:
     document = json.loads(book_path.read_text(encoding="utf-8"))
     if output.exists():
@@ -200,6 +243,11 @@ def build(
     data_dir.mkdir(parents=True)
     (output / PAYLOAD_PATH).write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    destination_catalog = catalog or single_destination_catalog(document)
+    (output / CATALOG_PATH).write_text(
+        json.dumps(destination_catalog, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 

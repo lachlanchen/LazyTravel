@@ -15,7 +15,14 @@ import urllib.request
 from pathlib import Path, PurePosixPath
 from typing import Any
 
-from build_website import DEFAULT_BOOK, PAYLOAD_PATH, public_projection, reading_counts, sha256
+from build_website import (
+    CATALOG_PATH,
+    DEFAULT_BOOK,
+    PAYLOAD_PATH,
+    public_projection,
+    reading_counts,
+    sha256,
+)
 
 REQUIRED_SHELL_MARKERS = (
     'id="chapter-select"',
@@ -29,6 +36,7 @@ REQUIRED_FILES = {
     "app.js",
     "styles.css",
     str(PAYLOAD_PATH),
+    str(CATALOG_PATH),
 }
 
 

@@ -74,20 +74,19 @@ maps, fifteen figures, and SHA-256
 `ae2872703174ea523b051ccba21e34eeaa2182aba323bc68a23e5cf558af83c5`.
 The synchronized website is publicly deployed at
 `https://lachlanchen.github.io/LazyTravel/`; all 74 published files match the
-manifest and canonical JSON. Xi'an is complete. Hakone is next at
-`japan/prefectures/kanagawa/hakone`, followed by Lanzhou.
+manifest and canonical JSON. Xi'an is complete.
 
-Hakone has exactly 11 chapters and advances in order. Chapters 1 through 10 are
-accepted internal milestones. Together they provide `97` aligned blocks,
-`12,205` Chinese reading tokens, `15,120` Japanese reading tokens, ten maps,
-and thirty-five destination, transport, museum, food, landscape, lodging, and
-itinerary figure placements using all four guides. The reproducible B6 review
-has `193` pages and SHA-256
-`50154ec40d8cd77850e44f25ccf6c3cc376d114909f85d6d6d10c7b06dca7d30`.
-Desktop and `390 px` website QA pass from the same JSON with `16,770` ruby
-nodes, and the exact pocket PDF is hash-synced to Nutstore. This does not
-complete Hakone; Chapter 11, `One Stop Beyond Hakone`, is the only next
-writing gate.
+Hakone also has exactly 11 chapters, and all 11 are accepted. Together they
+provide `107` aligned blocks, `13,914` Chinese reading tokens, `17,164`
+Japanese reading tokens, 11 maps, and 38 destination, transport, museum, food,
+landscape, lodging, itinerary, and continuation figure placements. The
+reproducible B6 review has `218` pages and SHA-256
+`9d9e45fa6150e740d335c10da932bea96283f6c90fa01fb1a33d6b1fa596eaa0`.
+Desktop and `390 px` website QA pass from the same JSON with `19,113` ruby
+nodes, and the exact pocket PDF is hash-synced to Nutstore. The series website
+build preserves Xi'an at `china/cities/xian/` and Hakone at
+`japan/prefectures/kanagawa/hakone/`. Public Pages verification is the only
+remaining Hakone release gate; Lanzhou remains gated until it passes.
 
 Chapter 9 established the lodging method used by later books: choose a
 district from arrival, dinner, the exact entrance, the next morning, and a
@@ -100,3 +99,8 @@ and one usable exit per day. Weather or service disruption swaps a whole day
 or removes a branch; it does not trigger a denser replacement list. The
 portrait itinerary map is deliberately pannable on mobile and passed B6 plus
 left, centre, and right `390 px` inspection.
+
+Chapter 11 established the continuation method: choose from the booked onward
+train and the mountain exit already reached, then add at most one local stop.
+Odawara, Mishima, and Gotemba are alternatives, not a three-town extension.
+The bag and reserved train remain fixed; the local stop is removed first.

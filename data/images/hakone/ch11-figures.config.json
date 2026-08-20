@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-21",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-hakone-odawara-castle-stop",
+      "stem": "hakone-odawara-castle-stop",
+      "method": "generated-current-castle-stop-figure",
+      "prompt": "data/images/hakone/hakone-odawara-castle-stop.prompt.md",
+      "selected_raw": "build/aginti/hakone-odawara-castle-stop-v3/hakone-odawara-castle-stop-v3.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-odawara-castle-stop-v1/task_manifest.json",
+          "role": "Rejected draft whose generic roof stack did not match the present keep closely enough"
+        },
+        {
+          "path": "build/aginti/hakone-odawara-castle-stop-v2/task_manifest.json",
+          "role": "Rejected near-final draft with reader-visible scrambled lettering on the robot chest"
+        },
+        {
+          "path": "build/aginti/hakone-odawara-castle-stop-v3/task_manifest.json",
+          "role": "Selected exactly-four-guide, current-keep-dominant scene with a clean unmarked robot panel"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch11-references/odawara-keep-main.jpg",
+          "page_url": "https://odawaracastle.com/castlepark/tennsyukaku/",
+          "role": "Official current keep reference for the reconstructed roof stack, attached structure, stone base, and public approach; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch11-references/odawara-keep-second.jpg",
+          "page_url": "https://odawaracastle.com/castlepark/tennsyukaku/",
+          "role": "Official current keep reference for facade proportions and roof details; cache remains ignored"
+        }
+      ],
+      "fact_sources": [
+        {
+          "id": "ODA-CASTLE-HISTORY",
+          "url": "https://odawaracastle.com/history/",
+          "checked_at": "2026-08-21",
+          "role": "Official institutional history of the castle, Hojo enclosure, dismantling, and reconstruction"
+        },
+        {
+          "id": "ODA-CASTLE-KEEP",
+          "url": "https://odawaracastle.com/castlepark/tennsyukaku/",
+          "checked_at": "2026-08-21",
+          "role": "Official description of the present reconstructed keep"
+        }
+      ],
+      "factual_limits": [
+        "The image depicts the present reconstructed keep and is not evidence of the Sengoku-period building or a historical event",
+        "The current keep is only one visible point within the much larger Hojo defensive landscape",
+        "The image does not establish current opening, admission, access, crowd, luggage, or walking conditions"
+      ],
+      "reader_caption_policy": "Caption identifies the present keep as a reconstruction and uses the figure for recognition, without discussing image production.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch11-layout-review-v3/pages/page-185.png",
+        "physical_page": 185,
+        "mobile_path": "build/qa/hakone-ch11-website-review-v2/mobile-11-figure.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-hakone-mishima-taisha-stop",
+      "stem": "hakone-mishima-taisha-stop",
+      "method": "generated-current-shrine-stop-figure",
+      "prompt": "data/images/hakone/hakone-mishima-taisha-stop.prompt.md",
+      "selected_raw": "build/aginti/hakone-mishima-taisha-stop-v1/hakone-mishima-taisha-stop-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-mishima-taisha-stop-v1/task_manifest.json",
+          "role": "Selected exactly-four-guide, destination-dominant view of the present Mishima Taisha sanctuary complex"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch11-references/mishima-taisha-main.png",
+          "page_url": "https://www.mishimataisha.or.jp/shrine",
+          "role": "Official current sanctuary reference for dark timber, green copper roofs, carved eaves, and forecourt; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch11-references/mishima-taisha-gate.jpg",
+          "page_url": "https://www.mishimataisha.or.jp/shrine",
+          "role": "Official current precinct reference for the gate and processional approach; cache remains ignored"
+        }
+      ],
+      "fact_sources": [
+        {
+          "id": "MSM-TAISHA-HISTORY",
+          "url": "https://www.mishimataisha.or.jp/shrine",
+          "checked_at": "2026-08-21",
+          "role": "Official institutional history and route context"
+        },
+        {
+          "id": "MSM-TAISHA-CULTURAL-PROPERTY",
+          "url": "https://www.mishimataisha.or.jp/important_/%E4%B8%89%E5%B6%8B%E5%A4%A7%E7%A4%BE%E6%9C%AC%E6%AE%BF%E3%80%81%E5%B9%A3%E6%AE%BF%E4%B8%A6%E3%81%B3%E3%81%AB%E6%8B%9D%E6%AE%BF%EF%BC%88%E5%BB%BA%E9%80%A0%E7%89%A9%EF%BC%89",
+          "checked_at": "2026-08-21",
+          "role": "Official cultural-property description of the present nineteenth-century building complex"
+        }
+      ],
+      "factual_limits": [
+        "The image is a present-day recognition view and does not depict the shrine's unknown founding moment or Minamoto no Yoritomo's lifetime",
+        "The scene does not establish ritual access, opening, ceremony, crowd, or route conditions",
+        "Architecture is used for recognition; religious practice and historical claims remain in sourced prose"
+      ],
+      "reader_caption_policy": "Caption connects the present timber complex to the nineteenth-century rebuild and keeps route history separate from shrine tradition.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch11-layout-review-v3/pages/page-190.png",
+        "physical_page": 190,
+        "mobile_path": "build/qa/hakone-ch11-website-review-v2/mobile-11-figure-02.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-hakone-gotemba-niihashi-stop",
+      "stem": "hakone-gotemba-niihashi-stop",
+      "method": "generated-current-station-side-shrine-figure",
+      "prompt": "data/images/hakone/hakone-gotemba-niihashi-stop.prompt.md",
+      "selected_raw": "build/aginti/hakone-gotemba-niihashi-stop-v3/hakone-gotemba-niihashi-stop-v3.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-gotemba-niihashi-stop-v1/task_manifest.json",
+          "role": "Rejected draft that enlarged the modest shrine into an inaccurate ornate complex and added pseudo-text"
+        },
+        {
+          "path": "build/aginti/hakone-gotemba-niihashi-stop-v2/task_manifest.json",
+          "role": "Rejected near-final draft with accurate architecture but reader-visible lettering and robot branding"
+        },
+        {
+          "path": "build/aginti/hakone-gotemba-niihashi-stop-v3/task_manifest.json",
+          "role": "Selected exactly-four-guide view preserving the modest one-storey shrine and clean unmarked surfaces"
+        }
+      ],
+      "official_references": [
+        {
+          "path": "build/research/hakone-ch11-references/gotemba-niihashi-main.jpeg",
+          "page_url": "https://gotemba.jp/information/1387/",
+          "role": "Official city-tourism reference for the current one-storey facade, low roof, guardian figures, and approach; cache remains ignored"
+        },
+        {
+          "path": "build/research/hakone-ch11-references/gotemba-niihashi-second.jpg",
+          "page_url": "https://gotemba.jp/information/1387/",
+          "role": "Official city-tourism reference for the small spring outlet and surrounding moss and foliage; cache remains ignored"
+        }
+      ],
+      "fact_sources": [
+        {
+          "id": "GOT-NIIHASHI-SENGEN",
+          "url": "https://gotemba.jp/information/1387/",
+          "checked_at": "2026-08-21",
+          "role": "Official city-tourism description of the station-side shrine, Fuji trail-opening association, and spring"
+        }
+      ],
+      "factual_limits": [
+        "The image is a present-day recognition view and does not establish ceremony, office, water, access, or walking conditions",
+        "No Mount Fuji view is shown or promised",
+        "Nobody drinks from the spring, and the image does not certify water quality"
+      ],
+      "reader_caption_policy": "Caption presents the shrine as a small optional pause on the Gotemba branch without a Fuji-view, water-quality, or access promise.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch11-layout-review-v3/pages/page-197.png",
+        "physical_page": 197,
+        "mobile_path": "build/qa/hakone-ch11-website-review-v2/mobile-11-figure-03.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ],
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_recognition": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-21",
+    "notes": "Selected sources, compiled B6 pages, and 390 px website figures passed four-guide continuity, destination recognition, text, print, and mobile review."
+  }
+}

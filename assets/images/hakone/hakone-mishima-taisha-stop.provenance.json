@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-mishima-taisha-stop",
+  "created_at": "2026-08-21",
+  "method": "generated-current-shrine-stop-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "1-5ecd4a3e-bb1a-4281-872b-3568efa8138b",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "bytes": 5801598,
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "bytes": 1067274,
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "bytes": 1294694,
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "bytes": 1139075,
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch11-references/mishima-taisha-main.png",
+      "sha256": "39b1ec81e6433d3d3e221b81338ab0f9e2c4917a6dd7864cc507f69f3487fc0a",
+      "bytes": 317298,
+      "page_url": "https://www.mishimataisha.or.jp/shrine",
+      "role": "Official current sanctuary reference for dark timber, green copper roofs, carved eaves, and forecourt; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch11-references/mishima-taisha-gate.jpg",
+      "sha256": "3b24deffbf1090fd92ae8887fbe91c87b01e2530e380764f67c722eee67fba3a",
+      "bytes": 1422326,
+      "page_url": "https://www.mishimataisha.or.jp/shrine",
+      "role": "Official current precinct reference for the gate and processional approach; cache remains ignored"
+    }
+  ],
+  "fact_sources": [
+    {
+      "id": "MSM-TAISHA-HISTORY",
+      "url": "https://www.mishimataisha.or.jp/shrine",
+      "checked_at": "2026-08-21",
+      "role": "Official institutional history and route context"
+    },
+    {
+      "id": "MSM-TAISHA-CULTURAL-PROPERTY",
+      "url": "https://www.mishimataisha.or.jp/important_/%E4%B8%89%E5%B6%8B%E5%A4%A7%E7%A4%BE%E6%9C%AC%E6%AE%BF%E3%80%81%E5%B9%A3%E6%AE%BF%E4%B8%A6%E3%81%B3%E3%81%AB%E6%8B%9D%E6%AE%BF%EF%BC%88%E5%BB%BA%E9%80%A0%E7%89%A9%EF%BC%89",
+      "checked_at": "2026-08-21",
+      "role": "Official cultural-property description of the present nineteenth-century building complex"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-mishima-taisha-stop.prompt.md",
+    "sha256": "162e8ac7109df6aff51fd31ccd6d4b5a3f1b0763bdceb6cfccd88233b35e407c"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-mishima-taisha-stop-v1/task_manifest.json",
+      "sha256": "b50b2ea5d6f4f357c3f7162710357ea754ad038c23666c7d7666132e82f784f8",
+      "bytes": 807,
+      "role": "Selected exactly-four-guide, destination-dominant view of the present Mishima Taisha sanctuary complex"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-mishima-taisha-stop-v1/hakone-mishima-taisha-stop-v1.png",
+    "sha256": "4c362de8efa688088eedd1761f1b41d7afa2cda0c129f7860167f7ee8f107fac",
+    "bytes": 17856652,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow EXIF transpose and sRGB conversion; uncropped full-frame Lanczos resize; metadata-free JPEG quality 92 for print and 88 for web",
+  "output": {
+    "path": "assets/images/hakone/hakone-mishima-taisha-stop.jpg",
+    "sha256": "4f3c70cc2f480eef51189ff86532b004ffb2f7c35109f632a18741a8ef20b5dc",
+    "bytes": 2295951,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/hakone/hakone-mishima-taisha-stop-web.jpg",
+      "sha256": "702ac47ba3184072f04d935ab77f73a9bcfd401049e8d0f4fffaa648bb3306a7",
+      "bytes": 748296,
+      "width": 1920,
+      "height": 1288
+    }
+  },
+  "factual_limits": [
+    "The image is a present-day recognition view and does not depict the shrine's unknown founding moment or Minamoto no Yoritomo's lifetime",
+    "The scene does not establish ritual access, opening, ceremony, crowd, or route conditions",
+    "Architecture is used for recognition; religious practice and historical claims remain in sourced prose"
+  ],
+  "reader_caption_policy": "Caption connects the present timber complex to the nineteenth-century rebuild and keeps route history separate from shrine tradition.",
+  "rights": "Original LazyTravel composition; external location and character references are hash-pinned and not redistributed",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_recognition": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-21",
+    "notes": "Selected sources, compiled B6 pages, and 390 px website figures passed four-guide continuity, destination recognition, text, print, and mobile review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch11-layout-review-v3/pages/page-190.png",
+        "sha256": "599cbaf03dfd840c3fa88ba1d0e529aff85f7da81e3c37062c1c69122b99aea1",
+        "bytes": 461320,
+        "physical_page": 190
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch11-website-review-v2/mobile-11-figure-02.png",
+        "sha256": "01c77db201f6fc77709cc964d3042243e53b6a2ff6112be5411f7d7129e6b95e",
+        "bytes": 794765,
+        "width": 780,
+        "height": 1338,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

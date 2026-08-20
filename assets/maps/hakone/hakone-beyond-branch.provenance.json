@@ -1,0 +1,109 @@
+{
+  "asset_id": "asset-hakone-beyond-branch-map",
+  "command": "python3 scripts/build_hakone_beyond_branch_map.py",
+  "config": "data/maps/hakone/hakone-beyond-branch.config.json",
+  "config_sha256": "3fadc78f1665ef74053afd247640451a182620fe3977a4181776e1f280921c5d",
+  "created_at": "2026-08-21",
+  "declared_generalizations": [
+    "The diagram is schematic and not to geographic scale.",
+    "Each branch is an alternative based on the actual exit and onward reservation, not a combined itinerary.",
+    "Attraction, luggage, platform, route, timetable, fare, pass, weather, and walking conditions require a current check.",
+    "The stop is always removed before a booked onward train is put at risk."
+  ],
+  "files": {
+    "hakone-beyond-branch.pdf": {
+      "bytes": 121569,
+      "sha256": "b540d1910032ee2652017f6742adf8f07ed90f73b7b4d5da181c5a8a69cc666b"
+    },
+    "hakone-beyond-branch.png": {
+      "bytes": 1019222,
+      "sha256": "ff816880cb139fa676afbba0afd24d1628fc84847b20ab23e98083e935716692"
+    },
+    "hakone-beyond-branch.svg": {
+      "bytes": 50143,
+      "sha256": "48014adda9766b76cf10ce2836b66c4609a4480014420867cc1c8725f7b9f50c"
+    }
+  },
+  "method": "schematic-hakone-beyond-branch-render",
+  "rights": "Map design © LazyTravel; route facts derive from the listed official sources.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "checked_at": "2026-08-21",
+      "id": "HKN-NAVI-ODAWARA-STATION",
+      "url": "https://www.hakonenavi.jp/international/en/station/odawara",
+      "use": "Odawara interchange and Hakone eastern exit"
+    },
+    {
+      "checked_at": "2026-08-21",
+      "id": "ODA-CASTLE-ACCESS",
+      "url": "https://odawaracastle.com/access/",
+      "use": "Current castle approach and station relationship"
+    },
+    {
+      "checked_at": "2026-08-21",
+      "id": "HKN-MOTOHAKONE-STATION",
+      "url": "https://www.hakonenavi.jp/international/en/station/motohakone",
+      "use": "Mishima bus branch from Moto-Hakone"
+    },
+    {
+      "checked_at": "2026-08-21",
+      "id": "JRCT-MISHIMA-STATION",
+      "url": "https://railway.jr-central.co.jp/station-guide/shinkansen/mishima/",
+      "use": "Mishima mainline rail role"
+    },
+    {
+      "checked_at": "2026-08-21",
+      "id": "HKN-SENGOKU-STATION",
+      "url": "https://www.hakonenavi.jp/international/en/station/sengoku",
+      "use": "Gotemba branch from the northern Hakone corridor"
+    },
+    {
+      "checked_at": "2026-08-21",
+      "id": "HKN-GOTEMBA-STATION",
+      "url": "https://www.hakonenavi.jp/international/en/station/gotemba",
+      "use": "Gotemba bus interchange and onward directions"
+    },
+    {
+      "checked_at": "2026-08-21",
+      "id": "JRCT-GOTEMBA-STATION",
+      "url": "https://railway.jr-central.co.jp/station-guide/shizuoka/gotemba/",
+      "use": "Gotemba Line station role"
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      2448,
+      3456
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_page": "build/qa/hakone/ch11-layout-review-v3/pages/page-182.png",
+      "mobile_center": "build/qa/hakone-ch11-website-review-v2/mobile-11-map-center.png",
+      "mobile_contact": "build/qa/hakone-ch11-website-review-v2/mobile-11-map-contact.jpg",
+      "mobile_left": "build/qa/hakone-ch11-website-review-v2/mobile-11-map-left.png",
+      "mobile_right": "build/qa/hakone-ch11-website-review-v2/mobile-11-map-right.png",
+      "pan_offsets_css_px": [
+        0,
+        185,
+        370
+      ],
+      "physical_page": 182,
+      "source_render": "assets/maps/hakone/hakone-beyond-branch.png",
+      "viewport_css_px": 390
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "Source render and compiled B6 page passed collision, hierarchy, and print-legibility review.",
+      "The 760 px mobile stage passed left, centre, and right inspection inside a 390 px viewport."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-21"
+  }
+}

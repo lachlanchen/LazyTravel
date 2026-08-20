@@ -7,18 +7,20 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
 
 - Work only in `/home/lachlan/ProjectsLFS/LazyTravel`.
 - Xi'an at `china/cities/xian` is complete and publicly published.
-- Hakone is the only next production destination. It belongs at
-  `japan/prefectures/kanagawa/hakone`.
-- Lanzhou belongs to `china/cities/lanzhou` and stays gated until the complete
-  Hakone book and website have been reviewed and reproducibly built.
+- Hakone at `japan/prefectures/kanagawa/hakone` has all 11 chapters accepted,
+  a reproducible B6 pocket book, and a synchronized two-destination website.
+- GitHub Pages deployment verification is Hakone's only remaining release
+  gate. Lanzhou at `china/cities/lanzhou` stays gated until that public check
+  passes.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
   a local editorial problem.
 - The Hakone book also has exactly 11 chapters, locked in
   `books/japan/prefectures/kanagawa/hakone/editorial/outline.md`. Populate and
   accept them in order; a later chapter never bypasses an unfinished earlier
   chapter.
-- Hakone Chapters 1 through 10 are accepted milestones. Chapter 11, the
-  one-stop continuation beyond Hakone, is the only next production gate.
+- All 11 Hakone chapters have passed editorial, reading, PDF-page, responsive
+  website, provenance, and Nutstore review. Do not reopen a settled chapter
+  unless a factual, language, layout, or build failure is demonstrated.
 - All 11 Xi'an chapters have passed editorial, reading, PDF-page, public
   website, Nutstore, and GitHub publication review. Do not reopen a settled
   Xi'an chapter unless a factual, language, layout, or build failure is

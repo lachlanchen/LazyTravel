@@ -63,7 +63,7 @@ crossing rather than a catalogue of sights:
 8. Eat Along the Route: Black Eggs, Amazake, and the Dinner Clock
 9. Where to Stay: Choose a District Before a Property
 10. One, Two, or Three Days: Leave Room for Weather
-11. One Stop Beyond Hakone: Odawara, Mishima, or Gotemba
+11. Beyond Hakone: Choose One Stop
 
 Together they cover terrain, volcanic and road history, current attractions,
 transport, food, onsen culture, hotels, practical itineraries, and one nearby
@@ -162,11 +162,12 @@ and mobile gates. The public guide is available at
 <https://lachlanchen.github.io/LazyTravel/>. Hakone is the next active book;
 Lanzhou remains queued behind it.
 
-Hakone has a locked 11-chapter structure. Chapters 1 through 10 have passed the
-editorial, reading, PDF-page, website, Nutstore, and GitHub milestone gates.
-The current pocket review has `193` B6 pages and SHA-256
-`50154ec40d8cd77850e44f25ccf6c3cc376d114909f85d6d6d10c7b06dca7d30`.
-It contains `97` aligned blocks, ten maps, thirty-five figure placements, and
-the website renders `16,770` reviewed ruby nodes from the same JSON. Hakone
-remains incomplete; Chapter 11, **One Stop Beyond Hakone**, is the only next
-production gate.
+Hakone's locked 11-chapter structure is complete. The final pocket review has
+`218` B6 pages and SHA-256
+`9d9e45fa6150e740d335c10da932bea96283f6c90fa01fb1a33d6b1fa596eaa0`.
+It contains `107` aligned blocks, 11 maps, 38 figure placements, `13,914`
+Chinese reading tokens, and `17,164` Japanese reading tokens. The synchronized
+website renders `19,113` ruby nodes, preserves Xi'an at its stable series path,
+and passes desktop/mobile review for both destinations. The pocket is
+hash-synced to Nutstore. Public GitHub Pages verification is the only remaining
+Hakone gate; Lanzhou stays queued until that check passes.

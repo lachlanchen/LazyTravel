@@ -20,8 +20,8 @@ The book has exactly 11 chapters. The count is locked because each chapter has
 a distinct travel decision; merging any two would overload a pocket chapter,
 while splitting them would create thin filler.
 
-Milestone status on `2026-08-21`: Chapters 1-10 are reviewed and reproducibly
-built. Chapter 11 is the only next drafting target.
+Milestone status on `2026-08-21`: all 11 chapters are reviewed and
+reproducibly built as one complete B6 pocket book and synchronized website.
 
 ## Chapter Spine
 
@@ -120,9 +120,9 @@ built. Chapter 11 is the only next drafting target.
     has a fog, rain, wind, or transport-disruption fallback rather than an
     idealized chain of attractions.
 
-11. **箱根之外的一站：小田原、三岛或御殿场**<br>
-    **箱根の先にもう一駅：小田原、三島、御殿場**<br>
-    **One Stop Beyond Hakone: Odawara, Mishima, or Gotemba**
+11. **箱根之外：只选一站**<br>
+    **箱根の先：一駅だけ選ぶ**<br>
+    **Beyond Hakone: Choose One Stop**
 
     Choose one continuation according to the onward journey: Odawara for the
     castle and eastern gateway, Mishima for a westbound exit, or Gotemba for

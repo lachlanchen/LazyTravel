@@ -1,6 +1,7 @@
 "use strict";
 
 const DATA_URL = "data/destination.json";
+const CATALOG_URL = "data/destinations.json";
 
 const categoryLabels = {
   history: { zh: "历史", ja: "歴史", en: "History" },
@@ -76,6 +77,10 @@ const assetLabels = {
   "asset-hakone-room-access-choice": "ROOM CHECK · VERIFY THE ACTUAL ROOM",
   "asset-hakone-itinerary-days-map": "ONE, TWO, OR THREE DAYS · ONE ANCHOR EACH",
   "asset-hakone-pola-rain-arrival": "POLA MUSEUM · RAINY ARRIVAL",
+  "asset-hakone-beyond-branch-map": "ODAWARA · MISHIMA · GOTEMBA · CHOOSE ONE",
+  "asset-hakone-odawara-castle-stop": "ODAWARA CASTLE · PRESENT KEEP",
+  "asset-hakone-mishima-taisha-stop": "MISHIMA TAISHA · PRESENT SANCTUARY",
+  "asset-hakone-gotemba-niihashi-stop": "NIIHASHI SENGEN · STATION-SIDE STOP",
 };
 const state = {
   document: null,
@@ -155,7 +160,7 @@ function renderBookChrome(documentData) {
   const editionDate = book.edition.match(/\d{4}-\d{2}-\d{2}$/)?.[0];
 
   document.getElementById("destination-series").textContent = label;
-  document.getElementById("destination-names").textContent = destinationLine;
+  document.getElementById("destination-select").options[0].textContent = destinationLine;
   document.getElementById("rail-series").textContent = label;
   document.getElementById("rail-title").textContent = names.zh;
   document.getElementById("edition-short").textContent =
@@ -170,6 +175,19 @@ function renderBookChrome(documentData) {
   );
   document.getElementById("site-description").content =
     `LazyTravel ${names.en}: an aligned Chinese, Japanese, and English pocket guide.`;
+}
+
+function renderDestinationPicker(catalog, currentId) {
+  const select = document.getElementById("destination-select");
+  select.replaceChildren();
+  for (const destination of catalog.destinations) {
+    const option = document.createElement("option");
+    option.value = destination.href;
+    option.textContent =
+      `${destination.names.zh} · ${destination.names.ja} · ${destination.names.en.toUpperCase()}`;
+    option.selected = destination.id === currentId;
+    select.append(option);
+  }
 }
 
 function renderLanguageSet(values, className) {
@@ -592,6 +610,10 @@ function bindControls() {
     activateChapter(event.target.value, { updateUrl: true, scroll: true });
   });
 
+  document.getElementById("destination-select").addEventListener("change", (event) => {
+    window.location.assign(event.target.value);
+  });
+
   window.addEventListener("popstate", () => {
     if (state.document) activateChapter(chapterIdFromLocation(state.document));
   });
@@ -601,12 +623,20 @@ async function initialize() {
   bindControls();
   setMode(storedPreference("lazytravel-language", "parallel"));
   try {
-    const response = await fetch(DATA_URL, { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const documentData = await response.json();
+    const [response, catalogResponse] = await Promise.all([
+      fetch(DATA_URL, { cache: "no-store" }),
+      fetch(CATALOG_URL, { cache: "no-store" }),
+    ]);
+    if (!response.ok) throw new Error(`book HTTP ${response.status}`);
+    if (!catalogResponse.ok) throw new Error(`catalog HTTP ${catalogResponse.status}`);
+    const [documentData, catalog] = await Promise.all([
+      response.json(),
+      catalogResponse.json(),
+    ]);
     state.document = documentData;
     document.getElementById("github-link").href = documentData.book.branding.repository;
     renderBookChrome(documentData);
+    renderDestinationPicker(catalog, documentData.book.id);
     activateChapter(chapterIdFromLocation(documentData));
     setMode(state.mode);
   } catch (error) {

@@ -49,6 +49,40 @@ def check_map_controls(page: Page, label: str, *, require_scroll: bool) -> dict[
     return dimensions
 
 
+def screenshot_map_positions(page: Page, output: Path, stem: str) -> list[int]:
+    viewport = page.locator(".map-viewport").first
+    figure = page.locator(".map-figure").first
+    dimensions = viewport.evaluate(
+        "node => ({client: node.clientWidth, scroll: node.scrollWidth})"
+    )
+    maximum = max(0, dimensions["scroll"] - dimensions["client"])
+    positions = [0, round(maximum / 2), maximum]
+    for name, position in zip(("left", "center", "right"), positions, strict=True):
+        viewport.evaluate(
+            "(node, left) => node.scrollTo({top: 0, left, behavior: 'auto'})",
+            position,
+        )
+        page.wait_for_timeout(80)
+        screenshot_full_element(page, figure, output / f"{stem}-map-{name}.png")
+    viewport.evaluate("node => node.scrollTo({top: 0, left: 0, behavior: 'auto'})")
+    return positions
+
+
+def reset_capture_position(page: Page) -> None:
+    page.evaluate(
+        """() => {
+          if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+          document.documentElement.style.scrollBehavior = 'auto';
+          window.scrollTo({top: 0, left: 0, behavior: 'auto'});
+          document.documentElement.scrollTop = 0;
+          document.body.scrollTop = 0;
+        }"""
+    )
+    page.wait_for_timeout(100)
+    if page.evaluate("window.scrollY") > 1:
+        raise RuntimeError("browser did not return to the page top before capture")
+
+
 def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
     chrome = shutil.which("google-chrome") or shutil.which("google-chrome-stable")
     if not chrome:
@@ -111,9 +145,17 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                             desktop, f"desktop {chapter_id}", require_scroll=False
                         )
                     )
+                reset_capture_position(desktop)
+                desktop.screenshot(
+                    path=output / f"desktop-{chapter['order']:02d}-viewport.png"
+                )
+                capture_style = desktop.add_style_tag(
+                    content=".app-header{position:static!important}.skip-link{display:none!important}"
+                )
                 desktop.screenshot(
                     path=output / f"desktop-{chapter['order']:02d}.png", full_page=True
                 )
+                capture_style.evaluate("node => node.remove()")
             desktop_context.close()
 
             mobile_context = browser.new_context(
@@ -152,10 +194,16 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 if index == 1:
                     check_ruby_toggle(mobile, "mobile")
                 if counts[chapter_id]["maps"]:
+                    map_viewport = check_map_controls(
+                        mobile, f"mobile {chapter_id}", require_scroll=True
+                    )
+                    map_viewport["pan_offsets_css_px"] = screenshot_map_positions(
+                        mobile,
+                        output,
+                        f"mobile-{chapter['order']:02d}",
+                    )
                     report["viewports"][f"mobile_{chapter_id}"]["map_viewport"] = (
-                        check_map_controls(
-                            mobile, f"mobile {chapter_id}", require_scroll=True
-                        )
+                        map_viewport
                     )
                     screenshot_full_element(
                         mobile,
@@ -174,9 +222,17 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                         output
                         / f"mobile-{chapter['order']:02d}-callout-{callout_index + 1:02d}.png",
                     )
+                reset_capture_position(mobile)
+                mobile.screenshot(
+                    path=output / f"mobile-{chapter['order']:02d}-viewport.png"
+                )
+                capture_style = mobile.add_style_tag(
+                    content=".app-header{position:static!important}.skip-link{display:none!important}"
+                )
                 mobile.screenshot(
                     path=output / f"mobile-{chapter['order']:02d}.png", full_page=True
                 )
+                capture_style.evaluate("node => node.remove()")
             mobile_context.close()
         finally:
             browser.close()

@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-beyond-branch-map",
+  "snapshot_date": "2026-08-21",
+  "title": {
+    "zh": "离开箱根：只选一个续程站",
+    "ja": "箱根の先：一つだけ選ぶ",
+    "en": "LEAVING HAKONE: CHOOSE ONE ONWARD STOP"
+  },
+  "gate": {
+    "zh": "先看下一张票，再看人已在山的哪一侧",
+    "zh_reading": "Xiān kàn xià yì zhāng piào, zài kàn rén yǐ zài shān de nǎ yí cè",
+    "ja": "次の予約を先に見て、いま山のどちら側にいるかで選ぶ",
+    "ja_reading": "つぎ の よやく を さき に みて、いま やま の どちらがわ に いるか で えらぶ",
+    "en": "NEXT RESERVATION FIRST; THEN USE YOUR ACTUAL SIDE OF THE MOUNTAIN"
+  },
+  "columns": [
+    {"zh": "离山处", "ja": "下山口", "en": "EXIT"},
+    {"zh": "只停一处", "ja": "一か所", "en": "ONE STOP"},
+    {"zh": "后续铁路", "ja": "次の鉄道", "en": "ONWARD RAIL"},
+    {"zh": "适合", "ja": "使う時", "en": "USE WHEN"}
+  ],
+  "branches": [
+    {
+      "color": "vermilion",
+      "destination": {
+        "zh": "小田原",
+        "zh_reading": "Xiǎotiányuán",
+        "ja": "小田原",
+        "ja_reading": "おだわら",
+        "en": "ODAWARA"
+      },
+      "nodes": [
+        {
+          "zh": "汤本／东侧",
+          "zh_reading": "Tāngběn / dōngcè",
+          "ja": "湯本・東側",
+          "ja_reading": "ゆもと・ひがしがわ",
+          "en": "YUMOTO / EAST"
+        },
+        {
+          "zh": "小田原城",
+          "zh_reading": "Xiǎotiányuánchéng",
+          "ja": "小田原城",
+          "ja_reading": "おだわらじょう",
+          "en": "CASTLE"
+        },
+        {
+          "zh": "东海道／新干线",
+          "zh_reading": "Dōnghǎidào / xīngànxiàn",
+          "ja": "東海道・新幹線",
+          "ja_reading": "とうかいどう・しんかんせん",
+          "en": "TOKAIDO / SHINKANSEN"
+        },
+        {
+          "zh": "向东或已东下",
+          "zh_reading": "Xiàng dōng huò yǐ dōngxià",
+          "ja": "東へ・東側下山",
+          "ja_reading": "ひがし へ・ひがしがわ げざん",
+          "en": "EAST / EAST EXIT"
+        }
+      ],
+      "constraint": {
+        "zh": "行李无处放或时间紧：只换车",
+        "zh_reading": "Xíngli wú chù fàng huò shíjiān jǐn: zhǐ huànchē",
+        "ja": "荷物を預けられない・時間不足：乗換だけ",
+        "ja_reading": "にもつ を あずけられない・じかんぶそく：のりかえ だけ",
+        "en": "NO BAG PLAN OR TIGHT TIME: TRANSFER ONLY"
+      }
+    },
+    {
+      "color": "jade",
+      "destination": {
+        "zh": "三岛",
+        "zh_reading": "Sāndǎo",
+        "ja": "三島",
+        "ja_reading": "みしま",
+        "en": "MISHIMA"
+      },
+      "nodes": [
+        {
+          "zh": "元箱根／南岸",
+          "zh_reading": "Yuánxiānggēn / nán'àn",
+          "ja": "元箱根・南岸",
+          "ja_reading": "もとはこね・なんがん",
+          "en": "MOTO-HAKONE / SOUTH"
+        },
+        {
+          "zh": "大社或源兵卫川",
+          "zh_reading": "Dàshè huò Yuánbīngwèichuān",
+          "ja": "大社か源兵衛川",
+          "ja_reading": "たいしゃ か げんべえがわ",
+          "en": "TAISHA OR RIVER"
+        },
+        {
+          "zh": "东海道／新干线",
+          "zh_reading": "Dōnghǎidào / xīngànxiàn",
+          "ja": "東海道・新幹線",
+          "ja_reading": "とうかいどう・しんかんせん",
+          "en": "TOKAIDO / SHINKANSEN"
+        },
+        {
+          "zh": "向西",
+          "zh_reading": "Xiàng xī",
+          "ja": "西へ",
+          "ja_reading": "にし へ",
+          "en": "WESTBOUND"
+        }
+      ],
+      "constraint": {
+        "zh": "巴士晚到或河道湿滑：删掉步行",
+        "zh_reading": "Bāshì wǎndào huò hédào shīhuá: shāndiào bùxíng",
+        "ja": "バス遅延・水辺が滑る：徒歩を外す",
+        "ja_reading": "バスちえん・みずべ が すべる：とほ を はずす",
+        "en": "LATE BUS OR SLIPPERY WATERFRONT: CUT THE WALK"
+      }
+    },
+    {
+      "color": "cobalt",
+      "destination": {
+        "zh": "御殿场",
+        "zh_reading": "Yùdiànchǎng",
+        "ja": "御殿場",
+        "ja_reading": "ごてんば",
+        "en": "GOTEMBA"
+      },
+      "nodes": [
+        {
+          "zh": "桃源台／仙石原",
+          "zh_reading": "Táoyuántái / Xiānshíyuán",
+          "ja": "桃源台・仙石原",
+          "ja_reading": "とうげんだい・せんごくはら",
+          "en": "TOGENDAI / SENGOKU"
+        },
+        {
+          "zh": "新桥浅间神社",
+          "zh_reading": "Xīnqiáo Qiǎnjiān Shénshè",
+          "ja": "新橋浅間神社",
+          "ja_reading": "にいはしせんげんじんじゃ",
+          "en": "NIIHASHI SENGEN"
+        },
+        {
+          "zh": "御殿场线／巴士",
+          "zh_reading": "Yùdiànchǎngxiàn / bāshì",
+          "ja": "御殿場線・バス",
+          "ja_reading": "ごてんばせん・バス",
+          "en": "GOTEMBA LINE / BUS"
+        },
+        {
+          "zh": "富士山侧／北口",
+          "zh_reading": "Fùshìshān cè / běikǒu",
+          "ja": "富士側・北口",
+          "ja_reading": "ふじがわ・きたぐち",
+          "en": "FUJI SIDE / NORTH"
+        }
+      ],
+      "constraint": {
+        "zh": "云遮富士山也不停下来等",
+        "zh_reading": "Yún zhē Fùshìshān yě bù tíngxiàlái děng",
+        "ja": "富士山が雲の中でも待たない",
+        "ja_reading": "ふじさん が くも の なか でも またない",
+        "en": "DO NOT WAIT FOR FUJI TO EMERGE FROM CLOUD"
+      }
+    }
+  ],
+  "final_rule": {
+    "zh": "固定顺序：预约列车 → 行李 → 一处停留 → 吃饭｜任何一项不稳，先删停留",
+    "zh_reading": "Gùdìng shùnxù: yùyuē lièchē → xíngli → yí chù tíngliú → chīfàn | rènhé yí xiàng bù wěn, xiān shān tíngliú",
+    "ja": "守る順：予約列車 → 荷物 → 一か所 → 食事｜一つでも不確かなら、立ち寄りを外す",
+    "ja_reading": "まもる じゅん：よやくれっしゃ → にもつ → いっかしょ → しょくじ | ひとつ でも ふたしか なら、たちより を はずす",
+    "en": "KEEP TRAIN → BAG → ONE STOP → MEAL  |  IF ONE LINK IS UNCERTAIN, CUT THE STOP"
+  },
+  "footer": "续程选择图・旅の続き選択図・ONWARD-CHOICE DIAGRAM · SCHEMATIC, NOT A TIMETABLE",
+  "sources": [
+    {"id": "HKN-NAVI-ODAWARA-STATION", "url": "https://www.hakonenavi.jp/international/en/station/odawara", "checked_at": "2026-08-21", "use": "Odawara interchange and Hakone eastern exit"},
+    {"id": "ODA-CASTLE-ACCESS", "url": "https://odawaracastle.com/access/", "checked_at": "2026-08-21", "use": "Current castle approach and station relationship"},
+    {"id": "HKN-MOTOHAKONE-STATION", "url": "https://www.hakonenavi.jp/international/en/station/motohakone", "checked_at": "2026-08-21", "use": "Mishima bus branch from Moto-Hakone"},
+    {"id": "JRCT-MISHIMA-STATION", "url": "https://railway.jr-central.co.jp/station-guide/shinkansen/mishima/", "checked_at": "2026-08-21", "use": "Mishima mainline rail role"},
+    {"id": "HKN-SENGOKU-STATION", "url": "https://www.hakonenavi.jp/international/en/station/sengoku", "checked_at": "2026-08-21", "use": "Gotemba branch from the northern Hakone corridor"},
+    {"id": "HKN-GOTEMBA-STATION", "url": "https://www.hakonenavi.jp/international/en/station/gotemba", "checked_at": "2026-08-21", "use": "Gotemba bus interchange and onward directions"},
+    {"id": "JRCT-GOTEMBA-STATION", "url": "https://railway.jr-central.co.jp/station-guide/shizuoka/gotemba/", "checked_at": "2026-08-21", "use": "Gotemba Line station role"}
+  ],
+  "generalizations": [
+    "The diagram is schematic and not to geographic scale.",
+    "Each branch is an alternative based on the actual exit and onward reservation, not a combined itinerary.",
+    "Attraction, luggage, platform, route, timetable, fare, pass, weather, and walking conditions require a current check.",
+    "The stop is always removed before a booked onward train is put at risk."
+  ],
+  "visual_qa": {
+    "approved": true,
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "reviewed_at": "2026-08-21",
+    "evidence": {
+      "source_render": "assets/maps/hakone/hakone-beyond-branch.png",
+      "b6_page": "build/qa/hakone/ch11-layout-review-v3/pages/page-182.png",
+      "physical_page": 182,
+      "mobile_left": "build/qa/hakone-ch11-website-review-v2/mobile-11-map-left.png",
+      "mobile_center": "build/qa/hakone-ch11-website-review-v2/mobile-11-map-center.png",
+      "mobile_right": "build/qa/hakone-ch11-website-review-v2/mobile-11-map-right.png",
+      "mobile_contact": "build/qa/hakone-ch11-website-review-v2/mobile-11-map-contact.jpg",
+      "viewport_css_px": 390,
+      "pan_offsets_css_px": [
+        0,
+        185,
+        370
+      ]
+    },
+    "notes": [
+      "Source render and compiled B6 page passed collision, hierarchy, and print-legibility review.",
+      "The 760 px mobile stage passed left, centre, and right inspection inside a 390 px viewport."
+    ]
+  }
+}

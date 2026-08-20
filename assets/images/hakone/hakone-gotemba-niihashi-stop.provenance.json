@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-gotemba-niihashi-stop",
+  "created_at": "2026-08-21",
+  "method": "generated-current-station-side-shrine-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "1-e4e64d24-d079-4501-91fb-05c1108f04a0",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "bytes": 5801598,
+      "role": "Aya-chan identity and navy sailor outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "bytes": 1067274,
+      "role": "Lala Xia identity and light travel outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "bytes": 1294694,
+      "role": "Sasa-kun identity and panda-hood outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "bytes": 1139075,
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch11-references/gotemba-niihashi-main.jpeg",
+      "sha256": "90a1e3b33e2597d384a0c6e820b41588f7db35e2f0013b4bf7b6cbf14764e77e",
+      "bytes": 647840,
+      "page_url": "https://gotemba.jp/information/1387/",
+      "role": "Official city-tourism reference for the current one-storey facade, low roof, guardian figures, and approach; cache remains ignored"
+    },
+    {
+      "path": "build/research/hakone-ch11-references/gotemba-niihashi-second.jpg",
+      "sha256": "135f5b0ed2c0e59f6782e729963a906692b7256071cc46a727e8f4ad0b5c1d88",
+      "bytes": 1303446,
+      "page_url": "https://gotemba.jp/information/1387/",
+      "role": "Official city-tourism reference for the small spring outlet and surrounding moss and foliage; cache remains ignored"
+    }
+  ],
+  "fact_sources": [
+    {
+      "id": "GOT-NIIHASHI-SENGEN",
+      "url": "https://gotemba.jp/information/1387/",
+      "checked_at": "2026-08-21",
+      "role": "Official city-tourism description of the station-side shrine, Fuji trail-opening association, and spring"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-gotemba-niihashi-stop.prompt.md",
+    "sha256": "87b903da27a9970a049fe06edfab08421f8490e37c6fe8bf37a5680c5ac5bf13"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-gotemba-niihashi-stop-v1/task_manifest.json",
+      "sha256": "58fb81bc185b6de3028d56ba66b81560ae97bcac8814f0d2e86d80a878e78d3f",
+      "bytes": 818,
+      "role": "Rejected draft that enlarged the modest shrine into an inaccurate ornate complex and added pseudo-text"
+    },
+    {
+      "path": "build/aginti/hakone-gotemba-niihashi-stop-v2/task_manifest.json",
+      "sha256": "e9b7a4465264fa57b724d9b568ef17290ca918ec91dd6ea327aa85bb5ce936ee",
+      "bytes": 817,
+      "role": "Rejected near-final draft with accurate architecture but reader-visible lettering and robot branding"
+    },
+    {
+      "path": "build/aginti/hakone-gotemba-niihashi-stop-v3/task_manifest.json",
+      "sha256": "413c00bbca81408734c0ec5bf7c1ba2ac51e25f05e23808c57c8002a33186af3",
+      "bytes": 817,
+      "role": "Selected exactly-four-guide view preserving the modest one-storey shrine and clean unmarked surfaces"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-gotemba-niihashi-stop-v3/hakone-gotemba-niihashi-stop-v3.png",
+    "sha256": "ad293e392071323971d2f7f061bf3a57a868a023d36cde3bc64d06b9309e0fd1",
+    "bytes": 19783207,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow EXIF transpose and sRGB conversion; uncropped full-frame Lanczos resize; metadata-free JPEG quality 92 for print and 88 for web",
+  "output": {
+    "path": "assets/images/hakone/hakone-gotemba-niihashi-stop.jpg",
+    "sha256": "94ff77355f3f20175426e5143426fc52b8ebe62a3a1868c08e11b4929fa58b22",
+    "bytes": 2539834,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/hakone/hakone-gotemba-niihashi-stop-web.jpg",
+      "sha256": "c06adf6f67508a9980e27bf7eb30a3c62c36a8fd418e576135fad7b9045e7e37",
+      "bytes": 839504,
+      "width": 1920,
+      "height": 1288
+    }
+  },
+  "factual_limits": [
+    "The image is a present-day recognition view and does not establish ceremony, office, water, access, or walking conditions",
+    "No Mount Fuji view is shown or promised",
+    "Nobody drinks from the spring, and the image does not certify water quality"
+  ],
+  "reader_caption_policy": "Caption presents the shrine as a small optional pause on the Gotemba branch without a Fuji-view, water-quality, or access promise.",
+  "rights": "Original LazyTravel composition; external location and character references are hash-pinned and not redistributed",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_recognition": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-21",
+    "notes": "Selected sources, compiled B6 pages, and 390 px website figures passed four-guide continuity, destination recognition, text, print, and mobile review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch11-layout-review-v3/pages/page-197.png",
+        "sha256": "66888e1e2f793f0d3d9f85f991fb9df872b6ec58b388ae8df19ada87368426d6",
+        "bytes": 506644,
+        "physical_page": 197
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch11-website-review-v2/mobile-11-figure-03.png",
+        "sha256": "a374220a966d32bb91cb18fc133d572ca895f6515347c40cf60142e9f6eef5dd",
+        "bytes": 901370,
+        "width": 780,
+        "height": 1290,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}
