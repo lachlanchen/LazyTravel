@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-river-valley-orientation",
+  "created_at": "2026-08-21",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "11-229446b9-c185-476f-b0e6-86280717160c",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/visual-references/baitashan-panorama-chinadaily-2015.jpg",
+      "sha256": "e4b9452487c4ab519f173688d9c3d5ba6ca44e7dfeb5b1fe7b9310e03bd4b5a2",
+      "page_url": "https://www.chinadaily.com.cn/opinion/2015-03/06/content_19736425_2.htm",
+      "role": "Unredistributed visual reference for the White Pagoda Hill overlook relationship and central bridge"
+    },
+    {
+      "path": "build/research/lanzhou/visual-references/river-valley-gansudaily-2024.jpg",
+      "sha256": "762105f743374a6c597308575f475d91c14ed2afa35359d707e02be06d733907",
+      "page_url": "https://gansu.gansudaily.com.cn/system/2024/08/22/031051129.shtml",
+      "role": "Unredistributed visual reference for the river corridor, city scale, and close ridges"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-river-valley-orientation.prompt.md",
+    "sha256": "898b5f8b7aa4b7b3fd5c73926a05e21a8ccdc2d92c97879118f57850b14c40cc"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch01-orientation/task_manifest.json",
+      "sha256": "f8da155bdd0804f6ee5ac9f0388b3a5f9c7a171d3cce193190e53a8890d43618",
+      "role": "Rejected draft with rear-facing guides and no recognizable central bridge"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch01-orientation-v2/task_manifest.json",
+      "sha256": "e838f6387b6f0f0e2f2302531a59d4fad7301778d88fec9561a05d13cfa5e5c3",
+      "role": "Rejected identity correction with false suspension geometry and stray robot lettering"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch01-orientation-v3/task_manifest.json",
+      "sha256": "88f96015759c60ebb8451728c61cb577a45ebb4319ad1b5580f5bf9b5fbebe02",
+      "role": "Selected bridge-geometry and clean-surface correction"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch01-orientation-v3/lanzhou-river-valley-orientation-v3.png",
+    "sha256": "8900bdf75c570142e68a0058f73736002a86201a3c907364ca5943c075ad97d5",
+    "bytes": 17582397,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "ImageMagick sRGB conversion, centred 16:9 resize, metadata strip, print JPEG quality 92, web JPEG quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-river-valley-orientation.jpg",
+    "sha256": "84df8500e01b3f9a3a329a2278c577141200f67d1d75b53133ab3248f44f5859",
+    "bytes": 2085920,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-river-valley-orientation-web.jpg",
+      "sha256": "aafa8646f4de250128a517443ad63f2346925a97213b06c02a172cddf8a758d2",
+      "bytes": 555683,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The composition explains the river-valley, close-ridge, and central-crossing relationship rather than documenting one exact camera position",
+    "The repeated five-span through-truss form is checked for landmark recognition, but the image is not engineering evidence",
+    "River colour, skyline clarity, boats, vegetation, and viewpoint access vary and are not promised",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "Captions explain what the view contributes to route orientation and do not discuss production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "five_span_truss_recognizable": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "evidence": {
+      "b6": {
+        "path": "build/research/lanzhou/cover-layout/final-pages/page-06.png",
+        "physical_page": 6,
+        "sha256": "51abb5e54678ee05639d0f9a88fdb176fbaa94c70af5670ef2ca0c842fd4a302"
+      },
+      "mobile": {
+        "path": "build/qa/site/lanzhou-ch01-final/mobile-01-figure.png",
+        "viewport_css_px": 390,
+        "sha256": "bc22ac8b8475b28cddbf647e763a2e35a86e5951d576809d14393ce7fedea2a3"
+      }
+    },
+    "notes": "Original-size, delivery-crop, compiled B6, and 390 px responsive-site inspection passed; all four guides remain distinct and the river valley and five-span bridge remain dominant."
+  }
+}

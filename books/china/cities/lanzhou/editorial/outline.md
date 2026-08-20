@@ -22,8 +22,8 @@ The book has exactly 11 chapters. The count is locked because each chapter
 answers a different travel decision. Combining them would hide route choices;
 splitting them further would create short chapters with repeated context.
 
-Milestone status on `2026-08-21`: outline and research gate locked. Chapter 1
-is the only active writing gate.
+Milestone status on `2026-08-21`: Chapter 1 is accepted in the B6 pocket and
+synchronized website. Chapter 2 is the only active production gate.
 
 ## Chapter Spine
 
@@ -61,16 +61,18 @@ is the only active writing gate.
    changes in movement. Omit a date or detail when independent sources do not
    agree.
 
-4. **过一座桥，看两岸：中山桥与黄河边**<br>
-   **橋を一つ渡り、両岸を見る：中山橋と黄河沿い**<br>
-   **Cross One Bridge, Read Both Banks: Zhongshan Bridge and the Riverfront**
+4. **过一座桥，看两岸：黄河铁桥、白塔山与黄河边**<br>
+   **橋を一つ渡り、両岸を見る：黄河鉄橋・白塔山と黄河沿い**<br>
+   **Cross One Bridge, Read Both Banks: Yellow River Iron Bridge and White Pagoda Hill**
 
-   Build one realistic central walk around Zhongshan Bridge, the south-bank
-   city center, the north-bank approach to White Pagoda Hill, and one chosen
-   riverfront segment. Explain what the floating-bridge and iron-bridge history
-   changes in the view. Waterwheel sites and longer promenades are options,
-   not compulsory extensions. River conditions, boat operation, and temporary
-   access restrictions require same-day checks.
+   Build one realistic central walk from the south bank across the Yellow River
+   Iron Bridge (Zhongshan Bridge) to White Pagoda Hill Park, then choose one
+   riverfront segment. The bridge is the route decision; the park is the
+   north-bank viewpoint, not a disconnected extra stop. Explain what the
+   floating-bridge and iron-bridge history changes in the view. Waterwheel sites
+   and longer promenades are options, not compulsory extensions. River
+   conditions, boat operation, and temporary access restrictions require
+   same-day checks.
 
 5. **在甘肃省博物馆读一条路**<br>
    **甘粛省博物館で一本の道を読む**<br>
@@ -143,10 +145,12 @@ is the only active writing gate.
     **Around Lanzhou: Choose One Nearby Day**
 
     Compare one culture-and-landscape day at Bingling Temple and Liujiaxia,
-    one active landscape day at Xinglong Mountain, and a shorter geology-led
-    option at Lanzhou Ink Danxia only after current access has been verified.
-    They are alternatives, not a chain. Boat operation, weather closures,
-    road transfers, reservations, and return margins are checked on official
+    where the Yellow River-Tao River confluence viewing platform is considered
+    only when its road transfer fits the same-day route; one active landscape
+    day at Xinglong Mountain; and a shorter geology-led option at Lanzhou Ink
+    Danxia after current access has been verified. They are alternatives, not
+    a chain. Boat operation, viewing-platform shuttles, weather closures, road
+    transfers, reservations, and return margins are checked on official
     channels immediately before travel. Places that need an overnight stay
     belong to a later Gansu route, not this chapter.
 

@@ -12,9 +12,9 @@ no private session history.
 4. Run `python3 scripts/verify_sources.py`. External archives and visual
    references must remain at their hash-pinned read-only paths.
 5. Continue only Lanzhou at `china/cities/lanzhou`. Its source ledger, main
-   travel-guide line, exactly 11 chapters, and canonical JSON shell are locked.
-   Chapter 1 is the only active gate. Do not reopen Xi'an or Hakone without a
-   demonstrated failure.
+   travel-guide line, and exactly 11 chapters are locked. Chapter 1 is accepted;
+   Chapter 2 is the only active gate. Do not reopen Xi'an, Hakone, or Lanzhou
+   Chapter 1 without a demonstrated failure.
 6. Run focused tests while editing, then the full validation/build sequence:
 
 ```bash
@@ -33,21 +33,22 @@ noVNC/Xvfb/x11vnc/websockify processes untouched.
 
 7. Review every new or changed B6 page and desktop/mobile screenshot. Record the
    review under `books/china/cities/lanzhou/editorial/`.
-8. Sync only a verified Lanzhou pocket PDF through the destination build script
-   once that script and a reviewed chapter build exist. Never sync the empty
-   research shell. Verify the Nutstore and `dist` SHA-256 values match.
+8. Sync only a verified Lanzhou pocket PDF through the destination build script.
+   Verify the Nutstore and `dist` SHA-256 values match after every accepted
+   chapter.
 9. Update the milestone in `README.md`, make one scoped commit, and push it to
    `origin/main`.
 
-For a complete-book public website milestone, also run:
+For a public Lanzhou chapter milestone, also run after deployment:
 
 ```bash
 python3 scripts/verify_deployed_site.py \
-  --url https://lachlanchen.github.io/LazyTravel/japan/prefectures/kanagawa/hakone/ \
-  --book data/japan/prefectures/kanagawa/hakone/book.json
+  --url https://lachlanchen.github.io/LazyTravel/china/cities/lanzhou/ \
+  --book data/china/cities/lanzhou/book.json
 ```
 
-Current gate: Xi'an and Hakone are complete and publicly published. Hakone's
-`218`-page pocket PDF is hash-synced to Nutstore, and Pages run `32418706768`
-verified both destination manifests. Lanzhou is now the only active book;
-never work on two destination books at once.
+Current gate: Xi'an and Hakone are complete and publicly published. Lanzhou
+Chapter 1 is accepted as a `16`-page pocket and synchronized website milestone;
+its Nutstore SHA-256 is
+`f632eb45b34c8b07b552efdb97eaa95c8f10c04c86aeacc2b033b7d41cf64ea1`. Chapter 2
+is the only active production gate. Never work on two destination books at once.

@@ -127,6 +127,17 @@ def cover_tex(
     preserve_xian_layout = book.get("id") == "xian"
     brand_break = "" if preserve_xian_layout else r"\par"
     brand_gap = 13 if preserve_xian_layout else 10
+    if book.get("id") == "lanzhou":
+        cover_footer = (
+            rf"{{\displayfont\fontsize{{6.2}}{{8.4}}\selectfont "
+            rf"{tex_escape(branding['studio'])}\par "
+            rf"{tex_escape(repository_label)}\par}}"
+        )
+    else:
+        cover_footer = (
+            rf"{{\displayfont\fontsize{{7}}{{10}}\selectfont "
+            rf"{tex_escape(branding['studio'])} · {tex_escape(repository_label)}\par}}"
+        )
     gate = (
         rf"{{\displayfont\fontsize{{7}}{{9}}\selectfont\color{{LTMuted}}"
         rf"B6 POCKET REVIEW · CHAPTERS {chapters[0]['order']:02d}--"
@@ -172,8 +183,7 @@ def cover_tex(
   \vfill
   {bottom_gate}
   \vspace{{3mm}}
-  {{\displayfont\fontsize{{7}}{{10}}\selectfont
-    {tex_escape(branding['studio'])} · {tex_escape(repository_label)}\par}}
+  {cover_footer}
 \end{{titlepage}}
 \cleardoublepage
 """

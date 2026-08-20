@@ -78,7 +78,7 @@ valley, then connects the city to the next Gansu leg:
 1. Read the Valley First: River, Hills, and East-West
 2. Arrive at the Right Gate: Airport, West Station, or Lanzhou Station
 3. How a Crossing Became a Provincial Capital
-4. Cross One Bridge, Read Both Banks: Zhongshan Bridge and the Riverfront
+4. Cross One Bridge, Read Both Banks: Yellow River Iron Bridge and White Pagoda Hill
 5. Read One Route Through Gansu Provincial Museum
 6. Eat by Lanzhou's Clock: A Morning Bowl and Afternoon Snacks
 7. Choose One Height: White Pagoda Hill, Lanshan, or Wuquan Mountain
@@ -194,6 +194,14 @@ and passes desktop/mobile review for both destinations. The pocket is
 hash-synced to Nutstore. GitHub Pages run `32418706768` verified every deployed
 Xi'an and Hakone file against its canonical JSON and manifest. Hakone is
 complete; Lanzhou at `china/cities/lanzhou` is the only active destination.
-Its read-only source catalog, research ledger, locked 11-chapter outline, and
-schema-valid canonical JSON shell are established. Chapter 1 is the only active
-writing gate; the empty research shell is not yet added to the public website.
+
+Lanzhou Chapter 1, **Read the Valley First**, is accepted as the first public
+chapter milestone. Its eight aligned blocks carry `643` reviewed Chinese
+reading tokens, `803` reviewed Japanese reading tokens, five source entries, one
+four-guide attraction figure, and one code-built orientation map. The
+reproducible `16`-page B6 pocket has SHA-256
+`f632eb45b34c8b07b552efdb97eaa95c8f10c04c86aeacc2b033b7d41cf64ea1` and is
+hash-synced to Nutstore. The synchronized series build exposes the same chapter
+at `china/cities/lanzhou/` and passes desktop, `390 px`, ruby, citation, figure,
+and pannable-map QA. Chapter 2, **Arrive at the Right Gate**, is now the sole
+production gate; Lanzhou as a whole is not complete.

@@ -10,18 +10,19 @@ Repository: <https://github.com/lachlanchen/LazyTravel>
 
 Public guide: <https://lachlanchen.github.io/LazyTravel/>
 
-Stable destinations:
+Published guide paths:
 
 - Xi'an: <https://lachlanchen.github.io/LazyTravel/china/cities/xian/>
 - Hakone: <https://lachlanchen.github.io/LazyTravel/japan/prefectures/kanagawa/hakone/>
+- Lanzhou: <https://lachlanchen.github.io/LazyTravel/china/cities/lanzhou/>
 
 ## Current Editorial Gate
 
-Xi'an and Hakone are complete and publicly published. Pages run `32418706768`
-verified both stable destination paths against their canonical JSON and
-manifests. Lanzhou at `china/cities/lanzhou` is now the only active book. Only
-one destination may be in production at a time. Broader Gansu and Ningxia
-sources remain research context, not destination-book titles.
+Xi'an and Hakone are complete and publicly published. Lanzhou at
+`china/cities/lanzhou` is the only active book. Its first chapter is the current
+public milestone; Chapter 2 is the sole production gate. Only one destination
+may be in production at a time. Broader Gansu and Ningxia sources remain
+research context, not destination-book titles.
 
 The series taxonomy is fixed:
 
@@ -68,15 +69,16 @@ The same file is hash-synced to Nutstore. The two-destination website preserves
 Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
 
-Lanzhou now has a hash-verified read-only source baseline, an explicit claim
-and rejection ledger, a locked 11-chapter trilingual outline, and a
-schema-valid canonical JSON shell. Its route begins with the long Yellow River
-valley, separates the two arrival stations and airport, keeps history beside
-the crossing and museum, places food in the day's actual rhythm, and ends with
-one onward Gansu decision and one nearby day. Chapter 1 is the only active
-writing gate. Lanzhou is not exposed on the public site until reviewed chapter
-content, readings, maps, figures, citations, B6 pages, and mobile/desktop views
-pass together.
+Lanzhou has a hash-verified read-only source baseline, an explicit claim and
+rejection ledger, and a locked 11-chapter trilingual outline. Chapter 1,
+**Read the Valley First**, is accepted: eight aligned blocks, `643` reviewed
+Chinese reading tokens, `803` reviewed Japanese reading tokens, five source
+entries, one four-guide river-valley figure, and one code-built orientation
+map. The same canonical JSON produces a `16`-page B6 pocket and a responsive
+site with `878` ruby nodes. The pocket SHA-256 is
+`f632eb45b34c8b07b552efdb97eaa95c8f10c04c86aeacc2b033b7d41cf64ea1`, and its
+Nutstore copy matches. Chapter 2, **Arrive at the Right Gate**, is the only
+active production gate; the Lanzhou book itself is not yet complete.
 
 ## Source Boundary
 
@@ -158,6 +160,26 @@ The website build writes an ignored static preview to `site/`. It reads the
 same aligned destination JSON as the pocket book, removes private local source
 paths from the browser payload and public asset-provenance copies, and rejects
 text, reading, citation, or asset drift before writing `site/manifest.json`.
+
+## Build The Lanzhou Pocket Milestone
+
+```bash
+python3 scripts/build_lanzhou_review.py
+python3 scripts/build_series_website.py
+python3 scripts/validate_site_parity.py \
+  --book data/china/cities/lanzhou/book.json \
+  --site site/china/cities/lanzhou
+```
+
+The Lanzhou builder accepts only the consecutive reviewed chapter prefix and
+keeps the 11-chapter outline intact. It validates readings, source coverage,
+asset hashes and provenance, map regeneration, cover geometry, TeX warnings,
+trim, fonts, and searchable text. After page and browser review, sync only the
+verified pocket with:
+
+```bash
+python3 scripts/build_lanzhou_review.py --skip-map --sync-nutstore
+```
 
 Serve the generated site in one terminal and run browser QA in another:
 

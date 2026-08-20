@@ -14,8 +14,10 @@ from build_website import validate_output  # noqa: E402
 
 XIAN_BOOK = ROOT / "data/china/cities/xian/book.json"
 HAKONE_BOOK = ROOT / "data/japan/prefectures/kanagawa/hakone/book.json"
+LANZHOU_BOOK = ROOT / "data/china/cities/lanzhou/book.json"
 XIAN_PATH = Path("china/cities/xian")
 HAKONE_PATH = Path("japan/prefectures/kanagawa/hakone")
+LANZHOU_PATH = Path("china/cities/lanzhou")
 
 
 class SeriesWebsiteBuildTests(unittest.TestCase):
@@ -30,7 +32,7 @@ class SeriesWebsiteBuildTests(unittest.TestCase):
         )
         self.assertEqual(relative_href(XIAN_PATH.as_posix(), XIAN_PATH.as_posix()), "./")
 
-    def test_series_build_publishes_both_canonical_destinations(self) -> None:
+    def test_series_build_publishes_all_canonical_destinations(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary) / "site"
             manifest = build_series(output)
@@ -38,7 +40,7 @@ class SeriesWebsiteBuildTests(unittest.TestCase):
             self.assertEqual(manifest["default_destination"], "hakone")
             self.assertEqual(
                 [record["id"] for record in manifest["destinations"]],
-                ["xian", "hakone"],
+                ["xian", "hakone", "lanzhou"],
             )
             self.assertIn(
                 "japan/prefectures/kanagawa/hakone/",
@@ -47,6 +49,7 @@ class SeriesWebsiteBuildTests(unittest.TestCase):
 
             self.assertGreater(validate_output(XIAN_BOOK, output / XIAN_PATH)["blocks"], 0)
             self.assertGreater(validate_output(HAKONE_BOOK, output / HAKONE_PATH)["blocks"], 0)
+            self.assertGreater(validate_output(LANZHOU_BOOK, output / LANZHOU_PATH)["blocks"], 0)
 
             xian_catalog = json.loads(
                 (output / XIAN_PATH / "data/destinations.json").read_text(encoding="utf-8")
@@ -54,8 +57,12 @@ class SeriesWebsiteBuildTests(unittest.TestCase):
             hakone_catalog = json.loads(
                 (output / HAKONE_PATH / "data/destinations.json").read_text(encoding="utf-8")
             )
+            lanzhou_catalog = json.loads(
+                (output / LANZHOU_PATH / "data/destinations.json").read_text(encoding="utf-8")
+            )
             self.assertEqual(xian_catalog["current"], "xian")
             self.assertEqual(hakone_catalog["current"], "hakone")
+            self.assertEqual(lanzhou_catalog["current"], "lanzhou")
             self.assertEqual(
                 xian_catalog["destinations"][1]["href"],
                 "../../../japan/prefectures/kanagawa/hakone/",
@@ -63,6 +70,10 @@ class SeriesWebsiteBuildTests(unittest.TestCase):
             self.assertEqual(
                 hakone_catalog["destinations"][0]["href"],
                 "../../../../china/cities/xian/",
+            )
+            self.assertEqual(
+                lanzhou_catalog["destinations"][1]["href"],
+                "../../../japan/prefectures/kanagawa/hakone/",
             )
 
 

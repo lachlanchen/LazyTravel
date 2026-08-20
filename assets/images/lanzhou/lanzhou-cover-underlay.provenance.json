@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-cover-underlay",
+  "created_at": "2026-08-21",
+  "method": "generated-text-safe-cover-underlay",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "16-efc7b7dc-ce99-4011-a57d-deebecb204ac",
+  "workflow": [
+    "Rendered the live Lanzhou cover over a temporary blank underlay to pin title, chapter-gate, and footer geometry",
+    "Generated a first vertical river-valley composition from reduced local character proxies and unredistributed location references",
+    "Rejected the first composition because a hard vertical panel edge looked pasted and building signs remained visible",
+    "Generated a correction with one continuous bright overlook field, plain façades, the five-span bridge, and exactly four guides",
+    "Cropped and resampled the selected image to exact 1476 x 2079 pixel B6 geometry at 300 ppi",
+    "Compiled selectable live text and reviewed the complete cover at 144 ppi"
+  ],
+  "source_images": [
+    {
+      "path": "build/research/lanzhou/cover-layout/cover-live-text-layout.png",
+      "sha256": "6cfb19ac17d01c7fcd52350c2ddcd841c4cce0d92d94db67e3e8a857570d3ab5",
+      "role": "Ignored layout-only reference for live title, chapter-gate, and footer safe zones; no raster text is retained"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/visual-references/baitashan-panorama-chinadaily-2015.jpg",
+      "sha256": "e4b9452487c4ab519f173688d9c3d5ba6ca44e7dfeb5b1fe7b9310e03bd4b5a2",
+      "page_url": "https://www.chinadaily.com.cn/opinion/2015-03/06/content_19736425_2.htm",
+      "role": "Unredistributed visual reference for the White Pagoda Hill overlook and central bridge"
+    },
+    {
+      "path": "build/research/lanzhou/visual-references/river-valley-gansudaily-2024.jpg",
+      "sha256": "762105f743374a6c597308575f475d91c14ed2afa35359d707e02be06d733907",
+      "page_url": "https://gansu.gansudaily.com.cn/system/2024/08/22/031051129.shtml",
+      "role": "Unredistributed visual reference for the river corridor, city scale, and close ridges"
+    }
+  ],
+  "prompts": [
+    {
+      "path": "data/images/lanzhou/lanzhou-cover-underlay.prompt.md",
+      "sha256": "1beff4958f6d191bd3153d357786a84ccdb459d7c480c162753ae113050af1df",
+      "role": "Initial text-safe cover composition"
+    },
+    {
+      "path": "data/images/lanzhou/lanzhou-cover-underlay-v2.prompt.md",
+      "sha256": "f1827decd3ca6a25a0518450bc48881b0792e2a8a3a5ebcba28bcb97efb26e34",
+      "role": "Selected continuous-scene and sign-removal correction"
+    }
+  ],
+  "rejected_variants": [
+    {
+      "path": "build/research/lanzhou/aginti/cover-v1/lanzhou-cover-underlay-v1.png",
+      "sha256": "38a13507489cd5b3c7a748bf0634c96fec5dbcd3964999cf91628d2dac93e184",
+      "reason": "The title-safe field had a hard artificial edge and the city retained reader-visible façade signs"
+    }
+  ],
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/cover-v1/task_manifest.json",
+      "sha256": "18caabc356ec5a0eb472782cc85fd1fa60899c03cb98d18a8ec11be841fea89f",
+      "role": "Rejected initial composition"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/cover-v2/task_manifest.json",
+      "sha256": "d8ac5d9db167cd26c590d5a621f26a954e8fef48c3ae598bf6a200ba5861d5aa",
+      "role": "Selected continuous-scene correction"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/cover-v2/lanzhou-cover-underlay-v2.png",
+    "sha256": "3d4cb393fecbc3b6b6d3c4d66d2bb1d92cbd7cca31a146b6377bebb1fef40858",
+    "bytes": 11301855,
+    "width": 3584,
+    "height": 4800
+  },
+  "conversion": "ImageMagick crop 3408x4800+88+0, exact resize to 1476x2079, 300 ppi sRGB, metadata strip",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-cover-underlay.png",
+    "sha256": "7ab555e8862586acdd485933580096438f1a10773ee7317b79775a6a0faa73dc",
+    "bytes": 3404182,
+    "width": 1476,
+    "height": 2079,
+    "color_space": "sRGB"
+  },
+  "intended_use": "Text-free full-page visual beneath live LaTeX title, multilingual subtitle, LazyTravel branding, chapter gate, and repository footer",
+  "factual_limits": [
+    "The river valley is an orientation composition, not one exact camera position",
+    "The bridge is recognizable at cover scale but is not engineering evidence",
+    "The raster asserts no route, fare, opening condition, river service, season, or guaranteed view",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "The cover carries no production note; generation and rejection details remain in this technical provenance file",
+  "rights": "Original LazyTravel cover composition; external imagery was used only as unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "no_raster_text": "pass",
+    "live_text_selectable": "pass",
+    "title_safe_zone": "pass",
+    "footer_safe_zone": "pass",
+    "b6_print": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "notes": "Compiled B6 page 1 passes at 144 ppi: live title and subtitle remain readable and selectable, all four guides stay below the title field, and the two-line repository footer remains clear. Evidence: build/research/lanzhou/cover-layout/final-pages/page-01.png, sha256 2e755db2ee9720995c87d2d7f4061ae92ca3c0556329e41a55434df37ebb6940."
+  }
+}

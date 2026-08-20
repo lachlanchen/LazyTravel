@@ -21,8 +21,8 @@
       "ja",
       "en"
     ],
-    "status": "researching",
-    "edition": "research-edition-2026-08-21",
+    "status": "drafting",
+    "edition": "chapter-01-review-2026-08-21",
     "branding": {
       "brand": "LazyTravel",
       "studio": "lazying.art",
@@ -63,8 +63,5699 @@
         "practical",
         "maps"
       ],
-      "status": "researching",
-      "blocks": []
+      "status": "final",
+      "blocks": [
+        {
+          "id": "ch01-b001",
+          "kind": "figure",
+          "category": "cultural-context",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "从白塔山一侧望下去，兰州的形状先于景点出现：黄河沿谷地向东，城区贴着两岸铺开，两侧山脊把城区夹成一条长廊。黄河铁桥不是一条“市中心”路线的终点，而是其中一处跨河点。第一天先找自己在哪一岸、下一站在东边还是西边，再决定要不要过桥；这比背一串景点名更有用。",
+            "ja": "白塔山側の高みから見ると、名所より先に蘭州の形が分かる。黄河は谷を東へ抜け、街は両岸に細長く続き、近い山並みが市街地の幅を限っている。黄河鉄橋は「中心の終点」ではなく、川を渡る一地点だ。最初の日は、いまどちらの岸にいて、次の場所が東西どちらにあるかを確かめ、それから橋を渡るか決める。名所の順番を暗記するより、この読み方の方が役に立つ。",
+            "en": "From the White Pagoda Hill side, Lanzhou's shape appears before its sights do. The Yellow River runs east through the valley; the city extends along both banks, held to a long corridor by nearby ridges. The Yellow River Iron Bridge is not the end of a route called “city centre.” It is one place to cross. On the first day, establish the bank you are on and whether the next stop lies east or west, then decide whether to cross. That habit is more useful than memorising a list of attractions."
+          },
+          "citation_ids": [
+            "src-lanzhou-geography-2026",
+            "src-lanzhou-orientation-map-data"
+          ],
+          "asset_ids": [
+            "asset-lanzhou-river-valley-orientation"
+          ],
+          "review": {
+            "zh": {
+              "state": "final",
+              "notes": [
+                "Chinese opening keeps the river-and-bank decision ahead of description."
+              ]
+            },
+            "ja": {
+              "state": "final",
+              "notes": [
+                "Japanese opening was written independently around the same route decision."
+              ]
+            },
+            "en": {
+              "state": "final",
+              "notes": [
+                "English opening avoids destination slogans and begins with a usable orientation habit."
+              ]
+            }
+          },
+          "readings": {
+            "zh": {
+              "system": "hanyu-pinyin-tone-marks",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "从",
+                  "reading": "cóng"
+                },
+                {
+                  "text": "白塔山",
+                  "reading": "báitǎshān"
+                },
+                {
+                  "text": "一侧",
+                  "reading": "yīcè"
+                },
+                {
+                  "text": "望",
+                  "reading": "wàng"
+                },
+                {
+                  "text": "下去",
+                  "reading": "xiàqù"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "兰州",
+                  "reading": "lánzhōu"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "形状",
+                  "reading": "xíngzhuàng"
+                },
+                {
+                  "text": "先于",
+                  "reading": "xiānyú"
+                },
+                {
+                  "text": "景点",
+                  "reading": "jǐngdiǎn"
+                },
+                {
+                  "text": "出现",
+                  "reading": "chūxiàn"
+                },
+                {
+                  "text": "："
+                },
+                {
+                  "text": "黄河",
+                  "reading": "huánghé"
+                },
+                {
+                  "text": "沿",
+                  "reading": "yán"
+                },
+                {
+                  "text": "谷地",
+                  "reading": "gǔdì"
+                },
+                {
+                  "text": "向东",
+                  "reading": "xiàngdōng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "城区",
+                  "reading": "chéngqū"
+                },
+                {
+                  "text": "贴着",
+                  "reading": "tiēzhe"
+                },
+                {
+                  "text": "两岸",
+                  "reading": "liǎng'àn"
+                },
+                {
+                  "text": "铺开",
+                  "reading": "pùkāi"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "两侧",
+                  "reading": "liǎngcè"
+                },
+                {
+                  "text": "山脊",
+                  "reading": "shānjí"
+                },
+                {
+                  "text": "把",
+                  "reading": "bǎ"
+                },
+                {
+                  "text": "城区",
+                  "reading": "chéngqū"
+                },
+                {
+                  "text": "夹",
+                  "reading": "jiā"
+                },
+                {
+                  "text": "成",
+                  "reading": "chéng"
+                },
+                {
+                  "text": "一条",
+                  "reading": "yītiáo"
+                },
+                {
+                  "text": "长廊",
+                  "reading": "chángláng"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "黄河铁桥",
+                  "reading": "huánghé tiěqiáo"
+                },
+                {
+                  "text": "不是",
+                  "reading": "búshì"
+                },
+                {
+                  "text": "一条",
+                  "reading": "yītiáo"
+                },
+                {
+                  "text": "“"
+                },
+                {
+                  "text": "市中心",
+                  "reading": "shìzhōngxīn"
+                },
+                {
+                  "text": "”"
+                },
+                {
+                  "text": "路线",
+                  "reading": "lùxiàn"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "终点",
+                  "reading": "zhōngdiǎn"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "而是",
+                  "reading": "érshì"
+                },
+                {
+                  "text": "其中",
+                  "reading": "qízhōng"
+                },
+                {
+                  "text": "一处",
+                  "reading": "yīchù"
+                },
+                {
+                  "text": "跨河",
+                  "reading": "kuàhé"
+                },
+                {
+                  "text": "点",
+                  "reading": "diǎn"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "第一天",
+                  "reading": "dìyītiān"
+                },
+                {
+                  "text": "先",
+                  "reading": "xiān"
+                },
+                {
+                  "text": "找",
+                  "reading": "zhǎo"
+                },
+                {
+                  "text": "自己",
+                  "reading": "zìjǐ"
+                },
+                {
+                  "text": "在",
+                  "reading": "zài"
+                },
+                {
+                  "text": "哪",
+                  "reading": "nǎ"
+                },
+                {
+                  "text": "一",
+                  "reading": "yī"
+                },
+                {
+                  "text": "岸",
+                  "reading": "àn"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "下",
+                  "reading": "xià"
+                },
+                {
+                  "text": "一站",
+                  "reading": "yīzhàn"
+                },
+                {
+                  "text": "在",
+                  "reading": "zài"
+                },
+                {
+                  "text": "东边",
+                  "reading": "dōngbiān"
+                },
+                {
+                  "text": "还是",
+                  "reading": "háishì"
+                },
+                {
+                  "text": "西边",
+                  "reading": "xībiān"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "再",
+                  "reading": "zài"
+                },
+                {
+                  "text": "决定",
+                  "reading": "juédìng"
+                },
+                {
+                  "text": "要",
+                  "reading": "yào"
+                },
+                {
+                  "text": "不要",
+                  "reading": "búyào"
+                },
+                {
+                  "text": "过桥",
+                  "reading": "guòqiáo"
+                },
+                {
+                  "text": "；"
+                },
+                {
+                  "text": "这",
+                  "reading": "zhè"
+                },
+                {
+                  "text": "比",
+                  "reading": "bǐ"
+                },
+                {
+                  "text": "背",
+                  "reading": "bèi"
+                },
+                {
+                  "text": "一串",
+                  "reading": "yīchuàn"
+                },
+                {
+                  "text": "景点",
+                  "reading": "jǐngdiǎn"
+                },
+                {
+                  "text": "名",
+                  "reading": "míng"
+                },
+                {
+                  "text": "更",
+                  "reading": "gèng"
+                },
+                {
+                  "text": "有用",
+                  "reading": "yǒuyòng"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            },
+            "ja": {
+              "system": "furigana",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "白塔山",
+                  "reading": "はくとうざん"
+                },
+                {
+                  "text": "側",
+                  "reading": "がわ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "高み",
+                  "reading": "たかみ"
+                },
+                {
+                  "text": "から"
+                },
+                {
+                  "text": "見る",
+                  "reading": "みる"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "名所",
+                  "reading": "めいしょ"
+                },
+                {
+                  "text": "より"
+                },
+                {
+                  "text": "先",
+                  "reading": "さき"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "蘭州",
+                  "reading": "らんしゅう"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "形",
+                  "reading": "かたち"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "分かる",
+                  "reading": "わかる"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "黄河",
+                  "reading": "こうが"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "谷",
+                  "reading": "たに"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "東",
+                  "reading": "ひがし"
+                },
+                {
+                  "text": "へ"
+                },
+                {
+                  "text": "抜け",
+                  "reading": "ぬけ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "街",
+                  "reading": "まち"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "両岸",
+                  "reading": "りょうがん"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "細長く",
+                  "reading": "ほそながく"
+                },
+                {
+                  "text": "続き",
+                  "reading": "つづき"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "近い",
+                  "reading": "ちかい"
+                },
+                {
+                  "text": "山並み",
+                  "reading": "やまなみ"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "市街",
+                  "reading": "しがい"
+                },
+                {
+                  "text": "地",
+                  "reading": "ち"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "幅",
+                  "reading": "はば"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "限っ",
+                  "reading": "かぎっ"
+                },
+                {
+                  "text": "て"
+                },
+                {
+                  "text": "いる"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "黄河鉄橋",
+                  "reading": "こうがてっきょう"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "「"
+                },
+                {
+                  "text": "中心",
+                  "reading": "ちゅうしん"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "終点",
+                  "reading": "しゅうてん"
+                },
+                {
+                  "text": "」"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "なく"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "川",
+                  "reading": "かわ"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "渡る",
+                  "reading": "わたる"
+                },
+                {
+                  "text": "一",
+                  "reading": "いち"
+                },
+                {
+                  "text": "地点",
+                  "reading": "ちてん"
+                },
+                {
+                  "text": "だ"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "最初",
+                  "reading": "さいしょ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "日",
+                  "reading": "ひ"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "いま"
+                },
+                {
+                  "text": "どちら"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "岸",
+                  "reading": "きし"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "い"
+                },
+                {
+                  "text": "て"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "次",
+                  "reading": "つぎ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "場所",
+                  "reading": "ばしょ"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "東西",
+                  "reading": "とうざい"
+                },
+                {
+                  "text": "どちら"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "ある"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "確かめ",
+                  "reading": "たしかめ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "それ"
+                },
+                {
+                  "text": "から"
+                },
+                {
+                  "text": "橋",
+                  "reading": "はし"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "渡る",
+                  "reading": "わたる"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "決める",
+                  "reading": "きめる"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "名所",
+                  "reading": "めいしょ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "順番",
+                  "reading": "じゅんばん"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "暗記",
+                  "reading": "あんき"
+                },
+                {
+                  "text": "する"
+                },
+                {
+                  "text": "より"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "この"
+                },
+                {
+                  "text": "読み",
+                  "reading": "よみ"
+                },
+                {
+                  "text": "方",
+                  "reading": "かた"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "方",
+                  "reading": "ほう"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "役",
+                  "reading": "やく"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "立つ",
+                  "reading": "たつ"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ch01-b002",
+          "kind": "map",
+          "category": "maps",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "开篇图只保留七个第一次会用到的认路点：兰州西站、甘肃省博物馆、西关、中山桥与白塔山入口、东方红广场、兰州大学、兰州站。红线和绿线表示地铁一号线、二号线的连接关系，不是精确轨道；右上角的机场也只表示北面的到达方向，与主图不共用比例尺。先用这些点判断大方向，临出发再查入口、换乘和当日运行。",
+            "ja": "最初の図で覚える目印は七つだけでよい。蘭州西駅、甘粛省博物館、西関、中山橋と白塔山入口、東方紅広場、蘭州大学、蘭州駅である。赤線と緑線は地下鉄一号線、二号線のつながりを示す模式線で、正確な線路ではない。右上の空港も北側から到着する方向を示す別縮尺の図だ。まず目印で大きな方向を決め、入口、乗り換え、当日の運行は出発前に確かめる。",
+          "en": "The map keeps seven first-use anchors. Lanzhou West and Gansu Provincial Museum lie in the west. Xiguan and the Zhongshan Bridge-White Pagoda approach mark the central crossing. Dongfanghong Square, Lanzhou University, and Lanzhou Railway Station mark the east. The red and green links show the relationship of Metro Lines 1 and 2; they are not surveyed track alignments. The airport inset uses a separate scale. Use the map for the broad decision, then check entrances, transfers, and live operation before setting out."
+          },
+          "citation_ids": [
+            "src-lanzhou-metro-service",
+            "src-lanzhou-orientation-map-data"
+          ],
+          "asset_ids": [
+            "asset-lanzhou-valley-orientation-map"
+          ],
+          "review": {
+            "zh": {
+              "state": "final",
+              "notes": [
+                "Chinese map copy separates durable relationships from live service details."
+              ]
+            },
+            "ja": {
+              "state": "final",
+              "notes": [
+                "Japanese map copy names only the anchors needed for a first route."
+              ]
+            },
+            "en": {
+              "state": "final",
+              "notes": [
+                "English map copy states the schematic and inset-scale limits directly."
+              ]
+            }
+          },
+          "readings": {
+            "zh": {
+              "system": "hanyu-pinyin-tone-marks",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "开篇",
+                  "reading": "kāipiān"
+                },
+                {
+                  "text": "图",
+                  "reading": "tú"
+                },
+                {
+                  "text": "只",
+                  "reading": "zhǐ"
+                },
+                {
+                  "text": "保留",
+                  "reading": "bǎoliú"
+                },
+                {
+                  "text": "七个",
+                  "reading": "qīgè"
+                },
+                {
+                  "text": "第一次",
+                  "reading": "dìyīcì"
+                },
+                {
+                  "text": "会",
+                  "reading": "huì"
+                },
+                {
+                  "text": "用到",
+                  "reading": "yòngdào"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "认路",
+                  "reading": "rènlù"
+                },
+                {
+                  "text": "点",
+                  "reading": "diǎn"
+                },
+                {
+                  "text": "："
+                },
+                {
+                  "text": "兰州西站",
+                  "reading": "lánzhōu xīzhàn"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "甘肃省博物馆",
+                  "reading": "gānsù shěng bówùguǎn"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "西关",
+                  "reading": "xīguān"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "中山桥",
+                  "reading": "zhōngshānqiáo"
+                },
+                {
+                  "text": "与",
+                  "reading": "yǔ"
+                },
+                {
+                  "text": "白塔山",
+                  "reading": "báitǎshān"
+                },
+                {
+                  "text": "入口",
+                  "reading": "rùkǒu"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "东方红广场",
+                  "reading": "dōngfānghóng guǎngchǎng"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "兰州大学",
+                  "reading": "lánzhōu dàxué"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "兰州站",
+                  "reading": "lánzhōuzhàn"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "红线",
+                  "reading": "hóngxiàn"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "绿",
+                  "reading": "lǜ"
+                },
+                {
+                  "text": "线",
+                  "reading": "xiàn"
+                },
+                {
+                  "text": "表示",
+                  "reading": "biǎoshì"
+                },
+                {
+                  "text": "地铁",
+                  "reading": "dìtiě"
+                },
+                {
+                  "text": "一号线",
+                  "reading": "yīhàoxiàn"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "二号线",
+                  "reading": "èrhàoxiàn"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "连接",
+                  "reading": "liánjiē"
+                },
+                {
+                  "text": "关系",
+                  "reading": "guānxì"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "不是",
+                  "reading": "búshì"
+                },
+                {
+                  "text": "精确",
+                  "reading": "jīngquè"
+                },
+                {
+                  "text": "轨道",
+                  "reading": "guǐdào"
+                },
+                {
+                  "text": "；"
+                },
+                {
+                  "text": "右上角",
+                  "reading": "yòushàngjiǎo"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "机场",
+                  "reading": "jīchǎng"
+                },
+                {
+                  "text": "也",
+                  "reading": "yě"
+                },
+                {
+                  "text": "只",
+                  "reading": "zhǐ"
+                },
+                {
+                  "text": "表示",
+                  "reading": "biǎoshì"
+                },
+                {
+                  "text": "北面",
+                  "reading": "běimiàn"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "到达",
+                  "reading": "dàodá"
+                },
+                {
+                  "text": "方向",
+                  "reading": "fāngxiàng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "与",
+                  "reading": "yǔ"
+                },
+                {
+                  "text": "主",
+                  "reading": "zhǔ"
+                },
+                {
+                  "text": "图",
+                  "reading": "tú"
+                },
+                {
+                  "text": "不",
+                  "reading": "bù"
+                },
+                {
+                  "text": "共用",
+                  "reading": "gòngyòng"
+                },
+                {
+                  "text": "比例尺",
+                  "reading": "bǐlìchǐ"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "先用",
+                  "reading": "xiānyòng"
+                },
+                {
+                  "text": "这些",
+                  "reading": "zhèxiē"
+                },
+                {
+                  "text": "点",
+                  "reading": "diǎn"
+                },
+                {
+                  "text": "判断",
+                  "reading": "pànduàn"
+                },
+                {
+                  "text": "大方向",
+                  "reading": "dàfāngxiàng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "临",
+                  "reading": "lín"
+                },
+                {
+                  "text": "出发",
+                  "reading": "chūfā"
+                },
+                {
+                  "text": "再",
+                  "reading": "zài"
+                },
+                {
+                  "text": "查",
+                  "reading": "chá"
+                },
+                {
+                  "text": "入口",
+                  "reading": "rùkǒu"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "换乘",
+                  "reading": "huànchéng"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "当日",
+                  "reading": "dāngrì"
+                },
+                {
+                  "text": "运行",
+                  "reading": "yùnxíng"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            },
+            "ja": {
+              "system": "furigana",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "最初",
+                  "reading": "さいしょ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "図",
+                  "reading": "ず"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "覚える",
+                  "reading": "おぼえる"
+                },
+                {
+                  "text": "目印",
+                  "reading": "めじるし"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "七",
+                  "reading": "なな"
+                },
+                {
+                  "text": "つ"
+                },
+                {
+                  "text": "だけ"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "よい"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "蘭州西駅",
+                  "reading": "らんしゅうにしえき"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "甘粛省博物館",
+                  "reading": "かんしゅくしょうはくぶつかん"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "西関",
+                  "reading": "せいかん"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "中山橋",
+                  "reading": "ちゅうざんきょう"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "白塔山",
+                  "reading": "はくとうざん"
+                },
+                {
+                  "text": "入口",
+                  "reading": "いりぐち"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "東方紅広場",
+                  "reading": "とうほうこうひろば"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "蘭州大学",
+                  "reading": "らんしゅうだいがく"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "蘭州駅",
+                  "reading": "らんしゅうえき"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "ある"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "赤線",
+                  "reading": "あかせん"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "緑線",
+                  "reading": "みどりせん"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "地下鉄",
+                  "reading": "ちかてつ"
+                },
+                {
+                  "text": "一号線",
+                  "reading": "いちごうせん"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "二号線",
+                  "reading": "にごうせん"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "つながり"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "示す",
+                  "reading": "しめす"
+                },
+                {
+                  "text": "模式",
+                  "reading": "もしき"
+                },
+                {
+                  "text": "線",
+                  "reading": "せん"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "正確",
+                  "reading": "せいかく"
+                },
+                {
+                  "text": "な"
+                },
+                {
+                  "text": "線路",
+                  "reading": "せんろ"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "右上",
+                  "reading": "みぎうえ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "空港",
+                  "reading": "くうこう"
+                },
+                {
+                  "text": "も"
+                },
+                {
+                  "text": "北側",
+                  "reading": "きたがわ"
+                },
+                {
+                  "text": "から"
+                },
+                {
+                  "text": "到着",
+                  "reading": "とうちゃく"
+                },
+                {
+                  "text": "する"
+                },
+                {
+                  "text": "方向",
+                  "reading": "ほうこう"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "示す",
+                  "reading": "しめす"
+                },
+                {
+                  "text": "別",
+                  "reading": "べつ"
+                },
+                {
+                  "text": "縮尺",
+                  "reading": "しゅくしゃく"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "図",
+                  "reading": "ず"
+                },
+                {
+                  "text": "だ"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "まず"
+                },
+                {
+                  "text": "目印",
+                  "reading": "めじるし"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "大きな",
+                  "reading": "おおきな"
+                },
+                {
+                  "text": "方向",
+                  "reading": "ほうこう"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "決め",
+                  "reading": "きめ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "入口",
+                  "reading": "いりぐち"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "乗り換え",
+                  "reading": "のりかえ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "当日",
+                  "reading": "とうじつ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "運行",
+                  "reading": "うんこう"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "出発",
+                  "reading": "しゅっぱつ"
+                },
+                {
+                  "text": "前",
+                  "reading": "まえ"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "確かめる",
+                  "reading": "たしかめる"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ch01-b003",
+          "kind": "prose",
+          "category": "cultural-context",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "甘肃省的官方地理资料把兰州主城区概括为东西延伸四十多公里，最窄处南北约一公里。这两个数字说明的是城市形状，不是一条可以从头走到尾的旅游带。地图把兰州西站和兰州站放在同一页上，容易让人低估中间的移动；两处即使都写着“兰州”，也不能当作同一个到达点。",
+            "ja": "甘粛省の公的な地理資料では、蘭州の中心市街地は東西に四十キロメートル以上延び、最も狭い所は南北約一キロメートルと説明される。この数字が示すのは街の形であり、端から端まで歩ける観光帯ではない。一枚の地図に蘭州西駅と蘭州駅が収まると、その間の移動を短く見積もりやすい。どちらの名にも「蘭州」と付くが、同じ到着地点ではない。",
+            "en": "An official Gansu geography account describes Lanzhou's main urban area as extending more than forty kilometres east to west and narrowing to about one kilometre north to south. Those figures describe the city's form, not a visitor strip that can be walked end to end. When Lanzhou West and Lanzhou Railway Station fit on the same page, the distance between them is easy to underestimate. Both carry the city's name; they are not the same arrival point."
+          },
+          "citation_ids": [
+            "src-lanzhou-geography-2026",
+            "src-lanzhou-orientation-map-data"
+          ],
+          "asset_ids": [],
+          "review": {
+            "zh": {
+              "state": "final",
+              "notes": [
+                "Chinese prose limits the official dimensions to main-city morphology."
+              ]
+            },
+            "ja": {
+              "state": "final",
+              "notes": [
+                "Japanese prose turns the dimensions into a station-choice warning."
+              ]
+            },
+            "en": {
+              "state": "final",
+              "notes": [
+                "English prose does not extend the cited dimensions to the municipality."
+              ]
+            }
+          },
+          "readings": {
+            "zh": {
+              "system": "hanyu-pinyin-tone-marks",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "甘肃省",
+                  "reading": "gānsùshěng"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "官方",
+                  "reading": "guānfāng"
+                },
+                {
+                  "text": "地理",
+                  "reading": "dìlǐ"
+                },
+                {
+                  "text": "资料",
+                  "reading": "zīliào"
+                },
+                {
+                  "text": "把",
+                  "reading": "bǎ"
+                },
+                {
+                  "text": "兰州",
+                  "reading": "lánzhōu"
+                },
+                {
+                  "text": "主城区",
+                  "reading": "zhǔchéngqū"
+                },
+                {
+                  "text": "概括",
+                  "reading": "gàikuò"
+                },
+                {
+                  "text": "为",
+                  "reading": "wéi"
+                },
+                {
+                  "text": "东西",
+                  "reading": "dōngxī"
+                },
+                {
+                  "text": "延伸",
+                  "reading": "yánshēn"
+                },
+                {
+                  "text": "四十多",
+                  "reading": "sìshíduō"
+                },
+                {
+                  "text": "公里",
+                  "reading": "gōnglǐ"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "最",
+                  "reading": "zuì"
+                },
+                {
+                  "text": "窄",
+                  "reading": "zhǎi"
+                },
+                {
+                  "text": "处",
+                  "reading": "chù"
+                },
+                {
+                  "text": "南北",
+                  "reading": "nánběi"
+                },
+                {
+                  "text": "约",
+                  "reading": "yuē"
+                },
+                {
+                  "text": "一",
+                  "reading": "yī"
+                },
+                {
+                  "text": "公里",
+                  "reading": "gōnglǐ"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "这",
+                  "reading": "zhè"
+                },
+                {
+                  "text": "两个",
+                  "reading": "liǎnggè"
+                },
+                {
+                  "text": "数字",
+                  "reading": "shùzì"
+                },
+                {
+                  "text": "说明",
+                  "reading": "shuōmíng"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "是",
+                  "reading": "shì"
+                },
+                {
+                  "text": "城市",
+                  "reading": "chéngshì"
+                },
+                {
+                  "text": "形状",
+                  "reading": "xíngzhuàng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "不是",
+                  "reading": "búshì"
+                },
+                {
+                  "text": "一条",
+                  "reading": "yītiáo"
+                },
+                {
+                  "text": "可以",
+                  "reading": "kěyǐ"
+                },
+                {
+                  "text": "从头",
+                  "reading": "cóngtóu"
+                },
+                {
+                  "text": "走",
+                  "reading": "zǒu"
+                },
+                {
+                  "text": "到",
+                  "reading": "dào"
+                },
+                {
+                  "text": "尾",
+                  "reading": "wěi"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "旅游",
+                  "reading": "lǚyóu"
+                },
+                {
+                  "text": "带",
+                  "reading": "dài"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "地图",
+                  "reading": "dìtú"
+                },
+                {
+                  "text": "把",
+                  "reading": "bǎ"
+                },
+                {
+                  "text": "兰州西站",
+                  "reading": "lánzhōu xīzhàn"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "兰州站",
+                  "reading": "lánzhōuzhàn"
+                },
+                {
+                  "text": "放在",
+                  "reading": "fàngzài"
+                },
+                {
+                  "text": "同",
+                  "reading": "tóng"
+                },
+                {
+                  "text": "一页",
+                  "reading": "yīyè"
+                },
+                {
+                  "text": "上",
+                  "reading": "shàng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "容易",
+                  "reading": "róngyì"
+                },
+                {
+                  "text": "让",
+                  "reading": "ràng"
+                },
+                {
+                  "text": "人",
+                  "reading": "rén"
+                },
+                {
+                  "text": "低估",
+                  "reading": "dīgū"
+                },
+                {
+                  "text": "中间",
+                  "reading": "zhōngjiān"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "移动",
+                  "reading": "yídòng"
+                },
+                {
+                  "text": "；"
+                },
+                {
+                  "text": "两处",
+                  "reading": "liǎngchù"
+                },
+                {
+                  "text": "即使",
+                  "reading": "jíshǐ"
+                },
+                {
+                  "text": "都",
+                  "reading": "dōu"
+                },
+                {
+                  "text": "写",
+                  "reading": "xiě"
+                },
+                {
+                  "text": "着",
+                  "reading": "zhe"
+                },
+                {
+                  "text": "“"
+                },
+                {
+                  "text": "兰州",
+                  "reading": "lánzhōu"
+                },
+                {
+                  "text": "”"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "也",
+                  "reading": "yě"
+                },
+                {
+                  "text": "不能",
+                  "reading": "bùnéng"
+                },
+                {
+                  "text": "当作",
+                  "reading": "dàngzuò"
+                },
+                {
+                  "text": "同一个",
+                  "reading": "tóngyīgè"
+                },
+                {
+                  "text": "到达",
+                  "reading": "dàodá"
+                },
+                {
+                  "text": "点",
+                  "reading": "diǎn"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            },
+            "ja": {
+              "system": "furigana",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "甘粛",
+                  "reading": "かんしゅく"
+                },
+                {
+                  "text": "省",
+                  "reading": "しょう"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "公的",
+                  "reading": "こうてき"
+                },
+                {
+                  "text": "な"
+                },
+                {
+                  "text": "地理",
+                  "reading": "ちり"
+                },
+                {
+                  "text": "資料",
+                  "reading": "しりょう"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "蘭州",
+                  "reading": "らんしゅう"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "中心",
+                  "reading": "ちゅうしん"
+                },
+                {
+                  "text": "市街",
+                  "reading": "しがい"
+                },
+                {
+                  "text": "地",
+                  "reading": "ち"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "東西",
+                  "reading": "とうざい"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "四十",
+                  "reading": "よんじゅう"
+                },
+                {
+                  "text": "キロメートル"
+                },
+                {
+                  "text": "以上",
+                  "reading": "いじょう"
+                },
+                {
+                  "text": "延び",
+                  "reading": "のび"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "最も",
+                  "reading": "もっとも"
+                },
+                {
+                  "text": "狭い",
+                  "reading": "せまい"
+                },
+                {
+                  "text": "所",
+                  "reading": "ところ"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "南北",
+                  "reading": "なんぼく"
+                },
+                {
+                  "text": "約",
+                  "reading": "やく"
+                },
+                {
+                  "text": "一",
+                  "reading": "いち"
+                },
+                {
+                  "text": "キロメートル"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "説明",
+                  "reading": "せつめい"
+                },
+                {
+                  "text": "さ"
+                },
+                {
+                  "text": "れる"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "この"
+                },
+                {
+                  "text": "数字",
+                  "reading": "すうじ"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "示す",
+                  "reading": "しめす"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "街",
+                  "reading": "まち"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "形",
+                  "reading": "かたち"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "あり"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "端",
+                  "reading": "はし"
+                },
+                {
+                  "text": "から"
+                },
+                {
+                  "text": "端",
+                  "reading": "はし"
+                },
+                {
+                  "text": "まで"
+                },
+                {
+                  "text": "歩ける",
+                  "reading": "あるける"
+                },
+                {
+                  "text": "観光",
+                  "reading": "かんこう"
+                },
+                {
+                  "text": "帯",
+                  "reading": "たい"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "一",
+                  "reading": "いち"
+                },
+                {
+                  "text": "枚",
+                  "reading": "まい"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "地図",
+                  "reading": "ちず"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "蘭州西駅",
+                  "reading": "らんしゅうにしえき"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "蘭州駅",
+                  "reading": "らんしゅうえき"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "収まる",
+                  "reading": "おさまる"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "その"
+                },
+                {
+                  "text": "間",
+                  "reading": "あいだ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "移動",
+                  "reading": "いどう"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "短く",
+                  "reading": "みじかく"
+                },
+                {
+                  "text": "見積もり",
+                  "reading": "みつもり"
+                },
+                {
+                  "text": "やすい"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "どちら"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "名",
+                  "reading": "な"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "も"
+                },
+                {
+                  "text": "「"
+                },
+                {
+                  "text": "蘭州",
+                  "reading": "らんしゅう"
+                },
+                {
+                  "text": "」"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "付く",
+                  "reading": "つく"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "同じ",
+                  "reading": "おなじ"
+                },
+                {
+                  "text": "到着",
+                  "reading": "とうちゃく"
+                },
+                {
+                  "text": "地点",
+                  "reading": "ちてん"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ch01-b004",
+          "kind": "callout",
+          "category": "practical",
+          "temporal_scope": "durable",
+          "heading": {
+            "zh": "出门前只问四句",
+            "ja": "出発前の四問",
+            "en": "FOUR QUESTIONS BEFORE YOU MOVE"
+          },
+          "text": {
+            "zh": "一，下一站在东边还是西边？二，它在黄河南岸还是北岸？三，如果要换岸，准备在哪座桥或哪一站完成？四，今天从中川机场、兰州西站还是兰州站抵达或离开？四句都答得出来，再选地铁、网约车或步行。答不出来时先看地图，不要先看车程数字。",
+            "ja": "一つ目、次は東か西か。二つ目、黄河の南岸か北岸か。三つ目、岸を替えるなら、どの橋または駅で渡るか。四つ目、今日は中川空港、蘭州西駅、蘭州駅のどこから到着または出発するか。この四問に答えてから、地下鉄、配車アプリの車、徒歩を選ぶ。答えが曖昧なら、所要時間の数字より先に地図へ戻る。",
+          "en": "First: is the next stop east or west? Second: is it on the Yellow River's south or north bank? Third: if the bank changes, at which bridge or station will that happen? Fourth: is today's arrival or departure point Zhongchuan Airport, Lanzhou West, or Lanzhou Railway Station? Answer all four before choosing between the metro, a ride-hailing car, and walking. If one answer is unclear, return to the map before trusting a journey-time estimate."
+          },
+          "citation_ids": [
+            "src-lanzhou-metro-service",
+            "src-lanzhou-orientation-map-data"
+          ],
+          "asset_ids": [],
+          "review": {
+            "zh": {
+              "state": "final",
+              "notes": [
+                "Chinese checklist uses four concrete route questions."
+              ]
+            },
+            "ja": {
+              "state": "final",
+              "notes": [
+                "Japanese checklist reads as direct travel preparation rather than translated exposition."
+              ]
+            },
+            "en": {
+              "state": "final",
+              "notes": [
+                "English checklist distinguishes orientation from volatile journey estimates."
+              ]
+            }
+          },
+          "readings": {
+            "zh": {
+              "system": "hanyu-pinyin-tone-marks",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "一",
+                  "reading": "yī"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "下",
+                  "reading": "xià"
+                },
+                {
+                  "text": "一站",
+                  "reading": "yīzhàn"
+                },
+                {
+                  "text": "在",
+                  "reading": "zài"
+                },
+                {
+                  "text": "东边",
+                  "reading": "dōngbiān"
+                },
+                {
+                  "text": "还是",
+                  "reading": "háishì"
+                },
+                {
+                  "text": "西边",
+                  "reading": "xībiān"
+                },
+                {
+                  "text": "？"
+                },
+                {
+                  "text": "二",
+                  "reading": "èr"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "它",
+                  "reading": "tā"
+                },
+                {
+                  "text": "在",
+                  "reading": "zài"
+                },
+                {
+                  "text": "黄河",
+                  "reading": "huánghé"
+                },
+                {
+                  "text": "南岸",
+                  "reading": "nán'àn"
+                },
+                {
+                  "text": "还是",
+                  "reading": "háishì"
+                },
+                {
+                  "text": "北岸",
+                  "reading": "běi'àn"
+                },
+                {
+                  "text": "？"
+                },
+                {
+                  "text": "三",
+                  "reading": "sān"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "如果",
+                  "reading": "rúguǒ"
+                },
+                {
+                  "text": "要",
+                  "reading": "yào"
+                },
+                {
+                  "text": "换",
+                  "reading": "huàn"
+                },
+                {
+                  "text": "岸",
+                  "reading": "àn"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "准备",
+                  "reading": "zhǔnbèi"
+                },
+                {
+                  "text": "在",
+                  "reading": "zài"
+                },
+                {
+                  "text": "哪",
+                  "reading": "nǎ"
+                },
+                {
+                  "text": "座",
+                  "reading": "zuò"
+                },
+                {
+                  "text": "桥",
+                  "reading": "qiáo"
+                },
+                {
+                  "text": "或",
+                  "reading": "huò"
+                },
+                {
+                  "text": "哪",
+                  "reading": "nǎ"
+                },
+                {
+                  "text": "一站",
+                  "reading": "yīzhàn"
+                },
+                {
+                  "text": "完成",
+                  "reading": "wánchéng"
+                },
+                {
+                  "text": "？"
+                },
+                {
+                  "text": "四",
+                  "reading": "sì"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "今天",
+                  "reading": "jīntiān"
+                },
+                {
+                  "text": "从",
+                  "reading": "cóng"
+                },
+                {
+                  "text": "中川机场",
+                  "reading": "zhōngchuān jīchǎng"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "兰州西站",
+                  "reading": "lánzhōu xīzhàn"
+                },
+                {
+                  "text": "还是",
+                  "reading": "háishì"
+                },
+                {
+                  "text": "兰州站",
+                  "reading": "lánzhōuzhàn"
+                },
+                {
+                  "text": "抵达",
+                  "reading": "dǐdá"
+                },
+                {
+                  "text": "或",
+                  "reading": "huò"
+                },
+                {
+                  "text": "离开",
+                  "reading": "líkāi"
+                },
+                {
+                  "text": "？"
+                },
+                {
+                  "text": "四句",
+                  "reading": "sìjù"
+                },
+                {
+                  "text": "都",
+                  "reading": "dōu"
+                },
+                {
+                  "text": "答",
+                  "reading": "dá"
+                },
+                {
+                  "text": "得",
+                  "reading": "de"
+                },
+                {
+                  "text": "出来",
+                  "reading": "chūlái"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "再选",
+                  "reading": "zàixuǎn"
+                },
+                {
+                  "text": "地铁",
+                  "reading": "dìtiě"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "网约车",
+                  "reading": "wǎngyuēchē"
+                },
+                {
+                  "text": "或",
+                  "reading": "huò"
+                },
+                {
+                  "text": "步行",
+                  "reading": "bùxíng"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "答",
+                  "reading": "dá"
+                },
+                {
+                  "text": "不",
+                  "reading": "bù"
+                },
+                {
+                  "text": "出来",
+                  "reading": "chūlái"
+                },
+                {
+                  "text": "时",
+                  "reading": "shí"
+                },
+                {
+                  "text": "先",
+                  "reading": "xiān"
+                },
+                {
+                  "text": "看",
+                  "reading": "kàn"
+                },
+                {
+                  "text": "地图",
+                  "reading": "dìtú"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "不要",
+                  "reading": "búyào"
+                },
+                {
+                  "text": "先",
+                  "reading": "xiān"
+                },
+                {
+                  "text": "看",
+                  "reading": "kàn"
+                },
+                {
+                  "text": "车程",
+                  "reading": "chēchéng"
+                },
+                {
+                  "text": "数字",
+                  "reading": "shùzì"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            },
+            "ja": {
+              "system": "furigana",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "一",
+                  "reading": "ひと"
+                },
+                {
+                  "text": "つ"
+                },
+                {
+                  "text": "目",
+                  "reading": "め"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "次",
+                  "reading": "つぎ"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "東",
+                  "reading": "ひがし"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "西",
+                  "reading": "にし"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "二",
+                  "reading": "ふた"
+                },
+                {
+                  "text": "つ"
+                },
+                {
+                  "text": "目",
+                  "reading": "め"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "黄河",
+                  "reading": "こうが"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "南岸",
+                  "reading": "なんがん"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "北岸",
+                  "reading": "ほくがん"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "三",
+                  "reading": "みっ"
+                },
+                {
+                  "text": "つ"
+                },
+                {
+                  "text": "目",
+                  "reading": "め"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "岸",
+                  "reading": "きし"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "替える",
+                  "reading": "かえる"
+                },
+                {
+                  "text": "なら"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "どの"
+                },
+                {
+                  "text": "橋",
+                  "reading": "はし"
+                },
+                {
+                  "text": "また"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "駅",
+                  "reading": "えき"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "渡る",
+                  "reading": "わたる"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "四つ",
+                  "reading": "よっつ"
+                },
+                {
+                  "text": "目",
+                  "reading": "め"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "今日",
+                  "reading": "きょう"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "中川空港",
+                  "reading": "ちゅうせんくうこう"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "蘭州西駅",
+                  "reading": "らんしゅうにしえき"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "蘭州駅",
+                  "reading": "らんしゅうえき"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "どこ"
+                },
+                {
+                  "text": "から"
+                },
+                {
+                  "text": "到着",
+                  "reading": "とうちゃく"
+                },
+                {
+                  "text": "また"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "出発",
+                  "reading": "しゅっぱつ"
+                },
+                {
+                  "text": "する"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "この"
+                },
+                {
+                  "text": "四",
+                  "reading": "よん"
+                },
+                {
+                  "text": "問",
+                  "reading": "もん"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "答え",
+                  "reading": "こたえ"
+                },
+                {
+                  "text": "て"
+                },
+                {
+                  "text": "から"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "地下鉄",
+                  "reading": "ちかてつ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "配車",
+                  "reading": "はいしゃ"
+                },
+                {
+                  "text": "アプリ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "車",
+                  "reading": "くるま"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "徒歩",
+                  "reading": "とほ"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "選ぶ",
+                  "reading": "えらぶ"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "答え",
+                  "reading": "こたえ"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "曖昧",
+                  "reading": "あいまい"
+                },
+                {
+                  "text": "なら"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "所要",
+                  "reading": "しょよう"
+                },
+                {
+                  "text": "時間",
+                  "reading": "じかん"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "数字",
+                  "reading": "すうじ"
+                },
+                {
+                  "text": "より"
+                },
+                {
+                  "text": "先",
+                  "reading": "さき"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "地図",
+                  "reading": "ちず"
+                },
+                {
+                  "text": "へ"
+                },
+                {
+                  "text": "戻る",
+                  "reading": "もどる"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ch01-b005",
+          "kind": "practical",
+          "category": "transport",
+          "temporal_scope": "durable",
+          "heading": {
+            "zh": "先选一段，不要先选全城",
+            "ja": "街全体より、まず一区間を選ぶ",
+            "en": "CHOOSE ONE SEGMENT, NOT THE WHOLE CITY"
+          },
+          "text": {
+            "zh": "第一次规划时，可以把常用地点先分成三段。西段看兰州西站和甘肃省博物馆；中段看西关、黄河铁桥和白塔山入口；再向东，用东方红广场、兰州大学和兰州站认清偏东一段。三段会互相衔接，也不是行政区边界。这样分，只是为了决定今天把行李、第一处参观和晚餐放在哪一段。",
+            "ja": "初めて組む時は、よく使う場所を三つの区間に分けるとよい。西側は蘭州西駅と甘粛省博物館、中央は西関、黄河鉄橋、白塔山入口、さらに東は東方紅広場、蘭州大学、蘭州駅を目印にする。区間は重なり、行政区の境界でもない。荷物、最初の見学、夕食を街のどの部分に置くか決めるための分け方である。",
+          "en": "For a first plan, divide the commonly used places into three working segments. In the west, use Lanzhou West and Gansu Provincial Museum. In the centre, use Xiguan, the Yellow River Iron Bridge, and the White Pagoda approach. Farther east, Dongfanghong Square, Lanzhou University, and Lanzhou Railway Station define an eastern station corridor. The segments overlap and are not administrative boundaries. Use them to keep luggage, the first visit, and dinner within one workable part of the city."
+          },
+          "citation_ids": [
+            "src-lanzhou-metro-service",
+            "src-lanzhou-orientation-map-data"
+          ],
+          "asset_ids": [],
+          "review": {
+            "zh": {
+              "state": "final",
+              "notes": [
+                "Chinese grouping is explicitly editorial and not presented as district geography."
+              ]
+            },
+            "ja": {
+              "state": "final",
+              "notes": [
+                "Japanese grouping connects luggage, first visit, and dinner."
+              ]
+            },
+            "en": {
+              "state": "final",
+              "notes": [
+                "English grouping avoids treating the three segments as official neighbourhoods."
+              ]
+            }
+          },
+          "readings": {
+            "zh": {
+              "system": "hanyu-pinyin-tone-marks",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "第一次",
+                  "reading": "dìyīcì"
+                },
+                {
+                  "text": "规划",
+                  "reading": "guīhuà"
+                },
+                {
+                  "text": "时",
+                  "reading": "shí"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "可以",
+                  "reading": "kěyǐ"
+                },
+                {
+                  "text": "把",
+                  "reading": "bǎ"
+                },
+                {
+                  "text": "常用",
+                  "reading": "chángyòng"
+                },
+                {
+                  "text": "地点",
+                  "reading": "dìdiǎn"
+                },
+                {
+                  "text": "先",
+                  "reading": "xiān"
+                },
+                {
+                  "text": "分成",
+                  "reading": "fēnchéng"
+                },
+                {
+                  "text": "三段",
+                  "reading": "sānduàn"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "西段",
+                  "reading": "xīduàn"
+                },
+                {
+                  "text": "看",
+                  "reading": "kàn"
+                },
+                {
+                  "text": "兰州西站",
+                  "reading": "lánzhōu xīzhàn"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "甘肃省博物馆",
+                  "reading": "gānsù shěng bówùguǎn"
+                },
+                {
+                  "text": "；"
+                },
+                {
+                  "text": "中段",
+                  "reading": "zhōngduàn"
+                },
+                {
+                  "text": "看",
+                  "reading": "kàn"
+                },
+                {
+                  "text": "西关",
+                  "reading": "xīguān"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "黄河铁桥",
+                  "reading": "huánghé tiěqiáo"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "白塔山",
+                  "reading": "báitǎshān"
+                },
+                {
+                  "text": "入口",
+                  "reading": "rùkǒu"
+                },
+                {
+                  "text": "；"
+                },
+                {
+                  "text": "再",
+                  "reading": "zài"
+                },
+                {
+                  "text": "向东",
+                  "reading": "xiàngdōng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "用",
+                  "reading": "yòng"
+                },
+                {
+                  "text": "东方红广场",
+                  "reading": "dōngfānghóng guǎngchǎng"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "兰州大学",
+                  "reading": "lánzhōu dàxué"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "兰州站",
+                  "reading": "lánzhōuzhàn"
+                },
+                {
+                  "text": "认清",
+                  "reading": "rènqīng"
+                },
+                {
+                  "text": "偏东",
+                  "reading": "piāndōng"
+                },
+                {
+                  "text": "一段",
+                  "reading": "yīduàn"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "三段",
+                  "reading": "sānduàn"
+                },
+                {
+                  "text": "会",
+                  "reading": "huì"
+                },
+                {
+                  "text": "互相",
+                  "reading": "hùxiāng"
+                },
+                {
+                  "text": "衔接",
+                  "reading": "xiánjiē"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "也",
+                  "reading": "yě"
+                },
+                {
+                  "text": "不是",
+                  "reading": "búshì"
+                },
+                {
+                  "text": "行政区",
+                  "reading": "xíngzhèngqū"
+                },
+                {
+                  "text": "边界",
+                  "reading": "biānjiè"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "这样",
+                  "reading": "zhèyàng"
+                },
+                {
+                  "text": "分",
+                  "reading": "fēn"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "只是",
+                  "reading": "zhǐshì"
+                },
+                {
+                  "text": "为了",
+                  "reading": "wèile"
+                },
+                {
+                  "text": "决定",
+                  "reading": "juédìng"
+                },
+                {
+                  "text": "今天",
+                  "reading": "jīntiān"
+                },
+                {
+                  "text": "把",
+                  "reading": "bǎ"
+                },
+                {
+                  "text": "行李",
+                  "reading": "xínglǐ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "第一处",
+                  "reading": "dìyīchù"
+                },
+                {
+                  "text": "参观",
+                  "reading": "cānguān"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "晚餐",
+                  "reading": "wǎncān"
+                },
+                {
+                  "text": "放在",
+                  "reading": "fàngzài"
+                },
+                {
+                  "text": "哪",
+                  "reading": "nǎ"
+                },
+                {
+                  "text": "一段",
+                  "reading": "yīduàn"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            },
+            "ja": {
+              "system": "furigana",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "初めて",
+                  "reading": "はじめて"
+                },
+                {
+                  "text": "組む",
+                  "reading": "くむ"
+                },
+                {
+                  "text": "時",
+                  "reading": "とき"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "よく"
+                },
+                {
+                  "text": "使う",
+                  "reading": "つかう"
+                },
+                {
+                  "text": "場所",
+                  "reading": "ばしょ"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "三",
+                  "reading": "みっ"
+                },
+                {
+                  "text": "つ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "区間",
+                  "reading": "くかん"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "分ける",
+                  "reading": "わける"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "よい"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "西側",
+                  "reading": "にしがわ"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "蘭州西駅",
+                  "reading": "らんしゅうにしえき"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "甘粛省博物館",
+                  "reading": "かんしゅくしょうはくぶつかん"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "中央",
+                  "reading": "ちゅうおう"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "西関",
+                  "reading": "せいかん"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "黄河鉄橋",
+                  "reading": "こうがてっきょう"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "白塔山",
+                  "reading": "はくとうざん"
+                },
+                {
+                  "text": "入口",
+                  "reading": "いりぐち"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "さらに"
+                },
+                {
+                  "text": "東",
+                  "reading": "ひがし"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "東方紅広場",
+                  "reading": "とうほうこうひろば"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "蘭州大学",
+                  "reading": "らんしゅうだいがく"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "蘭州駅",
+                  "reading": "らんしゅうえき"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "目印",
+                  "reading": "めじるし"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "する"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "区間",
+                  "reading": "くかん"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "重なり",
+                  "reading": "かさなり"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "行政",
+                  "reading": "ぎょうせい"
+                },
+                {
+                  "text": "区",
+                  "reading": "く"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "境界",
+                  "reading": "きょうかい"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "も"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "荷物",
+                  "reading": "にもつ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "最初",
+                  "reading": "さいしょ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "見学",
+                  "reading": "けんがく"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "夕食",
+                  "reading": "ゆうしょく"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "街",
+                  "reading": "まち"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "どの"
+                },
+                {
+                  "text": "部分",
+                  "reading": "ぶぶん"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "置く",
+                  "reading": "おく"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "決める",
+                  "reading": "きめる"
+                },
+                {
+                  "text": "ため"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "分け",
+                  "reading": "わけ"
+                },
+                {
+                  "text": "方",
+                  "reading": "かた"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "ある"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ch01-b006",
+          "kind": "prose",
+          "category": "practical",
+          "temporal_scope": "durable",
+          "text": {
+            "zh": "把黄河核心段排成一条线，会比来回追景点轻松：先完成南岸的城市段，再从黄河铁桥，也就是中山桥，走到北岸；过桥后顺接白塔山公园，沿途看两岸，不必把公园另排成一次折返。若住宿和晚餐仍在南岸，就把返回的桥和时间留在计划里。其他桥梁和水上项目可能可用，但没有核实当天的开放与运行时，不把它们当作捷径。",
+            "ja": "黄河沿いの中心部は、名所を往復するより一本の線にすると歩きやすい。まず南岸の街歩きを終え、黄河鉄橋、すなわち中山橋を渡って北岸へ行く。そのまま白塔山公園へ進み、両岸を眺めれば、公園だけの往復を別に組む必要はない。宿と夕食が南岸なら、戻る橋と時間も予定に残す。ほかの橋や水上交通が使える場合もあるが、当日の運行を確認しないまま近道として数えない。",
+            "en": "The central riverfront is easier when arranged as one line rather than a chase between sights. Complete the south-bank city section, then cross the Yellow River Iron Bridge, also called Zhongshan Bridge, to the north bank. Continue into White Pagoda Hill Park and read both banks on the same walk instead of making the park a separate out-and-back. If the lodging and dinner remain on the south bank, keep the return bridge and time in the plan. Other crossings or river services may be available, but do not count an unchecked option as a shortcut."
+          },
+          "citation_ids": [
+            "src-lanzhou-tourism-2026",
+            "src-lanzhou-orientation-map-data"
+          ],
+          "asset_ids": [],
+          "review": {
+            "zh": {
+              "state": "final",
+              "notes": [
+                "Chinese route keeps the bridge and park in one movement sequence."
+              ]
+            },
+            "ja": {
+              "state": "final",
+              "notes": [
+                "Japanese route avoids promising unverified river transport."
+              ]
+            },
+            "en": {
+              "state": "final",
+              "notes": [
+                "English route makes the return crossing an explicit cost."
+              ]
+            }
+          },
+          "readings": {
+            "zh": {
+              "system": "hanyu-pinyin-tone-marks",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "把",
+                  "reading": "bǎ"
+                },
+                {
+                  "text": "黄河",
+                  "reading": "huánghé"
+                },
+                {
+                  "text": "核心",
+                  "reading": "héxīn"
+                },
+                {
+                  "text": "段",
+                  "reading": "duàn"
+                },
+                {
+                  "text": "排成",
+                  "reading": "páichéng"
+                },
+                {
+                  "text": "一条线",
+                  "reading": "yītiáoxiàn"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "会",
+                  "reading": "huì"
+                },
+                {
+                  "text": "比",
+                  "reading": "bǐ"
+                },
+                {
+                  "text": "来回",
+                  "reading": "láihuí"
+                },
+                {
+                  "text": "追",
+                  "reading": "zhuī"
+                },
+                {
+                  "text": "景点",
+                  "reading": "jǐngdiǎn"
+                },
+                {
+                  "text": "轻松",
+                  "reading": "qīngsōng"
+                },
+                {
+                  "text": "："
+                },
+                {
+                  "text": "先",
+                  "reading": "xiān"
+                },
+                {
+                  "text": "完成",
+                  "reading": "wánchéng"
+                },
+                {
+                  "text": "南岸",
+                  "reading": "nán'àn"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "城市",
+                  "reading": "chéngshì"
+                },
+                {
+                  "text": "段",
+                  "reading": "duàn"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "再",
+                  "reading": "zài"
+                },
+                {
+                  "text": "从",
+                  "reading": "cóng"
+                },
+                {
+                  "text": "黄河铁桥",
+                  "reading": "huánghé tiěqiáo"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "也",
+                  "reading": "yě"
+                },
+                {
+                  "text": "就是",
+                  "reading": "jiùshì"
+                },
+                {
+                  "text": "中山桥",
+                  "reading": "zhōngshānqiáo"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "走",
+                  "reading": "zǒu"
+                },
+                {
+                  "text": "到",
+                  "reading": "dào"
+                },
+                {
+                  "text": "北岸",
+                  "reading": "běi'àn"
+                },
+                {
+                  "text": "；"
+                },
+                {
+                  "text": "过桥",
+                  "reading": "guòqiáo"
+                },
+                {
+                  "text": "后",
+                  "reading": "hòu"
+                },
+                {
+                  "text": "顺",
+                  "reading": "shùn"
+                },
+                {
+                  "text": "接",
+                  "reading": "jiē"
+                },
+                {
+                  "text": "白塔山公园",
+                  "reading": "báitǎshān gōngyuán"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "沿途",
+                  "reading": "yántú"
+                },
+                {
+                  "text": "看",
+                  "reading": "kàn"
+                },
+                {
+                  "text": "两岸",
+                  "reading": "liǎng'àn"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "不必",
+                  "reading": "bùbì"
+                },
+                {
+                  "text": "把",
+                  "reading": "bǎ"
+                },
+                {
+                  "text": "公园",
+                  "reading": "gōngyuán"
+                },
+                {
+                  "text": "另",
+                  "reading": "lìng"
+                },
+                {
+                  "text": "排成",
+                  "reading": "páichéng"
+                },
+                {
+                  "text": "一次",
+                  "reading": "yīcì"
+                },
+                {
+                  "text": "折返",
+                  "reading": "zhéfǎn"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "若",
+                  "reading": "ruò"
+                },
+                {
+                  "text": "住宿",
+                  "reading": "zhùsù"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "晚餐",
+                  "reading": "wǎncān"
+                },
+                {
+                  "text": "仍",
+                  "reading": "réng"
+                },
+                {
+                  "text": "在",
+                  "reading": "zài"
+                },
+                {
+                  "text": "南岸",
+                  "reading": "nán'àn"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "就",
+                  "reading": "jiù"
+                },
+                {
+                  "text": "把",
+                  "reading": "bǎ"
+                },
+                {
+                  "text": "返回",
+                  "reading": "fǎnhuí"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "桥",
+                  "reading": "qiáo"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "时间",
+                  "reading": "shíjiān"
+                },
+                {
+                  "text": "留在",
+                  "reading": "liúzài"
+                },
+                {
+                  "text": "计划",
+                  "reading": "jìhuà"
+                },
+                {
+                  "text": "里",
+                  "reading": "lǐ"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "其他",
+                  "reading": "qítā"
+                },
+                {
+                  "text": "桥梁",
+                  "reading": "qiáoliáng"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "水上",
+                  "reading": "shuǐshàng"
+                },
+                {
+                  "text": "项目",
+                  "reading": "xiàngmù"
+                },
+                {
+                  "text": "可能",
+                  "reading": "kěnéng"
+                },
+                {
+                  "text": "可用",
+                  "reading": "kěyòng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "但",
+                  "reading": "dàn"
+                },
+                {
+                  "text": "没有",
+                  "reading": "méiyǒu"
+                },
+                {
+                  "text": "核实",
+                  "reading": "héshí"
+                },
+                {
+                  "text": "当天",
+                  "reading": "dàngtiān"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "开放",
+                  "reading": "kāifàng"
+                },
+                {
+                  "text": "与",
+                  "reading": "yǔ"
+                },
+                {
+                  "text": "运行",
+                  "reading": "yùnxíng"
+                },
+                {
+                  "text": "时",
+                  "reading": "shí"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "不",
+                  "reading": "bù"
+                },
+                {
+                  "text": "把",
+                  "reading": "bǎ"
+                },
+                {
+                  "text": "它们",
+                  "reading": "tāmen"
+                },
+                {
+                  "text": "当作",
+                  "reading": "dàngzuò"
+                },
+                {
+                  "text": "捷径",
+                  "reading": "jiéjìng"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            },
+            "ja": {
+              "system": "furigana",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "黄河",
+                  "reading": "こうが"
+                },
+                {
+                  "text": "沿い",
+                  "reading": "そい"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "中心",
+                  "reading": "ちゅうしん"
+                },
+                {
+                  "text": "部",
+                  "reading": "ぶ"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "名所",
+                  "reading": "めいしょ"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "往復",
+                  "reading": "おうふく"
+                },
+                {
+                  "text": "する"
+                },
+                {
+                  "text": "より"
+                },
+                {
+                  "text": "一本",
+                  "reading": "いっぽん"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "線",
+                  "reading": "せん"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "する"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "歩き",
+                  "reading": "あるき"
+                },
+                {
+                  "text": "やすい"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "まず"
+                },
+                {
+                  "text": "南岸",
+                  "reading": "なんがん"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "街歩き",
+                  "reading": "まちあるき"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "終え",
+                  "reading": "おえ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "黄河鉄橋",
+                  "reading": "こうがてっきょう"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "すなわち"
+                },
+                {
+                  "text": "中山橋",
+                  "reading": "ちゅうざんきょう"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "渡っ",
+                  "reading": "わたっ"
+                },
+                {
+                  "text": "て"
+                },
+                {
+                  "text": "北岸",
+                  "reading": "ほくがん"
+                },
+                {
+                  "text": "へ"
+                },
+                {
+                  "text": "行く",
+                  "reading": "いく"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "その"
+                },
+                {
+                  "text": "まま"
+                },
+                {
+                  "text": "白塔山公園",
+                  "reading": "はくとうざんこうえん"
+                },
+                {
+                  "text": "へ"
+                },
+                {
+                  "text": "進み",
+                  "reading": "すすみ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "両岸",
+                  "reading": "りょうがん"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "眺めれ",
+                  "reading": "ながめれ"
+                },
+                {
+                  "text": "ば"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "公園",
+                  "reading": "こうえん"
+                },
+                {
+                  "text": "だけ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "往復",
+                  "reading": "おうふく"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "別",
+                  "reading": "べつ"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "組む",
+                  "reading": "くむ"
+                },
+                {
+                  "text": "必要",
+                  "reading": "ひつよう"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "宿",
+                  "reading": "やど"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "夕食",
+                  "reading": "ゆうしょく"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "南岸",
+                  "reading": "なんがん"
+                },
+                {
+                  "text": "なら"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "戻る",
+                  "reading": "もどる"
+                },
+                {
+                  "text": "橋",
+                  "reading": "はし"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "時間",
+                  "reading": "じかん"
+                },
+                {
+                  "text": "も"
+                },
+                {
+                  "text": "予定",
+                  "reading": "よてい"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "残す",
+                  "reading": "のこす"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "ほか"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "橋",
+                  "reading": "はし"
+                },
+                {
+                  "text": "や"
+                },
+                {
+                  "text": "水上",
+                  "reading": "すいじょう"
+                },
+                {
+                  "text": "交通",
+                  "reading": "こうつう"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "使える",
+                  "reading": "つかえる"
+                },
+                {
+                  "text": "場合",
+                  "reading": "ばあい"
+                },
+                {
+                  "text": "も"
+                },
+                {
+                  "text": "ある"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "当日",
+                  "reading": "とうじつ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "運行",
+                  "reading": "うんこう"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "確認",
+                  "reading": "かくにん"
+                },
+                {
+                  "text": "し"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "まま"
+                },
+                {
+                  "text": "近道",
+                  "reading": "ちかみち"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "し"
+                },
+                {
+                  "text": "て"
+                },
+                {
+                  "text": "数え",
+                  "reading": "かぞえ"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ch01-b007",
+          "kind": "callout",
+          "category": "practical",
+          "temporal_scope": "durable",
+          "heading": {
+            "zh": "地图近，不等于脚下近",
+            "ja": "地図上の近さと、足元の近さは違う",
+            "en": "CLOSE ON THE MAP IS NOT CLOSE ON FOOT"
+          },
+          "text": {
+            "zh": "直线距离没有计算车站内部、真正入口、桥头引道、河岸高差、红绿灯、行李和一次走错岸。先用地图判断方向，再按当天可通行的步行路线重算；带箱子、上白塔山或赶预约时，另留余量。若一段路必须靠“每个出口都一次找对”才能按时完成，它就不适合放在紧凑行程里。",
+            "ja": "直線距離には、駅構内、実際の入口、橋への取付道路、河岸の高低差、信号、荷物、岸を間違えた時の戻りが入っていない。地図で方向を決めたら、当日使える徒歩経路で計算し直す。スーツケースがある時、白塔山へ上る時、予約に向かう時は余裕を加える。すべての出口を一度で正しく選べることが前提の区間は、詰めた旅程には入れない。",
+            "en": "Straight-line distance omits station interiors, actual entrances, bridge approaches, changes in riverbank level, crossings, luggage, and the cost of choosing the wrong bank. Use the map for direction, then recalculate with a walking route that is usable that day. Add margin with a suitcase, for the White Pagoda climb, or before a reservation. A leg that works only when every exit is found immediately does not belong in a tight itinerary."
+          },
+          "citation_ids": [
+            "src-lanzhou-metro-service",
+            "src-lanzhou-orientation-map-data"
+          ],
+          "asset_ids": [],
+          "review": {
+            "zh": {
+              "state": "final",
+              "notes": [
+                "Chinese walking caution names the hidden costs rather than using a generic buffer warning."
+              ]
+            },
+            "ja": {
+              "state": "final",
+              "notes": [
+                "Japanese walking caution distinguishes the map from live pedestrian access."
+              ]
+            },
+            "en": {
+              "state": "final",
+              "notes": [
+                "English walking caution gives a clear test for rejecting a fragile leg."
+              ]
+            }
+          },
+          "readings": {
+            "zh": {
+              "system": "hanyu-pinyin-tone-marks",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "直线",
+                  "reading": "zhíxiàn"
+                },
+                {
+                  "text": "距离",
+                  "reading": "jùlí"
+                },
+                {
+                  "text": "没有",
+                  "reading": "méiyǒu"
+                },
+                {
+                  "text": "计算",
+                  "reading": "jìsuàn"
+                },
+                {
+                  "text": "车站",
+                  "reading": "chēzhàn"
+                },
+                {
+                  "text": "内部",
+                  "reading": "nèibù"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "真正",
+                  "reading": "zhēnzhèng"
+                },
+                {
+                  "text": "入口",
+                  "reading": "rùkǒu"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "桥头",
+                  "reading": "qiáotóu"
+                },
+                {
+                  "text": "引道",
+                  "reading": "yǐndào"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "河岸",
+                  "reading": "hé'àn"
+                },
+                {
+                  "text": "高差",
+                  "reading": "gāochà"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "红绿灯",
+                  "reading": "hónglǜdēng"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "行李",
+                  "reading": "xínglǐ"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "一次",
+                  "reading": "yīcì"
+                },
+                {
+                  "text": "走错",
+                  "reading": "zǒucuò"
+                },
+                {
+                  "text": "岸",
+                  "reading": "àn"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "先用",
+                  "reading": "xiānyòng"
+                },
+                {
+                  "text": "地图",
+                  "reading": "dìtú"
+                },
+                {
+                  "text": "判断",
+                  "reading": "pànduàn"
+                },
+                {
+                  "text": "方向",
+                  "reading": "fāngxiàng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "再",
+                  "reading": "zài"
+                },
+                {
+                  "text": "按",
+                  "reading": "àn"
+                },
+                {
+                  "text": "当天",
+                  "reading": "dàngtiān"
+                },
+                {
+                  "text": "可",
+                  "reading": "kě"
+                },
+                {
+                  "text": "通行",
+                  "reading": "tōngxíng"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "步行",
+                  "reading": "bùxíng"
+                },
+                {
+                  "text": "路线",
+                  "reading": "lùxiàn"
+                },
+                {
+                  "text": "重",
+                  "reading": "zhòng"
+                },
+                {
+                  "text": "算",
+                  "reading": "suàn"
+                },
+                {
+                  "text": "；"
+                },
+                {
+                  "text": "带",
+                  "reading": "dài"
+                },
+                {
+                  "text": "箱子",
+                  "reading": "xiāngzi"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "上",
+                  "reading": "shàng"
+                },
+                {
+                  "text": "白塔山",
+                  "reading": "báitǎshān"
+                },
+                {
+                  "text": "或",
+                  "reading": "huò"
+                },
+                {
+                  "text": "赶",
+                  "reading": "gǎn"
+                },
+                {
+                  "text": "预约",
+                  "reading": "yùyuē"
+                },
+                {
+                  "text": "时",
+                  "reading": "shí"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "另",
+                  "reading": "lìng"
+                },
+                {
+                  "text": "留",
+                  "reading": "liú"
+                },
+                {
+                  "text": "余量",
+                  "reading": "yúliàng"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "若",
+                  "reading": "ruò"
+                },
+                {
+                  "text": "一段路",
+                  "reading": "yīduànlù"
+                },
+                {
+                  "text": "必须",
+                  "reading": "bìxū"
+                },
+                {
+                  "text": "靠",
+                  "reading": "kào"
+                },
+                {
+                  "text": "“"
+                },
+                {
+                  "text": "每个",
+                  "reading": "měigè"
+                },
+                {
+                  "text": "出口",
+                  "reading": "chūkǒu"
+                },
+                {
+                  "text": "都",
+                  "reading": "dōu"
+                },
+                {
+                  "text": "一次",
+                  "reading": "yīcì"
+                },
+                {
+                  "text": "找",
+                  "reading": "zhǎo"
+                },
+                {
+                  "text": "对",
+                  "reading": "duì"
+                },
+                {
+                  "text": "”"
+                },
+                {
+                  "text": "才能",
+                  "reading": "cáinéng"
+                },
+                {
+                  "text": "按时",
+                  "reading": "ànshí"
+                },
+                {
+                  "text": "完成",
+                  "reading": "wánchéng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "它",
+                  "reading": "tā"
+                },
+                {
+                  "text": "就",
+                  "reading": "jiù"
+                },
+                {
+                  "text": "不适合",
+                  "reading": "bù shìhé"
+                },
+                {
+                  "text": "放在",
+                  "reading": "fàngzài"
+                },
+                {
+                  "text": "紧凑",
+                  "reading": "jǐncòu"
+                },
+                {
+                  "text": "行程",
+                  "reading": "xíngchéng"
+                },
+                {
+                  "text": "里",
+                  "reading": "lǐ"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            },
+            "ja": {
+              "system": "furigana",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "直線",
+                  "reading": "ちょくせん"
+                },
+                {
+                  "text": "距離",
+                  "reading": "きょり"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "駅",
+                  "reading": "えき"
+                },
+                {
+                  "text": "構内",
+                  "reading": "こうない"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "実際",
+                  "reading": "じっさい"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "入口",
+                  "reading": "いりぐち"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "橋",
+                  "reading": "はし"
+                },
+                {
+                  "text": "へ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "取付",
+                  "reading": "とりつけ"
+                },
+                {
+                  "text": "道路",
+                  "reading": "どうろ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "河岸",
+                  "reading": "かし"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "高低",
+                  "reading": "こうてい"
+                },
+                {
+                  "text": "差",
+                  "reading": "さ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "信号",
+                  "reading": "しんごう"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "荷物",
+                  "reading": "にもつ"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "岸",
+                  "reading": "きし"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "間違え",
+                  "reading": "まちがえ"
+                },
+                {
+                  "text": "た"
+                },
+                {
+                  "text": "時",
+                  "reading": "とき"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "戻り",
+                  "reading": "もどり"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "入っ",
+                  "reading": "はいっ"
+                },
+                {
+                  "text": "て"
+                },
+                {
+                  "text": "い"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "地図",
+                  "reading": "ちず"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "方向",
+                  "reading": "ほうこう"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "決め",
+                  "reading": "きめ"
+                },
+                {
+                  "text": "たら"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "当日",
+                  "reading": "とうじつ"
+                },
+                {
+                  "text": "使える",
+                  "reading": "つかえる"
+                },
+                {
+                  "text": "徒歩",
+                  "reading": "とほ"
+                },
+                {
+                  "text": "経路",
+                  "reading": "けいろ"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "計算",
+                  "reading": "けいさん"
+                },
+                {
+                  "text": "し"
+                },
+                {
+                  "text": "直す",
+                  "reading": "なおす"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "スーツケース"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "ある"
+                },
+                {
+                  "text": "時",
+                  "reading": "とき"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "白塔山",
+                  "reading": "はくとうざん"
+                },
+                {
+                  "text": "へ"
+                },
+                {
+                  "text": "上る",
+                  "reading": "のぼる"
+                },
+                {
+                  "text": "時",
+                  "reading": "とき"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "予約",
+                  "reading": "よやく"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "向かう",
+                  "reading": "むかう"
+                },
+                {
+                  "text": "時",
+                  "reading": "とき"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "余裕",
+                  "reading": "よゆう"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "加える",
+                  "reading": "くわえる"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "すべて"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "出口",
+                  "reading": "でぐち"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "一",
+                  "reading": "いち"
+                },
+                {
+                  "text": "度",
+                  "reading": "ど"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "正しく",
+                  "reading": "ただしく"
+                },
+                {
+                  "text": "選べる",
+                  "reading": "えらべる"
+                },
+                {
+                  "text": "こと"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "前提",
+                  "reading": "ぜんてい"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "区間",
+                  "reading": "くかん"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "詰め",
+                  "reading": "つめ"
+                },
+                {
+                  "text": "た"
+                },
+                {
+                  "text": "旅程",
+                  "reading": "りょてい"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "入れ",
+                  "reading": "いれ"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ch01-b008",
+          "kind": "practical",
+          "category": "transport",
+          "temporal_scope": "time-sensitive",
+          "checked_at": "2026-08-21",
+          "heading": {
+            "zh": "把票面全名写进第一段路",
+            "ja": "券面の正式名を最初の経路に入れる",
+            "en": "PUT THE TICKETED NAME INTO THE FIRST LEG"
+          },
+          "text": {
+            "zh": "中川机场T3在二〇二五年三月二十日启用时，客运航班由T1、T2转入T3；出发前仍要以航空公司给出的航站楼为准。铁路同样不能只写“兰州站”：兰州西站和兰州站是两个到达站点，票面写哪一个，第一段路就从哪一个开始。先核对航站楼或完整站名，再看住宿地址和第一处行程。下一章将分别说明机场、西站和兰州站怎样接入市区。",
+            "ja": "中川空港T3は二〇二五年三月二十日に供用が始まり、その時点で旅客便はT1、T2からT3へ移った。出発前には、航空会社が示すターミナルを改めて確認する。鉄道も「蘭州駅」とだけ書いてはいけない。蘭州西駅と蘭州駅は別の到着口であり、券面にある駅から最初の経路が始まる。正式なターミナル名または駅名を確認してから、宿の住所と最初の予定をつなぐ。次章では三つの到着口を別々に扱う。",
+          "en": "When Zhongchuan Airport T3 opened on 20 March 2025, passenger flights moved there from T1 and T2; check the terminal supplied by the airline again before departure. Rail requires the same precision. Lanzhou West and Lanzhou Railway Station are separate arrival gates, so the first leg begins at the station printed on the ticket. Confirm the full terminal or station name before connecting it to the lodging address and first stop. The next chapter handles the airport, West Station, and Lanzhou Railway Station separately."
+          },
+          "citation_ids": [
+            "src-lanzhou-airport-t3-2025",
+            "src-lanzhou-metro-service",
+            "src-lanzhou-orientation-map-data"
+          ],
+          "asset_ids": [],
+          "review": {
+            "zh": {
+              "state": "final",
+              "notes": [
+                "Chinese handoff dates the terminal change and keeps current airline evidence controlling."
+              ]
+            },
+            "ja": {
+              "state": "final",
+              "notes": [
+                "Japanese handoff distinguishes the two railway stations and current terminal check."
+              ]
+            },
+            "en": {
+              "state": "final",
+              "notes": [
+                "English handoff leads directly to the Chapter 2 arrival comparison."
+              ]
+            }
+          },
+          "readings": {
+            "zh": {
+              "system": "hanyu-pinyin-tone-marks",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "中川机场",
+                  "reading": "zhōngchuān jīchǎng"
+                },
+                {
+                  "text": "T3"
+                },
+                {
+                  "text": "在",
+                  "reading": "zài"
+                },
+                {
+                  "text": "二",
+                  "reading": "èr"
+                },
+                {
+                  "text": "〇",
+                  "reading": "líng"
+                },
+                {
+                  "text": "二",
+                  "reading": "èr"
+                },
+                {
+                  "text": "五年",
+                  "reading": "wǔnián"
+                },
+                {
+                  "text": "三月",
+                  "reading": "sānyuè"
+                },
+                {
+                  "text": "二十日",
+                  "reading": "èrshírì"
+                },
+                {
+                  "text": "启用",
+                  "reading": "qǐyòng"
+                },
+                {
+                  "text": "时",
+                  "reading": "shí"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "客运",
+                  "reading": "kèyùn"
+                },
+                {
+                  "text": "航班",
+                  "reading": "hángbān"
+                },
+                {
+                  "text": "由",
+                  "reading": "yóu"
+                },
+                {
+                  "text": "T1"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "T2"
+                },
+                {
+                  "text": "转入",
+                  "reading": "zhuǎnrù"
+                },
+                {
+                  "text": "T3"
+                },
+                {
+                  "text": "；"
+                },
+                {
+                  "text": "出发",
+                  "reading": "chūfā"
+                },
+                {
+                  "text": "前",
+                  "reading": "qián"
+                },
+                {
+                  "text": "仍",
+                  "reading": "réng"
+                },
+                {
+                  "text": "要",
+                  "reading": "yào"
+                },
+                {
+                  "text": "以",
+                  "reading": "yǐ"
+                },
+                {
+                  "text": "航空公司",
+                  "reading": "hángkōnggōngsī"
+                },
+                {
+                  "text": "给出",
+                  "reading": "gěichū"
+                },
+                {
+                  "text": "的",
+                  "reading": "de"
+                },
+                {
+                  "text": "航站楼",
+                  "reading": "hángzhànlóu"
+                },
+                {
+                  "text": "为准",
+                  "reading": "wéi zhǔn"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "铁路",
+                  "reading": "tiělù"
+                },
+                {
+                  "text": "同样",
+                  "reading": "tóngyàng"
+                },
+                {
+                  "text": "不能",
+                  "reading": "bùnéng"
+                },
+                {
+                  "text": "只",
+                  "reading": "zhǐ"
+                },
+                {
+                  "text": "写",
+                  "reading": "xiě"
+                },
+                {
+                  "text": "“"
+                },
+                {
+                  "text": "兰州站",
+                  "reading": "lánzhōuzhàn"
+                },
+                {
+                  "text": "”"
+                },
+                {
+                  "text": "："
+                },
+                {
+                  "text": "兰州西站",
+                  "reading": "lánzhōu xīzhàn"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "兰州站",
+                  "reading": "lánzhōuzhàn"
+                },
+                {
+                  "text": "是",
+                  "reading": "shì"
+                },
+                {
+                  "text": "两个",
+                  "reading": "liǎnggè"
+                },
+                {
+                  "text": "到达",
+                  "reading": "dàodá"
+                },
+                {
+                  "text": "站点",
+                  "reading": "zhàndiǎn"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "票面",
+                  "reading": "piàomiàn"
+                },
+                {
+                  "text": "写",
+                  "reading": "xiě"
+                },
+                {
+                  "text": "哪",
+                  "reading": "nǎ"
+                },
+                {
+                  "text": "一个",
+                  "reading": "yígè"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "第一段",
+                  "reading": "dìyīduàn"
+                },
+                {
+                  "text": "路",
+                  "reading": "lù"
+                },
+                {
+                  "text": "就",
+                  "reading": "jiù"
+                },
+                {
+                  "text": "从",
+                  "reading": "cóng"
+                },
+                {
+                  "text": "哪",
+                  "reading": "nǎ"
+                },
+                {
+                  "text": "一个",
+                  "reading": "yígè"
+                },
+                {
+                  "text": "开始",
+                  "reading": "kāishǐ"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "先",
+                  "reading": "xiān"
+                },
+                {
+                  "text": "核对",
+                  "reading": "héduì"
+                },
+                {
+                  "text": "航站楼",
+                  "reading": "hángzhànlóu"
+                },
+                {
+                  "text": "或",
+                  "reading": "huò"
+                },
+                {
+                  "text": "完整",
+                  "reading": "wánzhěng"
+                },
+                {
+                  "text": "站名",
+                  "reading": "zhànmíng"
+                },
+                {
+                  "text": "，"
+                },
+                {
+                  "text": "再",
+                  "reading": "zài"
+                },
+                {
+                  "text": "看",
+                  "reading": "kàn"
+                },
+                {
+                  "text": "住宿",
+                  "reading": "zhùsù"
+                },
+                {
+                  "text": "地址",
+                  "reading": "dìzhǐ"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "第一处",
+                  "reading": "dìyīchù"
+                },
+                {
+                  "text": "行程",
+                  "reading": "xíngchéng"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "下",
+                  "reading": "xià"
+                },
+                {
+                  "text": "一章",
+                  "reading": "yīzhāng"
+                },
+                {
+                  "text": "将",
+                  "reading": "jiāng"
+                },
+                {
+                  "text": "分别",
+                  "reading": "fēnbié"
+                },
+                {
+                  "text": "说明",
+                  "reading": "shuōmíng"
+                },
+                {
+                  "text": "机场",
+                  "reading": "jīchǎng"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "西站",
+                  "reading": "xīzhàn"
+                },
+                {
+                  "text": "和",
+                  "reading": "hé"
+                },
+                {
+                  "text": "兰州站",
+                  "reading": "lánzhōuzhàn"
+                },
+                {
+                  "text": "怎样",
+                  "reading": "zěnyàng"
+                },
+                {
+                  "text": "接入",
+                  "reading": "jiērù"
+                },
+                {
+                  "text": "市区",
+                  "reading": "shìqū"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            },
+            "ja": {
+              "system": "furigana",
+              "status": "reviewed",
+              "review_notes": [
+                "Reviewed against the chapter-specific reading audit."
+              ],
+              "tokens": [
+                {
+                  "text": "中川空港",
+                  "reading": "ちゅうせんくうこう"
+                },
+                {
+                  "text": "T"
+                },
+                {
+                  "text": "3"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "二〇二五年",
+                  "reading": "にせんにじゅうごねん"
+                },
+                {
+                  "text": "三",
+                  "reading": "さん"
+                },
+                {
+                  "text": "月",
+                  "reading": "がつ"
+                },
+                {
+                  "text": "二十",
+                  "reading": "はつ"
+                },
+                {
+                  "text": "日",
+                  "reading": "か"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "供用",
+                  "reading": "きょうよう"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "始まり",
+                  "reading": "はじまり"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "その"
+                },
+                {
+                  "text": "時点",
+                  "reading": "じてん"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "旅客",
+                  "reading": "りょかく"
+                },
+                {
+                  "text": "便",
+                  "reading": "びん"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "T"
+                },
+                {
+                  "text": "1"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "T"
+                },
+                {
+                  "text": "2"
+                },
+                {
+                  "text": "から"
+                },
+                {
+                  "text": "T"
+                },
+                {
+                  "text": "3"
+                },
+                {
+                  "text": "へ"
+                },
+                {
+                  "text": "移っ",
+                  "reading": "うつっ"
+                },
+                {
+                  "text": "た"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "出発",
+                  "reading": "しゅっぱつ"
+                },
+                {
+                  "text": "前",
+                  "reading": "まえ"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "航空",
+                  "reading": "こうくう"
+                },
+                {
+                  "text": "会社",
+                  "reading": "かいしゃ"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "示す",
+                  "reading": "しめす"
+                },
+                {
+                  "text": "ターミナル"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "改めて",
+                  "reading": "あらためて"
+                },
+                {
+                  "text": "確認",
+                  "reading": "かくにん"
+                },
+                {
+                  "text": "する"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "鉄道",
+                  "reading": "てつどう"
+                },
+                {
+                  "text": "も"
+                },
+                {
+                  "text": "「"
+                },
+                {
+                  "text": "蘭州駅",
+                  "reading": "らんしゅうえき"
+                },
+                {
+                  "text": "」"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "だけ"
+                },
+                {
+                  "text": "書い",
+                  "reading": "かい"
+                },
+                {
+                  "text": "て"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "いけ"
+                },
+                {
+                  "text": "ない"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "蘭州西駅",
+                  "reading": "らんしゅうにしえき"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "蘭州駅",
+                  "reading": "らんしゅうえき"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "別",
+                  "reading": "べつ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "到着口",
+                  "reading": "とうちゃくぐち"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "あり"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "券面",
+                  "reading": "けんめん"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "ある"
+                },
+                {
+                  "text": "駅",
+                  "reading": "えき"
+                },
+                {
+                  "text": "から"
+                },
+                {
+                  "text": "最初",
+                  "reading": "さいしょ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "経路",
+                  "reading": "けいろ"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "始まる",
+                  "reading": "はじまる"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "正式",
+                  "reading": "せいしき"
+                },
+                {
+                  "text": "な"
+                },
+                {
+                  "text": "ターミナル"
+                },
+                {
+                  "text": "名",
+                  "reading": "めい"
+                },
+                {
+                  "text": "また"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "駅名",
+                  "reading": "えきめい"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "確認",
+                  "reading": "かくにん"
+                },
+                {
+                  "text": "し"
+                },
+                {
+                  "text": "て"
+                },
+                {
+                  "text": "から"
+                },
+                {
+                  "text": "、"
+                },
+                {
+                  "text": "宿",
+                  "reading": "やど"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "住所",
+                  "reading": "じゅうしょ"
+                },
+                {
+                  "text": "と"
+                },
+                {
+                  "text": "最初",
+                  "reading": "さいしょ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "予定",
+                  "reading": "よてい"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "つなぐ"
+                },
+                {
+                  "text": "。"
+                },
+                {
+                  "text": "次章",
+                  "reading": "じしょう"
+                },
+                {
+                  "text": "で"
+                },
+                {
+                  "text": "は"
+                },
+                {
+                  "text": "三",
+                  "reading": "みっ"
+                },
+                {
+                  "text": "つ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "到着口",
+                  "reading": "とうちゃくぐち"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "別々",
+                  "reading": "べつべつ"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "扱う",
+                  "reading": "あつかう"
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            }
+          }
+        }
+      ]
     },
     {
       "id": "ch02-arrival-gates",
@@ -80,7 +5771,7 @@
         "practical",
         "maps"
       ],
-      "status": "outlined",
+      "status": "researching",
       "blocks": []
     },
     {
@@ -103,9 +5794,9 @@
       "id": "ch04-bridge-banks",
       "order": 4,
       "titles": {
-        "zh": "过一座桥，看两岸：中山桥与黄河边",
-        "ja": "橋を一つ渡り、両岸を見る：中山橋と黄河沿い",
-        "en": "Cross One Bridge, Read Both Banks: Zhongshan Bridge and the Riverfront"
+        "zh": "过一座桥，看两岸：黄河铁桥、白塔山与黄河边",
+        "ja": "橋を一つ渡り、両岸を見る：黄河鉄橋・白塔山と黄河沿い",
+        "en": "Cross One Bridge, Read Both Banks: Yellow River Iron Bridge and White Pagoda Hill"
       },
       "coverage": [
         "history",
@@ -239,6 +5930,137 @@
       "blocks": []
     }
   ],
-  "citations": [],
-  "assets": []
+  "citations": [
+    {
+      "id": "src-lanzhou-geography-2026",
+      "title": "Gansu Belt and Road Portal: Lanzhou Geography",
+      "source_type": "official-web",
+      "source_id": "LZH-GEO-2026",
+      "url": "https://ydyl.gansu.gov.cn/gsydyl/zjgs/202605/t20260511_36214.html",
+      "locator": "Official geographic description of the west-east Yellow River, the Gaolan and White Pagoda hill systems, the elongated main urban area, and its narrowest north-south width",
+      "accessed_at": "2026-08-21",
+      "supports": [
+        "west-east river-valley orientation",
+        "main-city east-west extent over forty kilometres",
+        "narrowest main-city width of about one kilometre",
+        "relationship of river and nearby hill systems"
+      ]
+    },
+    {
+      "id": "src-lanzhou-metro-service",
+      "title": "Lanzhou Rail Transit: Passenger Service and Station Index",
+      "source_type": "official-web",
+      "source_id": "LZH-METRO-SERVICE",
+      "url": "https://www.lzgdjt.com/lzgd/serve.jsp",
+      "locator": "Current operator station index and service structure for Metro Lines 1 and 2, checked with the operator's published station data",
+      "accessed_at": "2026-08-21",
+      "supports": [
+        "Line 1 and Line 2 relationship",
+        "selected station names and order",
+        "Lanzhou West, Xiguan, Dongfanghong Square, Lanzhou University, and Lanzhou Railway Station anchors",
+        "need to recheck live operation and entrances"
+      ]
+    },
+    {
+      "id": "src-lanzhou-orientation-map-data",
+      "title": "LazyTravel Lanzhou Valley Orientation Map Data",
+      "source_type": "map-data",
+      "source_id": "LZH-MAP-CH01-2026-08-21",
+      "url": "https://www.openstreetmap.org/way/166825103",
+      "locator": "Pinned Yellow River way 166825103, selected OpenStreetMap objects, official metro station sequence, declared generalisations, hashes, and QA recorded in the committed map configuration and adjacent provenance",
+      "accessed_at": "2026-08-21",
+      "license": "OpenStreetMap data © OpenStreetMap contributors, ODbL 1.0; original LazyTravel map design",
+      "supports": [
+        "river and anchor relationships",
+        "editorial east-west segment grouping",
+        "bank and crossing decisions",
+        "schematic rather than navigational map limits"
+      ]
+    },
+    {
+      "id": "src-lanzhou-tourism-2026",
+      "title": "Gansu Culture and Tourism Department: Lanzhou Visitor Overview",
+      "source_type": "official-web",
+      "source_id": "LZH-TOURISM-2026",
+      "url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html",
+      "locator": "Current institutional overview used only for the relationship among Zhongshan Bridge, the riverfront, White Pagoda Hill, and central visitor movement",
+      "accessed_at": "2026-08-21",
+      "supports": [
+        "central bridge and riverfront relationship",
+        "White Pagoda Hill as a north-bank viewpoint",
+        "need to check current visitor operations separately"
+      ]
+    },
+    {
+      "id": "src-lanzhou-airport-t3-2025",
+      "title": "Lanzhou New Area Government: Zhongchuan Airport T3 Opening",
+      "source_type": "official-web",
+      "source_id": "LZH-AIRPORT-T3-2025",
+      "url": "https://www.lzxq.gov.cn/system/2025/03/06/031148351.shtml",
+      "locator": "Official notice for T3 operation from 20 March 2025 and the associated passenger-flight transfer from T1 and T2",
+      "accessed_at": "2026-08-21",
+      "supports": [
+        "T3 opening date",
+        "terminal change context",
+        "need to verify the airline-assigned terminal before travel"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-lanzhou-river-valley-orientation",
+      "kind": "illustration",
+      "path": "assets/images/lanzhou/lanzhou-river-valley-orientation.jpg",
+      "variants": {
+        "print": "assets/images/lanzhou/lanzhou-river-valley-orientation.jpg",
+        "web": "assets/images/lanzhou/lanzhou-river-valley-orientation-web.jpg",
+        "fallback": "assets/images/lanzhou/lanzhou-river-valley-orientation-web.jpg"
+      },
+      "captions": {
+        "zh": "从白塔山一侧俯瞰，黄河铁桥只占河谷的一处横断面；真正决定路线的是下一站在东还是西、在南岸还是北岸。",
+        "ja": "白塔山側から見下ろすと、黄河鉄橋は長い河谷の一つの横断地点にすぎない。経路を決めるのは、次が東西どちらか、南北どちらの岸かである。",
+        "en": "From the White Pagoda Hill side, the Yellow River Iron Bridge occupies one crossing in a long valley. The next stop's east-west position and riverbank determine the route."
+      },
+      "provenance": {
+        "method": "generated",
+        "source": "AgInTiFlow generation from four hash-pinned series-guide references and two unredistributed Lanzhou location references; full lineage, rejected drafts, factual limits, crops, and QA are recorded in the adjacent provenance file",
+        "created_at": "2026-08-21"
+      },
+      "rights": "Original LazyTravel composition; external character and location references are not redistributed.",
+      "qa": {
+        "resolution": "pass",
+        "legibility": "pass",
+        "content": "pass",
+        "approved": true
+      }
+    },
+    {
+      "id": "asset-lanzhou-valley-orientation-map",
+      "kind": "map",
+      "path": "assets/maps/lanzhou/lanzhou-valley-orientation.svg",
+      "variants": {
+        "print": "assets/maps/lanzhou/lanzhou-valley-orientation.png",
+        "vector_pdf": "assets/maps/lanzhou/lanzhou-valley-orientation.pdf",
+        "web": "assets/maps/lanzhou/lanzhou-valley-orientation.svg",
+        "fallback": "assets/maps/lanzhou/lanzhou-valley-orientation.png"
+      },
+      "captions": {
+        "zh": "蓝线沿黄河向东；红、绿线只表示地铁连接关系。山地色带与机场框都是方向示意，不代替导航或当日运行信息。",
+        "ja": "青線は黄河を東へたどり、赤線と緑線は地下鉄の接続だけを示す。山地の帯と空港枠は方向の模式図で、経路案内や当日の運行情報ではない。",
+        "en": "The blue line follows the Yellow River east; red and green show metro connections only. Hill bands and the airport inset are orientation devices, not navigation or live service information."
+      },
+      "provenance": {
+        "method": "map-render",
+        "source": "data/maps/lanzhou/lanzhou-valley-orientation.config.json; source objects, official metro data, declared generalisations, hashes, and QA are recorded in the adjacent provenance file",
+        "created_at": "2026-08-21"
+      },
+      "rights": "Map design © LazyTravel; OpenStreetMap data © OpenStreetMap contributors under ODbL 1.0; transport relationships derive from the listed official source.",
+      "qa": {
+        "resolution": "pass",
+        "legibility": "pass",
+        "content": "pass",
+        "approved": true
+      }
+    }
+  ]
 }

@@ -18,6 +18,7 @@ DEFAULT_DESTINATION = "hakone"
 BOOK_PATHS = (
     ROOT / "data/china/cities/xian/book.json",
     ROOT / "data/japan/prefectures/kanagawa/hakone/book.json",
+    ROOT / "data/china/cities/lanzhou/book.json",
 )
 
 

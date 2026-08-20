@@ -80,6 +80,8 @@ again during their chapter gate and close to release.
 | `DHA-BINGLING` | Dunhuang Academy, Bingling Temple Grottoes | <https://www.dha.ac.cn/skxl/blssk.htm> | Institutional history and visitor-information entry point. Reservoir crossings, boats, road access, hours, and closures remain volatile. |
 | `YJ-BINGLING-CLOSURE-2025` | Yongjing County government, temporary Bingling closure example | <https://www.gsyongjing.gov.cn/yjx/wtgdhlyj/fdzdgknr/GSGG/art/2025/art_754e69206c1f4e8f9cbac5eca89409b5.html> | Evidence that weather can suspend access. It is not evidence of a current closure or reopening. |
 | `LZH-XINGLONG-2024` | Lanzhou municipal investment portal, Xinglong Mountain | <https://tzcjj.lanzhou.gov.cn/art/2024/3/13/art_220_1332695.html> | Landscape and location lead. Current gates, trails, vehicles, and closures require site-level confirmation. |
+| `LZH-INK-DANXIA-2026` | Gansu culture and tourism department, Lanzhou Ink Danxia | <https://www.gswbj.gov.cn/a/2026/07/07/28814.html> | Current place and visitor-experience lead for a geology-led nearby day. New activities, transport, hours, ticketing, and construction claims are volatile and require direct site confirmation. Promotional rankings and investment language are not reused. |
+| `YJ-YELLOW-TAO-2025` | Yongjing County government, Yellow River-Tao River confluence viewpoint | <https://www.gsyongjing.gov.cn/yjx/zwdt/MTGZ/art/2025/art_6d769761186241bb8c73859dd1dcc83b.html> | Confirms the viewpoint near Longhuishan by Liujiaxia and a dated ticket-and-shuttle operation. River colors, shuttle arrangements, road access, crowding, and opening status require a same-day check. |
 | `LZH-REGIONAL-ROUTE-2026` | Gansu culture and tourism department, 2026 travel route | <https://www.gswbj.gov.cn/a/2026/06/17/28621.html> | Current lead for nearby and onward route questions. The book does not copy its itinerary or assume each segment runs daily. |
 
 ## Initial Claim Plan
@@ -89,14 +91,14 @@ again during their chapter gate and close to release.
 | 1 | How does the valley shape ordinary movement? | `LZH-GEO-2026`, `LZH-CITY-PLAN`, current metro geography, and map-coordinate checks. Avoid a precise valley length unless two compatible official definitions agree. |
 | 2 | Which arrival gate fits the booked service and hotel district? | `LZH-AIRPORT-T3-2025`, `LZH-NDRC-AIRPORT-2025`, `LZH-METRO-SERVICE`, railway/airport operator checks, and dated booking evidence. |
 | 3 | Which changes in crossing and administration are still visible? | `LZH-HISTORY-2020` plus `LZH-BRIDGE-HISTORY`; reconcile names, administrative levels, bridge dates, and urban continuity. |
-| 4 | What is a realistic central bridge-and-banks walk? | Current public-space and bridge sources, map measurements, same-day river/access guidance, and field-readable landmarks. |
+| 4 | What is a realistic Yellow River Iron Bridge-White Pagoda Hill Park walk? | `LZH-BRIDGE-HISTORY`, `LZH-RIVER-CORE-2024`, current public-space sources, map measurements, same-day river/access guidance, and field-readable landmarks. |
 | 5 | Which museum route gives useful context for a later Gansu trip? | `LZH-MUSEUM`, object-level institutional records, current gallery status, and explicit distinction between findspot and display location. |
 | 6 | How does a traveler order and pace meals without turning food into folklore? | `ICH-BEEF-NOODLE`, `LZH-FOOD-2020`, `LZH-FOOD-2026`, food-safety and dietary confirmation where needed, and direct menu terminology. |
 | 7 | Which one height fits weather, mobility, and daylight? | Separate official access sources for White Pagoda Hill, Lanshan, and Wuquan Mountain, current route checks, map gradients, and no guaranteed-view language. This is an open research gate. |
 | 8 | Which district minimizes the traveler's actual transfers? | Current station/metro geography, official lodging directories or direct property pages, and dated verification for every named property or feature. |
 | 9 | Can each itinerary be completed with meals, rest, and a usable exit? | Accepted Chapters 1-8, measured map distances, current venue days, and a whole-day fallback rather than added stops. |
 | 10 | How much buffer does the next Gansu leg require? | Current railway and airline booking results, station/terminal confirmation, and dated operator notices. No preserved timetable. |
-| 11 | Which single nearby day is operationally realistic? | `DHA-BINGLING`, current Bingling/Liujiaxia operator notices, site-level Xinglong and Ink Danxia access, weather/closure checks, and conservative return margins. |
+| 11 | Which single nearby day is operationally realistic? | `DHA-BINGLING`, `YJ-YELLOW-TAO-2025`, current Bingling/Liujiaxia operator notices, `LZH-XINGLONG-2024`, `LZH-INK-DANXIA-2026`, weather/closure checks, and conservative return margins. The confluence platform is a Liujiaxia route branch, not a fourth day-trip chain. |
 
 ## Rejected Or Deferred Claims
 

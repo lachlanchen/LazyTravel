@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "id": "lanzhou-valley-orientation",
+  "snapshot_date": "2026-08-21",
+  "extent": [
+    103.735,
+    36.026,
+    103.872,
+    36.087
+  ],
+  "river": {
+    "name": "黄河 · Yellow River",
+    "osm_way_id": 166825103,
+    "source_url": "https://api.openstreetmap.org/api/0.6/way/166825103/full"
+  },
+  "hill_bands": [
+    {
+      "id": "north-hills",
+      "label": "白塔山一带 · WHITE PAGODA HILLS",
+      "fill": "#DDEEE4",
+      "edge": "#23836B",
+      "coordinates": [
+        [103.735, 36.087],
+        [103.872, 36.087],
+        [103.872, 36.078],
+        [103.852, 36.076],
+        [103.832, 36.078],
+        [103.814, 36.074],
+        [103.792, 36.077],
+        [103.770, 36.080],
+        [103.750, 36.079],
+        [103.735, 36.081]
+      ],
+      "label_position": [103.785, 36.082]
+    },
+    {
+      "id": "south-hills",
+      "label": "皋兰山一带 · GAOLAN HILLS",
+      "fill": "#E7F0DA",
+      "edge": "#5C8D56",
+      "coordinates": [
+        [103.735, 36.026],
+        [103.872, 36.026],
+        [103.872, 36.038],
+        [103.852, 36.041],
+        [103.834, 36.044],
+        [103.816, 36.041],
+        [103.795, 36.045],
+        [103.774, 36.048],
+        [103.752, 36.046],
+        [103.735, 36.043]
+      ],
+      "label_position": [103.783, 36.033]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lanzhou-west",
+      "label": "兰州西\nLanzhou West",
+      "position": [103.749284, 36.067584],
+      "category": "arrival",
+      "osm_object": "N3481086575",
+      "label_offset": [-8, 12],
+      "label_align": "left"
+    },
+    {
+      "id": "gansu-museum",
+      "label": "甘肃省博物馆\nGansu Provincial Museum",
+      "position": [103.771998, 36.066824],
+      "category": "attraction",
+      "osm_object": "W405352719",
+      "label_offset": [-2, -24],
+      "label_align": "center"
+    },
+    {
+      "id": "xiguan",
+      "label": "西关\nXiguan",
+      "position": [103.814259, 36.059941],
+      "category": "anchor",
+      "osm_object": "N6563941759",
+      "label_offset": [-22, -22],
+      "label_align": "right"
+    },
+    {
+      "id": "central-crossing",
+      "label": "中山桥 / 白塔山\nBridge / hill approach",
+      "position": [103.814569, 36.064810],
+      "category": "crossing",
+      "osm_object": "W223253546",
+      "label_offset": [8, 17],
+      "label_align": "left"
+    },
+    {
+      "id": "dongfanghong",
+      "label": "东方红广场\nDongfanghong Square",
+      "position": [103.839518, 36.053561],
+      "category": "anchor",
+      "osm_object": "N6563941854",
+      "label_offset": [-6, 14],
+      "label_align": "center"
+    },
+    {
+      "id": "lanzhou-university",
+      "label": "兰州大学\nLanzhou University",
+      "position": [103.854456, 36.050499],
+      "category": "anchor",
+      "osm_object": "N6563941940",
+      "label_offset": [-2, -22],
+      "label_align": "right"
+    },
+    {
+      "id": "lanzhou-station",
+      "label": "兰州站\nLanzhou Railway Station",
+      "position": [103.848506, 36.034178],
+      "category": "arrival",
+      "osm_object": "N269826006",
+      "label_offset": [-10, -24],
+      "label_align": "right"
+    }
+  ],
+  "schematic_routes": [
+    {
+      "id": "metro-line-1",
+      "label": "地铁 1 号线 · METRO 1",
+      "color": "#E44736",
+      "coordinates": [
+        [103.743, 36.068],
+        [103.749284, 36.067584],
+        [103.786, 36.063],
+        [103.814259, 36.059941],
+        [103.839518, 36.053561],
+        [103.854456, 36.050499],
+        [103.869, 36.049]
+      ]
+    },
+    {
+      "id": "metro-line-2",
+      "label": "地铁 2 号线 · METRO 2",
+      "color": "#23836B",
+      "coordinates": [
+        [103.839518, 36.053561],
+        [103.843, 36.046],
+        [103.848506, 36.034178]
+      ]
+    }
+  ],
+  "airport_inset": {
+    "label": "中川机场 T3\nZhongchuan\nAirport T3",
+    "direction": "NORTH / 北",
+    "note": "方向示意 · NOT TO CENTRAL-MAP SCALE"
+  },
+  "sources": {
+    "geography": {
+      "url": "https://ydyl.gansu.gov.cn/gsydyl/zjgs/202605/t20260511_36214.html",
+      "checked_at": "2026-08-21"
+    },
+    "metro": {
+      "url": "https://www.lzgdjt.com/lzgd/serve.jsp",
+      "station_data_url": "https://www.lzgdjt.com/lzgd/template/js/serve.js",
+      "checked_at": "2026-08-21"
+    },
+    "openstreetmap": {
+      "license": "OpenStreetMap data © OpenStreetMap contributors, ODbL 1.0",
+      "checked_at": "2026-08-21"
+    }
+  },
+  "generalizations": [
+    "The two hill bands are editorial orientation symbols, not surveyed contours or park boundaries.",
+    "Metro links connect selected anchors schematically and are not surveyed track alignments.",
+    "The airport inset communicates direction only and uses a different scale from the central map.",
+    "Markers identify broad anchors, not exact entrances, platforms, or step-free paths."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "notes": [
+      "Compiled B6 landscape page 8 passed at 144 ppi; primary labels, airport inset, bank labels, river direction, legend, and scale remain distinct. Evidence: build/research/lanzhou/cover-layout/final-pages/page-08.png, sha256 8065ddca66e7c0e0171a743a04437fd71f5d9c27022922312dad96978d059093.",
+      "At a 390 px viewport the SVG uses a 760 px scrollable stage with working zoom and reset controls. Left, centre, and right captures expose every anchor without overlap. Evidence: build/qa/site/lanzhou-ch01-final/mobile-01-map.png, sha256 fdf31f50b4fb7b825099953f5d7e34c7c4653d2e84315fbe91b97e63ab6cc1d0; QA report sha256 b55931accdb91e13f50f2293ad2842fa41eb27081344612154526a284485898e."
+    ]
+  }
+}

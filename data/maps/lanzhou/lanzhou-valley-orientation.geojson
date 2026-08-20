@@ -1,0 +1,383 @@
+{
+  "bbox": [
+    103.735,
+    36.026,
+    103.872,
+    36.087
+  ],
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            103.735,
+            36.086907
+          ],
+          [
+            103.736751,
+            36.085649
+          ],
+          [
+            103.738022,
+            36.085124
+          ],
+          [
+            103.738784,
+            36.085
+          ],
+          [
+            103.739541,
+            36.084877
+          ],
+          [
+            103.740619,
+            36.084803
+          ],
+          [
+            103.741965,
+            36.084825
+          ],
+          [
+            103.749658,
+            36.085114
+          ],
+          [
+            103.757801,
+            36.084977
+          ],
+          [
+            103.766277,
+            36.084959
+          ],
+          [
+            103.766966,
+            36.084957
+          ],
+          [
+            103.767572,
+            36.084877
+          ],
+          [
+            103.768168,
+            36.08471
+          ],
+          [
+            103.770308,
+            36.083821
+          ],
+          [
+            103.770877,
+            36.083568
+          ],
+          [
+            103.771293,
+            36.08328
+          ],
+          [
+            103.772788,
+            36.081993
+          ],
+          [
+            103.773406,
+            36.081461
+          ],
+          [
+            103.777403,
+            36.077724
+          ],
+          [
+            103.781646,
+            36.074905
+          ],
+          [
+            103.78237,
+            36.074424
+          ],
+          [
+            103.785084,
+            36.073071
+          ],
+          [
+            103.790503,
+            36.07135
+          ],
+          [
+            103.792616,
+            36.070739
+          ],
+          [
+            103.794097,
+            36.070114
+          ],
+          [
+            103.794753,
+            36.069746
+          ],
+          [
+            103.798065,
+            36.067891
+          ],
+          [
+            103.80253,
+            36.065273
+          ],
+          [
+            103.804433,
+            36.064781
+          ],
+          [
+            103.806836,
+            36.064511
+          ],
+          [
+            103.807606,
+            36.064525
+          ],
+          [
+            103.810426,
+            36.064579
+          ],
+          [
+            103.819779,
+            36.065354
+          ],
+          [
+            103.822844,
+            36.065135
+          ],
+          [
+            103.825214,
+            36.065086
+          ],
+          [
+            103.833188,
+            36.064918
+          ],
+          [
+            103.836668,
+            36.064982
+          ],
+          [
+            103.837706,
+            36.064997
+          ],
+          [
+            103.84308,
+            36.065159
+          ],
+          [
+            103.845158,
+            36.065427
+          ],
+          [
+            103.846419,
+            36.065533
+          ],
+          [
+            103.846968,
+            36.065615
+          ],
+          [
+            103.849559,
+            36.066207
+          ],
+          [
+            103.850573,
+            36.066667
+          ],
+          [
+            103.852236,
+            36.06766
+          ],
+          [
+            103.85545,
+            36.069759
+          ],
+          [
+            103.857241,
+            36.072148
+          ],
+          [
+            103.859291,
+            36.076419
+          ],
+          [
+            103.860589,
+            36.078218
+          ],
+          [
+            103.862874,
+            36.080611
+          ],
+          [
+            103.863674,
+            36.081643
+          ],
+          [
+            103.864243,
+            36.082013
+          ],
+          [
+            103.865554,
+            36.08233
+          ],
+          [
+            103.86705,
+            36.082308
+          ],
+          [
+            103.870189,
+            36.081683
+          ],
+          [
+            103.870786,
+            36.081556
+          ],
+          [
+            103.872,
+            36.081275
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "kind": "river",
+        "name": "黄河 · Yellow River",
+        "osm_way_id": 166825103,
+        "source": "OpenStreetMap"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          103.749284,
+          36.067584
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "arrival",
+        "id": "lanzhou-west",
+        "kind": "anchor",
+        "name": "兰州西\nLanzhou West",
+        "osm_object": "N3481086575"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          103.771998,
+          36.066824
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "attraction",
+        "id": "gansu-museum",
+        "kind": "anchor",
+        "name": "甘肃省博物馆\nGansu Provincial Museum",
+        "osm_object": "W405352719"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          103.814259,
+          36.059941
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "anchor",
+        "id": "xiguan",
+        "kind": "anchor",
+        "name": "西关\nXiguan",
+        "osm_object": "N6563941759"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          103.814569,
+          36.06481
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "crossing",
+        "id": "central-crossing",
+        "kind": "anchor",
+        "name": "中山桥 / 白塔山入口\nZhongshan Bridge / hill approach",
+        "osm_object": "W223253546"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          103.839518,
+          36.053561
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "anchor",
+        "id": "dongfanghong",
+        "kind": "anchor",
+        "name": "东方红广场\nDongfanghong Square",
+        "osm_object": "N6563941854"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          103.854456,
+          36.050499
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "anchor",
+        "id": "lanzhou-university",
+        "kind": "anchor",
+        "name": "兰州大学\nLanzhou University",
+        "osm_object": "N6563941940"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          103.848506,
+          36.034178
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "arrival",
+        "id": "lanzhou-station",
+        "kind": "anchor",
+        "name": "兰州站\nLanzhou Railway Station",
+        "osm_object": "N269826006"
+      },
+      "type": "Feature"
+    }
+  ],
+  "name": "lanzhou-valley-orientation",
+  "properties": {
+    "generalizations": [
+      "The two hill bands are editorial orientation symbols, not surveyed contours or park boundaries.",
+      "Metro links connect selected anchors schematically and are not surveyed track alignments.",
+      "The airport inset communicates direction only and uses a different scale from the central map.",
+      "Markers identify broad anchors, not exact entrances, platforms, or step-free paths."
+    ],
+    "license": "OpenStreetMap data © OpenStreetMap contributors, ODbL 1.0",
+    "snapshot_date": "2026-08-21"
+  },
+  "type": "FeatureCollection"
+}

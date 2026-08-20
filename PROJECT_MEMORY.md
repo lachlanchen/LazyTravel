@@ -107,13 +107,22 @@ train and the mountain exit already reached, then add at most one local stop.
 Odawara, Mishima, and Gotemba are alternatives, not a three-town extension.
 The bag and reserved train remain fixed; the local stop is removed first.
 
-Lanzhou now has a locked 11-chapter structure and a schema-valid canonical JSON
-shell. Its main line follows the traveler's decisions in a long river valley:
-orientation, arrival gate, crossing history, one central bridge route, one
-museum route, food by time of day, one city height, lodging segment, realistic
-one- to three-day plans, the next Gansu leg, and one nearby day. The 2014 guide
-is lead material only; all of its logistics are stale. `甘肃简史` supplies
-secondary chronology, `陇味儿` supplies food questions and vocabulary, and
-official sources establish publishable claims. Chapter 1 is the sole active
-gate, and Lanzhou remains absent from the public series build until reviewed
-content exists.
+Lanzhou has a locked 11-chapter structure. Chapter 1, **Read the Valley First**,
+is accepted with eight aligned blocks, `643` reviewed Chinese reading tokens,
+`803` reviewed Japanese reading tokens, five source entries, one four-guide
+river-valley figure, and one code-built orientation map. The same JSON produced
+a clean `16`-page B6 pocket and responsive series page with `878` rendered ruby
+nodes. The pocket SHA-256 is
+`f632eb45b34c8b07b552efdb97eaa95c8f10c04c86aeacc2b033b7d41cf64ea1`, and the
+Nutstore copy matches it. Chapter 2, the airport and two-station arrival choice,
+is the sole active gate.
+
+The book's main line remains the traveler's decisions in a long river valley:
+orientation, arrival gate, crossing history, one central Yellow River Iron
+Bridge-to-White Pagoda Hill route, one museum route, food by time of day, one
+city height, lodging segment, realistic one- to three-day plans, the next Gansu
+leg, and one nearby day. Ink Danxia and the Yellow River-Tao River confluence
+viewpoint are alternatives in Chapter 11, not compulsory stops in one chain.
+The 2014 guide is lead material only; all of its logistics are stale.
+`甘肃简史` supplies secondary chronology, `陇味儿` supplies food questions and
+vocabulary, and current official sources establish publishable claims.

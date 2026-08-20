@@ -81,6 +81,8 @@ const assetLabels = {
   "asset-hakone-odawara-castle-stop": "ODAWARA CASTLE · PRESENT KEEP",
   "asset-hakone-mishima-taisha-stop": "MISHIMA TAISHA · PRESENT SANCTUARY",
   "asset-hakone-gotemba-niihashi-stop": "NIIHASHI SENGEN · STATION-SIDE STOP",
+  "asset-lanzhou-river-valley-orientation": "LANZHOU · RIVER VALLEY AND IRON BRIDGE",
+  "asset-lanzhou-valley-orientation-map": "LANZHOU · RIVER, BANKS, AND ARRIVAL GATES",
 };
 const state = {
   document: null,
@@ -530,7 +532,8 @@ function renderNavigation(documentData, chapter) {
     if (available) {
       const option = document.createElement("option");
       option.value = item.id;
-      option.textContent = `${String(item.order).padStart(2, "0")} · ${localizedValue(item.titles)}`;
+      const optionTitle = localizedValue(item.titles).split(/[：:]/, 1)[0];
+      option.textContent = `${String(item.order).padStart(2, "0")} · ${optionTitle}`;
       option.selected = item.id === chapter.id;
       chapterSelect.append(option);
     }
