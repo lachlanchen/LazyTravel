@@ -1,7 +1,7 @@
 # Chapter 11 Website Review
 
-Status: synchronized series build and responsive browser review passed on
-`2026-08-21`.
+Status: synchronized series build, responsive browser review, GitHub Pages
+deployment, and public manifest verification passed on `2026-08-21`.
 
 ## Parity
 
@@ -58,3 +58,9 @@ The destination-neutral QA ran in Google Chrome at `1440 x 1000` and at
   and `93b26a4e4ce25a5311b7891abd60417d67b1d135d96c97bab6f06136689e32a8`.
 - Xi'an regression report: `build/qa/xian-website-release/qa.json`, SHA-256
   `c188c0404f54d33e271bb75b16ff0da9f401c6147b129afa7348724ae5adf795`.
+- Public workflow: GitHub Pages run `32418706768`, commit `d6818e1`.
+- Public Xi'an verification: `75` files and `54,020,545` bytes matched source
+  SHA-256 `c24e2d81f22973a32e51aa42c824c517a07d36d3b010f93850c5dc63162692e3`.
+- Public Hakone verification: `158` files and `131,111,623` bytes matched
+  source SHA-256
+  `da8ccd33116884bd6f48d91de0b6e715ad2d6867de0622759c0b10faf33d624d`.

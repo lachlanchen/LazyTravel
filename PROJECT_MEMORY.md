@@ -85,8 +85,10 @@ reproducible B6 review has `218` pages and SHA-256
 Desktop and `390 px` website QA pass from the same JSON with `19,113` ruby
 nodes, and the exact pocket PDF is hash-synced to Nutstore. The series website
 build preserves Xi'an at `china/cities/xian/` and Hakone at
-`japan/prefectures/kanagawa/hakone/`. Public Pages verification is the only
-remaining Hakone release gate; Lanzhou remains gated until it passes.
+`japan/prefectures/kanagawa/hakone/`. Pages run `32418706768` verified all 75
+Xi'an files and all 158 Hakone files against their canonical JSON and
+manifests. Hakone is complete and publicly published. Lanzhou at
+`china/cities/lanzhou` is now the only active destination.
 
 Chapter 9 established the lodging method used by later books: choose a
 district from arrival, dinner, the exact entrance, the next morning, and a

@@ -11,9 +11,9 @@ no private session history.
    websockify processes for this project or another project.
 4. Run `python3 scripts/verify_sources.py`. External archives and visual
    references must remain at their hash-pinned read-only paths.
-5. Do not reopen Hakone content without a demonstrated failure. All 11
-   chapters and the synchronized local release have passed; verify the public
-   Pages deployment before opening Lanzhou.
+5. Continue only Lanzhou at `china/cities/lanzhou`. First establish its source
+   ledger, travel-guide line, locked chapter spine, and canonical JSON shell.
+   Do not reopen Xi'an or Hakone without a demonstrated failure.
 6. Run focused tests while editing, then the full validation/build sequence:
 
 ```bash
@@ -50,7 +50,7 @@ python3 scripts/verify_deployed_site.py \
   --book data/japan/prefectures/kanagawa/hakone/book.json
 ```
 
-Current gate: Xi'an is complete and publicly published. Hakone's complete
-`218`-page pocket PDF and two-destination website are accepted locally and
-synced; public Pages verification is the only remaining gate. Lanzhou follows
-that check; never work on two destination books at once.
+Current gate: Xi'an and Hakone are complete and publicly published. Hakone's
+`218`-page pocket PDF is hash-synced to Nutstore, and Pages run `32418706768`
+verified both destination manifests. Lanzhou is now the only active book;
+never work on two destination books at once.

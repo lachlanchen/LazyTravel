@@ -10,14 +10,18 @@ Repository: <https://github.com/lachlanchen/LazyTravel>
 
 Public guide: <https://lachlanchen.github.io/LazyTravel/>
 
+Stable destinations:
+
+- Xi'an: <https://lachlanchen.github.io/LazyTravel/china/cities/xian/>
+- Hakone: <https://lachlanchen.github.io/LazyTravel/japan/prefectures/kanagawa/hakone/>
+
 ## Current Editorial Gate
 
-Xi'an is the completed and published first destination. Hakone's complete
-book and synchronized website have passed local release review at
-`japan/prefectures/kanagawa/hakone`; public Pages verification is the current
-gate. Lanzhou follows at `china/cities/lanzhou`. Only one destination may be in
-production at a time. Broader Gansu and Ningxia sources remain research
-context, not destination-book titles.
+Xi'an and Hakone are complete and publicly published. Pages run `32418706768`
+verified both stable destination paths against their canonical JSON and
+manifests. Lanzhou at `china/cities/lanzhou` is now the only active book. Only
+one destination may be in production at a time. Broader Gansu and Ningxia
+sources remain research context, not destination-book titles.
 
 The series taxonomy is fixed:
 

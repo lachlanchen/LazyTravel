@@ -158,9 +158,8 @@ and public website review and build reproducibly as one `195`-page B6
 pocket PDF from `125` aligned blocks, with ten maps and fifteen chapter
 figures. The text-free four-guide cover sits beneath selectable LaTeX text, and
 the synchronized website passes the same JSON, ruby, asset, citation, desktop,
-and mobile gates. The public guide is available at
-<https://lachlanchen.github.io/LazyTravel/>. Hakone is the next active book;
-Lanzhou remains queued behind it.
+and mobile gates. The public Xi'an guide is available at
+<https://lachlanchen.github.io/LazyTravel/china/cities/xian/>.
 
 Hakone's locked 11-chapter structure is complete. The final pocket review has
 `218` B6 pages and SHA-256
@@ -169,5 +168,6 @@ It contains `107` aligned blocks, 11 maps, 38 figure placements, `13,914`
 Chinese reading tokens, and `17,164` Japanese reading tokens. The synchronized
 website renders `19,113` ruby nodes, preserves Xi'an at its stable series path,
 and passes desktop/mobile review for both destinations. The pocket is
-hash-synced to Nutstore. Public GitHub Pages verification is the only remaining
-Hakone gate; Lanzhou stays queued until that check passes.
+hash-synced to Nutstore. GitHub Pages run `32418706768` verified every deployed
+Xi'an and Hakone file against its canonical JSON and manifest. Hakone is
+complete; Lanzhou at `china/cities/lanzhou` is the only active destination.
