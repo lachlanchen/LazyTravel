@@ -183,6 +183,25 @@ class ReadingLayerTests(unittest.TestCase):
         self.assertEqual(readings["二回"], "にかい")
         self.assertEqual(readings["開いていない"], "あいていない")
 
+    def test_hakone_stay_chinese_readings(self) -> None:
+        self.assertEqual(pinyin_for_word("宫城野"), "gōngchéngyě")
+        self.assertEqual(pinyin_for_word("塔之泽"), "tǎzhīzé")
+        self.assertEqual(pinyin_for_word("芦之汤"), "lúzhītāng")
+
+    def test_hakone_stay_japanese_readings(self) -> None:
+        tokens = ja_tokens(
+            "宮城野、小涌谷、塔ノ沢。翌朝の一本、不確かな区間。",
+            unidic_tagger(),
+        )
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["宮城野"], "みやぎの")
+        self.assertEqual(readings["小涌谷"], "こわきだに")
+        self.assertEqual(readings["塔ノ沢"], "とうのさわ")
+        self.assertEqual(readings["翌朝"], "よくあさ")
+        self.assertEqual(readings["一本"], "いっぽん")
+        self.assertEqual(readings["不確か"], "ふたしか")
+        self.assertEqual(readings["区間"], "くかん")
+
     def test_katakana_conversion(self) -> None:
         self.assertEqual(katakana_to_hiragana("セイアン"), "せいあん")
 

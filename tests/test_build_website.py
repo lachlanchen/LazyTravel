@@ -102,6 +102,31 @@ class WebsiteBuildTests(unittest.TestCase):
             self.assertEqual(manifest["destination"], "hakone")
             self.assertEqual(payload["book"]["series_path"], "japan/prefectures/kanagawa/hakone")
 
+    def test_review_preview_allows_only_pending_asset_approval(self) -> None:
+        source = ROOT / "data/japan/prefectures/kanagawa/hakone/book.json"
+        document = json.loads(source.read_text(encoding="utf-8"))
+        asset = next(
+            item
+            for item in document["assets"]
+            if item["id"] == "asset-hakone-stay-area-choice-map"
+        )
+        asset["qa"]["approved"] = False
+        (ROOT / "build").mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=ROOT / "build") as temporary:
+            temporary_path = Path(temporary)
+            book = temporary_path / "book.json"
+            output = temporary_path / "site"
+            book.write_text(
+                json.dumps(document, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(RuntimeError, "asset has not passed visual QA"):
+                build(book, output)
+            counts = build(book, output, review_preview=True)
+            manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
+            self.assertGreater(counts["blocks"], 0)
+            self.assertFalse(manifest["release_ready"])
+
     def test_static_renderer_has_no_external_runtime_dependency(self) -> None:
         index = (ROOT / "website/index.html").read_text(encoding="utf-8")
         javascript = (ROOT / "website/app.js").read_text(encoding="utf-8")

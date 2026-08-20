@@ -108,9 +108,11 @@ def validate_output(
         if asset["id"] not in used_asset_ids:
             continue
         qa = asset["qa"]
-        if not qa["approved"] or any(
+        checks_failed = any(
             qa[field] != "pass" for field in ("resolution", "legibility", "content")
-        ):
+        )
+        approval_pending = not qa["approved"] and not allow_pending_visual_qa
+        if checks_failed or approval_pending:
             raise RuntimeError(f"website asset has not passed visual QA: {asset['id']}")
         if asset["kind"] == "map":
             provenance_path = output / Path(asset["path"]).with_suffix(".provenance.json")

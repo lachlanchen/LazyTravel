@@ -77,14 +77,20 @@ The synchronized website is publicly deployed at
 manifest and canonical JSON. Xi'an is complete. Hakone is next at
 `japan/prefectures/kanagawa/hakone`, followed by Lanzhou.
 
-Hakone has exactly 11 chapters and advances in order. Chapters 1 through 8 are
-accepted internal milestones. Together they provide `77` aligned blocks,
-`9,181` Chinese reading tokens, `11,401` Japanese reading tokens, eight maps,
-and twenty-three destination, transport, museum, food, landscape, and lodging
-figures using all four guides. The reproducible B6 review has `146` pages and
-SHA-256
-`85eeb1e47cc65564cbe0894fd1b0e19598d3b1555e8f3c69d0eee8dbab186670`.
-Desktop and `390 px` website QA pass from the same JSON with `12,588` ruby
+Hakone has exactly 11 chapters and advances in order. Chapters 1 through 9 are
+accepted internal milestones. Together they provide `87` aligned blocks,
+`10,770` Chinese reading tokens, `13,380` Japanese reading tokens, nine maps,
+and twenty-nine destination, transport, museum, food, landscape, lodging, and
+room-check figures using all four guides. The reproducible B6 review has `170`
+pages and SHA-256
+`0cac4d2fda8e163d638f06396ed8bbb7673be2c8acefcc6b6b78df5410875e77`.
+Desktop and `390 px` website QA pass from the same JSON with `14,771` ruby
 nodes, and the exact pocket PDF is hash-synced to Nutstore. This does not
-complete Hakone; Chapter 9, `Where to Stay`, is the only next writing
-gate.
+complete Hakone; Chapter 10, `One, Two, or Three Days`, is the only next
+writing gate.
+
+Chapter 9 established the lodging method used by later books: choose a
+district from arrival, dinner, the exact entrance, the next morning, and a
+poor-weather exit before comparing a named property. Official filters produce
+a shortlist only. A generated room scene can illustrate separate booking
+questions, but it is never bookable inventory or an accessibility claim.

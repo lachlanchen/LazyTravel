@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-20",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hood reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "visual_references": [],
+  "figures": [
+    {
+      "asset_id": "asset-hakone-room-access-choice",
+      "stem": "hakone-room-access-choice",
+      "method": "generated-representative-lodging-room-check-figure",
+      "prompt": "data/images/hakone/hakone-room-access-choice.prompt.md",
+      "selected_raw": "build/aginti/hakone-room-access-choice-v1/hakone-room-access-choice-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-room-access-choice-v1/task_manifest.json",
+          "role": "Selected exactly-four-guide room-check scene with one coherent room, readable threshold, raised beds, chair, luggage space, dry washroom route, and no fifth person or property branding"
+        }
+      ],
+      "fact_sources": [
+        {
+          "id": "HKN-TOURISM-LODGING-SEARCH",
+          "url": "https://www.hakone.or.jp/?gana=member&p=30&sctg=%E6%B3%8A%E3%81%BE%E3%82%8A%E3%81%9F%E3%81%84",
+          "checked_at": "2026-08-20",
+          "role": "Official accommodation filters showing that beds, wheelchair rooms, private baths, and shuttles are separate shortlist conditions"
+        },
+        {
+          "id": "HKN-JTA-RYOKAN-QA",
+          "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+          "checked_at": "2026-08-20",
+          "role": "National-agency guidance on room, bedding, bathroom, meal, bath, pickup, and accessibility variation"
+        },
+        {
+          "id": "HKN-JNTO-RYOKAN",
+          "url": "https://www.japan.travel/en/guide/japanese-ryokan/",
+          "checked_at": "2026-08-20",
+          "role": "National tourism overview used to avoid treating one room arrangement as universal"
+        }
+      ],
+      "factual_limits": [
+        "The room is a representative modern Japanese lodging synthesis, not an identifiable or bookable Hakone property",
+        "The visible threshold, raised beds, chair, suitcase space, and washroom route illustrate separate booking questions and do not claim accessibility",
+        "The scene does not establish onsen water, bath access, meal inclusion, shuttle service, room category, price, or current inventory",
+        "Every selected room, date, access route, bath, meal, and transport condition requires direct written confirmation"
+      ],
+      "reader_caption_policy": "Caption explains that the room image is a checklist for separate room and access questions without naming generation, a property, or an accessibility claim.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch09-pocket-release/page-152.jpg",
+        "physical_page": 152,
+        "mobile_path": "build/qa/hakone-ch09-website-release/mobile-09-figure-02.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ],
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "room_features_readable": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "The selected original, 16:9 print and web crops, compiled B6 page, and full-width 390 px figure passed cast, identity, room-feature, privacy, and legibility review. Exactly Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi robot appear in one coherent representative room with no property branding or accessibility claim."
+  }
+}

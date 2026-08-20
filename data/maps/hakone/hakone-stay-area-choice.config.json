@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-stay-area-choice-map",
+  "snapshot_date": "2026-08-20",
+  "title": {
+    "zh": "箱根住宿地图：先选山里哪一段",
+    "ja": "箱根の宿泊地図：山のどこに泊まるか",
+    "en": "HAKONE STAY MAP: CHOOSE THE PART OF THE MOUNTAIN"
+  },
+  "flow": {
+    "label": "住哪一段・どこに泊まる\nFIVE STAY ZONES",
+    "steps": [
+      {
+        "color": "vermilion",
+        "zh": "抵达・到着",
+        "en": "Dǐdá · とうちゃく · ARRIVAL"
+      },
+      {
+        "color": "jade",
+        "zh": "晚餐・夕食",
+        "en": "Wǎncān · ゆうしょく · DINNER"
+      },
+      {
+        "color": "cobalt",
+        "zh": "明早・翌朝",
+        "en": "Míngzǎo · よくあさ · MORNING"
+      }
+    ]
+  },
+  "zones": [
+    {
+      "id": "yumoto-tonosawa",
+      "number": "1",
+      "color": "vermilion",
+      "zh": "汤本・塔之泽",
+      "zh_reading": "Tāngběn · Tǎzhīzé",
+      "ja": "湯本・塔ノ沢",
+      "ja_reading": "ゆもと · とうのさわ",
+      "en": "EAST GATE · LOWER VALLEY"
+    },
+    {
+      "id": "miyanoshita-kowakudani",
+      "number": "2",
+      "color": "jade",
+      "zh": "宫之下・小涌谷",
+      "zh_reading": "Gōngzhīxià · Xiǎoyǒnggǔ",
+      "ja": "宮ノ下・小涌谷",
+      "ja_reading": "みやのした · こわきだに",
+      "en": "RAIL + MUSEUM CORRIDOR"
+    },
+    {
+      "id": "gora-miyagino",
+      "number": "3",
+      "color": "cobalt",
+      "zh": "强罗・宫城野",
+      "zh_reading": "Qiángluó · Gōngchéngyě",
+      "ja": "強羅・宮城野",
+      "ja_reading": "ごうら · みやぎの",
+      "en": "UPPER ROUTE START"
+    },
+    {
+      "id": "sengokuhara",
+      "number": "4",
+      "color": "coral",
+      "zh": "仙石原",
+      "zh_reading": "Xiānshíyuán",
+      "ja": "仙石原",
+      "ja_reading": "せんごくはら",
+      "en": "HIGHLAND MUSEUM DAY · EXACT BUS STOP"
+    },
+    {
+      "id": "lake-ashinoyu",
+      "number": "5",
+      "color": "berry",
+      "zh": "芦之湖・芦之汤",
+      "zh_reading": "Lúzhīhú · Lúzhītāng",
+      "ja": "芦ノ湖・芦之湯",
+      "ja_reading": "あしのこ · あしのゆ",
+      "en": "MATCH THE SHORE OR UPLAND MORNING"
+    }
+  ],
+  "decision_band": {
+    "zh": "核对：下车站 → 真正入口 → 晚餐时段 → 明早第一段路 → 巴士退路",
+    "zh_reading": "Héduì: xiàchēzhàn → zhēnzhèng rùkǒu → wǎncān shíduàn → míngzǎo dì-yī duàn lù → bāshì tuìlù",
+    "ja": "確認：降車地点 → 実際の玄関 → 夕食時刻 → 翌朝の最初の移動 → バスの退路",
+    "ja_reading": "かくにん：こうしゃちてん → じっさい の げんかん → ゆうしょくじこく → よくあさ の さいしょ の いどう → バス の たいろ",
+    "en": "CHECK THE STOP → ACTUAL ENTRANCE → DINNER → FIRST LEG → BUS FALLBACK"
+  },
+  "footer": "示意图，不按比例・模式図、縮尺外・NOT TO SCALE · AN AREA NAME IS NOT AN ARRIVAL ROUTE",
+  "sources": [
+    {
+      "id": "HKN-NAVI-AREAS",
+      "url": "https://www.hakonenavi.jp/international/en/destination",
+      "checked_at": "2026-08-20",
+      "use": "Official destination-area structure and current transport orientation"
+    },
+    {
+      "id": "HKN-TOURISM-LODGING-SEARCH",
+      "url": "https://www.hakone.or.jp/?gana=member&p=30&sctg=%E6%B3%8A%E3%81%BE%E3%82%8A%E3%81%9F%E3%81%84",
+      "checked_at": "2026-08-20",
+      "use": "Official accommodation-area filters and shortlist boundaries"
+    },
+    {
+      "id": "HKN-TOURISM-YUMOTO-TONOSAWA",
+      "url": "https://www.hakone.or.jp/6411",
+      "checked_at": "2026-08-20",
+      "use": "Yumoto and Tonosawa eastern-valley area"
+    },
+    {
+      "id": "HKN-TOURISM-MIYANOSHITA-KOWAKUDANI",
+      "url": "https://www.hakone.or.jp/6413",
+      "checked_at": "2026-08-20",
+      "use": "Miyanoshita and Kowakudani railway-corridor area"
+    },
+    {
+      "id": "HKN-TOURISM-GORA-MIYAGINO",
+      "url": "https://www.hakone.or.jp/6412",
+      "checked_at": "2026-08-20",
+      "use": "Gora and Miyagino upper-mountain area"
+    },
+    {
+      "id": "HKN-TOURISM-SENGOKUHARA",
+      "url": "https://www.hakone.or.jp/6414",
+      "checked_at": "2026-08-20",
+      "use": "Sengokuhara highland area"
+    },
+    {
+      "id": "HKN-TOURISM-LAKE-ASHINOYU",
+      "url": "https://www.hakone.or.jp/6415",
+      "checked_at": "2026-08-20",
+      "use": "Lake Ashi shores and Ashinoyu area"
+    }
+  ],
+  "generalizations": [
+    "The five zones are editorial travel-decision groups, not administrative, hot-spring, or hotel-inventory boundaries",
+    "The diagram is not geographic and does not imply that the zones form one required sequence",
+    "Each zone names a useful trip relationship, not a universal recommendation or hotel ranking",
+    "An area name never proves the exact stop, walking terrain, shuttle, room feature, meal condition, or fallback route",
+    "Every current property, room, price, policy, shuttle, luggage, and transport detail requires a release recheck"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-20",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch09-pocket-release/page-138.jpg",
+        "physical_page": 138,
+        "sha256": "4c903c1760a6666ead6918d1034151b4320e53b3a97ce79d7e53a258e9b65281"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch09-website-release/mobile-09-map-contact.jpg",
+        "viewport_css_px": 390,
+        "pannable_width_css_px": 760,
+        "pan_positions_css_px": [
+          0,
+          185,
+          370
+        ],
+        "sha256": "37b7530a2b269a83b438a3c775dd2a1c4b5f5166affe3c2bae79329929c2abd0"
+      },
+      "browser_report": {
+        "path": "build/qa/hakone-ch09-website-release/qa.json",
+        "sha256": "23e90cb9e20779d23cbc7e88a7eacebb33e4a630a703363a0085e953022a7b37"
+      }
+    },
+    "notes": [
+      "The compiled B6 diagram and left, centre, and right pans of the 760 px stage inside a 390 px mobile viewport passed label, reading, five-zone, decision-strip, and collision review."
+    ]
+  }
+}

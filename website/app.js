@@ -72,6 +72,8 @@ const assetLabels = {
   "asset-hakone-ryokan-dinner": "RYOKAN DINNER · ARRIVE AT THE AGREED TIME",
   "asset-hakone-food-clock-map": "HAKONE FOOD CLOCK · ONE MEAL, ROUTE-SIZED STOPS",
   "asset-odawara-kamaboko-workshop": "ODAWARA KAMABOKO · BOARD, STEAM, TEXTURE",
+  "asset-hakone-stay-area-choice-map": "WHERE TO STAY · FIVE MOUNTAIN ZONES",
+  "asset-hakone-room-access-choice": "ROOM CHECK · VERIFY THE ACTUAL ROOM",
 };
 const state = {
   document: null,

@@ -20,8 +20,8 @@ The book has exactly 11 chapters. The count is locked because each chapter has
 a distinct travel decision; merging any two would overload a pocket chapter,
 while splitting them would create thin filler.
 
-Milestone status on `2026-08-20`: Chapters 1-8 are reviewed and reproducibly
-built. Chapter 9 is the only next drafting target.
+Milestone status on `2026-08-20`: Chapters 1-9 are reviewed and reproducibly
+built. Chapter 10 is the only next drafting target.
 
 ## Chapter Spine
 
@@ -102,7 +102,7 @@ built. Chapter 9 is the only next drafting target.
    Odawara kamaboko only as gateway context. Avoid claiming that generic soba,
    kaiseki, or cafe dishes are uniquely Hakone food.
 
-9. **住在哪一段山里：按地区选旅馆**<br>
+9. **箱根住哪一段：按地区选旅馆**<br>
    **山のどこに泊まるか：エリアで宿を選ぶ**<br>
    **Where to Stay: Choose a District Before a Property**
 

@@ -228,6 +228,7 @@ def build_inputs(document: dict[str, Any], chapter_ids: list[str]) -> list[Path]
         ROOT / "scripts/build_hakone_lake_ashi_choice_map.py",
         ROOT / "scripts/build_hakone_old_tokaido_choice_map.py",
         ROOT / "scripts/build_hakone_food_clock_map.py",
+        ROOT / "scripts/build_hakone_stay_area_choice_map.py",
         ROOT / "scripts/build_hakone_ryokan_night_sequence_map.py",
         ROOT / "scripts/build_hakone_owakudani_decision_map.py",
         ROOT / "scripts/build_hakone_orientation_map.py",
@@ -235,6 +236,7 @@ def build_inputs(document: dict[str, Any], chapter_ids: list[str]) -> list[Path]
         ROOT / "scripts/prepare_hakone_ch06_figures.py",
         ROOT / "scripts/prepare_hakone_ch07_figures.py",
         ROOT / "scripts/prepare_hakone_ch08_figures.py",
+        ROOT / "scripts/prepare_hakone_ch09_figures.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
         ROOT / "scripts/validate_readings.py",
@@ -329,6 +331,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_hakone_old_tokaido_choice_map.py"])
         run([sys.executable, "scripts/build_hakone_ryokan_night_sequence_map.py"])
         run([sys.executable, "scripts/build_hakone_food_clock_map.py"])
+        run([sys.executable, "scripts/build_hakone_stay_area_choice_map.py"])
     run(
         [
             sys.executable,
