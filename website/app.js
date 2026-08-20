@@ -74,6 +74,8 @@ const assetLabels = {
   "asset-odawara-kamaboko-workshop": "ODAWARA KAMABOKO · BOARD, STEAM, TEXTURE",
   "asset-hakone-stay-area-choice-map": "WHERE TO STAY · FIVE MOUNTAIN ZONES",
   "asset-hakone-room-access-choice": "ROOM CHECK · VERIFY THE ACTUAL ROOM",
+  "asset-hakone-itinerary-days-map": "ONE, TWO, OR THREE DAYS · ONE ANCHOR EACH",
+  "asset-hakone-pola-rain-arrival": "POLA MUSEUM · RAINY ARRIVAL",
 };
 const state = {
   document: null,

@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-itinerary-days-map",
+  "snapshot_date": "2026-08-20",
+  "title": {
+    "zh": "一、二、三天：每天只守一条主线",
+    "ja": "一日・二日・三日：一日に一つの軸",
+    "en": "ONE, TWO, OR THREE DAYS: ONE ANCHOR EACH"
+  },
+  "rule": {
+    "zh": "入山点 → 一条主线 → 固定时刻 → 离山路",
+    "zh_reading": "Rùshāndiǎn → yì tiáo zhǔxiàn → gùdìng shíkè → líshān lù",
+    "ja": "入山点 → 一日の軸 → 固定時刻 → 下山路",
+    "ja_reading": "にゅうざんてん → いちにち の じく → こていじこく → げざんろ",
+    "en": "ENTRY → ONE ANCHOR → FIXED TIME → EXIT"
+  },
+  "lanes": [
+    {
+      "duration": "1",
+      "color": "vermilion",
+      "label": {
+        "zh": "一天",
+        "zh_reading": "Yì tiān",
+        "ja": "一日",
+        "ja_reading": "いちにち",
+        "en": "ONE DAY"
+      },
+      "nodes": [
+        {
+          "zh": "东侧早进山",
+          "zh_reading": "Dōngcè zǎo jìnshān",
+          "ja": "東側から早く入る",
+          "ja_reading": "ひがしがわ から はやく はいる",
+          "en": "EARLY EAST ENTRY"
+        },
+        {
+          "zh": "缆车与大涌谷",
+          "zh_reading": "Lǎnchē yǔ Dàyǒnggǔ",
+          "ja": "ロープウェイ・大涌谷",
+          "ja_reading": "ロープウェイ · おおわくだに",
+          "en": "OWAKUDANI LINK"
+        },
+        {
+          "zh": "湖岸一处",
+          "zh_reading": "Hú'àn yí chù",
+          "ja": "湖岸一か所",
+          "ja_reading": "こがん いっかしょ",
+          "en": "ONE LAKE STOP"
+        },
+        {
+          "zh": "巴士离山",
+          "zh_reading": "Bāshì líshān",
+          "ja": "バスで下山",
+          "ja_reading": "バス で げざん",
+          "en": "BUS EXIT"
+        }
+      ],
+      "fallback": {
+        "zh": "风雾或停运：登山铁路沿线一馆 + 汤本",
+        "zh_reading": "Fēngwù huò tíngyùn: dēngshān tiělù yánxiàn yì guǎn + Tāngběn",
+        "ja": "風霧・運休：鉄道沿い一館 + 湯本",
+        "ja_reading": "ふうむ · うんきゅう：てつどうぞい いっかん + ゆもと",
+        "en": "WIND · FOG · SUSPENSION: RAIL MUSEUM + YUMOTO"
+      }
+    },
+    {
+      "duration": "2",
+      "color": "jade",
+      "label": {
+        "zh": "两天一夜",
+        "zh_reading": "Liǎng tiān yí yè",
+        "ja": "一泊二日",
+        "ja_reading": "いっぱく ふつか",
+        "en": "ONE NIGHT"
+      },
+      "nodes": [
+        {
+          "zh": "首日一站",
+          "zh_reading": "Shǒurì yí zhàn",
+          "ja": "初日は一か所",
+          "ja_reading": "しょにち は いっかしょ",
+          "en": "DAY 1 ANCHOR"
+        },
+        {
+          "zh": "入住晚餐",
+          "zh_reading": "Rùzhù wǎncān",
+          "ja": "到着・夕食",
+          "ja_reading": "とうちゃく · ゆうしょく",
+          "en": "CHECK-IN"
+        },
+        {
+          "zh": "次日看天气",
+          "zh_reading": "Cìrì kàn tiānqì",
+          "ja": "翌朝、天気で選ぶ",
+          "ja_reading": "よくあさ、てんき で えらぶ",
+          "en": "CHOOSE DAY 2"
+        },
+        {
+          "zh": "午后离山",
+          "zh_reading": "Wǔhòu líshān",
+          "ja": "午後に下山",
+          "ja_reading": "ごご に げざん",
+          "en": "AFTERNOON EXIT"
+        }
+      ],
+      "fallback": {
+        "zh": "晴：山与湖｜雨：美术馆 + 提前确认的温泉",
+        "zh_reading": "Qíng: shān yǔ hú | yǔ: měishùguǎn + tíqián quèrèn de wēnquán",
+        "ja": "晴：山と湖｜雨：美術館 + 事前確認した温泉",
+        "ja_reading": "はれ：やま と みずうみ | あめ：びじゅつかん + じぜんかくにん した おんせん",
+        "en": "CLEAR: UPPER + LAKE  |  RAIN: MUSEUM + ONSEN"
+      }
+    },
+    {
+      "duration": "3",
+      "color": "cobalt",
+      "label": {
+        "zh": "三天两夜",
+        "zh_reading": "Sān tiān liǎng yè",
+        "ja": "二泊三日",
+        "ja_reading": "にはく みっか",
+        "en": "TWO NIGHTS"
+      },
+      "nodes": [
+        {
+          "zh": "铁路与抵达",
+          "zh_reading": "Tiělù yǔ dǐdá",
+          "ja": "鉄道と到着",
+          "ja_reading": "てつどう と とうちゃく",
+          "en": "RAIL + ARRIVAL"
+        },
+        {
+          "zh": "山上与湖",
+          "zh_reading": "Shānshàng yǔ hú",
+          "ja": "山上と湖",
+          "ja_reading": "さんじょう と みずうみ",
+          "en": "UPPER + LAKE"
+        },
+        {
+          "zh": "古道或高原",
+          "zh_reading": "Gǔdào huò gāoyuán",
+          "ja": "旧街道か高原",
+          "ja_reading": "きゅうかいどう か こうげん",
+          "en": "OLD ROAD / ART"
+        },
+        {
+          "zh": "一条离山路",
+          "zh_reading": "Yì tiáo líshān lù",
+          "ja": "一つの下山路",
+          "ja_reading": "ひとつ の げざんろ",
+          "en": "ONE EXIT"
+        }
+      ],
+      "fallback": {
+        "zh": "第二、三天随天气互换；删掉的不补回",
+        "zh_reading": "Dì-èr, dì-sān tiān suí tiānqì hùhuàn; shāndiào de bù bǔhuí",
+        "ja": "天気で二日目と三日目を交換；削った分は戻さない",
+        "ja_reading": "てんき で ふつかめ と みっかめ を こうかん；けずった ぶん は もどさない",
+        "en": "SWAP DAYS 2–3; DO NOT RESTORE CUT STOPS"
+      }
+    }
+  ],
+  "weather": [
+    {
+      "color": "cobalt",
+      "symbol": "○",
+      "zh": "晴天・正常运行",
+      "zh_reading": "Qíngtiān · zhèngcháng yùnxíng",
+      "ja": "晴・運行",
+      "ja_reading": "はれ · うんこう",
+      "en": "CLEAR + RUNNING"
+    },
+    {
+      "color": "coral",
+      "symbol": "△",
+      "zh": "雨・风・雾",
+      "zh_reading": "Yǔ · fēng · wù",
+      "ja": "雨・風・霧",
+      "ja_reading": "あめ · かぜ · きり",
+      "en": "RAIN · WIND · FOG"
+    },
+    {
+      "color": "vermilion",
+      "symbol": "×",
+      "zh": "警报・交通停运",
+      "zh_reading": "Jǐngbào · jiāotōng tíngyùn",
+      "ja": "警報・運行中断",
+      "ja_reading": "けいほう · うんこう ちゅうだん",
+      "en": "WARNING · SERVICE SUSPENSION"
+    }
+  ],
+  "cut_order": {
+    "zh": "删：购物 → 第二站 → 易受影响的换乘　｜　保：安全・休息・预约餐食・离山路",
+    "zh_reading": "Shān: gòuwù → dì-èr zhàn → yì shòu yǐngxiǎng de huànchéng | bǎo: ānquán · xiūxi · yùyuē cānshí · líshān lù",
+    "ja": "削る：買物 → 二か所目 → 乱れやすい乗継　｜　守る：安全・休息・予約食・下山手段",
+    "ja_reading": "けずる：かいもの → にかしょめ → みだれやすい のりつぎ | まもる：あんぜん · きゅうそく · よやくしょく · げざんしゅだん",
+    "en": "CUT SHOPPING → SECOND STOP → FRAGILE LINK  |  KEEP SAFETY · REST · MEAL · EXIT"
+  },
+  "footer": "行程决策图・旅程判断図・ITINERARY DECISION MAP · NOT A TIMETABLE",
+  "sources": [
+    {
+      "id": "HKN-NAVI-AROUND",
+      "url": "https://www.hakonenavi.jp/international/en/around",
+      "checked_at": "2026-08-20",
+      "use": "Connected transport modes and transfer-node structure"
+    },
+    {
+      "id": "HKN-NAVI-LIVE-STATUS",
+      "url": "https://www.hakonenavi.jp/international/en/status_information",
+      "checked_at": "2026-08-20",
+      "use": "Same-day operation and congestion checks"
+    },
+    {
+      "id": "HKN-ROPEWAY",
+      "url": "https://www.hakonenavi.jp/international/en/transportation/hakone-ropeway",
+      "checked_at": "2026-08-20",
+      "use": "Upper-chain relationship and weather suspension caveat"
+    },
+    {
+      "id": "HKN-CRUISE-FAQ",
+      "url": "https://www.hakonenavi.jp/international/en/transportation/hakone-kankosen",
+      "checked_at": "2026-08-20",
+      "use": "Fog, wind, changed destination, and suspension caveats"
+    },
+    {
+      "id": "HKN-JTA-RYOKAN-QA",
+      "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+      "checked_at": "2026-08-20",
+      "use": "Arrival, meal, bath, breakfast, checkout, and accessibility variation"
+    },
+    {
+      "id": "JMA-WARNINGS",
+      "url": "https://www.jma.go.jp/bosai/warning/",
+      "checked_at": "2026-08-20",
+      "use": "Current warning and advisory check"
+    }
+  ],
+  "generalizations": [
+    "The three lanes are original LazyTravel decision patterns, not operator itineraries or timetables",
+    "One anchor per day is an editorial capacity rule, not a claim that every traveller moves at the same pace",
+    "Upper-chain, lake, rail, old-road, and highland labels group route decisions and do not replace live station-level routing",
+    "Fallbacks require their own opening, access, meal, lodging, warning, and transport checks",
+    "A weather warning, unsafe condition, or operator instruction overrides the diagram"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-21",
+    "evidence": {
+      "source_render": "assets/maps/hakone/hakone-itinerary-days.png",
+      "b6_page": "build/qa/hakone/ch10-layout-review-v5/pages/page-160.png",
+      "mobile_left": "build/qa/hakone-ch10-website-release/mobile-10-map-left.png",
+      "mobile_center": "build/qa/hakone-ch10-website-release/mobile-10-map-center.png",
+      "mobile_right": "build/qa/hakone-ch10-website-release/mobile-10-map-right.png",
+      "mobile_contact": "build/qa/hakone-ch10-website-release/mobile-10-map-contact.jpg",
+      "viewport_css_px": 390,
+      "pan_offsets_css_px": [
+        0,
+        185,
+        370
+      ]
+    },
+    "notes": [
+      "Source render and compiled B6 page passed collision, hierarchy, and print-legibility review.",
+      "The 760 px mobile stage passed left, centre, and right inspection inside a 390 px viewport."
+    ]
+  }
+}

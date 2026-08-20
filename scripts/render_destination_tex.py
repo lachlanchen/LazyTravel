@@ -8,6 +8,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+from PIL import Image
+
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BOOK = ROOT / "data/china/cities/xian/book.json"
 DEFAULT_TEMPLATE = ROOT / "books/china/cities/xian/latex/book.tex"
@@ -321,7 +323,11 @@ def block_tex(
         asset = assets[block["asset_ids"][0]]
         visual_path = (ROOT / asset.get("variants", {}).get("print", asset["path"])).resolve()
         if block["kind"] == "map":
-            pieces.append(rf"\LTMapPage{{\detokenize{{{visual_path}}}}}")
+            with Image.open(visual_path) as image:
+                map_command = (
+                    "LTPortraitMapPage" if image.height > image.width else "LTMapPage"
+                )
+            pieces.append(rf"\{map_command}{{\detokenize{{{visual_path}}}}}")
         else:
             captions = asset["captions"]
             pieces.append(

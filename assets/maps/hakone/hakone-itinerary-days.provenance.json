@@ -1,0 +1,103 @@
+{
+  "asset_id": "asset-hakone-itinerary-days-map",
+  "command": "python3 scripts/build_hakone_itinerary_days_map.py",
+  "config": "data/maps/hakone/hakone-itinerary-days.config.json",
+  "config_sha256": "91dad1e0fccafe6640da1eba5834b78a99b408aed3a46aed7d95caf1ea6b3bf6",
+  "created_at": "2026-08-20",
+  "declared_generalizations": [
+    "The three lanes are original LazyTravel decision patterns, not operator itineraries or timetables",
+    "One anchor per day is an editorial capacity rule, not a claim that every traveller moves at the same pace",
+    "Upper-chain, lake, rail, old-road, and highland labels group route decisions and do not replace live station-level routing",
+    "Fallbacks require their own opening, access, meal, lodging, warning, and transport checks",
+    "A weather warning, unsafe condition, or operator instruction overrides the diagram"
+  ],
+  "files": {
+    "hakone-itinerary-days.pdf": {
+      "bytes": 126876,
+      "sha256": "8ff7883a3cc97a9893a0ad909b48c089d021102c4bb8dfd8de38f6d7230b236d"
+    },
+    "hakone-itinerary-days.png": {
+      "bytes": 1046555,
+      "sha256": "75d1d19461cdc613530ccf1c5d6b87142ab4ad92a23af889124fd57106b9085b"
+    },
+    "hakone-itinerary-days.svg": {
+      "bytes": 54242,
+      "sha256": "643e7e926a5ca2487208c92606a268cb92fb10113bdfe1ab0c7c4e959869a92d"
+    }
+  },
+  "method": "schematic-hakone-itinerary-days-render",
+  "rights": "Map design © LazyTravel; route facts derive from the listed official sources.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-NAVI-AROUND",
+      "url": "https://www.hakonenavi.jp/international/en/around",
+      "use": "Connected transport modes and transfer-node structure"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-NAVI-LIVE-STATUS",
+      "url": "https://www.hakonenavi.jp/international/en/status_information",
+      "use": "Same-day operation and congestion checks"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-ROPEWAY",
+      "url": "https://www.hakonenavi.jp/international/en/transportation/hakone-ropeway",
+      "use": "Upper-chain relationship and weather suspension caveat"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-CRUISE-FAQ",
+      "url": "https://www.hakonenavi.jp/international/en/transportation/hakone-kankosen",
+      "use": "Fog, wind, changed destination, and suspension caveats"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-JTA-RYOKAN-QA",
+      "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+      "use": "Arrival, meal, bath, breakfast, checkout, and accessibility variation"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "JMA-WARNINGS",
+      "url": "https://www.jma.go.jp/bosai/warning/",
+      "use": "Current warning and advisory check"
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      2448,
+      3456
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_page": "build/qa/hakone/ch10-layout-review-v5/pages/page-160.png",
+      "mobile_center": "build/qa/hakone-ch10-website-release/mobile-10-map-center.png",
+      "mobile_contact": "build/qa/hakone-ch10-website-release/mobile-10-map-contact.jpg",
+      "mobile_left": "build/qa/hakone-ch10-website-release/mobile-10-map-left.png",
+      "mobile_right": "build/qa/hakone-ch10-website-release/mobile-10-map-right.png",
+      "pan_offsets_css_px": [
+        0,
+        185,
+        370
+      ],
+      "source_render": "assets/maps/hakone/hakone-itinerary-days.png",
+      "viewport_css_px": 390
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "Source render and compiled B6 page passed collision, hierarchy, and print-legibility review.",
+      "The 760 px mobile stage passed left, centre, and right inspection inside a 390 px viewport."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-21"
+  }
+}

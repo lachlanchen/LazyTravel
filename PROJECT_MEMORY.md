@@ -77,16 +77,16 @@ The synchronized website is publicly deployed at
 manifest and canonical JSON. Xi'an is complete. Hakone is next at
 `japan/prefectures/kanagawa/hakone`, followed by Lanzhou.
 
-Hakone has exactly 11 chapters and advances in order. Chapters 1 through 9 are
-accepted internal milestones. Together they provide `87` aligned blocks,
-`10,770` Chinese reading tokens, `13,380` Japanese reading tokens, nine maps,
-and twenty-nine destination, transport, museum, food, landscape, lodging, and
-room-check figures using all four guides. The reproducible B6 review has `170`
-pages and SHA-256
-`0cac4d2fda8e163d638f06396ed8bbb7673be2c8acefcc6b6b78df5410875e77`.
-Desktop and `390 px` website QA pass from the same JSON with `14,771` ruby
+Hakone has exactly 11 chapters and advances in order. Chapters 1 through 10 are
+accepted internal milestones. Together they provide `97` aligned blocks,
+`12,205` Chinese reading tokens, `15,120` Japanese reading tokens, ten maps,
+and thirty-five destination, transport, museum, food, landscape, lodging, and
+itinerary figure placements using all four guides. The reproducible B6 review
+has `193` pages and SHA-256
+`50154ec40d8cd77850e44f25ccf6c3cc376d114909f85d6d6d10c7b06dca7d30`.
+Desktop and `390 px` website QA pass from the same JSON with `16,770` ruby
 nodes, and the exact pocket PDF is hash-synced to Nutstore. This does not
-complete Hakone; Chapter 10, `One, Two, or Three Days`, is the only next
+complete Hakone; Chapter 11, `One Stop Beyond Hakone`, is the only next
 writing gate.
 
 Chapter 9 established the lodging method used by later books: choose a
@@ -94,3 +94,9 @@ district from arrival, dinner, the exact entrance, the next morning, and a
 poor-weather exit before comparing a named property. Official filters produce
 a shortlist only. A generated room scene can illustrate separate booking
 questions, but it is never bookable inventory or an accessibility claim.
+
+Chapter 10 established the itinerary method: one anchor, one fixed commitment,
+and one usable exit per day. Weather or service disruption swaps a whole day
+or removes a branch; it does not trigger a denser replacement list. The
+portrait itinerary map is deliberately pannable on mobile and passed B6 plus
+left, centre, and right `390 px` inspection.

@@ -202,6 +202,17 @@ class ReadingLayerTests(unittest.TestCase):
         self.assertEqual(readings["不確か"], "ふたしか")
         self.assertEqual(readings["区間"], "くかん")
 
+    def test_hakone_itinerary_museum_and_highland_readings(self) -> None:
+        tokens = ja_tokens(
+            "一日に一館、二館は入れず、高原の美術館を選ぶ。",
+            unidic_tagger(),
+        )
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["一日"], "いちにち")
+        self.assertEqual(readings["一館"], "いっかん")
+        self.assertEqual(readings["二館"], "にかん")
+        self.assertEqual(readings["高原"], "こうげん")
+
     def test_katakana_conversion(self) -> None:
         self.assertEqual(katakana_to_hiragana("セイアン"), "せいあん")
 

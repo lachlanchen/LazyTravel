@@ -174,6 +174,9 @@ def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[s
         "map_natural_width": (
             map_image.evaluate("image => image.naturalWidth") if counts["maps"] else 0
         ),
+        "map_natural_height": (
+            map_image.evaluate("image => image.naturalHeight") if counts["maps"] else 0
+        ),
         "map_source": (
             map_image.evaluate("image => image.currentSrc") if counts["maps"] else None
         ),
@@ -191,11 +194,17 @@ def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[s
                     f"{label} visual numbering mismatch: "
                     f"{visual_label!r} does not start with {expected_prefix!r}"
                 )
-    if counts["maps"] and (
-        not observed["map_source"].endswith(".svg")
-        or observed["map_natural_width"] < 600
-    ):
-        raise RuntimeError(f"{label} vector map did not load correctly: {observed}")
+    if counts["maps"]:
+        map_dimensions = (
+            observed["map_natural_width"],
+            observed["map_natural_height"],
+        )
+        if (
+            not observed["map_source"].endswith(".svg")
+            or min(map_dimensions) < 450
+            or max(map_dimensions) < 600
+        ):
+            raise RuntimeError(f"{label} vector map did not load correctly: {observed}")
     assert_no_page_overflow(page, label)
     assert_header_clear(page, label)
     return observed

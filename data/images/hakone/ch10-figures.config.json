@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-20",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hood reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "visual_references": [
+    {
+      "path": "build/research/hakone-ch10-references/pola-architecture-20.jpg",
+      "role": "Official Pola Museum forest and architecture reference",
+      "source_url": "https://www.polamuseum.or.jp/en/info/"
+    },
+    {
+      "path": "build/research/hakone-ch10-references/pola-info-9.jpg",
+      "role": "Official Pola Museum approach and forest reference; signage excluded from the generated composition",
+      "source_url": "https://www.polamuseum.or.jp/en/info/"
+    },
+    {
+      "path": "build/research/hakone-ch10-references/pola-info-18.jpg",
+      "role": "Official Pola Museum entrance canopy, slope, and handrail reference; photographed visitor excluded",
+      "source_url": "https://www.polamuseum.or.jp/en/info/barrierfree/"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-hakone-pola-rain-arrival",
+      "stem": "hakone-pola-rain-arrival",
+      "method": "generated-pola-museum-rain-arrival-figure",
+      "prompt": "data/images/hakone/hakone-pola-rain-arrival.prompt.md",
+      "selected_raw": "build/aginti/hakone-pola-rain-arrival-v1/hakone-pola-rain-arrival-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/hakone-pola-rain-arrival-v1/task_manifest.json",
+          "role": "Selected exactly-four-guide rainy museum-arrival scene with destination-dominant architecture, clear entrance slope, no fifth person, and no reader-visible text"
+        }
+      ],
+      "fact_sources": [
+        {
+          "id": "HKN-POLA-INFO",
+          "url": "https://www.polamuseum.or.jp/en/info/",
+          "checked_at": "2026-08-20",
+          "role": "Official facility identity and visitor-information context"
+        },
+        {
+          "id": "HKN-POLA-ACCESS",
+          "url": "https://www.polamuseum.or.jp/en/info/access/",
+          "checked_at": "2026-08-20",
+          "role": "Official current access options and shuttle caveats"
+        },
+        {
+          "id": "HKN-POLA-BARRIERFREE",
+          "url": "https://www.polamuseum.or.jp/en/info/barrierfree/",
+          "checked_at": "2026-08-20",
+          "role": "Official entrance-slope, lift, wheelchair-loan, and multipurpose-toilet information"
+        }
+      ],
+      "factual_limits": [
+        "The image is an original rainy-arrival composition informed by official location references, not documentary evidence of a particular visit",
+        "The visible entrance slope, canopy, and handrail do not establish that the full journey, shuttle, road, or every exhibition route is step-free",
+        "The image does not establish current opening, admission, exhibition, shuttle, bus, lift, loan, or toilet availability",
+        "Travellers must verify the selected date, route, weather, transport, facility information, and their own access requirements directly"
+      ],
+      "reader_caption_policy": "Caption names the rainy Pola Museum arrival and explains the route check without mentioning generation or implying destination-wide accessibility.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch10-layout-review-v5/pages/page-172.png",
+        "physical_page": 172,
+        "mobile_path": "build/qa/hakone-ch10-website-release/mobile-10-figure-05.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ],
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_recognition": "pass",
+    "entrance_route_readable": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-21",
+    "notes": "Selected source, compiled B6 page, and 390 px website figure passed four-guide continuity, destination, route, text, print, and mobile review."
+  }
+}

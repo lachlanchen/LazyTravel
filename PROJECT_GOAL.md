@@ -153,7 +153,7 @@ destination does not open work on two later books at once.
 
 ## Current Gate
 
-As of `2026-08-20`, all 11 Xi'an chapters have passed editorial, reading, page,
+As of `2026-08-21`, all 11 Xi'an chapters have passed editorial, reading, page,
 and public website review and build reproducibly as one `195`-page B6
 pocket PDF from `125` aligned blocks, with ten maps and fifteen chapter
 figures. The text-free four-guide cover sits beneath selectable LaTeX text, and
@@ -162,11 +162,11 @@ and mobile gates. The public guide is available at
 <https://lachlanchen.github.io/LazyTravel/>. Hakone is the next active book;
 Lanzhou remains queued behind it.
 
-Hakone has a locked 11-chapter structure. Chapters 1 through 9 have passed the
+Hakone has a locked 11-chapter structure. Chapters 1 through 10 have passed the
 editorial, reading, PDF-page, website, Nutstore, and GitHub milestone gates.
-The current pocket review has `170` B6 pages and SHA-256
-`0cac4d2fda8e163d638f06396ed8bbb7673be2c8acefcc6b6b78df5410875e77`.
-It contains `87` aligned blocks, nine maps, twenty-nine figures, and the
-website renders `14,771` reviewed ruby nodes from the same JSON. Hakone remains
-incomplete; Chapter 10, **One, Two, or Three Days**, is the only next
+The current pocket review has `193` B6 pages and SHA-256
+`50154ec40d8cd77850e44f25ccf6c3cc376d114909f85d6d6d10c7b06dca7d30`.
+It contains `97` aligned blocks, ten maps, thirty-five figure placements, and
+the website renders `16,770` reviewed ruby nodes from the same JSON. Hakone
+remains incomplete; Chapter 11, **One Stop Beyond Hakone**, is the only next
 production gate.

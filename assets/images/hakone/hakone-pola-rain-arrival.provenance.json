@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-pola-rain-arrival",
+  "created_at": "2026-08-20",
+  "method": "generated-pola-museum-rain-arrival-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "15-81773b8a-5c7e-4ce3-8bf0-e585029c1523",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "bytes": 5801598,
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "bytes": 1067274,
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "bytes": 1294694,
+      "role": "Sasa-kun identity and panda-hood reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "bytes": 1139075,
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/hakone-ch10-references/pola-architecture-20.jpg",
+      "sha256": "fa9b09899e90059cdac4bb3d3c27ac8c2acf7b71c2abda05f7be7d1c8c6b1e1a",
+      "bytes": 3318690,
+      "role": "Official Pola Museum forest and architecture reference",
+      "source_url": "https://www.polamuseum.or.jp/en/info/"
+    },
+    {
+      "path": "build/research/hakone-ch10-references/pola-info-9.jpg",
+      "sha256": "df31b79734d1935bc40548b186b19176fbdd6b0f1f447d39326ba0891240bcd4",
+      "bytes": 1102748,
+      "role": "Official Pola Museum approach and forest reference; signage excluded from the generated composition",
+      "source_url": "https://www.polamuseum.or.jp/en/info/"
+    },
+    {
+      "path": "build/research/hakone-ch10-references/pola-info-18.jpg",
+      "sha256": "30e02cc0e25271f69cee89ed848afa308be7664e52f2397faaf29d1325417aa3",
+      "bytes": 39921,
+      "role": "Official Pola Museum entrance canopy, slope, and handrail reference; photographed visitor excluded",
+      "source_url": "https://www.polamuseum.or.jp/en/info/barrierfree/"
+    }
+  ],
+  "fact_sources": [
+    {
+      "id": "HKN-POLA-INFO",
+      "url": "https://www.polamuseum.or.jp/en/info/",
+      "checked_at": "2026-08-20",
+      "role": "Official facility identity and visitor-information context"
+    },
+    {
+      "id": "HKN-POLA-ACCESS",
+      "url": "https://www.polamuseum.or.jp/en/info/access/",
+      "checked_at": "2026-08-20",
+      "role": "Official current access options and shuttle caveats"
+    },
+    {
+      "id": "HKN-POLA-BARRIERFREE",
+      "url": "https://www.polamuseum.or.jp/en/info/barrierfree/",
+      "checked_at": "2026-08-20",
+      "role": "Official entrance-slope, lift, wheelchair-loan, and multipurpose-toilet information"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/hakone-pola-rain-arrival.prompt.md",
+    "sha256": "c11af62ecc09055743ebfe4d84d39deaa2456f6c76d91acf70e2df663845cbd1"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/hakone-pola-rain-arrival-v1/task_manifest.json",
+      "sha256": "96b4ae48627299a129b481ecb507dbc611cd100ced8743d04686d9d5844fc198",
+      "bytes": 3494,
+      "role": "Selected exactly-four-guide rainy museum-arrival scene with destination-dominant architecture, clear entrance slope, no fifth person, and no reader-visible text"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/hakone-pola-rain-arrival-v1/hakone-pola-rain-arrival-v1.png",
+    "sha256": "76825e7673002b3305a358af0f5264c63329b37a42883adf28b82d9ccabddded",
+    "bytes": 18762588,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, centered 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/hakone-pola-rain-arrival.jpg",
+    "sha256": "68ec4e612d04fe56063a667bb2233110567c6bdfc70b0c8dc321c0f56cac7476",
+    "bytes": 2320975,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/hakone-pola-rain-arrival-wide.jpg",
+      "sha256": "b3987794821b5f84b71ed0af3433987c01a31fcaf8b50178ebf2b6d7d978685b",
+      "bytes": 1856958,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/hakone-pola-rain-arrival-web.jpg",
+      "sha256": "7fb9c9cc80f4b9745db042798fa46cb79108dee1a256a3e9fd982df4eaa476d5",
+      "bytes": 596045,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The image is an original rainy-arrival composition informed by official location references, not documentary evidence of a particular visit",
+    "The visible entrance slope, canopy, and handrail do not establish that the full journey, shuttle, road, or every exhibition route is step-free",
+    "The image does not establish current opening, admission, exhibition, shuttle, bus, lift, loan, or toilet availability",
+    "Travellers must verify the selected date, route, weather, transport, facility information, and their own access requirements directly"
+  ],
+  "reader_caption_policy": "Caption names the rainy Pola Museum arrival and explains the route check without mentioning generation or implying destination-wide accessibility.",
+  "rights": "Original LazyTravel composition; external location and character references are hash-pinned and not redistributed",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_recognition": "pass",
+    "entrance_route_readable": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-21",
+    "notes": "Selected source, compiled B6 page, and 390 px website figure passed four-guide continuity, destination, route, text, print, and mobile review.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch10-layout-review-v5/pages/page-172.png",
+        "sha256": "fa81a38d1a64a068ef61379ba7d4fda6fa3be6022bee002121aa2ad8a1146653",
+        "bytes": 779946,
+        "physical_page": 172
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch10-website-release/mobile-10-figure-05.png",
+        "sha256": "b1c835876d79e851e1ac51423e54e2f8bdb8979edb2cf744d9e77153e5c7cd1d",
+        "bytes": 720572,
+        "width": 780,
+        "height": 1298,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}
