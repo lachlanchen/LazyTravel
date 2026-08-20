@@ -47,7 +47,7 @@ five-day itineraries; and Chapter 11 closes with dated booking, conditions,
 conduct, allergy, and emergency checks. The cover uses a text-free four-guide
 city-wall scene under live selectable LaTeX text. All chapters have passed the
 editorial, reading, page, and public website gate. Xi'an is complete;
-production now advances to Hakone before Lanzhou.
+Hakone was completed next, and production now advances only to Lanzhou.
 
 The current pocket PDF SHA-256 is
 `ae2872703174ea523b051ccba21e34eeaa2182aba323bc68a23e5cf558af83c5`.
@@ -67,6 +67,16 @@ review. The pocket SHA-256 is
 The same file is hash-synced to Nutstore. The two-destination website preserves
 Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
+
+Lanzhou now has a hash-verified read-only source baseline, an explicit claim
+and rejection ledger, a locked 11-chapter trilingual outline, and a
+schema-valid canonical JSON shell. Its route begins with the long Yellow River
+valley, separates the two arrival stations and airport, keeps history beside
+the crossing and museum, places food in the day's actual rhythm, and ends with
+one onward Gansu decision and one nearby day. Chapter 1 is the only active
+writing gate. Lanzhou is not exposed on the public site until reviewed chapter
+content, readings, maps, figures, citations, B6 pages, and mobile/desktop views
+pass together.
 
 ## Source Boundary
 

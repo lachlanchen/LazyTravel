@@ -70,6 +70,29 @@ transport, food, onsen culture, hotels, practical itineraries, and one nearby
 continuation chapter. The detailed trilingual spine and boundaries are locked
 in `books/japan/prefectures/kanagawa/hakone/editorial/outline.md`.
 
+## Lanzhou Structure
+
+The Lanzhou guide also has exactly 11 chapters. Its route follows a long river
+valley, then connects the city to the next Gansu leg:
+
+1. Read the Valley First: River, Hills, and East-West
+2. Arrive at the Right Gate: Airport, West Station, or Lanzhou Station
+3. How a Crossing Became a Provincial Capital
+4. Cross One Bridge, Read Both Banks: Zhongshan Bridge and the Riverfront
+5. Read One Route Through Gansu Provincial Museum
+6. Eat by Lanzhou's Clock: A Morning Bowl and Afternoon Snacks
+7. Choose One Height: White Pagoda Hill, Lanshan, or Wuquan Mountain
+8. Where to Stay: Choose the Route Segment Before the Hotel
+9. One, Two, or Three Days: Leave Room in the Valley
+10. Leaving Lanzhou: Connect the Next Gansu Leg
+11. Around Lanzhou: Choose One Nearby Day
+
+Together they cover orientation, arrival, connected history, the central
+river route, the provincial museum, food, city views, lodging, itineraries,
+onward transport, and one nearby-area decision. The detailed trilingual spine,
+boundaries, and editorial rules are locked in
+`books/china/cities/lanzhou/editorial/outline.md`.
+
 ## Editorial Standard
 
 - Use all six supplied books, the external Xi'an and Gansu open guides, and
@@ -171,3 +194,6 @@ and passes desktop/mobile review for both destinations. The pocket is
 hash-synced to Nutstore. GitHub Pages run `32418706768` verified every deployed
 Xi'an and Hakone file against its canonical JSON and manifest. Hakone is
 complete; Lanzhou at `china/cities/lanzhou` is the only active destination.
+Its read-only source catalog, research ledger, locked 11-chapter outline, and
+schema-valid canonical JSON shell are established. Chapter 1 is the only active
+writing gate; the empty research shell is not yet added to the public website.

@@ -183,8 +183,7 @@
       "editorial_roles": ["attractions", "transport", "hotels", "food", "practical-structure"],
       "temporal_warning": "All practical listings are historical and must be replaced with independently verified current information.",
       "rights": {"status": "copyrighted-research-only", "redistributable": false, "source_images_publishable": false},
-      "extraction_route": "marker-surya-sharded-ocr",
-      "destination_gate": "do-not-extract-until-hakone-reviewed"
+      "extraction_route": "marker-surya-sharded-ocr"
     },
     {
       "id": "gansu-brief-history",
@@ -200,8 +199,7 @@
       "editorial_roles": ["history", "regional-context"],
       "temporal_warning": "Use as a secondary historical survey and cross-check claims with primary or institutional sources.",
       "rights": {"status": "copyrighted-research-only", "redistributable": false, "source_images_publishable": false},
-      "extraction_route": "page-aware-pdftotext-with-figure-inventory",
-      "destination_gate": "do-not-extract-until-hakone-reviewed"
+      "extraction_route": "page-aware-pdftotext-with-figure-inventory"
     },
     {
       "id": "gansu-food",
@@ -217,8 +215,7 @@
       "editorial_roles": ["food", "memory", "regional-culture"],
       "temporal_warning": "Treat memoir-like observations as prompts; verify concrete historical and culinary claims separately.",
       "rights": {"status": "copyrighted-research-only", "redistributable": false, "source_images_publishable": false},
-      "extraction_route": "marker-surya-sharded-ocr",
-      "destination_gate": "do-not-extract-until-hakone-reviewed"
+      "extraction_route": "marker-surya-sharded-ocr"
     },
     {
       "id": "xian-open-guide-zh",
@@ -263,13 +260,16 @@
       "creator": "Wikivoyage contributors",
       "kind": "pdf-with-api-snapshots",
       "path": "/home/lachlan/ProjectsLFS/Books/resources/curated-books/travel-guides/xian-gansu-open-guides/gansu/zh/gansu-open-travel-guide-zh.pdf",
+      "source_snapshot_path": "/home/lachlan/ProjectsLFS/Books/resources/curated-books/travel-guides/xian-gansu-open-guides/gansu/zh/source-pages/02-gansu-zh.json",
       "sha256": "c3eed9f6acd95caf41be234a5f586a0ea37ff96fdc329d0925831fd1517464a1",
+      "source_snapshot_sha256": "c7d6b4ec04107a7dff2612d26d3926058be9b4e67ef5ed4055e7b3f85c717e07",
       "bytes": 1822630,
+      "revision_id": 205577,
+      "source_url": "https://zh.wikivoyage.org/wiki/兰州",
       "editorial_roles": ["regional-orientation", "attractions", "transport", "food", "hotels"],
-      "temporal_warning": "Do not use until the Hakone destination gate is complete; later recheck every volatile detail.",
+      "temporal_warning": "The pinned Lanzhou snapshot is an orientation and lead source; independently recheck every volatile detail.",
       "rights": {"status": "CC-BY-SA-4.0", "redistributable": true, "attribution_required": true, "share_alike_required": true},
-      "extraction_route": "read-api-snapshots-directly",
-      "destination_gate": "do-not-extract-until-hakone-reviewed"
+      "extraction_route": "read-api-snapshots-directly"
     },
     {
       "id": "gansu-open-guide-en",
@@ -278,13 +278,16 @@
       "creator": "Wikivoyage contributors",
       "kind": "pdf-with-api-snapshots",
       "path": "/home/lachlan/ProjectsLFS/Books/resources/curated-books/travel-guides/xian-gansu-open-guides/gansu/en/gansu-open-travel-guide-en.pdf",
+      "source_snapshot_path": "/home/lachlan/ProjectsLFS/Books/resources/curated-books/travel-guides/xian-gansu-open-guides/gansu/en/source-pages/02-gansu-en.json",
       "sha256": "a87172eb1b875d1816ec2b47d8267eb37d40417146430694c9f8a2352f55e4e2",
+      "source_snapshot_sha256": "3b5d603314ca3fbbe07256dae23b586beb15bddf53170d91e04d978f243a2c45",
       "bytes": 2073630,
+      "revision_id": 5243430,
+      "source_url": "https://en.wikivoyage.org/wiki/Lanzhou",
       "editorial_roles": ["regional-orientation", "attractions", "transport", "food", "hotels"],
-      "temporal_warning": "Do not use until the Hakone destination gate is complete; later recheck every volatile detail.",
+      "temporal_warning": "The pinned Lanzhou snapshot is an orientation and lead source; independently recheck every volatile detail.",
       "rights": {"status": "CC-BY-SA-4.0", "redistributable": true, "attribution_required": true, "share_alike_required": true},
-      "extraction_route": "read-api-snapshots-directly",
-      "destination_gate": "do-not-extract-until-hakone-reviewed"
+      "extraction_route": "read-api-snapshots-directly"
     }
   ]
 }

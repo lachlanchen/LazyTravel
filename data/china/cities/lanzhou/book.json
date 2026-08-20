@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "book": {
+    "id": "lanzhou",
+    "series_path": "china/cities/lanzhou",
+    "series_label": "CHINA · CITIES · LANZHOU",
+    "running_title": "LANZHOU",
+    "cover_gate_position": "mid",
+    "titles": {
+      "zh": "兰州旅行手册",
+      "ja": "蘭州旅の手引き",
+      "en": "Lanzhou Pocket Travel Guide"
+    },
+    "subtitles": {
+      "zh": "黄河、街巷、饮食与甘肃下一程",
+      "ja": "黄河・街歩き・食、そして甘粛の次の旅へ",
+      "en": "River routes, street walks, food, and the next Gansu leg"
+    },
+    "languages": [
+      "zh",
+      "ja",
+      "en"
+    ],
+    "status": "researching",
+    "edition": "research-edition-2026-08-21",
+    "branding": {
+      "brand": "LazyTravel",
+      "studio": "lazying.art",
+      "website": "https://lazying.art",
+      "repository": "https://github.com/lachlanchen/LazyTravel"
+    }
+  },
+  "frontmatter": {
+    "how_to_use": {
+      "zh": "兰州沿黄河伸展，景点之间看似不远，实际移动却常被河岸、桥梁和东西方向重新安排。先确认下一站在东边还是西边、在南岸还是北岸，再选择车站、住宿和当天的步行段。历史放在桥、博物馆和山上讲，饮食按清晨、午后和晚间安排。最后两章把兰州接入更长的甘肃行程，并把近郊选择限制为一天一个地方。",
+      "ja": "蘭州は黄河に沿って東西に延びる。地図では近く見える場所でも、川岸、橋、移動方向によって所要時間が変わる。次の目的地が東か西か、南岸か北岸かを確かめてから、駅、宿、歩く区間を選ぶ。歴史は橋、博物館、山の眺めに沿って読み、食事は朝、午後、夜の順に組み立てる。終盤では蘭州を甘粛の長い旅につなぎ、郊外は一日に一か所だけ選ぶ。",
+      "en": "Lanzhou stretches along the Yellow River. Places that look close on a flat map can require a different route once the bank, bridge, and east-west direction are considered. Check whether the next stop lies east or west, north bank or south bank, before choosing a station, lodging area, or walking segment. History stays beside the bridge, museum, and city views; food follows the morning, afternoon, and evening. The final chapters connect Lanzhou to a longer Gansu journey and limit a nearby day to one destination."
+    }
+  },
+  "coverage": [
+    "history",
+    "food",
+    "attractions",
+    "transport",
+    "hotels",
+    "itineraries",
+    "cultural-context",
+    "practical",
+    "maps"
+  ],
+  "chapters": [
+    {
+      "id": "ch01-read-valley",
+      "order": 1,
+      "titles": {
+        "zh": "先读河谷：黄河、两山与东西方向",
+        "ja": "まず河谷を読む：黄河、二つの山、東西の方向",
+        "en": "Read the Valley First: River, Hills, and East-West"
+      },
+      "coverage": [
+        "cultural-context",
+        "transport",
+        "practical",
+        "maps"
+      ],
+      "status": "researching",
+      "blocks": []
+    },
+    {
+      "id": "ch02-arrival-gates",
+      "order": 2,
+      "titles": {
+        "zh": "到哪一站下：机场、西站与兰州站",
+        "ja": "どこで降りるか：空港・蘭州西駅・蘭州駅",
+        "en": "Arrive at the Right Gate: Airport, West Station, or Lanzhou Station"
+      },
+      "coverage": [
+        "transport",
+        "hotels",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch03-crossing-capital",
+      "order": 3,
+      "titles": {
+        "zh": "渡口怎样成为省城",
+        "ja": "渡し場はいかに省都になったか",
+        "en": "How a Crossing Became a Provincial Capital"
+      },
+      "coverage": [
+        "history",
+        "cultural-context",
+        "attractions"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch04-bridge-banks",
+      "order": 4,
+      "titles": {
+        "zh": "过一座桥，看两岸：中山桥与黄河边",
+        "ja": "橋を一つ渡り、両岸を見る：中山橋と黄河沿い",
+        "en": "Cross One Bridge, Read Both Banks: Zhongshan Bridge and the Riverfront"
+      },
+      "coverage": [
+        "history",
+        "attractions",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch05-museum-route",
+      "order": 5,
+      "titles": {
+        "zh": "在甘肃省博物馆读一条路",
+        "ja": "甘粛省博物館で一本の道を読む",
+        "en": "Read One Route Through Gansu Provincial Museum"
+      },
+      "coverage": [
+        "history",
+        "attractions",
+        "cultural-context",
+        "practical"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch06-food-clock",
+      "order": 6,
+      "titles": {
+        "zh": "按兰州的时钟吃：清晨一碗面，午后几样小吃",
+        "ja": "蘭州の時計で食べる：朝の一杯、午後の小吃",
+        "en": "Eat by Lanzhou's Clock: A Morning Bowl and Afternoon Snacks"
+      },
+      "coverage": [
+        "food",
+        "cultural-context",
+        "practical"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch07-city-heights",
+      "order": 7,
+      "titles": {
+        "zh": "从哪一处看全城：白塔山、兰山或五泉山",
+        "ja": "街をどこから見るか：白塔山・蘭山・五泉山",
+        "en": "Choose One Height: White Pagoda Hill, Lanshan, or Wuquan Mountain"
+      },
+      "coverage": [
+        "attractions",
+        "cultural-context",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch08-stay-segment",
+      "order": 8,
+      "titles": {
+        "zh": "住在路线哪一段：先选地区，再选酒店",
+        "ja": "どの区間に泊まるか：ホテルより先にエリアを選ぶ",
+        "en": "Where to Stay: Choose the Route Segment Before the Hotel"
+      },
+      "coverage": [
+        "hotels",
+        "transport",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch09-itinerary-days",
+      "order": 9,
+      "titles": {
+        "zh": "一、二、三天：给河谷留出空白",
+        "ja": "一日・二日・三日：河谷に余白を残す",
+        "en": "One, Two, or Three Days: Leave Room in the Valley"
+      },
+      "coverage": [
+        "itineraries",
+        "transport",
+        "food",
+        "hotels",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch10-next-gansu-leg",
+      "order": 10,
+      "titles": {
+        "zh": "离开兰州：把甘肃下一程接好",
+        "ja": "蘭州を出る：甘粛の次の行程につなぐ",
+        "en": "Leaving Lanzhou: Connect the Next Gansu Leg"
+      },
+      "coverage": [
+        "transport",
+        "itineraries",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    },
+    {
+      "id": "ch11-nearby-day",
+      "order": 11,
+      "titles": {
+        "zh": "兰州周边：只选一个近郊日",
+        "ja": "蘭州周辺：郊外の一日を一つだけ選ぶ",
+        "en": "Around Lanzhou: Choose One Nearby Day"
+      },
+      "coverage": [
+        "history",
+        "attractions",
+        "itineraries",
+        "transport",
+        "practical",
+        "maps"
+      ],
+      "status": "outlined",
+      "blocks": []
+    }
+  ],
+  "citations": [],
+  "assets": []
+}

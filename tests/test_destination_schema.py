@@ -22,3 +22,7 @@ def test_xian_book_matches_destination_schema() -> None:
 
 def test_nested_japan_destination_matches_destination_schema() -> None:
     assert validate(ROOT / "data/japan/prefectures/kanagawa/hakone/book.json") == []
+
+
+def test_lanzhou_book_matches_destination_schema() -> None:
+    assert validate(ROOT / "data/china/cities/lanzhou/book.json") == []

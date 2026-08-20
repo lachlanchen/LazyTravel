@@ -11,14 +11,18 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   published with all 11 chapters, a reproducible B6 pocket book, and a
   synchronized two-destination website.
 - Lanzhou at `china/cities/lanzhou` is the only next production destination.
-  Establish its factual spine and lock a reasonable chapter count before
-  drafting; do not reopen Hakone or start another destination in parallel.
+  Its factual spine and exactly 11 chapters are locked in
+  `books/china/cities/lanzhou/editorial/outline.md`. Chapter 1, Read the Valley
+  First, is the only active writing gate; do not reopen Hakone or start another
+  destination in parallel.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
   a local editorial problem.
 - The Hakone book also has exactly 11 chapters, locked in
   `books/japan/prefectures/kanagawa/hakone/editorial/outline.md`. Populate and
   accept them in order; a later chapter never bypasses an unfinished earlier
   chapter.
+- The Lanzhou book has exactly 11 chapters. Populate and accept them in order;
+  do not add a filler chapter or bypass the active chapter.
 - All 11 Hakone chapters have passed editorial, reading, PDF-page, public
   website, provenance, Nutstore, and GitHub publication review. Do not reopen
   a settled Xi'an or Hakone chapter unless a factual, language, layout, or

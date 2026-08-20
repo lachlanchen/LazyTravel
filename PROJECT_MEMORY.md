@@ -106,3 +106,14 @@ Chapter 11 established the continuation method: choose from the booked onward
 train and the mountain exit already reached, then add at most one local stop.
 Odawara, Mishima, and Gotemba are alternatives, not a three-town extension.
 The bag and reserved train remain fixed; the local stop is removed first.
+
+Lanzhou now has a locked 11-chapter structure and a schema-valid canonical JSON
+shell. Its main line follows the traveler's decisions in a long river valley:
+orientation, arrival gate, crossing history, one central bridge route, one
+museum route, food by time of day, one city height, lodging segment, realistic
+one- to three-day plans, the next Gansu leg, and one nearby day. The 2014 guide
+is lead material only; all of its logistics are stale. `甘肃简史` supplies
+secondary chronology, `陇味儿` supplies food questions and vocabulary, and
+official sources establish publishable claims. Chapter 1 is the sole active
+gate, and Lanzhou remains absent from the public series build until reviewed
+content exists.

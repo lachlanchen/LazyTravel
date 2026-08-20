@@ -12,7 +12,7 @@
     "japan": "prefectures",
     "world": "countries"
   },
-  "active_destination": "japan/prefectures/kanagawa/hakone",
+  "active_destination": "china/cities/lanzhou",
   "destination_gate": "one-at-a-time",
   "production_contract": {
     "content_source": "aligned-destination-json",
@@ -46,7 +46,7 @@
         "ja": "箱根",
         "en": "Hakone"
       },
-      "status": "researching"
+      "status": "published"
     },
     {
       "id": "china/cities/lanzhou",
@@ -55,7 +55,7 @@
         "ja": "蘭州",
         "en": "Lanzhou"
       },
-      "status": "gated"
+      "status": "researching"
     }
   ]
 }
