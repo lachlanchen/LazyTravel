@@ -162,11 +162,11 @@ and mobile gates. The public guide is available at
 <https://lachlanchen.github.io/LazyTravel/>. Hakone is the next active book;
 Lanzhou remains queued behind it.
 
-Hakone has a locked 11-chapter structure. Chapters 1 through 7 have passed the
+Hakone has a locked 11-chapter structure. Chapters 1 through 8 have passed the
 editorial, reading, PDF-page, website, Nutstore, and GitHub milestone gates.
-The current pocket review has `122` B6 pages and SHA-256
-`b7eee7beed367ef7382ef79d0d7a8f9fe072573c92029b82a001c7e47f715995`.
-It contains `67` aligned blocks, seven maps, twenty-two figures, and the website
-renders `10,538` reviewed ruby nodes from the same JSON. Hakone remains
-incomplete; Chapter 8, **Eat Along the Route**, is the only next
+The current pocket review has `146` B6 pages and SHA-256
+`85eeb1e47cc65564cbe0894fd1b0e19598d3b1555e8f3c69d0eee8dbab186670`.
+It contains `77` aligned blocks, eight maps, twenty-three figures, and the
+website renders `12,588` reviewed ruby nodes from the same JSON. Hakone remains
+incomplete; Chapter 9, **Where to Stay**, is the only next
 production gate.

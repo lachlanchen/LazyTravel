@@ -20,8 +20,8 @@ The book has exactly 11 chapters. The count is locked because each chapter has
 a distinct travel decision; merging any two would overload a pocket chapter,
 while splitting them would create thin filler.
 
-Milestone status on `2026-08-20`: Chapters 1-7 are reviewed and reproducibly
-built. Chapter 8 is the only next drafting target.
+Milestone status on `2026-08-20`: Chapters 1-8 are reviewed and reproducibly
+built. Chapter 9 is the only next drafting target.
 
 ## Chapter Spine
 

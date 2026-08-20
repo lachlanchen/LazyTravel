@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-20",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hood reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "visual_references": [
+    {
+      "path": "build/aginti-reference-links/odawara-kamaboko-official.png",
+      "source_url": "https://www.odawarajibasan.jp/global-image/units/img/539-0-20211008162543_b615ff277ddfe2.png",
+      "role": "Official product reference for the credible white sliced board-steamed form; generation reference only, not redistributed"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-odawara-kamaboko-workshop",
+      "stem": "odawara-kamaboko-workshop",
+      "method": "generated-representative-kamaboko-workshop-figure",
+      "prompt": "data/images/hakone/odawara-kamaboko-workshop.prompt.md",
+      "selected_raw": "build/aginti/odawara-kamaboko-workshop-v1/odawara-kamaboko-workshop-v1.png",
+      "provider_lineage": [
+        {
+          "path": "build/aginti/odawara-kamaboko-workshop-v1/task_manifest.json",
+          "role": "Selected exactly-four-guide board-shaping workshop scene with finished slices, no staff, no copied mark, and the established articulated Zhuangzi"
+        }
+      ],
+      "fact_sources": [
+        {
+          "id": "ODA-CITY-KAMABOKO-HISTORY",
+          "url": "https://www.city.odawara.kanagawa.jp/global-image/units/672743/1-20250318110954_b67d8d5f21b6b1.pdf",
+          "checked_at": "2026-08-20",
+          "role": "Municipal history for the qualified late-Edo production account and board-steamed form"
+        },
+        {
+          "id": "ODA-JIBASAN-KAMABOKO",
+          "url": "https://www.odawarajibasan.jp/kamaboko/",
+          "checked_at": "2026-08-20",
+          "role": "Local-industry council description of board-mounted steamed kamaboko, fine texture, and resilient bite"
+        },
+        {
+          "id": "ODA-JIBASAN-KAMABOKO-SHOPS",
+          "url": "https://www.odawarajibasan.jp/kamaboko/shop/",
+          "checked_at": "2026-08-20",
+          "role": "Current official list distinguishing station-area retail from a separate Kazamatsuri production and museum visit"
+        }
+      ],
+      "factual_limits": [
+        "The bright workshop is a representative public food-workshop synthesis, not an identifiable company, museum, factory, or current class",
+        "The figure shows the board-mounted steamed form and cut texture without claiming one exact recipe, ingredient list, product, or producer",
+        "No whole fish or harbor scene is shown because the cited sources do not establish that every present product uses fish landed locally",
+        "Current workshops, bookings, opening, ingredients, refrigeration, and visitor access require direct recheck"
+      ],
+      "reader_caption_policy": "Caption identifies the board-steamed form and separates a short gateway taste from a dedicated Kazamatsuri production visit without naming a company or discussing generation.",
+      "qa_evidence": {
+        "b6_path": "build/qa/hakone/ch08-pocket-release/page-127.jpg",
+        "physical_page": 127,
+        "mobile_path": "build/qa/hakone-ch08-website-release/mobile-08-figure-04.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ],
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "The selected original, 16:9 delivery crops, compiled B6 page, and full-width 390 px figure passed cast, identity, food-process, and legibility review. It contains exactly the four established guides, a readable board-shaping action and sliced product, no staff or copied branding, and no unsupported local-catch cue."
+  }
+}

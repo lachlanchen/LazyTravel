@@ -11,8 +11,8 @@ no private session history.
    websockify processes for this project or another project.
 4. Run `python3 scripts/verify_sources.py`. External archives and visual
    references must remain at their hash-pinned read-only paths.
-5. Continue only the next unfinished Hakone chapter. Chapters 1 through 7 are
-   accepted; Chapter 8 is next. Update its fact ledger, aligned JSON, three
+5. Continue only the next unfinished Hakone chapter. Chapters 1 through 8 are
+   accepted; Chapter 9 is next. Update its fact ledger, aligned JSON, three
    language passes, pinyin/furigana review, assets, and QA before moving
    forward.
 6. Run focused tests while editing, then the full validation/build sequence:
@@ -50,6 +50,6 @@ python3 scripts/verify_deployed_site.py \
 ```
 
 Current gate: Xi'an is complete and publicly published. Continue with Hakone
-at `japan/prefectures/kanagawa/hakone`. Hakone Chapters 1 through 7 are accepted
-and synced; Chapter 8 is next. Lanzhou follows the complete Hakone book; never
+at `japan/prefectures/kanagawa/hakone`. Hakone Chapters 1 through 8 are accepted
+and synced; Chapter 9 is next. Lanzhou follows the complete Hakone book; never
 work on both destination books at once.

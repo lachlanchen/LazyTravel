@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-odawara-kamaboko-workshop",
+  "created_at": "2026-08-20",
+  "method": "generated-representative-kamaboko-workshop-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "9-356ae77c-99aa-44ad-8b7a-d0d69fcdec36",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "bytes": 5801598,
+      "role": "Aya-chan identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "bytes": 1067274,
+      "role": "Lala Xia identity reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "bytes": 1294694,
+      "role": "Sasa-kun identity and panda-hood reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "bytes": 1139075,
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/aginti-reference-links/odawara-kamaboko-official.png",
+      "sha256": "d1eb9e089746f10376270643e0e8009200f6525050ea9e97347bfdb9c5165732",
+      "bytes": 1179718,
+      "role": "Official product reference for the credible white sliced board-steamed form; generation reference only, not redistributed",
+      "source_url": "https://www.odawarajibasan.jp/global-image/units/img/539-0-20211008162543_b615ff277ddfe2.png"
+    }
+  ],
+  "fact_sources": [
+    {
+      "id": "ODA-CITY-KAMABOKO-HISTORY",
+      "url": "https://www.city.odawara.kanagawa.jp/global-image/units/672743/1-20250318110954_b67d8d5f21b6b1.pdf",
+      "checked_at": "2026-08-20",
+      "role": "Municipal history for the qualified late-Edo production account and board-steamed form"
+    },
+    {
+      "id": "ODA-JIBASAN-KAMABOKO",
+      "url": "https://www.odawarajibasan.jp/kamaboko/",
+      "checked_at": "2026-08-20",
+      "role": "Local-industry council description of board-mounted steamed kamaboko, fine texture, and resilient bite"
+    },
+    {
+      "id": "ODA-JIBASAN-KAMABOKO-SHOPS",
+      "url": "https://www.odawarajibasan.jp/kamaboko/shop/",
+      "checked_at": "2026-08-20",
+      "role": "Current official list distinguishing station-area retail from a separate Kazamatsuri production and museum visit"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/hakone/odawara-kamaboko-workshop.prompt.md",
+    "sha256": "78fae252571efe77766d6d45b77453f4f997f4d9c57043d2cc9d3ed0c7410a45"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/aginti/odawara-kamaboko-workshop-v1/task_manifest.json",
+      "sha256": "be214c87c5f11c365dd5bae713e422e6a5adac901e4158b736852ca8e47bcc81",
+      "bytes": 2804,
+      "role": "Selected exactly-four-guide board-shaping workshop scene with finished slices, no staff, no copied mark, and the established articulated Zhuangzi"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/aginti/odawara-kamaboko-workshop-v1/odawara-kamaboko-workshop-v1.png",
+    "sha256": "cc11cd96a25c1617bd5ed2505a4f4a440492fa7d0a3743a56c352c9416f859cf",
+    "bytes": 8143373,
+    "width": 5056,
+    "height": 3392
+  },
+  "postprocess": "Pillow sRGB conversion, metadata-free width resize, bottom-anchored 16:9 print/web crops, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/hakone/odawara-kamaboko-workshop.jpg",
+    "sha256": "21f38e68f385ec42e0727ee99be90dd5456f8a2c95446d7249a6923a1051a8bb",
+    "bytes": 1078759,
+    "width": 3600,
+    "height": 2415,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "print_wide": {
+      "path": "assets/images/hakone/odawara-kamaboko-workshop-wide.jpg",
+      "sha256": "dfe0f94475db5a45cbe5bcc5c7622093624b4ab6caf4bfa6f9a3e04733982159",
+      "bytes": 997399,
+      "width": 3600,
+      "height": 2025
+    },
+    "web": {
+      "path": "assets/images/hakone/odawara-kamaboko-workshop-web.jpg",
+      "sha256": "11211ff42314bcb2a7a01819da5cf55be52896758a2da6751b634b9940f6ed14",
+      "bytes": 344934,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The bright workshop is a representative public food-workshop synthesis, not an identifiable company, museum, factory, or current class",
+    "The figure shows the board-mounted steamed form and cut texture without claiming one exact recipe, ingredient list, product, or producer",
+    "No whole fish or harbor scene is shown because the cited sources do not establish that every present product uses fish landed locally",
+    "Current workshops, bookings, opening, ingredients, refrigeration, and visitor access require direct recheck"
+  ],
+  "reader_caption_policy": "Caption identifies the board-steamed form and separates a short gateway taste from a dedicated Kazamatsuri production visit without naming a company or discussing generation.",
+  "rights": "Original LazyTravel composition; external character and product references are hash-pinned and not redistributed",
+  "visual_qa": {
+    "approved": true,
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_or_food_dominant": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "reviewed_at": "2026-08-20",
+    "notes": "The selected original, 16:9 delivery crops, compiled B6 page, and full-width 390 px figure passed cast, identity, food-process, and legibility review. It contains exactly the four established guides, a readable board-shaping action and sliced product, no staff or copied branding, and no unsupported local-catch cue.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch08-pocket-release/page-127.jpg",
+        "sha256": "bd6482d655014d03c37d889ea39c9820e94094d2ba58688af627fb963b1b5870",
+        "bytes": 182814,
+        "physical_page": 127
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch08-website-release/mobile-08-figure-04.png",
+        "sha256": "40ce3da34fc959f4dcee7aa2b404b7ae35e0dea63874c4f4339bd30a70ee870c",
+        "bytes": 554189,
+        "width": 780,
+        "height": 1206,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

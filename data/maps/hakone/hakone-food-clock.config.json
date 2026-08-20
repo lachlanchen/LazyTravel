@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-hakone-food-clock-map",
+  "snapshot_date": "2026-08-20",
+  "title": {
+    "zh": "箱根食物时钟：先定正餐，再加顺路小吃",
+    "ja": "箱根の食事時計：食事を決め、道中の間食を足す",
+    "en": "HAKONE FOOD CLOCK: PLAN THE MEAL, THEN ADD ROUTE SNACKS"
+  },
+  "stages": [
+    {
+      "id": "odawara",
+      "number": "1",
+      "color": "cobalt",
+      "zh": "小田原：板蒸鱼糕",
+      "zh_reading": "Xiǎotiányuán: bǎnzhēng yúgāo",
+      "ja": "小田原：板付き蒸しかまぼこ",
+      "ja_reading": "おだわら：いたつきむし かまぼこ",
+      "en": "GATEWAY TASTE · NOT A MOUNTAIN DISH"
+    },
+    {
+      "id": "gora",
+      "number": "2",
+      "color": "jade",
+      "zh": "强罗 / 美术馆：午饭候选",
+      "zh_reading": "Qiángluó / měishùguǎn: wǔfàn hòuxuǎn",
+      "ja": "強羅 / 美術館：昼食候補",
+      "ja_reading": "ごうら / びじゅつかん：ちゅうしょくこうほ",
+      "en": "LUNCH OPTION · QUICK OR SEATED"
+    },
+    {
+      "id": "owakudani",
+      "number": "3",
+      "color": "vermilion",
+      "zh": "大涌谷：黑鸡蛋是小吃",
+      "zh_reading": "Dàyǒnggǔ: hēijīdàn shì xiǎochī",
+      "ja": "大涌谷：黒たまごは間食",
+      "ja_reading": "おおわくだに：くろたまご は かんしょく",
+      "en": "SNACK · A SEATED MEAL IS SEPARATE"
+    },
+    {
+      "id": "lake",
+      "number": "4",
+      "color": "cobalt",
+      "zh": "芦之湖：确认湖产公鱼",
+      "zh_reading": "Lúzhīhú: quèrèn húchǎn gōngyú",
+      "ja": "芦ノ湖：湖産わかさぎを確認",
+      "ja_reading": "あしのこ：こさん わかさぎ を かくにん",
+      "en": "LUNCH OPTION · VERIFY ORIGIN + STOCK"
+    },
+    {
+      "id": "oldroad",
+      "number": "5",
+      "color": "coral",
+      "zh": "旧街道：甘酒与力饼歇脚",
+      "zh_reading": "Jiù jiēdào: gānjiǔ yǔ lìbǐng xiējiǎo",
+      "ja": "旧街道：甘酒と力餅で休憩",
+      "ja_reading": "きゅうかいどう：あまざけ と ちからもち で きゅうけい",
+      "en": "ROAD REST · CHECK THE NEXT BUS"
+    },
+    {
+      "id": "ryokan",
+      "number": "6",
+      "color": "jade",
+      "zh": "旅馆：按预约吃晚餐",
+      "zh_reading": "Lǚguǎn: àn yùyuē chī wǎncān",
+      "ja": "旅館：予約時刻に夕食",
+      "ja_reading": "りょかん：よやくじこく に ゆうしょく",
+      "en": "BOOKED DINNER · ARRIVAL SETS THE END"
+    }
+  ],
+  "decision_band": {
+    "zh": "先选一处正餐：美术馆 / 大涌谷餐厅 / 芦之湖　·　不顺路的节点直接跳过",
+    "zh_reading": "Xiān xuǎn yī chù zhèngcān: měishùguǎn / Dàyǒnggǔ cāntīng / Lúzhīhú · bù shùnlù de jiédiǎn zhíjiē tiàoguò",
+    "ja": "昼食は一か所：美術館 / 大涌谷の食堂 / 芦ノ湖　·　経路外の地点は外す",
+    "ja_reading": "ちゅうしょく は いっかしょ：びじゅつかん / おおわくだに の しょくどう / あしのこ · けいろがい の ちてん は はずす",
+    "en": "CHOOSE ONE LUNCH ANCHOR · SKIP EVERY FOOD STOP OUTSIDE THE ACTUAL ROUTE"
+  },
+  "sources": [
+    {
+      "id": "HKN-OAM-MAP",
+      "url": "https://www.hakone-oam.or.jp/info/map",
+      "checked_at": "2026-08-17",
+      "use": "Museum food roles and brought-food locations"
+    },
+    {
+      "id": "HKN-BLACK-EGG-SHOP",
+      "url": "https://owakudani.com/",
+      "checked_at": "2026-08-20",
+      "use": "Black eggs as a current Owakudani purchase with sell-out and seasonal-time caveats"
+    },
+    {
+      "id": "HKN-FISHERY-WAKASAGI",
+      "url": "https://www.ashinoko-gyokyou.com/wakasagi",
+      "checked_at": "2026-08-17",
+      "use": "Lake Ashi origin, preparations, season, and current supplier context"
+    },
+    {
+      "id": "HKN-AMASAKE-CHAYA",
+      "url": "https://amasake-chaya.com/",
+      "checked_at": "2026-08-20",
+      "use": "Amazake and mochi as an old-road rest rather than lunch"
+    },
+    {
+      "id": "HKN-JTA-RYOKAN-QA",
+      "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+      "checked_at": "2026-08-20",
+      "use": "Meal-inclusive booking, arrival, dinner, and dietary-request logic"
+    },
+    {
+      "id": "ODA-JIBASAN-KAMABOKO",
+      "url": "https://www.odawarajibasan.jp/kamaboko/",
+      "checked_at": "2026-08-20",
+      "use": "Odawara board-steamed kamaboko as gateway food context"
+    }
+  ],
+  "generalizations": [
+    "This is a food-role diagram, not a geographic route map, restaurant ranking, or universal timetable",
+    "Gora or the museum, Owakudani, and Lake Ashi are alternative lunch anchors rather than three required meals",
+    "Amasake Chaya appears only when the old road or route K belongs to the actual trip",
+    "Ryokan dinner appears only for a meal-inclusive booking and its actual time comes from the property confirmation",
+    "Every current shop, menu, stock, service, and transport detail requires a release recheck"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-20",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch08-pocket-release/page-114.jpg",
+        "physical_page": 114,
+        "sha256": "ec6b2f44c17bdf27308ffd56cb37a544e61e3c898cac1162e7938a71d8f51830"
+      },
+      "mobile": {
+        "path": "build/qa/hakone-ch08-website-release/mobile-08-map-contact.jpg",
+        "viewport_css_px": 390,
+        "pannable_width_css_px": 760,
+        "pan_positions_css_px": [
+          0,
+          185,
+          370
+        ],
+        "sha256": "37dd7d72997fc8440e681087c29c5cb6c1552806896669546a04e1afc9b38389"
+      },
+      "browser_report": {
+        "path": "build/qa/hakone-ch08-website-release/qa.json",
+        "sha256": "dfa105e7105a674d49ec271250e875bcd1702d8358abedf899593f6c1d028657"
+      }
+    },
+    "notes": [
+      "The compiled B6 diagram and left, centre, and right pans of the 760 px stage inside a 390 px mobile viewport passed label, reading, food-role, and collision review."
+    ]
+  }
+}

@@ -77,14 +77,14 @@ The synchronized website is publicly deployed at
 manifest and canonical JSON. Xi'an is complete. Hakone is next at
 `japan/prefectures/kanagawa/hakone`, followed by Lanzhou.
 
-Hakone has exactly 11 chapters and advances in order. Chapters 1 through 7 are
-accepted internal milestones. Together they provide `67` aligned blocks,
-`7,700` Chinese reading tokens, `9,562` Japanese reading tokens, seven maps,
-and twenty-two destination, transport, museum, food, landscape, and lodging
-figures using all four guides. The reproducible B6 review has `122` pages and
+Hakone has exactly 11 chapters and advances in order. Chapters 1 through 8 are
+accepted internal milestones. Together they provide `77` aligned blocks,
+`9,181` Chinese reading tokens, `11,401` Japanese reading tokens, eight maps,
+and twenty-three destination, transport, museum, food, landscape, and lodging
+figures using all four guides. The reproducible B6 review has `146` pages and
 SHA-256
-`b7eee7beed367ef7382ef79d0d7a8f9fe072573c92029b82a001c7e47f715995`.
-Desktop and `390 px` website QA pass from the same JSON with `10,538` ruby
+`85eeb1e47cc65564cbe0894fd1b0e19598d3b1555e8f3c69d0eee8dbab186670`.
+Desktop and `390 px` website QA pass from the same JSON with `12,588` ruby
 nodes, and the exact pocket PDF is hash-synced to Nutstore. This does not
-complete Hakone; Chapter 8, `Eat Along the Route`, is the only next writing
+complete Hakone; Chapter 9, `Where to Stay`, is the only next writing
 gate.

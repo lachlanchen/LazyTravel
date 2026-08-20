@@ -1,0 +1,110 @@
+{
+  "asset_id": "asset-hakone-food-clock-map",
+  "command": "python3 scripts/build_hakone_food_clock_map.py",
+  "config": "data/maps/hakone/hakone-food-clock.config.json",
+  "config_sha256": "a07c1be4f73d7139f49021f69e60aee7f08d0b2a42924fadaace7fe3702d1a87",
+  "created_at": "2026-08-20",
+  "declared_generalizations": [
+    "This is a food-role diagram, not a geographic route map, restaurant ranking, or universal timetable",
+    "Gora or the museum, Owakudani, and Lake Ashi are alternative lunch anchors rather than three required meals",
+    "Amasake Chaya appears only when the old road or route K belongs to the actual trip",
+    "Ryokan dinner appears only for a meal-inclusive booking and its actual time comes from the property confirmation",
+    "Every current shop, menu, stock, service, and transport detail requires a release recheck"
+  ],
+  "files": {
+    "hakone-food-clock.pdf": {
+      "bytes": 98309,
+      "sha256": "b2ef3a73c81497890510d8661b55b308cc3fa6735635af4ec76f5cba77b653a8"
+    },
+    "hakone-food-clock.png": {
+      "bytes": 801753,
+      "sha256": "709d2daeac5d9d27c83c6d8051dd056046e8fc5304500f256a014aba1762897b"
+    },
+    "hakone-food-clock.svg": {
+      "bytes": 24408,
+      "sha256": "5b868f65da27eed74b32324aa53545084813bb2b6eca7096189c1b5dbe0579ca"
+    }
+  },
+  "method": "schematic-hakone-food-clock-render",
+  "rights": "Diagram design © LazyTravel; food and operating facts derive from the listed official sources.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-OAM-MAP",
+      "url": "https://www.hakone-oam.or.jp/info/map",
+      "use": "Museum food roles and brought-food locations"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-BLACK-EGG-SHOP",
+      "url": "https://owakudani.com/",
+      "use": "Black eggs as a current Owakudani purchase with sell-out and seasonal-time caveats"
+    },
+    {
+      "checked_at": "2026-08-17",
+      "id": "HKN-FISHERY-WAKASAGI",
+      "url": "https://www.ashinoko-gyokyou.com/wakasagi",
+      "use": "Lake Ashi origin, preparations, season, and current supplier context"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-AMASAKE-CHAYA",
+      "url": "https://amasake-chaya.com/",
+      "use": "Amazake and mochi as an old-road rest rather than lunch"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "HKN-JTA-RYOKAN-QA",
+      "url": "https://www.mlit.go.jp/kankocho/ryokan/list_en.html",
+      "use": "Meal-inclusive booking, arrival, dinner, and dietary-request logic"
+    },
+    {
+      "checked_at": "2026-08-20",
+      "id": "ODA-JIBASAN-KAMABOKO",
+      "url": "https://www.odawarajibasan.jp/kamaboko/",
+      "use": "Odawara board-steamed kamaboko as gateway food context"
+    }
+  ],
+  "technical_qa": {
+    "minimum_png_width": 2400,
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      3360,
+      2688
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6": {
+        "path": "build/qa/hakone/ch08-pocket-release/page-114.jpg",
+        "physical_page": 114,
+        "sha256": "ec6b2f44c17bdf27308ffd56cb37a544e61e3c898cac1162e7938a71d8f51830"
+      },
+      "browser_report": {
+        "path": "build/qa/hakone-ch08-website-release/qa.json",
+        "sha256": "dfa105e7105a674d49ec271250e875bcd1702d8358abedf899593f6c1d028657"
+      },
+      "mobile": {
+        "pan_positions_css_px": [
+          0,
+          185,
+          370
+        ],
+        "pannable_width_css_px": 760,
+        "path": "build/qa/hakone-ch08-website-release/mobile-08-map-contact.jpg",
+        "sha256": "37dd7d72997fc8440e681087c29c5cb6c1552806896669546a04e1afc9b38389",
+        "viewport_css_px": 390
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The compiled B6 diagram and left, centre, and right pans of the 760 px stage inside a 390 px mobile viewport passed label, reading, food-role, and collision review."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-20"
+  }
+}

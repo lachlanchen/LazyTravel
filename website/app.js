@@ -70,6 +70,8 @@ const assetLabels = {
   "asset-hakone-ryokan-night-sequence-map": "ONE RYOKAN NIGHT · DECISION SEQUENCE",
   "asset-hakone-onsen-threshold": "ONSEN THRESHOLD · PREPARE IN THE DRY AREA",
   "asset-hakone-ryokan-dinner": "RYOKAN DINNER · ARRIVE AT THE AGREED TIME",
+  "asset-hakone-food-clock-map": "HAKONE FOOD CLOCK · ONE MEAL, ROUTE-SIZED STOPS",
+  "asset-odawara-kamaboko-workshop": "ODAWARA KAMABOKO · BOARD, STEAM, TEXTURE",
 };
 const state = {
   document: null,

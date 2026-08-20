@@ -144,6 +144,45 @@ class ReadingLayerTests(unittest.TestCase):
         self.assertEqual(line_readings["何時"], "なんじ")
         self.assertEqual(line_readings["一行"], "いちぎょう")
 
+    def test_hakone_food_chinese_readings(self) -> None:
+        tokens = zh_tokens(
+            "一泊二食、板蒸鱼糕、鱼糜、天明年间、一七八一至一七八九年、力饼、风祭、面衣、交叉接触、食用期限、天妇罗、炸鱼糕、炸公鱼。"
+        )
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["一泊二食"], "yībó èrshí")
+        self.assertEqual(readings["板蒸鱼糕"], "bǎnzhēng yúgāo")
+        self.assertEqual(readings["鱼糜"], "yúmí")
+        self.assertEqual(readings["天明年间"], "tiānmíng niánjiān")
+        self.assertEqual(
+            readings["一七八一至一七八九年"],
+            "yī qī bā yī zhì yī qī bā jiǔ nián",
+        )
+        self.assertEqual(readings["力饼"], "lìbǐng")
+        self.assertEqual(readings["风祭"], "fēngjì")
+        self.assertEqual(readings["面衣"], "miànyī")
+        self.assertEqual(readings["交叉接触"], "jiāochā jiēchù")
+        self.assertEqual(readings["食用期限"], "shíyòng qīxiàn")
+        self.assertEqual(readings["天妇罗"], "tiānfùluó")
+        self.assertEqual(readings["炸鱼糕"], "zhá yúgāo")
+        self.assertEqual(readings["炸公鱼"], "zhá gōngyú")
+
+    def test_hakone_food_japanese_readings(self) -> None:
+        tokens = ja_tokens(
+            "板付き蒸しかまぼこ、天明年間、米麹、消費期限、風祭。一杯、一皿、一回か二回。店が開いていない。",
+            unidic_tagger(),
+        )
+        readings = {token["text"]: token.get("reading") for token in tokens}
+        self.assertEqual(readings["板付き蒸しかまぼこ"], "いたつきむしかまぼこ")
+        self.assertEqual(readings["天明年間"], "てんめいねんかん")
+        self.assertEqual(readings["米麹"], "こめこうじ")
+        self.assertEqual(readings["消費期限"], "しょうひきげん")
+        self.assertEqual(readings["風祭"], "かざまつり")
+        self.assertEqual(readings["一杯"], "いっぱい")
+        self.assertEqual(readings["一皿"], "ひとさら")
+        self.assertEqual(readings["一回"], "いっかい")
+        self.assertEqual(readings["二回"], "にかい")
+        self.assertEqual(readings["開いていない"], "あいていない")
+
     def test_katakana_conversion(self) -> None:
         self.assertEqual(katakana_to_hiragana("セイアン"), "せいあん")
 
