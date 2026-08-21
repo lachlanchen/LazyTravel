@@ -195,14 +195,14 @@ hash-synced to Nutstore. GitHub Pages run `32418706768` verified every deployed
 Xi'an and Hakone file against its canonical JSON and manifest. Hakone is
 complete; Lanzhou at `china/cities/lanzhou` is the only active destination.
 
-Lanzhou Chapters 1-2, **Read the Valley First** and **Arrive at the Right
-Gate**, are accepted public milestones. Their `17` aligned blocks carry `1,432`
-reviewed Chinese reading tokens, `1,760` reviewed Japanese reading tokens, 13
-chapter-source entries, four four-guide figures, and two code-built maps. The
-reproducible `31`-page B6 pocket has SHA-256
-`3f1a0577df925899a9515afcc8858a20d53d1b85cc9a1055fe85a5bbed95def1` and is
+Lanzhou Chapters 1-3, **Read the Valley First**, **Arrive at the Right Gate**,
+and **How a Crossing Became a Provincial Capital**, are accepted public
+milestones. Their `26` aligned blocks carry `2,297` reviewed Chinese reading
+tokens, `2,971` reviewed Japanese reading tokens, 25 chapter-source entries,
+five four-guide figures, and three code-built maps. The reproducible `45`-page
+B6 pocket has SHA-256
+`ae98bbb715d6cf245820bc826a96b3aadc8fc9e81619fa6c57012234c744aaa5` and is
 hash-synced to Nutstore. The synchronized series build exposes the same content
-at `china/cities/lanzhou/` and passes desktop, `390 px`, `1,964`-ruby,
-citation, figure, and pannable-map QA. Chapter 3, **How a Crossing Became a
-Provincial Capital**, is now the sole production gate; Lanzhou as a whole is
-not complete.
+at `china/cities/lanzhou/` and passes desktop, `390 px`, `3,226`-ruby,
+citation, figure, and pannable-map QA. Chapter 4, **Cross One Bridge, Read Both
+Banks**, is now the sole production gate; Lanzhou as a whole is not complete.

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-21",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-lanzhou-city-god-temple",
+      "stem": "lanzhou-city-god-temple",
+      "method": "generated-location-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch03-city-god-v2/lanzhou-city-god-temple-v2.png",
+      "prompt": "build/research/lanzhou/ch03/city-god-temple-v2-prompt.txt",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch03/visual-references/city-god-temple-2.jpg",
+          "reference_url": "https://www.sina.cn/news/detail/4974525055763406.html",
+          "role": "Unredistributed current visual reference for the timber gate, roof profile, courtyard entrance, and dense urban enclosure"
+        },
+        {
+          "path": "build/research/lanzhou/ch03/visual-references/city-god-temple-5.jpg",
+          "reference_url": "https://www.sina.cn/news/detail/4974525055763406.html",
+          "role": "Unredistributed current visual reference for the paved courtyard, central hall, red columns, bracket colors, and surrounding apartment scale"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch03-city-god-v1/task_manifest.json",
+          "role": "Rejected draft: composition and four-guide count passed, but generated calligraphy remained reader-visible"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch03-city-god-v2/task_manifest.json",
+          "role": "Selected text-removal revision"
+        }
+      ],
+      "factual_limits": [
+        "The scene is a representative recognition view, not a documentary photograph or an exact camera position.",
+        "The visual references establish roof forms, courtyard sequence, materials, and dense urban enclosure only.",
+        "The figure does not establish permanent opening hours, ritual use, unrestricted access, current signs, event setup, or access to every hall."
+      ],
+      "reader_caption_policy": "Describe the surviving architectural layer and the day-specific access check; do not mention generation or imply documentary evidence.",
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch03-final-pages/page-31.png",
+        "physical_page": 31,
+        "mobile_path": "build/qa/website/lanzhou-ch03-release/mobile-03-figure.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ],
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "temple_courtyard_recognizable": "pass",
+    "dense_current_city_context": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "notes": "Original-size, compiled B6, and 390 px responsive inspections pass. The present courtyard and dense urban enclosure dominate, exactly four guides remain distinct, and no generated lettering is reader-visible."
+  }
+}

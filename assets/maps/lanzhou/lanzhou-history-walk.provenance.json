@@ -1,0 +1,104 @@
+{
+  "asset_id": "asset-lanzhou-history-walk-map",
+  "command": "python3 scripts/build_lanzhou_history_walk_map.py",
+  "config": {
+    "path": "data/maps/lanzhou/lanzhou-history-walk.config.json",
+    "sha256": "c612397e97b66379b2472d49a3f66b1ce4e21e425f656cef7211d91b9a721f66"
+  },
+  "created_at": "2026-08-21",
+  "generalizations": [
+    "The current walk is a schematic sequence and does not encode distances, entrances, pedestrian access, or temporary closures.",
+    "Former east and west gate points are approximate historical locators derived from the cited gazetteer; they are not surviving structures.",
+    "The Han panel intentionally avoids an ancient-city polygon because early Jincheng County locations and movements remain disputed.",
+    "The later old-city core is an editorial reading area, not a surveyed wall reconstruction or a claim of continuous occupation from the Han period.",
+    "West and east expansion arrows summarize railway, industrial, and planning history; they are not administrative boundaries or a complete industrial map."
+  ],
+  "outputs": {
+    "pdf": {
+      "bytes": 94642,
+      "path": "assets/maps/lanzhou/lanzhou-history-walk.pdf",
+      "sha256": "2cb245007fe52e631d5361840edb5722b4865ab5cb9a3c94fd5f415fb45af022"
+    },
+    "png": {
+      "bytes": 465006,
+      "height": 2280,
+      "path": "assets/maps/lanzhou/lanzhou-history-walk.png",
+      "sha256": "b094bbe451b78b8002b577675772c8d5c8bed707a2849a338da942891c7a5d4d",
+      "width": 1620
+    },
+    "svg": {
+      "bytes": 23446,
+      "path": "assets/maps/lanzhou/lanzhou-history-walk.svg",
+      "sha256": "bc1d6b295654950439d682940c76401164740358396dc7b70e97299b7d958e08"
+    }
+  },
+  "rights": "Map design © LazyTravel; historical relationships derive from the listed institutional and local-chronicle sources.",
+  "schema_version": 1,
+  "sources": {
+    "bridge_history": {
+      "checked_at": "2026-08-21",
+      "url": "https://dfzb.lanzhou.gov.cn/art/2017/10/16/art_9606_518474.html"
+    },
+    "chengguan_history": {
+      "checked_at": "2026-08-21",
+      "url": "https://www.gsdfszw.org.cn/gsxz/lzs_266/cgq/201708/P020170814555511254018.pdf"
+    },
+    "city_god_temple": {
+      "checked_at": "2026-08-21",
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dwsyjwwz/201707/P020170705314130708607.pdf"
+    },
+    "jincheng_debate": {
+      "checked_at": "2026-08-21",
+      "url": "https://www.gsdfszw.org.cn/gssz_64/szxq/201910/P020191011364011343764.pdf"
+    },
+    "old_city_gates": {
+      "checked_at": "2026-08-21",
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dsbjjzyz/201707/P020171108368971422997.pdf"
+    },
+    "old_city_streets": {
+      "checked_at": "2026-08-21",
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dssqjsfz/201707/P020170705319152749529.pdf"
+    },
+    "planning_1954": {
+      "checked_at": "2026-08-21",
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dwjtdz/201711/P020171115374652928666.pdf"
+    },
+    "railway_history": {
+      "checked_at": "2026-08-21",
+      "url": "https://gsdfszw.org.cn/gssz/dyl/dsjjszs/201612/P020170214612523218022.pdf"
+    }
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch03-final-pages/page-33.png",
+        "sha256": "b39b6428630278f5aa2faed334457cc4cc1a3b5068e4a4f69998b2c9c28cc489"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch03-release/mobile-03-map-center.png",
+        "sha256": "bf3c0484f686e2e12c7fe5f68c307d49a4af49977b79902d431813d4bfd6c46d"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch03-release/mobile-03-map-left.png",
+        "sha256": "5906d6b204891252607091562c2f25883ed2116717ed95515ae9344cd429e0b4"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch03-release/mobile-03-map-right.png",
+        "sha256": "bcc469818f5aedfc2ee677e6c836da3f630b2c623266c28804c315cb5175a026"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch03-release/qa.json",
+        "sha256": "8a2678ebe1898a72110b986656c71b0042d3f7f959f812d59a3fe08f782dcdf8"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve the current walk, uncertainty marks, four dated layers, and footer without collisions.",
+      "At 390 px the 760 px map stage pans left, centre, and right; all route labels and all four historical cards remain readable without extra zoom."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-21"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "id": "lanzhou-history-walk",
+  "snapshot_date": "2026-08-21",
+  "title": {
+    "zh": "沿老城读四层变化",
+    "ja": "旧市街で四つの層を読む",
+    "en": "READ FOUR LAYERS ON ONE WALK"
+  },
+  "walk": {
+    "start": {
+      "zh": "省政府一带",
+      "ja": "省政府周辺",
+      "en": "PROVINCIAL GOVERNMENT AREA"
+    },
+    "road": {
+      "zh": "张掖路",
+      "ja": "張掖路",
+      "en": "ZHANGYE ROAD"
+    },
+    "xiguan": {
+      "zh": "西关",
+      "ja": "西関",
+      "en": "XIGUAN"
+    },
+    "temple": {
+      "zh": "兰州府城隍庙",
+      "ja": "蘭州府城隍廟",
+      "en": "CITY GOD TEMPLE"
+    },
+    "bridge": {
+      "zh": "中山桥南端",
+      "ja": "中山橋南詰",
+      "en": "SOUTH BRIDGE APPROACH"
+    },
+    "old_core": {
+      "zh": "后来老城核心",
+      "ja": "後世の旧市街中心",
+      "en": "LATER OLD-CITY CORE"
+    },
+    "west_gate": {
+      "zh": "旧西门约位",
+      "ja": "旧西門のおよその位置",
+      "en": "FORMER WEST GATE, APPROX."
+    },
+    "east_gate": {
+      "zh": "旧东门约位",
+      "ja": "旧東門のおよその位置",
+      "en": "FORMER EAST GATE, APPROX."
+    },
+    "river": {
+      "zh": "黄河",
+      "ja": "黄河",
+      "en": "YELLOW RIVER"
+    },
+    "west_expansion": {
+      "zh": "铁路与工业向西展开",
+      "ja": "鉄道・工業が西へ展開",
+      "en": "RAIL / INDUSTRY WEST"
+    },
+    "east_expansion": {
+      "zh": "城市继续向东展开",
+      "ja": "市街が東へ展開",
+      "en": "CITY EXPANDS EAST"
+    }
+  },
+  "layers": [
+    {
+      "id": "han",
+      "date": "81 BCE",
+      "zh": "汉置金城郡",
+      "ja": "漢が金城郡を置く",
+      "en": "JINCHENG COMMANDERY",
+      "note_zh": "区域行政；县治位置有争议",
+      "note_ja": "広域行政。県治の比定は議論中",
+      "note_en": "REGIONAL; EXACT COUNTY SEAT DISPUTED",
+      "color": "cobalt",
+      "symbol": "uncertain"
+    },
+    {
+      "id": "medieval",
+      "date": "581 / 583 / 619 / 1081",
+      "zh": "五泉、兰州与河边城址",
+      "ja": "五泉・蘭州と河畔の城址",
+      "en": "WUQUAN, LANZHOU, RIVER CORE",
+      "note_zh": "后来老城与渡口逐步相接",
+      "note_ja": "後世の旧市街と渡河点が結び付く",
+      "note_en": "LATER CORE CONNECTS TO CROSSING",
+      "color": "jade",
+      "symbol": "core"
+    },
+    {
+      "id": "qing",
+      "date": "1666 > 1669 > 1738 > 1764",
+      "zh": "机构逐次集中兰州",
+      "ja": "諸機関が段階的に蘭州へ",
+      "en": "INSTITUTIONS CONCENTRATE",
+      "note_zh": "不是一个“建省会”年份",
+      "note_ja": "一つの「省都成立年」ではない",
+      "note_en": "A SEQUENCE, NOT ONE FOUNDING YEAR",
+      "color": "vermilion",
+      "symbol": "sequence"
+    },
+    {
+      "id": "modern",
+      "date": "1909 / 1952 / 1954",
+      "zh": "铁桥、铁路与城市规划",
+      "ja": "鉄橋・鉄道・都市計画",
+      "en": "BRIDGE, RAILWAY, CITY PLAN",
+      "note_zh": "跨河更稳定，城市沿河谷伸长",
+      "note_ja": "渡河が安定し、市街が河谷に伸びる",
+      "note_en": "CROSSING STABILISES; CITY LENGTHENS",
+      "color": "coral",
+      "symbol": "expansion"
+    }
+  ],
+  "sources": {
+    "chengguan_history": {
+      "url": "https://www.gsdfszw.org.cn/gsxz/lzs_266/cgq/201708/P020170814555511254018.pdf",
+      "checked_at": "2026-08-21"
+    },
+    "jincheng_debate": {
+      "url": "https://www.gsdfszw.org.cn/gssz_64/szxq/201910/P020191011364011343764.pdf",
+      "checked_at": "2026-08-21"
+    },
+    "old_city_streets": {
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dssqjsfz/201707/P020170705319152749529.pdf",
+      "checked_at": "2026-08-21"
+    },
+    "old_city_gates": {
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dsbjjzyz/201707/P020171108368971422997.pdf",
+      "checked_at": "2026-08-21"
+    },
+    "city_god_temple": {
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dwsyjwwz/201707/P020170705314130708607.pdf",
+      "checked_at": "2026-08-21"
+    },
+    "bridge_history": {
+      "url": "https://dfzb.lanzhou.gov.cn/art/2017/10/16/art_9606_518474.html",
+      "checked_at": "2026-08-21"
+    },
+    "railway_history": {
+      "url": "https://gsdfszw.org.cn/gssz/dyl/dsjjszs/201612/P020170214612523218022.pdf",
+      "checked_at": "2026-08-21"
+    },
+    "planning_1954": {
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dwjtdz/201711/P020171115374652928666.pdf",
+      "checked_at": "2026-08-21"
+    }
+  },
+  "generalizations": [
+    "The current walk is a schematic sequence and does not encode distances, entrances, pedestrian access, or temporary closures.",
+    "Former east and west gate points are approximate historical locators derived from the cited gazetteer; they are not surviving structures.",
+    "The Han panel intentionally avoids an ancient-city polygon because early Jincheng County locations and movements remain disputed.",
+    "The later old-city core is an editorial reading area, not a surveyed wall reconstruction or a claim of continuous occupation from the Han period.",
+    "West and east expansion arrows summarize railway, industrial, and planning history; they are not administrative boundaries or a complete industrial map."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch03-final-pages/page-33.png",
+        "sha256": "b39b6428630278f5aa2faed334457cc4cc1a3b5068e4a4f69998b2c9c28cc489"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch03-release/mobile-03-map-left.png",
+        "sha256": "5906d6b204891252607091562c2f25883ed2116717ed95515ae9344cd429e0b4"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch03-release/mobile-03-map-center.png",
+        "sha256": "bf3c0484f686e2e12c7fe5f68c307d49a4af49977b79902d431813d4bfd6c46d"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch03-release/mobile-03-map-right.png",
+        "sha256": "bcc469818f5aedfc2ee677e6c836da3f630b2c623266c28804c315cb5175a026"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch03-release/qa.json",
+        "sha256": "8a2678ebe1898a72110b986656c71b0042d3f7f959f812d59a3fe08f782dcdf8"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve the current walk, uncertainty marks, four dated layers, and footer without collisions.",
+      "At 390 px the 760 px map stage pans left, centre, and right; all route labels and all four historical cards remain readable without extra zoom."
+    ]
+  }
+}

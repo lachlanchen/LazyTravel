@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="388.8pt" height="547.2pt" viewBox="0 0 388.8 547.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>LazyTravel</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 547.2
+L 388.8 547.2
+L 388.8 0
+L 0 0
+z
+" style="fill: #fcfdff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 22.768128 277.123968
+L 366.031872 277.123968
+Q 371.568384 277.123968 371.568384 269.069184
+L 371.568384 76.761216
+Q 371.568384 68.706432 366.031872 68.706432
+L 22.768128 68.706432
+Q 17.231616 68.706432 17.231616 76.761216
+L 17.231616 269.069184
+Q 17.231616 277.123968 22.768128 277.123968
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #f7fafc; stroke: #b8c3cb; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 102.355488 232.319232
+L 303.746112 232.319232
+Q 307.898496 232.319232 307.898496 226.278144
+L 307.898496 154.791936
+Q 307.898496 148.750848 303.746112 148.750848
+L 102.355488 148.750848
+Q 98.203104 148.750848 98.203104 154.791936
+L 98.203104 226.278144
+Q 98.203104 232.319232 102.355488 232.319232
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #e5f3ee; stroke-dasharray: 5.2,3.9; stroke-dashoffset: 0; stroke: #23836b; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 24.84432 110.994048
+L 363.95568 110.994048
+L 363.95568 81.795456
+L 24.84432 81.795456
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #e7f1fc"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 325.89216 210.168576
+C 327.543998 210.168576 329.128403 209.213785 330.296428 207.514485
+C 331.464454 205.815186 332.120736 203.510117 332.120736 201.106944
+C 332.120736 198.703771 331.464454 196.398702 330.296428 194.699403
+C 329.128403 193.000103 327.543998 192.045312 325.89216 192.045312
+C 324.240322 192.045312 322.655917 193.000103 321.487892 194.699403
+C 320.319866 196.398702 319.663584 198.703771 319.663584 201.106944
+C 319.663584 203.510117 320.319866 205.815186 321.487892 207.514485
+C 322.655917 209.213785 324.240322 210.168576 325.89216 210.168576
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #f06e65; stroke: #fcfdff; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 125.1936 192.045312
+L 131.422176 201.106944
+L 125.1936 210.168576
+L 118.965024 201.106944
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #fcfdff; stroke: #e44736; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 284.36832 192.045312
+L 290.596896 201.106944
+L 284.36832 210.168576
+L 278.139744 201.106944
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #fcfdff; stroke: #e44736; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 200.628576 214.699392
+L 215.853984 214.699392
+Q 217.930176 214.699392 217.930176 211.678848
+L 217.930176 190.53504
+Q 217.930176 187.514496 215.853984 187.514496
+L 200.628576 187.514496
+Q 198.552384 187.514496 198.552384 190.53504
+L 198.552384 211.678848
+Q 198.552384 214.699392 200.628576 214.699392
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #e44736; stroke: #fcfdff; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 80.20944 210.168576
+C 81.861278 210.168576 83.445683 209.213785 84.613708 207.514485
+C 85.781734 205.815186 86.438016 203.510117 86.438016 201.106944
+C 86.438016 198.703771 85.781734 196.398702 84.613708 194.699403
+C 83.445683 193.000103 81.861278 192.045312 80.20944 192.045312
+C 78.557602 192.045312 76.973197 193.000103 75.805172 194.699403
+C 74.637146 196.398702 73.980864 198.703771 73.980864 201.106944
+C 73.980864 203.510117 74.637146 205.815186 75.805172 207.514485
+C 76.973197 209.213785 78.557602 210.168576 80.20944 210.168576
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #23836b; stroke: #fcfdff; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 80.20944 128.613888
+C 81.953046 128.613888 83.625474 127.606053 84.85839 125.812348
+C 86.091306 124.018643 86.784048 121.585515 86.784048 119.048832
+C 86.784048 116.512149 86.091306 114.079021 84.85839 112.285316
+C 83.625474 110.491611 81.953046 109.483776 80.20944 109.483776
+C 78.465834 109.483776 76.793406 110.491611 75.56049 112.285316
+C 74.327574 114.079021 73.634832 116.512149 73.634832 119.048832
+C 73.634832 121.585515 74.327574 124.018643 75.56049 125.812348
+C 76.793406 127.606053 78.465834 128.613888 80.20944 128.613888
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #1769d2; stroke: #fcfdff; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 22.422096 396.435456
+L 189.901584 396.435456
+Q 194.053968 396.435456 194.053968 390.394368
+L 194.053968 302.798592
+Q 194.053968 296.757504 189.901584 296.757504
+L 22.422096 296.757504
+Q 18.269712 296.757504 18.269712 302.798592
+L 18.269712 390.394368
+Q 18.269712 396.435456 22.422096 396.435456
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #e7f1fc; stroke-dasharray: 4.05,2.7; stroke-dashoffset: 0; stroke: #1769d2; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 198.898416 396.435456
+L 366.377904 396.435456
+Q 370.530288 396.435456 370.530288 390.394368
+L 370.530288 302.798592
+Q 370.530288 296.757504 366.377904 296.757504
+L 198.898416 296.757504
+Q 194.746032 296.757504 194.746032 302.798592
+L 194.746032 390.394368
+Q 194.746032 396.435456 198.898416 396.435456
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #e5f3ee; stroke: #23836b; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 22.422096 502.154496
+L 189.901584 502.154496
+Q 194.053968 502.154496 194.053968 496.113408
+L 194.053968 408.517632
+Q 194.053968 402.476544 189.901584 402.476544
+L 22.422096 402.476544
+Q 18.269712 402.476544 18.269712 408.517632
+L 18.269712 496.113408
+Q 18.269712 502.154496 22.422096 502.154496
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #fcebe8; stroke: #e44736; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 198.898416 502.154496
+L 366.377904 502.154496
+Q 370.530288 502.154496 370.530288 496.113408
+L 370.530288 408.517632
+Q 370.530288 402.476544 366.377904 402.476544
+L 198.898416 402.476544
+Q 194.746032 402.476544 194.746032 408.517632
+L 194.746032 496.113408
+Q 194.746032 502.154496 198.898416 502.154496
+z
+" clip-path="url(#p0944f5fa8b)" style="fill: #fdecea; stroke: #f06e65; stroke-width: 1.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 73.2888 201.106944
+L 325.89216 201.106944
+" clip-path="url(#p0944f5fa8b)" style="fill: none; stroke: #25313a; stroke-width: 5.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 80.20944 201.106944
+L 80.20944 124.083072
+" clip-path="url(#p0944f5fa8b)" style="fill: none; stroke: #e44736; stroke-width: 2.3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 30.0348 364.21632
+L 182.28888 364.21632
+" clip-path="url(#p0944f5fa8b)" style="fill: none; stroke: #1769d2; stroke-opacity: 0.35; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 206.51112 364.21632
+L 358.7652 364.21632
+" clip-path="url(#p0944f5fa8b)" style="fill: none; stroke: #23836b; stroke-opacity: 0.35; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 30.0348 469.93536
+L 182.28888 469.93536
+" clip-path="url(#p0944f5fa8b)" style="fill: none; stroke: #e44736; stroke-opacity: 0.35; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 206.51112 469.93536
+L 358.7652 469.93536
+" clip-path="url(#p0944f5fa8b)" style="fill: none; stroke: #f06e65; stroke-opacity: 0.35; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="21.384" y="44.883574" transform="rotate(-0 21.384 44.883574)">沿老城读四层变化 · 旧市街で四つの層を読む</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #1769d2" x="21.384" y="65.156653" transform="rotate(-0 21.384 65.156653)">READ FOUR LAYERS ON ONE WALK</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 6.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #65717b" x="367.416" y="63.081934" transform="rotate(-0 367.416 63.081934)">SCHEMATIC · NOT NAVIGATION</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 7.6px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #23836b" x="203.0508" y="164.055153" transform="rotate(-0 203.0508 164.055153)">后来老城核心 · 後世の旧市街中心</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #23836b" x="203.0508" y="175.080085" transform="rotate(-0 203.0508 175.080085)">LATER OLD-CITY CORE</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 40.686203 96.394752
+Q 194.401704 96.394752 345.433924 96.394752
+" style="fill: none; stroke: #1769d2; stroke-width: 2.4; stroke-linecap: round"/>
+    <path d="M 341.433924 94.394752
+L 345.433924 96.394752
+L 341.433924 98.394752
+z
+" style="fill: #1769d2; stroke: #1769d2; stroke-width: 2.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <g id="patch_16">
+     <path d="M 131.762891 102.761924
+L 257.037109 102.761924
+L 257.037109 90.02758
+L 131.762891 90.02758
+z
+" style="fill: #e7f1fc"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #1769d2" x="194.4" y="98.784924" transform="rotate(-0 194.4 98.784924)">黄河 · 黄河 · YELLOW RIVER  →</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #25313a" x="204.78096" y="221.586566" transform="rotate(-0 204.78096 221.586566)">张掖路 · 張掖路 · ZHANGYE ROAD</text>
+   </g>
+   <g id="patch_17">
+    <path d="M 320.432293 201.106944
+Q 201.319718 201.106944 84.778621 201.106944
+" style="fill: none; stroke: #e44736; stroke-width: 2.3; stroke-linecap: round"/>
+    <path d="M 88.778621 203.106944
+L 84.778621 201.106944
+L 88.778621 199.106944
+z
+" style="fill: #e44736; stroke: #e44736; stroke-width: 2.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 80.20944 141.714158
+Q 80.20944 131.38168 80.20944 123.62068
+" style="fill: none; stroke: #e44736; stroke-width: 2.3; stroke-linecap: round"/>
+    <path d="M 78.20944 127.62068
+L 80.20944 123.62068
+L 82.20944 127.62068
+z
+" style="fill: #e44736; stroke: #e44736; stroke-width: 2.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #f06e65" transform="translate(311.39216 236.444027)">省政府一带</text>
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #f06e65" transform="translate(311.39216 243.244889)">省政府周辺</text>
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #f06e65" transform="translate(279.349426 250.045752)">PROVINCIAL GOVERNMENT AREA</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #e44736" transform="translate(88.0428 178.322539)">旧西门约位</text>
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #e44736" transform="translate(31.332253 184.778724)">FORMER WEST GATE, APPROX.</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #e44736" transform="translate(293.01912 178.322539)">旧东门约位</text>
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #e44736" transform="translate(293.01912 184.778724)">FORMER EAST GATE, APPROX.</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #e44736" transform="translate(162.579952 136.744925)">兰州府城隍庙 · 蘭州府城隍廟</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #e44736" transform="translate(177.444561 145.232152)">CITY GOD TEMPLE</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 6.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #23836b" transform="translate(50.725269 233.239246)">西关 · 西関</text>
+    <text style="font-weight: 700; font-size: 6.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #23836b" transform="translate(54.550863 240.509134)">XIGUAN</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 6.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #1769d2" transform="translate(92.32056 121.7727)">中山桥南端 · 中山橋南詰</text>
+    <text style="font-weight: 700; font-size: 6.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; fill: #1769d2" transform="translate(92.32056 129.059299)">SOUTH BRIDGE APPROACH</text>
+   </g>
+   <g id="patch_19">
+    <path d="M 112.814149 253.46304
+Q 71.558767 253.46304 32.315846 253.46304
+" style="fill: none; stroke: #23836b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 36.315846 255.46304
+L 32.315846 253.46304
+L 36.315846 251.46304
+z
+" style="fill: #23836b; stroke: #23836b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #23836b" x="28.30464" y="270.786515" transform="rotate(-0 28.30464 270.786515)">铁路与工业向西展开 · RAIL / INDUSTRY WEST</text>
+   </g>
+   <g id="patch_20">
+    <path d="M 275.985851 253.46304
+Q 317.241233 253.46304 356.484154 253.46304
+" style="fill: none; stroke: #f06e65; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 352.484154 251.46304
+L 356.484154 253.46304
+L 352.484154 255.46304
+z
+" style="fill: #f06e65; stroke: #f06e65; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #f06e65" x="360.49536" y="270.676859" transform="rotate(-0 360.49536 270.676859)">城市继续向东展开 · CITY EXPANDS EAST</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="21.384" y="292.2056" transform="rotate(-0 21.384 292.2056)">四层，不是一条不变的古城 · 四層は一つの不変な都市ではない · FOUR LAYERS, NOT ONE UNCHANGED CITY</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #1769d2" x="30.0348" y="319.78806" transform="rotate(-0 30.0348 319.78806)">81 BCE</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="30.0348" y="338.18156" transform="rotate(-0 30.0348 338.18156)">汉置金城郡 · 漢が金城郡を置く</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #1769d2" x="30.0348" y="353.321329" transform="rotate(-0 30.0348 353.321329)">JINCHENG COMMANDERY</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 5.6px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="30.0348" y="377.885746" transform="rotate(-0 30.0348 377.885746)">区域行政；县治位置有争议 · 広域行政。県治の比定は議論中</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 4.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #65717b" x="182.28888" y="384.853052" transform="rotate(-0 182.28888 384.853052)">REGIONAL; EXACT COUNTY SEAT DISPUTED</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #23836b" x="206.51112" y="319.78806" transform="rotate(-0 206.51112 319.78806)">581 / 583 / 619 / 1081</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="206.51112" y="338.18156" transform="rotate(-0 206.51112 338.18156)">五泉、兰州与河边城址 · 五泉・蘭州と河畔の城址</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #23836b" x="206.51112" y="353.321329" transform="rotate(-0 206.51112 353.321329)">WUQUAN, LANZHOU, RIVER CORE</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 5.6px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="206.51112" y="377.885746" transform="rotate(-0 206.51112 377.885746)">后来老城与渡口逐步相接 · 後世の旧市街と渡河点が結び付く</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 4.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #65717b" x="358.7652" y="384.853052" transform="rotate(-0 358.7652 384.853052)">LATER CORE CONNECTS TO CROSSING</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #e44736" x="30.0348" y="425.5071" transform="rotate(-0 30.0348 425.5071)">1666 &gt; 1669 &gt; 1738 &gt; 1764</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="30.0348" y="443.9006" transform="rotate(-0 30.0348 443.9006)">机构逐次集中兰州 · 諸機関が段階的に蘭州へ</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #e44736" x="30.0348" y="459.040369" transform="rotate(-0 30.0348 459.040369)">INSTITUTIONS CONCENTRATE</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 5.6px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="30.0348" y="483.604786" transform="rotate(-0 30.0348 483.604786)">不是一个“建省会”年份 · 一つの「省都成立年」ではない</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 4.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #65717b" x="182.28888" y="490.572092" transform="rotate(-0 182.28888 490.572092)">A SEQUENCE, NOT ONE FOUNDING YEAR</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #f06e65" x="206.51112" y="425.5071" transform="rotate(-0 206.51112 425.5071)">1909 / 1952 / 1954</text>
+   </g>
+   <g id="text_33">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="206.51112" y="443.9006" transform="rotate(-0 206.51112 443.9006)">铁桥、铁路与城市规划 · 鉄橋・鉄道・都市計画</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #f06e65" x="206.51112" y="459.040369" transform="rotate(-0 206.51112 459.040369)">BRIDGE, RAILWAY, CITY PLAN</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 5.6px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #25313a" x="206.51112" y="483.604786" transform="rotate(-0 206.51112 483.604786)">跨河更稳定，城市沿河谷伸长 · 渡河が安定し、市街が河谷に伸びる</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 4.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #65717b" x="358.7652" y="490.572092" transform="rotate(-0 358.7652 490.572092)">CROSSING STABILISES; CITY LENGTHENS</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 5.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #65717b" x="21.384" y="518.056881" transform="rotate(-0 21.384 518.056881)">旧城门为约位；金城县治比定有争议 · FORMER GATES APPROXIMATE; EARLY JINCHENG SEAT DISPUTED</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 6.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #25313a" x="367.416" y="85.23259" transform="rotate(-0 367.416 85.23259)">N ↑</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0944f5fa8b">
+   <rect x="21.384" y="21.888" width="346.032" height="503.424"/>
+  </clipPath>
+ </defs>
+</svg>

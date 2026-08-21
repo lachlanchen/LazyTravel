@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-city-god-temple",
+  "created_at": "2026-08-21",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "12-90a93de4-9d21-4dad-a5fe-e89650d747c5",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch03/visual-references/city-god-temple-2.jpg",
+      "sha256": "226c2b66bcac7e456f56b9da9c0bfa8fddf33a5341a8abe62dd7e4c1202aa42c",
+      "reference_url": "https://www.sina.cn/news/detail/4974525055763406.html",
+      "role": "Unredistributed current visual reference for the timber gate, roof profile, courtyard entrance, and dense urban enclosure"
+    },
+    {
+      "path": "build/research/lanzhou/ch03/visual-references/city-god-temple-5.jpg",
+      "sha256": "069a4cfd8a0fdc317dfc013289c3feb17009a44244981babc0b6be3587351285",
+      "reference_url": "https://www.sina.cn/news/detail/4974525055763406.html",
+      "role": "Unredistributed current visual reference for the paved courtyard, central hall, red columns, bracket colors, and surrounding apartment scale"
+    }
+  ],
+  "prompt": {
+    "path": "build/research/lanzhou/ch03/city-god-temple-v2-prompt.txt",
+    "sha256": "e2953712ceb8cfb001b77560c9b4c626727844c013103fda80c03fac24e97353"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch03-city-god-v1/task_manifest.json",
+      "sha256": "114f26295517fc7cb2609132c0c478e4a0a889663410444beda2e964f7725f03",
+      "bytes": 3301,
+      "role": "Rejected draft: composition and four-guide count passed, but generated calligraphy remained reader-visible"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch03-city-god-v2/task_manifest.json",
+      "sha256": "5988d60e0475127063065b66c13c2bdde61af1e20061fc8e41d0b547b94f02af",
+      "bytes": 2940,
+      "role": "Selected text-removal revision"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch03-city-god-v2/lanzhou-city-god-temple-v2.png",
+    "sha256": "8a7dc958202145138a7d8588560379468f2c8a99d2129480b7e0a65f3f5bd1a6",
+    "bytes": 18308103,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-city-god-temple.jpg",
+    "sha256": "54865ae56692258c758233251f5683774ee9a15110e2846e0c46f85bcb25d574",
+    "bytes": 2153284,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-city-god-temple-web.jpg",
+      "sha256": "975bfb3dd0ccc62657e62edf6a5e12096cdc72db88f656c2710ea3bda7f3f4cf",
+      "bytes": 709624,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a representative recognition view, not a documentary photograph or an exact camera position.",
+    "The visual references establish roof forms, courtyard sequence, materials, and dense urban enclosure only.",
+    "The figure does not establish permanent opening hours, ritual use, unrestricted access, current signs, event setup, or access to every hall."
+  ],
+  "reader_caption_policy": "Describe the surviving architectural layer and the day-specific access check; do not mention generation or imply documentary evidence.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "temple_courtyard_recognizable": "pass",
+    "dense_current_city_context": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "notes": "Original-size, compiled B6, and 390 px responsive inspections pass. The present courtyard and dense urban enclosure dominate, exactly four guides remain distinct, and no generated lettering is reader-visible.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch03-final-pages/page-31.png",
+        "sha256": "cea5d38a2895b6a40eea8b53fcc631094c20f75d6cdb21778dc39af10937f9ba",
+        "bytes": 548293,
+        "physical_page": 31
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch03-release/mobile-03-figure.png",
+        "sha256": "0672ff5a309699718dcaf04601e4c4b23848c978bf878574f370af2c26618078",
+        "bytes": 700224,
+        "width": 780,
+        "height": 1160,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

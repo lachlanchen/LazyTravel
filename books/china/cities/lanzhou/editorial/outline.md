@@ -22,8 +22,8 @@ The book has exactly 11 chapters. The count is locked because each chapter
 answers a different travel decision. Combining them would hide route choices;
 splitting them further would create short chapters with repeated context.
 
-Milestone status on `2026-08-21`: Chapters 1-2 are accepted in the B6 pocket
-and synchronized website. Chapter 3 is the only active production gate.
+Milestone status on `2026-08-21`: Chapters 1-3 are accepted in the B6 pocket
+and synchronized website. Chapter 4 is the only active production gate.
 
 ## Chapter Spine
 

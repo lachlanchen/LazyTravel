@@ -87,6 +87,8 @@ const assetLabels = {
   "asset-lanzhou-arrival-gates-map": "LANZHOU · THREE ARRIVAL GATES",
   "asset-lanzhou-west-station-arrival": "LANZHOU WEST · WESTERN RAIL GATE",
   "asset-lanzhou-railway-station-arrival": "LANZHOU STATION · EASTERN RAIL GATE",
+  "asset-lanzhou-city-god-temple": "CITY GOD TEMPLE · OLD CITY COURTYARD",
+  "asset-lanzhou-history-walk-map": "ZHANGYE ROAD · FOUR HISTORICAL LAYERS",
 };
 const state = {
   document: null,
