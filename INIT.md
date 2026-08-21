@@ -12,9 +12,9 @@ no private session history.
 4. Run `python3 scripts/verify_sources.py`. External archives and visual
    references must remain at their hash-pinned read-only paths.
 5. Continue only Lanzhou at `china/cities/lanzhou`. Its source ledger, main
-   travel-guide line, and exactly 11 chapters are locked. Chapter 1 is accepted;
-   Chapter 2 is the only active gate. Do not reopen Xi'an, Hakone, or Lanzhou
-   Chapter 1 without a demonstrated failure.
+   travel-guide line, and exactly 11 chapters are locked. Chapters 1-2 are
+   accepted; Chapter 3 is the only active gate. Do not reopen Xi'an, Hakone, or
+   an accepted Lanzhou chapter without a demonstrated failure.
 6. Run focused tests while editing, then the full validation/build sequence:
 
 ```bash
@@ -28,7 +28,8 @@ python3 scripts/validate_site_parity.py \
 
 Serve `site` on one temporary unused project-owned port, run
 `scripts/qa_destination_website.py` at desktop and mobile sizes, then terminate
-only that exact temporary server. Leave the existing port `4173` server and all
+only that exact temporary server when no review is waiting. Reuse an existing
+LazyTravel HTTP server when one is already active, and leave all
 noVNC/Xvfb/x11vnc/websockify processes untouched.
 
 7. Review every new or changed B6 page and desktop/mobile screenshot. Record the
@@ -48,7 +49,7 @@ python3 scripts/verify_deployed_site.py \
 ```
 
 Current gate: Xi'an and Hakone are complete and publicly published. Lanzhou
-Chapter 1 is accepted as a `16`-page pocket and synchronized website milestone;
-its Nutstore SHA-256 is
-`f632eb45b34c8b07b552efdb97eaa95c8f10c04c86aeacc2b033b7d41cf64ea1`. Chapter 2
+Chapters 1-2 are accepted as a `31`-page pocket and synchronized website
+milestone; the Nutstore SHA-256 is
+`3f1a0577df925899a9515afcc8858a20d53d1b85cc9a1055fe85a5bbed95def1`. Chapter 3
 is the only active production gate. Never work on two destination books at once.

@@ -226,6 +226,7 @@ def build_inputs(document: dict[str, Any], chapter_ids: list[str]) -> list[Path]
         COVER_PROVENANCE,
         ROOT / "books/china/cities/xian/latex/book.tex",
         ROOT / "scripts/build_lanzhou_review.py",
+        ROOT / "scripts/build_lanzhou_arrival_gates_map.py",
         ROOT / "scripts/build_lanzhou_valley_orientation_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
@@ -314,6 +315,7 @@ def main() -> int:
     require_tools(["xelatex", "qpdf", "pdffonts", "pdfinfo", "pdftotext"])
     if not args.skip_map:
         run([sys.executable, "scripts/build_lanzhou_valley_orientation_map.py"])
+        run([sys.executable, "scripts/build_lanzhou_arrival_gates_map.py"])
     run(
         [
             sys.executable,

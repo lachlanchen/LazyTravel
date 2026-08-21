@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "lanzhou-arrival-gates",
+  "snapshot_date": "2026-08-21",
+  "title": {
+    "zh": "到哪一站下",
+    "ja": "到着口を選ぶ",
+    "en": "ARRIVE AT THE RIGHT GATE"
+  },
+  "airport": {
+    "gate_zh": "中川机场 T3",
+    "gate_ja": "中川空港 T3",
+    "gate_en": "ZHONGCHUAN AIRPORT T3",
+    "rail_zh": "铁路：中川机场东",
+    "rail_ja": "鉄道：中川空港東",
+    "rail_en": "RAIL: ZHONGCHUAN AIRPORT EAST",
+    "scale_note": "北面方向示意 · 別縮尺 · NOT TO CITY SCALE",
+    "modes": [
+      {
+        "zh": "铁路",
+        "ja": "鉄道",
+        "en": "RAIL"
+      },
+      {
+        "zh": "机场巴士",
+        "ja": "空港バス",
+        "en": "COACH"
+      },
+      {
+        "zh": "道路接送",
+        "ja": "道路移動",
+        "en": "ROAD"
+      }
+    ]
+  },
+  "rail_gates": [
+    {
+      "id": "west",
+      "shape": "rounded",
+      "rail_zh": "国铁：兰州西站",
+      "rail_ja": "国鉄：蘭州西駅",
+      "rail_en": "RAIL: LANZHOU WEST",
+      "metro_zh": "地铁1号线：兰州西站北广场",
+      "metro_ja": "地下鉄1号線：蘭州西駅北広場",
+      "metro_en": "METRO 1: WEST STATION NORTH SQUARE",
+      "segment": "west"
+    },
+    {
+      "id": "east",
+      "shape": "cut-corner",
+      "rail_zh": "国铁：兰州站",
+      "rail_ja": "国鉄：蘭州駅",
+      "rail_en": "RAIL: LANZHOU RAILWAY STATION",
+      "metro_zh": "地铁2号线：兰州火车站",
+      "metro_ja": "地下鉄2号線：蘭州駅",
+      "metro_en": "METRO 2: LANZHOU RAILWAY STATION",
+      "segment": "east"
+    }
+  ],
+  "segments": [
+    {
+      "id": "west",
+      "title_zh": "西段",
+      "title_ja": "西側",
+      "title_en": "WEST",
+      "anchors_zh": "七里河 · 甘肃省博物馆",
+      "anchors_ja": "七里河 · 甘粛省博物館",
+      "anchors_en": "QILIHE\nGANSU PROVINCIAL MUSEUM"
+    },
+    {
+      "id": "centre",
+      "title_zh": "中段",
+      "title_ja": "中央",
+      "title_en": "CENTRE",
+      "anchors_zh": "西关 · 中山桥入口",
+      "anchors_ja": "西関 · 中山橋入口",
+      "anchors_en": "XIGUAN\nZHONGSHAN BRIDGE APPROACH"
+    },
+    {
+      "id": "east",
+      "title_zh": "东段",
+      "title_ja": "東側",
+      "title_en": "EAST",
+      "anchors_zh": "东方红广场 · 兰州大学",
+      "anchors_ja": "東方紅広場 · 蘭州大学",
+      "anchors_en": "DONGFANGHONG SQUARE\nLANZHOU UNIVERSITY"
+    }
+  ],
+  "sources": {
+    "airport_hub": {
+      "url": "https://www.ndrc.gov.cn/xwdt/ztzl/dtfzgz/202504/t20250403_1397004.html",
+      "checked_at": "2026-08-21"
+    },
+    "airport_rail": {
+      "url": "https://www.lzxq.gov.cn/system/2026/03/23/031341573.shtml",
+      "checked_at": "2026-08-21"
+    },
+    "metro": {
+      "url": "https://www.lzgdjt.com/lzgd/serve.jsp",
+      "station_data_url": "https://www.lzgdjt.com/lzgd/template/js/serve.js",
+      "checked_at": "2026-08-21"
+    },
+    "rail_booking": {
+      "url": "https://www.12306.cn/",
+      "checked_at": "2026-08-21"
+    }
+  },
+  "generalizations": [
+    "The airport panel is a directional inset and does not share the city-spine scale.",
+    "West, centre, and east are editorial trip segments, not administrative boundaries.",
+    "Metro links show the current relationship among selected hubs, not surveyed tracks or a full network diagram.",
+    "No journey time, fare, train, platform, exit, pickup zone, or operating-hour promise is encoded.",
+    "Every connection must be checked against the ticket, current operator information, and the actual lodging address."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch02-final-pages/page-19.png",
+        "sha256": "530bee58aa6e9f6adab3cf5343f300ab92c26776ba45a3a051c462ed8167e71d"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch02-release/mobile-02-map-left.png",
+        "sha256": "5a30dc2c5e1057c5c67d03997fad239067e1fd11aaa76ec8695a78ab11eba589"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch02-release/mobile-02-map-center.png",
+        "sha256": "51da0d4f1b7fb377b61c1772e3c37fab37989ed768039d25dc9367c42c77860e"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch02-release/mobile-02-map-right.png",
+        "sha256": "860e8a88bfac8bcd984e6dabc9df2ddc9ab11d18cabf52be31318d7cd06438d4"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch02-release/qa.json",
+        "sha256": "6302ec99791655da0389535de253b216dc4e4cf8bcef3ab3908d2a9abefac0ad"
+      }
+    },
+    "notes": [
+      "B6 proof preserves the airport scale warning, all three gate cards, station-name distinctions, and footer without collisions.",
+      "At 390 px the map keeps large labels and uses the built-in left, centre, and right pan positions; every primary gate and all three decision steps are readable without increasing zoom."
+    ]
+  }
+}

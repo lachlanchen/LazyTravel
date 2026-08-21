@@ -21,8 +21,10 @@ class LanzhouChapterOneTest(unittest.TestCase):
         self.assertEqual(self.chapter["id"], "ch01-read-valley")
         self.assertEqual(self.chapter["status"], "final")
         self.assertEqual(len(self.chapter["blocks"]), 8)
-        self.assertEqual(self.chapters[1]["status"], "researching")
-        self.assertTrue(all(not chapter["blocks"] for chapter in self.chapters[1:]))
+        self.assertEqual(self.chapters[1]["status"], "final")
+        self.assertEqual(len(self.chapters[1]["blocks"]), 9)
+        self.assertEqual(self.chapters[2]["status"], "researching")
+        self.assertTrue(all(not chapter["blocks"] for chapter in self.chapters[2:]))
 
     def test_readings_are_reviewed_and_reconstruct_text(self) -> None:
         for block in self.chapter["blocks"]:

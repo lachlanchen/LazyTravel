@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-west-station-arrival",
+  "created_at": "2026-08-21",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "12-587a726d-8e60-4f98-9097-e0719a2a75b9",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch02/visual-references/lanzhou-west-lzszjt.jpg",
+      "sha256": "c8fcd1f1f53ba63ad39d28ac9345a123235025112d03321c33dd919e3ee091a5",
+      "reference_url": "https://www.lzszjt.com/uploads/image/20181119/1542598411.jpg",
+      "role": "Unredistributed visual reference for the station roof, footprint, forecourt axis, and valley setting"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-west-station-arrival.prompt.md",
+    "sha256": "b10942bd192c7b4a7df1a9317366887e3f59ba01f6c7fb7cdddcfe4055012907"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch02-west-v1/task_manifest.json",
+      "sha256": "bdb579b41904f1197646d6b87e27baf81e0b6a75ae4b875a0161cd711fdf29f7",
+      "role": "Rejected aerial composition with construction-like forecourt and oversized robot"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch02-west-v2/task_manifest.json",
+      "sha256": "83ee96cef32cfc6ab2ab71a8243fa87b421183cabec51b6277d2bf7aef1fb559",
+      "role": "Selected eye-level, completed-forecourt correction"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch02-west-v2/lanzhou-west-station-arrival-v2.png",
+    "sha256": "57164b49a3381554c3459aea09d30a17efea046f661ba588ccea1aecc732644d",
+    "bytes": 11392885,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "ImageMagick sRGB conversion, centred 16:9 resize, metadata strip, print JPEG quality 92, web JPEG quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-west-station-arrival.jpg",
+    "sha256": "da4f27657d466f70cb585258e7fdbc697112fa0c2cd49f198a3dc4cb41af90c5",
+    "bytes": 1208935,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-west-station-arrival-web.jpg",
+      "sha256": "88414f89a0bb74316b42ea51c9299ef0a858a12b1098b46b8c478458c0aad63f",
+      "bytes": 378986,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The composition is an eye-level recognition view based on the roof, footprint, forecourt, and valley relationship rather than one exact camera position",
+    "It does not document an entrance, metro path, pickup zone, construction state, accessible route, or train service",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "The caption identifies the western rail gate and its distinct metro label without discussing production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "station_roof_recognizable": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch02-final-pages/page-23.png",
+        "sha256": "e0ce11708a0a69d3ceb08b42604d7620fb8247d6f285f67f3039e1da120a0059"
+      },
+      "mobile_390px": {
+        "path": "build/qa/website/lanzhou-ch02-release/mobile-02-figure-02.png",
+        "sha256": "0a9962f2964166d0874bb7d3afca5d1f8a6908f5e04d470f0e5fae02432e77ab"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch02-release/qa.json",
+        "sha256": "6302ec99791655da0389535de253b216dc4e4cf8bcef3ab3908d2a9abefac0ad"
+      }
+    },
+    "notes": "Original-size and delivery-crop inspection passed after rejecting the aerial first draft. Compiled B6 and 390 px responsive inspections also pass with the station dominant and all four guides distinct."
+  }
+}

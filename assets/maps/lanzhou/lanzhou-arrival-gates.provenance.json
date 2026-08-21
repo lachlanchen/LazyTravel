@@ -1,0 +1,89 @@
+{
+  "asset_id": "asset-lanzhou-arrival-gates-map",
+  "command": "python3 scripts/build_lanzhou_arrival_gates_map.py",
+  "config": {
+    "path": "data/maps/lanzhou/lanzhou-arrival-gates.config.json",
+    "sha256": "5847d5292159319badb629b3d5a9ba1f9893b87360bc1db81c82c5b723925be1"
+  },
+  "created_at": "2026-08-21",
+  "generalizations": [
+    "The airport panel is a directional inset and does not share the city-spine scale.",
+    "West, centre, and east are editorial trip segments, not administrative boundaries.",
+    "Metro links show the current relationship among selected hubs, not surveyed tracks or a full network diagram.",
+    "No journey time, fare, train, platform, exit, pickup zone, or operating-hour promise is encoded.",
+    "Every connection must be checked against the ticket, current operator information, and the actual lodging address."
+  ],
+  "outputs": {
+    "pdf": {
+      "bytes": 76333,
+      "path": "assets/maps/lanzhou/lanzhou-arrival-gates.pdf",
+      "sha256": "a7933be443ade02185e20332bbb6c1257aabb28a10c9114ced6e4262ff98a5f8"
+    },
+    "png": {
+      "bytes": 379432,
+      "height": 2280,
+      "path": "assets/maps/lanzhou/lanzhou-arrival-gates.png",
+      "sha256": "8f634e31f82352203b8e09f409c149420b0094b0de648177fc33e7d6082dd3af",
+      "width": 1620
+    },
+    "svg": {
+      "bytes": 23040,
+      "path": "assets/maps/lanzhou/lanzhou-arrival-gates.svg",
+      "sha256": "0181cc3924788d66ff22d0179dea75cb3c52fad245cea69426333dea3cd9b3b3"
+    }
+  },
+  "rights": "Map design © LazyTravel; transport relationships derive from the listed official sources.",
+  "schema_version": 1,
+  "sources": {
+    "airport_hub": {
+      "checked_at": "2026-08-21",
+      "url": "https://www.ndrc.gov.cn/xwdt/ztzl/dtfzgz/202504/t20250403_1397004.html"
+    },
+    "airport_rail": {
+      "checked_at": "2026-08-21",
+      "url": "https://www.lzxq.gov.cn/system/2026/03/23/031341573.shtml"
+    },
+    "metro": {
+      "checked_at": "2026-08-21",
+      "station_data_url": "https://www.lzgdjt.com/lzgd/template/js/serve.js",
+      "url": "https://www.lzgdjt.com/lzgd/serve.jsp"
+    },
+    "rail_booking": {
+      "checked_at": "2026-08-21",
+      "url": "https://www.12306.cn/"
+    }
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch02-final-pages/page-19.png",
+        "sha256": "530bee58aa6e9f6adab3cf5343f300ab92c26776ba45a3a051c462ed8167e71d"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch02-release/mobile-02-map-center.png",
+        "sha256": "51da0d4f1b7fb377b61c1772e3c37fab37989ed768039d25dc9367c42c77860e"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch02-release/mobile-02-map-left.png",
+        "sha256": "5a30dc2c5e1057c5c67d03997fad239067e1fd11aaa76ec8695a78ab11eba589"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch02-release/mobile-02-map-right.png",
+        "sha256": "860e8a88bfac8bcd984e6dabc9df2ddc9ab11d18cabf52be31318d7cd06438d4"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch02-release/qa.json",
+        "sha256": "6302ec99791655da0389535de253b216dc4e4cf8bcef3ab3908d2a9abefac0ad"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "B6 proof preserves the airport scale warning, all three gate cards, station-name distinctions, and footer without collisions.",
+      "At 390 px the map keeps large labels and uses the built-in left, centre, and right pan positions; every primary gate and all three decision steps are readable without increasing zoom."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-21"
+  }
+}

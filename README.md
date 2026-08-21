@@ -19,10 +19,10 @@ Published guide paths:
 ## Current Editorial Gate
 
 Xi'an and Hakone are complete and publicly published. Lanzhou at
-`china/cities/lanzhou` is the only active book. Its first chapter is the current
-public milestone; Chapter 2 is the sole production gate. Only one destination
-may be in production at a time. Broader Gansu and Ningxia sources remain
-research context, not destination-book titles.
+`china/cities/lanzhou` is the only active book. Chapters 1-2 are accepted public
+milestones; Chapter 3 is the sole production gate. Only one destination may be
+in production at a time. Broader Gansu and Ningxia sources remain research
+context, not destination-book titles.
 
 The series taxonomy is fixed:
 
@@ -50,7 +50,7 @@ city-wall scene under live selectable LaTeX text. All chapters have passed the
 editorial, reading, page, and public website gate. Xi'an is complete;
 Hakone was completed next, and production now advances only to Lanzhou.
 
-The current pocket PDF SHA-256 is
+The Xi'an pocket PDF SHA-256 is
 `ae2872703174ea523b051ccba21e34eeaa2182aba323bc68a23e5cf558af83c5`.
 The same verified file is mirrored to the project Nutstore share.
 The synchronized 11-chapter website is published through GitHub Pages.
@@ -70,15 +70,16 @@ Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
 
 Lanzhou has a hash-verified read-only source baseline, an explicit claim and
-rejection ledger, and a locked 11-chapter trilingual outline. Chapter 1,
-**Read the Valley First**, is accepted: eight aligned blocks, `643` reviewed
-Chinese reading tokens, `803` reviewed Japanese reading tokens, five source
-entries, one four-guide river-valley figure, and one code-built orientation
-map. The same canonical JSON produces a `16`-page B6 pocket and a responsive
-site with `878` ruby nodes. The pocket SHA-256 is
-`f632eb45b34c8b07b552efdb97eaa95c8f10c04c86aeacc2b033b7d41cf64ea1`, and its
-Nutstore copy matches. Chapter 2, **Arrive at the Right Gate**, is the only
-active production gate; the Lanzhou book itself is not yet complete.
+rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-2,
+**Read the Valley First** and **Arrive at the Right Gate**, are accepted: `17`
+aligned blocks, `1,432` reviewed Chinese reading tokens, `1,760` reviewed
+Japanese reading tokens, 13 chapter-source entries, four four-guide figures,
+and two code-built maps. The same canonical JSON produces a `31`-page B6 pocket
+and a responsive site with `1,964` ruby nodes. The pocket SHA-256 is
+`3f1a0577df925899a9515afcc8858a20d53d1b85cc9a1055fe85a5bbed95def1`, and its
+Nutstore copy matches. Chapter 3, **How a Crossing Became a Provincial
+Capital**, is the only active production gate; the Lanzhou book itself is not
+yet complete.
 
 ## Source Boundary
 

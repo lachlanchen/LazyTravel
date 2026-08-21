@@ -11,10 +11,11 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   published with all 11 chapters and a reproducible B6 pocket book.
 - Lanzhou at `china/cities/lanzhou` is the only next production destination.
   Its factual spine and exactly 11 chapters are locked in
-  `books/china/cities/lanzhou/editorial/outline.md`. Chapter 1, Read the Valley
-  First, is accepted. Chapter 2, Arrive at the Right Gate, is the only active
-  production gate; do not reopen Hakone, reopen Chapter 1 without a demonstrated
-  failure, or start another destination in parallel.
+  `books/china/cities/lanzhou/editorial/outline.md`. Chapters 1 and 2, Read the
+  Valley First and Arrive at the Right Gate, are accepted. Chapter 3, How a
+  Crossing Became a Provincial Capital, is the only active production gate;
+  do not reopen Hakone or an accepted Lanzhou chapter without a demonstrated
+  failure, and do not start another destination in parallel.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
   a local editorial problem.
 - The Hakone book also has exactly 11 chapters, locked in

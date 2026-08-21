@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-zhongchuan-t3-arrival",
+  "created_at": "2026-08-21",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "16-9d58d006-3fd0-40c8-926d-480f2af7d10c",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and outfit reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch02/visual-references/zhongchuan-t3-gansudaily.jpg",
+      "sha256": "df0f7bb3846897a0a621cb25453a3d55a28f2f1da5e80f5dc37e4db037895410",
+      "reference_url": "https://pic.gansudaily.com.cn/003/020/084/00302008415_67b814a8.jpg",
+      "role": "Unredistributed visual reference for the T3 roof, facade, and transport-deck scale"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-zhongchuan-t3-arrival.prompt.md",
+    "sha256": "a0df075fdf81030b4243a6ee952ce4183ff6612b1103a3b03f26dfd3308fdc32"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch02-airport-v1/task_manifest.json",
+      "sha256": "78ad301bd09983eb586005d2db92e5a9b488fc706f81ca8884b4ec838db2184f",
+      "role": "Selected destination-dominant T3 composition"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch02-airport-v1/lanzhou-zhongchuan-t3-arrival-v1.png",
+    "sha256": "2a83399024c59126bb912568d9abc7931d43c57b3d7f575cc5696a8d12bc9107",
+    "bytes": 11801258,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "ImageMagick sRGB conversion, centred 16:9 resize, metadata strip, print JPEG quality 92, web JPEG quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-zhongchuan-t3-arrival.jpg",
+    "sha256": "4a5de5819c69a1cba25e767eb3c45f3cacc0b4aca27c572b9e2a7d09df5f3168",
+    "bytes": 1301551,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-zhongchuan-t3-arrival-web.jpg",
+      "sha256": "91d899e7f8321ba7f9b8cbe9279fadfc62de7624298a06168a54df52ce251a78",
+      "bytes": 407344,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The composition establishes the scale and roof-and-facade language of a large T3 transfer environment rather than one exact camera position",
+    "It does not document a terminal assignment, entrance, railway platform, pickup zone, traffic pattern, operating hour, or accessible route",
+    "The four guides are series characters, not documentary travelers"
+  ],
+  "reader_caption_policy": "The caption explains that airport arrival precedes the city transfer and does not discuss production method",
+  "rights": "Original LazyTravel composition; external imagery was used only as unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "terminal_architecture_recognizable": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch02-final-pages/page-17.png",
+        "sha256": "20a7376fbcf6c4f58a220d879d54065a687acb8be44bdb323908571d03860488"
+      },
+      "mobile_390px": {
+        "path": "build/qa/website/lanzhou-ch02-release/mobile-02-figure.png",
+        "sha256": "77b9eef916923e8711f229c4733a48317ae51bba21184a39176c2e341b74bcd1"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch02-release/qa.json",
+        "sha256": "6302ec99791655da0389535de253b216dc4e4cf8bcef3ab3908d2a9abefac0ad"
+      }
+    },
+    "notes": "Original-size, delivery-crop, compiled B6, and 390 px responsive inspections passed. The terminal remains dominant and all four guides remain distinct."
+  }
+}

@@ -83,6 +83,10 @@ const assetLabels = {
   "asset-hakone-gotemba-niihashi-stop": "NIIHASHI SENGEN · STATION-SIDE STOP",
   "asset-lanzhou-river-valley-orientation": "LANZHOU · RIVER VALLEY AND IRON BRIDGE",
   "asset-lanzhou-valley-orientation-map": "LANZHOU · RIVER, BANKS, AND ARRIVAL GATES",
+  "asset-lanzhou-zhongchuan-t3-arrival": "ZHONGCHUAN AIRPORT T3 · FIRST TRANSFER GATE",
+  "asset-lanzhou-arrival-gates-map": "LANZHOU · THREE ARRIVAL GATES",
+  "asset-lanzhou-west-station-arrival": "LANZHOU WEST · WESTERN RAIL GATE",
+  "asset-lanzhou-railway-station-arrival": "LANZHOU STATION · EASTERN RAIL GATE",
 };
 const state = {
   document: null,
