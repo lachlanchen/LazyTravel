@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-21",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-lanzhou-zhongshan-bridge",
+      "stem": "lanzhou-zhongshan-bridge",
+      "method": "generated-location-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch04-bridge-v2/lanzhou-zhongshan-bridge-v2.png",
+      "prompt": "build/research/lanzhou/ch04/bridge-figure-v2-prompt.txt",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch04/visual-references/bridge-gansu-tourism-2026.png",
+          "reference_url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html",
+          "role": "Unredistributed current official reference for five steel spans, concrete piers, river color, hill alignment, and bridge profile"
+        },
+        {
+          "path": "build/research/lanzhou/ch04/visual-references/baita-gansu-tourism-2026.png",
+          "reference_url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html",
+          "role": "Unredistributed current official reference for the white pagoda's stacked-eave form and hilltop scale"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch04-bridge-v1/task_manifest.json",
+          "role": "Rejected draft: bridge composition passed, but the hill landmark was a generic stupa and the robot carried reader-visible lettering"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch04-bridge-v2/task_manifest.json",
+          "role": "Selected correction with blank robot chest, exact four-guide cast, and stacked-eave pagoda"
+        }
+      ],
+      "factual_limits": [
+        "The scene is a representative recognition composition, not a documentary photograph or an exact camera position.",
+        "The official references establish the five-span steel crossing, reinforcement profile, river, hill, and pagoda relationship only.",
+        "The figure does not establish current crowding, unrestricted bridge access, river conditions, water level, structural condition, or a guaranteed clear view."
+      ],
+      "reader_caption_policy": "Name the bridge-to-hill visual axis and the practical crossing decision; do not mention generation or imply documentary evidence.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "destination_dominant": "pass",
+        "bridge_and_hill_recognizable": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-21",
+        "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. The bridge-to-hill alignment remains dominant, exactly four guides remain distinct, and no raster text or anonymous visitor is visible."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch04-final-pages/page-43.png",
+        "physical_page": 43,
+        "mobile_path": "build/qa/website/lanzhou-ch04-release/mobile-04-figure.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-lanzhou-white-pagoda-hill",
+      "stem": "lanzhou-white-pagoda-hill",
+      "method": "generated-location-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch04-baita-v2/lanzhou-white-pagoda-hill-v2.png",
+      "prompt": "build/research/lanzhou/ch04/baita-figure-v2-prompt.txt",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch04/visual-references/baita-gansu-tourism-2026.png",
+          "reference_url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html",
+          "role": "Unredistributed current official reference for the seven-level white pagoda, compact temple precinct, roofs, balustrades, and hillside setting"
+        },
+        {
+          "path": "build/research/lanzhou/ch04/visual-references/river-core-00300501616_d69f0182.jpg",
+          "reference_url": "https://www.lanzhou.cn/ztpd/system/2024/08/30/012496958.shtml",
+          "role": "Unredistributed current official overview for the terraced park architecture and surrounding hillside"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch04-baita-v1/task_manifest.json",
+          "role": "Rejected draft: location and cast passed, but anonymous visitors, pseudo-signage, and excess pagoda levels remained"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch04-baita-v2/task_manifest.json",
+          "role": "Selected correction with empty precinct, blank surfaces, exact four-guide cast, and seven visible pagoda levels"
+        }
+      ],
+      "factual_limits": [
+        "The scene is a representative recognition composition, not a documentary photograph or an exact camera position.",
+        "The official references establish the current pagoda form, temple roof cluster, terraces, balustrades, and hillside setting only.",
+        "The figure does not establish the age of every building, access to a courtyard or path, a step-free route, current vegetation, opening status, or a guaranteed city view."
+      ],
+      "reader_caption_policy": "Describe the present pagoda precinct and the lower-terrace versus full-climb decision; keep generation details outside reader-facing copy.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "destination_dominant": "pass",
+        "pagoda_and_precinct_recognizable": "pass",
+        "seven_visible_pagoda_levels": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-21",
+        "notes": "Original-size, pagoda-detail, compiled B6, and 390 px responsive-website inspections pass. The seven-level pagoda and compact precinct remain recognizable, exactly four guides remain distinct, and no anonymous visitor or reader-visible raster text remains."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch04-final-pages/page-51.png",
+        "physical_page": 51,
+        "mobile_path": "build/qa/website/lanzhou-ch04-release/mobile-04-figure-02.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ]
+}

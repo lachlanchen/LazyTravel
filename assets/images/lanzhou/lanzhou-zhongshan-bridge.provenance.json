@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-zhongshan-bridge",
+  "created_at": "2026-08-21",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "9-e6b6f000-ed10-4c3d-80c1-a6b513915174",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch04/visual-references/bridge-gansu-tourism-2026.png",
+      "sha256": "5b8f0290582f91732a46b481ff1f2e661b13147ea8a3c11596d433195cff4a5b",
+      "reference_url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html",
+      "role": "Unredistributed current official reference for five steel spans, concrete piers, river color, hill alignment, and bridge profile"
+    },
+    {
+      "path": "build/research/lanzhou/ch04/visual-references/baita-gansu-tourism-2026.png",
+      "sha256": "ab989043a9fadc9626b1f71ecad93cef624f01a16c26a5e0be6f462f62c1654f",
+      "reference_url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html",
+      "role": "Unredistributed current official reference for the white pagoda's stacked-eave form and hilltop scale"
+    }
+  ],
+  "prompt": {
+    "path": "build/research/lanzhou/ch04/bridge-figure-v2-prompt.txt",
+    "sha256": "8488f3907761548e649d11d8d0d7a3de4804a8893caa93d6794b35c71622c34c"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch04-bridge-v1/task_manifest.json",
+      "sha256": "150041c450dc7153954d07a70ed3eb4a00508ab0afea05b27ecbb72bdd6c7b30",
+      "bytes": 3318,
+      "role": "Rejected draft: bridge composition passed, but the hill landmark was a generic stupa and the robot carried reader-visible lettering"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch04-bridge-v2/task_manifest.json",
+      "sha256": "d7e8448073c5c94b822e4814c7a1444d139a7ad93be2fe2e3ee1669f9f9111ef",
+      "bytes": 3672,
+      "role": "Selected correction with blank robot chest, exact four-guide cast, and stacked-eave pagoda"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch04-bridge-v2/lanzhou-zhongshan-bridge-v2.png",
+    "sha256": "21ac15a3fec9009f63bfe319c06db19e582c6690f446e00a3838d9f3b641b1b0",
+    "bytes": 15086042,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-zhongshan-bridge.jpg",
+    "sha256": "c8a8bd2a21074b5020caa3adb172cd3cb5330cac299f8bf7c2b53bc12851f295",
+    "bytes": 1813361,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-zhongshan-bridge-web.jpg",
+      "sha256": "7be913c4c6ae4f3a29b16e5e01ead8ae8cdcce04c5774e340c18faeb981a41c6",
+      "bytes": 592643,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a representative recognition composition, not a documentary photograph or an exact camera position.",
+    "The official references establish the five-span steel crossing, reinforcement profile, river, hill, and pagoda relationship only.",
+    "The figure does not establish current crowding, unrestricted bridge access, river conditions, water level, structural condition, or a guaranteed clear view."
+  ],
+  "reader_caption_policy": "Name the bridge-to-hill visual axis and the practical crossing decision; do not mention generation or imply documentary evidence.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "bridge_and_hill_recognizable": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. The bridge-to-hill alignment remains dominant, exactly four guides remain distinct, and no raster text or anonymous visitor is visible.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch04-final-pages/page-43.png",
+        "sha256": "c37c57ce368d4c9174d0c4ade6e726c9559cd4bb7036242f2dc19e577ccd3110",
+        "bytes": 493023,
+        "physical_page": 43
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch04-release/mobile-04-figure.png",
+        "sha256": "c49a275236b22cf90c060b22657d4d070d238243dc84f9e876ae07c59c1381de",
+        "bytes": 639745,
+        "width": 780,
+        "height": 1068,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

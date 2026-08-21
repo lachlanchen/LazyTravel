@@ -19,8 +19,8 @@ Published guide paths:
 ## Current Editorial Gate
 
 Xi'an and Hakone are complete and publicly published. Lanzhou at
-`china/cities/lanzhou` is the only active book. Chapters 1-3 are accepted public
-milestones; Chapter 4 is the sole production gate. Only one destination may be
+`china/cities/lanzhou` is the only active book. Chapters 1-4 are accepted public
+milestones; Chapter 5 is the sole production gate. Only one destination may be
 in production at a time. Broader Gansu and Ningxia sources remain research
 context, not destination-book titles.
 
@@ -70,16 +70,16 @@ Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
 
 Lanzhou has a hash-verified read-only source baseline, an explicit claim and
-rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-3,
-**Read the Valley First**, **Arrive at the Right Gate**, and **How a Crossing
-Became a Provincial Capital**, are accepted: `26` aligned blocks, `2,297`
-reviewed Chinese reading tokens, `2,971` reviewed Japanese reading tokens, 25
-chapter-source entries, five four-guide figures, and three code-built maps. The
-same canonical JSON produces a `45`-page B6 pocket and a responsive site with
-`3,226` ruby nodes. The pocket SHA-256 is
-`ae98bbb715d6cf245820bc826a96b3aadc8fc9e81619fa6c57012234c744aaa5`, and its
-Nutstore copy matches. Chapter 4, **Cross One Bridge, Read Both Banks**, is the
-only active production gate; the Lanzhou book itself is not yet complete.
+rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-4,
+through **Cross One Bridge, Read Both Banks**, are accepted: `35` aligned
+blocks, `3,449` reviewed Chinese reading tokens, `4,542` reviewed Japanese
+reading tokens, 34 chapter-source entries, seven four-guide figures, and four
+code-built maps. The same canonical JSON produces a `62`-page B6 pocket and a
+responsive site with `4,841` ruby nodes. The pocket SHA-256 is
+`0f5b7479d268ff25a5ed3a7470c7a66b74ea2e222144bd49aa388616981ba7f9`, and its
+Nutstore copy matches. Chapter 5, **Read One Route Through Gansu Provincial
+Museum**, is the only active production gate; the Lanzhou book itself is not
+yet complete.
 
 ## Source Boundary
 

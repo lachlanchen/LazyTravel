@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "id": "lanzhou-bridge-hill-route",
+  "snapshot_date": "2026-08-21",
+  "title": {
+    "zh": "从铁桥到白塔山",
+    "ja": "鉄橋から白塔山へ",
+    "en": "ONE CROSSING · TWO CLIMB DEPTHS"
+  },
+  "orientation": {
+    "north": "NORTH / 北",
+    "south": "SOUTH / 南"
+  },
+  "river": {
+    "zh": "黄河",
+    "ja": "黄河",
+    "en": "YELLOW RIVER",
+    "flow": "EAST →"
+  },
+  "stops": [
+    {
+      "number": 1,
+      "id": "south-approach",
+      "zh": "南岸桥头",
+      "ja": "南詰",
+      "en": "SOUTH APPROACH",
+      "note_zh": "查天气、人流与管制",
+      "note_ja": "天候・混雑・規制を確認",
+      "note_en": "CHECK CONDITIONS",
+      "x": 0.46,
+      "y": 0.225,
+      "side": "right"
+    },
+    {
+      "number": 2,
+      "id": "bridge",
+      "zh": "中山桥",
+      "ja": "中山橋",
+      "en": "PEDESTRIAN BRIDGE",
+      "note_zh": "看钢桁架与两岸轴线",
+      "note_ja": "鋼トラスと両岸軸を見る",
+      "note_en": "READ THE CROSSING",
+      "x": 0.46,
+      "y": 0.485,
+      "side": "left"
+    },
+    {
+      "number": 3,
+      "id": "north-entry",
+      "zh": "白塔山入口",
+      "ja": "白塔山入口",
+      "en": "PARK ENTRY",
+      "note_zh": "确认当天开放路径",
+      "note_ja": "当日の開放経路を確認",
+      "note_en": "VERIFY OPEN PATH",
+      "x": 0.46,
+      "y": 0.625,
+      "side": "left"
+    },
+    {
+      "number": 4,
+      "id": "lower-terraces",
+      "zh": "下层台地",
+      "ja": "下段テラス",
+      "en": "LOWER TERRACES",
+      "note_zh": "看桥河轴线，可在此折返",
+      "note_ja": "橋と川を見て折返し可",
+      "note_en": "VALID TURNAROUND",
+      "x": 0.46,
+      "y": 0.735,
+      "side": "right"
+    },
+    {
+      "number": 5,
+      "id": "pagoda",
+      "zh": "白塔寺塔院",
+      "ja": "白塔寺境内",
+      "en": "PAGODA PRECINCT",
+      "note_zh": "完整登高；按开放路线下山",
+      "note_ja": "全行程。開放経路で下山",
+      "note_en": "FULL-CLIMB BRANCH",
+      "x": 0.46,
+      "y": 0.855,
+      "side": "right"
+    }
+  ],
+  "branches": {
+    "lower": {
+      "zh": "较短：在下层台地折返",
+      "ja": "短め：下段テラスで折返す",
+      "en": "SHORTER · TURN AT LOWER TERRACES"
+    },
+    "full": {
+      "zh": "完整：体力、天气、能见度合适再上",
+      "ja": "全行程：脚力・天候・視界・日照を確認",
+      "en": "FULL · CLIMB ONLY WHEN CONDITIONS FIT"
+    },
+    "riverfront": {
+      "zh": "只选一段黄河边",
+      "ja": "黄河沿いは一区間だけ",
+      "en": "ONE RIVERFRONT SEGMENT"
+    },
+    "return": {
+      "zh": "返回南岸 / 接下一段",
+      "ja": "南岸へ戻る / 次へ",
+      "en": "RETURN / CONTINUE"
+    }
+  },
+  "sources": {
+    "bridge_osm": {
+      "url": "https://www.openstreetmap.org/way/223253546",
+      "checked_at": "2026-08-21",
+      "role": "bridge orientation and bank relationship"
+    },
+    "park_osm": {
+      "url": "https://www.openstreetmap.org/way/409963603",
+      "checked_at": "2026-08-21",
+      "role": "park extent and north-bank orientation"
+    },
+    "pagoda_osm": {
+      "url": "https://www.openstreetmap.org/node/13318861354",
+      "checked_at": "2026-08-21",
+      "role": "pagoda position relative to bridge and park entry"
+    },
+    "park_gazetteer": {
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dsjyllhz/201707/P020170705353409423046.pdf",
+      "checked_at": "2026-08-21",
+      "role": "bridge-entry-terrace-temple axis"
+    },
+    "river_core": {
+      "url": "https://www.lanzhou.cn/ztpd/system/2024/08/30/012496958.shtml",
+      "checked_at": "2026-08-21",
+      "role": "dated route and public-space work"
+    },
+    "pedestrian_bridge": {
+      "url": "https://news.lanzhou.cn/system/2026/03/30/012596111.shtml",
+      "checked_at": "2026-08-21",
+      "role": "current pedestrian use"
+    }
+  },
+  "generalizations": [
+    "The map is an original schematic decision diagram, not a copied basemap or turn-by-turn route.",
+    "The bridge, park, and pagoda coordinates establish only the north-south relationship.",
+    "No exact walking time, elevation, gradient, gate, step-free route, cableway, boat, or temporary closure is encoded.",
+    "The lower terraces are a valid turnaround but are not labelled accessible or step-free.",
+    "The riverfront branch represents one optional segment and does not include a fixed attraction chain."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch04-final-pages/page-45.png",
+        "sha256": "f49b7d3c2673782809284daa0cd9b1812b7233fe12603284bfc5a3add1ac93a0"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch04-release/mobile-04-map-left.png",
+        "sha256": "66e6340e5a86213cd10a3a8851b3a2baa161ac64ff93059928e9cbca7441552c"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch04-release/mobile-04-map-center.png",
+        "sha256": "618a605afeef637dc6d165eea2cf1918ab104410248c77d665f00c2de33f5d48"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch04-release/mobile-04-map-right.png",
+        "sha256": "0ba53d31ea7d8c556644b5c69abf01b0877dd1148df8f35fd3ecac18b738531c"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch04-release/qa.json",
+        "sha256": "e76eb6ca7e522a9c162acdb79fc092d2f0bb2c7550a2ef7b80b77796b7910568"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve all five stops, the lower-terrace turnaround, full-climb branch, optional riverfront segment, and current-condition footer without collisions.",
+      "At a 390 px viewport the 760 px map stage pans left, centre, and right; primary trilingual labels and branch decisions remain readable without reducing the route to false turn-by-turn precision."
+    ]
+  }
+}

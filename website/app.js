@@ -89,6 +89,9 @@ const assetLabels = {
   "asset-lanzhou-railway-station-arrival": "LANZHOU STATION · EASTERN RAIL GATE",
   "asset-lanzhou-city-god-temple": "CITY GOD TEMPLE · OLD CITY COURTYARD",
   "asset-lanzhou-history-walk-map": "ZHANGYE ROAD · FOUR HISTORICAL LAYERS",
+  "asset-lanzhou-zhongshan-bridge": "ZHONGSHAN BRIDGE · BRIDGE, HILL, PAGODA",
+  "asset-lanzhou-bridge-hill-route-map": "BRIDGE TO WHITE PAGODA HILL · TWO CLIMB DEPTHS",
+  "asset-lanzhou-white-pagoda-hill": "WHITE PAGODA HILL · TERRACES AND PAGODA",
 };
 const state = {
   document: null,

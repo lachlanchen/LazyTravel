@@ -1,0 +1,101 @@
+{
+  "asset_id": "asset-lanzhou-bridge-hill-route-map",
+  "created_at": "2026-08-21",
+  "generalizations": [
+    "The map is an original schematic decision diagram, not a copied basemap or turn-by-turn route.",
+    "The bridge, park, and pagoda coordinates establish only the north-south relationship.",
+    "No exact walking time, elevation, gradient, gate, step-free route, cableway, boat, or temporary closure is encoded.",
+    "The lower terraces are a valid turnaround but are not labelled accessible or step-free.",
+    "The riverfront branch represents one optional segment and does not include a fixed attraction chain."
+  ],
+  "method": "deterministic-map-render",
+  "outputs": {
+    "pdf": {
+      "bytes": 76675,
+      "path": "assets/maps/lanzhou/lanzhou-bridge-hill-route.pdf",
+      "sha256": "24aba0bbf79ef29dfa2b94e278fddc9f287b92385b007d9fd6d29fce0d0c4beb"
+    },
+    "png": {
+      "bytes": 366346,
+      "path": "assets/maps/lanzhou/lanzhou-bridge-hill-route.png",
+      "sha256": "660feb679ddc7a1dcf7358a69e65f7af80b1d751bf4b18bd51d65967261b203b"
+    },
+    "svg": {
+      "bytes": 24995,
+      "path": "assets/maps/lanzhou/lanzhou-bridge-hill-route.svg",
+      "sha256": "e4021635458304edcf2a7b80691a869b0a38b457d3078d9def70ea81d7c461c8"
+    }
+  },
+  "rights": "Map design © LazyTravel; orientation derived from OpenStreetMap under ODbL; historical and current relationships derive from the listed institutional sources.",
+  "schema_version": 1,
+  "source_config": {
+    "bytes": 6112,
+    "path": "data/maps/lanzhou/lanzhou-bridge-hill-route.config.json",
+    "sha256": "45fbfb745f78b980c87cfdf2357fef6ec63a632a1128bdbe2715e4399a33b53b"
+  },
+  "sources": {
+    "bridge_osm": {
+      "checked_at": "2026-08-21",
+      "role": "bridge orientation and bank relationship",
+      "url": "https://www.openstreetmap.org/way/223253546"
+    },
+    "pagoda_osm": {
+      "checked_at": "2026-08-21",
+      "role": "pagoda position relative to bridge and park entry",
+      "url": "https://www.openstreetmap.org/node/13318861354"
+    },
+    "park_gazetteer": {
+      "checked_at": "2026-08-21",
+      "role": "bridge-entry-terrace-temple axis",
+      "url": "https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dsjyllhz/201707/P020170705353409423046.pdf"
+    },
+    "park_osm": {
+      "checked_at": "2026-08-21",
+      "role": "park extent and north-bank orientation",
+      "url": "https://www.openstreetmap.org/way/409963603"
+    },
+    "pedestrian_bridge": {
+      "checked_at": "2026-08-21",
+      "role": "current pedestrian use",
+      "url": "https://news.lanzhou.cn/system/2026/03/30/012596111.shtml"
+    },
+    "river_core": {
+      "checked_at": "2026-08-21",
+      "role": "dated route and public-space work",
+      "url": "https://www.lanzhou.cn/ztpd/system/2024/08/30/012496958.shtml"
+    }
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch04-final-pages/page-45.png",
+        "sha256": "f49b7d3c2673782809284daa0cd9b1812b7233fe12603284bfc5a3add1ac93a0"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch04-release/mobile-04-map-center.png",
+        "sha256": "618a605afeef637dc6d165eea2cf1918ab104410248c77d665f00c2de33f5d48"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch04-release/mobile-04-map-left.png",
+        "sha256": "66e6340e5a86213cd10a3a8851b3a2baa161ac64ff93059928e9cbca7441552c"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch04-release/mobile-04-map-right.png",
+        "sha256": "0ba53d31ea7d8c556644b5c69abf01b0877dd1148df8f35fd3ecac18b738531c"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch04-release/qa.json",
+        "sha256": "e76eb6ca7e522a9c162acdb79fc092d2f0bb2c7550a2ef7b80b77796b7910568"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve all five stops, the lower-terrace turnaround, full-climb branch, optional riverfront segment, and current-condition footer without collisions.",
+      "At a 390 px viewport the 760 px map stage pans left, centre, and right; primary trilingual labels and branch decisions remain readable without reducing the route to false turn-by-turn precision."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-21"
+  }
+}

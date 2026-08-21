@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-white-pagoda-hill",
+  "created_at": "2026-08-21",
+  "method": "generated-location-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "6-c4aa40c2-ff1c-466d-9635-2677ca0270ef",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch04/visual-references/baita-gansu-tourism-2026.png",
+      "sha256": "ab989043a9fadc9626b1f71ecad93cef624f01a16c26a5e0be6f462f62c1654f",
+      "reference_url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html",
+      "role": "Unredistributed current official reference for the seven-level white pagoda, compact temple precinct, roofs, balustrades, and hillside setting"
+    },
+    {
+      "path": "build/research/lanzhou/ch04/visual-references/river-core-00300501616_d69f0182.jpg",
+      "sha256": "054de67299cb10ec6fec9705edfd027a54cf8969869a5ac30af334df6d530b39",
+      "reference_url": "https://www.lanzhou.cn/ztpd/system/2024/08/30/012496958.shtml",
+      "role": "Unredistributed current official overview for the terraced park architecture and surrounding hillside"
+    }
+  ],
+  "prompt": {
+    "path": "build/research/lanzhou/ch04/baita-figure-v2-prompt.txt",
+    "sha256": "13cd1cc49699c080b349e69a3d5ac4fe77a6a4e77944eb6bed5d26b499ae5613"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch04-baita-v1/task_manifest.json",
+      "sha256": "7fb3f9d9d9bef9c8ba7f881267fe7e5d72866df11897069480f247200f518804",
+      "bytes": 3329,
+      "role": "Rejected draft: location and cast passed, but anonymous visitors, pseudo-signage, and excess pagoda levels remained"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch04-baita-v2/task_manifest.json",
+      "sha256": "40a2612377bb6fd0599fbce7093cada3ff8d2db1667378d10b10274afd098a0d",
+      "bytes": 3284,
+      "role": "Selected correction with empty precinct, blank surfaces, exact four-guide cast, and seven visible pagoda levels"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch04-baita-v2/lanzhou-white-pagoda-hill-v2.png",
+    "sha256": "28cfd737240b567a3e0e00c7dd13e582fd2f2520f99e2ac07c5941defefeec68",
+    "bytes": 16209743,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-white-pagoda-hill.jpg",
+    "sha256": "c82242bf17198a1e081fd86adab9a9e1e724477e86e10f2e8154b7cdaec75ec4",
+    "bytes": 1889476,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-white-pagoda-hill-web.jpg",
+      "sha256": "fc6cfd8d02797b95a68b0acc997a81953d789c86fac46faec8d7230b6cc15370",
+      "bytes": 623180,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a representative recognition composition, not a documentary photograph or an exact camera position.",
+    "The official references establish the current pagoda form, temple roof cluster, terraces, balustrades, and hillside setting only.",
+    "The figure does not establish the age of every building, access to a courtyard or path, a step-free route, current vegetation, opening status, or a guaranteed city view."
+  ],
+  "reader_caption_policy": "Describe the present pagoda precinct and the lower-terrace versus full-climb decision; keep generation details outside reader-facing copy.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "destination_dominant": "pass",
+    "pagoda_and_precinct_recognizable": "pass",
+    "seven_visible_pagoda_levels": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-21",
+    "notes": "Original-size, pagoda-detail, compiled B6, and 390 px responsive-website inspections pass. The seven-level pagoda and compact precinct remain recognizable, exactly four guides remain distinct, and no anonymous visitor or reader-visible raster text remains.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch04-final-pages/page-51.png",
+        "sha256": "29dd079ad5f4de617f4093d6fc35a3267cb9a215a852efca0f8318f2b6d2ba77",
+        "bytes": 523139,
+        "physical_page": 51
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch04-release/mobile-04-figure-02.png",
+        "sha256": "fcdf9815adbf5f1c552d969021a209600c4ba9cb092baee510aeb8c2fb4a7131",
+        "bytes": 687675,
+        "width": 780,
+        "height": 1160,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

@@ -107,16 +107,15 @@ train and the mountain exit already reached, then add at most one local stop.
 Odawara, Mishima, and Gotemba are alternatives, not a three-town extension.
 The bag and reserved train remain fixed; the local stop is removed first.
 
-Lanzhou has a locked 11-chapter structure. Chapters 1-3, **Read the Valley
-First**, **Arrive at the Right Gate**, and **How a Crossing Became a Provincial
-Capital**, are accepted with `26` aligned blocks, `2,297` reviewed Chinese
-reading tokens, `2,971` reviewed Japanese reading tokens, 25 chapter-source
-entries, five four-guide figures, and three code-built maps. The same JSON
-produced a clean `45`-page B6 pocket and responsive series page with `3,226`
-rendered ruby nodes. The pocket SHA-256 is
-`ae98bbb715d6cf245820bc826a96b3aadc8fc9e81619fa6c57012234c744aaa5`, and the
-Nutstore copy matches it. Chapter 4, the Yellow River Iron Bridge-to-White
-Pagoda Hill route, is the sole active gate.
+Lanzhou has a locked 11-chapter structure. Chapters 1-4, through **Cross One
+Bridge, Read Both Banks**, are accepted with `35` aligned blocks, `3,449`
+reviewed Chinese reading tokens, `4,542` reviewed Japanese reading tokens, 34
+chapter-source entries, seven four-guide figures, and four code-built maps. The
+same JSON produced a clean `62`-page B6 pocket and responsive series page with
+`4,841` rendered ruby nodes. The pocket SHA-256 is
+`0f5b7479d268ff25a5ed3a7470c7a66b74ea2e222144bd49aa388616981ba7f9`, and the
+Nutstore copy matches it. Chapter 5, the single Gansu Provincial Museum route,
+is the sole active gate.
 
 The book's main line remains the traveler's decisions in a long river valley:
 orientation, arrival gate, crossing history, one central Yellow River Iron
