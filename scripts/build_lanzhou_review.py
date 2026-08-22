@@ -233,9 +233,11 @@ def build_inputs(document: dict[str, Any], chapter_ids: list[str]) -> list[Path]
         ROOT / "scripts/build_lanzhou_height_choice_map.py",
         ROOT / "scripts/build_lanzhou_museum_findspots_map.py",
         ROOT / "scripts/build_lanzhou_museum_route_map.py",
+        ROOT / "scripts/build_lanzhou_stay_segment_map.py",
         ROOT / "scripts/prepare_lanzhou_ch05_figures.py",
         ROOT / "scripts/prepare_lanzhou_ch06_figures.py",
         ROOT / "scripts/prepare_lanzhou_ch07_figures.py",
+        ROOT / "scripts/prepare_lanzhou_ch08_figures.py",
         ROOT / "scripts/build_lanzhou_valley_orientation_map.py",
         ROOT / "scripts/render_destination_tex.py",
         ROOT / "scripts/validate_json.py",
@@ -331,6 +333,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_lanzhou_museum_findspots_map.py"])
         run([sys.executable, "scripts/build_lanzhou_food_diagrams.py"])
         run([sys.executable, "scripts/build_lanzhou_height_choice_map.py"])
+        run([sys.executable, "scripts/build_lanzhou_stay_segment_map.py"])
     run(
         [
             sys.executable,

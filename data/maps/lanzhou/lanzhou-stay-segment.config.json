@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-stay-segment-map",
+  "id": "lanzhou-stay-segment",
+  "snapshot_date": "2026-08-22",
+  "title": {
+    "zh": "先选路线区段，再选酒店",
+    "ja": "経路の区間を先に選ぶ",
+    "en": "CHOOSE THE SEGMENT FIRST"
+  },
+  "segments": [
+    {
+      "id": "west",
+      "number": 1,
+      "color": "jade",
+      "label_zh": "西段",
+      "label_ja": "西側",
+      "label_en": "WEST",
+      "anchors_zh": "兰州西站 · 甘肃省博物馆",
+      "anchors_ja": "蘭州西駅 · 甘粛省博物館",
+      "anchors_en": "WEST STATION · MUSEUM",
+      "choose_zh": "西站抵达或博物馆清晨",
+      "choose_ja": "西駅到着、または博物館の朝",
+      "choose_en": "WEST ARRIVAL OR MUSEUM MORNING",
+      "boundary_zh": "不为桥边晚餐先横穿全城",
+      "boundary_ja": "橋辺の夕食だけで全市を横断しない",
+      "boundary_en": "NO FIRST CROSS-CITY DINNER DETOUR"
+    },
+    {
+      "id": "centre",
+      "number": 2,
+      "color": "vermilion",
+      "label_zh": "中段",
+      "label_ja": "中央",
+      "label_en": "CENTRE",
+      "anchors_zh": "西关 · 中山桥",
+      "anchors_ja": "西関 · 中山橋",
+      "anchors_en": "XIGUAN · BRIDGE",
+      "choose_zh": "两岸步行、老城与晚饭",
+      "choose_ja": "両岸散策、旧市街、夕食",
+      "choose_en": "TWO BANKS · OLD CENTRE · DINNER",
+      "boundary_zh": "先问入口与安静一侧",
+      "boundary_ja": "入口と静かな側を先に確認",
+      "boundary_en": "CHECK ENTRANCE AND QUIET SIDE"
+    },
+    {
+      "id": "east",
+      "number": 3,
+      "color": "cobalt",
+      "label_zh": "东段",
+      "label_ja": "東側",
+      "label_en": "EAST",
+      "anchors_zh": "东方红广场 · 兰州站",
+      "anchors_ja": "東方紅広場 · 蘭州駅",
+      "anchors_en": "SQUARE · LANZHOU STATION",
+      "choose_zh": "兰州站抵达或大学一侧",
+      "choose_ja": "蘭州駅到着、または大学側",
+      "choose_en": "LANZHOU STATION OR UNIVERSITY SIDE",
+      "boundary_zh": "“市中心”品牌名不等于桥边",
+      "boundary_ja": "名称の「中心」を位置と思わない",
+      "boundary_en": "A BRAND NAME IS NOT A MAP PIN"
+    },
+    {
+      "id": "airport",
+      "number": 4,
+      "color": "coral",
+      "label_zh": "机场夜",
+      "label_ja": "空港泊",
+      "label_en": "AIRPORT BUFFER",
+      "anchors_zh": "中川机场T3 · 机场一带",
+      "anchors_ja": "中川空港T3 · 空港周辺",
+      "anchors_en": "ZHONGCHUAN T3 · AIRPORT AREA",
+      "choose_zh": "晚落地或早班机，只住一夜",
+      "choose_ja": "深夜着か早朝便の一泊だけ",
+      "choose_en": "ONE NIGHT FOR LATE OR EARLY FLIGHT",
+      "boundary_zh": "不是兰州市区游览基地",
+      "boundary_ja": "市街観光の拠点にはしない",
+      "boundary_en": "NOT A CITY-SIGHTSEEING BASE"
+    }
+  ],
+  "rule": {
+    "zh": "写清抵达点 → 酒店入口 → 次日第一站",
+    "ja": "到着地点 → 宿の入口 → 翌朝の最初の目的地を書く",
+    "en": "WRITE: ARRIVAL POINT → HOTEL ENTRANCE → FIRST MORNING STOP"
+  },
+  "sources": {
+    "accepted_arrival_map": {
+      "path": "data/maps/lanzhou/lanzhou-arrival-gates.config.json",
+      "sha256": "5847d5292159319badb629b3d5a9ba1f9893b87360bc1db81c82c5b723925be1",
+      "role": "accepted west-centre-east segmentation and separate airport relationship"
+    },
+    "official_geography": {
+      "url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html",
+      "checked_at": "2026-08-22",
+      "role": "current institutional lead for the central river route and visitor anchors"
+    },
+    "direct_property_pages": {
+      "checked_at": "2026-08-22",
+      "urls": [
+        "https://all.accor.com/hotel/B7D6/index.en.shtml",
+        "https://www.ihg.com/holidayinnexpress/hotels/us/en/lanzhou/lhwlj/hoteldetail",
+        "https://www.hilton.com/en/hotels/lhwtrhi-hilton-lanzhou-city-center/",
+        "https://all.accor.com/hotel/B496/index.zh.shtml"
+      ],
+      "role": "segment examples only; no hotel is plotted or ranked"
+    }
+  },
+  "generalizations": [
+    "This is an original route-segment schematic, not navigation or a hotel directory.",
+    "The west, centre, and east spans are editorial bands rather than administrative district boundaries.",
+    "The airport panel is not to scale and no transfer line, mode, duration, fare, or operating window is encoded.",
+    "No named property is plotted; exact address, entrance, room, booking terms, document handling, and accessibility require direct verification.",
+    "The four alternatives are mutually exclusive for one night unless the traveler deliberately changes accommodation between nights."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch08-final-pages/page-113.png",
+        "sha256": "b173f55cd5f06aa576cea4c95e5c71c7b55500cce070f54a494c57c761b628b4"
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch08-release/mobile-390-map.png",
+        "sha256": "54d861d7b8b42e2891677bd6c81f50222d9ef0cf766731679999cc3210556e22"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch08-release/qa.json",
+        "sha256": "5096e43ad94d52c0eaf9441cb2c5539df12aa99d518006a7815695ba3bc39f9f"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve the west, centre, east, and separate airport choices without a false airport-to-river arrow or label collision.",
+      "At a 390 px viewport the 760 px map stage pans independently, retaining large trilingual labels, the no-hotel-pin boundary, and the arrival-point to first-stop rule."
+    ]
+  }
+}

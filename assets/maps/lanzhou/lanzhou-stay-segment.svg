@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="388.8pt" height="547.2pt" viewBox="0 0 388.8 547.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-22T00:00:00+00:00</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 547.2
+L 388.8 547.2
+L 388.8 0
+L 0 0
+z
+" style="fill: #fcfdff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 19.8288 247.8816
+L 368.9712 247.8816
+Q 374.4144 247.8816 374.4144 240.2208
+L 374.4144 74.4192
+Q 374.4144 66.7584 368.9712 66.7584
+L 19.8288 66.7584
+Q 14.3856 66.7584 14.3856 74.4192
+L 14.3856 240.2208
+Q 14.3856 247.8816 19.8288 247.8816
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #f3f7fa; stroke: #b7c4cd; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 21.7728 362.7936
+L 186.2352 362.7936
+Q 191.6784 362.7936 191.6784 355.1328
+L 191.6784 287.8272
+Q 191.6784 280.1664 186.2352 280.1664
+L 21.7728 280.1664
+Q 16.3296 280.1664 16.3296 287.8272
+L 16.3296 355.1328
+Q 16.3296 362.7936 21.7728 362.7936
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #e4f3ed; stroke: #23836b; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 202.5648 362.7936
+L 367.0272 362.7936
+Q 372.4704 362.7936 372.4704 355.1328
+L 372.4704 287.8272
+Q 372.4704 280.1664 367.0272 280.1664
+L 202.5648 280.1664
+Q 197.1216 280.1664 197.1216 287.8272
+L 197.1216 355.1328
+Q 197.1216 362.7936 202.5648 362.7936
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #fce9e6; stroke: #e44736; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 21.7728 455.8176
+L 186.2352 455.8176
+Q 191.6784 455.8176 191.6784 448.1568
+L 191.6784 380.8512
+Q 191.6784 373.1904 186.2352 373.1904
+L 21.7728 373.1904
+Q 16.3296 373.1904 16.3296 380.8512
+L 16.3296 448.1568
+Q 16.3296 455.8176 21.7728 455.8176
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #e6f1fc; stroke: #1769d2; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 202.5648 455.8176
+L 367.0272 455.8176
+Q 372.4704 455.8176 372.4704 448.1568
+L 372.4704 380.8512
+Q 372.4704 373.1904 367.0272 373.1904
+L 202.5648 373.1904
+Q 197.1216 373.1904 197.1216 380.8512
+L 197.1216 448.1568
+Q 197.1216 455.8176 202.5648 455.8176
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #fdecea; stroke: #f06e65; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 21.7728 510.5376
+L 367.0272 510.5376
+Q 372.4704 510.5376 372.4704 502.8768
+L 372.4704 476.6112
+Q 372.4704 468.9504 367.0272 468.9504
+L 21.7728 468.9504
+Q 16.3296 468.9504 16.3296 476.6112
+L 16.3296 502.8768
+Q 16.3296 510.5376 21.7728 510.5376
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #24313a"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 31.104 142.272
+L 357.696 142.272
+" clip-path="url(#pe26e89ecd0)" style="fill: none; stroke: #e6f1fc; stroke-width: 16; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="19.44" y="33.373866" transform="rotate(-0 19.44 33.373866)">先选路线区段，再选酒店</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 8.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #65727b" x="19.44" y="49.47852" transform="rotate(-0 19.44 49.47852)">経路の区間を先に選ぶ  ·  CHOOSE THE SEGMENT FIRST</text>
+   </g>
+   <g id="line2d_2">
+    <path d="M 31.104 142.272
+L 357.696 142.272
+" clip-path="url(#pe26e89ecd0)" style="fill: none; stroke: #1769d2; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 29.16 227.088
+L 138.024 227.088
+L 138.024 164.16
+L 29.16 164.16
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #e4f3ed; stroke: #23836b; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 139.968 227.088
+L 248.832 227.088
+L 248.832 164.16
+L 139.968 164.16
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #fce9e6; stroke: #e44736; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 250.776 227.088
+L 359.64 227.088
+L 359.64 164.16
+L 250.776 164.16
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #e6f1fc; stroke: #1769d2; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 33.102343 240.768
+Q 194.401161 240.768 354.134731 240.768
+" style="fill: none; stroke: #24313a; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 350.134731 238.768
+L 354.134731 240.768
+L 350.134731 242.768
+z
+" style="fill: #24313a; stroke: #24313a; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 6.5px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #65727b" x="31.104" y="254.153848" transform="rotate(-0 31.104 254.153848)">西  WEST</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 6.5px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #65727b" x="357.696" y="254.153848" transform="rotate(-0 357.696 254.153848)">EAST  东</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #23836b" x="44.712" y="302.65723" transform="rotate(-0 44.712 302.65723)">西段 · 西側 · WEST</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 6.9px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="29.16" y="320.481642" transform="rotate(-0 29.16 320.481642)">西站抵达或博物馆清晨</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 6.5px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="29.16" y="333.445544" transform="rotate(-0 29.16 333.445544)">西駅到着、または博物館の朝</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #65727b" x="29.16" y="345.303061" transform="rotate(-0 29.16 345.303061)">WEST ARRIVAL OR MUSEUM MORNING</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 5.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #23836b" x="178.848" y="353.4676" transform="rotate(-0 178.848 353.4676)">NO FIRST CROSS-CITY DINNER DETOUR</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #e44736" x="225.504" y="302.65723" transform="rotate(-0 225.504 302.65723)">中段 · 中央 · CENTRE</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 6.9px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="209.952" y="320.481642" transform="rotate(-0 209.952 320.481642)">两岸步行、老城与晚饭</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 6.5px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="209.952" y="333.445544" transform="rotate(-0 209.952 333.445544)">両岸散策、旧市街、夕食</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #65727b" x="209.952" y="345.303061" transform="rotate(-0 209.952 345.303061)">TWO BANKS · OLD CENTRE · DINNER</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 5.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #e44736" x="359.64" y="353.4676" transform="rotate(-0 359.64 353.4676)">CHECK ENTRANCE AND QUIET SIDE</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #1769d2" x="44.712" y="395.68123" transform="rotate(-0 44.712 395.68123)">东段 · 東側 · EAST</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 6.9px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="29.16" y="413.505642" transform="rotate(-0 29.16 413.505642)">兰州站抵达或大学一侧</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 6.5px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="29.16" y="426.469544" transform="rotate(-0 29.16 426.469544)">蘭州駅到着、または大学側</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #65727b" x="29.16" y="438.327061" transform="rotate(-0 29.16 438.327061)">LANZHOU STATION OR UNIVERSITY SIDE</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 5.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #1769d2" x="178.848" y="446.4916" transform="rotate(-0 178.848 446.4916)">A BRAND NAME IS NOT A MAP PIN</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 7.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #f06e65" x="225.504" y="395.68123" transform="rotate(-0 225.504 395.68123)">机场夜 · 空港泊 · AIRPORT BUFFER</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 6.9px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="209.952" y="413.505642" transform="rotate(-0 209.952 413.505642)">晚落地或早班机，只住一夜</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 6.5px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="209.952" y="426.469544" transform="rotate(-0 209.952 426.469544)">深夜着か早朝便の一泊だけ</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #65727b" x="209.952" y="438.327061" transform="rotate(-0 209.952 438.327061)">ONE NIGHT FOR LATE OR EARLY FLIGHT</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 5.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: end; fill: #f06e65" x="359.64" y="446.4916" transform="rotate(-0 359.64 446.4916)">NOT A CITY-SIGHTSEEING BASE</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 7.5px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="194.4" y="488.646933" transform="rotate(-0 194.4 488.646933)">写清抵达点 → 酒店入口 → 次日第一站</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 5.9px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="194.4" y="501.813081" transform="rotate(-0 194.4 501.813081)">到着地点 → 宿の入口 → 翌朝の最初の目的地を書く  ·  WRITE: ARRIVAL POINT → HOTEL ENTRANCE → FIRST MORNING STOP</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #65727b" x="194.4" y="529.738609" transform="rotate(-0 194.4 529.738609)">SCHEMATIC · NO HOTEL PINS · VERIFY LIVE ROUTES AND THE EXACT BOOKING</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 223.9488 119.2896
+L 351.4752 119.2896
+Q 356.9184 119.2896 356.9184 111.6288
+L 356.9184 88.0992
+Q 356.9184 80.4384 351.4752 80.4384
+L 223.9488 80.4384
+Q 218.5056 80.4384 218.5056 88.0992
+L 218.5056 111.6288
+Q 218.5056 119.2896 223.9488 119.2896
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #fdecea; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: #f06e65; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 6.8px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #1769d2" x="62.208" y="131.668494" transform="rotate(-0 62.208 131.668494)">黄河 · 黄河 · YELLOW RIVER</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #24313a" x="244.944" y="99.011384" transform="rotate(-0 244.944 99.011384)">机场夜 · 空港泊 · AIRPORT BUFFER</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 6.3px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #65727b" x="244.944" y="110.131256" transform="rotate(-0 244.944 110.131256)">中川机场T3 · 中川空港T3 · NOT TO SCALE</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #23836b" x="52.8768" y="178.559423" transform="rotate(-0 52.8768 178.559423)">西段 · 西側 · WEST</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #24313a" x="83.592" y="194.107591" transform="rotate(-0 83.592 194.107591)">兰州西站 · 甘肃省博物馆</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 6.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #24313a" x="83.592" y="207.646231" transform="rotate(-0 83.592 207.646231)">蘭州西駅 · 甘粛省博物館</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 5.9px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #65727b" x="83.592" y="221.146958" transform="rotate(-0 83.592 221.146958)">WEST STATION · MUSEUM</text>
+   </g>
+   <g id="text_35">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #e44736" x="163.6848" y="178.559423" transform="rotate(-0 163.6848 178.559423)">中段 · 中央 · CENTRE</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #24313a" x="194.4" y="194.107591" transform="rotate(-0 194.4 194.107591)">西关 · 中山桥</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 6.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #24313a" x="194.4" y="207.646231" transform="rotate(-0 194.4 207.646231)">西関 · 中山橋</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 5.9px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #65727b" x="194.4" y="221.146958" transform="rotate(-0 194.4 221.146958)">XIGUAN · BRIDGE</text>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: start; fill: #1769d2" x="274.4928" y="178.559423" transform="rotate(-0 274.4928 178.559423)">东段 · 東側 · EAST</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #24313a" x="305.208" y="194.107591" transform="rotate(-0 305.208 194.107591)">东方红广场 · 兰州站</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 6.7px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #24313a" x="305.208" y="207.646231" transform="rotate(-0 305.208 207.646231)">東方紅広場 · 蘭州駅</text>
+   </g>
+   <g id="text_42">
+    <text style="font-weight: 700; font-size: 5.9px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #65727b" x="305.208" y="221.146958" transform="rotate(-0 305.208 221.146958)">SQUARE · LANZHOU STATION</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 233.28 112.176
+C 235.548441 112.176 237.724278 110.907558 239.328309 108.650034
+C 240.932339 106.39251 241.8336 103.330221 241.8336 100.1376
+C 241.8336 96.944979 240.932339 93.88269 239.328309 91.625166
+C 237.724278 89.367642 235.548441 88.0992 233.28 88.0992
+C 231.011559 88.0992 228.835722 89.367642 227.231691 91.625166
+C 225.627661 93.88269 224.7264 96.944979 224.7264 100.1376
+C 224.7264 103.330221 225.627661 106.39251 227.231691 108.650034
+C 228.835722 110.907558 231.011559 112.176 233.28 112.176
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #f06e65; stroke: #fcfdff; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 41.6016 190.4256
+C 43.870041 190.4256 46.045878 189.157158 47.649909 186.899634
+C 49.253939 184.64211 50.1552 181.579821 50.1552 178.3872
+C 50.1552 175.194579 49.253939 172.13229 47.649909 169.874766
+C 46.045878 167.617242 43.870041 166.3488 41.6016 166.3488
+C 39.333159 166.3488 37.157322 167.617242 35.553291 169.874766
+C 33.949261 172.13229 33.048 175.194579 33.048 178.3872
+C 33.048 181.579821 33.949261 184.64211 35.553291 186.899634
+C 37.157322 189.157158 39.333159 190.4256 41.6016 190.4256
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #23836b; stroke: #fcfdff; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 152.4096 190.4256
+C 154.678041 190.4256 156.853878 189.157158 158.457909 186.899634
+C 160.061939 184.64211 160.9632 181.579821 160.9632 178.3872
+C 160.9632 175.194579 160.061939 172.13229 158.457909 169.874766
+C 156.853878 167.617242 154.678041 166.3488 152.4096 166.3488
+C 150.141159 166.3488 147.965322 167.617242 146.361291 169.874766
+C 144.757261 172.13229 143.856 175.194579 143.856 178.3872
+C 143.856 181.579821 144.757261 184.64211 146.361291 186.899634
+C 147.965322 189.157158 150.141159 190.4256 152.4096 190.4256
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #e44736; stroke: #fcfdff; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 263.2176 190.4256
+C 265.486041 190.4256 267.661878 189.157158 269.265909 186.899634
+C 270.869939 184.64211 271.7712 181.579821 271.7712 178.3872
+C 271.7712 175.194579 270.869939 172.13229 269.265909 169.874766
+C 267.661878 167.617242 265.486041 166.3488 263.2176 166.3488
+C 260.949159 166.3488 258.773322 167.617242 257.169291 169.874766
+C 255.565261 172.13229 254.664 175.194579 254.664 178.3872
+C 254.664 181.579821 255.565261 184.64211 257.169291 186.899634
+C 258.773322 189.157158 260.949159 190.4256 263.2176 190.4256
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #1769d2; stroke: #fcfdff; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 32.2704 314.0928
+C 34.538841 314.0928 36.714678 312.824358 38.318709 310.566834
+C 39.922739 308.30931 40.824 305.247021 40.824 302.0544
+C 40.824 298.861779 39.922739 295.79949 38.318709 293.541966
+C 36.714678 291.284442 34.538841 290.016 32.2704 290.016
+C 30.001959 290.016 27.826122 291.284442 26.222091 293.541966
+C 24.618061 295.79949 23.7168 298.861779 23.7168 302.0544
+C 23.7168 305.247021 24.618061 308.30931 26.222091 310.566834
+C 27.826122 312.824358 30.001959 314.0928 32.2704 314.0928
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #23836b; stroke: #fcfdff; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 213.0624 314.0928
+C 215.330841 314.0928 217.506678 312.824358 219.110709 310.566834
+C 220.714739 308.30931 221.616 305.247021 221.616 302.0544
+C 221.616 298.861779 220.714739 295.79949 219.110709 293.541966
+C 217.506678 291.284442 215.330841 290.016 213.0624 290.016
+C 210.793959 290.016 208.618122 291.284442 207.014091 293.541966
+C 205.410061 295.79949 204.5088 298.861779 204.5088 302.0544
+C 204.5088 305.247021 205.410061 308.30931 207.014091 310.566834
+C 208.618122 312.824358 210.793959 314.0928 213.0624 314.0928
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #e44736; stroke: #fcfdff; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 32.2704 407.1168
+C 34.538841 407.1168 36.714678 405.848358 38.318709 403.590834
+C 39.922739 401.33331 40.824 398.271021 40.824 395.0784
+C 40.824 391.885779 39.922739 388.82349 38.318709 386.565966
+C 36.714678 384.308442 34.538841 383.04 32.2704 383.04
+C 30.001959 383.04 27.826122 384.308442 26.222091 386.565966
+C 24.618061 388.82349 23.7168 391.885779 23.7168 395.0784
+C 23.7168 398.271021 24.618061 401.33331 26.222091 403.590834
+C 27.826122 405.848358 30.001959 407.1168 32.2704 407.1168
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #1769d2; stroke: #fcfdff; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 213.0624 407.1168
+C 215.330841 407.1168 217.506678 405.848358 219.110709 403.590834
+C 220.714739 401.33331 221.616 398.271021 221.616 395.0784
+C 221.616 391.885779 220.714739 388.82349 219.110709 386.565966
+C 217.506678 384.308442 215.330841 383.04 213.0624 383.04
+C 210.793959 383.04 208.618122 384.308442 207.014091 386.565966
+C 205.410061 388.82349 204.5088 391.885779 204.5088 395.0784
+C 204.5088 398.271021 205.410061 401.33331 207.014091 403.590834
+C 208.618122 405.848358 210.793959 407.1168 213.0624 407.1168
+z
+" clip-path="url(#pe26e89ecd0)" style="fill: #f06e65; stroke: #fcfdff; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_43">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="233.28" y="102.527772" transform="rotate(-0 233.28 102.527772)">4</text>
+   </g>
+   <g id="text_44">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="41.6016" y="180.777372" transform="rotate(-0 41.6016 180.777372)">1</text>
+   </g>
+   <g id="text_45">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="152.4096" y="180.777372" transform="rotate(-0 152.4096 180.777372)">2</text>
+   </g>
+   <g id="text_46">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="263.2176" y="180.777372" transform="rotate(-0 263.2176 180.777372)">3</text>
+   </g>
+   <g id="text_47">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="32.2704" y="304.444572" transform="rotate(-0 32.2704 304.444572)">1</text>
+   </g>
+   <g id="text_48">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="213.0624" y="304.444572" transform="rotate(-0 213.0624 304.444572)">2</text>
+   </g>
+   <g id="text_49">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="32.2704" y="397.468572" transform="rotate(-0 32.2704 397.468572)">3</text>
+   </g>
+   <g id="text_50">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="213.0624" y="397.468572" transform="rotate(-0 213.0624 397.468572)">4</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe26e89ecd0">
+   <rect x="0" y="0" width="388.8" height="547.2"/>
+  </clipPath>
+ </defs>
+</svg>

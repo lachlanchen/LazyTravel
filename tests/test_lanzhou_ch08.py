@@ -11,9 +11,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK_PATH = ROOT / "data/china/cities/lanzhou/book.json"
-MAP_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-height-choice.config.json"
-FIGURE_CONFIG = ROOT / "data/images/lanzhou/ch07-figures.config.json"
-MAP_STEM = ROOT / "assets/maps/lanzhou/lanzhou-height-choice"
+MAP_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-stay-segment.config.json"
+FIGURE_CONFIG = ROOT / "data/images/lanzhou/ch08-figures.config.json"
+MAP_STEM = ROOT / "assets/maps/lanzhou/lanzhou-stay-segment"
 GUIDE_PATHS = {
     "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
     "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
@@ -30,23 +30,20 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-class LanzhouChapterSevenTests(unittest.TestCase):
+class LanzhouChapterEightTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.book = json.loads(BOOK_PATH.read_text(encoding="utf-8"))
-        cls.chapter = cls.book["chapters"][6]
+        cls.chapter = cls.book["chapters"][7]
 
     def test_locked_blocks_and_next_gate(self) -> None:
         self.assertEqual(len(self.book["chapters"]), 11)
-        self.assertEqual(self.chapter["id"], "ch07-city-heights")
+        self.assertEqual(self.chapter["id"], "ch08-stay-segment")
         self.assertEqual(self.chapter["status"], "final")
         self.assertEqual(
             [block["id"] for block in self.chapter["blocks"]],
-            [f"ch07-b{number:03d}" for number in range(1, 11)],
+            [f"ch08-b{number:03d}" for number in range(1, 11)],
         )
-        self.assertEqual(self.book["chapters"][7]["id"], "ch08-stay-segment")
-        self.assertEqual(self.book["chapters"][7]["status"], "final")
-        self.assertEqual(len(self.book["chapters"][7]["blocks"]), 10)
         self.assertEqual(self.book["chapters"][8]["id"], "ch09-itinerary-days")
         self.assertEqual(self.book["chapters"][8]["status"], "researching")
         self.assertTrue(
@@ -65,7 +62,7 @@ class LanzhouChapterSevenTests(unittest.TestCase):
                 reconstructed = "".join(token["text"] for token in layer["tokens"])
                 self.assertEqual(reconstructed, block["text"][language])
 
-    def test_height_and_spring_readings_are_reviewed(self) -> None:
+    def test_lodging_place_and_date_readings_are_reviewed(self) -> None:
         zh = {
             (token["text"], token.get("reading"))
             for block in self.chapter["blocks"]
@@ -78,45 +75,58 @@ class LanzhouChapterSevenTests(unittest.TestCase):
         }
         self.assertTrue(
             {
-                ("白塔山", "báitǎshān"),
-                ("中山桥", "zhōngshānqiáo"),
-                ("兰山", "lánshān"),
-                ("三台阁", "sāntáigé"),
-                ("五泉山", "wǔquánshān"),
-                ("摸子", "mōzǐ"),
+                ("正宁路", "zhèngníng lù"),
+                ("永昌南路", "yǒngchāng nánlù"),
+                ("七里河", "qīlǐhé"),
+                ("西站十字", "xīzhàn shízì"),
+                ("建兰", "jiànlán"),
+                ("天水中路", "tiānshuǐ zhōnglù"),
+                ("中川机场", "zhōngchuān jīchǎng"),
             }.issubset(zh)
         )
         self.assertTrue(
             {
-                ("白塔山", "はくとうざん"),
-                ("中山橋", "ちゅうざんきょう"),
-                ("蘭山", "らんざん"),
-                ("三台閣", "さんたいかく"),
-                ("五泉山", "ごせんざん"),
-                ("摸子", "もーず"),
+                ("正寧路", "せいねいろ"),
+                ("永昌南路", "えいしょうなんろ"),
+                ("七里河", "しちりが"),
+                ("天水中路", "てんすいちゅうろ"),
+                ("中川空港", "ちゅうせんくうこう"),
+                ("深夜着", "しんやちゃく"),
+                ("一泊", "いっぱく"),
+                ("二十四時間", "にじゅうよじかん"),
+                ("二〇二四年", "にせんにじゅうよねん"),
+                (
+                    "二〇二六年八月二十二日",
+                    "にせんにじゅうろくねんはちがつにじゅうににち",
+                ),
             }.issubset(ja)
         )
 
     def test_assets_citations_and_evidence_are_closed(self) -> None:
         expected_assets = {
-            "asset-lanzhou-white-pagoda-hill",
-            "asset-lanzhou-height-choice-map",
-            "asset-lanzhou-lanshan-santai-view",
-            "asset-lanzhou-wuquan-heritage-park",
+            "asset-lanzhou-central-side-street-arrival",
+            "asset-lanzhou-stay-segment-map",
+            "asset-lanzhou-west-station-arrival",
+            "asset-lanzhou-railway-station-arrival",
+            "asset-lanzhou-airport-buffer-night",
         }
         expected_citations = {
-            "src-lanzhou-baita-current-2025",
-            "src-lanzhou-baita-gazetteer",
-            "src-lanzhou-bridge-hill-map-data",
+            "src-china-foreign-lodging-circular-2024",
+            "src-china-hotel-registration-2025",
+            "src-china-nia-registration-2026",
+            "src-lanzhou-airport-connections-2026",
+            "src-lanzhou-airport-t3-2025",
+            "src-lanzhou-arrival-map-data",
             "src-lanzhou-geography-2026",
-            "src-lanzhou-height-choice-map-data",
-            "src-lanzhou-heights-access-2026",
-            "src-lanzhou-heights-geography-2025",
-            "src-lanzhou-lanshan-holiday-bus-2026",
-            "src-lanzhou-lanshan-record-2025",
-            "src-lanzhou-wuquan-flood-2026",
-            "src-lanzhou-wuquan-heritage-2021",
-            "src-lanzhou-wuquan-heritage-2023",
+            "src-lanzhou-hiex-jianlan-2026",
+            "src-lanzhou-hilton-city-center-2026",
+            "src-lanzhou-ibis-airport-2026",
+            "src-lanzhou-mercure-zhengning-2026",
+            "src-lanzhou-metro-hubs-2026",
+            "src-lanzhou-metro-service",
+            "src-lanzhou-museum-visit-2026",
+            "src-lanzhou-stay-segment-map-data",
+            "src-lanzhou-tourism-2026",
         }
         used_assets = {
             asset_id
@@ -157,9 +167,9 @@ class LanzhouChapterSevenTests(unittest.TestCase):
                 if path.is_file():
                     self.assertEqual(sha256(path), evidence["sha256"])
 
-    def test_height_map_rebuilds_at_b6_print_resolution(self) -> None:
+    def test_stay_map_rebuilds_at_b6_print_resolution(self) -> None:
         subprocess.run(
-            [sys.executable, "scripts/build_lanzhou_height_choice_map.py"],
+            [sys.executable, "scripts/build_lanzhou_stay_segment_map.py"],
             cwd=ROOT,
             check=True,
             stdout=subprocess.DEVNULL,
@@ -174,23 +184,43 @@ class LanzhouChapterSevenTests(unittest.TestCase):
             self.assertTrue(path.is_file())
             self.assertEqual(sha256(path), record["sha256"])
 
-    def test_choice_map_and_figure_boundaries_are_explicit(self) -> None:
+    def test_segment_and_figure_boundaries_are_explicit(self) -> None:
         map_config = json.loads(MAP_CONFIG.read_text(encoding="utf-8"))
         figure_config = json.loads(FIGURE_CONFIG.read_text(encoding="utf-8"))
         self.assertEqual(
-            [choice["id"] for choice in map_config["choices"]],
-            ["white-pagoda-hill", "lanshan-santai", "wuquan-mountain-park"],
+            [segment["id"] for segment in map_config["segments"]],
+            ["west", "centre", "east", "airport"],
         )
-        self.assertEqual(
-            [check["number"] for check in map_config["checks"]], [1, 2, 3, 4]
+        self.assertIn("ARRIVAL POINT", map_config["rule"]["en"])
+        self.assertTrue(
+            any("no transfer line" in item for item in map_config["generalizations"])
         )
         self.assertTrue(
-            any("No path is drawn" in item for item in map_config["generalizations"])
+            any("No named property" in item for item in map_config["generalizations"])
         )
         self.assertEqual(len(figure_config["figures"]), 2)
         self.assertTrue(
             all(item["visual_qa"]["approved"] for item in figure_config["figures"])
         )
+
+    def test_named_property_examples_are_dated_not_ranked(self) -> None:
+        citations = {item["id"]: item for item in self.book["citations"]}
+        operator_ids = {
+            "src-lanzhou-mercure-zhengning-2026",
+            "src-lanzhou-hiex-jianlan-2026",
+            "src-lanzhou-hilton-city-center-2026",
+            "src-lanzhou-ibis-airport-2026",
+        }
+        for citation_id in operator_ids:
+            citation = citations[citation_id]
+            self.assertEqual(citation["source_type"], "official-web")
+            self.assertEqual(citation["accessed_at"], "2026-08-22")
+            locator = citation["locator"].lower()
+            self.assertIn("rechecked 2026-08-22", locator)
+            boundaries = " ".join(citation["supports"]).lower()
+            self.assertTrue(
+                any(word in boundaries for word in ("boundary", "need to", "direct"))
+            )
 
 
 if __name__ == "__main__":

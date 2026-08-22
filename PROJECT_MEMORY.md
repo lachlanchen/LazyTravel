@@ -110,13 +110,13 @@ train and the mountain exit already reached, then add at most one local stop.
 Odawara, Mishima, and Gotemba are alternatives, not a three-town extension.
 The bag and reserved train remain fixed; the local stop is removed first.
 
-Lanzhou has a locked 11-chapter structure. Chapters 1-7, through **Choose One
-Height**, are accepted with `65` aligned blocks, `7,340` reviewed Chinese
-reading tokens, `9,448` reviewed Japanese reading tokens, 63 chapter-source
-entries, fifteen four-guide figure placements, and nine code-built maps. The
-same JSON produced a clean `118`-page B6 pocket and responsive series page with
-`10,138` rendered ruby nodes. The pocket SHA-256 is
-`5e7ad3ba58d9e2eae36fc430f79bb151755f4aaba18eb659fd77f866d3cabcd3`, and the
+Lanzhou has a locked 11-chapter structure. Chapters 1-8, through **Where to
+Stay**, are accepted with `75` aligned blocks, `8,809` reviewed Chinese reading
+tokens, `11,241` reviewed Japanese reading tokens, 79 chapter-source entries,
+nineteen four-guide figure placements, and ten code-built maps. The same JSON
+produced a clean `141`-page B6 pocket and responsive series page with `12,161`
+rendered ruby nodes. The pocket SHA-256 is
+`57245b223cd477534f824a6ff276ff0f5dd05cb53a14262eb3acd06a0da4126a`, and the
 Nutstore copy matches it. Chapter 5 established a museum method: verify current
 display first, read one object by form, label, date/type, and findspot, and keep
 collection city separate from archaeological origin. Chapter 6 established a
@@ -124,8 +124,11 @@ food-day method: begin with one morning bowl, return to the attraction route at
 midday, choose one afternoon branch, verify the actual serving, and stop before
 food becomes a checklist. Chapter 7 established a city-height method: choose
 one purpose, confirm ascent and descent together, and keep a complete
-ground-level fallback. Chapter 8, lodging by route segment, is the sole active
-gate.
+ground-level fallback. Chapter 8 established a lodging method: write the
+arrival-to-door route and the door-to-first-stop route before comparing a
+property, treat airport lodging as a one-night buffer, and verify the complete
+booking and accessibility chain directly. Chapter 9, realistic one- to
+three-day plans, is the sole active gate.
 
 The book's main line remains the traveler's decisions in a long river valley:
 orientation, arrival gate, crossing history, one central Yellow River Iron

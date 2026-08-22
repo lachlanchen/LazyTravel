@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-airport-buffer-night",
+  "created_at": "2026-08-22",
+  "method": "generated-generalized-airport-buffer-figure-with-targeted-cleanup",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2; one targeted built-in image edit for trademark and pseudo-lettering removal",
+  "task_id": "exec-38d605ac-373b-4579-bec2-6c3b6c0abedf",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and clean articulated-body reference"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-airport-buffer-night.prompt.md",
+    "sha256": "6d618ba2fbb87187de050541d300efcff77dc57ce058524f97621f3b2f5e2676"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch08-airport-buffer-v1/task_manifest.json",
+      "sha256": "92b8f74404666111d3203d8c026a96de0c95e81beb2c33076a90cb74ac596e42",
+      "bytes": 2590,
+      "role": "Accepted scene and cast base, but not distributable because a real vehicle badge and terminal pseudo-lettering remained"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch08-airport-buffer-v2/task_manifest.json",
+      "sha256": "c56db146731e7d8610988f16f8596e521e5112d5d6a42f960182c56f1217b04b",
+      "bytes": 2946,
+      "role": "Rejected provider cleanup because generation ended in output moderation"
+    },
+    {
+      "path": "build/research/lanzhou/imagegen/ch08-airport-buffer-final/task_manifest.json",
+      "sha256": "aec8c12d940775f18ad269b37f5ceb0ce59ebe250fac085b7abc11dc365acde1",
+      "bytes": 600,
+      "role": "Selected targeted correction with the vehicle and terminal unbranded, exact four recurring guides retained, and no additional person"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/imagegen/ch08-airport-buffer-final/lanzhou-airport-buffer-night-final.png",
+    "sha256": "6739a8edbe5dc2b08bbed793345e525599dcf641f1de6f0ca7b3e12662b917bd",
+    "bytes": 2065017,
+    "width": 1679,
+    "height": 937
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-airport-buffer-night.jpg",
+    "sha256": "573a1372e7145d540f277e323dd486ed8a1b8e97de812c45fcfebc9a4b88d100",
+    "bytes": 1262339,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-airport-buffer-night-web.jpg",
+      "sha256": "6c7530adec945e8ebfba79cf78c5bb2714adae832fd9d1a54ad126df50eda491",
+      "bytes": 403862,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a generalized airport-adjacent overnight plate, not a documentary photograph of Lanzhou Zhongchuan T3, a named hotel, or a real shuttle.",
+    "The terminal silhouette, hotel entrance, vehicle, road, dawn lighting, and luggage arrangement are illustrative and cannot identify a pickup point.",
+    "The empty shuttle does not establish a driver's presence, transfer frequency, reservation procedure, luggage capacity, accessibility, or earliest airport departure.",
+    "No brand, plate, terminal lettering, or hotel sign in the image may be used as booking or wayfinding evidence."
+  ],
+  "reader_caption_policy": "Describe one airport-area night as a sleep buffer for a late landing or early flight; direct the reader to confirm T3 pickup and timing without naming the illustrated building or vehicle.",
+  "rights": "Original LazyTravel composition; external character imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "airport_buffer_decision_legible": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "notes": "Original-size, compiled B6, and 390 px responsive inspections pass after the targeted badge and pseudo-lettering cleanup. Exactly four recurring guides, the empty unbranded shuttle, luggage, and the sleep-buffer decision remain clear without an extra person or false pickup cue.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch08-final-pages/page-126.png",
+        "sha256": "02450c2c1d7f0855f295175cdbd8062d42399f688efc12113e6999a9ed99fd4c",
+        "bytes": 618091,
+        "physical_page": 126
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch08-release/mobile-390-figure-04.png",
+        "sha256": "b18a1df0b546a22b619e109b529854314d1304ce920623acf3193aa549467fb2",
+        "bytes": 167408,
+        "width": 390,
+        "height": 580,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

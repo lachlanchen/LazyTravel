@@ -195,14 +195,14 @@ hash-synced to Nutstore. GitHub Pages run `32418706768` verified every deployed
 Xi'an and Hakone file against its canonical JSON and manifest. Hakone is
 complete; Lanzhou at `china/cities/lanzhou` is the only active destination.
 
-Lanzhou Chapters 1-7, through **Choose One Height: White Pagoda Hill, Lanshan,
-or Wuquan Mountain**, are accepted milestones. Their `65` aligned blocks carry
-`7,340` reviewed Chinese reading tokens, `9,448` reviewed Japanese reading
-tokens, 63 chapter-source entries, fifteen four-guide figure placements, and
-nine code-built maps. The reproducible `118`-page B6 pocket has SHA-256
-`5e7ad3ba58d9e2eae36fc430f79bb151755f4aaba18eb659fd77f866d3cabcd3` and is
+Lanzhou Chapters 1-8, through **Where to Stay: Choose the Route Segment Before
+the Hotel**, are accepted milestones. Their `75` aligned blocks carry `8,809`
+reviewed Chinese reading tokens, `11,241` reviewed Japanese reading tokens, 79
+chapter-source entries, nineteen four-guide figure placements, and ten
+code-built maps. The reproducible `141`-page B6 pocket has SHA-256
+`57245b223cd477534f824a6ff276ff0f5dd05cb53a14262eb3acd06a0da4126a` and is
 hash-synced to Nutstore. The synchronized series build exposes the same content
-at `china/cities/lanzhou/` and passes desktop, `390 px`, `10,138`-ruby,
-citation, figure, and independently pannable-map QA. Chapter 8, **Where to
-Stay: Choose the Route Segment Before the Hotel**, is now the sole production
-gate; Lanzhou as a whole is not complete.
+at `china/cities/lanzhou/` and passes desktop, `390 px`, `12,161`-ruby,
+citation, figure, and independently pannable-map QA. Chapter 9, **One, Two, or
+Three Days: Leave Room in the Valley**, is now the sole production gate;
+Lanzhou as a whole is not complete.

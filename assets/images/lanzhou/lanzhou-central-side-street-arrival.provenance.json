@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-central-side-street-arrival",
+  "created_at": "2026-08-22",
+  "method": "generated-generalized-arrival-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2; one targeted built-in image edit for trademark and pseudo-lettering removal",
+  "task_id": "16-c7b55962-ca54-405e-8bbd-7841c3193604",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and clean articulated-body reference"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-central-side-street-arrival.prompt.md",
+    "sha256": "b27221c7bf50fe47bea9107c6f9bb15fd30e7a16df2bf004518d45f29c737028"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch08-central-side-street-v1/task_manifest.json",
+      "sha256": "d73e1e32d330ff0c99e8800e7fcbca60745acecf22bfe1cfe930f7c96d08ab69",
+      "bytes": 2618,
+      "role": "Rejected because anonymous pedestrians and vendors remained in the scene"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch08-central-side-street-v2/task_manifest.json",
+      "sha256": "42541f0af02fb05a8f0f6d35f7b8e7aa398913df9b903fa49af2af8e54b331cd",
+      "bytes": 2618,
+      "role": "Rejected because generated shop lettering and logo-like marks remained on the street, robot, and luggage"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch08-central-side-street-v3/task_manifest.json",
+      "sha256": "0230b8326f989c1b88a5515bdce7c620cf2a5c9862147121c43e19dd2f9592ac",
+      "bytes": 3064,
+      "role": "Selected full-resolution composition with a quiet side-street entrance, exact four-guide cast, blank signage, and no anonymous visitors"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch08-central-side-street-v3/lanzhou-central-side-street-arrival-v3.png",
+    "sha256": "9bef3f0a349f9e62c0fe958f6b4270f223a510217ec50c1b73c05c0face12f74",
+    "bytes": 13856008,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-central-side-street-arrival.jpg",
+    "sha256": "9da34f425338245deeb620f656f671e97a7e7b15b7a174ae4d6cb752e4873419",
+    "bytes": 1673919,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-central-side-street-arrival-web.jpg",
+      "sha256": "ac711538e4fabd51bcbaba02bccdca7a85fb71583ba822fe2cbbea7201f25995",
+      "bytes": 545302,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a generalized present-day central-Lanzhou arrival plate, not a documentary photograph of a named hotel, street entrance, or booking.",
+    "The side-street entrance, shopfronts, hill, lighting, luggage, and exact spatial arrangement are illustrative and cannot identify an address or route.",
+    "The image does not establish room orientation, quietness, safety, accessibility, luggage storage, opening hours, or any live hotel condition.",
+    "Blank shop panels intentionally prevent generated lettering from being read as a real business name or wayfinding instruction."
+  ],
+  "reader_caption_policy": "Describe the arrival check from main street to side entrance and the need to verify the night door and room side; do not name a property, mention generation, or imply documentary evidence.",
+  "rights": "Original LazyTravel composition; external character imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "arrival_decision_legible": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "notes": "Original-size, compiled B6, and 390 px responsive inspections pass. The side-street entrance remains the subject, exactly four recurring guides stay distinct, and no anonymous visitor, usable lettering, crop failure, or false hotel identity appears.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch08-final-pages/page-111.png",
+        "sha256": "ee5e5418dee3caecf132780f69702d5b591e9b40abd4621d05ce8187c04ec6b0",
+        "bytes": 659635,
+        "physical_page": 111
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch08-release/mobile-390-figure.png",
+        "sha256": "1927e8f4599c52b8e48768c8c825c5d8271be15c55a32b4c74b813a56db8ee0d",
+        "bytes": 165790,
+        "width": 390,
+        "height": 534,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

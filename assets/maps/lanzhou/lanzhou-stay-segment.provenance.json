@@ -1,0 +1,84 @@
+{
+  "asset_id": "asset-lanzhou-stay-segment-map",
+  "config": {
+    "bytes": 5910,
+    "path": "data/maps/lanzhou/lanzhou-stay-segment.config.json",
+    "sha256": "7762929b0f67702bad5ccecface11d15b15d61992dfb0a5c0bf72b26649a2a71"
+  },
+  "created_at": "2026-08-22",
+  "generalizations": [
+    "This is an original route-segment schematic, not navigation or a hotel directory.",
+    "The west, centre, and east spans are editorial bands rather than administrative district boundaries.",
+    "The airport panel is not to scale and no transfer line, mode, duration, fare, or operating window is encoded.",
+    "No named property is plotted; exact address, entrance, room, booking terms, document handling, and accessibility require direct verification.",
+    "The four alternatives are mutually exclusive for one night unless the traveler deliberately changes accommodation between nights."
+  ],
+  "generator": "scripts/build_lanzhou_stay_segment_map.py",
+  "method": "deterministic-matplotlib-route-segment-schematic",
+  "outputs": {
+    "pdf": {
+      "bytes": 72557,
+      "path": "assets/maps/lanzhou/lanzhou-stay-segment.pdf",
+      "sha256": "49e32f07cd4cf80ef730f9f6200b9a4be5947318c5382f9da194465708d656f1"
+    },
+    "png": {
+      "bytes": 413020,
+      "path": "assets/maps/lanzhou/lanzhou-stay-segment.png",
+      "sha256": "ea678ae375a137295d12a4026404f83e54ac5276d7c64701c9327145a78285a8"
+    },
+    "svg": {
+      "bytes": 25532,
+      "path": "assets/maps/lanzhou/lanzhou-stay-segment.svg",
+      "sha256": "edf7fdbad833eaf98015ecb1dd2abcedd2de8e04b6d9d9a0aaaaad34d0d3369c"
+    }
+  },
+  "rights": "Original LazyTravel diagram; no third-party map tiles or hotel imagery redistributed.",
+  "schema_version": 1,
+  "sources": {
+    "accepted_arrival_map": {
+      "path": "data/maps/lanzhou/lanzhou-arrival-gates.config.json",
+      "role": "accepted west-centre-east segmentation and separate airport relationship",
+      "sha256": "5847d5292159319badb629b3d5a9ba1f9893b87360bc1db81c82c5b723925be1"
+    },
+    "direct_property_pages": {
+      "checked_at": "2026-08-22",
+      "role": "segment examples only; no hotel is plotted or ranked",
+      "urls": [
+        "https://all.accor.com/hotel/B7D6/index.en.shtml",
+        "https://www.ihg.com/holidayinnexpress/hotels/us/en/lanzhou/lhwlj/hoteldetail",
+        "https://www.hilton.com/en/hotels/lhwtrhi-hilton-lanzhou-city-center/",
+        "https://all.accor.com/hotel/B496/index.zh.shtml"
+      ]
+    },
+    "official_geography": {
+      "checked_at": "2026-08-22",
+      "role": "current institutional lead for the central river route and visitor anchors",
+      "url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html"
+    }
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch08-final-pages/page-113.png",
+        "sha256": "b173f55cd5f06aa576cea4c95e5c71c7b55500cce070f54a494c57c761b628b4"
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch08-release/mobile-390-map.png",
+        "sha256": "54d861d7b8b42e2891677bd6c81f50222d9ef0cf766731679999cc3210556e22"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch08-release/qa.json",
+        "sha256": "5096e43ad94d52c0eaf9441cb2c5539df12aa99d518006a7815695ba3bc39f9f"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve the west, centre, east, and separate airport choices without a false airport-to-river arrow or label collision.",
+      "At a 390 px viewport the 760 px map stage pans independently, retaining large trilingual labels, the no-hotel-pin boundary, and the arrival-point to first-stop rule."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-22"
+  }
+}

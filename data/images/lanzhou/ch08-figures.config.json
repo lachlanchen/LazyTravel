@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-22",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2; one targeted built-in image edit for trademark and pseudo-lettering removal",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and clean articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-lanzhou-central-side-street-arrival",
+      "stem": "lanzhou-central-side-street-arrival",
+      "method": "generated-generalized-arrival-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch08-central-side-street-v3/lanzhou-central-side-street-arrival-v3.png",
+      "prompt": "data/images/lanzhou/lanzhou-central-side-street-arrival.prompt.md",
+      "official_references": [],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch08-central-side-street-v1/task_manifest.json",
+          "role": "Rejected because anonymous pedestrians and vendors remained in the scene"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch08-central-side-street-v2/task_manifest.json",
+          "role": "Rejected because generated shop lettering and logo-like marks remained on the street, robot, and luggage"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch08-central-side-street-v3/task_manifest.json",
+          "role": "Selected full-resolution composition with a quiet side-street entrance, exact four-guide cast, blank signage, and no anonymous visitors"
+        }
+      ],
+      "factual_limits": [
+        "The scene is a generalized present-day central-Lanzhou arrival plate, not a documentary photograph of a named hotel, street entrance, or booking.",
+        "The side-street entrance, shopfronts, hill, lighting, luggage, and exact spatial arrangement are illustrative and cannot identify an address or route.",
+        "The image does not establish room orientation, quietness, safety, accessibility, luggage storage, opening hours, or any live hotel condition.",
+        "Blank shop panels intentionally prevent generated lettering from being read as a real business name or wayfinding instruction."
+      ],
+      "reader_caption_policy": "Describe the arrival check from main street to side entrance and the need to verify the night door and room side; do not name a property, mention generation, or imply documentary evidence.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "arrival_decision_legible": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-22",
+        "notes": "Original-size, compiled B6, and 390 px responsive inspections pass. The side-street entrance remains the subject, exactly four recurring guides stay distinct, and no anonymous visitor, usable lettering, crop failure, or false hotel identity appears."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch08-final-pages/page-111.png",
+        "physical_page": 111,
+        "b6_sha256": "ee5e5418dee3caecf132780f69702d5b591e9b40abd4621d05ce8187c04ec6b0",
+        "mobile_path": "build/qa/website/lanzhou-ch08-release/mobile-390-figure.png",
+        "mobile_sha256": "1927e8f4599c52b8e48768c8c825c5d8271be15c55a32b4c74b813a56db8ee0d",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-lanzhou-airport-buffer-night",
+      "stem": "lanzhou-airport-buffer-night",
+      "method": "generated-generalized-airport-buffer-figure-with-targeted-cleanup",
+      "selected_raw": "build/research/lanzhou/imagegen/ch08-airport-buffer-final/lanzhou-airport-buffer-night-final.png",
+      "prompt": "data/images/lanzhou/lanzhou-airport-buffer-night.prompt.md",
+      "official_references": [],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch08-airport-buffer-v1/task_manifest.json",
+          "role": "Accepted scene and cast base, but not distributable because a real vehicle badge and terminal pseudo-lettering remained"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch08-airport-buffer-v2/task_manifest.json",
+          "role": "Rejected provider cleanup because generation ended in output moderation"
+        },
+        {
+          "path": "build/research/lanzhou/imagegen/ch08-airport-buffer-final/task_manifest.json",
+          "role": "Selected targeted correction with the vehicle and terminal unbranded, exact four recurring guides retained, and no additional person"
+        }
+      ],
+      "factual_limits": [
+        "The scene is a generalized airport-adjacent overnight plate, not a documentary photograph of Lanzhou Zhongchuan T3, a named hotel, or a real shuttle.",
+        "The terminal silhouette, hotel entrance, vehicle, road, dawn lighting, and luggage arrangement are illustrative and cannot identify a pickup point.",
+        "The empty shuttle does not establish a driver's presence, transfer frequency, reservation procedure, luggage capacity, accessibility, or earliest airport departure.",
+        "No brand, plate, terminal lettering, or hotel sign in the image may be used as booking or wayfinding evidence."
+      ],
+      "reader_caption_policy": "Describe one airport-area night as a sleep buffer for a late landing or early flight; direct the reader to confirm T3 pickup and timing without naming the illustrated building or vehicle.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "airport_buffer_decision_legible": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-22",
+        "notes": "Original-size, compiled B6, and 390 px responsive inspections pass after the targeted badge and pseudo-lettering cleanup. Exactly four recurring guides, the empty unbranded shuttle, luggage, and the sleep-buffer decision remain clear without an extra person or false pickup cue."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch08-final-pages/page-126.png",
+        "physical_page": 126,
+        "b6_sha256": "02450c2c1d7f0855f295175cdbd8062d42399f688efc12113e6999a9ed99fd4c",
+        "mobile_path": "build/qa/website/lanzhou-ch08-release/mobile-390-figure-04.png",
+        "mobile_sha256": "b18a1df0b546a22b619e109b529854314d1304ce920623acf3193aa549467fb2",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ]
+}
