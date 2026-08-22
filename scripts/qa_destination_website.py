@@ -32,26 +32,40 @@ def check_ruby_toggle(page: Page, label: str) -> None:
     page.locator(".ruby-switch").click()
 
 
-def check_map_controls(page: Page, label: str, *, require_scroll: bool) -> dict[str, int]:
-    viewport = page.locator(".map-viewport").first
-    stage = page.locator(".map-stage").first
+def check_map_controls(
+    page: Page, label: str, *, require_scroll: bool, map_index: int = 0
+) -> dict[str, int]:
+    figure = page.locator(".map-figure").nth(map_index)
+    viewport = figure.locator(".map-viewport")
+    stage = figure.locator(".map-stage")
     dimensions = viewport.evaluate(
-        "node => ({client: node.clientWidth, scroll: node.scrollWidth})"
+        "node => ({client: node.clientWidth, scroll: node.scrollWidth, "
+        "client_height: node.clientHeight, scroll_height: node.scrollHeight})"
     )
     if require_scroll and dimensions["scroll"] <= dimensions["client"]:
         raise RuntimeError(f"{label} map lacks a readable horizontal viewport: {dimensions}")
+    if dimensions["scroll_height"] > dimensions["client_height"] + 2:
+        raise RuntimeError(f"{label} map is vertically clipped: {dimensions}")
     initial = stage.evaluate("node => node.getBoundingClientRect().width")
-    page.get_by_role("button", name="Zoom in").click()
+    figure.get_by_role("button", name="Zoom in").click()
     zoomed = stage.evaluate("node => node.getBoundingClientRect().width")
     if zoomed <= initial:
         raise RuntimeError(f"{label} map zoom did not enlarge the map")
-    page.get_by_role("button", name="Reset map").click()
+    figure.get_by_role("button", name="Reset map").click()
     return dimensions
 
 
-def screenshot_map_positions(page: Page, output: Path, stem: str) -> list[int]:
-    viewport = page.locator(".map-viewport").first
-    figure = page.locator(".map-figure").first
+def map_capture_stem(stem: str, map_index: int, map_count: int) -> str:
+    if map_count == 1:
+        return f"{stem}-map"
+    return f"{stem}-map-{map_index + 1:02d}"
+
+
+def screenshot_map_positions(
+    page: Page, output: Path, stem: str, *, map_index: int, map_count: int
+) -> list[int]:
+    figure = page.locator(".map-figure").nth(map_index)
+    viewport = figure.locator(".map-viewport")
     dimensions = viewport.evaluate(
         "node => ({client: node.clientWidth, scroll: node.scrollWidth})"
     )
@@ -63,7 +77,7 @@ def screenshot_map_positions(page: Page, output: Path, stem: str) -> list[int]:
             position,
         )
         page.wait_for_timeout(80)
-        screenshot_full_element(page, figure, output / f"{stem}-map-{name}.png")
+        screenshot_full_element(page, figure, output / f"{stem}-{name}.png")
     viewport.evaluate("node => node.scrollTo({top: 0, left: 0, behavior: 'auto'})")
     return positions
 
@@ -140,10 +154,28 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 if index == 1:
                     check_ruby_toggle(desktop, "desktop")
                 if counts[chapter_id]["maps"]:
-                    report["viewports"][f"desktop_{chapter_id}"]["map_viewport"] = (
-                        check_map_controls(
-                            desktop, f"desktop {chapter_id}", require_scroll=False
+                    map_count = counts[chapter_id]["maps"]
+                    map_viewports = []
+                    for map_index in range(map_count):
+                        capture_stem = map_capture_stem(
+                            f"desktop-{chapter['order']:02d}", map_index, map_count
                         )
+                        map_viewports.append(
+                            check_map_controls(
+                                desktop,
+                                f"desktop {chapter_id} map {map_index + 1}",
+                                require_scroll=False,
+                                map_index=map_index,
+                            )
+                        )
+                        screenshot_full_element(
+                            desktop,
+                            desktop.locator(".map-figure").nth(map_index),
+                            output / f"{capture_stem}.png",
+                        )
+                    map_key = "map_viewport" if map_count == 1 else "map_viewports"
+                    report["viewports"][f"desktop_{chapter_id}"][map_key] = (
+                        map_viewports[0] if map_count == 1 else map_viewports
                     )
                 reset_capture_position(desktop)
                 desktop.screenshot(
@@ -194,21 +226,34 @@ def run_qa(url: str, book_path: Path, output: Path) -> dict[str, Any]:
                 if index == 1:
                     check_ruby_toggle(mobile, "mobile")
                 if counts[chapter_id]["maps"]:
-                    map_viewport = check_map_controls(
-                        mobile, f"mobile {chapter_id}", require_scroll=True
-                    )
-                    map_viewport["pan_offsets_css_px"] = screenshot_map_positions(
-                        mobile,
-                        output,
-                        f"mobile-{chapter['order']:02d}",
-                    )
-                    report["viewports"][f"mobile_{chapter_id}"]["map_viewport"] = (
-                        map_viewport
-                    )
-                    screenshot_full_element(
-                        mobile,
-                        mobile.locator(".map-figure").first,
-                        output / f"mobile-{chapter['order']:02d}-map.png",
+                    map_count = counts[chapter_id]["maps"]
+                    map_viewports = []
+                    for map_index in range(map_count):
+                        capture_stem = map_capture_stem(
+                            f"mobile-{chapter['order']:02d}", map_index, map_count
+                        )
+                        map_viewport = check_map_controls(
+                            mobile,
+                            f"mobile {chapter_id} map {map_index + 1}",
+                            require_scroll=True,
+                            map_index=map_index,
+                        )
+                        map_viewport["pan_offsets_css_px"] = screenshot_map_positions(
+                            mobile,
+                            output,
+                            capture_stem,
+                            map_index=map_index,
+                            map_count=map_count,
+                        )
+                        map_viewports.append(map_viewport)
+                        screenshot_full_element(
+                            mobile,
+                            mobile.locator(".map-figure").nth(map_index),
+                            output / f"{capture_stem}.png",
+                        )
+                    map_key = "map_viewport" if map_count == 1 else "map_viewports"
+                    report["viewports"][f"mobile_{chapter_id}"][map_key] = (
+                        map_viewports[0] if map_count == 1 else map_viewports
                     )
                 screenshot_all_figures(
                     mobile, output, f"mobile-{chapter['order']:02d}"

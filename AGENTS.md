@@ -11,9 +11,9 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   published with all 11 chapters and a reproducible B6 pocket book.
 - Lanzhou at `china/cities/lanzhou` is the only next production destination.
   Its factual spine and exactly 11 chapters are locked in
-  `books/china/cities/lanzhou/editorial/outline.md`. Chapters 1 through 4,
-  through Cross One Bridge, Read Both Banks, are accepted. Chapter 5, Read One
-  Route Through Gansu Provincial Museum, is the only active production gate;
+  `books/china/cities/lanzhou/editorial/outline.md`. Chapters 1 through 5,
+  through Read One Route Through Gansu Provincial Museum, are accepted. Chapter
+  6, Eat by Lanzhou's Clock, is the only active production gate;
   do not reopen Hakone or an accepted Lanzhou chapter without a demonstrated
   failure, and do not start another destination in parallel.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve

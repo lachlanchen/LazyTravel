@@ -23,8 +23,11 @@ class LanzhouChapterThreeTest(unittest.TestCase):
         self.assertEqual(self.chapters[3]["status"], "final")
         self.assertEqual(len(self.chapters[3]["blocks"]), 9)
         self.assertEqual(self.chapters[4]["id"], "ch05-museum-route")
-        self.assertEqual(self.chapters[4]["status"], "researching")
-        self.assertTrue(all(not chapter["blocks"] for chapter in self.chapters[4:]))
+        self.assertEqual(self.chapters[4]["status"], "final")
+        self.assertEqual(len(self.chapters[4]["blocks"]), 10)
+        self.assertEqual(self.chapters[5]["id"], "ch06-food-clock")
+        self.assertEqual(self.chapters[5]["status"], "researching")
+        self.assertTrue(all(not chapter["blocks"] for chapter in self.chapters[5:]))
 
     def test_alignment_review_and_readings_are_closed(self) -> None:
         for block in self.chapter["blocks"]:

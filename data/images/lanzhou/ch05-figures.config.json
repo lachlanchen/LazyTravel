@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-22",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-lanzhou-gansu-provincial-museum-exterior",
+      "stem": "lanzhou-gansu-provincial-museum-exterior",
+      "method": "generated-location-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch05-museum-exterior-v1/lanzhou-gansu-provincial-museum-exterior-v1.png",
+      "prompt": "data/images/lanzhou/lanzhou-museum-exterior.prompt.md",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch05/visual-references/museum-current-2026-01.png",
+          "reference_url": "https://www.gswbj.gov.cn/a/2026/07/28/29029.html",
+          "role": "Unredistributed current official reference for the pale-stone frontage, central entrance, vertical window bays, forecourt, trees, and flag"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch05-museum-exterior-v1/task_manifest.json",
+          "role": "Selected first composition with a building-dominant current frontage, exact four-guide cast, and empty forecourt"
+        }
+      ],
+      "factual_limits": [
+        "The scene is a representative recognition composition, not a documentary photograph or an exact camera position.",
+        "The official reference establishes the current facade, entrance, window rhythm, forecourt, trees, and flag only.",
+        "The figure does not establish current queues, opening status, entrance procedure, weather, accessibility, or the wording of any sign."
+      ],
+      "reader_caption_policy": "Use the facade as an arrival landmark and direct the reader to verify open galleries inside; do not mention generation or imply live operational evidence.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "destination_dominant": "pass",
+        "current_facade_recognizable": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-22",
+        "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. The current facade dominates, exactly four guides remain distinct, and the small sign surfaces carry no text readable at intended size."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch05-final-pages/page-61.png",
+        "physical_page": 61,
+        "mobile_path": "build/qa/website/lanzhou-ch05-release/mobile-05-figure.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-lanzhou-museum-pottery-gallery",
+      "stem": "lanzhou-museum-pottery-gallery",
+      "method": "generated-editorial-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch05-museum-pottery-v1/lanzhou-museum-pottery-gallery-v1.png",
+      "prompt": "data/images/lanzhou/lanzhou-museum-pottery-gallery.prompt.md",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch05/visual-references/gallery-painted-pottery-official.jpg",
+          "reference_url": "https://www.gansumuseum.com/regularExhibitions?nav=2-0",
+          "role": "Unredistributed official gallery reference for restrained painted-pottery exhibition context"
+        },
+        {
+          "path": "build/research/lanzhou/ch05/visual-references/object-human-head-vessel-official.png",
+          "reference_url": "https://www.gansumuseum.com/collectionDetail/223",
+          "role": "Unredistributed official catalogue reference for the human-head-mouth vessel's form, earthen color, sculpted head, and black painted bands"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch05-museum-pottery-v1/task_manifest.json",
+          "role": "Selected first composition with a representative gallery, close object-form match, exact four-guide cast, and no anonymous visitors"
+        }
+      ],
+      "factual_limits": [
+        "The room, case, scale, and placement form a representative editorial composition, not a documentary record of the current floor plan.",
+        "The official catalogue reference constrains the featured vessel's general form and painted pattern; collection-catalogue presence does not guarantee display on the reader's visit.",
+        "The figure does not establish object dimensions, case location, current lighting, nearby objects, or gallery availability."
+      ],
+      "reader_caption_policy": "Use the figure to teach the order form-pattern-type-or-date-findspot; do not imply a guaranteed display position or mention generation.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "object_and_gallery_dominant": "pass",
+        "featured_vessel_reference_match": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "no_mixed_era_tableau": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-22",
+        "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. The central vessel retains the reference form and pattern, the four guides remain distinct, and there are no extra visitors, labels, or mixed-era objects."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch05-final-pages/page-67.png",
+        "physical_page": 67,
+        "mobile_path": "build/qa/website/lanzhou-ch05-release/mobile-05-figure-02.png",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ]
+}

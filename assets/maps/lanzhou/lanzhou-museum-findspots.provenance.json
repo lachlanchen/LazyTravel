@@ -1,0 +1,95 @@
+{
+  "asset_id": "asset-lanzhou-museum-findspots-map",
+  "created_at": "2026-08-22",
+  "generalizations": [
+    "The map is an original provincial orientation diagram derived from a simplified OpenStreetMap boundary under ODbL.",
+    "Qin'an, Gangu, Jingchuan, Wuwei, Jiayuguan, and Dunhuang are county or city anchors, not excavation coordinates.",
+    "Point positions do not encode road or rail routes, travel time, archaeological-site access, or a recommended itinerary.",
+    "The museum point marks the display and planning city; it is not an object findspot.",
+    "Named objects remain conditional on current display status."
+  ],
+  "method": "deterministic-map-render",
+  "outputs": {
+    "pdf": {
+      "bytes": 68303,
+      "path": "assets/maps/lanzhou/lanzhou-museum-findspots.pdf",
+      "sha256": "670d3371569f39bbf53b651f4added3f7e6de865cc7d8ed1fe6a9f4ac0131c05"
+    },
+    "png": {
+      "bytes": 417295,
+      "path": "assets/maps/lanzhou/lanzhou-museum-findspots.png",
+      "sha256": "367b7589f892b23a81e8aaa7d93073e77470c69e82ea68b549aed32994d33e5d"
+    },
+    "svg": {
+      "bytes": 39419,
+      "path": "assets/maps/lanzhou/lanzhou-museum-findspots.svg",
+      "sha256": "0f14d2618aa57eca5ab992f93ca70f6cd67f9bfe1bc1b430ee9c777f7d531190"
+    }
+  },
+  "rights": "Map design © LazyTravel; boundary and orientation anchors derived from OpenStreetMap under ODbL; object relationships derive from the cited museum catalogue.",
+  "schema_version": 1,
+  "source_config": {
+    "bytes": 5000,
+    "path": "data/maps/lanzhou/lanzhou-museum-findspots.config.json",
+    "sha256": "93541150f6f6ae5741f0fdc483f76384d20f13eae853de8db70e836868b3a562"
+  },
+  "source_geojson": {
+    "bytes": 34636,
+    "path": "data/maps/lanzhou/gansu-object-findspots.geojson",
+    "sha256": "e600719b5588b3afbb334bdfd36228c5a89824d236b5a702866c0004e1a453bd"
+  },
+  "sources": {
+    "boundary": {
+      "checked_at": "2026-08-22",
+      "role": "simplified Gansu orientation outline under ODbL",
+      "url": "https://www.openstreetmap.org/relation/153314"
+    },
+    "coordinates": {
+      "checked_at": "2026-08-22",
+      "role": "museum and county or city anchor coordinates",
+      "url": "https://nominatim.openstreetmap.org/"
+    },
+    "objects": {
+      "checked_at": "2026-08-22",
+      "role": "object names, dates, and findspots",
+      "url": "https://www.gansumuseum.com/collectionList?nav=3-1"
+    }
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch05-final-pages/page-73.png",
+        "sha256": "9b24ceefe0b35ddd2e482d6c8bc7f453f497c1e07be58a9be2b30fbea66ee00d"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch05-release/desktop-05-map-02.png",
+        "sha256": "a7867f8719b1d8d4281da1b69c5744f234d3d395789984a3337643f220462022"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-02-center.png",
+        "sha256": "74236aa1b739a135af276730e69a76b681c00addd6146d1dd1491de02529127f"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-02-left.png",
+        "sha256": "788db33d23704913312a95bc8265f50229f94cd471c9d5cc46b1fa515a47ead2"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-02-right.png",
+        "sha256": "4ca7defd95b7449384c7ecea4c170512b313c449ae2746d1adc2e061724ad9ec"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch05-release/qa.json",
+        "sha256": "df3463c37e7e46380dad6af0403f4b98865a1d06fd63ce8637a3f5fbea1bc3df"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve the museum, six county or city anchors, and all six object keys without collisions or false route geometry.",
+      "At a 390 px viewport the complete vertical map remains visible and the 760 px stage pans left, centre, and right; labels and the orientation-only warning remain readable."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-22"
+  }
+}

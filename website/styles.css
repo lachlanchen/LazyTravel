@@ -677,7 +677,6 @@ rt {
 
 .map-viewport {
   overflow: auto;
-  max-height: 75vh;
   background: var(--paper);
   overscroll-behavior: contain;
 }

@@ -17,6 +17,9 @@ history, rollout data, or session backups.
   pocket guide. Primary labels must survive both B6 print and a 390 px viewport.
 - A pannable mobile map must scale its CSS minimum width as well as its
   percentage width; otherwise the first zoom step can appear to do nothing.
+- Portrait maps must expand to their full vertical content. A nested `75vh`
+  map viewport hides lower floors or legends and is now rejected by browser QA;
+  horizontal panning remains available for large labels at `390 px`.
 - Time-sensitive transport, hotel, ticket, opening-hour, and business details
   need a check date and an official confirmation route close to travel.
 - The strongest prose explains what to notice, what a distinction changes for
@@ -107,14 +110,16 @@ train and the mountain exit already reached, then add at most one local stop.
 Odawara, Mishima, and Gotemba are alternatives, not a three-town extension.
 The bag and reserved train remain fixed; the local stop is removed first.
 
-Lanzhou has a locked 11-chapter structure. Chapters 1-4, through **Cross One
-Bridge, Read Both Banks**, are accepted with `35` aligned blocks, `3,449`
-reviewed Chinese reading tokens, `4,542` reviewed Japanese reading tokens, 34
-chapter-source entries, seven four-guide figures, and four code-built maps. The
-same JSON produced a clean `62`-page B6 pocket and responsive series page with
-`4,841` rendered ruby nodes. The pocket SHA-256 is
-`0f5b7479d268ff25a5ed3a7470c7a66b74ea2e222144bd49aa388616981ba7f9`, and the
-Nutstore copy matches it. Chapter 5, the single Gansu Provincial Museum route,
+Lanzhou has a locked 11-chapter structure. Chapters 1-5, through **Read One Route
+Through Gansu Provincial Museum**, are accepted with `45` aligned blocks,
+`4,876` reviewed Chinese reading tokens, `6,323` reviewed Japanese reading
+tokens, 42 chapter-source entries, nine four-guide figures, and six code-built
+maps. The same JSON produced a clean `84`-page B6 pocket and responsive series
+page with `6,802` rendered ruby nodes. The pocket SHA-256 is
+`bf238bb246ab1da2c671436c593b67f3372c793ec2552b1b25b34e976fdf8270`, and the
+Nutstore copy matches it. Chapter 5 established a museum method: verify current
+display first, read one object by form, label, date/type, and findspot, and keep
+collection city separate from archaeological origin. Chapter 6, the food clock,
 is the sole active gate.
 
 The book's main line remains the traveler's decisions in a long river valley:

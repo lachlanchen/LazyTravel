@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-museum-pottery-gallery",
+  "created_at": "2026-08-22",
+  "method": "generated-editorial-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "15-b5ef123f-5618-42b8-af91-02eea245a437",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch05/visual-references/gallery-painted-pottery-official.jpg",
+      "sha256": "ffd75e6f76f2ec07273af15ba797af7137efaae4d4a70d0dede825ec99d02a08",
+      "reference_url": "https://www.gansumuseum.com/regularExhibitions?nav=2-0",
+      "role": "Unredistributed official gallery reference for restrained painted-pottery exhibition context"
+    },
+    {
+      "path": "build/research/lanzhou/ch05/visual-references/object-human-head-vessel-official.png",
+      "sha256": "5190877c0425991426476d3b7e16828dd86fd5b7ee1e0eb17db92ce62189d9a3",
+      "reference_url": "https://www.gansumuseum.com/collectionDetail/223",
+      "role": "Unredistributed official catalogue reference for the human-head-mouth vessel's form, earthen color, sculpted head, and black painted bands"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-museum-pottery-gallery.prompt.md",
+    "sha256": "8ef87be80bcfbd7adc4afa2ae5c425385221bcd813d12e856488ce1adb43e0de"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch05-museum-pottery-v1/task_manifest.json",
+      "sha256": "c593b76b612e767c2181f915f541690529c0b1644c79e9c146fd59c56174ae1e",
+      "bytes": 3383,
+      "role": "Selected first composition with a representative gallery, close object-form match, exact four-guide cast, and no anonymous visitors"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch05-museum-pottery-v1/lanzhou-museum-pottery-gallery-v1.png",
+    "sha256": "0308c9e3d4ecbb96c89357ab24392c3ba3753b6489cfb7d56043ed046a81195b",
+    "bytes": 7530868,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-museum-pottery-gallery.jpg",
+    "sha256": "f6529bb64e4577e2938584d7bfd8bd4351066f750ca8ddfac8a55589e077ea0c",
+    "bytes": 917847,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-museum-pottery-gallery-web.jpg",
+      "sha256": "eda0406cf85b0f35338db4d5678f0a80b83e910e7ddeb3ec804c9c172ac42a7c",
+      "bytes": 297557,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The room, case, scale, and placement form a representative editorial composition, not a documentary record of the current floor plan.",
+    "The official catalogue reference constrains the featured vessel's general form and painted pattern; collection-catalogue presence does not guarantee display on the reader's visit.",
+    "The figure does not establish object dimensions, case location, current lighting, nearby objects, or gallery availability."
+  ],
+  "reader_caption_policy": "Use the figure to teach the order form-pattern-type-or-date-findspot; do not imply a guaranteed display position or mention generation.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "object_and_gallery_dominant": "pass",
+    "featured_vessel_reference_match": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "no_mixed_era_tableau": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. The central vessel retains the reference form and pattern, the four guides remain distinct, and there are no extra visitors, labels, or mixed-era objects.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch05-final-pages/page-67.png",
+        "sha256": "53a03fb2fcac9f8ab781017c546ce1fb6fc1ac63ff772b7ad11a67bfc003241f",
+        "bytes": 717083,
+        "physical_page": 67
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-figure-02.png",
+        "sha256": "ab843a1959a08c8278aee3c27cd3592e6b81f9bb2f232008267295a6005bc01f",
+        "bytes": 417820,
+        "width": 780,
+        "height": 1068,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

@@ -79,8 +79,11 @@ class LanzhouChapterFourTests(unittest.TestCase):
         }
         self.assertIn("asset-lanzhou-bridge-hill-route-map", asset_ids)
         self.assertEqual(self.book["chapters"][4]["id"], "ch05-museum-route")
-        self.assertEqual(self.book["chapters"][4]["status"], "researching")
-        self.assertFalse(self.book["chapters"][4]["blocks"])
+        self.assertEqual(self.book["chapters"][4]["status"], "final")
+        self.assertEqual(len(self.book["chapters"][4]["blocks"]), 10)
+        self.assertEqual(self.book["chapters"][5]["id"], "ch06-food-clock")
+        self.assertEqual(self.book["chapters"][5]["status"], "researching")
+        self.assertFalse(self.book["chapters"][5]["blocks"])
 
     def test_reviewed_place_and_context_readings(self) -> None:
         zh_readings = {

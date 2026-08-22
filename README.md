@@ -19,8 +19,8 @@ Published guide paths:
 ## Current Editorial Gate
 
 Xi'an and Hakone are complete and publicly published. Lanzhou at
-`china/cities/lanzhou` is the only active book. Chapters 1-4 are accepted public
-milestones; Chapter 5 is the sole production gate. Only one destination may be
+`china/cities/lanzhou` is the only active book. Chapters 1-5 are accepted public
+milestones; Chapter 6 is the sole production gate. Only one destination may be
 in production at a time. Broader Gansu and Ningxia sources remain research
 context, not destination-book titles.
 
@@ -70,16 +70,15 @@ Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
 
 Lanzhou has a hash-verified read-only source baseline, an explicit claim and
-rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-4,
-through **Cross One Bridge, Read Both Banks**, are accepted: `35` aligned
-blocks, `3,449` reviewed Chinese reading tokens, `4,542` reviewed Japanese
-reading tokens, 34 chapter-source entries, seven four-guide figures, and four
-code-built maps. The same canonical JSON produces a `62`-page B6 pocket and a
-responsive site with `4,841` ruby nodes. The pocket SHA-256 is
-`0f5b7479d268ff25a5ed3a7470c7a66b74ea2e222144bd49aa388616981ba7f9`, and its
-Nutstore copy matches. Chapter 5, **Read One Route Through Gansu Provincial
-Museum**, is the only active production gate; the Lanzhou book itself is not
-yet complete.
+rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-5,
+through **Read One Route Through Gansu Provincial Museum**, are accepted: `45`
+aligned blocks, `4,876` reviewed Chinese reading tokens, `6,323` reviewed
+Japanese reading tokens, 42 chapter-source entries, nine four-guide figures,
+and six code-built maps. The same canonical JSON produces an `84`-page B6 pocket
+and a responsive site with `6,802` ruby nodes. The pocket SHA-256 is
+`bf238bb246ab1da2c671436c593b67f3372c793ec2552b1b25b34e976fdf8270`, and its
+Nutstore copy matches. Chapter 6, **Eat by Lanzhou's Clock**, is the only active
+production gate; the Lanzhou book itself is not yet complete.
 
 ## Source Boundary
 
@@ -196,8 +195,8 @@ check can be repeated locally:
 
 ```bash
 python3 scripts/verify_deployed_site.py \
-  --url https://lachlanchen.github.io/LazyTravel/japan/prefectures/kanagawa/hakone/ \
-  --book data/japan/prefectures/kanagawa/hakone/book.json
+  --url https://lachlanchen.github.io/LazyTravel/china/cities/lanzhou/ \
+  --book data/china/cities/lanzhou/book.json
 ```
 
 ## Editorial Contract

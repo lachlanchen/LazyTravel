@@ -35,14 +35,17 @@ jobs:
           python scripts/validate_json.py data/sources/catalog.json --schema schemas/source-catalog.schema.json
           python scripts/validate_json.py data/china/cities/xian/book.json --schema schemas/destination-book.schema.json
           python scripts/validate_json.py data/japan/prefectures/kanagawa/hakone/book.json --schema schemas/destination-book.schema.json
+          python scripts/validate_json.py data/china/cities/lanzhou/book.json --schema schemas/destination-book.schema.json
           python scripts/validate_readings.py --book data/china/cities/xian/book.json
           python scripts/validate_readings.py --book data/japan/prefectures/kanagawa/hakone/book.json
+          python scripts/validate_readings.py --book data/china/cities/lanzhou/book.json
 
       - name: Build synchronized static website
         run: |
           python scripts/build_series_website.py
           python scripts/validate_site_parity.py --book data/china/cities/xian/book.json --site site/china/cities/xian
           python scripts/validate_site_parity.py --book data/japan/prefectures/kanagawa/hakone/book.json --site site/japan/prefectures/kanagawa/hakone
+          python scripts/validate_site_parity.py --book data/china/cities/lanzhou/book.json --site site/china/cities/lanzhou
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -71,8 +74,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Verify published files against both canonical books
+      - name: Verify published files against canonical books
         run: |
           BASE_URL="${{ steps.deployment.outputs.page_url }}"
           python scripts/verify_deployed_site.py --url "${BASE_URL%/}/china/cities/xian/" --book data/china/cities/xian/book.json
           python scripts/verify_deployed_site.py --url "${BASE_URL%/}/japan/prefectures/kanagawa/hakone/" --book data/japan/prefectures/kanagawa/hakone/book.json
+          python scripts/verify_deployed_site.py --url "${BASE_URL%/}/china/cities/lanzhou/" --book data/china/cities/lanzhou/book.json

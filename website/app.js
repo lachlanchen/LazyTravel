@@ -92,6 +92,10 @@ const assetLabels = {
   "asset-lanzhou-zhongshan-bridge": "ZHONGSHAN BRIDGE · BRIDGE, HILL, PAGODA",
   "asset-lanzhou-bridge-hill-route-map": "BRIDGE TO WHITE PAGODA HILL · TWO CLIMB DEPTHS",
   "asset-lanzhou-white-pagoda-hill": "WHITE PAGODA HILL · TERRACES AND PAGODA",
+  "asset-lanzhou-gansu-provincial-museum-exterior": "GANSU PROVINCIAL MUSEUM · FIND THE ENTRANCE",
+  "asset-lanzhou-museum-route-map": "GANSU PROVINCIAL MUSEUM · ONE ASCENT, ONE DESCENT",
+  "asset-lanzhou-museum-pottery-gallery": "PAINTED POTTERY · READ ONE VESSEL CLOSELY",
+  "asset-lanzhou-museum-findspots-map": "GANSU OBJECTS · SIX FINDSPOTS",
 };
 const state = {
   document: null,

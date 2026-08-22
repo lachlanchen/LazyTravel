@@ -1,0 +1,90 @@
+{
+  "asset_id": "asset-lanzhou-museum-route-map",
+  "created_at": "2026-08-22",
+  "generalizations": [
+    "The map is an original visit-flow diagram, not a copy of the museum floor plan or a room-level navigation map.",
+    "Only the floor relationship among the entrance, Painted Pottery, Buddhist Art, and Silk Road Civilization galleries is encoded.",
+    "No lift operation, stair direction, room entrance, walking time, accessibility, queue, or one-way control is promised.",
+    "Gallery and object display status must be checked on arrival.",
+    "Paleontology and Red Gansu are optional after the core route, not compulsory detours."
+  ],
+  "method": "deterministic-map-render",
+  "outputs": {
+    "pdf": {
+      "bytes": 83000,
+      "path": "assets/maps/lanzhou/lanzhou-museum-route.pdf",
+      "sha256": "1959061ff767cbac27fe275c1d7d9bf2ebfa66747b6ff1a00b5e3a39de1a3c9d"
+    },
+    "png": {
+      "bytes": 396008,
+      "path": "assets/maps/lanzhou/lanzhou-museum-route.png",
+      "sha256": "c2a73347484799f69413bef1d6fc1993b5ccadf79fc6f16d39d7655ad080814a"
+    },
+    "svg": {
+      "bytes": 21374,
+      "path": "assets/maps/lanzhou/lanzhou-museum-route.svg",
+      "sha256": "6cb69a1cb2efd6fcef226b42f6cd197a91c1481426c6bc3290d71d328864b4f7"
+    }
+  },
+  "rights": "Map design © LazyTravel; floor relationships derive from the current Gansu Provincial Museum guide.",
+  "schema_version": 1,
+  "source_config": {
+    "bytes": 5518,
+    "path": "data/maps/lanzhou/lanzhou-museum-route.config.json",
+    "sha256": "b660515032f289cc24f8765dcf5b77e11bfa970ae1c23da958118b8940c0d1fb"
+  },
+  "sources": {
+    "floor_guide": {
+      "checked_at": "2026-08-22",
+      "role": "current floor relationship and service-area lead",
+      "url": "https://www.gansumuseum.com/navMap?nav=1-1"
+    },
+    "gallery_index": {
+      "checked_at": "2026-08-22",
+      "role": "current long-term gallery names and floors",
+      "url": "https://www.gansumuseum.com/regularExhibitions?nav=2-0"
+    },
+    "visitor_guide": {
+      "checked_at": "2026-08-22",
+      "role": "entry, luggage, and current-check context",
+      "url": "https://www.gansumuseum.com/visitAppointment?nav=1-0"
+    }
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch05-final-pages/page-65.png",
+        "sha256": "b4f57a10074e43daebdce5bb7465b19fab3e2cfb86cac45aefa3896c02fe0625"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch05-release/desktop-05-map-01.png",
+        "sha256": "956a92d0b73917d81c77ee7925f961b435721fdac8b8549c86023b21de138ba8"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-01-center.png",
+        "sha256": "5316d895447bdb48c1836a63dcbea266760c290d31acf8ae388eb4f2db06564e"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-01-left.png",
+        "sha256": "ffb94f9a3f62807b121445901480a93d11de5a53d2c79a2ee0a29e567559df0d"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-01-right.png",
+        "sha256": "c3caab215472c5ef161e54068afaf3f7d585245b600ea9a511f526640ad680ab"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch05-release/qa.json",
+        "sha256": "df3463c37e7e46380dad6af0403f4b98865a1d06fd63ce8637a3f5fbea1bc3df"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve all five stops, three floor bands, the optional-gallery choice, and the current-display warning without collisions.",
+      "At a 390 px viewport the complete vertical map remains visible and the 760 px stage pans left, centre, and right; every route decision remains readable without room-level claims."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-22"
+  }
+}

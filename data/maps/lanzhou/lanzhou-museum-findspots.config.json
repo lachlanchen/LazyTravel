@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "lanzhou-museum-findspots",
+  "snapshot_date": "2026-08-22",
+  "boundary_geojson": "data/maps/lanzhou/gansu-object-findspots.geojson",
+  "title": {
+    "zh": "文物在兰州，出土地散在甘肃",
+    "ja": "資料は蘭州に、出土地は甘粛各地に",
+    "en": "DISPLAY CITY IS NOT FINDSITE"
+  },
+  "points": [
+    {
+      "number": 0,
+      "id": "museum",
+      "zh": "兰州 · 省博物馆",
+      "ja": "蘭州 · 省博物館",
+      "en": "LANZHOU · MUSEUM",
+      "lat": 36.0668241,
+      "lon": 103.7719976,
+      "group": "museum"
+    },
+    {
+      "number": 1,
+      "id": "qinan",
+      "zh": "秦安 · 大地湾彩陶瓶",
+      "ja": "秦安 · 大地湾の彩陶瓶",
+      "en": "QIN'AN · DADIWAN VESSEL",
+      "lat": 34.940555,
+      "lon": 105.70068,
+      "group": "pottery"
+    },
+    {
+      "number": 2,
+      "id": "gangu",
+      "zh": "甘谷 · 西坪鲵鱼纹瓶",
+      "ja": "甘谷 · 西坪の鯢魚文瓶",
+      "en": "GANGU · XIPING VESSEL",
+      "lat": 34.7656528,
+      "lon": 105.291805,
+      "group": "pottery"
+    },
+    {
+      "number": 3,
+      "id": "jingchuan",
+      "zh": "泾川 · 大云寺舍利宝函",
+      "ja": "涇川 · 大雲寺舎利容器",
+      "en": "JINGCHUAN · RELIQUARY",
+      "lat": 35.348094,
+      "lon": 107.431358,
+      "group": "buddhist"
+    },
+    {
+      "number": 4,
+      "id": "wuwei",
+      "zh": "武威 · 雷台铜奔马",
+      "ja": "武威 · 雷台の銅奔馬",
+      "en": "WUWEI · BRONZE HORSE",
+      "lat": 37.980156,
+      "lon": 103.014215,
+      "group": "movement"
+    },
+    {
+      "number": 5,
+      "id": "jiayuguan",
+      "zh": "嘉峪关 · 驿使图壁画砖",
+      "ja": "嘉峪関 · 駅使図壁画磚",
+      "en": "JIAYUGUAN · MESSENGER BRICK",
+      "lat": 39.7722294,
+      "lon": 98.2885388,
+      "group": "movement"
+    },
+    {
+      "number": 6,
+      "id": "dunhuang",
+      "zh": "敦煌 · 藏经洞绢画",
+      "ja": "敦煌 · 蔵経洞の絹絵",
+      "en": "DUNHUANG · LIBRARY CAVE PAINTING",
+      "lat": 40.1411004,
+      "lon": 94.6607593,
+      "group": "buddhist"
+    }
+  ],
+  "sources": {
+    "boundary": {
+      "url": "https://www.openstreetmap.org/relation/153314",
+      "checked_at": "2026-08-22",
+      "role": "simplified Gansu orientation outline under ODbL"
+    },
+    "coordinates": {
+      "url": "https://nominatim.openstreetmap.org/",
+      "checked_at": "2026-08-22",
+      "role": "museum and county or city anchor coordinates"
+    },
+    "objects": {
+      "url": "https://www.gansumuseum.com/collectionList?nav=3-1",
+      "checked_at": "2026-08-22",
+      "role": "object names, dates, and findspots"
+    }
+  },
+  "generalizations": [
+    "The map is an original provincial orientation diagram derived from a simplified OpenStreetMap boundary under ODbL.",
+    "Qin'an, Gangu, Jingchuan, Wuwei, Jiayuguan, and Dunhuang are county or city anchors, not excavation coordinates.",
+    "Point positions do not encode road or rail routes, travel time, archaeological-site access, or a recommended itinerary.",
+    "The museum point marks the display and planning city; it is not an object findspot.",
+    "Named objects remain conditional on current display status."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch05-final-pages/page-73.png",
+        "sha256": "9b24ceefe0b35ddd2e482d6c8bc7f453f497c1e07be58a9be2b30fbea66ee00d"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch05-release/desktop-05-map-02.png",
+        "sha256": "a7867f8719b1d8d4281da1b69c5744f234d3d395789984a3337643f220462022"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-02-left.png",
+        "sha256": "788db33d23704913312a95bc8265f50229f94cd471c9d5cc46b1fa515a47ead2"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-02-center.png",
+        "sha256": "74236aa1b739a135af276730e69a76b681c00addd6146d1dd1491de02529127f"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-02-right.png",
+        "sha256": "4ca7defd95b7449384c7ecea4c170512b313c449ae2746d1adc2e061724ad9ec"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch05-release/qa.json",
+        "sha256": "df3463c37e7e46380dad6af0403f4b98865a1d06fd63ce8637a3f5fbea1bc3df"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve the museum, six county or city anchors, and all six object keys without collisions or false route geometry.",
+      "At a 390 px viewport the complete vertical map remains visible and the 760 px stage pans left, centre, and right; labels and the orientation-only warning remain readable."
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "lanzhou-museum-route",
+  "snapshot_date": "2026-08-22",
+  "title": {
+    "zh": "省博物馆：上三楼，再向下读",
+    "ja": "省博物館：三階へ上がり、下りながら読む",
+    "en": "GO UP ONCE · READ DOWNWARD"
+  },
+  "floors": [
+    {
+      "floor": "3F",
+      "stops": [
+        {
+          "number": 2,
+          "id": "painted-pottery",
+          "zh": "甘肃彩陶展",
+          "ja": "甘粛彩陶展",
+          "en": "PAINTED POTTERY",
+          "note_zh": "从一件器物开始",
+          "note_ja": "一つの器から始める",
+          "note_en": "START WITH ONE VESSEL",
+          "color": "vermilion"
+        },
+        {
+          "number": 3,
+          "id": "buddhist-art",
+          "zh": "甘肃佛教艺术展",
+          "ja": "甘粛仏教芸術展",
+          "en": "BUDDHIST ART",
+          "note_zh": "分清图像、容器与出土地",
+          "note_ja": "像・容器・出土地を分ける",
+          "note_en": "IMAGE · CONTAINER · FINDSITE",
+          "color": "coral"
+        }
+      ]
+    },
+    {
+      "floor": "2F",
+      "stops": [
+        {
+          "number": 4,
+          "id": "silk-road",
+          "zh": "甘肃丝绸之路文明展",
+          "ja": "甘粛シルクロード文明展",
+          "en": "SILK ROAD CIVILIZATION",
+          "note_zh": "比较移动、关卡与驿传",
+          "note_ja": "移動・関所・駅伝を比べる",
+          "note_en": "MOVEMENT · PASSES · RELAY",
+          "color": "jade"
+        }
+      ],
+      "optional": {
+        "zh": "可选其一：古生物 / 红色甘肃",
+        "ja": "余力があれば一つ：古生物 / 紅色甘粛",
+        "en": "OPTIONAL: ONE EXTRA GALLERY"
+      }
+    },
+    {
+      "floor": "1F",
+      "stops": [
+        {
+          "number": 1,
+          "id": "current-check",
+          "zh": "入口：确认当天展厅",
+          "ja": "入口：当日の展示室を確認",
+          "en": "CHECK TODAY'S GALLERIES",
+          "note_zh": "寄存大件行李，再上三楼",
+          "note_ja": "大きな荷物を預け、三階へ",
+          "note_en": "STORE BAGS · GO TO 3F",
+          "color": "cobalt"
+        },
+        {
+          "number": 5,
+          "id": "exit",
+          "zh": "出口：留一个问题",
+          "ja": "出口：問いを一つ残す",
+          "en": "LEAVE WITH ONE QUESTION",
+          "note_zh": "不为凑数折返",
+          "note_ja": "数合わせで戻らない",
+          "note_en": "NO CHECKLIST BACKTRACKING",
+          "color": "cobalt"
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "floor_guide": {
+      "url": "https://www.gansumuseum.com/navMap?nav=1-1",
+      "checked_at": "2026-08-22",
+      "role": "current floor relationship and service-area lead"
+    },
+    "gallery_index": {
+      "url": "https://www.gansumuseum.com/regularExhibitions?nav=2-0",
+      "checked_at": "2026-08-22",
+      "role": "current long-term gallery names and floors"
+    },
+    "visitor_guide": {
+      "url": "https://www.gansumuseum.com/visitAppointment?nav=1-0",
+      "checked_at": "2026-08-22",
+      "role": "entry, luggage, and current-check context"
+    }
+  },
+  "generalizations": [
+    "The map is an original visit-flow diagram, not a copy of the museum floor plan or a room-level navigation map.",
+    "Only the floor relationship among the entrance, Painted Pottery, Buddhist Art, and Silk Road Civilization galleries is encoded.",
+    "No lift operation, stair direction, room entrance, walking time, accessibility, queue, or one-way control is promised.",
+    "Gallery and object display status must be checked on arrival.",
+    "Paleontology and Red Gansu are optional after the core route, not compulsory detours."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch05-final-pages/page-65.png",
+        "sha256": "b4f57a10074e43daebdce5bb7465b19fab3e2cfb86cac45aefa3896c02fe0625"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch05-release/desktop-05-map-01.png",
+        "sha256": "956a92d0b73917d81c77ee7925f961b435721fdac8b8549c86023b21de138ba8"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-01-left.png",
+        "sha256": "ffb94f9a3f62807b121445901480a93d11de5a53d2c79a2ee0a29e567559df0d"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-01-center.png",
+        "sha256": "5316d895447bdb48c1836a63dcbea266760c290d31acf8ae388eb4f2db06564e"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch05-release/mobile-05-map-01-right.png",
+        "sha256": "c3caab215472c5ef161e54068afaf3f7d585245b600ea9a511f526640ad680ab"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch05-release/qa.json",
+        "sha256": "df3463c37e7e46380dad6af0403f4b98865a1d06fd63ce8637a3f5fbea1bc3df"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve all five stops, three floor bands, the optional-gallery choice, and the current-display warning without collisions.",
+      "At a 390 px viewport the complete vertical map remains visible and the 760 px stage pans left, centre, and right; every route decision remains readable without room-level claims."
+    ]
+  }
+}
