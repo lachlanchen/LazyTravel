@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "id": "lanzhou-noodle-order",
+  "snapshot_date": "2026-08-22",
+  "title": {
+    "zh": "牛肉面：五步完成一碗",
+    "ja": "牛肉麺：五つの動作で一杯",
+    "en": "ONE BOWL · FIVE MOVES"
+  },
+  "steps": [
+    {
+      "number": 1,
+      "color": "cobalt",
+      "zh": "付款或取票",
+      "ja": "会計または食券",
+      "en": "PAY OR TAKE A TICKET",
+      "note_zh": "先看收银与票口",
+      "note_ja": "レジ・食券口を見る",
+      "note_en": "FIND THE CURRENT COUNTER"
+    },
+    {
+      "number": 2,
+      "color": "vermilion",
+      "zh": "报一个面型",
+      "ja": "麺の形を一つ伝える",
+      "en": "NAME ONE NOODLE SHAPE",
+      "note_zh": "不会说就给窗口看字",
+      "note_ja": "文字を見せてよい",
+      "note_en": "SHOW THE WORD IF NEEDED"
+    },
+    {
+      "number": 3,
+      "color": "coral",
+      "zh": "决定是否加肉、加蛋",
+      "ja": "牛肉・卵の追加を決める",
+      "en": "CHOOSE OPTIONAL EXTRAS",
+      "note_zh": "加点环节以店内为准",
+      "note_ja": "追加場所は店に従う",
+      "note_en": "FOLLOW THE SHOP'S STAGE"
+    },
+    {
+      "number": 4,
+      "color": "jade",
+      "zh": "取碗",
+      "ja": "一杯を受け取る",
+      "en": "COLLECT THE BOWL",
+      "note_zh": "听叫号或看窗口",
+      "note_ja": "番号・窓口を見る",
+      "note_en": "WATCH THE CALL OR WINDOW"
+    },
+    {
+      "number": 5,
+      "color": "cobalt",
+      "zh": "按店内安排调味、就座",
+      "ja": "店の流れで調味・着席",
+      "en": "SEASON AND SIT AS DIRECTED",
+      "note_zh": "碗到手后仍看标识",
+      "note_ja": "受け取った後も表示を確認",
+      "note_en": "KEEP FOLLOWING THE SHOP"
+    }
+  ],
+  "shape_groups": [
+    {
+      "color": "vermilion",
+      "zh": "较细",
+      "ja": "細い側",
+      "en": "FINER",
+      "names": ["毛细", "细", "三细", "二细"]
+    },
+    {
+      "color": "jade",
+      "zh": "扁叶形",
+      "ja": "平たい葉形",
+      "en": "FLAT LEAF",
+      "names": ["韭叶"]
+    },
+    {
+      "color": "coral",
+      "zh": "较宽",
+      "ja": "幅広い側",
+      "en": "BROADER",
+      "names": ["宽", "大宽"]
+    }
+  ],
+  "variation_notice": {
+    "zh": "店内流程、名称与实际宽度会变；现场标识优先。",
+    "ja": "店の流れ、名称、実際の幅は異なる。現場表示を優先。",
+    "en": "SHOP FLOW, NAMES, AND WIDTHS VARY · FOLLOW LIVE SIGNS"
+  },
+  "sources": {
+    "ordering_context": {
+      "url": "https://ydyl.gansu.gov.cn/gsydyl/news/gsdt/202209/t20220907_9265.html",
+      "checked_at": "2026-08-22",
+      "role": "common pay, noodle-shape, additions, and collection sequence"
+    },
+    "craft_record": {
+      "url": "https://www.ihchina.cn/project_details/23794.html",
+      "checked_at": "2026-08-22",
+      "role": "documented noodle-shape vocabulary and protected craft context"
+    }
+  },
+  "generalizations": [
+    "This is an original service-flow diagram, not a plan of one shop.",
+    "Payment method, ticketing, call system, position of optional additions, seasoning, and seating vary by shop.",
+    "The shape groups aid sign recognition and do not encode exact millimetres or an authenticity hierarchy.",
+    "No price, opening time, queue duration, dietary status, or ingredient guarantee is encoded."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch06-compact-pages/page-082.png",
+        "sha256": "3a9a384aebb5088749525261385a0f2deca65a1e552bd0c72cc1c8dc125d0766"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch06-preview/desktop-06-map-01.png",
+        "sha256": "52d1dbeadfa7b226bc9624a5a9dce0823f44c996f0bc74c532dd04819691a126"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-map-01-left.png",
+        "sha256": "2fc781973d7d5d3c5220a6f468a1c97db2139c1481c5864d4ea38bdf02e25930"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-map-01-center.png",
+        "sha256": "856084e00ec9bd4e3baec4ff8313a61d48e70ac55212b38ecfbf2448f6b47828"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-map-01-right.png",
+        "sha256": "ad0929176aa84df01d2b5d9e9b76164bc4205ccedb6278ba1268439513900d90"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch06-preview/qa.json",
+        "sha256": "fc580bf6880dbe882afa4534ccc1ca065528cc444065f4a8d9d40e34998fec51"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 print diagram and compiled B6 page preserve all five service decisions, the three shape groups, and the live-shop warning without clipping or collisions.",
+      "At a 390 px viewport the 760 px stage pans left, centre, and right; the service flow, shape panel, and variation notice remain readable with visible zoom and reset controls."
+    ]
+  }
+}

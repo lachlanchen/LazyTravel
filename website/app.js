@@ -96,6 +96,11 @@ const assetLabels = {
   "asset-lanzhou-museum-route-map": "GANSU PROVINCIAL MUSEUM · ONE ASCENT, ONE DESCENT",
   "asset-lanzhou-museum-pottery-gallery": "PAINTED POTTERY · READ ONE VESSEL CLOSELY",
   "asset-lanzhou-museum-findspots-map": "GANSU OBJECTS · SIX FINDSPOTS",
+  "asset-lanzhou-beef-noodle-morning": "BEEF NOODLES · MORNING BOWL",
+  "asset-lanzhou-noodle-order-diagram": "BEEF NOODLES · FIVE MOVES",
+  "asset-lanzhou-food-clock-diagram": "LANZHOU FOOD CLOCK · ONE MORNING, ONE AFTERNOON",
+  "asset-lanzhou-afternoon-snacks": "AFTERNOON SNACKS · THREE TEXTURES",
+  "asset-lanzhou-lily-sanpaotai": "LILY AND SANPAOTAI · A SEATED PAUSE",
 };
 const state = {
   document: null,

@@ -1,0 +1,84 @@
+{
+  "asset_id": "asset-lanzhou-noodle-order-diagram",
+  "created_at": "2026-08-22",
+  "generalizations": [
+    "This is an original service-flow diagram, not a plan of one shop.",
+    "Payment method, ticketing, call system, position of optional additions, seasoning, and seating vary by shop.",
+    "The shape groups aid sign recognition and do not encode exact millimetres or an authenticity hierarchy.",
+    "No price, opening time, queue duration, dietary status, or ingredient guarantee is encoded."
+  ],
+  "method": "deterministic-map-render",
+  "outputs": {
+    "pdf": {
+      "bytes": 87200,
+      "path": "assets/maps/lanzhou/lanzhou-noodle-order.pdf",
+      "sha256": "81f33d74b3968708e73dbfcb3d14eb564156626d0d95b292a3ef5081d4ca642c"
+    },
+    "png": {
+      "bytes": 359015,
+      "path": "assets/maps/lanzhou/lanzhou-noodle-order.png",
+      "sha256": "c372a9bc3710a56774b78c09749ca1d1b51aab132812847100267d9b54923aa6"
+    },
+    "svg": {
+      "bytes": 23161,
+      "path": "assets/maps/lanzhou/lanzhou-noodle-order.svg",
+      "sha256": "74cb014b646a9b11818f2c4e52588069ff34dcf876ebfef075c279b2bfdbe41b"
+    }
+  },
+  "rights": "Diagram design © LazyTravel; factual relationships derive from the listed sources.",
+  "schema_version": 1,
+  "source_config": {
+    "bytes": 5153,
+    "path": "data/maps/lanzhou/lanzhou-noodle-order.config.json",
+    "sha256": "ca7c4cd3cbbb6be629dee1abb72a4b8ee6215e993d2261100b442567fd9b3fe8"
+  },
+  "sources": {
+    "craft_record": {
+      "checked_at": "2026-08-22",
+      "role": "documented noodle-shape vocabulary and protected craft context",
+      "url": "https://www.ihchina.cn/project_details/23794.html"
+    },
+    "ordering_context": {
+      "checked_at": "2026-08-22",
+      "role": "common pay, noodle-shape, additions, and collection sequence",
+      "url": "https://ydyl.gansu.gov.cn/gsydyl/news/gsdt/202209/t20220907_9265.html"
+    }
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch06-compact-pages/page-082.png",
+        "sha256": "3a9a384aebb5088749525261385a0f2deca65a1e552bd0c72cc1c8dc125d0766"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch06-preview/desktop-06-map-01.png",
+        "sha256": "52d1dbeadfa7b226bc9624a5a9dce0823f44c996f0bc74c532dd04819691a126"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-map-01-center.png",
+        "sha256": "856084e00ec9bd4e3baec4ff8313a61d48e70ac55212b38ecfbf2448f6b47828"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-map-01-left.png",
+        "sha256": "2fc781973d7d5d3c5220a6f468a1c97db2139c1481c5864d4ea38bdf02e25930"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-map-01-right.png",
+        "sha256": "ad0929176aa84df01d2b5d9e9b76164bc4205ccedb6278ba1268439513900d90"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch06-preview/qa.json",
+        "sha256": "fc580bf6880dbe882afa4534ccc1ca065528cc444065f4a8d9d40e34998fec51"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The 1620 x 2280 print diagram and compiled B6 page preserve all five service decisions, the three shape groups, and the live-shop warning without clipping or collisions.",
+      "At a 390 px viewport the 760 px stage pans left, centre, and right; the service flow, shape panel, and variation notice remain readable with visible zoom and reset controls."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-22"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-lily-sanpaotai",
+  "created_at": "2026-08-22",
+  "method": "generated-food-and-tea-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "15-fd46ea54-8878-41dc-961b-50c9699e788b",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and clean articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch06/visual-references/sanpaotai-food-reference-2026.png",
+      "sha256": "cb1de009432d4fe4aa8d1f188047eb07c13ef78ff22704faf402b03e98c5f2ab",
+      "reference_url": "https://www.gswbj.gov.cn/uploadfile/20260610/1781084166959312.png",
+      "role": "Unredistributed institutional reference for a covered bowl and one variable dried-fruit, flower, sugar, and tea arrangement"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-lily-sanpaotai.prompt.md",
+    "sha256": "b82735c15cd849919ec4b6f26267ec03b4f1fdeedb2bfb32d1b721776ca4f2fd"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch06-lily-sanpaotai-v1/task_manifest.json",
+      "sha256": "89a950d17f2936b796dc7a29ab2e0acc2de5da3e10defd789a1cd8224eb4a07b",
+      "bytes": 2972,
+      "role": "Selected first composition with edible bulb scales, one covered bowl, exact four-guide cast, and no anonymous people"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch06-lily-sanpaotai-v1/lanzhou-lily-sanpaotai-v1.png",
+    "sha256": "31522699f0929e505735bc21e47f40c9a9f306e90ac915aca204229636534b13",
+    "bytes": 8155455,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-lily-sanpaotai.jpg",
+    "sha256": "bcfbb5444307f44aa3850527a06a625def011dd766578b8a3827b4a3f578b2c8",
+    "bytes": 979022,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-lily-sanpaotai-web.jpg",
+      "sha256": "0010beb4cfb1dacb6c7566c052b4ebca4a9072d2f853196e8a4df1cbd1f85ee8",
+      "bytes": 325672,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a representative food-and-tea composition, not documentary evidence for one restaurant, recipe, or ingredient origin.",
+    "The national geographical-indication record constrains the edible material as thick white lily-bulb scales; the cooked dish and garnish are illustrative.",
+    "The tea reference constrains the covered-bowl form and plausible ingredients but does not establish one canonical sanpaotai recipe.",
+    "The figure does not authenticate GI origin, prescribe a drinking method, or establish sugar, caffeine, dietary suitability, or health effects."
+  ],
+  "reader_caption_policy": "Identify lily bulb scales and a variable covered-bowl tea; do not authenticate origin, list every ingredient as mandatory, mention generation, or add health claims.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "food_and_tea_dominant": "pass",
+    "lily_bulb_not_flowers": "pass",
+    "covered_bowl_recognizable": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. Exactly four guides remain distinct, white bulb scales and the covered bowl stay recognisable, and no extra person, flower substitution, lettering, or crop failure appears.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch06-compact-pages/page-090.png",
+        "sha256": "1edf934d57ba818ba0548e3f8a65dca735cafe35cc87a05b3a6429a2db97d3a7",
+        "bytes": 587575,
+        "physical_page": 90
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-figure-03.png",
+        "sha256": "978cab12051c1793b7783e0d3882648bddcbda1730be572a243c210027f5b640",
+        "bytes": 447646,
+        "width": 780,
+        "height": 1068,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

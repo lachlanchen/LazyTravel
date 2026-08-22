@@ -110,17 +110,20 @@ train and the mountain exit already reached, then add at most one local stop.
 Odawara, Mishima, and Gotemba are alternatives, not a three-town extension.
 The bag and reserved train remain fixed; the local stop is removed first.
 
-Lanzhou has a locked 11-chapter structure. Chapters 1-5, through **Read One Route
-Through Gansu Provincial Museum**, are accepted with `45` aligned blocks,
-`4,876` reviewed Chinese reading tokens, `6,323` reviewed Japanese reading
-tokens, 42 chapter-source entries, nine four-guide figures, and six code-built
-maps. The same JSON produced a clean `84`-page B6 pocket and responsive series
-page with `6,802` rendered ruby nodes. The pocket SHA-256 is
-`bf238bb246ab1da2c671436c593b67f3372c793ec2552b1b25b34e976fdf8270`, and the
+Lanzhou has a locked 11-chapter structure. Chapters 1-6, through **Eat by
+Lanzhou's Clock**, are accepted with `55` aligned blocks, `6,134` reviewed
+Chinese reading tokens, `7,878` reviewed Japanese reading tokens, 51
+chapter-source entries, twelve four-guide figures, and eight code-built maps.
+The same JSON produced a clean `101`-page B6 pocket and responsive series page
+with `8,486` rendered ruby nodes. The pocket SHA-256 is
+`c85bee576db09f7e1cd40a5f783dec53beb043bc916044aa66bebbd05cb56061`, and the
 Nutstore copy matches it. Chapter 5 established a museum method: verify current
 display first, read one object by form, label, date/type, and findspot, and keep
-collection city separate from archaeological origin. Chapter 6, the food clock,
-is the sole active gate.
+collection city separate from archaeological origin. Chapter 6 established a
+food-day method: begin with one morning bowl, return to the attraction route at
+midday, choose one afternoon branch, verify the actual serving, and stop before
+food becomes a checklist. Chapter 7, the choice among city heights, is the sole
+active gate.
 
 The book's main line remains the traveler's decisions in a long river valley:
 orientation, arrival gate, crossing history, one central Yellow River Iron

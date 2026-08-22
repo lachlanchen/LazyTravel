@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-beef-noodle-morning",
+  "created_at": "2026-08-22",
+  "method": "generated-food-recognition-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "2-2ba81eb5-5867-4e04-a9fb-bef29159eca8",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and clean articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch06/visual-references/beef-noodle-food-reference-2026.png",
+      "sha256": "c8de597649e0185ffd280e24b6f44497194990c4c640716a120d490500288371",
+      "reference_url": "https://www.gswbj.gov.cn/uploadfile/20260610/1781084165195628.png",
+      "role": "Unredistributed current institutional reference for the bowl's broth, noodles, radish, chilli oil, greens, and ordinary serving context"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-beef-noodle-morning.prompt.md",
+    "sha256": "e8eb9016face27c97fa5ad5997c743cb42801f2d2e498977805e5c58f7433e24"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch06-beef-noodle-morning-v1/task_manifest.json",
+      "sha256": "31707ebcffeabcedb32be68dd3b283272c2d7217a38d3806c2e92460e396cffc",
+      "bytes": 3002,
+      "role": "Rejected because anonymous diners and kitchen staff remained in the background"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch06-beef-noodle-morning-v2/task_manifest.json",
+      "sha256": "ec5c08f86e58cf6aac4c32b3e6e153ec941b0a463ea79a568dbc927315a422fb",
+      "bytes": 3002,
+      "role": "Rejected because the Zhuangzi robot was aged and redesigned away from the series identity"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch06-beef-noodle-morning-v3/task_manifest.json",
+      "sha256": "a6513a07d363964451a05acbbbd90e9fec051bef45d3e71fa8ef92c0483ce165",
+      "bytes": 3001,
+      "role": "Selected composition with an empty shop, exact four-guide cast, clean robot identity, and readable bowl"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch06-beef-noodle-morning-v3/lanzhou-beef-noodle-morning-v3.png",
+    "sha256": "74866de37126910ece042e40d165095ce9b57056d6a7f80d9f814526f74d125f",
+    "bytes": 10453412,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-beef-noodle-morning.jpg",
+    "sha256": "2ab7f5dcb8cde539ebf74790bf2981170a41bcd668dbd6738b621935755ee94d",
+    "bytes": 1209427,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-beef-noodle-morning-web.jpg",
+      "sha256": "a63b03417c7c185e6e5a8a9127c8ea03c430a7ce34aa2caec655d5c253613250",
+      "bytes": 402881,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a representative present-day breakfast composition, not a documentary photograph or evidence for one named shop.",
+    "The official food reference and craft record constrain the bowl vocabulary; garnish quantity, tableware, seating, and optional side plate are illustrative.",
+    "The figure does not establish a shop's current opening, payment flow, recipe, dietary status, halal status, price, portion, or ingredient guarantee.",
+    "Small abstract marks on the distant menu panel are not reader-facing information and must remain unreadable at final B6 and mobile size."
+  ],
+  "reader_caption_policy": "Name the bowl cues and morning decision; do not identify a branch, transcribe background marks, mention generation, or imply live operational evidence.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "food_dominant": "pass",
+    "bowl_cues_recognizable": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. Exactly four guides remain distinct, the bowl is readable, the shop stays empty, and distant abstract menu marks do not function as reader-visible text at either final size.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch06-compact-pages/page-079.png",
+        "sha256": "8ebbfe8f2946f853c1681d39711390c06e3315d1205902219177561bb22e2b02",
+        "bytes": 723244,
+        "physical_page": 79
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-figure.png",
+        "sha256": "4a85fa1d7e85916df1bc708db4f58fe57ecaec18cc24bea8a026ac33b990bb51",
+        "bytes": 565821,
+        "width": 780,
+        "height": 1068,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

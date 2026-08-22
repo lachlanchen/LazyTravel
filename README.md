@@ -19,8 +19,8 @@ Published guide paths:
 ## Current Editorial Gate
 
 Xi'an and Hakone are complete and publicly published. Lanzhou at
-`china/cities/lanzhou` is the only active book. Chapters 1-5 are accepted public
-milestones; Chapter 6 is the sole production gate. Only one destination may be
+`china/cities/lanzhou` is the only active book. Chapters 1-6 are accepted public
+milestones; Chapter 7 is the sole production gate. Only one destination may be
 in production at a time. Broader Gansu and Ningxia sources remain research
 context, not destination-book titles.
 
@@ -70,15 +70,16 @@ Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
 
 Lanzhou has a hash-verified read-only source baseline, an explicit claim and
-rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-5,
-through **Read One Route Through Gansu Provincial Museum**, are accepted: `45`
-aligned blocks, `4,876` reviewed Chinese reading tokens, `6,323` reviewed
-Japanese reading tokens, 42 chapter-source entries, nine four-guide figures,
-and six code-built maps. The same canonical JSON produces an `84`-page B6 pocket
-and a responsive site with `6,802` ruby nodes. The pocket SHA-256 is
-`bf238bb246ab1da2c671436c593b67f3372c793ec2552b1b25b34e976fdf8270`, and its
-Nutstore copy matches. Chapter 6, **Eat by Lanzhou's Clock**, is the only active
-production gate; the Lanzhou book itself is not yet complete.
+rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-6,
+through **Eat by Lanzhou's Clock**, are accepted: `55` aligned blocks, `6,134`
+reviewed Chinese reading tokens, `7,878` reviewed Japanese reading tokens, 51
+chapter-source entries, twelve four-guide figures, and eight code-built maps.
+The same canonical JSON produces a `101`-page B6 pocket and a responsive site
+with `8,486` ruby nodes. The pocket SHA-256 is
+`c85bee576db09f7e1cd40a5f783dec53beb043bc916044aa66bebbd05cb56061`, and its
+Nutstore copy matches. Chapter 7, **Choose One Height: White Pagoda Hill,
+Lanshan, or Wuquan Mountain**, is the only active production gate; the Lanzhou
+book itself is not yet complete.
 
 ## Source Boundary
 

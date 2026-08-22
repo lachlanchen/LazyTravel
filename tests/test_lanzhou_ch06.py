@@ -11,8 +11,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK_PATH = ROOT / "data/china/cities/lanzhou/book.json"
-ROUTE_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-museum-route.config.json"
-FINSPOTS_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-museum-findspots.config.json"
+ORDER_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-noodle-order.config.json"
+CLOCK_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-food-clock.config.json"
+FIGURE_CONFIG = ROOT / "data/images/lanzhou/ch06-figures.config.json"
 
 
 def sha256(path: Path) -> str:
@@ -23,22 +24,21 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-class LanzhouChapterFiveTests(unittest.TestCase):
+class LanzhouChapterSixTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.book = json.loads(BOOK_PATH.read_text(encoding="utf-8"))
-        cls.chapter = cls.book["chapters"][4]
+        cls.chapter = cls.book["chapters"][5]
 
     def test_locked_blocks_and_next_gate(self) -> None:
-        self.assertEqual(self.chapter["id"], "ch05-museum-route")
+        self.assertEqual(len(self.book["chapters"]), 11)
+        self.assertEqual(self.chapter["id"], "ch06-food-clock")
         self.assertEqual(self.chapter["status"], "final")
         self.assertEqual(
             [block["id"] for block in self.chapter["blocks"]],
-            [f"ch05-b{number:03d}" for number in range(1, 11)],
+            [f"ch06-b{number:03d}" for number in range(1, 11)],
         )
-        self.assertEqual(self.book["chapters"][5]["id"], "ch06-food-clock")
-        self.assertEqual(self.book["chapters"][5]["status"], "final")
-        self.assertEqual(len(self.book["chapters"][5]["blocks"]), 10)
+        self.assertEqual(self.book["chapters"][6]["id"], "ch07-city-heights")
         self.assertEqual(self.book["chapters"][6]["status"], "researching")
         self.assertTrue(all(not chapter["blocks"] for chapter in self.book["chapters"][6:]))
 
@@ -54,7 +54,7 @@ class LanzhouChapterFiveTests(unittest.TestCase):
                 reconstructed = "".join(token["text"] for token in layer["tokens"])
                 self.assertEqual(reconstructed, block["text"][language])
 
-    def test_specialist_readings_are_reviewed(self) -> None:
+    def test_food_and_menu_readings_are_reviewed(self) -> None:
         zh = {
             (token["text"], token.get("reading"))
             for block in self.chapter["blocks"]
@@ -67,40 +67,48 @@ class LanzhouChapterFiveTests(unittest.TestCase):
         }
         self.assertTrue(
             {
-                ("甘肃省博物馆", "gānsù shěng bówùguǎn"),
-                ("人头形器口彩陶瓶", "réntóuxíng qìkǒu cǎitáopíng"),
-                ("鲵鱼纹彩陶瓶", "níyúwén cǎitáopíng"),
-                ("棨传", "qǐ chuán"),
-                ("长尾", "chángwěi"),
+                ("牛肉面", "niúròumiàn"),
+                ("毛细", "máoxì"),
+                ("二细", "èrxì"),
+                ("韭叶", "jiǔyè"),
+                ("酿皮子", "niàngpízi"),
+                ("灰豆子", "huīdòuzi"),
+                ("甜醅子", "tiánpēizi"),
+                ("三炮台", "sānpàotái"),
+                ("兰州百合", "lánzhōu bǎihé"),
             }.issubset(zh)
         )
         self.assertTrue(
             {
-                ("甘粛省博物館", "かんしゅくしょうはくぶつかん"),
-                ("人頭形器口彩陶瓶", "じんとうけいきこうさいとうへい"),
-                ("鯢魚文彩陶瓶", "げいぎょもんさいとうへい"),
-                ("三本", "さんぼん"),
-                ("四段階", "よんだんかい"),
-                ("一組", "ひとくみ"),
+                ("毛细", "まおしー"),
+                ("二细", "あるしー"),
+                ("韭叶", "じういえ"),
+                ("酿皮子", "にゃんぴーず"),
+                ("灰豆子", "ふいどうず"),
+                ("甜醅子", "てぃえんぺいず"),
+                ("三炮台", "さんぱおたい"),
+                ("蘭州百合", "らんしゅうゆり"),
             }.issubset(ja)
         )
 
     def test_assets_citations_and_evidence_are_closed(self) -> None:
         expected_assets = {
-            "asset-lanzhou-gansu-provincial-museum-exterior",
-            "asset-lanzhou-museum-route-map",
-            "asset-lanzhou-museum-pottery-gallery",
-            "asset-lanzhou-museum-findspots-map",
+            "asset-lanzhou-beef-noodle-morning",
+            "asset-lanzhou-noodle-order-diagram",
+            "asset-lanzhou-food-clock-diagram",
+            "asset-lanzhou-afternoon-snacks",
+            "asset-lanzhou-lily-sanpaotai",
         }
         expected_citations = {
-            "src-lanzhou-museum-buddhist-objects-2026",
-            "src-lanzhou-museum-findspot-map-data",
-            "src-lanzhou-museum-floor-2026",
-            "src-lanzhou-museum-galleries-2026",
-            "src-lanzhou-museum-pottery-objects-2026",
-            "src-lanzhou-museum-route-map-data",
-            "src-lanzhou-museum-silk-objects-2026",
-            "src-lanzhou-museum-visit-2026",
+            "src-lanzhou-food-source-2020",
+            "src-lanzhou-beef-noodle-ich",
+            "src-lanzhou-noodle-order-2022",
+            "src-lanzhou-food-context-2026",
+            "src-lanzhou-summer-foods-2023",
+            "src-lanzhou-lily-gi-2025",
+            "src-lanzhou-sanpaotai-consumer-2022",
+            "src-lanzhou-noodle-order-map-data",
+            "src-lanzhou-food-clock-map-data",
         }
         used_assets = {
             asset_id
@@ -136,46 +144,48 @@ class LanzhouChapterFiveTests(unittest.TestCase):
                 self.assertEqual(visual_qa["exact_guide_count_four"], "pass")
                 self.assertEqual(visual_qa["b6_print"], "pass")
                 self.assertEqual(visual_qa["mobile_390px"], "pass")
-            for evidence in visual_qa["evidence"].values():
+                references = {item["path"] for item in provenance["source_images"]}
+                self.assertTrue(
+                    {
+                        "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+                        "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+                        "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+                        "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+                    }.issubset(references)
+                )
+            for evidence in visual_qa.get("evidence", {}).values():
                 path = ROOT / evidence["path"]
                 self.assertTrue(evidence["path"].startswith("build/qa/"))
                 self.assertRegex(evidence["sha256"], r"^[0-9a-f]{64}$")
                 if path.is_file():
                     self.assertEqual(sha256(path), evidence["sha256"])
 
-    def test_maps_rebuild_at_b6_print_resolution(self) -> None:
-        scripts = (
-            "scripts/build_lanzhou_museum_route_map.py",
-            "scripts/build_lanzhou_museum_findspots_map.py",
+    def test_diagrams_rebuild_at_b6_print_resolution(self) -> None:
+        subprocess.run(
+            [sys.executable, "scripts/build_lanzhou_food_diagrams.py"],
+            cwd=ROOT,
+            check=True,
+            stdout=subprocess.DEVNULL,
         )
-        stems = (
-            ROOT / "assets/maps/lanzhou/lanzhou-museum-route",
-            ROOT / "assets/maps/lanzhou/lanzhou-museum-findspots",
-        )
-        for script, stem in zip(scripts, stems, strict=True):
-            subprocess.run(
-                [sys.executable, script],
-                cwd=ROOT,
-                check=True,
-                stdout=subprocess.DEVNULL,
-            )
+        for stem in (
+            ROOT / "assets/maps/lanzhou/lanzhou-noodle-order",
+            ROOT / "assets/maps/lanzhou/lanzhou-food-clock",
+        ):
             with Image.open(stem.with_suffix(".png")) as image:
                 self.assertEqual(image.size, (1620, 2280))
             for suffix in (".svg", ".pdf", ".png", ".provenance.json"):
                 self.assertTrue(stem.with_suffix(suffix).is_file())
 
-    def test_route_and_findspot_boundaries_are_explicit(self) -> None:
-        route = json.loads(ROUTE_CONFIG.read_text(encoding="utf-8"))
-        findspots = json.loads(FINSPOTS_CONFIG.read_text(encoding="utf-8"))
-        self.assertEqual(
-            [stop["number"] for floor in route["floors"] for stop in floor["stops"]],
-            [2, 3, 4, 1, 5],
-        )
-        self.assertEqual([point["number"] for point in findspots["points"]], list(range(7)))
-        self.assertTrue(
-            any("room-level navigation map" in item for item in route["generalizations"])
-        )
-        self.assertTrue(any("not excavation coordinates" in item for item in findspots["generalizations"]))
+    def test_diagram_boundaries_are_explicit(self) -> None:
+        order = json.loads(ORDER_CONFIG.read_text(encoding="utf-8"))
+        clock = json.loads(CLOCK_CONFIG.read_text(encoding="utf-8"))
+        figures = json.loads(FIGURE_CONFIG.read_text(encoding="utf-8"))
+        self.assertEqual([step["number"] for step in order["steps"]], list(range(1, 6)))
+        self.assertEqual(len(order["shape_groups"]), 3)
+        self.assertTrue(any("not a plan" in item for item in order["generalizations"]))
+        self.assertEqual([phase["number"] for phase in clock["phases"]], list(range(1, 5)))
+        self.assertTrue(any("opening-hours" in item for item in clock["generalizations"]))
+        self.assertEqual(len(figures["figures"]), 3)
 
 
 if __name__ == "__main__":

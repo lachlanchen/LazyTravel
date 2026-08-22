@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "lanzhou-food-clock",
+  "snapshot_date": "2026-08-22",
+  "title": {
+    "zh": "按兰州的时钟吃",
+    "ja": "蘭州の時計で食べる",
+    "en": "LET THE DAY CHOOSE THE FOOD"
+  },
+  "phases": [
+    {
+      "number": 1,
+      "color": "vermilion",
+      "zh": "早晨｜一碗牛肉面",
+      "ja": "朝｜牛肉麺を一杯",
+      "en": "MORNING · ONE NOODLE BOWL",
+      "note_zh": "趁热吃；牛肉与鸡蛋按需另加",
+      "note_ja": "温かいうちに。牛肉と卵は必要な時だけ",
+      "note_en": "EAT HOT · EXTRAS ONLY WHEN WANTED"
+    },
+    {
+      "number": 2,
+      "color": "cobalt",
+      "zh": "中午｜回到景点与路线",
+      "ja": "昼｜見学と経路へ戻る",
+      "en": "MIDDAY · RETURN TO THE ROUTE",
+      "note_zh": "喝水、走路、休息；不急着补第二样",
+      "note_ja": "水分、移動、休憩。すぐ二品目を足さない",
+      "note_en": "WATER · WALK · REST"
+    },
+    {
+      "number": 3,
+      "color": "jade",
+      "zh": "午后｜只选一个方向",
+      "ja": "午後｜一つの方向だけ選ぶ",
+      "en": "AFTERNOON · CHOOSE ONE BRANCH",
+      "note_zh": "一份小吃，或百合与三炮台",
+      "note_ja": "小吃一品、または百合料理と三炮台",
+      "note_en": "ONE SNACK · OR LILY AND TEA"
+    },
+    {
+      "number": 4,
+      "color": "coral",
+      "zh": "晚上｜停止收集名物",
+      "ja": "夜｜名物集めを止める",
+      "en": "EVENING · STOP THE CHECKLIST",
+      "note_zh": "在酒店或下一段路线附近正常吃饭",
+      "note_ja": "宿か次の経路の近くで普通の夕食",
+      "note_en": "EAT NEAR THE HOTEL OR NEXT LEG"
+    }
+  ],
+  "afternoon_choices": [
+    {
+      "color": "jade",
+      "zh": "小吃三选一",
+      "ja": "小吃は三つから一品",
+      "en": "ONE OF THREE SNACKS",
+      "items": "酿皮子 · 灰豆子 · 甜醅子"
+    },
+    {
+      "color": "coral",
+      "zh": "坐下来慢一点",
+      "ja": "座ってゆっくり",
+      "en": "A SEATED PAUSE",
+      "items": "兰州百合 · 三炮台"
+    }
+  ],
+  "fallback": {
+    "zh": "错过早晨？不横穿全城补课，在当前路线附近吃。",
+    "ja": "朝を逃したら、街を横断せず現在の経路近くで食べる。",
+    "en": "MISSED MORNING? EAT NEAR THE CURRENT ROUTE · DO NOT BACKTRACK"
+  },
+  "sources": {
+    "morning_context": {
+      "url": "https://www.gswbj.gov.cn/a/2026/03/16/27730.html",
+      "checked_at": "2026-08-22",
+      "role": "current institutional context for the morning noodle rhythm"
+    },
+    "food_context": {
+      "url": "https://www.gswbj.gov.cn/a/2026/06/10/28550.html",
+      "checked_at": "2026-08-22",
+      "role": "current institutional context for named Lanzhou foods"
+    }
+  },
+  "generalizations": [
+    "This is an original day-phase decision diagram, not a timetable or opening-hours chart.",
+    "Morning, midday, afternoon, and evening are broad traveler decisions rather than exact hours.",
+    "The afternoon branches are alternatives; the diagram does not ask the traveler to complete both.",
+    "Availability, closing time, portions, recipes, dietary status, and exact locations require a live check."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch06-compact-pages/page-085.png",
+        "sha256": "1bae3078d289bdfa3e70833df767ea8d580de1345dd234e566f991f8df1f41c8"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch06-preview/desktop-06-map-02.png",
+        "sha256": "de1a9f4674febe18b452cd4550a29e8193b1756b2836ec6b9b9dac0b47ca4a2e"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-map-02-left.png",
+        "sha256": "41b989bd8e2c1b4b743190d9584ec948e89f813cf81bd235749579ffae69c325"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-map-02-center.png",
+        "sha256": "7483a6bd850f05c900b0520214ffd675b758e761301fa45fbfcabaf94e9142b2"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch06-preview/mobile-06-map-02-right.png",
+        "sha256": "32d0eb3396d563ce4485c458923da621c3368a783d9832364f6b0971982c82da"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch06-preview/qa.json",
+        "sha256": "fc580bf6880dbe882afa4534ccc1ca065528cc444065f4a8d9d40e34998fec51"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 print diagram and compiled B6 page preserve four broad day phases, the single afternoon branch, the missed-morning fallback, and the evening stop without clipping or collisions.",
+      "At a 390 px viewport the 760 px stage pans left, centre, and right; both afternoon choices and every route warning remain readable with visible zoom and reset controls."
+    ]
+  }
+}

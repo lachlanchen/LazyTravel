@@ -12,8 +12,8 @@ no private session history.
 4. Run `python3 scripts/verify_sources.py`. External archives and visual
    references must remain at their hash-pinned read-only paths.
 5. Continue only Lanzhou at `china/cities/lanzhou`. Its source ledger, main
-   travel-guide line, and exactly 11 chapters are locked. Chapters 1-5 are
-   accepted; Chapter 6 is the only active gate. Do not reopen Xi'an, Hakone, or
+   travel-guide line, and exactly 11 chapters are locked. Chapters 1-6 are
+   accepted; Chapter 7 is the only active gate. Do not reopen Xi'an, Hakone, or
    an accepted Lanzhou chapter without a demonstrated failure.
 6. Run focused tests while editing, then the full validation/build sequence:
 
@@ -49,8 +49,8 @@ python3 scripts/verify_deployed_site.py \
 ```
 
 Current gate: Xi'an and Hakone are complete and publicly published. Lanzhou
-Chapters 1-5 are accepted as an `84`-page pocket and synchronized website
+Chapters 1-6 are accepted as a `101`-page pocket and synchronized website
 milestone; the Nutstore SHA-256 is
-`bf238bb246ab1da2c671436c593b67f3372c793ec2552b1b25b34e976fdf8270`. Chapter 6,
-**Eat by Lanzhou's Clock**, is the only active production gate. Never work on
-two destination books at once.
+`c85bee576db09f7e1cd40a5f783dec53beb043bc916044aa66bebbd05cb56061`. Chapter 7,
+**Choose One Height: White Pagoda Hill, Lanshan, or Wuquan Mountain**, is the
+only active production gate. Never work on two destination books at once.
