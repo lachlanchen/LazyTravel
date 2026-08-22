@@ -19,8 +19,8 @@ Published guide paths:
 ## Current Editorial Gate
 
 Xi'an and Hakone are complete and publicly published. Lanzhou at
-`china/cities/lanzhou` is the only active book. Chapters 1-6 are accepted public
-milestones; Chapter 7 is the sole production gate. Only one destination may be
+`china/cities/lanzhou` is the only active book. Chapters 1-7 are accepted
+milestones; Chapter 8 is the sole production gate. Only one destination may be
 in production at a time. Broader Gansu and Ningxia sources remain research
 context, not destination-book titles.
 
@@ -70,16 +70,16 @@ Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
 
 Lanzhou has a hash-verified read-only source baseline, an explicit claim and
-rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-6,
-through **Eat by Lanzhou's Clock**, are accepted: `55` aligned blocks, `6,134`
-reviewed Chinese reading tokens, `7,878` reviewed Japanese reading tokens, 51
-chapter-source entries, twelve four-guide figures, and eight code-built maps.
-The same canonical JSON produces a `101`-page B6 pocket and a responsive site
-with `8,486` ruby nodes. The pocket SHA-256 is
-`c85bee576db09f7e1cd40a5f783dec53beb043bc916044aa66bebbd05cb56061`, and its
-Nutstore copy matches. Chapter 7, **Choose One Height: White Pagoda Hill,
-Lanshan, or Wuquan Mountain**, is the only active production gate; the Lanzhou
-book itself is not yet complete.
+rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-7,
+through **Choose One Height**, are accepted: `65` aligned blocks, `7,340`
+reviewed Chinese reading tokens, `9,448` reviewed Japanese reading tokens, 63
+chapter-source entries, fifteen four-guide figure placements, and nine
+code-built maps. The same canonical JSON produces a `118`-page B6 pocket and a
+responsive site with `10,138` ruby nodes. The pocket SHA-256 is
+`5e7ad3ba58d9e2eae36fc430f79bb151755f4aaba18eb659fd77f866d3cabcd3`, and its
+Nutstore copy matches. Chapter 8, **Where to Stay: Choose the Route Segment
+Before the Hotel**, is the only active production gate; the Lanzhou book itself
+is not yet complete.
 
 ## Source Boundary
 
@@ -186,7 +186,10 @@ Serve the generated site in one terminal and run browser QA in another:
 
 ```bash
 python3 -m http.server 4173 --bind 127.0.0.1 --directory site
-python3 scripts/qa_website.py --url http://127.0.0.1:4173/
+python3 scripts/qa_destination_website.py \
+  --url http://127.0.0.1:4173/china/cities/lanzhou/ \
+  --book data/china/cities/lanzhou/book.json \
+  --output build/qa/website/lanzhou-release
 ```
 
 Every push to `main` rebuilds and publishes the static site through

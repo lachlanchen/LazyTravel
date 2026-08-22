@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-height-choice-map",
+  "id": "lanzhou-height-choice",
+  "snapshot_date": "2026-08-22",
+  "title": {
+    "zh": "三处高度，只选一处",
+    "ja": "三つの高所から一か所だけ",
+    "en": "CHOOSE ONE HEIGHT"
+  },
+  "spatial_anchors": [
+    {
+      "id": "white-pagoda-hill",
+      "name": "白塔山 / 白塔山 / WHITE PAGODA",
+      "latitude": 36.0703809,
+      "longitude": 103.8076483,
+      "source": "OpenStreetMap way W409963603",
+      "role": "north-bank park anchor, not an entrance or open-path promise"
+    },
+    {
+      "id": "wuquan-mountain-park",
+      "name": "五泉山 / 五泉山 / WUQUAN",
+      "latitude": 36.0369779,
+      "longitude": 103.8223288,
+      "source": "OpenStreetMap way W405316034",
+      "role": "southern-foot park anchor, not a gate or spring coordinate"
+    },
+    {
+      "id": "lanshan-santai",
+      "name": "兰山·三台阁 / 蘭山・三台閣 / LANSHAN",
+      "latitude": 36.025425,
+      "longitude": 103.839113,
+      "source": "read-only open-guide Gaolan Mountain plotting lead",
+      "role": "generalized high southern anchor, not a trailhead or boarding point"
+    }
+  ],
+  "choices": [
+    {
+      "id": "white-pagoda-hill",
+      "number": 1,
+      "color": "vermilion",
+      "zh": "白塔山｜桥与两岸",
+      "ja": "白塔山｜橋と両岸",
+      "en": "CENTRAL CROSSING",
+      "stop_zh": "下层台地或白塔寺",
+      "stop_ja": "下段テラスか白塔寺",
+      "stop_en": "LOWER TERRACE OR PRECINCT"
+    },
+    {
+      "id": "lanshan-santai",
+      "number": 2,
+      "color": "coral",
+      "zh": "兰山｜河谷形状",
+      "ja": "蘭山｜河谷の形",
+      "en": "VALLEY FORM",
+      "stop_zh": "确认可达的高处",
+      "stop_ja": "到達を確認した高所",
+      "stop_en": "CONFIRMED HIGH VIEWPOINT"
+    },
+    {
+      "id": "wuquan-mountain-park",
+      "number": 3,
+      "color": "jade",
+      "zh": "五泉山｜园路与古建筑",
+      "ja": "五泉山｜園路と歴史的建造物",
+      "en": "PARK AND HERITAGE",
+      "stop_zh": "一段开放院落与泉路",
+      "stop_ja": "開いている境内と泉の一区間",
+      "stop_en": "ONE OPEN PARK SEGMENT"
+    }
+  ],
+  "checks": [
+    {
+      "number": 1,
+      "color": "cobalt",
+      "zh": "能见度",
+      "ja": "視界",
+      "en": "VISIBILITY"
+    },
+    {
+      "number": 2,
+      "color": "vermilion",
+      "zh": "风雨·路面",
+      "ja": "風雨・路面",
+      "en": "WEATHER · SURFACE"
+    },
+    {
+      "number": 3,
+      "color": "jade",
+      "zh": "台阶·接驳",
+      "ja": "階段・接続",
+      "en": "STEPS · TRANSFER"
+    },
+    {
+      "number": 4,
+      "color": "coral",
+      "zh": "下山方式",
+      "ja": "下山方法",
+      "en": "CONFIRMED DESCENT"
+    }
+  ],
+  "fallback": {
+    "zh": "任何一项不合适：不登高，保留城内平地路线",
+    "ja": "一つでも条件が合わない：登らず、市街の平地経路へ",
+    "en": "ONE FAILED CHECK · KEEP THE CITY-LEVEL ROUTE"
+  },
+  "sources": {
+    "osm_white_pagoda": {
+      "url": "https://www.openstreetmap.org/way/409963603",
+      "retrieved_at": "2026-08-22",
+      "license": "ODbL 1.0",
+      "role": "park centre and north-bank relationship"
+    },
+    "osm_wuquan": {
+      "url": "https://www.openstreetmap.org/way/405316034",
+      "retrieved_at": "2026-08-22",
+      "license": "ODbL 1.0",
+      "role": "park centre and southern-foot relationship"
+    },
+    "open_guide_lanshan": {
+      "path": "/home/lachlan/ProjectsLFS/Books/resources/curated-books/travel-guides/xian-gansu-open-guides/gansu/en/gansu-open-travel-guide-en.html",
+      "sha256": "41c3e40ed295b63a796619f8bd2faf17e94d0c0c84e4ccde511f647fb4779f28",
+      "license": "CC BY-SA 4.0",
+      "locator": "line 518, Gaolan Mountain listing at 36.025425, 103.839113",
+      "role": "plotting lead only; descriptive text is not reused"
+    },
+    "official_geography": {
+      "url": "https://www.gswbj.gov.cn/a/2025/07/17/25374.html",
+      "checked_at": "2026-08-22",
+      "role": "north-bank, southern-foot, and higher-southern place relationship"
+    },
+    "municipal_live_map": {
+      "url": "https://gansu.tianditu.gov.cn/lanzhou/",
+      "checked_at": "2026-08-22",
+      "role": "responsible live-map entry point; no tiles are redistributed"
+    }
+  },
+  "generalizations": [
+    "This is an original purpose-and-turnaround schematic, not turn-by-turn navigation.",
+    "North-south spacing and the east-west city band are exaggerated for B6 label legibility.",
+    "No path is drawn from Wuquan Mountain to Lanshan, and no current cableway, bus, road, fare, gradient, or walking time is encoded.",
+    "Park centre and mountain anchors are orientation points, not gates, trailheads, boarding points, or accessibility evidence.",
+    "The three branches are alternatives; a failed weather, visibility, mobility, or descent check returns to the city-level route rather than another hill."
+  ],
+  "visual_qa": {
+    "print_300dpi": "pass",
+    "mobile_390px": "pass",
+    "label_collisions": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch07-final-pages/page-097.png",
+        "sha256": "bf9ee957dda8f4ac4da13a38b0313430580e179fabb244efd1a49c27f7a68ef8"
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch07-release/mobile-390-map.png",
+        "sha256": "3dad7ca62440c07205972e24894a422c4d16448395e281288a5e8f51387fd1f0"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch07-release/qa.json",
+        "sha256": "cfd48123964bb2524cb1cdc0dc56fb6122f321a1c64cec166ec45cc9dcd00057"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve the three alternative heights, the city-level fallback, and all four go/no-go checks without collisions.",
+      "At a 390 px viewport the 760 px map stage pans independently; the trilingual purpose, turnaround, weather, access, and descent labels remain readable without implying turn-by-turn navigation."
+    ]
+  }
+}

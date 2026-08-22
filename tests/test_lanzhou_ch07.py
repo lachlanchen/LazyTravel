@@ -11,9 +11,15 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK_PATH = ROOT / "data/china/cities/lanzhou/book.json"
-ORDER_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-noodle-order.config.json"
-CLOCK_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-food-clock.config.json"
-FIGURE_CONFIG = ROOT / "data/images/lanzhou/ch06-figures.config.json"
+MAP_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-height-choice.config.json"
+FIGURE_CONFIG = ROOT / "data/images/lanzhou/ch07-figures.config.json"
+MAP_STEM = ROOT / "assets/maps/lanzhou/lanzhou-height-choice"
+GUIDE_PATHS = {
+    "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+    "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+    "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+    "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+}
 
 
 def sha256(path: Path) -> str:
@@ -24,23 +30,20 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-class LanzhouChapterSixTests(unittest.TestCase):
+class LanzhouChapterSevenTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.book = json.loads(BOOK_PATH.read_text(encoding="utf-8"))
-        cls.chapter = cls.book["chapters"][5]
+        cls.chapter = cls.book["chapters"][6]
 
     def test_locked_blocks_and_next_gate(self) -> None:
         self.assertEqual(len(self.book["chapters"]), 11)
-        self.assertEqual(self.chapter["id"], "ch06-food-clock")
+        self.assertEqual(self.chapter["id"], "ch07-city-heights")
         self.assertEqual(self.chapter["status"], "final")
         self.assertEqual(
             [block["id"] for block in self.chapter["blocks"]],
-            [f"ch06-b{number:03d}" for number in range(1, 11)],
+            [f"ch07-b{number:03d}" for number in range(1, 11)],
         )
-        self.assertEqual(self.book["chapters"][6]["id"], "ch07-city-heights")
-        self.assertEqual(self.book["chapters"][6]["status"], "final")
-        self.assertEqual(len(self.book["chapters"][6]["blocks"]), 10)
         self.assertEqual(self.book["chapters"][7]["id"], "ch08-stay-segment")
         self.assertEqual(self.book["chapters"][7]["status"], "researching")
         self.assertTrue(
@@ -59,7 +62,7 @@ class LanzhouChapterSixTests(unittest.TestCase):
                 reconstructed = "".join(token["text"] for token in layer["tokens"])
                 self.assertEqual(reconstructed, block["text"][language])
 
-    def test_food_and_menu_readings_are_reviewed(self) -> None:
+    def test_height_and_spring_readings_are_reviewed(self) -> None:
         zh = {
             (token["text"], token.get("reading"))
             for block in self.chapter["blocks"]
@@ -72,48 +75,45 @@ class LanzhouChapterSixTests(unittest.TestCase):
         }
         self.assertTrue(
             {
-                ("牛肉面", "niúròumiàn"),
-                ("毛细", "máoxì"),
-                ("二细", "èrxì"),
-                ("韭叶", "jiǔyè"),
-                ("酿皮子", "niàngpízi"),
-                ("灰豆子", "huīdòuzi"),
-                ("甜醅子", "tiánpēizi"),
-                ("三炮台", "sānpàotái"),
-                ("兰州百合", "lánzhōu bǎihé"),
+                ("白塔山", "báitǎshān"),
+                ("中山桥", "zhōngshānqiáo"),
+                ("兰山", "lánshān"),
+                ("三台阁", "sāntáigé"),
+                ("五泉山", "wǔquánshān"),
+                ("摸子", "mōzǐ"),
             }.issubset(zh)
         )
         self.assertTrue(
             {
-                ("毛细", "まおしー"),
-                ("二细", "あるしー"),
-                ("韭叶", "じういえ"),
-                ("酿皮子", "にゃんぴーず"),
-                ("灰豆子", "ふいどうず"),
-                ("甜醅子", "てぃえんぺいず"),
-                ("三炮台", "さんぱおたい"),
-                ("蘭州百合", "らんしゅうゆり"),
+                ("白塔山", "はくとうざん"),
+                ("中山橋", "ちゅうざんきょう"),
+                ("蘭山", "らんざん"),
+                ("三台閣", "さんたいかく"),
+                ("五泉山", "ごせんざん"),
+                ("摸子", "もーず"),
             }.issubset(ja)
         )
 
     def test_assets_citations_and_evidence_are_closed(self) -> None:
         expected_assets = {
-            "asset-lanzhou-beef-noodle-morning",
-            "asset-lanzhou-noodle-order-diagram",
-            "asset-lanzhou-food-clock-diagram",
-            "asset-lanzhou-afternoon-snacks",
-            "asset-lanzhou-lily-sanpaotai",
+            "asset-lanzhou-white-pagoda-hill",
+            "asset-lanzhou-height-choice-map",
+            "asset-lanzhou-lanshan-santai-view",
+            "asset-lanzhou-wuquan-heritage-park",
         }
         expected_citations = {
-            "src-lanzhou-food-source-2020",
-            "src-lanzhou-beef-noodle-ich",
-            "src-lanzhou-noodle-order-2022",
-            "src-lanzhou-food-context-2026",
-            "src-lanzhou-summer-foods-2023",
-            "src-lanzhou-lily-gi-2025",
-            "src-lanzhou-sanpaotai-consumer-2022",
-            "src-lanzhou-noodle-order-map-data",
-            "src-lanzhou-food-clock-map-data",
+            "src-lanzhou-baita-current-2025",
+            "src-lanzhou-baita-gazetteer",
+            "src-lanzhou-bridge-hill-map-data",
+            "src-lanzhou-geography-2026",
+            "src-lanzhou-height-choice-map-data",
+            "src-lanzhou-heights-access-2026",
+            "src-lanzhou-heights-geography-2025",
+            "src-lanzhou-lanshan-holiday-bus-2026",
+            "src-lanzhou-lanshan-record-2025",
+            "src-lanzhou-wuquan-flood-2026",
+            "src-lanzhou-wuquan-heritage-2021",
+            "src-lanzhou-wuquan-heritage-2023",
         }
         used_assets = {
             asset_id
@@ -129,10 +129,6 @@ class LanzhouChapterSixTests(unittest.TestCase):
         self.assertEqual(used_citations, expected_citations)
 
         assets = {item["id"]: item for item in self.book["assets"]}
-        self.assertEqual(
-            [assets[asset_id]["kind"] for asset_id in expected_assets].count("map"),
-            2,
-        )
         for asset_id in expected_assets:
             asset = assets[asset_id]
             self.assertTrue(asset["qa"]["approved"])
@@ -150,14 +146,7 @@ class LanzhouChapterSixTests(unittest.TestCase):
                 self.assertEqual(visual_qa["b6_print"], "pass")
                 self.assertEqual(visual_qa["mobile_390px"], "pass")
                 references = {item["path"] for item in provenance["source_images"]}
-                self.assertTrue(
-                    {
-                        "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
-                        "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
-                        "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
-                        "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
-                    }.issubset(references)
-                )
+                self.assertTrue(GUIDE_PATHS.issubset(references))
             for evidence in visual_qa.get("evidence", {}).values():
                 path = ROOT / evidence["path"]
                 self.assertTrue(evidence["path"].startswith("build/qa/"))
@@ -165,32 +154,40 @@ class LanzhouChapterSixTests(unittest.TestCase):
                 if path.is_file():
                     self.assertEqual(sha256(path), evidence["sha256"])
 
-    def test_diagrams_rebuild_at_b6_print_resolution(self) -> None:
+    def test_height_map_rebuilds_at_b6_print_resolution(self) -> None:
         subprocess.run(
-            [sys.executable, "scripts/build_lanzhou_food_diagrams.py"],
+            [sys.executable, "scripts/build_lanzhou_height_choice_map.py"],
             cwd=ROOT,
             check=True,
             stdout=subprocess.DEVNULL,
         )
-        for stem in (
-            ROOT / "assets/maps/lanzhou/lanzhou-noodle-order",
-            ROOT / "assets/maps/lanzhou/lanzhou-food-clock",
-        ):
-            with Image.open(stem.with_suffix(".png")) as image:
-                self.assertEqual(image.size, (1620, 2280))
-            for suffix in (".svg", ".pdf", ".png", ".provenance.json"):
-                self.assertTrue(stem.with_suffix(suffix).is_file())
+        with Image.open(MAP_STEM.with_suffix(".png")) as image:
+            self.assertEqual(image.size, (1620, 2280))
+        provenance = json.loads(
+            MAP_STEM.with_suffix(".provenance.json").read_text(encoding="utf-8")
+        )
+        for suffix, record in provenance["outputs"].items():
+            path = MAP_STEM.with_suffix(f".{suffix}")
+            self.assertTrue(path.is_file())
+            self.assertEqual(sha256(path), record["sha256"])
 
-    def test_diagram_boundaries_are_explicit(self) -> None:
-        order = json.loads(ORDER_CONFIG.read_text(encoding="utf-8"))
-        clock = json.loads(CLOCK_CONFIG.read_text(encoding="utf-8"))
-        figures = json.loads(FIGURE_CONFIG.read_text(encoding="utf-8"))
-        self.assertEqual([step["number"] for step in order["steps"]], list(range(1, 6)))
-        self.assertEqual(len(order["shape_groups"]), 3)
-        self.assertTrue(any("not a plan" in item for item in order["generalizations"]))
-        self.assertEqual([phase["number"] for phase in clock["phases"]], list(range(1, 5)))
-        self.assertTrue(any("opening-hours" in item for item in clock["generalizations"]))
-        self.assertEqual(len(figures["figures"]), 3)
+    def test_choice_map_and_figure_boundaries_are_explicit(self) -> None:
+        map_config = json.loads(MAP_CONFIG.read_text(encoding="utf-8"))
+        figure_config = json.loads(FIGURE_CONFIG.read_text(encoding="utf-8"))
+        self.assertEqual(
+            [choice["id"] for choice in map_config["choices"]],
+            ["white-pagoda-hill", "lanshan-santai", "wuquan-mountain-park"],
+        )
+        self.assertEqual(
+            [check["number"] for check in map_config["checks"]], [1, 2, 3, 4]
+        )
+        self.assertTrue(
+            any("No path is drawn" in item for item in map_config["generalizations"])
+        )
+        self.assertEqual(len(figure_config["figures"]), 2)
+        self.assertTrue(
+            all(item["visual_qa"]["approved"] for item in figure_config["figures"])
+        )
 
 
 if __name__ == "__main__":

@@ -11,10 +11,11 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   published with all 11 chapters and a reproducible B6 pocket book.
 - Lanzhou at `china/cities/lanzhou` is the only next production destination.
   Its factual spine and exactly 11 chapters are locked in
-  `books/china/cities/lanzhou/editorial/outline.md`. Chapters 1 through 6,
-  through Eat by Lanzhou's Clock, are accepted. Chapter 7, Choose One Height:
-  White Pagoda Hill, Lanshan, or Wuquan Mountain, is the only active production
-  gate; do not reopen Hakone or an accepted Lanzhou chapter without a
+  `books/china/cities/lanzhou/editorial/outline.md`. Chapters 1 through 7,
+  through Choose One Height: White Pagoda Hill, Lanshan, or Wuquan Mountain,
+  are accepted. Chapter 8, Where to Stay: Choose the Route Segment Before the
+  Hotel, is the only active production gate; do not reopen Hakone or an
+  accepted Lanzhou chapter without a
   demonstrated failure, and do not start another destination in parallel.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
   a local editorial problem.

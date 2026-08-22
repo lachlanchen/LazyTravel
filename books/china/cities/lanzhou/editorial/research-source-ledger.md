@@ -50,7 +50,8 @@ and reproducible production code.
 
 ## Current Authoritative Source Index
 
-All web sources below were opened or rechecked on `2026-08-21`. A check date
+All web sources below were opened or rechecked on `2026-08-21` or
+`2026-08-22`. A check date
 does not make a volatile observation durable. Operational facts are checked
 again during their chapter gate and close to release.
 
@@ -90,6 +91,13 @@ again during their chapter gate and close to release.
 | `LZH-TOURISM-2026` | Gansu culture and tourism department, current Lanzhou visitor overview | <https://www.gswbj.gov.cn/a/2026/06/10/28550.html> | Current lead for the pedestrian bridge, riverfront relationship, foods, and central visitor sequence. Promotional language and broad quality claims are not reused. |
 | `LZH-BAITA-GAZETTEER` | Gansu Local Chronicles, Lanzhou garden and greening gazetteer, printed pp. 139-151 | <https://www.gsdfszw.org.cn/gssz_58/dyl_69/lzs_224/dsjyllhz/201707/P020170705353409423046.pdf> | Documents pre-`1448` temple ruins, reconstruction during `1448-1452`, later Ming/Qing additions, the `1958-1959` terrace complex, full park opening in `1960`, and the bridge-park-temple axis. It does not settle the first foundation date or prove current access to every path or building. |
 | `LZH-BAITA-CURRENT-2025` | Lanzhou municipal English portal, White Pagoda Hill Park | <https://english.lanzhou.cn/system/2025/09/16/012564390.shtml> | Current institutional confirmation of the park's north-bank setting, terraced ascent, and central-city viewpoint. Promotional descriptions and permanent-access implications are excluded. |
+| `LZH-HEIGHTS-GEOGRAPHY-2025` | Gansu culture and tourism department, Lanzhou's three southern and northern height choices | <https://www.gswbj.gov.cn/a/2025/07/17/25374.html> | Current institutional lead for White Pagoda Hill, Lanshan, and Wuquan in the valley landscape. Promotional superlatives, clear-view promises, and permanent route implications are excluded. |
+| `LZH-LANSHAN-RECORD-2025` | Gansu Daily, local record of Lanshan and Santai Pavilion | <https://szb.gansudaily.com.cn/gsrb/pc/con/202501/08/c202436.html> | Records the Santai high point at `2129.6 m`, repeated loss and rebuilding, and the present `26 m` pavilion rebuilt in `1983-1984`. The accompanying image is an unredistributed massing reference, not a publishable source figure. |
+| `LZH-HEIGHTS-ACCESS-2026` | Gansu culture and tourism department, dated Lanzhou height itinerary | <https://www.gswbj.gov.cn/a/2026/06/11/28565.html> | Dated evidence that taxi or cableway and a Wuquan-Lanshan connection were promoted in June 2026. It does not prove current operation, step-free access, one-way versus return service, or an open through-route. |
+| `LZH-LANSHAN-HOLIDAY-BUS-2026` | Gansu Daily, Lanzhou bus `750` holiday service notice | <https://lz.gansudaily.com.cn/system/2026/04/29/031360676.shtml> | Shows intensified service only for `2026-05-01` through `2026-05-05`. It is evidence against presenting route `750` as a permanent daily service. |
+| `LZH-WUQUAN-HERITAGE-2023` | Xinhua, Wuquan Mountain conservation and reopening | <https://www.news.cn/culture/2023-04/02/c_1129487481.htm> | Establishes the five named springs, layered Yuan-to-later construction, `24` protected buildings or groups, national-level protection in `2013`, and nine reopened after conservation in `2023`. That reopening does not prove every doorway is open today. The images are unredistributed visual references only. |
+| `LZH-WUQUAN-HERITAGE-2021` | Gansu culture and tourism department, Wuquan Mountain heritage overview | <https://www.gswbj.gov.cn/a/2021/02/26/7922.html> | Corroborating institutional context for the named springs and layered park-and-building landscape. The Huo Qubing spring story is treated as tradition, not historical proof. |
+| `LZH-WUQUAN-FLOOD-2026` | Gansu Daily, Wuquan flood-season operation | <https://gansu.gansudaily.com.cn/system/2026/08/11/031415145.shtml> | Dated evidence for monitoring, broadcast clearance, and temporary closure procedures during the 2026 flood season. It supports a weather-triggered cancellation rule, not a current closure claim. |
 | `ICH-WATERWHEEL` | China Intangible Cultural Heritage, Lanzhou Yellow River waterwheel | <https://www.ihchina.cn/project_details/14355/> | Protected-heritage record, `2006` listing, technology, and historical practice. A heritage description does not establish the operating condition of a present display. |
 | `ICH-BEEF-NOODLE` | China Intangible Cultural Heritage, Lanzhou beef-noodle craft | <https://www.ihchina.cn/project_details/23794.html> | `2021` national-list record, noodle forms, craft sequence, and the established color formula. Treat origin narrative as recorded tradition unless corroborated; do not convert it into a health or authenticity ranking. |
 | `LZH-FOOD-2026` | Gansu culture and tourism department, Lanzhou food context | <https://www.gswbj.gov.cn/a/2026/03/16/27730.html> | Contemporary cultural context for beef noodles and their social rhythm. Promotional claims require separate support. |
@@ -120,7 +128,7 @@ again during their chapter gate and close to release.
 | 4 | What is a realistic Yellow River Iron Bridge-White Pagoda Hill Park walk? | `LZH-BRIDGE-HISTORY`, `LZH-RIVER-CORE-2024`, current public-space sources, map measurements, same-day river/access guidance, and field-readable landmarks. |
 | 5 | Which museum route gives useful context for a later Gansu trip? | `LZH-MUSEUM`, object-level institutional records, current gallery status, and explicit distinction between findspot and display location. |
 | 6 | How does a traveler order and pace meals without turning food into folklore? | `ICH-BEEF-NOODLE`, `LZH-FOOD-2020`, `LZH-FOOD-2026`, `LZH-NOODLE-ORDER-2022`, `LZH-SUMMER-FOODS-2023`, `CNIPA-LANZHOU-LILY-2025`, `GS-SANPAOTAI-2022`, and direct shop confirmation for dietary needs. Chapter accepted on `2026-08-22`. |
-| 7 | Which one height fits weather, mobility, and daylight? | Separate official access sources for White Pagoda Hill, Lanshan, and Wuquan Mountain, current route checks, map gradients, and no guaranteed-view language. This is an open research gate. |
+| 7 | Which one height fits weather, mobility, and daylight? | `LZH-BAITA-GAZETTEER`, `LZH-BAITA-CURRENT-2025`, `LZH-LANSHAN-RECORD-2025`, `LZH-HEIGHTS-ACCESS-2026`, `LZH-LANSHAN-HOLIDAY-BUS-2026`, `LZH-WUQUAN-HERITAGE-2023`, `LZH-WUQUAN-FLOOD-2026`, current route checks, and no guaranteed-view language. Factual, language, reading, figure, map, B6, and responsive-site gates accepted on `2026-08-22`. |
 | 8 | Which district minimizes the traveler's actual transfers? | Current station/metro geography, official lodging directories or direct property pages, and dated verification for every named property or feature. |
 | 9 | Can each itinerary be completed with meals, rest, and a usable exit? | Accepted Chapters 1-8, measured map distances, current venue days, and a whole-day fallback rather than added stops. |
 | 10 | How much buffer does the next Gansu leg require? | Current railway and airline booking results, station/terminal confirmation, and dated operator notices. No preserved timetable. |
@@ -147,6 +155,9 @@ again during their chapter gate and close to release.
 | Spring is unsuitable for Lanzhou | Reject. Use long-term climate patterns plus a trip-date forecast, clothing plan, and current warnings. |
 | The 2014 airport distance, one-hour transfer, taxi fare, bus route, hotel, restaurant, or venue hours | Reject as current advice. The opening of T3 alone demonstrates why the old logistics cannot be carried forward. |
 | A clear skyline, river level, boat service, cableway, or sunset | Never promise. Give a same-day check and a ground-level alternative. |
+| Bus `750`, a cableway, taxi pickup, or a Wuquan-Lanshan link is a permanent route | Reject. The cited examples are dated; verify the full ascent and descent on the travel day. |
+| Huo Qubing created the five Wuquan springs as a settled historical event | Reject. It is a local tradition and does not improve route decisions; use the spring names only for sign recognition. |
+| White Pagoda Hill, Lanshan, and Wuquan Mountain should be completed in one day | Reject. They answer different travel questions; choose one and stop after the planned descent. |
 | A search result or tourism list proves a hotel is open, clean, quiet, accessible, or suitable | Reject. Verify direct property evidence and preserve the check date. |
 | Linxia, the Yellow River Stone Forest, or another complex regional destination is an easy add-on to a full Lanzhou day | Reject. A place that requires a long transfer, uncertain operation, or an overnight belongs in a wider Gansu plan. |
 
@@ -159,6 +170,7 @@ again during their chapter gate and close to release.
 | Metro | Lanzhou Rail Transit service page and station notice | Two operating lines form the current core network; exits and hours can change. |
 | Museum | Gansu Provincial Museum reservation and notice pages | The museum is a major regional-context anchor; opening day and displayed objects can change. |
 | Riverfront | Municipal/site notices and same-day weather/river conditions | The bridge-and-banks relationship is durable; access and boat operation are not. |
+| City heights | Site/transport notices, hourly forecast, current map, and confirmed return | Each height offers a different city reading; visibility, paths, vehicles, devices, and closures remain volatile. |
 | Food | Direct shop/menu/dietary confirmation | Explain food forms and ordering logic; do not preserve a business recommendation as permanent. |
 | Lodging | Direct property page/contact plus booking terms | District-first advice is durable; property operations and facilities are not. |
 | Nearby day | Site, county, transport operator, and weather notices | Bingling, Xinglong, and Ink Danxia are alternative planning branches, not guaranteed departures. |

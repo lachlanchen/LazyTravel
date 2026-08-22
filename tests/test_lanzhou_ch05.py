@@ -39,8 +39,13 @@ class LanzhouChapterFiveTests(unittest.TestCase):
         self.assertEqual(self.book["chapters"][5]["id"], "ch06-food-clock")
         self.assertEqual(self.book["chapters"][5]["status"], "final")
         self.assertEqual(len(self.book["chapters"][5]["blocks"]), 10)
-        self.assertEqual(self.book["chapters"][6]["status"], "researching")
-        self.assertTrue(all(not chapter["blocks"] for chapter in self.book["chapters"][6:]))
+        self.assertEqual(self.book["chapters"][6]["status"], "final")
+        self.assertEqual(len(self.book["chapters"][6]["blocks"]), 10)
+        self.assertEqual(self.book["chapters"][7]["id"], "ch08-stay-segment")
+        self.assertEqual(self.book["chapters"][7]["status"], "researching")
+        self.assertTrue(
+            all(not chapter["blocks"] for chapter in self.book["chapters"][7:])
+        )
 
     def test_alignment_and_readings_are_closed(self) -> None:
         for block in self.chapter["blocks"]:
@@ -175,7 +180,12 @@ class LanzhouChapterFiveTests(unittest.TestCase):
         self.assertTrue(
             any("room-level navigation map" in item for item in route["generalizations"])
         )
-        self.assertTrue(any("not excavation coordinates" in item for item in findspots["generalizations"]))
+        self.assertTrue(
+            any(
+                "not excavation coordinates" in item
+                for item in findspots["generalizations"]
+            )
+        )
 
 
 if __name__ == "__main__":

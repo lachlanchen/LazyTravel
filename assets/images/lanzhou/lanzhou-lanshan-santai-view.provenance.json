@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-lanshan-santai-view",
+  "created_at": "2026-08-22",
+  "method": "generated-attraction-figure-with-targeted-cleanup",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2; one targeted Codex image edit for visitor removal",
+  "task_id": "exec-5971d85c-2012-4bb4-8a3a-c544c7900739",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and clean articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch07/visual-references/lanshan-daily-03.jpg",
+      "sha256": "5da78c2a26ccc903220079c18419d7bfe5541ac4710d779adb299cba71cba789",
+      "reference_url": "https://szb.gansudaily.com.cn/gsrb/pc/con/202501/08/c202436.html",
+      "role": "Unredistributed current newspaper reference for Santai Pavilion massing and its elevated relationship to Lanzhou's valley"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-lanshan-santai-view.prompt.md",
+    "sha256": "a97688fcf3ab71a697228fc16089cbe6c9382aee3744e2c96ffe2d2810d285aa"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v1/task_manifest.json",
+      "sha256": "8a7cd5c4041a07d63dbb026e436135474d1fcca21821aa56c61b9bde29e0daab",
+      "bytes": 2853,
+      "role": "Rejected provider output because generation ended in output moderation"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v2/task_manifest.json",
+      "sha256": "bf11835e48fb5d2066c2bfb63efcf6f8f4ff6744a3fb9585420b05436c2ce12c",
+      "bytes": 2952,
+      "role": "Rejected because the real low pavilion was enlarged into a fabricated multi-storey tower with generated lettering"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v3/task_manifest.json",
+      "sha256": "b973098876cb7f1183049ad93709c43019b4f800505ca106d39c3d9d3a3f9e11",
+      "bytes": 2951,
+      "role": "Rejected because Aya-chan and Lala Xia were replaced by generic human travelers"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v4/task_manifest.json",
+      "sha256": "73c46e45a478e36b94a60aaffac7131d96fcde520f8b94f59a202b8d0a740951",
+      "bytes": 3010,
+      "role": "Accepted scene and cast base, but not distributable because one tiny anonymous terrace visitor remained"
+    },
+    {
+      "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v5/task_manifest.json",
+      "sha256": "18d7558660a42cd9ff79eb5036d6042b164ca851d6e82c9c86e613a9f80a1686",
+      "bytes": 1595,
+      "role": "Rejected targeted edit because it preserved the terrace visitor and added a red post"
+    },
+    {
+      "path": "build/research/lanzhou/imagegen/ch07-lanshan-santai-final/task_manifest.json",
+      "sha256": "059c5589ac71a59869f0a8649945e3acfe9b35344e983fb648a2251bb5537360",
+      "bytes": 879,
+      "role": "Selected targeted correction with the visitor removed, the Santai composition retained, and exactly four recurring guides"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/imagegen/ch07-lanshan-santai-final/lanzhou-lanshan-santai-view-final.png",
+    "sha256": "667e731989868f4636ab1571a7f186c054bcd7d2203fc3879bc21d202661edb7",
+    "bytes": 2661495,
+    "width": 1678,
+    "height": 937
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-lanshan-santai-view.jpg",
+    "sha256": "bc7bdf4553de70afcf9d8cf527201cf41c804754a7949fe4101847db201a5c14",
+    "bytes": 1782161,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-lanshan-santai-view-web.jpg",
+      "sha256": "84eaf3181bee40ff0e67b8d50e37daee2c203af075e432256834b517a74de220",
+      "bytes": 608069,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is an editorial present-day orientation image, not a documentary photograph or a survey of one exact viewing position.",
+    "The Gansu Daily reference constrains Santai Pavilion's low base, compact upper roofs, and elevated valley relationship; colours, foreground railing, planting, skyline detail, and guide staging are illustrative.",
+    "The river and city illustrate Lanzhou's elongated valley form but must not be used to measure distance, identify a building, or infer a route.",
+    "The figure does not establish visibility, weather, road access, bus service, taxi access, opening, crowd level, or any other live operating condition."
+  ],
+  "reader_caption_policy": "Name Santai Pavilion and the broad valley-reading choice; do not identify individual skyline buildings, mention generation, or imply live access and visibility evidence.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "attraction_dominant": "pass",
+    "pavilion_massing_reference_checked": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. The valley and Santai Pavilion remain the subject, exactly four guides stay distinct, no anonymous visitor remains, and small costume details do not function as reader-visible text at either final size.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch07-final-pages/page-100.png",
+        "sha256": "35683da268f4e6ece2ec45911a3defeb471852b1b5ed97b708bdd95a48f50cef",
+        "bytes": 820060,
+        "physical_page": 100
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch07-release/mobile-390-figure-02.png",
+        "sha256": "007570ba50e365a9d8270fef4b94a22ecfcdd9f32e2bce48560052b665e36578",
+        "bytes": 204333,
+        "width": 390,
+        "height": 580,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

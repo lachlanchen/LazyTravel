@@ -1,0 +1,119 @@
+{
+  "asset_id": "asset-lanzhou-height-choice-map",
+  "command": "python3 scripts/build_lanzhou_height_choice_map.py",
+  "created_at": "2026-08-22",
+  "generalizations": [
+    "This is an original purpose-and-turnaround schematic, not turn-by-turn navigation.",
+    "North-south spacing and the east-west city band are exaggerated for B6 label legibility.",
+    "No path is drawn from Wuquan Mountain to Lanshan, and no current cableway, bus, road, fare, gradient, or walking time is encoded.",
+    "Park centre and mountain anchors are orientation points, not gates, trailheads, boarding points, or accessibility evidence.",
+    "The three branches are alternatives; a failed weather, visibility, mobility, or descent check returns to the city-level route rather than another hill."
+  ],
+  "method": "deterministic-map-render",
+  "outputs": {
+    "pdf": {
+      "bytes": 87066,
+      "path": "assets/maps/lanzhou/lanzhou-height-choice.pdf",
+      "sha256": "dfa9a13911600aa373c9d54f78a82f82f687f6d7c5208baf85fa24ccbe914483"
+    },
+    "png": {
+      "bytes": 460543,
+      "path": "assets/maps/lanzhou/lanzhou-height-choice.png",
+      "sha256": "9af7e93ceafa628bfe9eb8476a37e6ecc2970ea0beabb14855c9a1e0c950f09a"
+    },
+    "svg": {
+      "bytes": 37890,
+      "path": "assets/maps/lanzhou/lanzhou-height-choice.svg",
+      "sha256": "133de30015edb47cfb66928fb3c98b8c9976053cd5a70c1a9a6aac1a94a754e6"
+    }
+  },
+  "rights": "Map design © LazyTravel; OSM park anchors are used under ODbL; the read-only open-guide plotting lead remains attributed under CC BY-SA 4.0; no basemap tiles are redistributed.",
+  "schema_version": 1,
+  "source_config": {
+    "bytes": 6173,
+    "path": "data/maps/lanzhou/lanzhou-height-choice.config.json",
+    "sha256": "a7992a95a0cbf3d0df72cb0edc410d05a0031dd39c3721a8293e0b3d2a211f44"
+  },
+  "sources": {
+    "municipal_live_map": {
+      "checked_at": "2026-08-22",
+      "role": "responsible live-map entry point; no tiles are redistributed",
+      "url": "https://gansu.tianditu.gov.cn/lanzhou/"
+    },
+    "official_geography": {
+      "checked_at": "2026-08-22",
+      "role": "north-bank, southern-foot, and higher-southern place relationship",
+      "url": "https://www.gswbj.gov.cn/a/2025/07/17/25374.html"
+    },
+    "open_guide_lanshan": {
+      "license": "CC BY-SA 4.0",
+      "locator": "line 518, Gaolan Mountain listing at 36.025425, 103.839113",
+      "path": "/home/lachlan/ProjectsLFS/Books/resources/curated-books/travel-guides/xian-gansu-open-guides/gansu/en/gansu-open-travel-guide-en.html",
+      "role": "plotting lead only; descriptive text is not reused",
+      "sha256": "41c3e40ed295b63a796619f8bd2faf17e94d0c0c84e4ccde511f647fb4779f28"
+    },
+    "osm_white_pagoda": {
+      "license": "ODbL 1.0",
+      "retrieved_at": "2026-08-22",
+      "role": "park centre and north-bank relationship",
+      "url": "https://www.openstreetmap.org/way/409963603"
+    },
+    "osm_wuquan": {
+      "license": "ODbL 1.0",
+      "retrieved_at": "2026-08-22",
+      "role": "park centre and southern-foot relationship",
+      "url": "https://www.openstreetmap.org/way/405316034"
+    }
+  },
+  "spatial_anchors": [
+    {
+      "id": "white-pagoda-hill",
+      "latitude": 36.0703809,
+      "longitude": 103.8076483,
+      "name": "白塔山 / 白塔山 / WHITE PAGODA",
+      "role": "north-bank park anchor, not an entrance or open-path promise",
+      "source": "OpenStreetMap way W409963603"
+    },
+    {
+      "id": "wuquan-mountain-park",
+      "latitude": 36.0369779,
+      "longitude": 103.8223288,
+      "name": "五泉山 / 五泉山 / WUQUAN",
+      "role": "southern-foot park anchor, not a gate or spring coordinate",
+      "source": "OpenStreetMap way W405316034"
+    },
+    {
+      "id": "lanshan-santai",
+      "latitude": 36.025425,
+      "longitude": 103.839113,
+      "name": "兰山·三台阁 / 蘭山・三台閣 / LANSHAN",
+      "role": "generalized high southern anchor, not a trailhead or boarding point",
+      "source": "read-only open-guide Gaolan Mountain plotting lead"
+    }
+  ],
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch07-final-pages/page-097.png",
+        "sha256": "bf9ee957dda8f4ac4da13a38b0313430580e179fabb244efd1a49c27f7a68ef8"
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch07-release/mobile-390-map.png",
+        "sha256": "3dad7ca62440c07205972e24894a422c4d16448395e281288a5e8f51387fd1f0"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch07-release/qa.json",
+        "sha256": "cfd48123964bb2524cb1cdc0dc56fb6122f321a1c64cec166ec45cc9dcd00057"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The 1620 x 2280 print map and compiled B6 page preserve the three alternative heights, the city-level fallback, and all four go/no-go checks without collisions.",
+      "At a 390 px viewport the 760 px map stage pans independently; the trilingual purpose, turnaround, weather, access, and descent labels remain readable without implying turn-by-turn navigation."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-22"
+  }
+}

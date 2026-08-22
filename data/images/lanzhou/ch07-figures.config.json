@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-22",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2; one targeted Codex image edit for visitor removal",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and clean articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-lanzhou-lanshan-santai-view",
+      "stem": "lanzhou-lanshan-santai-view",
+      "method": "generated-attraction-figure-with-targeted-cleanup",
+      "selected_raw": "build/research/lanzhou/imagegen/ch07-lanshan-santai-final/lanzhou-lanshan-santai-view-final.png",
+      "prompt": "data/images/lanzhou/lanzhou-lanshan-santai-view.prompt.md",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch07/visual-references/lanshan-daily-03.jpg",
+          "reference_url": "https://szb.gansudaily.com.cn/gsrb/pc/con/202501/08/c202436.html",
+          "role": "Unredistributed current newspaper reference for Santai Pavilion massing and its elevated relationship to Lanzhou's valley"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v1/task_manifest.json",
+          "role": "Rejected provider output because generation ended in output moderation"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v2/task_manifest.json",
+          "role": "Rejected because the real low pavilion was enlarged into a fabricated multi-storey tower with generated lettering"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v3/task_manifest.json",
+          "role": "Rejected because Aya-chan and Lala Xia were replaced by generic human travelers"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v4/task_manifest.json",
+          "role": "Accepted scene and cast base, but not distributable because one tiny anonymous terrace visitor remained"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch07-lanshan-santai-v5/task_manifest.json",
+          "role": "Rejected targeted edit because it preserved the terrace visitor and added a red post"
+        },
+        {
+          "path": "build/research/lanzhou/imagegen/ch07-lanshan-santai-final/task_manifest.json",
+          "role": "Selected targeted correction with the visitor removed, the Santai composition retained, and exactly four recurring guides"
+        }
+      ],
+      "factual_limits": [
+        "The scene is an editorial present-day orientation image, not a documentary photograph or a survey of one exact viewing position.",
+        "The Gansu Daily reference constrains Santai Pavilion's low base, compact upper roofs, and elevated valley relationship; colours, foreground railing, planting, skyline detail, and guide staging are illustrative.",
+        "The river and city illustrate Lanzhou's elongated valley form but must not be used to measure distance, identify a building, or infer a route.",
+        "The figure does not establish visibility, weather, road access, bus service, taxi access, opening, crowd level, or any other live operating condition."
+      ],
+      "reader_caption_policy": "Name Santai Pavilion and the broad valley-reading choice; do not identify individual skyline buildings, mention generation, or imply live access and visibility evidence.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "attraction_dominant": "pass",
+        "pavilion_massing_reference_checked": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-22",
+        "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. The valley and Santai Pavilion remain the subject, exactly four guides stay distinct, no anonymous visitor remains, and small costume details do not function as reader-visible text at either final size."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch07-final-pages/page-100.png",
+        "physical_page": 100,
+        "b6_sha256": "35683da268f4e6ece2ec45911a3defeb471852b1b5ed97b708bdd95a48f50cef",
+        "mobile_path": "build/qa/website/lanzhou-ch07-release/mobile-390-figure-02.png",
+        "mobile_sha256": "007570ba50e365a9d8270fef4b94a22ecfcdd9f32e2bce48560052b665e36578",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-lanzhou-wuquan-heritage-park",
+      "stem": "lanzhou-wuquan-heritage-park",
+      "method": "generated-attraction-and-route-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch07-wuquan-heritage-v1/lanzhou-wuquan-heritage-park-v1.png",
+      "prompt": "data/images/lanzhou/lanzhou-wuquan-heritage-park.prompt.md",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch07/visual-references/heights-gansu-01.jpg",
+          "reference_url": "https://www.gswbj.gov.cn/a/2025/07/17/25374.html",
+          "role": "Unredistributed current government reference for Wuquan Mountain Park's entrance character and dry southern-hill setting"
+        },
+        {
+          "path": "build/research/lanzhou/ch07/visual-references/wuquan-xinhua-01.jpg",
+          "reference_url": "https://www.news.cn/culture/2023-04/02/c_1129487481.htm",
+          "role": "Unredistributed Xinhua conservation reference for painted timber, grey-tiled roofs, courtyard scale, and mature vegetation"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch07-wuquan-heritage-v1/task_manifest.json",
+          "role": "Selected first composition with a legible layered route, exact four-guide cast, and no anonymous visitors"
+        }
+      ],
+      "factual_limits": [
+        "The scene is a representative present-day park composition, not a documentary photograph of one named courtyard or exact path junction.",
+        "The two current references constrain the dry hillside setting, grey roofs, painted timber, trees, and modest courtyard scale; the particular arrangement of stairs and buildings is illustrative.",
+        "The image does not identify a spring, prove water is drinkable, show every protected building, or document a historical event or religious ceremony.",
+        "The figure does not establish an open through-route, accessibility, closure status, opening hours, crowd level, or any other live operating condition."
+      ],
+      "reader_caption_policy": "Describe Wuquan as a layered park-and-heritage walk with a valid lower-path turnaround; do not name an illustrated courtyard, transcribe plaques, mention generation, or imply live route evidence.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "attraction_dominant": "pass",
+        "layered_route_legible": "pass",
+        "dry_hillside_and_roofs_reference_checked": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-22",
+        "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. The lower path, courtyards, roofs, shade, and dry slope remain legible; exactly four guides stay distinct, with no extra person, lettering, crop failure, or false route cue."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch07-final-pages/page-104.png",
+        "physical_page": 104,
+        "b6_sha256": "10af27040a2e1b019f97949fc08ca8535aaad05c0d7cb7435e8ef9d6faec4b8b",
+        "mobile_path": "build/qa/website/lanzhou-ch07-release/mobile-390-figure-03.png",
+        "mobile_sha256": "282de5b95dbb104556bb4a75d11ecf863ef31f6e0b08211779067364c640a899",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ]
+}

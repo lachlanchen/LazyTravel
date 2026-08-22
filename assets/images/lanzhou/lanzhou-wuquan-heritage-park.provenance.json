@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-wuquan-heritage-park",
+  "created_at": "2026-08-22",
+  "method": "generated-attraction-and-route-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2; one targeted Codex image edit for visitor removal",
+  "task_id": "11-452fbb5c-437d-454d-8224-012d20c9ef01",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and clean articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch07/visual-references/heights-gansu-01.jpg",
+      "sha256": "93bdeba7bddcfe86b34d8390f12cb0464cfa66d976550bf65018bd277680dbca",
+      "reference_url": "https://www.gswbj.gov.cn/a/2025/07/17/25374.html",
+      "role": "Unredistributed current government reference for Wuquan Mountain Park's entrance character and dry southern-hill setting"
+    },
+    {
+      "path": "build/research/lanzhou/ch07/visual-references/wuquan-xinhua-01.jpg",
+      "sha256": "be6d516d4afbb68eb46aee62076d9c027d64f792c56c38537bfda5ac979831f1",
+      "reference_url": "https://www.news.cn/culture/2023-04/02/c_1129487481.htm",
+      "role": "Unredistributed Xinhua conservation reference for painted timber, grey-tiled roofs, courtyard scale, and mature vegetation"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-wuquan-heritage-park.prompt.md",
+    "sha256": "41b6ee0049543658c9e3892b2eab832367cb8382898f3849e983dce58e19b4d7"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch07-wuquan-heritage-v1/task_manifest.json",
+      "sha256": "78408d48f2ebb269e6c1f03a5772f0e034ad95f2275cc017796a1762c7317440",
+      "bytes": 3326,
+      "role": "Selected first composition with a legible layered route, exact four-guide cast, and no anonymous visitors"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch07-wuquan-heritage-v1/lanzhou-wuquan-heritage-park-v1.png",
+    "sha256": "d94dc3ab19ee693334061317a5d6b6079a46745c2ee65b672a3a26d02c8f0ac5",
+    "bytes": 23112600,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-wuquan-heritage-park.jpg",
+    "sha256": "8a2cdefe306e5d94abc628c70b44f6e31edb3c27e22d0191f29f09fe8fc0ed15",
+    "bytes": 2632050,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-wuquan-heritage-park-web.jpg",
+      "sha256": "6d7c668817f85a8bc7a46a96511daceec7e585dbf45780473df184e30f99ec01",
+      "bytes": 830612,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a representative present-day park composition, not a documentary photograph of one named courtyard or exact path junction.",
+    "The two current references constrain the dry hillside setting, grey roofs, painted timber, trees, and modest courtyard scale; the particular arrangement of stairs and buildings is illustrative.",
+    "The image does not identify a spring, prove water is drinkable, show every protected building, or document a historical event or religious ceremony.",
+    "The figure does not establish an open through-route, accessibility, closure status, opening hours, crowd level, or any other live operating condition."
+  ],
+  "reader_caption_policy": "Describe Wuquan as a layered park-and-heritage walk with a valid lower-path turnaround; do not name an illustrated courtyard, transcribe plaques, mention generation, or imply live route evidence.",
+  "rights": "Original LazyTravel composition; external imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "attraction_dominant": "pass",
+    "layered_route_legible": "pass",
+    "dry_hillside_and_roofs_reference_checked": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-22",
+    "notes": "Original-size, compiled B6, and 390 px responsive-website inspections pass. The lower path, courtyards, roofs, shade, and dry slope remain legible; exactly four guides stay distinct, with no extra person, lettering, crop failure, or false route cue.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch07-final-pages/page-104.png",
+        "sha256": "10af27040a2e1b019f97949fc08ca8535aaad05c0d7cb7435e8ef9d6faec4b8b",
+        "bytes": 970802,
+        "physical_page": 104
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch07-release/mobile-390-figure-03.png",
+        "sha256": "282de5b95dbb104556bb4a75d11ecf863ef31f6e0b08211779067364c640a899",
+        "bytes": 221491,
+        "width": 390,
+        "height": 557,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

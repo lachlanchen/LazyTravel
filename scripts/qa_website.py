@@ -84,7 +84,7 @@ def assert_header_clear(page: Page, label: str) -> None:
 
 
 def assert_scrolled_below_header(page: Page, selector: str, label: str) -> None:
-    locator = page.locator(selector)
+    locator = page.locator(selector).first
     locator.evaluate(
         "node => node.scrollIntoView({block: 'start', inline: 'nearest', behavior: 'instant'})"
     )
@@ -189,10 +189,14 @@ def assert_core_render(page: Page, counts: dict[str, int], label: str) -> dict[s
             page.locator(selector).all_text_contents(), start=1
         ):
             expected_prefix = f"{prefix} {index:02d} ·"
-            if not visual_label.startswith(expected_prefix):
+            compact_label = f"{prefix} {index:02d}"
+            if visual_label != compact_label and not visual_label.startswith(
+                expected_prefix
+            ):
                 raise RuntimeError(
                     f"{label} visual numbering mismatch: "
-                    f"{visual_label!r} does not start with {expected_prefix!r}"
+                    f"{visual_label!r} is neither {compact_label!r} nor prefixed "
+                    f"by {expected_prefix!r}"
                 )
     if counts["maps"]:
         map_dimensions = (
