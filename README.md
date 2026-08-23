@@ -19,9 +19,9 @@ Published guide paths:
 ## Current Editorial Gate
 
 Xi'an and Hakone are complete and publicly published. Lanzhou at
-`china/cities/lanzhou` is the only active book. Chapters 1-9 are accepted
-milestones; Chapter 10 is the sole production gate. Only one destination may be
-in production at a time. Broader Gansu and Ningxia sources remain research
+`china/cities/lanzhou` is the only active book. Chapters 1-10 are accepted
+milestones; Chapter 11 is the sole production gate. Only one destination may
+be in production at a time. Broader Gansu and Ningxia sources remain research
 context, not destination-book titles.
 
 The series taxonomy is fixed:
@@ -70,16 +70,16 @@ Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
 
 Lanzhou has a hash-verified read-only source baseline, an explicit claim and
-rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-9,
-through **One, Two, or Three Days: Leave Room in the Valley**, are accepted:
-`85` aligned blocks, `10,156` reviewed Chinese reading tokens, `12,997`
-reviewed Japanese reading tokens, 103 chapter-source entries, 26 four-guide
-figure placements, and eleven code-built maps. The same canonical JSON
-produces a `163`-page B6 pocket and a responsive site with `14,077` ruby nodes.
-The pocket SHA-256 is
-`593784c30e4a85cd30640bc9acfa128eced72c085f7a2f9b30090502cafe4b8f`, and its
-Nutstore copy matches. Chapter 10, **Leaving Lanzhou: Connect the Next Gansu
-Leg**, is the only active production gate; the Lanzhou book itself is not yet
+rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-10,
+through **Leaving Lanzhou: Connect the Next Gansu Leg**, are accepted: `95`
+aligned blocks, `11,804` reviewed Chinese reading tokens, `15,024` reviewed
+Japanese reading tokens, 119 chapter-source entries, 31 four-guide figure
+placements, and twelve code-built maps. The same canonical JSON produces a
+`187`-page B6 pocket and a responsive site with `16,328` ruby nodes. The pocket
+SHA-256 is
+`06250e93f4b23ca492f47f297be24e547e26594e34b8a9f1bd696cb726b4ae92`, and its
+Nutstore copy matches. Chapter 11, **Around Lanzhou: Choose One Nearby Day**,
+is the only active production gate; the Lanzhou book itself is not yet
 complete.
 
 ## Source Boundary

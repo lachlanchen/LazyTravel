@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-departure-table",
+  "created_at": "2026-08-23",
+  "method": "generated-generalized-departure-planning-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "11-3aae853d-0a2d-4ef5-a38a-a52767b27a62",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-departure-table.prompt.md",
+    "sha256": "93a681ee29e1d9cdcb73feb3f74dcb346bf5d0e8ea34847d789a4a5a666898a6"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch10-departure-table-v1/task_manifest.json",
+      "sha256": "e1d7b7b7b8e59d7ed5be940283cca5538fd3688b097f35fb702268d01e733462",
+      "bytes": 2589,
+      "role": "Selected full-resolution composition with the exact four-guide cast, luggage, blank planning surfaces, and no anonymous traveler"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch10-departure-table-v1/lanzhou-departure-table-v1.png",
+    "sha256": "ebf53649f049c3efda287836ca72758dbb0ec8f3ab20ea68b4116d203cfffe35",
+    "bytes": 6090194,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-departure-table.jpg",
+    "sha256": "f6a208f95940be9ecec7cde572920d700b56cc3bbbe7a000a2d3fcb802a3de51",
+    "bytes": 794662,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-departure-table-web.jpg",
+      "sha256": "e7b9abfa418c9c4a0045c05ae656babf2840a90a4773470a42b542c35fa10fd3",
+      "bytes": 265742,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The scene is a generalized departure-planning table, not a documentary photograph of a named Lanzhou hotel, station lounge, airport lounge, or booking office.",
+    "The window view, furniture, luggage, tickets, devices, notebook, and exact arrangement are illustrative and cannot identify a route, operator, property, platform, gate, or service.",
+    "Blank tickets and screens intentionally prevent generated lettering, numbers, logos, or times from being mistaken for current travel information.",
+    "The figure does not establish a timetable, fare, ticket availability, baggage rule, check-in deadline, accessibility service, or transfer duration."
+  ],
+  "reader_caption_policy": "Describe the four guides fixing the next overnight city, departure point on the booking, bags, and hotel leaving time at one table; do not mention generation or imply that the blank tickets carry usable travel information.",
+  "rights": "Original LazyTravel composition; external character imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "departure_decision_legible": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-23",
+    "notes": "Original-size, 300 dpi compiled B6, desktop, and 390 px responsive inspections pass. Exactly Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi robot remain distinct; the planning surfaces carry no usable generated text, and luggage or captions do not obscure the departure decision.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch10-final-assets/page-153.png",
+        "sha256": "76eed1f57cc37152aefa29a2eac2be89bc6bcdd652fa7ff68fa94cb7618c5a48",
+        "bytes": 986671,
+        "physical_page": 153
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch10-final-preview/mobile-390-figure.png",
+        "sha256": "f8aca7fbb9acf01ee2cbef6c0c414e93b7596183c9d243e643c10c88b2d8eb9b",
+        "bytes": 129368,
+        "width": 390,
+        "height": 533,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

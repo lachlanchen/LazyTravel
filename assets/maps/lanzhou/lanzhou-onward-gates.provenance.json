@@ -1,0 +1,83 @@
+{
+  "accepted_inputs": [
+    {
+      "path": "data/maps/lanzhou/lanzhou-valley-orientation.config.json",
+      "sha256": "a729843c4661064fd8e3ee52dcb9821448039d579347584d6ad8765cff10818d"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-arrival-gates.config.json",
+      "sha256": "5847d5292159319badb629b3d5a9ba1f9893b87360bc1db81c82c5b723925be1"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-stay-segment.config.json",
+      "sha256": "7762929b0f67702bad5ccecface11d15b15d61992dfb0a5c0bf72b26649a2a71"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-itinerary-days.config.json",
+      "sha256": "3dbba5ebf98b80c46717ed3d9e3ed1ffff44f5100721c5f6923cac5a41ed728f"
+    }
+  ],
+  "asset_id": "asset-lanzhou-onward-gates-map",
+  "created_at": "2026-08-23",
+  "generalizations": [
+    "The diagram is an original LazyTravel departure checklist, not an official railway, airline, station, airport, road, or metro diagram",
+    "The three departure points are alternatives selected only by the live booking and never by assumed train class or direction",
+    "Arrows show planning order, not distance, walking routes, road geometry, travel time, or a guaranteed connection",
+    "Next overnight city is an itinerary unit and does not imply that any specific destination has a direct service from the drawn gate",
+    "Station circulation, terminal assignment, check-in, ticket checking, baggage, and assistance remain live operational checks",
+    "A changed booking, warning, disruption, or official instruction overrides the diagram"
+  ],
+  "method": "deterministic-matplotlib-map-render",
+  "outputs": {
+    "pdf": {
+      "bytes": 129349,
+      "path": "assets/maps/lanzhou/lanzhou-onward-gates.pdf",
+      "sha256": "15c6047ae9d0a6f0977d2003af5997f6fb977e9dab2715273874d193968fa823"
+    },
+    "png": {
+      "bytes": 585737,
+      "path": "assets/maps/lanzhou/lanzhou-onward-gates.png",
+      "sha256": "e8683253245dd23b679f1e8738a56a91db0dffd3da0ec578dce7fc4395492344"
+    },
+    "svg": {
+      "bytes": 43329,
+      "path": "assets/maps/lanzhou/lanzhou-onward-gates.svg",
+      "sha256": "9ed7c98cd3e644e55bb005ded3b4cf87cddf67c1e61a82bd5d2f42610ba34114"
+    }
+  },
+  "rights": "Original LazyTravel diagram; no map tiles, operator diagrams, source-guide pages, or character references redistributed.",
+  "schema_version": 1,
+  "source": {
+    "path": "data/maps/lanzhou/lanzhou-onward-gates.config.json",
+    "sha256": "b01666ae201f17a8f3707f57be10ab44b81c6785bb6be4a1546a3714aa9d143a"
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch10-final-assets/page-155.png",
+        "sha256": "afcae4e955381486eec0bc10ad5efd625ff85b89b7b9c4a6928c152d891a80ca"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch10-final-preview/desktop-map.png",
+        "sha256": "4d4dfafda31cb3c769da10304b3ddb865816f91a055fd854fcad28ec960dd7d6"
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch10-final-preview/mobile-390-map.png",
+        "sha256": "98dc96bc92590ebdc5facf9eda57ca13cf7279498b1d2067b866879c54638e53"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch10-final-preview/qa.json",
+        "sha256": "79d74881f5a3eb1778ff57c1888da8d62132f1c68157e0fd16a63e6079c469d1"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The 1620 x 2280 source and 300 dpi B6 page preserve the three mutually exclusive departure lanes, readings, keep/cut boundary, and live-booking warning without collision or clipping.",
+      "At a 390 px viewport the map uses a 760 px independently scrollable stage with working zoom and reset controls; primary labels remain readable and the browser QA reports no overflow, request, or console failure."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-23"
+  }
+}

@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "data/maps/lanzhou/lanzhou-stay-segment.config.json"
 OUTPUT_DIR = ROOT / "assets/maps/lanzhou"
 FIXED_TIME = datetime(2026, 8, 22, 0, 0, tzinfo=timezone.utc)
-os.environ.setdefault("SOURCE_DATE_EPOCH", str(int(FIXED_TIME.timestamp())))
+os.environ["SOURCE_DATE_EPOCH"] = str(int(FIXED_TIME.timestamp()))
 
 COLORS = {
     "paper": "#FCFDFF",

@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-onward-gates-map",
+  "snapshot_date": "2026-08-23",
+  "title": {
+    "zh": "离开兰州：从已订班次倒推",
+    "zh_reading": "Líkāi Lánzhōu: cóng yǐ dìng bāncì dàotuī",
+    "ja": "蘭州を出る：予約済みの便から逆算する",
+    "ja_reading": "らんしゅう を でる：よやくずみ の びん から ぎゃくさん する",
+    "en": "LEAVING LANZHOU: WORK BACK FROM THE BOOKING"
+  },
+  "rule": {
+    "zh": "先定下一夜住宿地，再读订单上的出发点",
+    "zh_reading": "Xiān dìng xià yí yè zhùsùdì, zài dú dìngdān shàng de chūfādiǎn",
+    "ja": "次の宿泊地を決め、予約に記載された出発地を読む",
+    "ja_reading": "つぎ の しゅくはくち を きめ、よやく に きさい された しゅっぱつち を よむ",
+    "en": "CHOOSE THE NEXT OVERNIGHT CITY, THEN READ THE BOOKING"
+  },
+  "lanes": [
+    {
+      "color": "vermilion",
+      "gate": {
+        "zh": "票面：兰州西站",
+        "zh_reading": "Piàomiàn: Lánzhōu Xīzhàn",
+        "ja": "券面：蘭州西駅",
+        "ja_reading": "けんめん：らんしゅうにしえき",
+        "en": "TICKET: LANZHOU WEST"
+      },
+      "nodes": [
+        {
+          "zh": "下一夜住宿地",
+          "zh_reading": "Xià yí yè zhùsùdì",
+          "ja": "次の宿泊地",
+          "ja_reading": "つぎ の しゅくはくち",
+          "en": "NEXT OVERNIGHT CITY"
+        },
+        {
+          "zh": "行李与退房",
+          "zh_reading": "Xíngli yǔ tuìfáng",
+          "ja": "荷物とチェックアウト",
+          "ja_reading": "にもつ と チェックアウト",
+          "en": "BAGS + CHECKOUT"
+        },
+        {
+          "zh": "到票面车站",
+          "zh_reading": "Dào piàomiàn chēzhàn",
+          "ja": "券面の駅へ",
+          "ja_reading": "けんめん の えき へ",
+          "en": "REACH PRINTED STATION"
+        },
+        {
+          "zh": "站内余量",
+          "zh_reading": "Zhànnèi yúliàng",
+          "ja": "駅構内の余裕",
+          "ja_reading": "えきこうない の よゆう",
+          "en": "INSIDE-STATION MARGIN"
+        }
+      ]
+    },
+    {
+      "color": "jade",
+      "gate": {
+        "zh": "票面：兰州站",
+        "zh_reading": "Piàomiàn: Lánzhōu Zhàn",
+        "ja": "券面：蘭州駅",
+        "ja_reading": "けんめん：らんしゅうえき",
+        "en": "TICKET: LANZHOU STATION"
+      },
+      "nodes": [
+        {
+          "zh": "下一夜住宿地",
+          "zh_reading": "Xià yí yè zhùsùdì",
+          "ja": "次の宿泊地",
+          "ja_reading": "つぎ の しゅくはくち",
+          "en": "NEXT OVERNIGHT CITY"
+        },
+        {
+          "zh": "行李与退房",
+          "zh_reading": "Xíngli yǔ tuìfáng",
+          "ja": "荷物とチェックアウト",
+          "ja_reading": "にもつ と チェックアウト",
+          "en": "BAGS + CHECKOUT"
+        },
+        {
+          "zh": "到票面车站",
+          "zh_reading": "Dào piàomiàn chēzhàn",
+          "ja": "券面の駅へ",
+          "ja_reading": "けんめん の えき へ",
+          "en": "REACH PRINTED STATION"
+        },
+        {
+          "zh": "站内余量",
+          "zh_reading": "Zhànnèi yúliàng",
+          "ja": "駅構内の余裕",
+          "ja_reading": "えきこうない の よゆう",
+          "en": "INSIDE-STATION MARGIN"
+        }
+      ]
+    },
+    {
+      "color": "cobalt",
+      "gate": {
+        "zh": "航班：中川机场T3",
+        "zh_reading": "Hángbān: Zhōngchuān Jīchǎng T3",
+        "ja": "航空券：中川空港T3",
+        "ja_reading": "こうくうけん：ちゅうせんくうこう T3",
+        "en": "FLIGHT: ZHONGCHUAN T3"
+      },
+      "nodes": [
+        {
+          "zh": "下一夜住宿地",
+          "zh_reading": "Xià yí yè zhùsùdì",
+          "ja": "次の宿泊地",
+          "ja_reading": "つぎ の しゅくはくち",
+          "en": "NEXT OVERNIGHT CITY"
+        },
+        {
+          "zh": "市区或机场夜",
+          "zh_reading": "Shìqū huò jīchǎng yè",
+          "ja": "市街泊か空港泊",
+          "ja_reading": "しがいはく か くうこうはく",
+          "en": "CITY OR AIRPORT NIGHT"
+        },
+        {
+          "zh": "确认到T3的转乘",
+          "zh_reading": "Quèrèn dào T3 de zhuǎnchéng",
+          "ja": "T3までの移動確認",
+          "ja_reading": "T3 まで の いどうかくにん",
+          "en": "CONFIRM TRANSFER TO T3"
+        },
+        {
+          "zh": "航站楼余量",
+          "zh_reading": "Hángzhànlóu yúliàng",
+          "ja": "ターミナルの余裕",
+          "ja_reading": "ターミナル の よゆう",
+          "en": "TERMINAL MARGIN"
+        }
+      ]
+    }
+  ],
+  "keep": {
+    "zh": "不能删：证件、行李、有效订单、安检/检票、休息",
+    "zh_reading": "Bùnéng shān: zhèngjiàn, xíngli, yǒuxiào dìngdān, ānjiǎn/jiǎnpiào, xiūxi",
+    "ja": "削らない：身分証、荷物、有効な予約、保安検査・改札、休息",
+    "ja_reading": "けずらない：みぶんしょう、にもつ、ゆうこう な よやく、ほあんけんさ・かいさつ、きゅうそく",
+    "en": "KEEP: DOCUMENTS, BAGS, LIVE BOOKING, CHECKS, REST"
+  },
+  "cut_first": {
+    "zh": "先删：最后一处景点、绕路买东西、没有余量的晚饭",
+    "zh_reading": "Xiān shān: zuìhòu yí chù jǐngdiǎn, ràolù mǎi dōngxi, méiyǒu yúliàng de wǎnfàn",
+    "ja": "先に削る：最後の観光、遠回りの買物、余裕のない夕食",
+    "ja_reading": "さき に けずる：さいご の かんこう、とおまわり の かいもの、よゆう の ない ゆうしょく",
+    "en": "CUT FIRST: FINAL SIGHT, SHOPPING DETOUR, TIGHT DINNER"
+  },
+  "boundary": {
+    "zh": "12306、航空公司、票面与当天官方通知优先；本图不提供班次、票价或保证接续。",
+    "zh_reading": "12306, hángkōng gōngsī, piàomiàn yǔ dàngtiān guānfāng tōngzhī yōuxiān; běn tú bù tígōng bāncì, piàojià huò bǎozhèng jiēxù.",
+    "ja": "12306、航空会社、券面、当日の公式案内を優先。本図は便・運賃・接続を保証しない。",
+    "ja_reading": "12306、こうくうがいしゃ、けんめん、とうじつ の こうしきあんない を ゆうせん。ほんず は びん・うんちん・せつぞく を ほしょう しない。",
+    "en": "12306, THE AIRLINE, THE BOOKING, AND SAME-DAY OFFICIAL NOTICES OVERRIDE THIS MAP. NO TIMETABLE, FARE, OR CONNECTION IS PROMISED."
+  },
+  "accepted_inputs": [
+    {
+      "path": "data/maps/lanzhou/lanzhou-valley-orientation.config.json",
+      "sha256": "a729843c4661064fd8e3ee52dcb9821448039d579347584d6ad8765cff10818d"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-arrival-gates.config.json",
+      "sha256": "5847d5292159319badb629b3d5a9ba1f9893b87360bc1db81c82c5b723925be1"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-stay-segment.config.json",
+      "sha256": "7762929b0f67702bad5ccecface11d15b15d61992dfb0a5c0bf72b26649a2a71"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-itinerary-days.config.json",
+      "sha256": "3dbba5ebf98b80c46717ed3d9e3ed1ffff44f5100721c5f6923cac5a41ed728f"
+    }
+  ],
+  "generalizations": [
+    "The diagram is an original LazyTravel departure checklist, not an official railway, airline, station, airport, road, or metro diagram",
+    "The three departure points are alternatives selected only by the live booking and never by assumed train class or direction",
+    "Arrows show planning order, not distance, walking routes, road geometry, travel time, or a guaranteed connection",
+    "Next overnight city is an itinerary unit and does not imply that any specific destination has a direct service from the drawn gate",
+    "Station circulation, terminal assignment, check-in, ticket checking, baggage, and assistance remain live operational checks",
+    "A changed booking, warning, disruption, or official instruction overrides the diagram"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-23",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch10-final-assets/page-155.png",
+        "sha256": "afcae4e955381486eec0bc10ad5efd625ff85b89b7b9c4a6928c152d891a80ca"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch10-final-preview/desktop-map.png",
+        "sha256": "4d4dfafda31cb3c769da10304b3ddb865816f91a055fd854fcad28ec960dd7d6"
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch10-final-preview/mobile-390-map.png",
+        "sha256": "98dc96bc92590ebdc5facf9eda57ca13cf7279498b1d2067b866879c54638e53"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch10-final-preview/qa.json",
+        "sha256": "79d74881f5a3eb1778ff57c1888da8d62132f1c68157e0fd16a63e6079c469d1"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 source and 300 dpi B6 page preserve the three mutually exclusive departure lanes, readings, keep/cut boundary, and live-booking warning without collision or clipping.",
+      "At a 390 px viewport the map uses a 760 px independently scrollable stage with working zoom and reset controls; primary labels remain readable and the browser QA reports no overflow, request, or console failure."
+    ]
+  }
+}

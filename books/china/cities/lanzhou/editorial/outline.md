@@ -22,8 +22,8 @@ The book has exactly 11 chapters. The count is locked because each chapter
 answers a different travel decision. Combining them would hide route choices;
 splitting them further would create short chapters with repeated context.
 
-Milestone status on `2026-08-23`: Chapters 1-9 are accepted in the B6 pocket
-and synchronized website. Chapter 10 is the only active production gate.
+Milestone status on `2026-08-23`: Chapters 1-10 are accepted in the B6 pocket
+and synchronized website. Chapter 11 is the only active production gate.
 
 ## Chapter Spine
 
@@ -133,12 +133,12 @@ and synchronized website. Chapter 10 is the only active production gate.
     **蘭州を出る：甘粛の次の行程につなぐ**<br>
     **Leaving Lanzhou: Connect the Next Gansu Leg**
 
-    Decide whether the next long leg begins at Lanzhou West, Lanzhou Station,
-    or the airport, and whether Lanzhou needs an arrival night, a full city
-    day, or a departure buffer. Westbound rail, an eastbound return, and a
-    flight are planning branches rather than promises of a particular service.
-    The chapter dates every schedule-dependent statement and removes a local
-    stop before risking a reserved onward journey.
+    Choose the next overnight city, then read the exact departure point on the
+    valid booking: Lanzhou West, Lanzhou Station, or Zhongchuan T3. Work
+    backward through bags, checkout, the city transfer, internal wayfinding,
+    checks, and a margin. The three gates are alternatives selected only by the
+    booking, never by train class or direction. The chapter prints no timetable
+    and removes a local stop before risking the reserved onward journey.
 
 11. **兰州周边：只选一个近郊日**<br>
     **蘭州周辺：郊外の一日を一つだけ選ぶ**<br>
