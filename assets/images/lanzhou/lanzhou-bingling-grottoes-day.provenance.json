@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-bingling-grottoes-day",
+  "created_at": "2026-08-23",
+  "method": "generated-location-led-bingling-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "11-83491ef3-2602-4e50-a3cb-6ce3d03ba408",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch11/location-references/bingling-cliff-official.jpg",
+      "sha256": "6728397fe2a74ecebd340150fc53e5fad27dc852570c2f935e0033ba9c9fcbd7",
+      "reference_url": "https://www.gswbj.gov.cn/uploadfile/20241016/1729048751544574.jpg",
+      "role": "Unredistributed official reference for the grotto cliff, large Buddha, gorge, and reservoir-water relationship"
+    },
+    {
+      "path": "build/research/lanzhou/ch11/location-references/bingling-dha.png",
+      "sha256": "aa98315ba59d4ea8fe19ad5416b53d2331ff62c91b90e0c4f46df97cf614bd72",
+      "reference_url": "https://www.dha.ac.cn/ny/images/grotto/bingling.png",
+      "role": "Unredistributed Dunhuang Academy reference for attraction recognition and cliff scale"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-bingling-grottoes-day.prompt.md",
+    "sha256": "9e1aaedbd9090c0dd0a8912b2a1621a5e420f47df23bcdbfad59395df3354bc5"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch11-bingling-v1/task_manifest.json",
+      "sha256": "0931a6d9f215e7be96ac87171419e001066dfd8dd82bbe45dedd9444ff95b007",
+      "bytes": 2952,
+      "role": "Selected full-resolution composition with the exact four-guide cast small against a recognizable Bingling cliff"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch11-bingling-v1/lanzhou-bingling-grottoes-day-v1.png",
+    "sha256": "2e2ce1021edfcd73a249874bf495afafedef7023152a4efcf7eacdcaa968de3c",
+    "bytes": 17926098,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-bingling-grottoes-day.jpg",
+    "sha256": "207b3587796f4f0693e62d5681c764930c51aa48bd1eff689d2038547ee4fac5",
+    "bytes": 1997943,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-bingling-grottoes-day-web.jpg",
+      "sha256": "c46f439896a65528eaa1de44c737ecdafb1d3a0aecfa914aa0af7a6ad27be1d5",
+      "bytes": 640444,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The composition is an original orientation plate based on official location references, not documentary evidence of cave condition, water level, weather, crowding, or access on a specific day.",
+    "Cliff, sculpture, path, railing, reservoir water, vegetation, and guide positions are generalized; the image cannot be used to identify an open cave, entrance, pier, road, boat route, or visitor sequence.",
+    "Visible scale and color do not establish cave access, special-cave admission, route duration, sailing, water level, accessibility, or safe road conditions.",
+    "The four guides are contemporary visitors and are not placed inside a historical reconstruction or conservation work area."
+  ],
+  "reader_caption_policy": "Name the grotto cliff and reservoir corridor and tell the reader to confirm the complete return before departure; do not describe the image as documentary evidence or promise Cave 169 access.",
+  "rights": "Original LazyTravel composition; external character and location imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "attraction_dominant_and_recognizable": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-23",
+    "notes": "Original-size, compiled 300 dpi B6, desktop, and 390 px responsive inspections pass. The cliff, giant Buddha, gorge, exact four-guide cast, and complete-return caption remain recognizable without collision.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch11-final-assets/page-184.png",
+        "sha256": "af1ea44a2cb58ab36bf56c141c5142cebc991dc30eb36ad566662d35f59bc42c",
+        "bytes": 2090584,
+        "physical_page": 184
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-figure-02.png",
+        "sha256": "6217c00601868ee14a758eaf301d8b96e81d59471a1d1918333ab9e0187f815a",
+        "bytes": 708411,
+        "width": 780,
+        "height": 1160,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

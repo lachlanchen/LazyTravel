@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-nearby-day-choice",
+  "created_at": "2026-08-23",
+  "method": "generated-nearby-day-choice-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "13-9f814bb7-b16c-497e-a100-f8bd74e10207",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-nearby-day-choice.prompt.md",
+    "sha256": "8dece81b97e87d8c56051a5ecbdb260c1c7bdf018aa167a51d917ead723bdd4c"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch11-nearby-choice-v1/task_manifest.json",
+      "sha256": "81a101a4106c1a7f9a580d569c4be56d4557dfcfd1b48f650e8b2790709f7a91",
+      "bytes": 2584,
+      "role": "Selected full-resolution composition with the exact four-guide cast and three blank route cards"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch11-nearby-choice-v1/lanzhou-nearby-day-choice-v1.png",
+    "sha256": "7d87c10cd8b87f71024f4cc5c9dcab16ab1f10ff3b34584089d72485741a7b74",
+    "bytes": 11570464,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-nearby-day-choice.jpg",
+    "sha256": "927a039a09bda184d2cc25276867fc7c365d73fc95ad100b1a5546be05cf1809",
+    "bytes": 1339661,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-nearby-day-choice-web.jpg",
+      "sha256": "c9bd7c5919d7de5316e2a53dbfb4967caab5a6044a98a028fedabaf25cd76707",
+      "bytes": 447082,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The breakfast table is a generalized planning scene, not a documentary photograph of a named Lanzhou hotel, cafe, tour office, or transport lounge.",
+    "The three blank cards represent mutually exclusive planning branches and contain no route, operator, price, time, booking, or opening information.",
+    "Food, furniture, bags, notebook, devices, window view, and exact staging are illustrative and cannot identify a business or current service.",
+    "The figure does not establish that any nearby branch is open or bookable on the travel date."
+  ],
+  "reader_caption_policy": "Describe the four guides comparing three complete return branches at breakfast; do not mention generation or imply that the blank cards contain live route information.",
+  "rights": "Original LazyTravel composition; external character and location imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "decision_scene_legible": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-23",
+    "notes": "Original-size, compiled 300 dpi B6, desktop, and 390 px responsive inspections pass. Exactly Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi robot remain distinct; the three route cards and trilingual caption are clear.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch11-final-assets/page-178.png",
+        "sha256": "2fa89729f0592d4e905a9d2b8a90b5900ae2881df5b36f7ec7f8c874872ebeb7",
+        "bytes": 1535976,
+        "physical_page": 178
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-figure.png",
+        "sha256": "4e911bd1adb0e96aba2bd1436a9a3fe46ba0d53e1a21ce07081ebb2eac864d60",
+        "bytes": 581636,
+        "width": 780,
+        "height": 1160,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

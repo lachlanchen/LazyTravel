@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-ink-danxia-route",
+  "created_at": "2026-08-23",
+  "method": "generated-location-led-ink-danxia-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "13-7ad488e1-84c8-40ed-98fe-41d113b41e03",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch11/location-references/ink-danxia-official.png",
+      "sha256": "a6cf7e0c82fb482c2a7a9672d47aec4920da629d66c51ae0802b887e5f09f042",
+      "reference_url": "https://www.gswbj.gov.cn/uploadfile/20260722/1784704383761443.png",
+      "role": "Unredistributed current official reference for broad landform bands, viewing infrastructure, and site scale"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-ink-danxia-route.prompt.md",
+    "sha256": "a330657ea6ef75132d95c05038531ac997322e921d2bf82deaea091c650ae91b"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch11-ink-danxia-v1/task_manifest.json",
+      "sha256": "21c7d3b60e81991c7cc9b0165ca38b801771656f9a33ab2739f75b2c85ffd6b2",
+      "bytes": 2946,
+      "role": "Selected full-resolution composition with the exact four-guide cast small against a recognizable managed geology route"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch11-ink-danxia-v1/lanzhou-ink-danxia-route-v1.png",
+    "sha256": "c1873d61806a2028e7bd128ab9d554ed6157e3192dae843af66c8d0ee2d0f871",
+    "bytes": 21311526,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-ink-danxia-route.jpg",
+    "sha256": "cdd8a6b7eb154d220def8988b5d54e0a815e18d1a4b00c79345b73ffabf9135c",
+    "bytes": 2400251,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-ink-danxia-route-web.jpg",
+      "sha256": "e3d773f7f90af80d9dfeabefc210571f2ff099e85e4fd1eae8838e09efd82e8e",
+      "bytes": 736028,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The composition is an original orientation plate based on an official location reference, not documentary evidence of color, weather, open platforms, boardwalk condition, internal transport, or site operation on a specific day.",
+    "Landform bands, gullies, railing, path, platform, vegetation, and guide positions are generalized; the image cannot be used for navigation or to cross a barrier.",
+    "Surface color varies with light, air, moisture, camera response, and postprocessing; the image does not promise saturated red terrain or blue sky.",
+    "The figure does not establish an accessible route, fixed duration, open boardwalk section, ticket, vehicle, or return connection."
+  ],
+  "reader_caption_policy": "Describe reading bands, gullies, and depth from the managed route while checking the day's open section and return; do not mention generation or guarantee color.",
+  "rights": "Original LazyTravel composition; external character and location imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "attraction_dominant_and_recognizable": "pass",
+    "natural_landform_color": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-23",
+    "notes": "Original-size, compiled 300 dpi B6, desktop, and 390 px responsive inspections pass. Restrained landform color, the managed path, exact four-guide cast, and same-day opening caption remain clear.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch11-final-assets/page-195.png",
+        "sha256": "3ae5c0df3546dee78668242667651f9469f3ce3c58dc64b8489a2451e08b218a",
+        "bytes": 2357390,
+        "physical_page": 195
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-figure-05.png",
+        "sha256": "00c052db63411677828443aa08386c0c4be3f31da03609bed5eef0cb53c8f992",
+        "bytes": 738816,
+        "width": 780,
+        "height": 1068,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

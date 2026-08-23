@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-nearby-day-map",
+  "snapshot_date": "2026-08-23",
+  "title": {
+    "zh": "兰州周边：只选一个近郊日",
+    "zh_reading": "Lánzhōu zhōubiān: zhǐ xuǎn yí gè jìnjiāo rì",
+    "ja": "蘭州周辺：郊外の一日を一つだけ選ぶ",
+    "ja_reading": "らんしゅう しゅうへん：こうがい の いちにち を ひとつ だけ えらぶ",
+    "en": "AROUND LANZHOU: CHOOSE ONE NEARBY DAY"
+  },
+  "rule": {
+    "zh": "先锁定回程；三条支线只选一条",
+    "zh_reading": "Xiān suǒdìng huíchéng; sān tiáo zhīxiàn zhǐ xuǎn yì tiáo",
+    "ja": "帰路を先に確定し、三本から一つだけ選ぶ",
+    "ja_reading": "きろ を さき に かくてい し、さんぼん から ひとつ だけ えらぶ",
+    "en": "LOCK THE RETURN; CHOOSE ONE OF THREE BRANCHES"
+  },
+  "branches": [
+    {
+      "color": "vermilion",
+      "name": {
+        "zh": "炳灵寺—刘家峡",
+        "zh_reading": "Bǐnglíng Sì—Liújiāxiá",
+        "ja": "炳霊寺・劉家峡",
+        "ja_reading": "へいれいじ・りゅうかきょう",
+        "en": "BINGLING TEMPLE + LIUJIAXIA"
+      },
+      "nodes": [
+        {
+          "zh": "水路或公路择一",
+          "zh_reading": "Shuǐlù huò gōnglù zé yī",
+          "ja": "水路か道路を一つ",
+          "ja_reading": "すいろ か どうろ を ひとつ",
+          "en": "ONE WATER OR ROAD RETURN"
+        },
+        {
+          "zh": "入口与当日开放窟",
+          "zh_reading": "Rùkǒu yǔ dàngrì kāifàng kū",
+          "ja": "入口と当日の公開窟",
+          "ja_reading": "いりぐち と とうじつ の こうかいくつ",
+          "en": "ENTRY + CAVES OPEN TODAY"
+        },
+        {
+          "zh": "返程人、地点、时刻",
+          "zh_reading": "Fǎnchéng rén, dìdiǎn, shíkè",
+          "ja": "復路の担当・場所・時刻",
+          "ja_reading": "ふくろ の たんとう・ばしょ・じこく",
+          "en": "RETURN OPERATOR + PLACE + TIME"
+        }
+      ],
+      "conditional": {
+        "zh": "黄洮交汇：仅在公路、平台运营与回程都成立时加入",
+        "zh_reading": "Huáng-Táo jiāohuì: jǐn zài gōnglù, píngtái yùnyíng yǔ huíchéng dōu chénglì shí jiārù",
+        "ja": "黄河・洮河合流点：道路、展望台、帰路がすべて成立する時だけ追加",
+        "ja_reading": "こうが・とうが ごうりゅうてん：どうろ、てんぼうだい、きろ が すべて せいりつ する とき だけ ついか",
+        "en": "CONFLUENCE: ADD ONLY IF ROAD, PLATFORM, AND RETURN ALL FIT"
+      }
+    },
+    {
+      "color": "jade",
+      "name": {
+        "zh": "兴隆山：须直接确认恢复",
+        "zh_reading": "Xīnglóng Shān: xū zhíjiē quèrèn huīfù",
+        "ja": "興隆山：復旧を直接確認",
+        "ja_reading": "こうりゅうざん：ふっきゅう を ちょくせつ かくにん",
+        "en": "XINGLONG: DIRECT REOPENING CHECK"
+      },
+      "nodes": [
+        {
+          "zh": "开放入口",
+          "zh_reading": "Kāifàng rùkǒu",
+          "ja": "開いている入口",
+          "ja_reading": "あいている いりぐち",
+          "en": "OPEN ENTRANCE"
+        },
+        {
+          "zh": "S104与景区游线",
+          "zh_reading": "S104 yǔ jǐngqū yóuxiàn",
+          "ja": "S104と園内ルート",
+          "ja_reading": "S104 と えんない ルート",
+          "en": "S104 + VISITOR ROUTE"
+        },
+        {
+          "zh": "上山、下山、回兰州",
+          "zh_reading": "Shàngshān, xiàshān, huí Lánzhōu",
+          "ja": "上り、下り、蘭州へ戻る",
+          "ja_reading": "のぼり、くだり、らんしゅう へ もどる",
+          "en": "ASCENT + DESCENT + RETURN"
+        }
+      ]
+    },
+    {
+      "color": "cobalt",
+      "name": {
+        "zh": "兰州水墨丹霞",
+        "zh_reading": "Lánzhōu Shuǐmò Dānxiá",
+        "ja": "蘭州水墨丹霞",
+        "ja_reading": "らんしゅう すいぼく たんか",
+        "en": "LANZHOU INK DANXIA"
+      },
+      "nodes": [
+        {
+          "zh": "当日开园与天气",
+          "zh_reading": "Dàngrì kāiyuán yǔ tiānqì",
+          "ja": "当日の開園と天候",
+          "ja_reading": "とうじつ の かいえん と てんこう",
+          "en": "TODAY'S OPENING + WEATHER"
+        },
+        {
+          "zh": "开放步道与内部接驳",
+          "zh_reading": "Kāifàng bùdào yǔ nèibù jiēbó",
+          "ja": "開放中の歩道と園内移動",
+          "ja_reading": "かいほうちゅう の ほどう と えんない いどう",
+          "en": "OPEN PATH + INTERNAL MOVE"
+        },
+        {
+          "zh": "回出口，再回兰州",
+          "zh_reading": "Huí chūkǒu, zài huí Lánzhōu",
+          "ja": "出口へ戻り、蘭州へ",
+          "ja_reading": "でぐち へ もどり、らんしゅう へ",
+          "en": "EXIT FIRST, THEN LANZHOU"
+        }
+      ]
+    }
+  ],
+  "cancel": {
+    "zh": "任一环节失败：整条取消，使用已核实的兰州市内备选",
+    "zh_reading": "Rèn yì huánjié shībài: zhěng tiáo qǔxiāo, shǐyòng yǐ héshí de Lánzhōu shìnèi bèixuǎn",
+    "ja": "一つでも崩れたら枝ごと外し、確認済みの蘭州市内案へ",
+    "ja_reading": "ひとつ でも くずれたら えだ ごと はずし、かくにんずみ の らんしゅう しないあん へ",
+    "en": "ONE BROKEN LINK: DROP THE WHOLE BRANCH; USE A CHECKED LANZHOU FALLBACK"
+  },
+  "accepted_inputs": [
+    {
+      "path": "data/maps/lanzhou/lanzhou-valley-orientation.config.json",
+      "sha256": "a729843c4661064fd8e3ee52dcb9821448039d579347584d6ad8765cff10818d"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-itinerary-days.config.json",
+      "sha256": "3dbba5ebf98b80c46717ed3d9e3ed1ffff44f5100721c5f6923cac5a41ed728f"
+    },
+    {
+      "path": "books/china/cities/lanzhou/editorial/ch11-fact-review.md",
+      "sha256": "1e03afb258ae4529e6c0446a1d20bea992089c36f25223a3613b76bcf392dc66"
+    }
+  ],
+  "generalizations": [
+    "The diagram is an original LazyTravel decision map, not an official road, boating, shuttle, attraction, topographic, or accessibility map",
+    "The three branches are mutually exclusive complete-return choices and never a circuit or same-day chain",
+    "The Yellow-Tao confluence is subordinate to the Bingling-Liujiaxia road decision and is not included in a boat ticket or transfer",
+    "Xinglong remains provisional and the diagram does not establish current reopening, road condition, trail condition, or visitor access",
+    "Arrows show verification order, not distance, direction, duration, elevation, boarding sequence, or a guaranteed connection",
+    "Current site, transport, road, public-safety, and weather notices override the diagram"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-23",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch11-final-assets/page-181.png",
+        "sha256": "692d79ec5973d1a3d10f2e690d5dedfd960eae22fed32c6d50687de14d0cee6b"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/desktop-11-map.png",
+        "sha256": "5578c0ff113b03ed1a772b8a3da90e0ad254bd3d7e0aff9a028275654b50d172"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-map-left.png",
+        "sha256": "5d397221f6f59eb5de5094fda3d440d7505b50e20750a597c29a6d96b94385b0"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-map-center.png",
+        "sha256": "6a7aafee5d3abc7d8517a9d6f035a0b24597a10dd5fb09d79dfffc9d0a8f8818"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-map-right.png",
+        "sha256": "910d08ab42384995152614827beca375a48490c6754864384e9f04373c67341a"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/qa.json",
+        "sha256": "3c40ee755e12226aaf8f696cdd3997dc8fb40c7893cb84d7f95552873982f27e"
+      }
+    },
+    "notes": [
+      "The deterministic SVG, PDF, PNG, and compiled 300 dpi B6 page preserve the three separate branches, nested Yellow-Tao condition, reopening guard, readings, and cancellation rule without collision or clipping.",
+      "At a 390 px viewport the 760 px independently scrollable stage preserves readable primary labels across left, centre, and right positions; zoom and reset controls work, and browser QA reports no overflow, request, or console failure."
+    ]
+  }
+}

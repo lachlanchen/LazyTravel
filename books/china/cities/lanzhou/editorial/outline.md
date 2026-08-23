@@ -22,8 +22,9 @@ The book has exactly 11 chapters. The count is locked because each chapter
 answers a different travel decision. Combining them would hide route choices;
 splitting them further would create short chapters with repeated context.
 
-Milestone status on `2026-08-23`: Chapters 1-10 are accepted in the B6 pocket
-and synchronized website. Chapter 11 is the only active production gate.
+Milestone status on `2026-08-23`: all 11 chapters are accepted in the B6
+pocket and synchronized website. Lanzhou is complete; no further destination
+is opened by this outline.
 
 ## Chapter Spine
 
@@ -146,10 +147,10 @@ and synchronized website. Chapter 11 is the only active production gate.
 
     Compare one culture-and-landscape day at Bingling Temple and Liujiaxia,
     where the Yellow River-Tao River confluence viewing platform is considered
-    only when its road transfer fits the same-day route; one active landscape
-    day at Xinglong Mountain; and a shorter geology-led option at Lanzhou Ink
-    Danxia after current access has been verified. They are alternatives, not
-    a chain. Boat operation, viewing-platform shuttles, weather closures, road
+    only when its road transfer fits the same-day route; Xinglong Mountain only
+    after its complete reopening and return have been confirmed directly; and
+    a managed geology day at Lanzhou Ink Danxia. They are alternatives, not a
+    chain. Boat operation, viewing-platform access, weather closures, road
     transfers, reservations, and return margins are checked on official
     channels immediately before travel. Places that need an overnight stay
     belong to a later Gansu route, not this chapter.

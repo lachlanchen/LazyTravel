@@ -19,8 +19,10 @@ world/countries/<country>
 
 Xi'an and Lanzhou are China Cities books. Hakone is a Kanagawa destination at
 `japan/prefectures/kanagawa/hakone`. Build one destination at a time in this
-order: Xi'an, Hakone, then Lanzhou. Xi'an and Hakone have passed their complete
-gates; Lanzhou is the only active destination.
+order: Xi'an, Hakone, then Lanzhou. All three books have passed their internal
+editorial, artifact, website, and Nutstore gates. Lanzhou's release commit and
+public deployment verification are the only active work; no later destination
+has been opened.
 
 ## Xi'an Structure
 
@@ -193,16 +195,16 @@ website renders `19,113` ruby nodes, preserves Xi'an at its stable series path,
 and passes desktop/mobile review for both destinations. The pocket is
 hash-synced to Nutstore. GitHub Pages run `32418706768` verified every deployed
 Xi'an and Hakone file against its canonical JSON and manifest. Hakone is
-complete; Lanzhou at `china/cities/lanzhou` is the only active destination.
+complete.
 
-Lanzhou Chapters 1-10, through **Leaving Lanzhou: Connect the Next Gansu Leg**,
-are accepted milestones. Their `95` aligned blocks carry `11,804` reviewed
-Chinese reading tokens, `15,024` reviewed Japanese reading tokens, 119
-chapter-source entries, 31 four-guide figure placements, and twelve code-built
-maps. The reproducible `187`-page B6 pocket has SHA-256
-`06250e93f4b23ca492f47f297be24e547e26594e34b8a9f1bd696cb726b4ae92` and is
-hash-synced to Nutstore. The synchronized series build exposes the same content
-at `china/cities/lanzhou/` and passes desktop, `390 px`, `16,328`-ruby,
-citation, figure, and independently pannable-map QA. Chapter 11, **Around
-Lanzhou: Choose One Nearby Day**, is now the sole production gate; Lanzhou as a
-whole is not complete.
+Lanzhou's locked 11-chapter structure is editorially complete. Its `105`
+aligned blocks carry `13,409` reviewed Chinese reading tokens, `16,997`
+reviewed Japanese reading tokens, 137 chapter-source entries, 36 four-guide
+figure placements, and thirteen code-built maps. Two independent release
+builds produced the same `216`-page B6 pocket with SHA-256
+`a6b70500bbe599b636786f4c5bd012c26fb8a3f2a5715909f729f1bc2e8a7dee`; the
+Nutstore copy matches. The synchronized site passes desktop and `390 px` QA
+with `18,539` ruby nodes and no console, request, parity, citation, figure, or
+map failure. All `184` repository tests and `25` external-source checks pass.
+The verified release commit and deployed-site comparison are the sole active
+gate; no next destination may start before it closes.

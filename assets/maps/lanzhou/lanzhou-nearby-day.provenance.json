@@ -1,0 +1,87 @@
+{
+  "accepted_inputs": [
+    {
+      "path": "data/maps/lanzhou/lanzhou-valley-orientation.config.json",
+      "sha256": "a729843c4661064fd8e3ee52dcb9821448039d579347584d6ad8765cff10818d"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-itinerary-days.config.json",
+      "sha256": "3dbba5ebf98b80c46717ed3d9e3ed1ffff44f5100721c5f6923cac5a41ed728f"
+    },
+    {
+      "path": "books/china/cities/lanzhou/editorial/ch11-fact-review.md",
+      "sha256": "1e03afb258ae4529e6c0446a1d20bea992089c36f25223a3613b76bcf392dc66"
+    }
+  ],
+  "asset_id": "asset-lanzhou-nearby-day-map",
+  "created_at": "2026-08-23",
+  "generalizations": [
+    "The diagram is an original LazyTravel decision map, not an official road, boating, shuttle, attraction, topographic, or accessibility map",
+    "The three branches are mutually exclusive complete-return choices and never a circuit or same-day chain",
+    "The Yellow-Tao confluence is subordinate to the Bingling-Liujiaxia road decision and is not included in a boat ticket or transfer",
+    "Xinglong remains provisional and the diagram does not establish current reopening, road condition, trail condition, or visitor access",
+    "Arrows show verification order, not distance, direction, duration, elevation, boarding sequence, or a guaranteed connection",
+    "Current site, transport, road, public-safety, and weather notices override the diagram"
+  ],
+  "method": "deterministic-matplotlib-map-render",
+  "outputs": {
+    "pdf": {
+      "bytes": 111576,
+      "path": "assets/maps/lanzhou/lanzhou-nearby-day.pdf",
+      "sha256": "9dc179c127f7d09ee7e6c9608e3df4ffb9291b87d34955cbdf3ee02ce144ab7b"
+    },
+    "png": {
+      "bytes": 488235,
+      "path": "assets/maps/lanzhou/lanzhou-nearby-day.png",
+      "sha256": "1ecbd5420c3308135c61c8160baab5fabfaba06f402bae6a259437fae6b63cba"
+    },
+    "svg": {
+      "bytes": 35265,
+      "path": "assets/maps/lanzhou/lanzhou-nearby-day.svg",
+      "sha256": "4115e162602011776251ec7bb6ccd0cb04af27ec7e2d7cdc5ae9ba9c3ad81a22"
+    }
+  },
+  "rights": "Original LazyTravel diagram; no map tiles, operator diagrams, source-guide pages, official photographs, or character references redistributed.",
+  "schema_version": 1,
+  "source": {
+    "path": "data/maps/lanzhou/lanzhou-nearby-day.config.json",
+    "sha256": "e24f57ff37d7adfca6c1e75558629c90e19f69ab48091e0d7ac3a281d64bc7d8"
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch11-final-assets/page-181.png",
+        "sha256": "692d79ec5973d1a3d10f2e690d5dedfd960eae22fed32c6d50687de14d0cee6b"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/desktop-11-map.png",
+        "sha256": "5578c0ff113b03ed1a772b8a3da90e0ad254bd3d7e0aff9a028275654b50d172"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-map-center.png",
+        "sha256": "6a7aafee5d3abc7d8517a9d6f035a0b24597a10dd5fb09d79dfffc9d0a8f8818"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-map-left.png",
+        "sha256": "5d397221f6f59eb5de5094fda3d440d7505b50e20750a597c29a6d96b94385b0"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-map-right.png",
+        "sha256": "910d08ab42384995152614827beca375a48490c6754864384e9f04373c67341a"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/qa.json",
+        "sha256": "3c40ee755e12226aaf8f696cdd3997dc8fb40c7893cb84d7f95552873982f27e"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The deterministic SVG, PDF, PNG, and compiled 300 dpi B6 page preserve the three separate branches, nested Yellow-Tao condition, reopening guard, readings, and cancellation rule without collision or clipping.",
+      "At a 390 px viewport the 760 px independently scrollable stage preserves readable primary labels across left, centre, and right positions; zoom and reset controls work, and browser QA reports no overflow, request, or console failure."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-23"
+  }
+}

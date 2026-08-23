@@ -9,21 +9,19 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
 - Xi'an at `china/cities/xian` is complete and publicly published.
 - Hakone at `japan/prefectures/kanagawa/hakone` is complete and publicly
   published with all 11 chapters and a reproducible B6 pocket book.
-- Lanzhou at `china/cities/lanzhou` is the only next production destination.
-  Its factual spine and exactly 11 chapters are locked in
-  `books/china/cities/lanzhou/editorial/outline.md`. Chapters 1 through 10,
-  through Leaving Lanzhou: Connect the Next Gansu Leg, are accepted. Chapter
-  11, Around Lanzhou: Choose One Nearby Day, is the only active production
-  gate; do not reopen Hakone or an accepted Lanzhou chapter without a
-  demonstrated failure, and do not start another destination in parallel.
+- Lanzhou at `china/cities/lanzhou` has all 11 chapters accepted in one
+  reproducible `216`-page B6 pocket and synchronized local website. The
+  release commit and public deployment check are the only active gate. Do not
+  reopen an accepted chapter without a demonstrated failure, and do not start
+  another destination before that publication gate closes.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
   a local editorial problem.
 - The Hakone book also has exactly 11 chapters, locked in
   `books/japan/prefectures/kanagawa/hakone/editorial/outline.md`. Populate and
   accept them in order; a later chapter never bypasses an unfinished earlier
   chapter.
-- The Lanzhou book has exactly 11 chapters. Populate and accept them in order;
-  do not add a filler chapter or bypass the active chapter.
+- The Lanzhou book has exactly 11 final chapters. Do not add a filler chapter
+  or change the locked structure to solve a local release problem.
 - All 11 Hakone chapters have passed editorial, reading, PDF-page, public
   website, provenance, Nutstore, and GitHub publication review. Do not reopen
   a settled Xi'an or Hakone chapter unless a factual, language, layout, or
@@ -32,6 +30,9 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   website, Nutstore, and GitHub publication review. Do not reopen a settled
   Xi'an chapter unless a factual, language, layout, or build failure is
   demonstrated.
+- All 11 Lanzhou chapters have passed editorial, reading, PDF-page, local
+  website, provenance, and Nutstore review. Keep the destination closed while
+  the verified release commit and public-site check are completed.
 - Ignore unrelated world-literature work and retain only useful multilingual
   book-production experience.
 

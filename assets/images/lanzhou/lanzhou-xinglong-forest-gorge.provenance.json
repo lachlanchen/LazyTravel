@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-xinglong-forest-gorge",
+  "created_at": "2026-08-23",
+  "method": "generated-location-led-xinglong-landscape-figure",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "task_id": "6-9edeee98-d934-47c4-a325-d5649f1dc63d",
+  "source_images": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "sha256": "d651c65feb9605ff12c6b5240c778ce298de7bbf216d21bbf2f3bb4513b16dd4",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "sha256": "6001eb5bba71f05568f36151ba6a414eae84fffa3aa1596a4a4bca99f551b73f",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "sha256": "a26e456993fbccbf6408cae17d25754c2073c8ca524b216f1dc8259d90d49500",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "sha256": "e193ae77e1c4a3d03efb247e7eaaa44c8f2eb27b363ff713b46b35b9d44fc13c",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    },
+    {
+      "path": "build/research/lanzhou/ch11/location-references/xinglong-official.jpg",
+      "sha256": "b247ed5f02c88586cb428a2ec960e70039e2b227474275eb260e0f39cccd2d17",
+      "reference_url": "https://www.gswbj.gov.cn/uploadfile/20240731/1722408129963213.jpg",
+      "role": "Unredistributed official pre-flood landscape reference for the forested gorge and mountain character"
+    }
+  ],
+  "prompt": {
+    "path": "data/images/lanzhou/lanzhou-xinglong-forest-gorge.prompt.md",
+    "sha256": "ac05c2e64211ab7abcd46e9765cdfab4d1df4f9da61fec703d07da227753a783"
+  },
+  "provider_lineage": [
+    {
+      "path": "build/research/lanzhou/aginti/ch11-xinglong-v1/task_manifest.json",
+      "sha256": "fa76cbc91f1de04fca5091d1174620f4b1523b4cb50e254cc07f62abc9b0f4e6",
+      "bytes": 2939,
+      "role": "Selected full-resolution generalized landscape composition with the exact four-guide cast and no claim of current reopening"
+    }
+  ],
+  "selected_raw": {
+    "path": "build/research/lanzhou/aginti/ch11-xinglong-v1/lanzhou-xinglong-forest-gorge-v1.png",
+    "sha256": "7e06099213f1449265d2b40d80a1bd57411bd08bc85414eecb6ad88d9c1f5df7",
+    "bytes": 20654199,
+    "width": 5504,
+    "height": 3072
+  },
+  "postprocess": "Pillow sRGB conversion, centre-cropped 16:9 print/web variants, Lanczos resampling, JPEG quality 92; web quality 88",
+  "output": {
+    "path": "assets/images/lanzhou/lanzhou-xinglong-forest-gorge.jpg",
+    "sha256": "c1adf13e5bc7879377dcc2493dde6fae26e441b8f437927aa91c4f2df4f21b86",
+    "bytes": 2327279,
+    "width": 3600,
+    "height": 2025,
+    "color_space": "sRGB"
+  },
+  "variants": {
+    "web": {
+      "path": "assets/images/lanzhou/lanzhou-xinglong-forest-gorge-web.jpg",
+      "sha256": "8c4acaf9dcfd25da1b3ff846512d6f2c89a924dc4664589d381d130246ec804f",
+      "bytes": 742394,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "factual_limits": [
+    "The composition generalizes Xinglong Mountain's forest-and-gorge character from a pre-flood official reference; it is not evidence that any entrance, road, bridge, trail, or facility is open or restored in 2026.",
+    "Path, bridge, vegetation, water, slope, weather, and guide positions are illustrative and cannot be used for navigation, condition assessment, or accessibility planning.",
+    "No visitor, vehicle, sign, ticket gate, construction area, or closure barrier is depicted; absence from the image is not evidence of absence on site.",
+    "The figure must always appear beside the dated text that keeps Xinglong outside the ready-to-follow itinerary until complete reopening is confirmed directly."
+  ],
+  "reader_caption_policy": "Describe the forested gorge as the reason to consider Xinglong after reopening, and keep the current direct-confirmation boundary in the caption; do not imply that the scene proves access.",
+  "rights": "Original LazyTravel composition; external character and location imagery was used only as an unredistributed visual reference",
+  "visual_qa": {
+    "exact_guide_count_four": "pass",
+    "aya_and_lala_present": "pass",
+    "identity_continuity": "pass",
+    "landscape_dominant_and_readable": "pass",
+    "no_current_opening_claim": "pass",
+    "no_anonymous_people": "pass",
+    "no_reader_visible_raster_text": "pass",
+    "b6_print": "pass",
+    "mobile_390px": "pass",
+    "approved": true,
+    "reviewed_at": "2026-08-23",
+    "notes": "Original-size, compiled 300 dpi B6, desktop, and 390 px responsive inspections pass as a landscape reference only. The exact cast stays secondary, and the caption's direct-reopening boundary is fully readable.",
+    "evidence": {
+      "b6": {
+        "path": "build/qa/books/lanzhou/ch11-final-assets/page-192.png",
+        "sha256": "493b7609f6063fbaab8aba24f0b3868b4468547c8cff2eeb85a4426c4b33ae8c",
+        "bytes": 2343712,
+        "physical_page": 192
+      },
+      "mobile": {
+        "path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-figure-04.png",
+        "sha256": "341414a86c27e0b97f3729884a3d269159fe4a9f7d609646c6da526f728f9e55",
+        "bytes": 775829,
+        "width": 780,
+        "height": 1114,
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  }
+}

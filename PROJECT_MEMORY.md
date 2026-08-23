@@ -90,8 +90,7 @@ nodes, and the exact pocket PDF is hash-synced to Nutstore. The series website
 build preserves Xi'an at `china/cities/xian/` and Hakone at
 `japan/prefectures/kanagawa/hakone/`. Pages run `32418706768` verified all 75
 Xi'an files and all 158 Hakone files against their canonical JSON and
-manifests. Hakone is complete and publicly published. Lanzhou at
-`china/cities/lanzhou` is now the only active destination.
+manifests. Hakone is complete and publicly published.
 
 Chapter 9 established the lodging method used by later books: choose a
 district from arrival, dinner, the exact entrance, the next morning, and a
@@ -110,13 +109,13 @@ train and the mountain exit already reached, then add at most one local stop.
 Odawara, Mishima, and Gotemba are alternatives, not a three-town extension.
 The bag and reserved train remain fixed; the local stop is removed first.
 
-Lanzhou has a locked 11-chapter structure. Chapters 1-10, through **Leaving
-Lanzhou: Connect the Next Gansu Leg**, are accepted with `95` aligned blocks,
-`11,804` reviewed Chinese reading tokens, `15,024` reviewed Japanese reading
-tokens, 119 chapter-source entries, 31 four-guide figure placements, and twelve
-code-built maps. The same JSON produced a clean `187`-page B6 pocket and
-responsive series page with `16,328` rendered ruby nodes. The pocket SHA-256 is
-`06250e93f4b23ca492f47f297be24e547e26594e34b8a9f1bd696cb726b4ae92`, and the
+Lanzhou has exactly 11 final chapters with `105` aligned blocks, `13,409`
+reviewed Chinese reading tokens, `16,997` reviewed Japanese reading tokens,
+137 chapter-source entries, 36 four-guide figure placements, and thirteen
+code-built maps. The same JSON produced a clean `216`-page B6 pocket and
+responsive series page with `18,539` rendered ruby nodes. Two release builds
+produced SHA-256
+`a6b70500bbe599b636786f4c5bd012c26fb8a3f2a5715909f729f1bc2e8a7dee`, and the
 Nutstore copy matches it. Chapter 5 established a museum method: verify current
 display first, read one object by form, label, date/type, and findspot, and keep
 collection city separate from archaeological origin. Chapter 6 established a
@@ -134,8 +133,10 @@ the third day. Bags, a seated meal, weather, and the reliable return stay on the
 same clock. Chapter 10 established the departure method: choose the next
 overnight city, read the exact station or terminal on the live booking, then
 work backward through bags, checkout, transfer, checks, and margin. The last
-city stop is removed first. Chapter 11, one nearby day, is the sole active
-gate.
+city stop is removed first. Chapter 11 established the nearby-day method:
+choose one complete return among Bingling-Liujiaxia, a directly rechecked
+Xinglong, or Ink Danxia; treat the Yellow-Tao confluence as a conditional road
+branch; cancel the whole branch when one link fails.
 
 The book's main line remains the traveler's decisions in a long river valley:
 orientation, arrival gate, crossing history, one central Yellow River Iron
@@ -146,3 +147,8 @@ viewpoint are alternatives in Chapter 11, not compulsory stops in one chain.
 The 2014 guide is lead material only; all of its logistics are stale.
 `甘肃简史` supplies secondary chronology, `陇味儿` supplies food questions and
 vocabulary, and current official sources establish publishable claims.
+
+All Lanzhou editorial, reading, deterministic PDF, page, visual-provenance,
+responsive-site, and Nutstore gates pass. The current release commit and
+public deployed-site comparison are the only remaining gate. No later
+destination is active.

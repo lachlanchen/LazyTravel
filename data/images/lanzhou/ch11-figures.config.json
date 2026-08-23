@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-23",
+  "generator": "AgInTiFlow / GRS AI / nano-banana-2",
+  "guides": [
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
+      "role": "Aya-chan identity and sailor-uniform reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
+      "role": "Lala Xia identity and cream-overalls reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/sasakun.jpeg",
+      "role": "Sasa-kun identity and panda-hoodie reference"
+    },
+    {
+      "path": "/home/lachlan/ProjectsLFS/LALACHAN/LazyingArtRobot.png",
+      "role": "Zhuangzi robot identity and articulated-body reference"
+    }
+  ],
+  "figures": [
+    {
+      "asset_id": "asset-lanzhou-nearby-day-choice",
+      "stem": "lanzhou-nearby-day-choice",
+      "method": "generated-nearby-day-choice-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch11-nearby-choice-v1/lanzhou-nearby-day-choice-v1.png",
+      "prompt": "data/images/lanzhou/lanzhou-nearby-day-choice.prompt.md",
+      "official_references": [],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch11-nearby-choice-v1/task_manifest.json",
+          "role": "Selected full-resolution composition with the exact four-guide cast and three blank route cards"
+        }
+      ],
+      "factual_limits": [
+        "The breakfast table is a generalized planning scene, not a documentary photograph of a named Lanzhou hotel, cafe, tour office, or transport lounge.",
+        "The three blank cards represent mutually exclusive planning branches and contain no route, operator, price, time, booking, or opening information.",
+        "Food, furniture, bags, notebook, devices, window view, and exact staging are illustrative and cannot identify a business or current service.",
+        "The figure does not establish that any nearby branch is open or bookable on the travel date."
+      ],
+      "reader_caption_policy": "Describe the four guides comparing three complete return branches at breakfast; do not mention generation or imply that the blank cards contain live route information.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "decision_scene_legible": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-23",
+        "notes": "Original-size, compiled 300 dpi B6, desktop, and 390 px responsive inspections pass. Exactly Aya-chan, Lala Xia, Sasa-kun, and the Zhuangzi robot remain distinct; the three route cards and trilingual caption are clear."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch11-final-assets/page-178.png",
+        "physical_page": 178,
+        "b6_sha256": "2fa89729f0592d4e905a9d2b8a90b5900ae2881df5b36f7ec7f8c874872ebeb7",
+        "mobile_path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-figure.png",
+        "mobile_sha256": "4e911bd1adb0e96aba2bd1436a9a3fe46ba0d53e1a21ce07081ebb2eac864d60",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-lanzhou-bingling-grottoes-day",
+      "stem": "lanzhou-bingling-grottoes-day",
+      "method": "generated-location-led-bingling-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch11-bingling-v1/lanzhou-bingling-grottoes-day-v1.png",
+      "prompt": "data/images/lanzhou/lanzhou-bingling-grottoes-day.prompt.md",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch11/location-references/bingling-cliff-official.jpg",
+          "reference_url": "https://www.gswbj.gov.cn/uploadfile/20241016/1729048751544574.jpg",
+          "role": "Unredistributed official reference for the grotto cliff, large Buddha, gorge, and reservoir-water relationship"
+        },
+        {
+          "path": "build/research/lanzhou/ch11/location-references/bingling-dha.png",
+          "reference_url": "https://www.dha.ac.cn/ny/images/grotto/bingling.png",
+          "role": "Unredistributed Dunhuang Academy reference for attraction recognition and cliff scale"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch11-bingling-v1/task_manifest.json",
+          "role": "Selected full-resolution composition with the exact four-guide cast small against a recognizable Bingling cliff"
+        }
+      ],
+      "factual_limits": [
+        "The composition is an original orientation plate based on official location references, not documentary evidence of cave condition, water level, weather, crowding, or access on a specific day.",
+        "Cliff, sculpture, path, railing, reservoir water, vegetation, and guide positions are generalized; the image cannot be used to identify an open cave, entrance, pier, road, boat route, or visitor sequence.",
+        "Visible scale and color do not establish cave access, special-cave admission, route duration, sailing, water level, accessibility, or safe road conditions.",
+        "The four guides are contemporary visitors and are not placed inside a historical reconstruction or conservation work area."
+      ],
+      "reader_caption_policy": "Name the grotto cliff and reservoir corridor and tell the reader to confirm the complete return before departure; do not describe the image as documentary evidence or promise Cave 169 access.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "attraction_dominant_and_recognizable": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-23",
+        "notes": "Original-size, compiled 300 dpi B6, desktop, and 390 px responsive inspections pass. The cliff, giant Buddha, gorge, exact four-guide cast, and complete-return caption remain recognizable without collision."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch11-final-assets/page-184.png",
+        "physical_page": 184,
+        "b6_sha256": "af1ea44a2cb58ab36bf56c141c5142cebc991dc30eb36ad566662d35f59bc42c",
+        "mobile_path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-figure-02.png",
+        "mobile_sha256": "6217c00601868ee14a758eaf301d8b96e81d59471a1d1918333ab9e0187f815a",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-lanzhou-yellow-tao-confluence",
+      "stem": "lanzhou-yellow-tao-confluence",
+      "method": "generated-location-led-confluence-figure-with-targeted-color-correction",
+      "selected_raw": "build/research/lanzhou/aginti/ch11-yellow-tao-v2/lanzhou-yellow-tao-confluence-v2.png",
+      "prompt": "data/images/lanzhou/lanzhou-yellow-tao-confluence.prompt.md",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch11/location-references/yellow-tao-2.jpg",
+          "reference_url": "https://www.gsyongjing.gov.cn/cms_files/filemanager/813956128/picture/20259/S8717291cf66a42858b4827c26955026e-800.jpg",
+          "role": "Unredistributed official reference for the high viewpoint, central landform, and variable river-color relationship"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch11-yellow-tao-v1/task_manifest.json",
+          "role": "Rejected first composition retained only as lineage because its luminous orange and over-saturated green water implied a guaranteed promotional color split"
+        },
+        {
+          "path": "build/research/lanzhou/aginti/ch11-yellow-tao-v2/task_manifest.json",
+          "role": "Selected full-resolution correction with the exact four-guide cast, sediment-brown water, muted green water, and an irregular mixing edge"
+        }
+      ],
+      "factual_limits": [
+        "The composition is an original location-led plate, not documentary evidence of river color, sediment load, water level, weather, crowding, or viewpoint operation on a specific day.",
+        "River hues and the meeting boundary vary with flow, sediment, light, weather, and camera response; the image does not promise a blue-and-yellow split.",
+        "Railing, platform edge, central rock, background terrain, and cast position are generalized and cannot identify an entrance, shuttle stop, ticket point, road, or safe walking line.",
+        "The figure does not establish that the viewpoint is included in a Bingling boat trip or available without a separate same-day road and operating check."
+      ],
+      "reader_caption_policy": "Describe the variable Yellow–Tao meeting line from the Longhuishan-area viewpoint and state that it is a separately confirmed road branch; do not mention generation or promise fixed colors.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "confluence_dominant_and_readable": "pass",
+        "natural_variable_water_color": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-23",
+        "notes": "The selected correction, compiled 300 dpi B6 page, desktop, and 390 px responsive view pass. The muted sediment-brown and green meeting line, high viewpoint, exact cast, and conditional-road caption remain readable."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch11-final-assets/page-189.png",
+        "physical_page": 189,
+        "b6_sha256": "f8c2f0d72a145c3c159f16ad26614a59d9b902fcdbb1ca360f8932ca3e963562",
+        "mobile_path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-figure-03.png",
+        "mobile_sha256": "667cac8233b69597f13ee5aeddaf287a95c7ec19a5eecc108fd9a3844a75abbb",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-lanzhou-xinglong-forest-gorge",
+      "stem": "lanzhou-xinglong-forest-gorge",
+      "method": "generated-location-led-xinglong-landscape-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch11-xinglong-v1/lanzhou-xinglong-forest-gorge-v1.png",
+      "prompt": "data/images/lanzhou/lanzhou-xinglong-forest-gorge.prompt.md",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch11/location-references/xinglong-official.jpg",
+          "reference_url": "https://www.gswbj.gov.cn/uploadfile/20240731/1722408129963213.jpg",
+          "role": "Unredistributed official pre-flood landscape reference for the forested gorge and mountain character"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch11-xinglong-v1/task_manifest.json",
+          "role": "Selected full-resolution generalized landscape composition with the exact four-guide cast and no claim of current reopening"
+        }
+      ],
+      "factual_limits": [
+        "The composition generalizes Xinglong Mountain's forest-and-gorge character from a pre-flood official reference; it is not evidence that any entrance, road, bridge, trail, or facility is open or restored in 2026.",
+        "Path, bridge, vegetation, water, slope, weather, and guide positions are illustrative and cannot be used for navigation, condition assessment, or accessibility planning.",
+        "No visitor, vehicle, sign, ticket gate, construction area, or closure barrier is depicted; absence from the image is not evidence of absence on site.",
+        "The figure must always appear beside the dated text that keeps Xinglong outside the ready-to-follow itinerary until complete reopening is confirmed directly."
+      ],
+      "reader_caption_policy": "Describe the forested gorge as the reason to consider Xinglong after reopening, and keep the current direct-confirmation boundary in the caption; do not imply that the scene proves access.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "landscape_dominant_and_readable": "pass",
+        "no_current_opening_claim": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-23",
+        "notes": "Original-size, compiled 300 dpi B6, desktop, and 390 px responsive inspections pass as a landscape reference only. The exact cast stays secondary, and the caption's direct-reopening boundary is fully readable."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch11-final-assets/page-192.png",
+        "physical_page": 192,
+        "b6_sha256": "493b7609f6063fbaab8aba24f0b3868b4468547c8cff2eeb85a4426c4b33ae8c",
+        "mobile_path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-figure-04.png",
+        "mobile_sha256": "341414a86c27e0b97f3729884a3d269159fe4a9f7d609646c6da526f728f9e55",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    },
+    {
+      "asset_id": "asset-lanzhou-ink-danxia-route",
+      "stem": "lanzhou-ink-danxia-route",
+      "method": "generated-location-led-ink-danxia-figure",
+      "selected_raw": "build/research/lanzhou/aginti/ch11-ink-danxia-v1/lanzhou-ink-danxia-route-v1.png",
+      "prompt": "data/images/lanzhou/lanzhou-ink-danxia-route.prompt.md",
+      "official_references": [
+        {
+          "path": "build/research/lanzhou/ch11/location-references/ink-danxia-official.png",
+          "reference_url": "https://www.gswbj.gov.cn/uploadfile/20260722/1784704383761443.png",
+          "role": "Unredistributed current official reference for broad landform bands, viewing infrastructure, and site scale"
+        }
+      ],
+      "provider_lineage": [
+        {
+          "path": "build/research/lanzhou/aginti/ch11-ink-danxia-v1/task_manifest.json",
+          "role": "Selected full-resolution composition with the exact four-guide cast small against a recognizable managed geology route"
+        }
+      ],
+      "factual_limits": [
+        "The composition is an original orientation plate based on an official location reference, not documentary evidence of color, weather, open platforms, boardwalk condition, internal transport, or site operation on a specific day.",
+        "Landform bands, gullies, railing, path, platform, vegetation, and guide positions are generalized; the image cannot be used for navigation or to cross a barrier.",
+        "Surface color varies with light, air, moisture, camera response, and postprocessing; the image does not promise saturated red terrain or blue sky.",
+        "The figure does not establish an accessible route, fixed duration, open boardwalk section, ticket, vehicle, or return connection."
+      ],
+      "reader_caption_policy": "Describe reading bands, gullies, and depth from the managed route while checking the day's open section and return; do not mention generation or guarantee color.",
+      "visual_qa": {
+        "exact_guide_count_four": "pass",
+        "aya_and_lala_present": "pass",
+        "identity_continuity": "pass",
+        "attraction_dominant_and_recognizable": "pass",
+        "natural_landform_color": "pass",
+        "no_anonymous_people": "pass",
+        "no_reader_visible_raster_text": "pass",
+        "b6_print": "pass",
+        "mobile_390px": "pass",
+        "approved": true,
+        "reviewed_at": "2026-08-23",
+        "notes": "Original-size, compiled 300 dpi B6, desktop, and 390 px responsive inspections pass. Restrained landform color, the managed path, exact four-guide cast, and same-day opening caption remain clear."
+      },
+      "qa_evidence": {
+        "b6_path": "build/qa/books/lanzhou/ch11-final-assets/page-195.png",
+        "physical_page": 195,
+        "b6_sha256": "3ae5c0df3546dee78668242667651f9469f3ce3c58dc64b8489a2451e08b218a",
+        "mobile_path": "build/qa/website/lanzhou-ch11-review/qa/mobile-11-figure-05.png",
+        "mobile_sha256": "00c052db63411677828443aa08386c0c4be3f31da03609bed5eef0cb53c8f992",
+        "viewport_css_px": 390,
+        "display_width_css_px": 390
+      }
+    }
+  ]
+}

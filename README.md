@@ -18,11 +18,11 @@ Published guide paths:
 
 ## Current Editorial Gate
 
-Xi'an and Hakone are complete and publicly published. Lanzhou at
-`china/cities/lanzhou` is the only active book. Chapters 1-10 are accepted
-milestones; Chapter 11 is the sole production gate. Only one destination may
-be in production at a time. Broader Gansu and Ningxia sources remain research
-context, not destination-book titles.
+Xi'an and Hakone are complete and publicly published. All 11 Lanzhou chapters
+have passed editorial, B6, responsive-site, provenance, and Nutstore review;
+its release commit and public deployed-site comparison are the only active
+gate. No later destination is in production. Broader Gansu and Ningxia sources
+remain research context, not destination-book titles.
 
 The series taxonomy is fixed:
 
@@ -47,8 +47,8 @@ district-first lodging chapter; Chapter 10 supplies nested two-, three-, and
 five-day itineraries; and Chapter 11 closes with dated booking, conditions,
 conduct, allergy, and emergency checks. The cover uses a text-free four-guide
 city-wall scene under live selectable LaTeX text. All chapters have passed the
-editorial, reading, page, and public website gate. Xi'an is complete;
-Hakone was completed next, and production now advances only to Lanzhou.
+editorial, reading, page, and public website gate. Xi'an is complete; Hakone
+and Lanzhou were completed next in sequence.
 
 The Xi'an pocket PDF SHA-256 is
 `ae2872703174ea523b051ccba21e34eeaa2182aba323bc68a23e5cf558af83c5`.
@@ -70,17 +70,15 @@ Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
 
 Lanzhou has a hash-verified read-only source baseline, an explicit claim and
-rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-10,
-through **Leaving Lanzhou: Connect the Next Gansu Leg**, are accepted: `95`
-aligned blocks, `11,804` reviewed Chinese reading tokens, `15,024` reviewed
-Japanese reading tokens, 119 chapter-source entries, 31 four-guide figure
-placements, and twelve code-built maps. The same canonical JSON produces a
-`187`-page B6 pocket and a responsive site with `16,328` ruby nodes. The pocket
-SHA-256 is
-`06250e93f4b23ca492f47f297be24e547e26594e34b8a9f1bd696cb726b4ae92`, and its
-Nutstore copy matches. Chapter 11, **Around Lanzhou: Choose One Nearby Day**,
-is the only active production gate; the Lanzhou book itself is not yet
-complete.
+rejection ledger, and exactly 11 accepted trilingual chapters. They contain
+`105` aligned blocks, `13,409` reviewed Chinese reading tokens, `16,997`
+reviewed Japanese reading tokens, 137 chapter-source entries, 36 four-guide
+figure placements, and thirteen code-built maps. The same canonical JSON
+produces a deterministic `216`-page B6 pocket and a responsive site with
+`18,539` ruby nodes. The pocket SHA-256 is
+`a6b70500bbe599b636786f4c5bd012c26fb8a3f2a5715909f729f1bc2e8a7dee`, and its
+Nutstore copy matches. The release passes all `184` repository tests and `25`
+external-source checks; only the current GitHub publication check remains.
 
 ## Source Boundary
 
@@ -163,7 +161,7 @@ same aligned destination JSON as the pocket book, removes private local source
 paths from the browser payload and public asset-provenance copies, and rejects
 text, reading, citation, or asset drift before writing `site/manifest.json`.
 
-## Build The Lanzhou Pocket Milestone
+## Build The Lanzhou Pocket
 
 ```bash
 python3 scripts/build_lanzhou_review.py
