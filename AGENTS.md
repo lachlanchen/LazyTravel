@@ -9,11 +9,11 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
 - Xi'an at `china/cities/xian` is complete and publicly published.
 - Hakone at `japan/prefectures/kanagawa/hakone` is complete and publicly
   published with all 11 chapters and a reproducible B6 pocket book.
-- Lanzhou at `china/cities/lanzhou` has all 11 chapters accepted in one
-  reproducible `216`-page B6 pocket and synchronized local website. The
-  release commit and public deployment check are the only active gate. Do not
-  reopen an accepted chapter without a demonstrated failure, and do not start
-  another destination before that publication gate closes.
+- Lanzhou at `china/cities/lanzhou` is complete and publicly published with
+  all 11 chapters, one reproducible `216`-page B6 pocket, and a synchronized
+  website. Do not reopen an accepted chapter without a demonstrated failure.
+  No production destination is active; wait for an explicit next destination
+  instead of inferring one from the research library.
 - The Xi'an book has exactly 11 chapters. Do not add or remove chapters to solve
   a local editorial problem.
 - The Hakone book also has exactly 11 chapters, locked in
@@ -30,9 +30,8 @@ These instructions apply only inside this repository. Read `PROJECT_GOAL.md`,
   website, Nutstore, and GitHub publication review. Do not reopen a settled
   Xi'an chapter unless a factual, language, layout, or build failure is
   demonstrated.
-- All 11 Lanzhou chapters have passed editorial, reading, PDF-page, local
-  website, provenance, and Nutstore review. Keep the destination closed while
-  the verified release commit and public-site check are completed.
+- All 11 Lanzhou chapters have passed editorial, reading, PDF-page, public
+  website, provenance, Nutstore, and GitHub publication review.
 - Ignore unrelated world-literature work and retain only useful multilingual
   book-production experience.
 

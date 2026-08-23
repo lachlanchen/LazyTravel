@@ -18,11 +18,9 @@ Published guide paths:
 
 ## Current Editorial Gate
 
-Xi'an and Hakone are complete and publicly published. All 11 Lanzhou chapters
-have passed editorial, B6, responsive-site, provenance, and Nutstore review;
-its release commit and public deployed-site comparison are the only active
-gate. No later destination is in production. Broader Gansu and Ningxia sources
-remain research context, not destination-book titles.
+Xi'an, Hakone, and Lanzhou are complete and publicly published. No later
+destination is in production. Broader Gansu and Ningxia sources remain
+research context, not destination-book titles.
 
 The series taxonomy is fixed:
 
@@ -78,7 +76,9 @@ produces a deterministic `216`-page B6 pocket and a responsive site with
 `18,539` ruby nodes. The pocket SHA-256 is
 `a6b70500bbe599b636786f4c5bd012c26fb8a3f2a5715909f729f1bc2e8a7dee`, and its
 Nutstore copy matches. The release passes all `184` repository tests and `25`
-external-source checks; only the current GitHub publication check remains.
+external-source checks. Commit `8a4fc23` and GitHub Pages run `32622242430`
+published and verified the site; an independent check matched all `123`
+deployed Lanzhou files to the canonical source hash.
 
 ## Source Boundary
 

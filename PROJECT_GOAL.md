@@ -20,9 +20,8 @@ world/countries/<country>
 Xi'an and Lanzhou are China Cities books. Hakone is a Kanagawa destination at
 `japan/prefectures/kanagawa/hakone`. Build one destination at a time in this
 order: Xi'an, Hakone, then Lanzhou. All three books have passed their internal
-editorial, artifact, website, and Nutstore gates. Lanzhou's release commit and
-public deployment verification are the only active work; no later destination
-has been opened.
+editorial, artifact, website, Nutstore, GitHub, and public deployment gates.
+No later destination has been opened.
 
 ## Xi'an Structure
 
@@ -206,5 +205,7 @@ builds produced the same `216`-page B6 pocket with SHA-256
 Nutstore copy matches. The synchronized site passes desktop and `390 px` QA
 with `18,539` ruby nodes and no console, request, parity, citation, figure, or
 map failure. All `184` repository tests and `25` external-source checks pass.
-The verified release commit and deployed-site comparison are the sole active
-gate; no next destination may start before it closes.
+Commit `8a4fc23` and GitHub Pages run `32622242430` published and verified the
+canonical Lanzhou site; an independent deployed check matched `123` files and
+the canonical source hash. Lanzhou is complete. No production destination is
+active until one is explicitly selected.

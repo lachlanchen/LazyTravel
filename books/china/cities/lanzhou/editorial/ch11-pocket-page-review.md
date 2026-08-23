@@ -25,6 +25,11 @@ passed on `2026-08-23`. This closes all 11 Lanzhou chapters.
 - Responsive release QA:
   `build/qa/website/lanzhou-ch11-release/qa.json`, SHA-256
   `e966da9759f6fb32d664fcd7c26dab6e1baa5dea8c3d96bc0fefa011bef377a5`
+- Public release: commit `8a4fc23`, GitHub Pages run `32622242430`, and an
+  independent comparison of `123` deployed files (`58,533,500` bytes) against
+  canonical source SHA-256
+  `f60388d567727bbaa6e7ed2b827e75cf5dcf66fb39e48e6435aa1984011b0401`
+  all pass.
 
 ## Page Review
 

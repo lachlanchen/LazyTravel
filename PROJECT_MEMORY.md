@@ -149,6 +149,8 @@ The 2014 guide is lead material only; all of its logistics are stale.
 vocabulary, and current official sources establish publishable claims.
 
 All Lanzhou editorial, reading, deterministic PDF, page, visual-provenance,
-responsive-site, and Nutstore gates pass. The current release commit and
-public deployed-site comparison are the only remaining gate. No later
-destination is active.
+responsive-site, Nutstore, GitHub, and public deployment gates pass. Commit
+`8a4fc23` and Pages run `32622242430` published the canonical site; the
+independent comparison matched `123` files and source SHA-256
+`f60388d567727bbaa6e7ed2b827e75cf5dcf66fb39e48e6435aa1984011b0401`.
+Lanzhou is complete. No later destination is active.
