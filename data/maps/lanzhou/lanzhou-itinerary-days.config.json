@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "asset_id": "asset-lanzhou-itinerary-days-map",
+  "snapshot_date": "2026-08-23",
+  "title": {
+    "zh": "一、二、三天：给河谷留出空白",
+    "zh_reading": "Yī、èr、sān tiān: gěi hégǔ liúchū kòngbái",
+    "ja": "一日・二日・三日：河谷に余白を残す",
+    "ja_reading": "いちにち・ふつか・みっか：かこく に よはく を のこす",
+    "en": "ONE, TWO, OR THREE DAYS: LEAVE ROOM IN THE VALLEY"
+  },
+  "rule": {
+    "zh": "行李 → 一处主线 → 坐下吃饭 → 可靠返程",
+    "zh_reading": "Xíngli → yí chù zhǔxiàn → zuòxia chīfàn → kěkào fǎnchéng",
+    "ja": "荷物 → 一日の軸 → 座って食事 → 確実な帰路",
+    "ja_reading": "にもつ → いちにち の じく → すわって しょくじ → かくじつ な きろ",
+    "en": "BAGS → ONE ANCHOR → SEATED MEAL → RELIABLE RETURN"
+  },
+  "lanes": [
+    {
+      "duration": "1",
+      "color": "vermilion",
+      "label": {
+        "zh": "一天",
+        "zh_reading": "Yì tiān",
+        "ja": "一日",
+        "ja_reading": "いちにち",
+        "en": "ONE DAY"
+      },
+      "nodes": [
+        {
+          "zh": "放好行李",
+          "zh_reading": "Fàng hǎo xíngli",
+          "ja": "荷物を置く",
+          "ja_reading": "にもつ を おく",
+          "en": "BAGS FIRST"
+        },
+        {
+          "zh": "沿河 或 博物馆",
+          "zh_reading": "Yánhé huò bówùguǎn",
+          "ja": "川沿い または 博物館",
+          "ja_reading": "かわぞい または はくぶつかん",
+          "en": "RIVER  OR  MUSEUM",
+          "choice": true
+        },
+        {
+          "zh": "坐下吃一顿",
+          "zh_reading": "Zuòxia chī yí dùn",
+          "ja": "座って食事",
+          "ja_reading": "すわって しょくじ",
+          "en": "SEATED MEAL"
+        },
+        {
+          "zh": "回住处 或 离开",
+          "zh_reading": "Huí zhùchù huò líkāi",
+          "ja": "宿へ戻る または 出発",
+          "ja_reading": "やど へ もどる または しゅっぱつ",
+          "en": "HOTEL  OR  DEPARTURE"
+        }
+      ],
+      "fallback": {
+        "zh": "馆闭换沿河日｜雨雾先查博物馆",
+        "zh_reading": "Guǎn bì huàn yánhé rì | yǔwù xiān chá bówùguǎn",
+        "ja": "休館は川沿いへ｜雨・霧は博物館を確認",
+        "ja_reading": "きゅうかん は かわぞい へ | あめ・きり は はくぶつかん を かくにん",
+        "en": "CLOSED: RIVER DAY  |  RAIN/FOG: CHECK MUSEUM"
+      }
+    },
+    {
+      "duration": "2",
+      "color": "jade",
+      "label": {
+        "zh": "两天",
+        "zh_reading": "Liǎng tiān",
+        "ja": "二日間",
+        "ja_reading": "ふつかかん",
+        "en": "TWO DAYS"
+      },
+      "nodes": [
+        {
+          "zh": "D1 早饭＋博物馆",
+          "zh_reading": "Zǎofàn + bówùguǎn",
+          "ja": "D1 朝食＋博物館",
+          "ja_reading": "ちょうしょく + はくぶつかん",
+          "en": "D1 FOOD + MUSEUM"
+        },
+        {
+          "zh": "D1 午饭＋中段",
+          "zh_reading": "Wǔfàn + zhōngduàn",
+          "ja": "D1 昼食＋中央",
+          "ja_reading": "ちゅうしょく + ちゅうおう",
+          "en": "D1 MEAL + CENTRE"
+        },
+        {
+          "zh": "D2 铁桥＋白塔山",
+          "zh_reading": "Tiěqiáo + Báitǎshān",
+          "ja": "D2 鉄橋＋白塔山",
+          "ja_reading": "てっきょう + はくとうざん",
+          "en": "D2 BRIDGE + HILL"
+        },
+        {
+          "zh": "回住处 或 离开",
+          "zh_reading": "Huí zhùchù huò líkāi",
+          "ja": "宿へ戻る または 出発",
+          "ja_reading": "やど へ もどる または しゅっぱつ",
+          "en": "HOTEL  OR  DEPARTURE"
+        }
+      ],
+      "fallback": {
+        "zh": "预约或天气不合：两天整日互换",
+        "zh_reading": "Yùyuē huò tiānqì bù hé: liǎng tiān zhěngrì hùhuàn",
+        "ja": "予約・天候が合わなければ二日を丸ごと交換",
+        "ja_reading": "よやく・てんこう が あわなければ ふつか を まるごと こうかん",
+        "en": "BOOKING OR WEATHER: SWAP WHOLE DAYS; DO NOT STACK"
+      }
+    },
+    {
+      "duration": "3",
+      "color": "cobalt",
+      "label": {
+        "zh": "三天",
+        "zh_reading": "Sān tiān",
+        "ja": "三日間",
+        "ja_reading": "みっかかん",
+        "en": "THREE DAYS"
+      },
+      "nodes": [
+        {
+          "zh": "D1 博物馆＋中段",
+          "zh_reading": "Bówùguǎn + zhōngduàn",
+          "ja": "D1 博物館＋中央",
+          "ja_reading": "はくぶつかん + ちゅうおう",
+          "en": "D1 MUSEUM + CENTRE"
+        },
+        {
+          "zh": "D2 铁桥＋白塔山",
+          "zh_reading": "Tiěqiáo + Báitǎshān",
+          "ja": "D2 鉄橋＋白塔山",
+          "ja_reading": "てっきょう + はくとうざん",
+          "en": "D2 BRIDGE + BAITA"
+        },
+        {
+          "zh": "D3 登高 或 老城",
+          "zh_reading": "Dēnggāo huò lǎochéng",
+          "ja": "D3 高所 または 旧市街",
+          "ja_reading": "こうしょ または きゅうしがい",
+          "en": "D3 ONE HILL  OR  OLD CITY",
+          "choice": true
+        },
+        {
+          "zh": "整理行李＋返程",
+          "zh_reading": "Zhěnglǐ xíngli + fǎnchéng",
+          "ja": "荷造り＋帰路",
+          "ja_reading": "にづくり + きろ",
+          "en": "BAGS + DEPARTURE"
+        }
+      ],
+      "fallback": {
+        "zh": "D2已登高：D3慢走老城｜视界差就不登高",
+        "zh_reading": "D2 yǐ dēnggāo: D3 màn zǒu lǎochéng | shìjiè chà jiù bù dēnggāo",
+        "ja": "D2で登ったらD3は旧市街へ｜視界不良なら登らない",
+        "ja_reading": "D2 で のぼったら D3 は きゅうしがい へ | しかいふりょう なら のぼらない",
+        "en": "CLIMBED ON D2: OLD CITY ON D3  |  POOR VIEW: NO HILL"
+      }
+    }
+  ],
+  "conditions": [
+    {
+      "color": "jade",
+      "symbol": "○",
+      "zh": "户外适宜",
+      "zh_reading": "Hùwài shìyí",
+      "ja": "屋外向き",
+      "ja_reading": "おくがいむき",
+      "en": "GOOD FOR OUTDOORS"
+    },
+    {
+      "color": "coral",
+      "symbol": "△",
+      "zh": "炎热 或 寒冷",
+      "zh_reading": "Yánrè huò hánlěng",
+      "ja": "暑さ または 寒さ",
+      "ja_reading": "あつさ または さむさ",
+      "en": "HEAT  OR  COLD"
+    },
+    {
+      "color": "cobalt",
+      "symbol": "◇",
+      "zh": "雨 或 视界差",
+      "zh_reading": "Yǔ huò shìjiè chà",
+      "ja": "雨 または 視界不良",
+      "ja_reading": "あめ または しかいふりょう",
+      "en": "RAIN  OR  POOR VIEW"
+    },
+    {
+      "color": "vermilion",
+      "symbol": "×",
+      "zh": "闭馆 或 返程已定",
+      "zh_reading": "Bìguǎn huò fǎnchéng yǐ dìng",
+      "ja": "休館 または 出発時刻あり",
+      "ja_reading": "きゅうかん または しゅっぱつじこく あり",
+      "en": "CLOSED  OR  FIXED DEPARTURE"
+    }
+  ],
+  "cut_order": {
+    "zh": "先删：加餐 → 第二条街 → 露天登高　｜　必保：行李・预约・正餐休息・返程",
+    "zh_reading": "Xiān shān: jiācān → dì-èr tiáo jiē → lùtiān dēnggāo | bì bǎo: xíngli · yùyuē · zhèngcān xiūxi · fǎnchéng",
+    "ja": "先に削る：間食 → 二本目の街 → 屋外の高所　｜　守る：荷物・予約・食事休憩・帰路",
+    "ja_reading": "さき に けずる：かんしょく → にほんめ の まち → おくがい の こうしょ | まもる：にもつ・よやく・しょくじきゅうけい・きろ",
+    "en": "CUT SNACK → SECOND STREET → OUTDOOR CLIMB  |  KEEP BAGS · BOOKING · MEAL/REST · RETURN"
+  },
+  "footer": "行程决策图・旅程判断図・ITINERARY DECISION MAP · NOT NAVIGATION OR A TIMETABLE",
+  "accepted_inputs": [
+    {
+      "path": "data/maps/lanzhou/lanzhou-valley-orientation.config.json",
+      "sha256": "a729843c4661064fd8e3ee52dcb9821448039d579347584d6ad8765cff10818d"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-arrival-gates.config.json",
+      "sha256": "5847d5292159319badb629b3d5a9ba1f9893b87360bc1db81c82c5b723925be1"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-bridge-hill-route.config.json",
+      "sha256": "45fbfb745f78b980c87cfdf2357fef6ec63a632a1128bdbe2715e4399a33b53b"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-museum-route.config.json",
+      "sha256": "b660515032f289cc24f8765dcf5b77e11bfa970ae1c23da958118b8940c0d1fb"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-food-clock.config.json",
+      "sha256": "fdbb346043e4d6a89c359664f9f71bd441e490b494f53271bfcfa34e06c59ed4"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-height-choice.config.json",
+      "sha256": "a7992a95a0cbf3d0df72cb0edc410d05a0031dd39c3721a8293e0b3d2a211f44"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-stay-segment.config.json",
+      "sha256": "7762929b0f67702bad5ccecface11d15b15d61992dfb0a5c0bf72b26649a2a71"
+    }
+  ],
+  "sources": [
+    {
+      "id": "LZH-MUSEUM-VISIT-2026",
+      "url": "https://www.gansumuseum.com/visitAppointment?nav=1-0",
+      "checked_at": "2026-08-23",
+      "use": "Current museum opening, appointment, entry, and bag-check route"
+    },
+    {
+      "id": "CMA-LANZHOU-CLIMATE",
+      "url": "https://www.weather.com.cn/cityintro/101160101.shtml",
+      "checked_at": "2026-08-23",
+      "use": "Long-term low-precipitation and large temperature-range context only"
+    },
+    {
+      "id": "LZH-WUQUAN-FLOOD-2026",
+      "url": "https://gansu.gansudaily.com.cn/system/2026/08/11/031415145.shtml",
+      "checked_at": "2026-08-22",
+      "use": "Documented rain monitoring, clearance, and temporary-closure process"
+    }
+  ],
+  "generalizations": [
+    "The three lanes are original LazyTravel decision envelopes, not official itineraries or timetables",
+    "River, museum, height, and slow-city labels reuse accepted chapter decisions without reproducing street or operator geometry",
+    "One anchor per day is an editorial capacity rule, not a universal speed or accessibility claim",
+    "The one-day river and museum branches are alternatives and never imply that both must fit",
+    "Fallbacks replace a whole branch and require their own opening, access, meal, weather, and return checks",
+    "A warning, closure, unsafe condition, or booked departure overrides the diagram"
+  ],
+  "visual_qa": {
+    "approved": true,
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-23",
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch09-proof-pages-v2/page-134.png",
+        "sha256": "59f28de2b5533a4a35f9702289f394ed0ca45e677e0402143282f02c77dd09d3"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch09-release/desktop-09-map.png",
+        "sha256": "959c948f66c2dd962236d50f2f4589bfb578252d79339a810bd10ff951d7095c"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch09-release/mobile-09-map-left.png",
+        "sha256": "6cd45703dda9d4fc615c53dbab3fa11ea80fd582fc7d77a9bed38bc976de530a"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch09-release/mobile-09-map-center.png",
+        "sha256": "adb56c29ebce0e1c341017653013dc015b7f76eb4fe89169b0f37a155725fed2"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch09-release/mobile-09-map-right.png",
+        "sha256": "7e626cb19ca5af89899e8fa127712b516801e0cfe9e56b8a99283eb6496c83fd"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch09-release/qa.json",
+        "sha256": "319b31e1592345cd04c15c4bfcf651fc33168aef8d13a1119b40d3ed55b299a8"
+      }
+    },
+    "notes": [
+      "The 1620 x 2280 source and compiled B6 page preserve all three day lanes, the one-day OR choice, whole-day fallbacks, conditions, and cut order without collision or clipping.",
+      "At a 390 px viewport the 760 px map stage pans independently at reviewed left, centre, and right positions; all primary labels and reading lines remain available without vertical clipping."
+    ]
+  }
+}

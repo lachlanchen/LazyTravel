@@ -29,7 +29,7 @@ NUTSTORE_PDF = (
     Path("/home/lachlan/Nutstore Files/Share/LazyTravel")
     / "LazyTravel-Lanzhou-ZH-JA-EN-B6-Pocket.pdf"
 )
-SOURCE_DATE_EPOCH = "1787356800"
+SOURCE_DATE_EPOCH = "1787443200"
 EXPECTED_PAGE_POINTS = (125 / 25.4 * 72, 176 / 25.4 * 72)
 EXPECTED_CHAPTERS = 11
 LOG_REJECTION = re.compile(
@@ -231,6 +231,7 @@ def build_inputs(document: dict[str, Any], chapter_ids: list[str]) -> list[Path]
         ROOT / "scripts/build_lanzhou_history_walk_map.py",
         ROOT / "scripts/build_lanzhou_food_diagrams.py",
         ROOT / "scripts/build_lanzhou_height_choice_map.py",
+        ROOT / "scripts/build_lanzhou_itinerary_days_map.py",
         ROOT / "scripts/build_lanzhou_museum_findspots_map.py",
         ROOT / "scripts/build_lanzhou_museum_route_map.py",
         ROOT / "scripts/build_lanzhou_stay_segment_map.py",
@@ -278,7 +279,7 @@ def write_manifest(
         "artifact": str(DIST_PDF.relative_to(ROOT)),
         "chapter_ids": chapter_ids,
         "planned_chapters": EXPECTED_CHAPTERS,
-        "build_date": "2026-08-22",
+        "build_date": "2026-08-23",
         "source_date_epoch": int(SOURCE_DATE_EPOCH),
         "command": "python3 scripts/build_lanzhou_review.py",
         "inputs": {
@@ -333,6 +334,7 @@ def main() -> int:
         run([sys.executable, "scripts/build_lanzhou_museum_findspots_map.py"])
         run([sys.executable, "scripts/build_lanzhou_food_diagrams.py"])
         run([sys.executable, "scripts/build_lanzhou_height_choice_map.py"])
+        run([sys.executable, "scripts/build_lanzhou_itinerary_days_map.py"])
         run([sys.executable, "scripts/build_lanzhou_stay_segment_map.py"])
     run(
         [

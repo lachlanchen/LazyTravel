@@ -110,13 +110,13 @@ train and the mountain exit already reached, then add at most one local stop.
 Odawara, Mishima, and Gotemba are alternatives, not a three-town extension.
 The bag and reserved train remain fixed; the local stop is removed first.
 
-Lanzhou has a locked 11-chapter structure. Chapters 1-8, through **Where to
-Stay**, are accepted with `75` aligned blocks, `8,809` reviewed Chinese reading
-tokens, `11,241` reviewed Japanese reading tokens, 79 chapter-source entries,
-nineteen four-guide figure placements, and ten code-built maps. The same JSON
-produced a clean `141`-page B6 pocket and responsive series page with `12,161`
-rendered ruby nodes. The pocket SHA-256 is
-`57245b223cd477534f824a6ff276ff0f5dd05cb53a14262eb3acd06a0da4126a`, and the
+Lanzhou has a locked 11-chapter structure. Chapters 1-9, through **One, Two, or
+Three Days**, are accepted with `85` aligned blocks, `10,156` reviewed Chinese
+reading tokens, `12,997` reviewed Japanese reading tokens, 103 chapter-source
+entries, 26 four-guide figure placements, and eleven code-built maps. The same
+JSON produced a clean `163`-page B6 pocket and responsive series page with
+`14,077` rendered ruby nodes. The pocket SHA-256 is
+`593784c30e4a85cd30640bc9acfa128eced72c085f7a2f9b30090502cafe4b8f`, and the
 Nutstore copy matches it. Chapter 5 established a museum method: verify current
 display first, read one object by form, label, date/type, and findspot, and keep
 collection city separate from archaeological origin. Chapter 6 established a
@@ -127,8 +127,11 @@ one purpose, confirm ascent and descent together, and keep a complete
 ground-level fallback. Chapter 8 established a lodging method: write the
 arrival-to-door route and the door-to-first-stop route before comparing a
 property, treat airport lodging as a one-night buffer, and verify the complete
-booking and accessibility chain directly. Chapter 9, realistic one- to
-three-day plans, is the sole active gate.
+booking and accessibility chain directly. Chapter 9 established a nested-day
+method: choose one complete river or museum day, keep both anchors separate
+when two days are available, and add only one hill or a slower city thread on
+the third day. Bags, a seated meal, weather, and the reliable return stay on the
+same clock. Chapter 10, the next Gansu leg, is the sole active gate.
 
 The book's main line remains the traveler's decisions in a long river valley:
 orientation, arrival gate, crossing history, one central Yellow River Iron

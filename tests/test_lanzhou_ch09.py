@@ -11,9 +11,8 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK_PATH = ROOT / "data/china/cities/lanzhou/book.json"
-MAP_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-height-choice.config.json"
-FIGURE_CONFIG = ROOT / "data/images/lanzhou/ch07-figures.config.json"
-MAP_STEM = ROOT / "assets/maps/lanzhou/lanzhou-height-choice"
+MAP_CONFIG = ROOT / "data/maps/lanzhou/lanzhou-itinerary-days.config.json"
+MAP_STEM = ROOT / "assets/maps/lanzhou/lanzhou-itinerary-days"
 GUIDE_PATHS = {
     "/home/lachlan/ProjectsLFS/LALACHAN/ayachan.png",
     "/home/lachlan/ProjectsLFS/LALACHAN/raraxia.jpeg",
@@ -30,31 +29,43 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-class LanzhouChapterSevenTests(unittest.TestCase):
+class LanzhouChapterNineTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.book = json.loads(BOOK_PATH.read_text(encoding="utf-8"))
-        cls.chapter = cls.book["chapters"][6]
+        cls.chapter = cls.book["chapters"][8]
 
     def test_locked_blocks_and_next_gate(self) -> None:
         self.assertEqual(len(self.book["chapters"]), 11)
-        self.assertEqual(self.chapter["id"], "ch07-city-heights")
+        self.assertEqual(self.chapter["id"], "ch09-itinerary-days")
         self.assertEqual(self.chapter["status"], "final")
         self.assertEqual(
             [block["id"] for block in self.chapter["blocks"]],
-            [f"ch07-b{number:03d}" for number in range(1, 11)],
+            [f"ch09-b{number:03d}" for number in range(1, 11)],
         )
-        self.assertEqual(self.book["chapters"][7]["id"], "ch08-stay-segment")
-        self.assertEqual(self.book["chapters"][7]["status"], "final")
-        self.assertEqual(len(self.book["chapters"][7]["blocks"]), 10)
-        self.assertEqual(self.book["chapters"][8]["id"], "ch09-itinerary-days")
-        self.assertEqual(self.book["chapters"][8]["status"], "final")
-        self.assertEqual(len(self.book["chapters"][8]["blocks"]), 10)
+        self.assertEqual(self.book["chapters"][9]["id"], "ch10-next-gansu-leg")
+        self.assertEqual(self.book["chapters"][9]["status"], "outlined")
+        self.assertEqual(self.book["chapters"][10]["id"], "ch11-nearby-day")
         self.assertTrue(
             all(not chapter["blocks"] for chapter in self.book["chapters"][9:])
         )
 
     def test_alignment_and_readings_are_closed(self) -> None:
+        self.assertEqual(
+            [block["kind"] for block in self.chapter["blocks"]],
+            [
+                "figure",
+                "map",
+                "figure",
+                "figure",
+                "figure",
+                "figure",
+                "figure",
+                "figure",
+                "practical",
+                "callout",
+            ],
+        )
         for block in self.chapter["blocks"]:
             self.assertEqual(set(block["text"]), {"zh", "ja", "en"})
             for language in ("zh", "ja", "en"):
@@ -66,7 +77,7 @@ class LanzhouChapterSevenTests(unittest.TestCase):
                 reconstructed = "".join(token["text"] for token in layer["tokens"])
                 self.assertEqual(reconstructed, block["text"][language])
 
-    def test_height_and_spring_readings_are_reviewed(self) -> None:
+    def test_context_sensitive_readings_are_reviewed(self) -> None:
         zh = {
             (token["text"], token.get("reading"))
             for block in self.chapter["blocks"]
@@ -79,44 +90,59 @@ class LanzhouChapterSevenTests(unittest.TestCase):
         }
         self.assertTrue(
             {
+                ("四行", "sì háng"),
+                ("不为", "bù wèi"),
+                ("出土地", "chūtǔdì"),
+                ("重走", "chóngzǒu"),
                 ("白塔山", "báitǎshān"),
-                ("中山桥", "zhōngshānqiáo"),
-                ("兰山", "lánshān"),
-                ("三台阁", "sāntáigé"),
-                ("五泉山", "wǔquánshān"),
-                ("摸子", "mōzǐ"),
             }.issubset(zh)
         )
         self.assertTrue(
             {
-                ("白塔山", "はくとうざん"),
-                ("中山橋", "ちゅうざんきょう"),
-                ("蘭山", "らんざん"),
-                ("三台閣", "さんたいかく"),
-                ("五泉山", "ごせんざん"),
-                ("摸子", "もーず"),
+                ("開館日", "かいかんび"),
+                ("開館", "かいかん"),
+                ("館内", "かんない"),
+                ("三泊", "さんぱく"),
+                ("二本目", "にほんめ"),
+                ("保安検査", "ほあんけんさ"),
             }.issubset(ja)
         )
 
     def test_assets_citations_and_evidence_are_closed(self) -> None:
         expected_assets = {
+            "asset-lanzhou-river-valley-orientation",
+            "asset-lanzhou-itinerary-days-map",
+            "asset-lanzhou-zhongshan-bridge",
+            "asset-lanzhou-gansu-provincial-museum-exterior",
+            "asset-lanzhou-beef-noodle-morning",
             "asset-lanzhou-white-pagoda-hill",
-            "asset-lanzhou-height-choice-map",
             "asset-lanzhou-lanshan-santai-view",
-            "asset-lanzhou-wuquan-heritage-park",
+            "asset-lanzhou-city-god-temple",
         }
         expected_citations = {
+            "src-cma-lanzhou-climate",
+            "src-lanzhou-airport-connections-2026",
+            "src-lanzhou-arrival-map-data",
             "src-lanzhou-baita-current-2025",
-            "src-lanzhou-baita-gazetteer",
+            "src-lanzhou-beef-noodle-ich",
             "src-lanzhou-bridge-hill-map-data",
+            "src-lanzhou-city-god-current-2026",
+            "src-lanzhou-city-god-temple",
+            "src-lanzhou-food-context-2026",
             "src-lanzhou-geography-2026",
             "src-lanzhou-height-choice-map-data",
             "src-lanzhou-heights-access-2026",
-            "src-lanzhou-heights-geography-2025",
-            "src-lanzhou-lanshan-holiday-bus-2026",
+            "src-lanzhou-itinerary-days-map-data",
             "src-lanzhou-lanshan-record-2025",
+            "src-lanzhou-metro-service",
+            "src-lanzhou-museum-galleries-2026",
+            "src-lanzhou-museum-route-map-data",
+            "src-lanzhou-museum-visit-2026",
+            "src-lanzhou-old-city-streets",
+            "src-lanzhou-river-core-2024",
+            "src-lanzhou-sanpaotai-consumer-2022",
+            "src-lanzhou-stay-segment-map-data",
             "src-lanzhou-wuquan-flood-2026",
-            "src-lanzhou-wuquan-heritage-2021",
             "src-lanzhou-wuquan-heritage-2023",
         }
         used_assets = {
@@ -153,14 +179,16 @@ class LanzhouChapterSevenTests(unittest.TestCase):
                 self.assertTrue(GUIDE_PATHS.issubset(references))
             for evidence in visual_qa.get("evidence", {}).values():
                 path = ROOT / evidence["path"]
-                self.assertTrue(evidence["path"].startswith("build/qa/"))
+                self.assertTrue(evidence["path"].startswith("build/"))
+                if asset["kind"] == "map":
+                    self.assertTrue(evidence["path"].startswith("build/qa/"))
                 self.assertRegex(evidence["sha256"], r"^[0-9a-f]{64}$")
                 if path.is_file():
                     self.assertEqual(sha256(path), evidence["sha256"])
 
-    def test_height_map_rebuilds_at_b6_print_resolution(self) -> None:
+    def test_itinerary_map_rebuilds_at_b6_print_resolution(self) -> None:
         subprocess.run(
-            [sys.executable, "scripts/build_lanzhou_height_choice_map.py"],
+            [sys.executable, "scripts/build_lanzhou_itinerary_days_map.py"],
             cwd=ROOT,
             check=True,
             stdout=subprocess.DEVNULL,
@@ -175,23 +203,46 @@ class LanzhouChapterSevenTests(unittest.TestCase):
             self.assertTrue(path.is_file())
             self.assertEqual(sha256(path), record["sha256"])
 
-    def test_choice_map_and_figure_boundaries_are_explicit(self) -> None:
-        map_config = json.loads(MAP_CONFIG.read_text(encoding="utf-8"))
-        figure_config = json.loads(FIGURE_CONFIG.read_text(encoding="utf-8"))
-        self.assertEqual(
-            [choice["id"] for choice in map_config["choices"]],
-            ["white-pagoda-hill", "lanshan-santai", "wuquan-mountain-park"],
-        )
-        self.assertEqual(
-            [check["number"] for check in map_config["checks"]], [1, 2, 3, 4]
-        )
-        self.assertTrue(
-            any("No path is drawn" in item for item in map_config["generalizations"])
-        )
-        self.assertEqual(len(figure_config["figures"]), 2)
-        self.assertTrue(
-            all(item["visual_qa"]["approved"] for item in figure_config["figures"])
-        )
+    def test_map_decisions_and_boundaries_are_explicit(self) -> None:
+        config = json.loads(MAP_CONFIG.read_text(encoding="utf-8"))
+        self.assertEqual([lane["duration"] for lane in config["lanes"]], ["1", "2", "3"])
+        self.assertEqual([len(lane["nodes"]) for lane in config["lanes"]], [4, 4, 4])
+        self.assertTrue(config["lanes"][0]["nodes"][1]["choice"])
+        self.assertTrue(config["lanes"][2]["nodes"][2]["choice"])
+        self.assertIn("SWAP WHOLE DAYS", config["lanes"][1]["fallback"]["en"])
+        self.assertIn("OUTDOOR CLIMB", config["cut_order"]["en"])
+        boundaries = " ".join(config["generalizations"]).lower()
+        self.assertIn("not official itineraries or timetables", boundaries)
+        self.assertIn("alternatives", boundaries)
+        self.assertIn("overrides the diagram", boundaries)
+
+    def test_severe_rain_and_cut_order_remain_safe(self) -> None:
+        weather = self.chapter["blocks"][8]["text"]
+        self.assertIn("可靠的室内或休息", weather["zh"])
+        self.assertIn("確かな屋内に移るか休む", weather["ja"])
+        self.assertIn("During heavy rain, stay in a reliable indoor place or rest", weather["en"])
+        self.assertIn("conditions in the city remain safe for walking", weather["en"])
+        callout = self.chapter["blocks"][9]["text"]["en"]
+        self.assertIn("extra snack, second street, then outdoor climb", callout)
+        self.assertIn("documents, bags, rest, a seated meal", callout)
+
+    def test_current_claims_are_dated_and_prose_avoids_old_shorthand(self) -> None:
+        citations = {item["id"]: item for item in self.book["citations"]}
+        for citation_id in (
+            "src-cma-lanzhou-climate",
+            "src-lanzhou-itinerary-days-map-data",
+            "src-lanzhou-museum-visit-2026",
+        ):
+            self.assertEqual(citations[citation_id]["accessed_at"], "2026-08-23")
+        english = " ".join(block["text"]["en"] for block in self.chapter["blocks"])
+        for rejected in (
+            "usable exit",
+            "one morning bowl",
+            "findspot",
+            "recover something missed",
+            "arrival and departure margin",
+        ):
+            self.assertNotIn(rejected, english.lower())
 
 
 if __name__ == "__main__":

@@ -19,8 +19,8 @@ Published guide paths:
 ## Current Editorial Gate
 
 Xi'an and Hakone are complete and publicly published. Lanzhou at
-`china/cities/lanzhou` is the only active book. Chapters 1-8 are accepted
-milestones; Chapter 9 is the sole production gate. Only one destination may be
+`china/cities/lanzhou` is the only active book. Chapters 1-9 are accepted
+milestones; Chapter 10 is the sole production gate. Only one destination may be
 in production at a time. Broader Gansu and Ningxia sources remain research
 context, not destination-book titles.
 
@@ -70,17 +70,17 @@ Xi'an and Hakone at their taxonomy paths and passes desktop/mobile review with
 `19,113` Hakone ruby nodes.
 
 Lanzhou has a hash-verified read-only source baseline, an explicit claim and
-rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-8,
-through **Where to Stay: Choose the Route Segment Before the Hotel**, are
-accepted: `75` aligned blocks, `8,809` reviewed Chinese reading tokens, `11,241`
-reviewed Japanese reading tokens, 79 chapter-source entries, nineteen
-four-guide figure placements, and ten code-built maps. The same canonical JSON
-produces a `141`-page B6 pocket and a responsive site with `12,161` ruby nodes.
+rejection ledger, and a locked 11-chapter trilingual outline. Chapters 1-9,
+through **One, Two, or Three Days: Leave Room in the Valley**, are accepted:
+`85` aligned blocks, `10,156` reviewed Chinese reading tokens, `12,997`
+reviewed Japanese reading tokens, 103 chapter-source entries, 26 four-guide
+figure placements, and eleven code-built maps. The same canonical JSON
+produces a `163`-page B6 pocket and a responsive site with `14,077` ruby nodes.
 The pocket SHA-256 is
-`57245b223cd477534f824a6ff276ff0f5dd05cb53a14262eb3acd06a0da4126a`, and its
-Nutstore copy matches. Chapter 9, **One, Two, or Three Days: Leave Room in the
-Valley**, is the only active production gate; the Lanzhou book itself is not
-yet complete.
+`593784c30e4a85cd30640bc9acfa128eced72c085f7a2f9b30090502cafe4b8f`, and its
+Nutstore copy matches. Chapter 10, **Leaving Lanzhou: Connect the Next Gansu
+Leg**, is the only active production gate; the Lanzhou book itself is not yet
+complete.
 
 ## Source Boundary
 

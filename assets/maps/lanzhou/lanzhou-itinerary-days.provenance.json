@@ -1,0 +1,133 @@
+{
+  "accepted_inputs": [
+    {
+      "path": "data/maps/lanzhou/lanzhou-valley-orientation.config.json",
+      "sha256": "a729843c4661064fd8e3ee52dcb9821448039d579347584d6ad8765cff10818d"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-arrival-gates.config.json",
+      "sha256": "5847d5292159319badb629b3d5a9ba1f9893b87360bc1db81c82c5b723925be1"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-bridge-hill-route.config.json",
+      "sha256": "45fbfb745f78b980c87cfdf2357fef6ec63a632a1128bdbe2715e4399a33b53b"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-museum-route.config.json",
+      "sha256": "b660515032f289cc24f8765dcf5b77e11bfa970ae1c23da958118b8940c0d1fb"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-food-clock.config.json",
+      "sha256": "fdbb346043e4d6a89c359664f9f71bd441e490b494f53271bfcfa34e06c59ed4"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-height-choice.config.json",
+      "sha256": "a7992a95a0cbf3d0df72cb0edc410d05a0031dd39c3721a8293e0b3d2a211f44"
+    },
+    {
+      "path": "data/maps/lanzhou/lanzhou-stay-segment.config.json",
+      "sha256": "7762929b0f67702bad5ccecface11d15b15d61992dfb0a5c0bf72b26649a2a71"
+    }
+  ],
+  "asset_id": "asset-lanzhou-itinerary-days-map",
+  "config": {
+    "bytes": 12461,
+    "path": "data/maps/lanzhou/lanzhou-itinerary-days.config.json",
+    "sha256": "3dbba5ebf98b80c46717ed3d9e3ed1ffff44f5100721c5f6923cac5a41ed728f"
+  },
+  "created_at": "2026-08-23",
+  "generalizations": [
+    "The three lanes are original LazyTravel decision envelopes, not official itineraries or timetables",
+    "River, museum, height, and slow-city labels reuse accepted chapter decisions without reproducing street or operator geometry",
+    "One anchor per day is an editorial capacity rule, not a universal speed or accessibility claim",
+    "The one-day river and museum branches are alternatives and never imply that both must fit",
+    "Fallbacks replace a whole branch and require their own opening, access, meal, weather, and return checks",
+    "A warning, closure, unsafe condition, or booked departure overrides the diagram"
+  ],
+  "generator": "scripts/build_lanzhou_itinerary_days_map.py",
+  "method": "deterministic-matplotlib-itinerary-decision-map",
+  "outputs": {
+    "pdf": {
+      "bytes": 117578,
+      "path": "assets/maps/lanzhou/lanzhou-itinerary-days.pdf",
+      "sha256": "1a5cc1965ce5c24762233e9063407809bc025955dff2708af80253e8e7d85ba0"
+    },
+    "png": {
+      "bytes": 708074,
+      "path": "assets/maps/lanzhou/lanzhou-itinerary-days.png",
+      "sha256": "b35b5a8b47d016816a17ea0c4ceb4097108bdf32faa349b8a2b68b7b36a94940"
+    },
+    "svg": {
+      "bytes": 55556,
+      "path": "assets/maps/lanzhou/lanzhou-itinerary-days.svg",
+      "sha256": "6824b9427b9874b13525bcd57183acc3f1b75bbd9296c0ef3dca17a4d613b5dd"
+    }
+  },
+  "rights": "Original LazyTravel diagram; no map tiles, operator diagrams, source-guide pages, or character references redistributed.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "checked_at": "2026-08-23",
+      "id": "LZH-MUSEUM-VISIT-2026",
+      "url": "https://www.gansumuseum.com/visitAppointment?nav=1-0",
+      "use": "Current museum opening, appointment, entry, and bag-check route"
+    },
+    {
+      "checked_at": "2026-08-23",
+      "id": "CMA-LANZHOU-CLIMATE",
+      "url": "https://www.weather.com.cn/cityintro/101160101.shtml",
+      "use": "Long-term low-precipitation and large temperature-range context only"
+    },
+    {
+      "checked_at": "2026-08-22",
+      "id": "LZH-WUQUAN-FLOOD-2026",
+      "url": "https://gansu.gansudaily.com.cn/system/2026/08/11/031415145.shtml",
+      "use": "Documented rain monitoring, clearance, and temporary-closure process"
+    }
+  ],
+  "technical_qa": {
+    "pdf_vector_output": true,
+    "png_dimensions": [
+      1620,
+      2280
+    ],
+    "svg_selectable_text": true
+  },
+  "visual_qa": {
+    "approved": true,
+    "evidence": {
+      "b6_print": {
+        "path": "build/qa/books/lanzhou/ch09-proof-pages-v2/page-134.png",
+        "sha256": "59f28de2b5533a4a35f9702289f394ed0ca45e677e0402143282f02c77dd09d3"
+      },
+      "desktop": {
+        "path": "build/qa/website/lanzhou-ch09-release/desktop-09-map.png",
+        "sha256": "959c948f66c2dd962236d50f2f4589bfb578252d79339a810bd10ff951d7095c"
+      },
+      "mobile_center": {
+        "path": "build/qa/website/lanzhou-ch09-release/mobile-09-map-center.png",
+        "sha256": "adb56c29ebce0e1c341017653013dc015b7f76eb4fe89169b0f37a155725fed2"
+      },
+      "mobile_left": {
+        "path": "build/qa/website/lanzhou-ch09-release/mobile-09-map-left.png",
+        "sha256": "6cd45703dda9d4fc615c53dbab3fa11ea80fd582fc7d77a9bed38bc976de530a"
+      },
+      "mobile_right": {
+        "path": "build/qa/website/lanzhou-ch09-release/mobile-09-map-right.png",
+        "sha256": "7e626cb19ca5af89899e8fa127712b516801e0cfe9e56b8a99283eb6496c83fd"
+      },
+      "website_qa": {
+        "path": "build/qa/website/lanzhou-ch09-release/qa.json",
+        "sha256": "319b31e1592345cd04c15c4bfcf651fc33168aef8d13a1119b40d3ed55b299a8"
+      }
+    },
+    "label_collisions": "pass",
+    "mobile_390px": "pass",
+    "notes": [
+      "The 1620 x 2280 source and compiled B6 page preserve all three day lanes, the one-day OR choice, whole-day fallbacks, conditions, and cut order without collision or clipping.",
+      "At a 390 px viewport the 760 px map stage pans independently at reviewed left, centre, and right positions; all primary labels and reading lines remain available without vertical clipping."
+    ],
+    "print_300dpi": "pass",
+    "reviewed_at": "2026-08-23"
+  }
+}
