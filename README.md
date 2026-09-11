@@ -80,6 +80,29 @@ external-source checks. Commit `8a4fc23` and GitHub Pages run `32622242430`
 published and verified the site; an independent check matched all `123`
 deployed Lanzhou files to the canonical source hash.
 
+## Browser Regression Case
+
+[![Lanzhou browser regression](https://github.com/lachlanchen/LazyTravel/actions/workflows/lanzhou-browser-qa.yml/badge.svg)](https://github.com/lachlanchen/LazyTravel/actions/workflows/lanzhou-browser-qa.yml)
+
+The published Lanzhou reader is also a first-party Playwright regression case
+for a real trilingual responsive site. A Page Object drives three pytest
+journeys: all 11 chapters against canonical content counts, desktop and 390 px
+mobile-width navigation with ruby controls, and map zoom/reset with
+browser-error gates. Each workflow repeats the suite three times and retains
+JUnit XML plus failure screenshots. CI rebuilds the site from canonical JSON
+before opening it; the same command defaults to the public site when run
+locally.
+
+```bash
+python -m pip install "pytest>=8,<10" "playwright>=1.48,<2"
+python -m playwright install chromium
+scripts/run_lanzhou_browser_regression.sh 3
+```
+
+This is project-owned verification, not a customer result. The broader
+release QA remains authoritative for book, provenance, and complete visual
+acceptance.
+
 ## Source Boundary
 
 The six supplied books in `Sources/` are private research references. They are
