@@ -103,6 +103,13 @@ This is project-owned verification, not a customer result. The broader
 release QA remains authoritative for book, provenance, and complete visual
 acceptance.
 
+[The exact three-pass CI run](https://github.com/lachlanchen/LazyTravel/actions/runs/34646905819)
+is available alongside a fixed
+[USD 250 Browser Regression Baseline](https://lazying.art/browser-regression/?utm_source=github&utm_medium=readme&utm_campaign=browser_regression_baseline&utm_content=lazytravel_case)
+for one public site, up to three agreed flows and twelve checkpoints. Work
+originating on a marketplace keeps its communication, files, and payment on
+that marketplace.
+
 ## Source Boundary
 
 The six supplied books in `Sources/` are private research references. They are
