@@ -16,6 +16,12 @@ Published guide paths:
 - Hakone: <https://lachlanchen.github.io/LazyTravel/japan/prefectures/kanagawa/hakone/>
 - Lanzhou: <https://lachlanchen.github.io/LazyTravel/china/cities/lanzhou/>
 
+## Read the guides in Bunko
+
+The Xi'an, Hakone, and Lanzhou guides are also in the [Bunko web reader](https://lachlan.lazying.art/Bunko/) in English, Chinese, and Japanese, with pinyin and furigana where available and chapters cached for offline reading. [Bunko on the App Store](https://apps.apple.com/us/app/bunko-classics-with-ruby/id6815137919) is live, but the Travel shelf is currently in its internal test build; use the web reader until that update is public. Google Play package `art.lazying.bunko` is awaiting public release.
+
+Open a guide directly: [Xi'an](https://lachlan.lazying.art/Bunko/?book=travel-xian) · [Hakone](https://lachlan.lazying.art/Bunko/?book=travel-hakone) · [Lanzhou](https://lachlan.lazying.art/Bunko/?book=travel-lanzhou).
+
 ## Current Editorial Gate
 
 Xi'an, Hakone, and Lanzhou are complete and publicly published. No later
